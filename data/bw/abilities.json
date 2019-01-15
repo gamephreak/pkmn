@@ -1,0 +1,315 @@
+{
+  "analytic": {
+    "id": "analytic",
+    "name": "Analytic",
+    "num": 148,
+    "shortDesc": "This Pokemon's attacks have 1.3x power if it is the last to move in a turn.",
+    "desc": "The power of this Pokemon's move is multiplied by 1.3 if it is the last to move in a turn. Does not affect Doom Desire and Future Sight.",
+    "gen": 5
+  },
+  "bigpecks": {
+    "id": "bigpecks",
+    "name": "Big Pecks",
+    "num": 145,
+    "shortDesc": "Prevents other Pokemon from lowering this Pokemon's Defense stat stage.",
+    "gen": 5
+  },
+  "contrary": {
+    "id": "contrary",
+    "name": "Contrary",
+    "num": 126,
+    "shortDesc": "If this Pokemon has a stat stage raised it is lowered instead, and vice versa.",
+    "gen": 5
+  },
+  "cursedbody": {
+    "id": "cursedbody",
+    "name": "Cursed Body",
+    "num": 130,
+    "shortDesc": "If this Pokemon is hit by an attack, there is a 30% chance that move gets disabled.",
+    "desc": "If this Pokemon is hit by an attack, there is a 30% chance that move gets disabled unless one of the attacker's moves is already disabled.",
+    "gen": 5
+  },
+  "defeatist": {
+    "id": "defeatist",
+    "name": "Defeatist",
+    "num": 129,
+    "shortDesc": "While this Pokemon has 1/2 or less of its max HP, its Attack and Sp. Atk are halved.",
+    "desc": "While this Pokemon has 1/2 or less of its maximum HP, its Attack and Special Attack are halved.",
+    "gen": 5
+  },
+  "defiant": {
+    "id": "defiant",
+    "name": "Defiant",
+    "num": 128,
+    "shortDesc": "This Pokemon's Attack is raised by 2 for each of its stats that is lowered by a foe.",
+    "desc": "This Pokemon's Attack is raised by 2 stages for each of its stat stages that is lowered by an opposing Pokemon.",
+    "gen": 5
+  },
+  "flareboost": {
+    "id": "flareboost",
+    "name": "Flare Boost",
+    "num": 138,
+    "shortDesc": "While this Pokemon is burned, its special attacks have 1.5x power.",
+    "desc": "While this Pokemon is burned, the power of its special attacks is multiplied by 1.5.",
+    "gen": 5
+  },
+  "friendguard": {
+    "id": "friendguard",
+    "name": "Friend Guard",
+    "num": 132,
+    "shortDesc": "This Pokemon's allies receive 3/4 damage from other Pokemon's attacks.",
+    "gen": 5
+  },
+  "harvest": {
+    "id": "harvest",
+    "name": "Harvest",
+    "num": 139,
+    "shortDesc": "If last item used is a Berry, 50% chance to restore it each end of turn. 100% in Sun.",
+    "desc": "If the last item this Pokemon used is a Berry, there is a 50% chance it gets restored at the end of each turn. If Sunny Day is active, this chance is 100%.",
+    "gen": 5
+  },
+  "healer": {
+    "id": "healer",
+    "name": "Healer",
+    "num": 131,
+    "shortDesc": "30% chance of curing an adjacent ally's status at the end of each turn.",
+    "desc": "There is a 30% chance of curing an adjacent ally's major status condition at the end of each turn.",
+    "gen": 5
+  },
+  "heavymetal": {
+    "id": "heavymetal",
+    "name": "Heavy Metal",
+    "num": 134,
+    "shortDesc": "This Pokemon's weight is doubled.",
+    "gen": 5
+  },
+  "illusion": {
+    "id": "illusion",
+    "name": "Illusion",
+    "num": 149,
+    "shortDesc": "This Pokemon appears as the last Pokemon in the party until it takes direct damage.",
+    "desc": "When this Pokemon switches in, it appears as the last unfainted Pokemon in its party until it takes direct damage from another Pokemon's attack. This Pokemon's actual level and HP are displayed instead of those of the mimicked Pokemon.",
+    "gen": 5
+  },
+  "imposter": {
+    "id": "imposter",
+    "name": "Imposter",
+    "num": 150,
+    "shortDesc": "On switch-in, this Pokemon Transforms into the opposing Pokemon that is facing it.",
+    "desc": "On switch-in, this Pokemon Transforms into the opposing Pokemon that is facing it. If there is no Pokemon at that position, this Pokemon does not Transform.",
+    "gen": 5
+  },
+  "infiltrator": {
+    "id": "infiltrator",
+    "name": "Infiltrator",
+    "num": 151,
+    "shortDesc": "This Pokemon's moves ignore the foe's Reflect, Light Screen, Safeguard, and Mist.",
+    "desc": "This Pokemon's moves ignore the opposing side's Reflect, Light Screen, Safeguard, and Mist.",
+    "gen": 5
+  },
+  "ironbarbs": {
+    "id": "ironbarbs",
+    "name": "Iron Barbs",
+    "num": 160,
+    "shortDesc": "Pokemon making contact with this Pokemon lose 1/8 of their max HP.",
+    "desc": "Pokemon making contact with this Pokemon lose 1/8 of their maximum HP, rounded down.",
+    "gen": 5
+  },
+  "justified": {
+    "id": "justified",
+    "name": "Justified",
+    "num": 154,
+    "shortDesc": "This Pokemon's Attack is raised by 1 stage after it is damaged by a Dark-type move.",
+    "gen": 5
+  },
+  "lightmetal": {
+    "id": "lightmetal",
+    "name": "Light Metal",
+    "num": 135,
+    "shortDesc": "This Pokemon's weight is halved.",
+    "gen": 5
+  },
+  "magicbounce": {
+    "id": "magicbounce",
+    "name": "Magic Bounce",
+    "num": 156,
+    "shortDesc": "This Pokemon blocks certain status moves and bounces them back to the user.",
+    "desc": "This Pokemon blocks certain status moves and instead uses the move against the original user.",
+    "gen": 5
+  },
+  "moody": {
+    "id": "moody",
+    "name": "Moody",
+    "num": 141,
+    "shortDesc": "Raises a random stat by 2 and lowers another stat by 1 at the end of each turn.",
+    "desc": "This Pokemon has a random stat raised by 2 stages and another stat lowered by 1 stage at the end of each turn.",
+    "gen": 5
+  },
+  "moxie": {
+    "id": "moxie",
+    "name": "Moxie",
+    "num": 153,
+    "shortDesc": "This Pokemon's Attack is raised by 1 stage if it attacks and KOes another Pokemon.",
+    "desc": "This Pokemon's Attack is raised by 1 stage if it attacks and knocks out another Pokemon.",
+    "gen": 5
+  },
+  "multiscale": {
+    "id": "multiscale",
+    "name": "Multiscale",
+    "num": 136,
+    "shortDesc": "If this Pokemon is at full HP, damage taken from attacks is halved.",
+    "gen": 5
+  },
+  "mummy": {
+    "id": "mummy",
+    "name": "Mummy",
+    "num": 152,
+    "shortDesc": "Pokemon making contact with this Pokemon have their Ability changed to Mummy.",
+    "desc": "Pokemon making contact with this Pokemon have their Ability changed to Mummy. Does not affect the Multitype or Stance Change Abilities.",
+    "gen": 5
+  },
+  "overcoat": {
+    "id": "overcoat",
+    "name": "Overcoat",
+    "num": 142,
+    "shortDesc": "This Pokemon is immune to damage from Sandstorm or Hail.",
+    "gen": 5
+  },
+  "pickpocket": {
+    "id": "pickpocket",
+    "name": "Pickpocket",
+    "num": 124,
+    "shortDesc": "If this Pokemon has no item, it steals the item off a Pokemon making contact with it.",
+    "desc": "If this Pokemon has no item, it steals the item off a Pokemon that makes contact with it. This effect applies after all hits from a multi-hit move; Sheer Force prevents it from activating if the move has a secondary effect.",
+    "gen": 5
+  },
+  "poisontouch": {
+    "id": "poisontouch",
+    "name": "Poison Touch",
+    "num": 143,
+    "shortDesc": "This Pokemon's contact moves have a 30% chance of poisoning.",
+    "gen": 5
+  },
+  "prankster": {
+    "id": "prankster",
+    "name": "Prankster",
+    "num": 158,
+    "shortDesc": "This Pokemon's non-damaging moves have their priority increased by 1.",
+    "gen": 5
+  },
+  "rattled": {
+    "id": "rattled",
+    "name": "Rattled",
+    "num": 155,
+    "shortDesc": "This Pokemon's Speed is raised 1 stage if hit by a Bug-, Dark-, or Ghost-type attack.",
+    "desc": "This Pokemon's Speed is raised by 1 stage if hit by a Bug-, Dark-, or Ghost-type attack.",
+    "gen": 5
+  },
+  "regenerator": {
+    "id": "regenerator",
+    "name": "Regenerator",
+    "num": 144,
+    "shortDesc": "This Pokemon restores 1/3 of its maximum HP, rounded down, when it switches out.",
+    "gen": 5
+  },
+  "sandforce": {
+    "id": "sandforce",
+    "name": "Sand Force",
+    "num": 159,
+    "shortDesc": "This Pokemon's Ground/Rock/Steel attacks do 1.3x in Sandstorm; immunity to it.",
+    "desc": "If Sandstorm is active, this Pokemon's Ground-, Rock-, and Steel-type attacks have their power multiplied by 1.3. This Pokemon takes no damage from Sandstorm.",
+    "gen": 5
+  },
+  "sandrush": {
+    "id": "sandrush",
+    "name": "Sand Rush",
+    "num": 146,
+    "shortDesc": "If Sandstorm is active, this Pokemon's Speed is doubled; immunity to Sandstorm.",
+    "desc": "If Sandstorm is active, this Pokemon's Speed is doubled. This Pokemon takes no damage from Sandstorm.",
+    "gen": 5
+  },
+  "sapsipper": {
+    "id": "sapsipper",
+    "name": "Sap Sipper",
+    "num": 157,
+    "shortDesc": "This Pokemon's Attack is raised 1 stage if hit by a Grass move; Grass immunity.",
+    "desc": "This Pokemon is immune to Grass-type moves and raises its Attack by 1 stage when hit by a Grass-type move.",
+    "gen": 5
+  },
+  "sheerforce": {
+    "id": "sheerforce",
+    "name": "Sheer Force",
+    "num": 125,
+    "shortDesc": "This Pokemon's attacks with secondary effects have 1.3x power; nullifies the effects.",
+    "desc": "This Pokemon's attacks with secondary effects have their power multiplied by 1.3, but the secondary effects are removed.",
+    "gen": 5
+  },
+  "telepathy": {
+    "id": "telepathy",
+    "name": "Telepathy",
+    "num": 140,
+    "shortDesc": "This Pokemon does not take damage from attacks made by its allies.",
+    "gen": 5
+  },
+  "teravolt": {
+    "id": "teravolt",
+    "name": "Teravolt",
+    "num": 164,
+    "shortDesc": "This Pokemon's moves and their effects ignore the Abilities of other Pokemon.",
+    "gen": 5
+  },
+  "toxicboost": {
+    "id": "toxicboost",
+    "name": "Toxic Boost",
+    "num": 137,
+    "shortDesc": "While this Pokemon is poisoned, its physical attacks have 1.5x power.",
+    "desc": "While this Pokemon is poisoned, the power of its physical attacks is multiplied by 1.5.",
+    "gen": 5
+  },
+  "turboblaze": {
+    "id": "turboblaze",
+    "name": "Turboblaze",
+    "num": 163,
+    "shortDesc": "This Pokemon's moves and their effects ignore the Abilities of other Pokemon.",
+    "gen": 5
+  },
+  "unnerve": {
+    "id": "unnerve",
+    "name": "Unnerve",
+    "num": 127,
+    "shortDesc": "While this Pokemon is active, it prevents opposing Pokemon from using their Berries.",
+    "desc": "While this Pokemon is active, it prevents opposing Pokemon from using their Berries. Activation message broadcasts before other Abilities regardless of the Pokemon's Speed tiers.",
+    "gen": 5
+  },
+  "victorystar": {
+    "id": "victorystar",
+    "name": "Victory Star",
+    "num": 162,
+    "shortDesc": "This Pokemon and its allies' moves have their accuracy multiplied by 1.1.",
+    "gen": 5
+  },
+  "weakarmor": {
+    "id": "weakarmor",
+    "name": "Weak Armor",
+    "num": 133,
+    "shortDesc": "If a physical attack hits this Pokemon, Defense is lowered by 1, Speed is raised by 1.",
+    "desc": "If a physical attack hits this Pokemon, its Defense is lowered by 1 stage and its Speed is raised by 1 stage.",
+    "gen": 5
+  },
+  "wonderskin": {
+    "id": "wonderskin",
+    "name": "Wonder Skin",
+    "num": 147,
+    "shortDesc": "Status moves with accuracy checks are 50% accurate when used on this Pokemon.",
+    "desc": "All non-damaging moves that check accuracy have their accuracy changed to 50% when used on this Pokemon. This change is done before any other accuracy modifying effects.",
+    "gen": 5
+  },
+  "zenmode": {
+    "id": "zenmode",
+    "name": "Zen Mode",
+    "num": 161,
+    "shortDesc": "If Darmanitan, at end of turn changes Mode to Standard if > 1/2 max HP, else Zen.",
+    "desc": "If this Pokemon is a Darmanitan, it changes to Zen Mode if it has 1/2 or less of its maximum HP at the end of a turn. If Darmanitan's HP is above 1/2 of its maximum HP at the end of a turn, it changes back to Standard Mode. If Darmanitan loses this Ability while in Zen Mode it reverts to Standard Mode immediately.",
+    "gen": 5
+  }
+}

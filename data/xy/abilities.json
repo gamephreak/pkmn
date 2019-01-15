@@ -1,0 +1,212 @@
+{
+  "aerilate": {
+    "id": "aerilate",
+    "name": "Aerilate",
+    "num": 185,
+    "shortDesc": "This Pokemon's Normal-type moves become Flying type and have 1.3x power.",
+    "desc": "This Pokemon's Normal-type moves become Flying-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+    "gen": 6
+  },
+  "aurabreak": {
+    "id": "aurabreak",
+    "name": "Aura Break",
+    "num": 188,
+    "shortDesc": "While this Pokemon is active, the Dark Aura and Fairy Aura power modifier is 0.75x.",
+    "desc": "While this Pokemon is active, the effects of the Dark Aura and Fairy Aura Abilities are reversed, multiplying the power of Dark- and Fairy-type moves, respectively, by 3/4 instead of 1.33.",
+    "gen": 6
+  },
+  "aromaveil": {
+    "id": "aromaveil",
+    "name": "Aroma Veil",
+    "num": 165,
+    "shortDesc": "Protects user/allies from Attract, Disable, Encore, Heal Block, Taunt, and Torment.",
+    "desc": "This Pokemon and its allies cannot be affected by Attract, Disable, Encore, Heal Block, Taunt, or Torment.",
+    "gen": 6
+  },
+  "bulletproof": {
+    "id": "bulletproof",
+    "name": "Bulletproof",
+    "num": 171,
+    "shortDesc": "Makes user immune to ballistic moves (Shadow Ball, Sludge Bomb, Focus Blast, etc).",
+    "desc": "This Pokemon is immune to ballistic moves. Ballistic moves include Bullet Seed, Octazooka, Barrage, Rock Wrecker, Zap Cannon, Acid Spray, Aura Sphere, Focus Blast, and all moves with Ball or Bomb in their name.",
+    "gen": 6
+  },
+  "cheekpouch": {
+    "id": "cheekpouch",
+    "name": "Cheek Pouch",
+    "num": 167,
+    "shortDesc": "If this Pokemon eats a Berry, it restores 1/3 of its max HP after the Berry's effect.",
+    "desc": "If this Pokemon eats a Berry, it restores 1/3 of its maximum HP, rounded down, in addition to the Berry's effect.",
+    "gen": 6
+  },
+  "competitive": {
+    "id": "competitive",
+    "name": "Competitive",
+    "num": 172,
+    "shortDesc": "This Pokemon's Sp. Atk is raised by 2 for each of its stats that is lowered by a foe.",
+    "desc": "This Pokemon's Special Attack is raised by 2 stages for each of its stat stages that is lowered by an opposing Pokemon.",
+    "gen": 6
+  },
+  "darkaura": {
+    "id": "darkaura",
+    "name": "Dark Aura",
+    "num": 186,
+    "shortDesc": "While this Pokemon is active, a Dark move used by any Pokemon has 1.33x power.",
+    "desc": "While this Pokemon is active, the power of Dark-type moves used by active Pokemon is multiplied by 1.33.",
+    "gen": 6
+  },
+  "deltastream": {
+    "id": "deltastream",
+    "name": "Delta Stream",
+    "num": 191,
+    "shortDesc": "On switch-in, strong winds begin until this Ability is not active in battle.",
+    "desc": "On switch-in, the weather becomes strong winds that remove the weaknesses of the Flying type from Flying-type Pokemon. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by Desolate Land or Primordial Sea.",
+    "gen": 6
+  },
+  "desolateland": {
+    "id": "desolateland",
+    "name": "Desolate Land",
+    "num": 190,
+    "shortDesc": "On switch-in, extremely harsh sunlight begins until this Ability is not active in battle.",
+    "desc": "On switch-in, the weather becomes extremely harsh sunlight that prevents damaging Water-type moves from executing, in addition to all the effects of Sunny Day. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by Delta Stream or Primordial Sea.",
+    "gen": 6
+  },
+  "fairyaura": {
+    "id": "fairyaura",
+    "name": "Fairy Aura",
+    "num": 187,
+    "shortDesc": "While this Pokemon is active, a Fairy move used by any Pokemon has 1.33x power.",
+    "desc": "While this Pokemon is active, the power of Fairy-type moves used by active Pokemon is multiplied by 1.33.",
+    "gen": 6
+  },
+  "flowerveil": {
+    "id": "flowerveil",
+    "name": "Flower Veil",
+    "num": 166,
+    "shortDesc": "This side's Grass types can't have stats lowered or status inflicted by other Pokemon.",
+    "desc": "Grass-type Pokemon on this Pokemon's side cannot have their stat stages lowered by other Pokemon or have a major status condition inflicted on them by other Pokemon.",
+    "gen": 6
+  },
+  "furcoat": {
+    "id": "furcoat",
+    "name": "Fur Coat",
+    "num": 169,
+    "shortDesc": "This Pokemon's Defense is doubled.",
+    "gen": 6
+  },
+  "galewings": {
+    "id": "galewings",
+    "name": "Gale Wings",
+    "num": 177,
+    "shortDesc": "This Pokemon's Flying-type moves have their priority increased by 1.",
+    "gen": 6
+  },
+  "gooey": {
+    "id": "gooey",
+    "name": "Gooey",
+    "num": 183,
+    "shortDesc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage.",
+    "gen": 6
+  },
+  "grasspelt": {
+    "id": "grasspelt",
+    "name": "Grass Pelt",
+    "num": 179,
+    "shortDesc": "If Grassy Terrain is active, this Pokemon's Defense is multiplied by 1.5.",
+    "gen": 6
+  },
+  "magician": {
+    "id": "magician",
+    "name": "Magician",
+    "num": 170,
+    "shortDesc": "If this Pokemon has no item, it steals the item off a Pokemon it hits with an attack.",
+    "desc": "If this Pokemon has no item, it steals the item off a Pokemon it hits with an attack. Does not affect Doom Desire and Future Sight.",
+    "gen": 6
+  },
+  "megalauncher": {
+    "id": "megalauncher",
+    "name": "Mega Launcher",
+    "num": 178,
+    "shortDesc": "This Pokemon's pulse moves have 1.5x power. Heal Pulse heals 3/4 target's max HP.",
+    "desc": "This Pokemon's pulse moves have their power multiplied by 1.5. Heal Pulse restores 3/4 of a target's maximum HP, rounded half down.",
+    "gen": 6
+  },
+  "parentalbond": {
+    "id": "parentalbond",
+    "name": "Parental Bond",
+    "num": 184,
+    "shortDesc": "This Pokemon's damaging moves hit twice. The second hit has its damage halved.",
+    "desc": "This Pokemon's damaging moves become multi-hit moves that hit twice. The second hit has its damage halved. Does not affect multi-hit moves or moves that have multiple targets.",
+    "gen": 6
+  },
+  "pixilate": {
+    "id": "pixilate",
+    "name": "Pixilate",
+    "num": 182,
+    "shortDesc": "This Pokemon's Normal-type moves become Fairy type and have 1.3x power.",
+    "desc": "This Pokemon's Normal-type moves become Fairy-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+    "gen": 6
+  },
+  "primordialsea": {
+    "id": "primordialsea",
+    "name": "Primordial Sea",
+    "num": 189,
+    "shortDesc": "On switch-in, heavy rain begins until this Ability is not active in battle.",
+    "desc": "On switch-in, the weather becomes heavy rain that prevents damaging Fire-type moves from executing, in addition to all the effects of Rain Dance. This weather remains in effect until this Ability is no longer active for any Pokemon, or the weather is changed by Delta Stream or Desolate Land.",
+    "gen": 6
+  },
+  "protean": {
+    "id": "protean",
+    "name": "Protean",
+    "num": 168,
+    "shortDesc": "This Pokemon's type changes to match the type of the move it is about to use.",
+    "desc": "This Pokemon's type changes to match the type of the move it is about to use. This effect comes after all effects that change a move's type.",
+    "gen": 6
+  },
+  "refrigerate": {
+    "id": "refrigerate",
+    "name": "Refrigerate",
+    "num": 174,
+    "shortDesc": "This Pokemon's Normal-type moves become Ice type and have 1.3x power.",
+    "desc": "This Pokemon's Normal-type moves become Ice-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+    "gen": 6
+  },
+  "stancechange": {
+    "id": "stancechange",
+    "name": "Stance Change",
+    "num": 176,
+    "shortDesc": "If Aegislash, changes Forme to Blade before attacks and Shield before King's Shield.",
+    "desc": "If this Pokemon is an Aegislash, it changes to Blade Forme before attempting to use an attacking move, and changes to Shield Forme before attempting to use King's Shield.",
+    "gen": 6
+  },
+  "strongjaw": {
+    "id": "strongjaw",
+    "name": "Strong Jaw",
+    "num": 173,
+    "shortDesc": "This Pokemon's bite-based attacks have 1.5x power. Bug Bite is not boosted.",
+    "desc": "This Pokemon's bite-based attacks have their power multiplied by 1.5.",
+    "gen": 6
+  },
+  "sweetveil": {
+    "id": "sweetveil",
+    "name": "Sweet Veil",
+    "num": 175,
+    "shortDesc": "This Pokemon and its allies cannot fall asleep.",
+    "gen": 6
+  },
+  "symbiosis": {
+    "id": "symbiosis",
+    "name": "Symbiosis",
+    "num": 180,
+    "shortDesc": "If an ally uses its item, this Pokemon gives its item to that ally immediately.",
+    "desc": "If an ally uses its item, this Pokemon gives its item to that ally immediately. Does not activate if the ally's item was stolen or knocked off.",
+    "gen": 6
+  },
+  "toughclaws": {
+    "id": "toughclaws",
+    "name": "Tough Claws",
+    "num": 181,
+    "shortDesc": "This Pokemon's contact moves have their power multiplied by 1.3.",
+    "gen": 6
+  }
+}

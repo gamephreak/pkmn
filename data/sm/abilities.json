@@ -1,0 +1,320 @@
+{
+  "battery": {
+    "id": "battery",
+    "name": "Battery",
+    "num": 217,
+    "shortDesc": "This Pokemon's allies have the power of their special attacks multiplied by 1.3.",
+    "gen": 7
+  },
+  "battlebond": {
+    "id": "battlebond",
+    "name": "Battle Bond",
+    "num": 210,
+    "shortDesc": "After KOing a Pokemon: becomes Ash-Greninja, Water Shuriken: 20 power, hits 3x.",
+    "desc": "If this Pokemon is a Greninja, it transforms into Ash-Greninja after knocking out a Pokemon. As Ash-Greninja, its Water Shuriken has 20 base power and always hits 3 times.",
+    "gen": 7
+  },
+  "beastboost": {
+    "id": "beastboost",
+    "name": "Beast Boost",
+    "num": 224,
+    "shortDesc": "This Pokemon's highest stat is raised by 1 if it attacks and KOes another Pokemon.",
+    "desc": "This Pokemon's highest stat is raised by 1 stage if it attacks and knocks out another Pokemon.",
+    "gen": 7
+  },
+  "berserk": {
+    "id": "berserk",
+    "name": "Berserk",
+    "num": 201,
+    "shortDesc": "This Pokemon's Sp. Atk is raised by 1 when it reaches 1/2 or less of its max HP.",
+    "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage from an attack bringing it to 1/2 or less of its maximum HP, its Special Attack is raised by 1 stage. This effect applies after all hits from a multi-hit move; Sheer Force prevents it from activating if the move has a secondary effect.",
+    "gen": 7
+  },
+  "comatose": {
+    "id": "comatose",
+    "name": "Comatose",
+    "num": 213,
+    "shortDesc": "This Pokemon cannot be statused, and is considered to be asleep.",
+    "desc": "This Pokemon cannot be statused, and is considered to be asleep. Moongeist Beam, Sunsteel Strike, and the Mold Breaker, Teravolt, and Turboblaze Abilities cannot ignore this Ability.",
+    "gen": 7
+  },
+  "corrosion": {
+    "id": "corrosion",
+    "name": "Corrosion",
+    "num": 212,
+    "shortDesc": "This Pokemon can poison or badly poison other Pokemon regardless of their typing.",
+    "gen": 7
+  },
+  "dancer": {
+    "id": "dancer",
+    "name": "Dancer",
+    "num": 216,
+    "shortDesc": "After another Pokemon uses a dance move, this Pokemon uses the same move.",
+    "desc": "After another Pokemon uses a dance move, this Pokemon uses the same move. Moves used by this Ability cannot be copied again.",
+    "gen": 7
+  },
+  "dazzling": {
+    "id": "dazzling",
+    "name": "Dazzling",
+    "num": 219,
+    "shortDesc": "While this Pokemon is active, allies are protected from opposing priority moves.",
+    "desc": "While this Pokemon is active, priority moves from opposing Pokemon targeted at allies are prevented from having an effect.",
+    "gen": 7
+  },
+  "disguise": {
+    "id": "disguise",
+    "name": "Disguise",
+    "num": 209,
+    "shortDesc": "If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage.",
+    "desc": "If this Pokemon is a Mimikyu, the first hit it takes in battle deals 0 neutral damage. Its disguise is then broken and it changes to Busted Form. Confusion damage also breaks the disguise.",
+    "gen": 7
+  },
+  "electricsurge": {
+    "id": "electricsurge",
+    "name": "Electric Surge",
+    "num": 226,
+    "shortDesc": "On switch-in, this Pokemon summons Electric Terrain.",
+    "gen": 7
+  },
+  "emergencyexit": {
+    "id": "emergencyexit",
+    "name": "Emergency Exit",
+    "num": 194,
+    "shortDesc": "This Pokemon switches out when it reaches 1/2 or less of its maximum HP.",
+    "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move; Sheer Force prevents it from activating if the move has a secondary effect. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage.",
+    "gen": 7
+  },
+  "fluffy": {
+    "id": "fluffy",
+    "name": "Fluffy",
+    "num": 218,
+    "shortDesc": "This Pokemon takes 1/2 damage from contact moves, 2x damage from Fire moves.",
+    "desc": "This Pokemon receives 1/2 damage from contact moves, but double damage from Fire moves.",
+    "gen": 7
+  },
+  "fullmetalbody": {
+    "id": "fullmetalbody",
+    "name": "Full Metal Body",
+    "num": 230,
+    "shortDesc": "Prevents other Pokemon from lowering this Pokemon's stat stages.",
+    "desc": "Prevents other Pokemon from lowering this Pokemon's stat stages. Moongeist Beam, Sunsteel Strike, and the Mold Breaker, Teravolt, and Turboblaze Abilities cannot ignore this Ability.",
+    "gen": 7
+  },
+  "galvanize": {
+    "id": "galvanize",
+    "name": "Galvanize",
+    "num": 206,
+    "shortDesc": "This Pokemon's Normal-type moves become Electric type and have 1.2x power.",
+    "desc": "This Pokemon's Normal-type moves become Electric-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+    "gen": 7
+  },
+  "grassysurge": {
+    "id": "grassysurge",
+    "name": "Grassy Surge",
+    "num": 229,
+    "shortDesc": "On switch-in, this Pokemon summons Grassy Terrain.",
+    "gen": 7
+  },
+  "innardsout": {
+    "id": "innardsout",
+    "name": "Innards Out",
+    "num": 215,
+    "shortDesc": "If this Pokemon is KOed with a move, that move's user loses an equal amount of HP.",
+    "desc": "If this Pokemon is knocked out with a move, that move's user loses HP equal to the amount of damage inflicted on this Pokemon.",
+    "gen": 7
+  },
+  "liquidvoice": {
+    "id": "liquidvoice",
+    "name": "Liquid Voice",
+    "num": 204,
+    "shortDesc": "This Pokemon's sound-based moves become Water type.",
+    "desc": "This Pokemon's sound-based moves become Water-type moves. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+    "gen": 7
+  },
+  "longreach": {
+    "id": "longreach",
+    "name": "Long Reach",
+    "num": 203,
+    "shortDesc": "This Pokemon's attacks do not make contact with the target.",
+    "gen": 7
+  },
+  "merciless": {
+    "id": "merciless",
+    "name": "Merciless",
+    "num": 196,
+    "shortDesc": "This Pokemon's attacks are critical hits if the target is poisoned.",
+    "gen": 7
+  },
+  "mistysurge": {
+    "id": "mistysurge",
+    "name": "Misty Surge",
+    "num": 228,
+    "shortDesc": "On switch-in, this Pokemon summons Misty Terrain.",
+    "gen": 7
+  },
+  "neuroforce": {
+    "id": "neuroforce",
+    "name": "Neuroforce",
+    "num": 233,
+    "shortDesc": "This Pokemon's attacks that are super effective against the target do 1.25x damage.",
+    "gen": 7
+  },
+  "powerconstruct": {
+    "id": "powerconstruct",
+    "name": "Power Construct",
+    "num": 211,
+    "shortDesc": "If Zygarde 10%/50%, changes to Complete if at 1/2 max HP or less at end of turn.",
+    "desc": "If this Pokemon is a Zygarde in its 10% or 50% Forme, it changes to Complete Forme when it has 1/2 or less of its maximum HP at the end of the turn.",
+    "gen": 7
+  },
+  "powerofalchemy": {
+    "id": "powerofalchemy",
+    "name": "Power of Alchemy",
+    "num": 223,
+    "shortDesc": "This Pokemon copies the Ability of an ally that faints.",
+    "desc": "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are Flower Gift, Forecast, Illusion, Imposter, Multitype, Stance Change, Trace, Wonder Guard, and Zen Mode.",
+    "gen": 7
+  },
+  "prismarmor": {
+    "id": "prismarmor",
+    "name": "Prism Armor",
+    "num": 232,
+    "shortDesc": "This Pokemon receives 3/4 damage from supereffective attacks.",
+    "desc": "This Pokemon receives 3/4 damage from supereffective attacks. Moongeist Beam, Sunsteel Strike, and the Mold Breaker, Teravolt, and Turboblaze Abilities cannot ignore this Ability.",
+    "gen": 7
+  },
+  "psychicsurge": {
+    "id": "psychicsurge",
+    "name": "Psychic Surge",
+    "num": 227,
+    "shortDesc": "On switch-in, this Pokemon summons Psychic Terrain.",
+    "gen": 7
+  },
+  "queenlymajesty": {
+    "id": "queenlymajesty",
+    "name": "Queenly Majesty",
+    "num": 214,
+    "shortDesc": "While this Pokemon is active, allies are protected from opposing priority moves.",
+    "desc": "While this Pokemon is active, priority moves from opposing Pokemon targeted at allies are prevented from having an effect.",
+    "gen": 7
+  },
+  "rkssystem": {
+    "id": "rkssystem",
+    "name": "RKS System",
+    "num": 225,
+    "shortDesc": "If this Pokemon is a Silvally, its type changes to match its held Memory.",
+    "gen": 7
+  },
+  "receiver": {
+    "id": "receiver",
+    "name": "Receiver",
+    "num": 222,
+    "shortDesc": "This Pokemon copies the Ability of an ally that faints.",
+    "desc": "This Pokemon copies the Ability of an ally that faints. Abilities that cannot be copied are Flower Gift, Forecast, Illusion, Imposter, Multitype, Stance Change, Trace, Wonder Guard, and Zen Mode.",
+    "gen": 7
+  },
+  "schooling": {
+    "id": "schooling",
+    "name": "Schooling",
+    "num": 208,
+    "shortDesc": "If user is Wishiwashi, changes to School Form if it has > 1/4 max HP, else Solo Form.",
+    "desc": "On switch-in, if this Pokemon is a Wishiwashi that is level 20 or above and has more than 1/4 of its maximum HP left, it changes to School Form. If it is in School Form and its HP drops to 1/4 of its maximum HP or less, it changes to Solo Form at the end of the turn. If it is in Solo Form and its HP is greater than 1/4 its maximum HP at the end of the turn, it changes to School Form.",
+    "gen": 7
+  },
+  "shadowshield": {
+    "id": "shadowshield",
+    "name": "Shadow Shield",
+    "num": 231,
+    "shortDesc": "If this Pokemon is at full HP, damage taken from attacks is halved.",
+    "desc": "If this Pokemon is at full HP, damage taken from attacks is halved. Moongeist Beam, Sunsteel Strike, and the Mold Breaker, Teravolt, and Turboblaze Abilities cannot ignore this Ability.",
+    "gen": 7
+  },
+  "shieldsdown": {
+    "id": "shieldsdown",
+    "name": "Shields Down",
+    "num": 197,
+    "shortDesc": "If Minior, switch-in/end of turn it changes to Core at 1/2 max HP or less, else Meteor.",
+    "desc": "If this Pokemon is a Minior, it changes to its Core forme if it has 1/2 or less of its maximum HP, and changes to Meteor Form if it has more than 1/2 its maximum HP. This check is done on switch-in and at the end of each turn. While in its Meteor Form, it cannot become affected by major status conditions. Moongeist Beam, Sunsteel Strike, and the Mold Breaker, Teravolt, and Turboblaze Abilities cannot ignore this Ability.",
+    "gen": 7
+  },
+  "slushrush": {
+    "id": "slushrush",
+    "name": "Slush Rush",
+    "num": 202,
+    "shortDesc": "If Hail is active, this Pokemon's Speed is doubled.",
+    "gen": 7
+  },
+  "stamina": {
+    "id": "stamina",
+    "name": "Stamina",
+    "num": 192,
+    "shortDesc": "This Pokemon's Defense is raised by 1 stage after it is damaged by a move.",
+    "gen": 7
+  },
+  "stakeout": {
+    "id": "stakeout",
+    "name": "Stakeout",
+    "num": 198,
+    "shortDesc": "This Pokemon's attacking stat is doubled against a target that switched in this turn.",
+    "gen": 7
+  },
+  "steelworker": {
+    "id": "steelworker",
+    "name": "Steelworker",
+    "num": 200,
+    "shortDesc": "This Pokemon's attacking stat is multiplied by 1.5 while using a Steel-type attack.",
+    "gen": 7
+  },
+  "soulheart": {
+    "id": "soulheart",
+    "name": "Soul-Heart",
+    "num": 220,
+    "shortDesc": "This Pokemon's Sp. Atk is raised by 1 stage when another Pokemon faints.",
+    "desc": "This Pokemon's Special Attack is raised by 1 stage when another Pokemon faints.",
+    "gen": 7
+  },
+  "surgesurfer": {
+    "id": "surgesurfer",
+    "name": "Surge Surfer",
+    "num": 207,
+    "shortDesc": "If Electric Terrain is active, this Pokemon's Speed is doubled.",
+    "gen": 7
+  },
+  "tanglinghair": {
+    "id": "tanglinghair",
+    "name": "Tangling Hair",
+    "num": 221,
+    "shortDesc": "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage.",
+    "gen": 7
+  },
+  "triage": {
+    "id": "triage",
+    "name": "Triage",
+    "num": 205,
+    "shortDesc": "This Pokemon's healing moves have their priority increased by 3.",
+    "gen": 7
+  },
+  "waterbubble": {
+    "id": "waterbubble",
+    "name": "Water Bubble",
+    "num": 199,
+    "shortDesc": "This Pokemon's Water power is 2x; it can't be burned; Fire power against it is halved.",
+    "desc": "This Pokemon's attacking stat is doubled while using a Water-type attack. If a Pokemon uses a Fire-type attack against this Pokemon, that Pokemon's attacking stat is halved when calculating the damage to this Pokemon. This Pokemon cannot be burned. Gaining this Ability while burned cures it.",
+    "gen": 7
+  },
+  "watercompaction": {
+    "id": "watercompaction",
+    "name": "Water Compaction",
+    "num": 195,
+    "shortDesc": "This Pokemon's Defense is raised 2 stages after it is damaged by a Water-type move.",
+    "gen": 7
+  },
+  "wimpout": {
+    "id": "wimpout",
+    "name": "Wimp Out",
+    "num": 193,
+    "shortDesc": "This Pokemon switches out when it reaches 1/2 or less of its maximum HP.",
+    "desc": "When this Pokemon has more than 1/2 its maximum HP and takes damage bringing it to 1/2 or less of its maximum HP, it immediately switches out to a chosen ally. This effect applies after all hits from a multi-hit move; Sheer Force prevents it from activating if the move has a secondary effect. This effect applies to both direct and indirect damage, except Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage.",
+    "gen": 7
+  }
+}
