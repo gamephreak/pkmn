@@ -1,0 +1,742 @@
+{
+  "duskball": {
+    "id": "duskball",
+    "name": "Dusk Ball",
+    "num": 13,
+    "desc": "A Poke Ball that makes it easier to catch wild Pokemon at night or in caves.",
+    "gen": 4
+  },
+  "healball": {
+    "id": "healball",
+    "name": "Heal Ball",
+    "num": 14,
+    "desc": "A remedial Poke Ball that restores the caught Pokemon's HP and status problem.",
+    "gen": 4
+  },
+  "quickball": {
+    "id": "quickball",
+    "name": "Quick Ball",
+    "num": 15,
+    "desc": "A Poke Ball that provides a better catch rate at the start of a wild encounter.",
+    "gen": 4
+  },
+  "cherishball": {
+    "id": "cherishball",
+    "name": "Cherish Ball",
+    "num": 16,
+    "desc": "A rare Poke Ball that has been crafted to commemorate an occasion.",
+    "gen": 4
+  },
+  "armorfossil": {
+    "id": "armorfossil",
+    "name": "Armor Fossil",
+    "num": 104,
+    "desc": "Can be revived into Shieldon.",
+    "gen": 4
+  },
+  "skullfossil": {
+    "id": "skullfossil",
+    "name": "Skull Fossil",
+    "num": 105,
+    "desc": "Can be revived into Cranidos.",
+    "gen": 4
+  },
+  "rarebone": {
+    "id": "rarebone",
+    "name": "Rare Bone",
+    "num": 106,
+    "desc": "No competitive use other than when used with Fling.",
+    "gen": 4
+  },
+  "shinystone": {
+    "id": "shinystone",
+    "name": "Shiny Stone",
+    "num": 107,
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "desc": "Evolves Togetic into Togekiss, Roselia into Roserade, Minccino into Cinccino, and Floette into Florges when used.",
+    "gen": 4
+  },
+  "duskstone": {
+    "id": "duskstone",
+    "name": "Dusk Stone",
+    "num": 108,
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "desc": "Evolves Murkrow into Honchkrow, Misdreavus into Mismagius, Lampent into Chandelure, and Doublade into Aegislash when used.",
+    "gen": 4
+  },
+  "dawnstone": {
+    "id": "dawnstone",
+    "name": "Dawn Stone",
+    "num": 109,
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "desc": "Evolves male Kirlia into Gallade and female Snorunt into Froslass when used.",
+    "gen": 4
+  },
+  "ovalstone": {
+    "id": "ovalstone",
+    "name": "Oval Stone",
+    "num": 110,
+    "desc": "Evolves Happiny into Chansey when held and leveled up during the day.",
+    "gen": 4
+  },
+  "griseousorb": {
+    "id": "griseousorb",
+    "name": "Griseous Orb",
+    "num": 112,
+    "desc": "Can only be held by Giratina. Its Ghost- & Dragon-type attacks have 1.2x power.",
+    "gen": 4
+  },
+  "adamantorb": {
+    "id": "adamantorb",
+    "name": "Adamant Orb",
+    "num": 135,
+    "desc": "If held by a Dialga, its Steel- and Dragon-type attacks have 1.2x power.",
+    "gen": 4
+  },
+  "lustrousorb": {
+    "id": "lustrousorb",
+    "name": "Lustrous Orb",
+    "num": 136,
+    "desc": "If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.",
+    "gen": 4
+  },
+  "occaberry": {
+    "id": "occaberry",
+    "name": "Occa Berry",
+    "num": 184,
+    "desc": "Halves damage taken from a supereffective Fire-type attack. Single use.",
+    "gen": 4
+  },
+  "passhoberry": {
+    "id": "passhoberry",
+    "name": "Passho Berry",
+    "num": 185,
+    "desc": "Halves damage taken from a supereffective Water-type attack. Single use.",
+    "gen": 4
+  },
+  "wacanberry": {
+    "id": "wacanberry",
+    "name": "Wacan Berry",
+    "num": 186,
+    "desc": "Halves damage taken from a supereffective Electric-type attack. Single use.",
+    "gen": 4
+  },
+  "rindoberry": {
+    "id": "rindoberry",
+    "name": "Rindo Berry",
+    "num": 187,
+    "desc": "Halves damage taken from a supereffective Grass-type attack. Single use.",
+    "gen": 4
+  },
+  "yacheberry": {
+    "id": "yacheberry",
+    "name": "Yache Berry",
+    "num": 188,
+    "desc": "Halves damage taken from a supereffective Ice-type attack. Single use.",
+    "gen": 4
+  },
+  "chopleberry": {
+    "id": "chopleberry",
+    "name": "Chople Berry",
+    "num": 189,
+    "desc": "Halves damage taken from a supereffective Fighting-type attack. Single use.",
+    "gen": 4
+  },
+  "kebiaberry": {
+    "id": "kebiaberry",
+    "name": "Kebia Berry",
+    "num": 190,
+    "desc": "Halves damage taken from a supereffective Poison-type attack. Single use.",
+    "gen": 4
+  },
+  "shucaberry": {
+    "id": "shucaberry",
+    "name": "Shuca Berry",
+    "num": 191,
+    "desc": "Halves damage taken from a supereffective Ground-type attack. Single use.",
+    "gen": 4
+  },
+  "cobaberry": {
+    "id": "cobaberry",
+    "name": "Coba Berry",
+    "num": 192,
+    "desc": "Halves damage taken from a supereffective Flying-type attack. Single use.",
+    "gen": 4
+  },
+  "payapaberry": {
+    "id": "payapaberry",
+    "name": "Payapa Berry",
+    "num": 193,
+    "desc": "Halves damage taken from a supereffective Psychic-type attack. Single use.",
+    "gen": 4
+  },
+  "tangaberry": {
+    "id": "tangaberry",
+    "name": "Tanga Berry",
+    "num": 194,
+    "desc": "Halves damage taken from a supereffective Bug-type attack. Single use.",
+    "gen": 4
+  },
+  "chartiberry": {
+    "id": "chartiberry",
+    "name": "Charti Berry",
+    "num": 195,
+    "desc": "Halves damage taken from a supereffective Rock-type attack. Single use.",
+    "gen": 4
+  },
+  "kasibberry": {
+    "id": "kasibberry",
+    "name": "Kasib Berry",
+    "num": 196,
+    "desc": "Halves damage taken from a supereffective Ghost-type attack. Single use.",
+    "gen": 4
+  },
+  "habanberry": {
+    "id": "habanberry",
+    "name": "Haban Berry",
+    "num": 197,
+    "desc": "Halves damage taken from a supereffective Dragon-type attack. Single use.",
+    "gen": 4
+  },
+  "colburberry": {
+    "id": "colburberry",
+    "name": "Colbur Berry",
+    "num": 198,
+    "desc": "Halves damage taken from a supereffective Dark-type attack. Single use.",
+    "gen": 4
+  },
+  "babiriberry": {
+    "id": "babiriberry",
+    "name": "Babiri Berry",
+    "num": 199,
+    "desc": "Halves damage taken from a supereffective Steel-type attack. Single use.",
+    "gen": 4
+  },
+  "chilanberry": {
+    "id": "chilanberry",
+    "name": "Chilan Berry",
+    "num": 200,
+    "desc": "Halves damage taken from a Normal-type attack. Single use.",
+    "gen": 4
+  },
+  "micleberry": {
+    "id": "micleberry",
+    "name": "Micle Berry",
+    "num": 209,
+    "desc": "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use.",
+    "gen": 4
+  },
+  "custapberry": {
+    "id": "custapberry",
+    "name": "Custap Berry",
+    "num": 210,
+    "desc": "Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.",
+    "gen": 4
+  },
+  "jabocaberry": {
+    "id": "jabocaberry",
+    "name": "Jaboca Berry",
+    "num": 211,
+    "desc": "If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.",
+    "gen": 4
+  },
+  "rowapberry": {
+    "id": "rowapberry",
+    "name": "Rowap Berry",
+    "num": 212,
+    "desc": "If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.",
+    "gen": 4
+  },
+  "widelens": {
+    "id": "widelens",
+    "name": "Wide Lens",
+    "num": 265,
+    "desc": "The accuracy of attacks by the holder is 1.1x.",
+    "gen": 4
+  },
+  "muscleband": {
+    "id": "muscleband",
+    "name": "Muscle Band",
+    "num": 266,
+    "desc": "Holder's physical attacks have 1.1x power.",
+    "gen": 4
+  },
+  "wiseglasses": {
+    "id": "wiseglasses",
+    "name": "Wise Glasses",
+    "num": 267,
+    "desc": "Holder's special attacks have 1.1x power.",
+    "gen": 4
+  },
+  "expertbelt": {
+    "id": "expertbelt",
+    "name": "Expert Belt",
+    "num": 268,
+    "desc": "Holder's attacks that are super effective against the target do 1.2x damage.",
+    "gen": 4
+  },
+  "lightclay": {
+    "id": "lightclay",
+    "name": "Light Clay",
+    "num": 269,
+    "desc": "Holder's use of Light Screen or Reflect lasts 8 turns instead of 5.",
+    "gen": 4
+  },
+  "lifeorb": {
+    "id": "lifeorb",
+    "name": "Life Orb",
+    "num": 270,
+    "desc": "Holder's attacks do 1.3x damage, and it loses 1/10 its max HP after the attack.",
+    "gen": 4
+  },
+  "powerherb": {
+    "id": "powerherb",
+    "name": "Power Herb",
+    "num": 271,
+    "desc": "Holder's two-turn moves complete in one turn (except Sky Drop). Single use.",
+    "gen": 4
+  },
+  "toxicorb": {
+    "id": "toxicorb",
+    "name": "Toxic Orb",
+    "num": 272,
+    "desc": "At the end of every turn, this item attempts to badly poison the holder.",
+    "gen": 4
+  },
+  "flameorb": {
+    "id": "flameorb",
+    "name": "Flame Orb",
+    "num": 273,
+    "desc": "At the end of every turn, this item attempts to burn the holder.",
+    "gen": 4
+  },
+  "quickpowder": {
+    "id": "quickpowder",
+    "name": "Quick Powder",
+    "num": 274,
+    "desc": "If held by a Ditto that hasn't Transformed, its Speed is doubled.",
+    "gen": 4
+  },
+  "focussash": {
+    "id": "focussash",
+    "name": "Focus Sash",
+    "num": 275,
+    "desc": "If holder's HP is full, survives all hits of one attack with at least 1 HP. Single use.",
+    "gen": 4
+  },
+  "zoomlens": {
+    "id": "zoomlens",
+    "name": "Zoom Lens",
+    "num": 276,
+    "desc": "The accuracy of attacks by the holder is 1.2x if it moves after its target.",
+    "gen": 4
+  },
+  "metronome": {
+    "id": "metronome",
+    "name": "Metronome",
+    "num": 277,
+    "desc": "Damage of moves used on consecutive turns is increased. Max 2x after 10 turns.",
+    "gen": 4
+  },
+  "ironball": {
+    "id": "ironball",
+    "name": "Iron Ball",
+    "num": 278,
+    "desc": "Holder's Speed is halved and it becomes grounded.",
+    "gen": 4
+  },
+  "laggingtail": {
+    "id": "laggingtail",
+    "name": "Lagging Tail",
+    "num": 279,
+    "desc": "Holder moves last in its priority bracket.",
+    "gen": 4
+  },
+  "destinyknot": {
+    "id": "destinyknot",
+    "name": "Destiny Knot",
+    "num": 280,
+    "desc": "If holder becomes infatuated, the other Pokemon also becomes infatuated.",
+    "gen": 4
+  },
+  "blacksludge": {
+    "id": "blacksludge",
+    "name": "Black Sludge",
+    "num": 281,
+    "desc": "Each turn, if holder is a Poison type, restores 1/16 max HP; loses 1/8 if not.",
+    "gen": 4
+  },
+  "icyrock": {
+    "id": "icyrock",
+    "name": "Icy Rock",
+    "num": 282,
+    "desc": "Holder's use of Hail lasts 8 turns instead of 5.",
+    "gen": 4
+  },
+  "smoothrock": {
+    "id": "smoothrock",
+    "name": "Smooth Rock",
+    "num": 283,
+    "desc": "Holder's use of Sandstorm lasts 8 turns instead of 5.",
+    "gen": 4
+  },
+  "heatrock": {
+    "id": "heatrock",
+    "name": "Heat Rock",
+    "num": 284,
+    "desc": "Holder's use of Sunny Day lasts 8 turns instead of 5.",
+    "gen": 4
+  },
+  "damprock": {
+    "id": "damprock",
+    "name": "Damp Rock",
+    "num": 285,
+    "desc": "Holder's use of Rain Dance lasts 8 turns instead of 5.",
+    "gen": 4
+  },
+  "gripclaw": {
+    "id": "gripclaw",
+    "name": "Grip Claw",
+    "num": 286,
+    "desc": "Holder's partial-trapping moves always last 7 turns.",
+    "gen": 4
+  },
+  "choicescarf": {
+    "id": "choicescarf",
+    "name": "Choice Scarf",
+    "num": 287,
+    "desc": "Holder's Speed is 1.5x, but it can only select the first move it executes.",
+    "gen": 4
+  },
+  "stickybarb": {
+    "id": "stickybarb",
+    "name": "Sticky Barb",
+    "num": 288,
+    "desc": "Each turn, holder loses 1/8 max HP. An attacker making contact can receive it.",
+    "gen": 4
+  },
+  "powerbracer": {
+    "id": "powerbracer",
+    "name": "Power Bracer",
+    "num": 289,
+    "desc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+    "gen": 4
+  },
+  "powerbelt": {
+    "id": "powerbelt",
+    "name": "Power Belt",
+    "num": 290,
+    "desc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+    "gen": 4
+  },
+  "powerlens": {
+    "id": "powerlens",
+    "name": "Power Lens",
+    "num": 291,
+    "desc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+    "gen": 4
+  },
+  "powerband": {
+    "id": "powerband",
+    "name": "Power Band",
+    "num": 292,
+    "desc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+    "gen": 4
+  },
+  "poweranklet": {
+    "id": "poweranklet",
+    "name": "Power Anklet",
+    "num": 293,
+    "desc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+    "gen": 4
+  },
+  "powerweight": {
+    "id": "powerweight",
+    "name": "Power Weight",
+    "num": 294,
+    "desc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+    "gen": 4
+  },
+  "shedshell": {
+    "id": "shedshell",
+    "name": "Shed Shell",
+    "num": 295,
+    "desc": "Holder may switch out even when trapped by another Pokemon, or by Ingrain.",
+    "gen": 4
+  },
+  "bigroot": {
+    "id": "bigroot",
+    "name": "Big Root",
+    "num": 296,
+    "desc": "Holder gains 1.3x HP from draining moves, Aqua Ring, Ingrain, and Leech Seed.",
+    "gen": 4
+  },
+  "choicespecs": {
+    "id": "choicespecs",
+    "name": "Choice Specs",
+    "num": 297,
+    "desc": "Holder's Sp. Atk is 1.5x, but it can only select the first move it executes.",
+    "gen": 4
+  },
+  "flameplate": {
+    "id": "flameplate",
+    "name": "Flame Plate",
+    "num": 298,
+    "desc": "Holder's Fire-type attacks have 1.2x power. Judgment is Fire type.",
+    "gen": 4
+  },
+  "splashplate": {
+    "id": "splashplate",
+    "name": "Splash Plate",
+    "num": 299,
+    "desc": "Holder's Water-type attacks have 1.2x power. Judgment is Water type.",
+    "gen": 4
+  },
+  "zapplate": {
+    "id": "zapplate",
+    "name": "Zap Plate",
+    "num": 300,
+    "desc": "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
+    "gen": 4
+  },
+  "meadowplate": {
+    "id": "meadowplate",
+    "name": "Meadow Plate",
+    "num": 301,
+    "desc": "Holder's Grass-type attacks have 1.2x power. Judgment is Grass type.",
+    "gen": 4
+  },
+  "icicleplate": {
+    "id": "icicleplate",
+    "name": "Icicle Plate",
+    "num": 302,
+    "desc": "Holder's Ice-type attacks have 1.2x power. Judgment is Ice type.",
+    "gen": 4
+  },
+  "fistplate": {
+    "id": "fistplate",
+    "name": "Fist Plate",
+    "num": 303,
+    "desc": "Holder's Fighting-type attacks have 1.2x power. Judgment is Fighting type.",
+    "gen": 4
+  },
+  "toxicplate": {
+    "id": "toxicplate",
+    "name": "Toxic Plate",
+    "num": 304,
+    "desc": "Holder's Poison-type attacks have 1.2x power. Judgment is Poison type.",
+    "gen": 4
+  },
+  "earthplate": {
+    "id": "earthplate",
+    "name": "Earth Plate",
+    "num": 305,
+    "desc": "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type.",
+    "gen": 4
+  },
+  "skyplate": {
+    "id": "skyplate",
+    "name": "Sky Plate",
+    "num": 306,
+    "desc": "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type.",
+    "gen": 4
+  },
+  "mindplate": {
+    "id": "mindplate",
+    "name": "Mind Plate",
+    "num": 307,
+    "desc": "Holder's Psychic-type attacks have 1.2x power. Judgment is Psychic type.",
+    "gen": 4
+  },
+  "insectplate": {
+    "id": "insectplate",
+    "name": "Insect Plate",
+    "num": 308,
+    "desc": "Holder's Bug-type attacks have 1.2x power. Judgment is Bug type.",
+    "gen": 4
+  },
+  "stoneplate": {
+    "id": "stoneplate",
+    "name": "Stone Plate",
+    "num": 309,
+    "desc": "Holder's Rock-type attacks have 1.2x power. Judgment is Rock type.",
+    "gen": 4
+  },
+  "spookyplate": {
+    "id": "spookyplate",
+    "name": "Spooky Plate",
+    "num": 310,
+    "desc": "Holder's Ghost-type attacks have 1.2x power. Judgment is Ghost type.",
+    "gen": 4
+  },
+  "dracoplate": {
+    "id": "dracoplate",
+    "name": "Draco Plate",
+    "num": 311,
+    "desc": "Holder's Dragon-type attacks have 1.2x power. Judgment is Dragon type.",
+    "gen": 4
+  },
+  "dreadplate": {
+    "id": "dreadplate",
+    "name": "Dread Plate",
+    "num": 312,
+    "desc": "Holder's Dark-type attacks have 1.2x power. Judgment is Dark type.",
+    "gen": 4
+  },
+  "ironplate": {
+    "id": "ironplate",
+    "name": "Iron Plate",
+    "num": 313,
+    "desc": "Holder's Steel-type attacks have 1.2x power. Judgment is Steel type.",
+    "gen": 4
+  },
+  "oddincense": {
+    "id": "oddincense",
+    "name": "Odd Incense",
+    "num": 314,
+    "desc": "Holder's Psychic-type attacks have 1.2x power.",
+    "gen": 4
+  },
+  "rockincense": {
+    "id": "rockincense",
+    "name": "Rock Incense",
+    "num": 315,
+    "desc": "Holder's Rock-type attacks have 1.2x power.",
+    "gen": 4
+  },
+  "fullincense": {
+    "id": "fullincense",
+    "name": "Full Incense",
+    "num": 316,
+    "desc": "Holder moves last in its priority bracket.",
+    "gen": 4
+  },
+  "waveincense": {
+    "id": "waveincense",
+    "name": "Wave Incense",
+    "num": 317,
+    "desc": "Holder's Water-type attacks have 1.2x power.",
+    "gen": 4
+  },
+  "roseincense": {
+    "id": "roseincense",
+    "name": "Rose Incense",
+    "num": 318,
+    "desc": "Holder's Grass-type attacks have 1.2x power.",
+    "gen": 4
+  },
+  "protector": {
+    "id": "protector",
+    "name": "Protector",
+    "num": 321,
+    "desc": "Evolves Rhydon into Rhyperior when traded.",
+    "gen": 4
+  },
+  "electirizer": {
+    "id": "electirizer",
+    "name": "Electirizer",
+    "num": 322,
+    "desc": "Evolves Electabuzz into Electivire when traded.",
+    "gen": 4
+  },
+  "magmarizer": {
+    "id": "magmarizer",
+    "name": "Magmarizer",
+    "num": 323,
+    "desc": "Evolves Magmar into Magmortar when traded.",
+    "gen": 4
+  },
+  "dubiousdisc": {
+    "id": "dubiousdisc",
+    "name": "Dubious Disc",
+    "num": 324,
+    "desc": "Evolves Porygon2 into Porygon-Z when traded.",
+    "gen": 4
+  },
+  "reapercloth": {
+    "id": "reapercloth",
+    "name": "Reaper Cloth",
+    "num": 325,
+    "desc": "Evolves Dusclops into Dusknoir when traded.",
+    "gen": 4
+  },
+  "razorclaw": {
+    "id": "razorclaw",
+    "name": "Razor Claw",
+    "num": 326,
+    "shortDesc": "Holder's critical hit ratio is raised by 1 stage.",
+    "desc": "Holder's critical hit ratio is raised by 1 stage. Evolves Sneasel into Weavile when held and leveled up during the night.",
+    "gen": 4
+  },
+  "razorfang": {
+    "id": "razorfang",
+    "name": "Razor Fang",
+    "num": 327,
+    "shortDesc": "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
+    "desc": "Holder's attacks without a chance to flinch gain a 10% chance to flinch. Evolves Gligar into Gliscor when held and leveled up during the night.",
+    "gen": 4
+  },
+  "fastball": {
+    "id": "fastball",
+    "name": "Fast Ball",
+    "num": 492,
+    "desc": "A Poke Ball that makes it easier to catch Pokemon which are quick to run away.",
+    "gen": 4
+  },
+  "levelball": {
+    "id": "levelball",
+    "name": "Level Ball",
+    "num": 493,
+    "desc": "A Poke Ball for catching Pokemon that are a lower level than your own.",
+    "gen": 4
+  },
+  "lureball": {
+    "id": "lureball",
+    "name": "Lure Ball",
+    "num": 494,
+    "desc": "A Poke Ball for catching Pokemon hooked by a Rod when fishing.",
+    "gen": 4
+  },
+  "heavyball": {
+    "id": "heavyball",
+    "name": "Heavy Ball",
+    "num": 495,
+    "desc": "A Poke Ball for catching very heavy Pokemon.",
+    "gen": 4
+  },
+  "loveball": {
+    "id": "loveball",
+    "name": "Love Ball",
+    "num": 496,
+    "desc": "Poke Ball for catching Pokemon that are the opposite gender of your Pokemon.",
+    "gen": 4
+  },
+  "friendball": {
+    "id": "friendball",
+    "name": "Friend Ball",
+    "num": 497,
+    "desc": "A Poke Ball that makes caught Pokemon more friendly.",
+    "gen": 4
+  },
+  "moonball": {
+    "id": "moonball",
+    "name": "Moon Ball",
+    "num": 498,
+    "desc": "A Poke Ball for catching Pokemon that evolve using the Moon Stone.",
+    "gen": 4
+  },
+  "sportball": {
+    "id": "sportball",
+    "name": "Sport Ball",
+    "num": 499,
+    "desc": "A special Poke Ball for the Bug-Catching Contest.",
+    "gen": 4
+  },
+  "parkball": {
+    "id": "parkball",
+    "name": "Park Ball",
+    "num": 500,
+    "desc": "A special Poke Ball for the Pal Park.",
+    "gen": 4
+  }
+}

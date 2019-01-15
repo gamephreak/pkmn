@@ -1,0 +1,437 @@
+{
+  "masterball": {
+    "id": "masterball",
+    "name": "Master Ball",
+    "num": 1,
+    "desc": "The best Ball with the ultimate performance. It will catch any wild Pokemon.",
+    "gen": 2
+  },
+  "ultraball": {
+    "id": "ultraball",
+    "name": "Ultra Ball",
+    "num": 2,
+    "desc": "An ultra-performance Ball that provides a higher catch rate than a Great Ball.",
+    "gen": 2
+  },
+  "brightpowder": {
+    "id": "brightpowder",
+    "name": "Bright Powder",
+    "num": 213,
+    "desc": "An attack against the holder has its accuracy out of 255 lowered by 20.",
+    "gen": 2
+  },
+  "greatball": {
+    "id": "greatball",
+    "name": "Great Ball",
+    "num": 3,
+    "desc": "A high-performance Ball that provides a higher catch rate than a Poke Ball.",
+    "gen": 2
+  },
+  "moonstone": {
+    "id": "moonstone",
+    "name": "Moon Stone",
+    "num": 81,
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "desc": "Evolves Nidorina into Nidoqueen, Nidorino into Nidoking, Clefairy into Clefable, Jigglypuff into Wigglytuff, Skitty into Delcatty, and Munna into Musharna when used.",
+    "gen": 2
+  },
+  "firestone": {
+    "id": "firestone",
+    "name": "Fire Stone",
+    "num": 82,
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "desc": "Evolves Vulpix into Ninetales, Growlithe into Arcanine, Eevee into Flareon, and Pansear into Simisear when used.",
+    "gen": 2
+  },
+  "thunderstone": {
+    "id": "thunderstone",
+    "name": "Thunder Stone",
+    "num": 83,
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "desc": "Evolves Pikachu into Raichu or Alolan Raichu, Eevee into Jolteon, and Eelektrik into Eelektross when used.",
+    "gen": 2
+  },
+  "waterstone": {
+    "id": "waterstone",
+    "name": "Water Stone",
+    "num": 84,
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "desc": "Evolves Poliwhirl into Poliwrath, Shellder into Cloyster, Staryu into Starmie, Eevee into Vaporeon, Lombre into Ludicolo, and Panpour into Simipour when used.",
+    "gen": 2
+  },
+  "luckypunch": {
+    "id": "luckypunch",
+    "name": "Lucky Punch",
+    "num": 256,
+    "desc": "If held by a Chansey, its critical hit ratio is always at stage 2. (25% crit rate)",
+    "gen": 2
+  },
+  "leafstone": {
+    "id": "leafstone",
+    "name": "Leaf Stone",
+    "num": 85,
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "desc": "Evolves Gloom into Vileplume, Weepinbell into Victreebel, Exeggcute into Exeggutor or Alolan Exeggutor, Nuzleaf into Shiftry, and Pansage into Simisage when used.",
+    "gen": 2
+  },
+  "metalpowder": {
+    "id": "metalpowder",
+    "name": "Metal Powder",
+    "num": 257,
+    "desc": "If held by a Ditto, its Defense and Sp. Def are 1.5x, even while Transformed.",
+    "gen": 2
+  },
+  "quickclaw": {
+    "id": "quickclaw",
+    "name": "Quick Claw",
+    "num": 217,
+    "desc": "Each turn, holder has a ~23.4% chance to move first in its priority bracket.",
+    "gen": 2
+  },
+  "psncureberry": {
+    "id": "psncureberry",
+    "name": "PSN Cure Berry",
+    "num": 151,
+    "desc": "(Gen 2) Holder is cured if it is poisoned. Single use.",
+    "gen": 2
+  },
+  "softsand": {
+    "id": "softsand",
+    "name": "Soft Sand",
+    "num": 237,
+    "desc": "Holder's Ground-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "sharpbeak": {
+    "id": "sharpbeak",
+    "name": "Sharp Beak",
+    "num": 244,
+    "desc": "Holder's Flying-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "przcureberry": {
+    "id": "przcureberry",
+    "name": "PRZ Cure Berry",
+    "num": 149,
+    "desc": "(Gen 2) Holder cures itself if it is paralyzed. Single use.",
+    "gen": 2
+  },
+  "burntberry": {
+    "id": "burntberry",
+    "name": "Burnt Berry",
+    "num": 153,
+    "desc": "(Gen 2) Holder is cured if it is frozen. Single use.",
+    "gen": 2
+  },
+  "iceberry": {
+    "id": "iceberry",
+    "name": "Ice Berry",
+    "num": 152,
+    "desc": "(Gen 2) Holder is cured if it is burned. Single use.",
+    "gen": 2
+  },
+  "poisonbarb": {
+    "id": "poisonbarb",
+    "name": "Poison Barb",
+    "num": 245,
+    "desc": "Holder's Poison-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "kingsrock": {
+    "id": "kingsrock",
+    "name": "King's Rock",
+    "num": 221,
+    "shortDesc": "Holder's attacks without a chance to flinch gain a 10% chance to flinch.",
+    "desc": "Holder's attacks without a chance to flinch gain a 10% chance to flinch. Evolves Poliwhirl into Politoed and Slowpoke into Slowking when traded.",
+    "gen": 2
+  },
+  "bitterberry": {
+    "id": "bitterberry",
+    "name": "Bitter Berry",
+    "num": 156,
+    "desc": "(Gen 2) Holder is cured if it is confused. Single use.",
+    "gen": 2
+  },
+  "mintberry": {
+    "id": "mintberry",
+    "name": "Mint Berry",
+    "num": 150,
+    "desc": "(Gen 2) Holder wakes up if it is asleep. Single use.",
+    "gen": 2
+  },
+  "silverpowder": {
+    "id": "silverpowder",
+    "name": "SilverPowder",
+    "num": 222,
+    "desc": "Holder's Bug-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "mysticwater": {
+    "id": "mysticwater",
+    "name": "Mystic Water",
+    "num": 243,
+    "desc": "Holder's Water-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "twistedspoon": {
+    "id": "twistedspoon",
+    "name": "Twisted Spoon",
+    "num": 248,
+    "desc": "Holder's Psychic-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "blackbelt": {
+    "id": "blackbelt",
+    "name": "Black Belt",
+    "num": 241,
+    "desc": "Holder's Fighting-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "blackglasses": {
+    "id": "blackglasses",
+    "name": "Black Glasses",
+    "num": 240,
+    "desc": "Holder's Dark-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "pinkbow": {
+    "id": "pinkbow",
+    "name": "Pink Bow",
+    "num": 251,
+    "desc": "(Gen 2) Holder's Normal-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "stick": {
+    "id": "stick",
+    "name": "Stick",
+    "num": 259,
+    "desc": "If held by a Farfetch'd, its critical hit ratio is always at stage 2. (25% crit rate)",
+    "gen": 2
+  },
+  "nevermeltice": {
+    "id": "nevermeltice",
+    "name": "Never-Melt Ice",
+    "num": 246,
+    "desc": "Holder's Ice-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "magnet": {
+    "id": "magnet",
+    "name": "Magnet",
+    "num": 242,
+    "desc": "Holder's Electric-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "miracleberry": {
+    "id": "miracleberry",
+    "name": "Miracle Berry",
+    "num": 157,
+    "desc": "(Gen 2) Holder cures itself if it is confused or has a status condition. Single use.",
+    "gen": 2
+  },
+  "spelltag": {
+    "id": "spelltag",
+    "name": "Spell Tag",
+    "num": 247,
+    "desc": "Holder's Ghost-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "miracleseed": {
+    "id": "miracleseed",
+    "name": "Miracle Seed",
+    "num": 239,
+    "desc": "Holder's Grass-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "thickclub": {
+    "id": "thickclub",
+    "name": "Thick Club",
+    "num": 258,
+    "desc": "If held by a Cubone or a Marowak, its Attack is doubled.",
+    "gen": 2
+  },
+  "focusband": {
+    "id": "focusband",
+    "name": "Focus Band",
+    "num": 230,
+    "desc": "Holder has a ~11.7% chance to survive an attack that would KO it with 1 HP.",
+    "gen": 2
+  },
+  "energypowder": {
+    "id": "energypowder",
+    "name": "Energy Powder",
+    "num": 34,
+    "desc": "Restores 50 HP to one Pokemon but lowers Happiness.",
+    "gen": 2
+  },
+  "hardstone": {
+    "id": "hardstone",
+    "name": "Hard Stone",
+    "num": 238,
+    "desc": "Holder's Rock-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "charcoal": {
+    "id": "charcoal",
+    "name": "Charcoal",
+    "num": 249,
+    "desc": "Holder's Fire-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "berryjuice": {
+    "id": "berryjuice",
+    "name": "Berry Juice",
+    "num": 43,
+    "desc": "Restores 20 HP when at 1/2 max HP or less. Single use.",
+    "gen": 2
+  },
+  "scopelens": {
+    "id": "scopelens",
+    "name": "Scope Lens",
+    "num": 232,
+    "desc": "Holder's critical hit ratio is raised by 1 stage.",
+    "gen": 2
+  },
+  "metalcoat": {
+    "id": "metalcoat",
+    "name": "Metal Coat",
+    "num": 233,
+    "shortDesc": "Holder's Steel-type attacks have 1.2x power.",
+    "desc": "Holder's Steel-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "dragonfang": {
+    "id": "dragonfang",
+    "name": "Dragon Fang",
+    "num": 250,
+    "desc": "No competitive use.",
+    "gen": 2
+  },
+  "leftovers": {
+    "id": "leftovers",
+    "name": "Leftovers",
+    "num": 234,
+    "desc": "At the end of every turn, holder restores 1/16 of its max HP.",
+    "gen": 2
+  },
+  "mysteryberry": {
+    "id": "mysteryberry",
+    "name": "Mystery Berry",
+    "num": 154,
+    "desc": "(Gen 2) Restores 5 PP to the first of the holder's moves to reach 0 PP. Single use.",
+    "gen": 2
+  },
+  "dragonscale": {
+    "id": "dragonscale",
+    "name": "Dragon Scale",
+    "num": 250,
+    "desc": "Holder's Dragon-type attacks have 1.1x power. Evolves Seadra (trade).",
+    "gen": 2
+  },
+  "berserkgene": {
+    "id": "berserkgene",
+    "name": "Berserk Gene",
+    "num": 0,
+    "desc": "(Gen 2) On switch-in, raises holder's Attack by 2 and confuses it. Single use.",
+    "gen": 2
+  },
+  "heavyball": {
+    "id": "heavyball",
+    "name": "Heavy Ball",
+    "num": 495,
+    "desc": "A Poke Ball for catching very heavy Pokemon.",
+    "gen": 2
+  },
+  "levelball": {
+    "id": "levelball",
+    "name": "Level Ball",
+    "num": 493,
+    "desc": "A Poke Ball for catching Pokemon that are a lower level than your own.",
+    "gen": 2
+  },
+  "lureball": {
+    "id": "lureball",
+    "name": "Lure Ball",
+    "num": 494,
+    "desc": "A Poke Ball for catching Pokemon hooked by a Rod when fishing.",
+    "gen": 2
+  },
+  "fastball": {
+    "id": "fastball",
+    "name": "Fast Ball",
+    "num": 492,
+    "desc": "A Poke Ball that makes it easier to catch Pokemon which are quick to run away.",
+    "gen": 2
+  },
+  "lightball": {
+    "id": "lightball",
+    "name": "Light Ball",
+    "num": 236,
+    "desc": "If held by a Pikachu, its Special Attack is doubled.",
+    "gen": 2
+  },
+  "friendball": {
+    "id": "friendball",
+    "name": "Friend Ball",
+    "num": 497,
+    "desc": "A Poke Ball that makes caught Pokemon more friendly.",
+    "gen": 2
+  },
+  "moonball": {
+    "id": "moonball",
+    "name": "Moon Ball",
+    "num": 498,
+    "desc": "A Poke Ball for catching Pokemon that evolve using the Moon Stone.",
+    "gen": 2
+  },
+  "loveball": {
+    "id": "loveball",
+    "name": "Love Ball",
+    "num": 496,
+    "desc": "Poke Ball for catching Pokemon that are the opposite gender of your Pokemon.",
+    "gen": 2
+  },
+  "sunstone": {
+    "id": "sunstone",
+    "name": "Sun Stone",
+    "num": 80,
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "desc": "Evolves Gloom into Bellossom, Sunkern into Sunflora, Cottonee into Whimsicott, Petilil into Lilligant, and Helioptile into Heliolisk when used.",
+    "gen": 2
+  },
+  "polkadotbow": {
+    "id": "polkadotbow",
+    "name": "Polkadot Bow",
+    "num": 251,
+    "desc": "(Gen 2) Holder's Normal-type attacks have 1.1x power.",
+    "gen": 2
+  },
+  "upgrade": {
+    "id": "upgrade",
+    "name": "Up-Grade",
+    "num": 252,
+    "desc": "Evolves Porygon into Porygon2 when traded.",
+    "gen": 2
+  },
+  "berry": {
+    "id": "berry",
+    "name": "Berry",
+    "num": 155,
+    "desc": "(Gen 2) Restores 10 HP when at 1/2 max HP or less. Single use.",
+    "gen": 2
+  },
+  "goldberry": {
+    "id": "goldberry",
+    "name": "Gold Berry",
+    "num": 158,
+    "desc": "(Gen 2) Restores 30 HP when at 1/2 max HP or less. Single use.",
+    "gen": 2
+  },
+  "parkball": {
+    "id": "parkball",
+    "name": "Park Ball",
+    "num": 500,
+    "desc": "A special Poke Ball for the Pal Park.",
+    "gen": 2
+  }
+}

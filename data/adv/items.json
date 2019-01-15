@@ -1,0 +1,487 @@
+{
+  "safariball": {
+    "id": "safariball",
+    "name": "Safari Ball",
+    "num": 5,
+    "desc": "A special Poke Ball that is used only in the Safari Zone and Great Marsh.",
+    "gen": 3
+  },
+  "netball": {
+    "id": "netball",
+    "name": "Net Ball",
+    "num": 6,
+    "desc": "A Poke Ball that works especially well on Water- and Bug-type Pokemon.",
+    "gen": 3
+  },
+  "diveball": {
+    "id": "diveball",
+    "name": "Dive Ball",
+    "num": 7,
+    "desc": "A Poke Ball that works especially well on Pokemon that live underwater.",
+    "gen": 3
+  },
+  "nestball": {
+    "id": "nestball",
+    "name": "Nest Ball",
+    "num": 8,
+    "desc": "A Poke Ball that works especially well on weaker Pokemon in the wild.",
+    "gen": 3
+  },
+  "repeatball": {
+    "id": "repeatball",
+    "name": "Repeat Ball",
+    "num": 9,
+    "desc": "A Poke Ball that works well on Pokemon species that were previously caught.",
+    "gen": 3
+  },
+  "timerball": {
+    "id": "timerball",
+    "name": "Timer Ball",
+    "num": 10,
+    "desc": "A Poke Ball that becomes better the more turns there are in a battle.",
+    "gen": 3
+  },
+  "luxuryball": {
+    "id": "luxuryball",
+    "name": "Luxury Ball",
+    "num": 11,
+    "desc": "A comfortable Poke Ball that makes a caught wild Pokemon quickly grow friendly.",
+    "gen": 3
+  },
+  "premierball": {
+    "id": "premierball",
+    "name": "Premier Ball",
+    "num": 12,
+    "desc": "A rare Poke Ball that has been crafted to commemorate an event.",
+    "gen": 3
+  },
+  "cheriberry": {
+    "id": "cheriberry",
+    "name": "Cheri Berry",
+    "num": 149,
+    "desc": "Holder cures itself if it is paralyzed. Single use.",
+    "gen": 3
+  },
+  "chestoberry": {
+    "id": "chestoberry",
+    "name": "Chesto Berry",
+    "num": 150,
+    "desc": "Holder wakes up if it is asleep. Single use.",
+    "gen": 3
+  },
+  "pechaberry": {
+    "id": "pechaberry",
+    "name": "Pecha Berry",
+    "num": 151,
+    "desc": "Holder is cured if it is poisoned. Single use.",
+    "gen": 3
+  },
+  "rawstberry": {
+    "id": "rawstberry",
+    "name": "Rawst Berry",
+    "num": 152,
+    "desc": "Holder is cured if it is burned. Single use.",
+    "gen": 3
+  },
+  "aspearberry": {
+    "id": "aspearberry",
+    "name": "Aspear Berry",
+    "num": 153,
+    "desc": "Holder is cured if it is frozen. Single use.",
+    "gen": 3
+  },
+  "leppaberry": {
+    "id": "leppaberry",
+    "name": "Leppa Berry",
+    "num": 154,
+    "desc": "Restores 10 PP to the first of the holder's moves to reach 0 PP. Single use.",
+    "gen": 3
+  },
+  "oranberry": {
+    "id": "oranberry",
+    "name": "Oran Berry",
+    "num": 155,
+    "desc": "Restores 10 HP when at 1/2 max HP or less. Single use.",
+    "gen": 3
+  },
+  "persimberry": {
+    "id": "persimberry",
+    "name": "Persim Berry",
+    "num": 156,
+    "desc": "Holder is cured if it is confused. Single use.",
+    "gen": 3
+  },
+  "lumberry": {
+    "id": "lumberry",
+    "name": "Lum Berry",
+    "num": 157,
+    "desc": "Holder cures itself if it is confused or has a major status condition. Single use.",
+    "gen": 3
+  },
+  "sitrusberry": {
+    "id": "sitrusberry",
+    "name": "Sitrus Berry",
+    "num": 158,
+    "desc": "Restores 30 HP when at 1/2 max HP or less. Single use.",
+    "gen": 3
+  },
+  "figyberry": {
+    "id": "figyberry",
+    "name": "Figy Berry",
+    "num": 159,
+    "desc": "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Atk Nature. Single use.",
+    "gen": 3
+  },
+  "wikiberry": {
+    "id": "wikiberry",
+    "name": "Wiki Berry",
+    "num": 160,
+    "desc": "Restores 1/8 max HP at 1/2 max HP or less; confuses if -SpA Nature. Single use.",
+    "gen": 3
+  },
+  "magoberry": {
+    "id": "magoberry",
+    "name": "Mago Berry",
+    "num": 161,
+    "desc": "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Spe Nature. Single use.",
+    "gen": 3
+  },
+  "aguavberry": {
+    "id": "aguavberry",
+    "name": "Aguav Berry",
+    "num": 162,
+    "desc": "Restores 1/8 max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
+    "gen": 3
+  },
+  "iapapaberry": {
+    "id": "iapapaberry",
+    "name": "Iapapa Berry",
+    "num": 163,
+    "desc": "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Def Nature. Single use.",
+    "gen": 3
+  },
+  "razzberry": {
+    "id": "razzberry",
+    "name": "Razz Berry",
+    "num": 164,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "blukberry": {
+    "id": "blukberry",
+    "name": "Bluk Berry",
+    "num": 165,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "nanabberry": {
+    "id": "nanabberry",
+    "name": "Nanab Berry",
+    "num": 166,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "wepearberry": {
+    "id": "wepearberry",
+    "name": "Wepear Berry",
+    "num": 167,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "pinapberry": {
+    "id": "pinapberry",
+    "name": "Pinap Berry",
+    "num": 168,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "pomegberry": {
+    "id": "pomegberry",
+    "name": "Pomeg Berry",
+    "num": 169,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "kelpsyberry": {
+    "id": "kelpsyberry",
+    "name": "Kelpsy Berry",
+    "num": 170,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "qualotberry": {
+    "id": "qualotberry",
+    "name": "Qualot Berry",
+    "num": 171,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "hondewberry": {
+    "id": "hondewberry",
+    "name": "Hondew Berry",
+    "num": 172,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "grepaberry": {
+    "id": "grepaberry",
+    "name": "Grepa Berry",
+    "num": 173,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "tamatoberry": {
+    "id": "tamatoberry",
+    "name": "Tamato Berry",
+    "num": 174,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "cornnberry": {
+    "id": "cornnberry",
+    "name": "Cornn Berry",
+    "num": 175,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "magostberry": {
+    "id": "magostberry",
+    "name": "Magost Berry",
+    "num": 176,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "rabutaberry": {
+    "id": "rabutaberry",
+    "name": "Rabuta Berry",
+    "num": 177,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "nomelberry": {
+    "id": "nomelberry",
+    "name": "Nomel Berry",
+    "num": 178,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "spelonberry": {
+    "id": "spelonberry",
+    "name": "Spelon Berry",
+    "num": 179,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "pamtreberry": {
+    "id": "pamtreberry",
+    "name": "Pamtre Berry",
+    "num": 180,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "watmelberry": {
+    "id": "watmelberry",
+    "name": "Watmel Berry",
+    "num": 181,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "durinberry": {
+    "id": "durinberry",
+    "name": "Durin Berry",
+    "num": 182,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "belueberry": {
+    "id": "belueberry",
+    "name": "Belue Berry",
+    "num": 183,
+    "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "gen": 3
+  },
+  "liechiberry": {
+    "id": "liechiberry",
+    "name": "Liechi Berry",
+    "num": 201,
+    "desc": "Raises holder's Attack by 1 stage when at 1/4 max HP or less. Single use.",
+    "gen": 3
+  },
+  "ganlonberry": {
+    "id": "ganlonberry",
+    "name": "Ganlon Berry",
+    "num": 202,
+    "desc": "Raises holder's Defense by 1 stage when at 1/4 max HP or less. Single use.",
+    "gen": 3
+  },
+  "salacberry": {
+    "id": "salacberry",
+    "name": "Salac Berry",
+    "num": 203,
+    "desc": "Raises holder's Speed by 1 stage when at 1/4 max HP or less. Single use.",
+    "gen": 3
+  },
+  "petayaberry": {
+    "id": "petayaberry",
+    "name": "Petaya Berry",
+    "num": 204,
+    "desc": "Raises holder's Sp. Atk by 1 stage when at 1/4 max HP or less. Single use.",
+    "gen": 3
+  },
+  "apicotberry": {
+    "id": "apicotberry",
+    "name": "Apicot Berry",
+    "num": 205,
+    "desc": "Raises holder's Sp. Def by 1 stage when at 1/4 max HP or less. Single use.",
+    "gen": 3
+  },
+  "lansatberry": {
+    "id": "lansatberry",
+    "name": "Lansat Berry",
+    "num": 206,
+    "desc": "Holder gains the Focus Energy effect when at 1/4 max HP or less. Single use.",
+    "gen": 3
+  },
+  "starfberry": {
+    "id": "starfberry",
+    "name": "Starf Berry",
+    "num": 207,
+    "desc": "Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.",
+    "gen": 3
+  },
+  "enigmaberry": {
+    "id": "enigmaberry",
+    "name": "Enigma Berry",
+    "num": 208,
+    "desc": "No competitive use.",
+    "gen": 3
+  },
+  "whiteherb": {
+    "id": "whiteherb",
+    "name": "White Herb",
+    "num": 214,
+    "desc": "Restores all lowered stat stages to 0 when one is less than 0. Single use.",
+    "gen": 3
+  },
+  "machobrace": {
+    "id": "machobrace",
+    "name": "Macho Brace",
+    "num": 215,
+    "desc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
+    "gen": 3
+  },
+  "mentalherb": {
+    "id": "mentalherb",
+    "name": "Mental Herb",
+    "num": 219,
+    "desc": "Holder is cured if it is infatuated. Single use.",
+    "gen": 3
+  },
+  "choiceband": {
+    "id": "choiceband",
+    "name": "Choice Band",
+    "num": 220,
+    "desc": "Holder's Attack is 1.5x, but it can only select the first move it executes.",
+    "gen": 3
+  },
+  "souldew": {
+    "id": "souldew",
+    "name": "Soul Dew",
+    "num": 225,
+    "desc": "If held by a Latias or a Latios, its Sp. Atk and Sp. Def are 1.5x.",
+    "gen": 3
+  },
+  "deepseatooth": {
+    "id": "deepseatooth",
+    "name": "Deep Sea Tooth",
+    "num": 226,
+    "shortDesc": "If held by a Clamperl, its Sp. Atk is doubled.",
+    "desc": "If held by a Clamperl, its Sp. Atk is doubled. Evolves Clamperl into Huntail when traded.",
+    "gen": 3
+  },
+  "deepseascale": {
+    "id": "deepseascale",
+    "name": "Deep Sea Scale",
+    "num": 227,
+    "shortDesc": "If held by a Clamperl, its Sp. Def is doubled.",
+    "desc": "If held by a Clamperl, its Sp. Def is doubled. Evolves Clamperl into Gorebyss when traded.",
+    "gen": 3
+  },
+  "silkscarf": {
+    "id": "silkscarf",
+    "name": "Silk Scarf",
+    "num": 251,
+    "desc": "Holder's Normal-type attacks have 1.1x power.",
+    "gen": 3
+  },
+  "shellbell": {
+    "id": "shellbell",
+    "name": "Shell Bell",
+    "num": 253,
+    "desc": "After an attack, holder gains 1/8 of the damage in HP dealt to other Pokemon.",
+    "gen": 3
+  },
+  "seaincense": {
+    "id": "seaincense",
+    "name": "Sea Incense",
+    "num": 254,
+    "desc": "Holder's Water-type attacks have 1.05x power.",
+    "gen": 3
+  },
+  "laxincense": {
+    "id": "laxincense",
+    "name": "Lax Incense",
+    "num": 255,
+    "desc": "The accuracy of attacks against the holder is 0.95x.",
+    "gen": 3
+  },
+  "redorb": {
+    "id": "redorb",
+    "name": "Red Orb",
+    "num": 534,
+    "desc": "If held by a Groudon, this item triggers its Primal Reversion in battle.",
+    "gen": 3
+  },
+  "blueorb": {
+    "id": "blueorb",
+    "name": "Blue Orb",
+    "num": 535,
+    "desc": "If held by a Kyogre, this item triggers its Primal Reversion in battle.",
+    "gen": 3
+  },
+  "rootfossil": {
+    "id": "rootfossil",
+    "name": "Root Fossil",
+    "num": 99,
+    "desc": "Can be revived into Lileep.",
+    "gen": 3
+  },
+  "clawfossil": {
+    "id": "clawfossil",
+    "name": "Claw Fossil",
+    "num": 100,
+    "desc": "Can be revived into Anorith.",
+    "gen": 3
+  },
+  "oldamber": {
+    "id": "oldamber",
+    "name": "Old Amber",
+    "num": 103,
+    "desc": "Can be revived into Aerodactyl.",
+    "gen": 3
+  },
+  "helixfossil": {
+    "id": "helixfossil",
+    "name": "Helix Fossil",
+    "num": 101,
+    "desc": "Can be revived into Omanyte.",
+    "gen": 3
+  },
+  "domefossil": {
+    "id": "domefossil",
+    "name": "Dome Fossil",
+    "num": 102,
+    "desc": "Can be revived into Kabuto.",
+    "gen": 3
+  }
+}

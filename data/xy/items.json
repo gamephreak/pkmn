@@ -1,0 +1,430 @@
+{
+  "normaliumz": {
+    "id": "normaliumz",
+    "name": "Normalium Z",
+    "num": 776,
+    "desc": "If holder has a Normal move, this item allows it to use a Normal Z-Move.",
+    "gen": 7
+  },
+  "firiumz": {
+    "id": "firiumz",
+    "name": "Firium Z",
+    "num": 777,
+    "desc": "If holder has a Fire move, this item allows it to use a Fire Z-Move.",
+    "gen": 7
+  },
+  "wateriumz": {
+    "id": "wateriumz",
+    "name": "Waterium Z",
+    "num": 778,
+    "desc": "If holder has a Water move, this item allows it to use a Water Z-Move.",
+    "gen": 7
+  },
+  "electriumz": {
+    "id": "electriumz",
+    "name": "Electrium Z",
+    "num": 779,
+    "desc": "If holder has an Electric move, this item allows it to use an Electric Z-Move.",
+    "gen": 7
+  },
+  "grassiumz": {
+    "id": "grassiumz",
+    "name": "Grassium Z",
+    "num": 780,
+    "desc": "If holder has a Grass move, this item allows it to use a Grass Z-Move.",
+    "gen": 7
+  },
+  "iciumz": {
+    "id": "iciumz",
+    "name": "Icium Z",
+    "num": 781,
+    "desc": "If holder has an Ice move, this item allows it to use an Ice Z-Move.",
+    "gen": 7
+  },
+  "fightiniumz": {
+    "id": "fightiniumz",
+    "name": "Fightinium Z",
+    "num": 782,
+    "desc": "If holder has a Fighting move, this item allows it to use a Fighting Z-Move.",
+    "gen": 7
+  },
+  "poisoniumz": {
+    "id": "poisoniumz",
+    "name": "Poisonium Z",
+    "num": 783,
+    "desc": "If holder has a Poison move, this item allows it to use a Poison Z-Move.",
+    "gen": 7
+  },
+  "groundiumz": {
+    "id": "groundiumz",
+    "name": "Groundium Z",
+    "num": 784,
+    "desc": "If holder has a Ground move, this item allows it to use a Ground Z-Move.",
+    "gen": 7
+  },
+  "flyiniumz": {
+    "id": "flyiniumz",
+    "name": "Flyinium Z",
+    "num": 785,
+    "desc": "If holder has a Flying move, this item allows it to use a Flying Z-Move.",
+    "gen": 7
+  },
+  "psychiumz": {
+    "id": "psychiumz",
+    "name": "Psychium Z",
+    "num": 786,
+    "desc": "If holder has a Psychic move, this item allows it to use a Psychic Z-Move.",
+    "gen": 7
+  },
+  "buginiumz": {
+    "id": "buginiumz",
+    "name": "Buginium Z",
+    "num": 787,
+    "desc": "If holder has a Bug move, this item allows it to use a Bug Z-Move.",
+    "gen": 7
+  },
+  "rockiumz": {
+    "id": "rockiumz",
+    "name": "Rockium Z",
+    "num": 788,
+    "desc": "If holder has a Rock move, this item allows it to use a Rock Z-Move.",
+    "gen": 7
+  },
+  "ghostiumz": {
+    "id": "ghostiumz",
+    "name": "Ghostium Z",
+    "num": 789,
+    "desc": "If holder has a Ghost move, this item allows it to use a Ghost Z-Move.",
+    "gen": 7
+  },
+  "dragoniumz": {
+    "id": "dragoniumz",
+    "name": "Dragonium Z",
+    "num": 790,
+    "desc": "If holder has a Dragon move, this item allows it to use a Dragon Z-Move.",
+    "gen": 7
+  },
+  "darkiniumz": {
+    "id": "darkiniumz",
+    "name": "Darkinium Z",
+    "num": 791,
+    "desc": "If holder has a Dark move, this item allows it to use a Dark Z-Move.",
+    "gen": 7
+  },
+  "steeliumz": {
+    "id": "steeliumz",
+    "name": "Steelium Z",
+    "num": 792,
+    "desc": "If holder has a Steel move, this item allows it to use a Steel Z-Move.",
+    "gen": 7
+  },
+  "fairiumz": {
+    "id": "fairiumz",
+    "name": "Fairium Z",
+    "num": 793,
+    "desc": "If holder has a Fairy move, this item allows it to use a Fairy Z-Move.",
+    "gen": 7
+  },
+  "pikaniumz": {
+    "id": "pikaniumz",
+    "name": "Pikanium Z",
+    "num": 794,
+    "desc": "If held by a Pikachu with Volt Tackle, it can use Catastropika.",
+    "gen": 7
+  },
+  "decidiumz": {
+    "id": "decidiumz",
+    "name": "Decidium Z",
+    "num": 798,
+    "desc": "If held by a Decidueye with Spirit Shackle, it can use Sinister Arrow Raid.",
+    "gen": 7
+  },
+  "inciniumz": {
+    "id": "inciniumz",
+    "name": "Incinium Z",
+    "num": 799,
+    "desc": "If held by an Incineroar with Darkest Lariat, it can use Malicious Moonsault.",
+    "gen": 7
+  },
+  "primariumz": {
+    "id": "primariumz",
+    "name": "Primarium Z",
+    "num": 800,
+    "desc": "If held by a Primarina with Sparkling Aria, it can use Oceanic Operetta.",
+    "gen": 7
+  },
+  "tapuniumz": {
+    "id": "tapuniumz",
+    "name": "Tapunium Z",
+    "num": 801,
+    "desc": "If held by a Tapu with Nature's Madness, it can use Guardian of Alola.",
+    "gen": 7
+  },
+  "marshadiumz": {
+    "id": "marshadiumz",
+    "name": "Marshadium Z",
+    "num": 802,
+    "desc": "If held by Marshadow with Spectral Thief, it can use Soul-Stealing 7-Star Strike.",
+    "gen": 7
+  },
+  "aloraichiumz": {
+    "id": "aloraichiumz",
+    "name": "Aloraichium Z",
+    "num": 803,
+    "desc": "If held by an Alolan Raichu with Thunderbolt, it can use Stoked Sparksurfer.",
+    "gen": 7
+  },
+  "snorliumz": {
+    "id": "snorliumz",
+    "name": "Snorlium Z",
+    "num": 804,
+    "desc": "If held by a Snorlax with Giga Impact, it can use Pulverizing Pancake.",
+    "gen": 7
+  },
+  "eeviumz": {
+    "id": "eeviumz",
+    "name": "Eevium Z",
+    "num": 805,
+    "desc": "If held by an Eevee with Last Resort, it can use Extreme Evoboost.",
+    "gen": 7
+  },
+  "mewniumz": {
+    "id": "mewniumz",
+    "name": "Mewnium Z",
+    "num": 806,
+    "desc": "If held by a Mew with Psychic, it can use Genesis Supernova.",
+    "gen": 7
+  },
+  "pikashuniumz": {
+    "id": "pikashuniumz",
+    "name": "Pikashunium Z",
+    "num": 836,
+    "desc": "If held by cap Pikachu with Thunderbolt, it can use 10,000,000 Volt Thunderbolt.",
+    "gen": 7
+  },
+  "adrenalineorb": {
+    "id": "adrenalineorb",
+    "name": "Adrenaline Orb",
+    "num": 846,
+    "desc": "Raises holder's Speed by 1 stage if it gets affected by Intimidate. Single use.",
+    "gen": 7
+  },
+  "icestone": {
+    "id": "icestone",
+    "name": "Ice Stone",
+    "num": 849,
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "desc": "Evolves Alolan Sandshrew into Alolan Sandslash and Alolan Vulpix into Alolan Ninetales when used.",
+    "gen": 7
+  },
+  "beastball": {
+    "id": "beastball",
+    "name": "Beast Ball",
+    "num": 851,
+    "desc": "A special Poke Ball designed to catch Ultra Beasts.",
+    "gen": 7
+  },
+  "terrainextender": {
+    "id": "terrainextender",
+    "name": "Terrain Extender",
+    "num": 879,
+    "desc": "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5.",
+    "gen": 7
+  },
+  "protectivepads": {
+    "id": "protectivepads",
+    "name": "Protective Pads",
+    "num": 880,
+    "desc": "Holder's moves are protected from adverse contact effects, except Pickpocket.",
+    "gen": 7
+  },
+  "electricseed": {
+    "id": "electricseed",
+    "name": "Electric Seed",
+    "num": 881,
+    "desc": "If the terrain is Electric Terrain, raises holder's Defense by 1 stage. Single use.",
+    "gen": 7
+  },
+  "psychicseed": {
+    "id": "psychicseed",
+    "name": "Psychic Seed",
+    "num": 882,
+    "desc": "If the terrain is Psychic Terrain, raises holder's Sp. Def by 1 stage. Single use.",
+    "gen": 7
+  },
+  "mistyseed": {
+    "id": "mistyseed",
+    "name": "Misty Seed",
+    "num": 883,
+    "desc": "If the terrain is Misty Terrain, raises holder's Sp. Def by 1 stage. Single use.",
+    "gen": 7
+  },
+  "grassyseed": {
+    "id": "grassyseed",
+    "name": "Grassy Seed",
+    "num": 884,
+    "desc": "If the terrain is Grassy Terrain, raises holder's Defense by 1 stage. Single use.",
+    "gen": 7
+  },
+  "fightingmemory": {
+    "id": "fightingmemory",
+    "name": "Fighting Memory",
+    "num": 904,
+    "desc": "Holder's Multi-Attack is Fighting type.",
+    "gen": 7
+  },
+  "flyingmemory": {
+    "id": "flyingmemory",
+    "name": "Flying Memory",
+    "num": 905,
+    "desc": "Holder's Multi-Attack is Flying type.",
+    "gen": 7
+  },
+  "poisonmemory": {
+    "id": "poisonmemory",
+    "name": "Poison Memory",
+    "num": 906,
+    "desc": "Holder's Multi-Attack is Poison type.",
+    "gen": 7
+  },
+  "groundmemory": {
+    "id": "groundmemory",
+    "name": "Ground Memory",
+    "num": 907,
+    "desc": "Holder's Multi-Attack is Ground type.",
+    "gen": 7
+  },
+  "rockmemory": {
+    "id": "rockmemory",
+    "name": "Rock Memory",
+    "num": 908,
+    "desc": "Holder's Multi-Attack is Rock type.",
+    "gen": 7
+  },
+  "bugmemory": {
+    "id": "bugmemory",
+    "name": "Bug Memory",
+    "num": 909,
+    "desc": "Holder's Multi-Attack is Bug type.",
+    "gen": 7
+  },
+  "ghostmemory": {
+    "id": "ghostmemory",
+    "name": "Ghost Memory",
+    "num": 910,
+    "desc": "Holder's Multi-Attack is Ghost type.",
+    "gen": 7
+  },
+  "steelmemory": {
+    "id": "steelmemory",
+    "name": "Steel Memory",
+    "num": 911,
+    "desc": "Holder's Multi-Attack is Steel type.",
+    "gen": 7
+  },
+  "firememory": {
+    "id": "firememory",
+    "name": "Fire Memory",
+    "num": 912,
+    "desc": "Holder's Multi-Attack is Fire type.",
+    "gen": 7
+  },
+  "watermemory": {
+    "id": "watermemory",
+    "name": "Water Memory",
+    "num": 913,
+    "desc": "Holder's Multi-Attack is Water type.",
+    "gen": 7
+  },
+  "grassmemory": {
+    "id": "grassmemory",
+    "name": "Grass Memory",
+    "num": 914,
+    "desc": "Holder's Multi-Attack is Grass type.",
+    "gen": 7
+  },
+  "electricmemory": {
+    "id": "electricmemory",
+    "name": "Electric Memory",
+    "num": 915,
+    "desc": "Holder's Multi-Attack is Electric type.",
+    "gen": 7
+  },
+  "psychicmemory": {
+    "id": "psychicmemory",
+    "name": "Psychic Memory",
+    "num": 916,
+    "desc": "Holder's Multi-Attack is Psychic type.",
+    "gen": 7
+  },
+  "icememory": {
+    "id": "icememory",
+    "name": "Ice Memory",
+    "num": 917,
+    "desc": "Holder's Multi-Attack is Ice type.",
+    "gen": 7
+  },
+  "dragonmemory": {
+    "id": "dragonmemory",
+    "name": "Dragon Memory",
+    "num": 918,
+    "desc": "Holder's Multi-Attack is Dragon type.",
+    "gen": 7
+  },
+  "darkmemory": {
+    "id": "darkmemory",
+    "name": "Dark Memory",
+    "num": 919,
+    "desc": "Holder's Multi-Attack is Dark type.",
+    "gen": 7
+  },
+  "fairymemory": {
+    "id": "fairymemory",
+    "name": "Fairy Memory",
+    "num": 920,
+    "desc": "Holder's Multi-Attack is Fairy type.",
+    "gen": 7
+  },
+  "solganiumz": {
+    "id": "solganiumz",
+    "name": "Solganium Z",
+    "num": 921,
+    "desc": "Solgaleo or Dusk Mane Necrozma with Sunsteel Strike can use a special Z-Move.",
+    "gen": 7
+  },
+  "lunaliumz": {
+    "id": "lunaliumz",
+    "name": "Lunalium Z",
+    "num": 922,
+    "desc": "Lunala or Dawn Wings Necrozma with Moongeist Beam can use a special Z-Move.",
+    "gen": 7
+  },
+  "ultranecroziumz": {
+    "id": "ultranecroziumz",
+    "name": "Ultranecrozium Z",
+    "num": 923,
+    "desc": "Dusk Mane/Dawn Wings Necrozma: Ultra Burst, then Z-Move w/ Photon Geyser.",
+    "gen": 7
+  },
+  "mimikiumz": {
+    "id": "mimikiumz",
+    "name": "Mimikium Z",
+    "num": 924,
+    "desc": "If held by a Mimikyu with Play Rough, it can use Let's Snuggle Forever.",
+    "gen": 7
+  },
+  "lycaniumz": {
+    "id": "lycaniumz",
+    "name": "Lycanium Z",
+    "num": 925,
+    "desc": "If held by a Lycanroc forme with Stone Edge, it can use Splintered Stormshards.",
+    "gen": 7
+  },
+  "kommoniumz": {
+    "id": "kommoniumz",
+    "name": "Kommonium Z",
+    "num": 926,
+    "desc": "If held by a Kommo-o with Clanging Scales, it can use Clangorous Soulblaze.",
+    "gen": 7
+  }
+}

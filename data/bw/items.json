@@ -1,0 +1,247 @@
+{
+  "dousedrive": {
+    "id": "dousedrive",
+    "name": "Douse Drive",
+    "num": 116,
+    "desc": "Holder's Techno Blast is Water type.",
+    "gen": 5
+  },
+  "shockdrive": {
+    "id": "shockdrive",
+    "name": "Shock Drive",
+    "num": 117,
+    "desc": "Holder's Techno Blast is Electric type.",
+    "gen": 5
+  },
+  "burndrive": {
+    "id": "burndrive",
+    "name": "Burn Drive",
+    "num": 118,
+    "desc": "Holder's Techno Blast is Fire type.",
+    "gen": 5
+  },
+  "chilldrive": {
+    "id": "chilldrive",
+    "name": "Chill Drive",
+    "num": 119,
+    "desc": "Holder's Techno Blast is Ice type.",
+    "gen": 5
+  },
+  "prismscale": {
+    "id": "prismscale",
+    "name": "Prism Scale",
+    "num": 537,
+    "desc": "Evolves Feebas into Milotic when traded.",
+    "gen": 5
+  },
+  "eviolite": {
+    "id": "eviolite",
+    "name": "Eviolite",
+    "num": 538,
+    "desc": "If holder's species can evolve, its Defense and Sp. Def are 1.5x.",
+    "gen": 5
+  },
+  "floatstone": {
+    "id": "floatstone",
+    "name": "Float Stone",
+    "num": 539,
+    "desc": "Holder's weight is halved.",
+    "gen": 5
+  },
+  "rockyhelmet": {
+    "id": "rockyhelmet",
+    "name": "Rocky Helmet",
+    "num": 540,
+    "desc": "If holder is hit by a contact move, the attacker loses 1/6 of its max HP.",
+    "gen": 5
+  },
+  "airballoon": {
+    "id": "airballoon",
+    "name": "Air Balloon",
+    "num": 541,
+    "desc": "Holder is immune to Ground-type attacks. Pops when holder is hit.",
+    "gen": 5
+  },
+  "redcard": {
+    "id": "redcard",
+    "name": "Red Card",
+    "num": 542,
+    "desc": "If holder survives a hit, attacker is forced to switch to a random ally. Single use.",
+    "gen": 5
+  },
+  "ringtarget": {
+    "id": "ringtarget",
+    "name": "Ring Target",
+    "num": 543,
+    "desc": "The holder's type immunities granted solely by its typing are negated.",
+    "gen": 5
+  },
+  "bindingband": {
+    "id": "bindingband",
+    "name": "Binding Band",
+    "num": 544,
+    "desc": "Holder's partial-trapping moves deal 1/6 max HP per turn instead of 1/8.",
+    "gen": 5
+  },
+  "absorbbulb": {
+    "id": "absorbbulb",
+    "name": "Absorb Bulb",
+    "num": 545,
+    "desc": "Raises holder's Sp. Atk by 1 stage if hit by a Water-type attack. Single use.",
+    "gen": 5
+  },
+  "cellbattery": {
+    "id": "cellbattery",
+    "name": "Cell Battery",
+    "num": 546,
+    "desc": "Raises holder's Attack by 1 if hit by an Electric-type attack. Single use.",
+    "gen": 5
+  },
+  "ejectbutton": {
+    "id": "ejectbutton",
+    "name": "Eject Button",
+    "num": 547,
+    "desc": "If holder survives a hit, it immediately switches out to a chosen ally. Single use.",
+    "gen": 5
+  },
+  "firegem": {
+    "id": "firegem",
+    "name": "Fire Gem",
+    "num": 548,
+    "desc": "Holder's first successful Fire-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "watergem": {
+    "id": "watergem",
+    "name": "Water Gem",
+    "num": 549,
+    "desc": "Holder's first successful Water-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "electricgem": {
+    "id": "electricgem",
+    "name": "Electric Gem",
+    "num": 550,
+    "desc": "Holder's first successful Electric-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "grassgem": {
+    "id": "grassgem",
+    "name": "Grass Gem",
+    "num": 551,
+    "desc": "Holder's first successful Grass-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "icegem": {
+    "id": "icegem",
+    "name": "Ice Gem",
+    "num": 552,
+    "desc": "Holder's first successful Ice-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "fightinggem": {
+    "id": "fightinggem",
+    "name": "Fighting Gem",
+    "num": 553,
+    "desc": "Holder's first successful Fighting-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "poisongem": {
+    "id": "poisongem",
+    "name": "Poison Gem",
+    "num": 554,
+    "desc": "Holder's first successful Poison-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "groundgem": {
+    "id": "groundgem",
+    "name": "Ground Gem",
+    "num": 555,
+    "desc": "Holder's first successful Ground-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "flyinggem": {
+    "id": "flyinggem",
+    "name": "Flying Gem",
+    "num": 556,
+    "desc": "Holder's first successful Flying-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "psychicgem": {
+    "id": "psychicgem",
+    "name": "Psychic Gem",
+    "num": 557,
+    "desc": "Holder's first successful Psychic-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "buggem": {
+    "id": "buggem",
+    "name": "Bug Gem",
+    "num": 558,
+    "desc": "Holder's first successful Bug-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "rockgem": {
+    "id": "rockgem",
+    "name": "Rock Gem",
+    "num": 559,
+    "desc": "Holder's first successful Rock-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "ghostgem": {
+    "id": "ghostgem",
+    "name": "Ghost Gem",
+    "num": 560,
+    "desc": "Holder's first successful Ghost-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "dragongem": {
+    "id": "dragongem",
+    "name": "Dragon Gem",
+    "num": 561,
+    "desc": "Holder's first successful Dragon-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "darkgem": {
+    "id": "darkgem",
+    "name": "Dark Gem",
+    "num": 562,
+    "desc": "Holder's first successful Dark-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "steelgem": {
+    "id": "steelgem",
+    "name": "Steel Gem",
+    "num": 563,
+    "desc": "Holder's first successful Steel-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "normalgem": {
+    "id": "normalgem",
+    "name": "Normal Gem",
+    "num": 564,
+    "desc": "Holder's first successful Normal-type attack will have 1.5x power. Single use.",
+    "gen": 5
+  },
+  "coverfossil": {
+    "id": "coverfossil",
+    "name": "Cover Fossil",
+    "num": 572,
+    "desc": "Can be revived into Tirtouga.",
+    "gen": 5
+  },
+  "plumefossil": {
+    "id": "plumefossil",
+    "name": "Plume Fossil",
+    "num": 573,
+    "desc": "Can be revived into Archen.",
+    "gen": 5
+  },
+  "dreamball": {
+    "id": "dreamball",
+    "name": "Dream Ball",
+    "num": 576,
+    "desc": "A special Poke Ball that appears out of nowhere in a bag at the Entree Forest.",
+    "gen": 5
+  }
+}
