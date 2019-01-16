@@ -1,7 +1,7 @@
 import {Data} from './data';
 import {Generation} from './gen';
 import {ID, toID} from './id';
-export interface Ability extends Readonly<Data> {}
+export interface Ability extends Data {}
 
 export class Abilities {
   static forGen(gen: Generation): Readonly<Ability[]> {
