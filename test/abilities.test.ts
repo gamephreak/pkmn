@@ -14,10 +14,10 @@ describe('Abilities', () => {
   });
 
   test('getAbility', () => {
-    expect(Abilities.getAbility('foo')).toBe(undefined);
+    expect(Abilities.getAbility('foo')).not.toBeDefined();
     expect(Abilities.getAbility('Flash Fire (Activated)')!.isNonstandard)
         .toBe(true);
-    expect(Abilities.getAbility('Beast Boost', 6)).toBe(undefined);
+    expect(Abilities.getAbility('Beast Boost', 6)).not.toBeDefined();
     expect(Abilities.getAbility('Beast Boost', 7)!.name).toBe('Beast Boost');
     expect(Abilities.getAbility('Shield Dust', 3))
         .toEqual(Abilities.getAbility('Shield Dust', 4));

@@ -1,429 +1,592 @@
 {
-  "weaknesspolicy": {
-    "id": "weaknesspolicy",
-    "name": "Weakness Policy",
-    "num": 639,
-    "desc": "If holder is hit super effectively, raises Attack, Sp. Atk by 2 stages. Single use.",
-    "gen": 6
+  "figyberry": {
+    "desc": "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Atk Nature. Single use."
   },
-  "assaultvest": {
-    "id": "assaultvest",
-    "name": "Assault Vest",
-    "num": 640,
-    "desc": "Holder's Sp. Def is 1.5x, but it can only select damaging moves.",
-    "gen": 6
+  "wikiberry": {
+    "desc": "Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpA Nature. Single use."
   },
-  "pixieplate": {
-    "id": "pixieplate",
-    "name": "Pixie Plate",
-    "num": 644,
-    "desc": "Holder's Fairy-type attacks have 1.2x power. Judgment is Fairy type.",
-    "gen": 6
+  "magoberry": {
+    "desc": "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Spe Nature. Single use."
   },
-  "whippeddream": {
-    "id": "whippeddream",
-    "name": "Whipped Dream",
-    "num": 646,
-    "desc": "Evolves Swirlix into Slurpuff when traded.",
-    "gen": 6
+  "aguavberry": {
+    "desc": "Restores 1/2 max HP at 1/4 max HP or less; confuses if -SpD Nature. Single use."
   },
-  "sachet": {
-    "id": "sachet",
-    "name": "Sachet",
-    "num": 647,
-    "desc": "Evolves Spritzee into Aromatisse when traded.",
-    "gen": 6
+  "iapapaberry": {
+    "desc": "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Def Nature. Single use."
   },
-  "luminousmoss": {
-    "id": "luminousmoss",
-    "name": "Luminous Moss",
-    "num": 648,
-    "desc": "Raises holder's Sp. Def by 1 stage if hit by a Water-type attack. Single use.",
-    "gen": 6
+  "souldew": {
+    "desc": "If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power."
   },
-  "snowball": {
-    "id": "snowball",
-    "name": "Snowball",
-    "num": 649,
-    "desc": "Raises holder's Attack by 1 if hit by an Ice-type attack. Single use.",
-    "gen": 6
+  "lightclay": {
+    "desc": "Holder's use of Aurora Veil, Light Screen, or Reflect lasts 8 turns instead of 5."
   },
-  "safetygoggles": {
-    "id": "safetygoggles",
-    "name": "Safety Goggles",
-    "num": 650,
-    "desc": "Holder is immune to powder moves and damage from Sandstorm or Hail.",
-    "gen": 6
+  "bigroot": {
+    "desc": "Holder gains 1.3x HP from draining/Aqua Ring/Ingrain/Leech Seed/Strength Sap."
   },
-  "gengarite": {
-    "id": "gengarite",
-    "name": "Gengarite",
-    "num": 656,
-    "desc": "If held by a Gengar, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "normaliumz": {
+    "id": "normaliumz",
+    "name": "Normalium Z",
+    "num": 776,
+    "desc": "If holder has a Normal move, this item allows it to use a Normal Z-Move.",
+    "zMove": true,
+    "zMoveType": "Normal",
+    "gen": 7
   },
-  "gardevoirite": {
-    "id": "gardevoirite",
-    "name": "Gardevoirite",
-    "num": 657,
-    "desc": "If held by a Gardevoir, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "firiumz": {
+    "id": "firiumz",
+    "name": "Firium Z",
+    "num": 777,
+    "desc": "If holder has a Fire move, this item allows it to use a Fire Z-Move.",
+    "zMove": true,
+    "zMoveType": "Fire",
+    "gen": 7
   },
-  "ampharosite": {
-    "id": "ampharosite",
-    "name": "Ampharosite",
-    "num": 658,
-    "desc": "If held by an Ampharos, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "wateriumz": {
+    "id": "wateriumz",
+    "name": "Waterium Z",
+    "num": 778,
+    "desc": "If holder has a Water move, this item allows it to use a Water Z-Move.",
+    "zMove": true,
+    "zMoveType": "Water",
+    "gen": 7
   },
-  "venusaurite": {
-    "id": "venusaurite",
-    "name": "Venusaurite",
-    "num": 659,
-    "desc": "If held by a Venusaur, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "electriumz": {
+    "id": "electriumz",
+    "name": "Electrium Z",
+    "num": 779,
+    "desc": "If holder has an Electric move, this item allows it to use an Electric Z-Move.",
+    "zMove": true,
+    "zMoveType": "Electric",
+    "gen": 7
   },
-  "charizarditex": {
-    "id": "charizarditex",
-    "name": "Charizardite X",
-    "num": 660,
-    "desc": "If held by a Charizard, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "grassiumz": {
+    "id": "grassiumz",
+    "name": "Grassium Z",
+    "num": 780,
+    "desc": "If holder has a Grass move, this item allows it to use a Grass Z-Move.",
+    "zMove": true,
+    "zMoveType": "Grass",
+    "gen": 7
   },
-  "blastoisinite": {
-    "id": "blastoisinite",
-    "name": "Blastoisinite",
-    "num": 661,
-    "desc": "If held by a Blastoise, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "iciumz": {
+    "id": "iciumz",
+    "name": "Icium Z",
+    "num": 781,
+    "desc": "If holder has an Ice move, this item allows it to use an Ice Z-Move.",
+    "zMove": true,
+    "zMoveType": "Ice",
+    "gen": 7
   },
-  "mewtwonitex": {
-    "id": "mewtwonitex",
-    "name": "Mewtwonite X",
-    "num": 662,
-    "desc": "If held by a Mewtwo, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "fightiniumz": {
+    "id": "fightiniumz",
+    "name": "Fightinium Z",
+    "num": 782,
+    "desc": "If holder has a Fighting move, this item allows it to use a Fighting Z-Move.",
+    "zMove": true,
+    "zMoveType": "Fighting",
+    "gen": 7
   },
-  "mewtwonitey": {
-    "id": "mewtwonitey",
-    "name": "Mewtwonite Y",
-    "num": 663,
-    "desc": "If held by a Mewtwo, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "poisoniumz": {
+    "id": "poisoniumz",
+    "name": "Poisonium Z",
+    "num": 783,
+    "desc": "If holder has a Poison move, this item allows it to use a Poison Z-Move.",
+    "zMove": true,
+    "zMoveType": "Poison",
+    "gen": 7
   },
-  "blazikenite": {
-    "id": "blazikenite",
-    "name": "Blazikenite",
-    "num": 664,
-    "desc": "If held by a Blaziken, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "groundiumz": {
+    "id": "groundiumz",
+    "name": "Groundium Z",
+    "num": 784,
+    "desc": "If holder has a Ground move, this item allows it to use a Ground Z-Move.",
+    "zMove": true,
+    "zMoveType": "Ground",
+    "gen": 7
   },
-  "medichamite": {
-    "id": "medichamite",
-    "name": "Medichamite",
-    "num": 665,
-    "desc": "If held by a Medicham, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "flyiniumz": {
+    "id": "flyiniumz",
+    "name": "Flyinium Z",
+    "num": 785,
+    "desc": "If holder has a Flying move, this item allows it to use a Flying Z-Move.",
+    "zMove": true,
+    "zMoveType": "Flying",
+    "gen": 7
   },
-  "houndoominite": {
-    "id": "houndoominite",
-    "name": "Houndoominite",
-    "num": 666,
-    "desc": "If held by a Houndoom, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "psychiumz": {
+    "id": "psychiumz",
+    "name": "Psychium Z",
+    "num": 786,
+    "desc": "If holder has a Psychic move, this item allows it to use a Psychic Z-Move.",
+    "zMove": true,
+    "zMoveType": "Psychic",
+    "gen": 7
   },
-  "aggronite": {
-    "id": "aggronite",
-    "name": "Aggronite",
-    "num": 667,
-    "desc": "If held by an Aggron, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "buginiumz": {
+    "id": "buginiumz",
+    "name": "Buginium Z",
+    "num": 787,
+    "desc": "If holder has a Bug move, this item allows it to use a Bug Z-Move.",
+    "zMove": true,
+    "zMoveType": "Bug",
+    "gen": 7
   },
-  "banettite": {
-    "id": "banettite",
-    "name": "Banettite",
-    "num": 668,
-    "desc": "If held by a Banette, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "rockiumz": {
+    "id": "rockiumz",
+    "name": "Rockium Z",
+    "num": 788,
+    "desc": "If holder has a Rock move, this item allows it to use a Rock Z-Move.",
+    "zMove": true,
+    "zMoveType": "Rock",
+    "gen": 7
   },
-  "tyranitarite": {
-    "id": "tyranitarite",
-    "name": "Tyranitarite",
-    "num": 669,
-    "desc": "If held by a Tyranitar, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "ghostiumz": {
+    "id": "ghostiumz",
+    "name": "Ghostium Z",
+    "num": 789,
+    "desc": "If holder has a Ghost move, this item allows it to use a Ghost Z-Move.",
+    "zMove": true,
+    "zMoveType": "Ghost",
+    "gen": 7
   },
-  "scizorite": {
-    "id": "scizorite",
-    "name": "Scizorite",
-    "num": 670,
-    "desc": "If held by a Scizor, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "dragoniumz": {
+    "id": "dragoniumz",
+    "name": "Dragonium Z",
+    "num": 790,
+    "desc": "If holder has a Dragon move, this item allows it to use a Dragon Z-Move.",
+    "zMove": true,
+    "zMoveType": "Dragon",
+    "gen": 7
   },
-  "pinsirite": {
-    "id": "pinsirite",
-    "name": "Pinsirite",
-    "num": 671,
-    "desc": "If held by a Pinsir, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "darkiniumz": {
+    "id": "darkiniumz",
+    "name": "Darkinium Z",
+    "num": 791,
+    "desc": "If holder has a Dark move, this item allows it to use a Dark Z-Move.",
+    "zMove": true,
+    "zMoveType": "Dark",
+    "gen": 7
   },
-  "aerodactylite": {
-    "id": "aerodactylite",
-    "name": "Aerodactylite",
-    "num": 672,
-    "desc": "If held by an Aerodactyl, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "steeliumz": {
+    "id": "steeliumz",
+    "name": "Steelium Z",
+    "num": 792,
+    "desc": "If holder has a Steel move, this item allows it to use a Steel Z-Move.",
+    "zMove": true,
+    "zMoveType": "Steel",
+    "gen": 7
   },
-  "lucarionite": {
-    "id": "lucarionite",
-    "name": "Lucarionite",
-    "num": 673,
-    "desc": "If held by a Lucario, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "fairiumz": {
+    "id": "fairiumz",
+    "name": "Fairium Z",
+    "num": 793,
+    "desc": "If holder has a Fairy move, this item allows it to use a Fairy Z-Move.",
+    "zMove": true,
+    "zMoveType": "Fairy",
+    "gen": 7
   },
-  "abomasite": {
-    "id": "abomasite",
-    "name": "Abomasite",
-    "num": 674,
-    "desc": "If held by an Abomasnow, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "pikaniumz": {
+    "id": "pikaniumz",
+    "name": "Pikanium Z",
+    "num": 794,
+    "desc": "If held by a Pikachu with Volt Tackle, it can use Catastropika.",
+    "zMove": "Catastropika",
+    "zMoveFrom": "Volt Tackle",
+    "zMoveUser": [
+      "Pikachu"
+    ],
+    "gen": 7
   },
-  "kangaskhanite": {
-    "id": "kangaskhanite",
-    "name": "Kangaskhanite",
-    "num": 675,
-    "desc": "If held by a Kangaskhan, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "decidiumz": {
+    "id": "decidiumz",
+    "name": "Decidium Z",
+    "num": 798,
+    "desc": "If held by a Decidueye with Spirit Shackle, it can use Sinister Arrow Raid.",
+    "zMove": "Sinister Arrow Raid",
+    "zMoveFrom": "Spirit Shackle",
+    "zMoveUser": [
+      "Decidueye"
+    ],
+    "gen": 7
   },
-  "gyaradosite": {
-    "id": "gyaradosite",
-    "name": "Gyaradosite",
-    "num": 676,
-    "desc": "If held by a Gyarados, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "inciniumz": {
+    "id": "inciniumz",
+    "name": "Incinium Z",
+    "num": 799,
+    "desc": "If held by an Incineroar with Darkest Lariat, it can use Malicious Moonsault.",
+    "zMove": "Malicious Moonsault",
+    "zMoveFrom": "Darkest Lariat",
+    "zMoveUser": [
+      "Incineroar"
+    ],
+    "gen": 7
   },
-  "absolite": {
-    "id": "absolite",
-    "name": "Absolite",
-    "num": 677,
-    "desc": "If held by an Absol, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "primariumz": {
+    "id": "primariumz",
+    "name": "Primarium Z",
+    "num": 800,
+    "desc": "If held by a Primarina with Sparkling Aria, it can use Oceanic Operetta.",
+    "zMove": "Oceanic Operetta",
+    "zMoveFrom": "Sparkling Aria",
+    "zMoveUser": [
+      "Primarina"
+    ],
+    "gen": 7
   },
-  "charizarditey": {
-    "id": "charizarditey",
-    "name": "Charizardite Y",
-    "num": 678,
-    "desc": "If held by a Charizard, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "tapuniumz": {
+    "id": "tapuniumz",
+    "name": "Tapunium Z",
+    "num": 801,
+    "desc": "If held by a Tapu with Nature's Madness, it can use Guardian of Alola.",
+    "zMove": "Guardian of Alola",
+    "zMoveFrom": "Nature's Madness",
+    "zMoveUser": [
+      "Tapu Koko",
+      "Tapu Lele",
+      "Tapu Bulu",
+      "Tapu Fini"
+    ],
+    "gen": 7
   },
-  "alakazite": {
-    "id": "alakazite",
-    "name": "Alakazite",
-    "num": 679,
-    "desc": "If held by an Alakazam, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "marshadiumz": {
+    "id": "marshadiumz",
+    "name": "Marshadium Z",
+    "num": 802,
+    "desc": "If held by Marshadow with Spectral Thief, it can use Soul-Stealing 7-Star Strike.",
+    "zMove": "Soul-Stealing 7-Star Strike",
+    "zMoveFrom": "Spectral Thief",
+    "zMoveUser": [
+      "Marshadow"
+    ],
+    "gen": 7
   },
-  "heracronite": {
-    "id": "heracronite",
-    "name": "Heracronite",
-    "num": 680,
-    "desc": "If held by a Heracross, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "aloraichiumz": {
+    "id": "aloraichiumz",
+    "name": "Aloraichium Z",
+    "num": 803,
+    "desc": "If held by an Alolan Raichu with Thunderbolt, it can use Stoked Sparksurfer.",
+    "zMove": "Stoked Sparksurfer",
+    "zMoveFrom": "Thunderbolt",
+    "zMoveUser": [
+      "Raichu-Alola"
+    ],
+    "gen": 7
   },
-  "mawilite": {
-    "id": "mawilite",
-    "name": "Mawilite",
-    "num": 681,
-    "desc": "If held by a Mawile, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "snorliumz": {
+    "id": "snorliumz",
+    "name": "Snorlium Z",
+    "num": 804,
+    "desc": "If held by a Snorlax with Giga Impact, it can use Pulverizing Pancake.",
+    "zMove": "Pulverizing Pancake",
+    "zMoveFrom": "Giga Impact",
+    "zMoveUser": [
+      "Snorlax"
+    ],
+    "gen": 7
   },
-  "manectite": {
-    "id": "manectite",
-    "name": "Manectite",
-    "num": 682,
-    "desc": "If held by a Manectric, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "eeviumz": {
+    "id": "eeviumz",
+    "name": "Eevium Z",
+    "num": 805,
+    "desc": "If held by an Eevee with Last Resort, it can use Extreme Evoboost.",
+    "zMove": "Extreme Evoboost",
+    "zMoveFrom": "Last Resort",
+    "zMoveUser": [
+      "Eevee"
+    ],
+    "gen": 7
   },
-  "garchompite": {
-    "id": "garchompite",
-    "name": "Garchompite",
-    "num": 683,
-    "desc": "If held by a Garchomp, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "mewniumz": {
+    "id": "mewniumz",
+    "name": "Mewnium Z",
+    "num": 806,
+    "desc": "If held by a Mew with Psychic, it can use Genesis Supernova.",
+    "zMove": "Genesis Supernova",
+    "zMoveFrom": "Psychic",
+    "zMoveUser": [
+      "Mew"
+    ],
+    "gen": 7
   },
-  "latiasite": {
-    "id": "latiasite",
-    "name": "Latiasite",
-    "num": 684,
-    "desc": "If held by a Latias, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "pikashuniumz": {
+    "id": "pikashuniumz",
+    "name": "Pikashunium Z",
+    "num": 836,
+    "desc": "If held by cap Pikachu with Thunderbolt, it can use 10,000,000 Volt Thunderbolt.",
+    "zMove": "10,000,000 Volt Thunderbolt",
+    "zMoveFrom": "Thunderbolt",
+    "zMoveUser": [
+      "Pikachu-Original",
+      "Pikachu-Hoenn",
+      "Pikachu-Sinnoh",
+      "Pikachu-Unova",
+      "Pikachu-Kalos",
+      "Pikachu-Alola",
+      "Pikachu-Partner"
+    ],
+    "gen": 7
   },
-  "latiosite": {
-    "id": "latiosite",
-    "name": "Latiosite",
-    "num": 685,
-    "desc": "If held by a Latios, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "adrenalineorb": {
+    "id": "adrenalineorb",
+    "name": "Adrenaline Orb",
+    "num": 846,
+    "desc": "Raises holder's Speed by 1 stage if it gets affected by Intimidate. Single use.",
+    "gen": 7
   },
-  "roseliberry": {
-    "id": "roseliberry",
-    "name": "Roseli Berry",
-    "num": 686,
-    "desc": "Halves damage taken from a supereffective Fairy-type attack. Single use.",
-    "gen": 6
+  "icestone": {
+    "id": "icestone",
+    "name": "Ice Stone",
+    "num": 849,
+    "shortDesc": "Evolves certain species of Pokemon when used.",
+    "desc": "Evolves Alolan Sandshrew into Alolan Sandslash and Alolan Vulpix into Alolan Ninetales when used.",
+    "gen": 7
   },
-  "keeberry": {
-    "id": "keeberry",
-    "name": "Kee Berry",
-    "num": 687,
-    "desc": "Raises holder's Defense by 1 stage after it is hit by a physical attack. Single use.",
-    "gen": 6
+  "beastball": {
+    "id": "beastball",
+    "name": "Beast Ball",
+    "num": 851,
+    "desc": "A special Poke Ball designed to catch Ultra Beasts.",
+    "gen": 7
   },
-  "marangaberry": {
-    "id": "marangaberry",
-    "name": "Maranga Berry",
-    "num": 688,
-    "desc": "Raises holder's Sp. Def by 1 stage after it is hit by a special attack. Single use.",
-    "gen": 6
+  "terrainextender": {
+    "id": "terrainextender",
+    "name": "Terrain Extender",
+    "num": 879,
+    "desc": "Holder's use of Electric/Grassy/Misty/Psychic Terrain lasts 8 turns instead of 5.",
+    "gen": 7
   },
-  "jawfossil": {
-    "id": "jawfossil",
-    "name": "Jaw Fossil",
-    "num": 710,
-    "desc": "Can be revived into Tyrunt.",
-    "gen": 6
+  "protectivepads": {
+    "id": "protectivepads",
+    "name": "Protective Pads",
+    "num": 880,
+    "desc": "Holder's moves are protected from adverse contact effects, except Pickpocket.",
+    "gen": 7
   },
-  "sailfossil": {
-    "id": "sailfossil",
-    "name": "Sail Fossil",
-    "num": 711,
-    "desc": "Can be revived into Amaura.",
-    "gen": 6
+  "electricseed": {
+    "id": "electricseed",
+    "name": "Electric Seed",
+    "num": 881,
+    "desc": "If the terrain is Electric Terrain, raises holder's Defense by 1 stage. Single use.",
+    "gen": 7
   },
-  "fairygem": {
-    "id": "fairygem",
-    "name": "Fairy Gem",
-    "num": 715,
-    "desc": "Holder's first successful Fairy-type attack will have 1.3x power. Single use.",
-    "gen": 6
+  "psychicseed": {
+    "id": "psychicseed",
+    "name": "Psychic Seed",
+    "num": 882,
+    "desc": "If the terrain is Psychic Terrain, raises holder's Sp. Def by 1 stage. Single use.",
+    "gen": 7
   },
-  "swampertite": {
-    "id": "swampertite",
-    "name": "Swampertite",
-    "num": 752,
-    "desc": "If held by a Swampert, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "mistyseed": {
+    "id": "mistyseed",
+    "name": "Misty Seed",
+    "num": 883,
+    "desc": "If the terrain is Misty Terrain, raises holder's Sp. Def by 1 stage. Single use.",
+    "gen": 7
   },
-  "sceptilite": {
-    "id": "sceptilite",
-    "name": "Sceptilite",
-    "num": 753,
-    "desc": "If held by a Sceptile, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "grassyseed": {
+    "id": "grassyseed",
+    "name": "Grassy Seed",
+    "num": 884,
+    "desc": "If the terrain is Grassy Terrain, raises holder's Defense by 1 stage. Single use.",
+    "gen": 7
   },
-  "sablenite": {
-    "id": "sablenite",
-    "name": "Sablenite",
-    "num": 754,
-    "desc": "If held by a Sableye, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "fightingmemory": {
+    "id": "fightingmemory",
+    "name": "Fighting Memory",
+    "num": 904,
+    "desc": "Holder's Multi-Attack is Fighting type.",
+    "gen": 7
   },
-  "altarianite": {
-    "id": "altarianite",
-    "name": "Altarianite",
-    "num": 755,
-    "desc": "If held by an Altaria, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "flyingmemory": {
+    "id": "flyingmemory",
+    "name": "Flying Memory",
+    "num": 905,
+    "desc": "Holder's Multi-Attack is Flying type.",
+    "gen": 7
   },
-  "galladite": {
-    "id": "galladite",
-    "name": "Galladite",
-    "num": 756,
-    "desc": "If held by a Gallade, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "poisonmemory": {
+    "id": "poisonmemory",
+    "name": "Poison Memory",
+    "num": 906,
+    "desc": "Holder's Multi-Attack is Poison type.",
+    "gen": 7
   },
-  "audinite": {
-    "id": "audinite",
-    "name": "Audinite",
-    "num": 757,
-    "desc": "If held by an Audino, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "groundmemory": {
+    "id": "groundmemory",
+    "name": "Ground Memory",
+    "num": 907,
+    "desc": "Holder's Multi-Attack is Ground type.",
+    "gen": 7
   },
-  "metagrossite": {
-    "id": "metagrossite",
-    "name": "Metagrossite",
-    "num": 758,
-    "desc": "If held by a Metagross, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "rockmemory": {
+    "id": "rockmemory",
+    "name": "Rock Memory",
+    "num": 908,
+    "desc": "Holder's Multi-Attack is Rock type.",
+    "gen": 7
   },
-  "sharpedonite": {
-    "id": "sharpedonite",
-    "name": "Sharpedonite",
-    "num": 759,
-    "desc": "If held by a Sharpedo, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "bugmemory": {
+    "id": "bugmemory",
+    "name": "Bug Memory",
+    "num": 909,
+    "desc": "Holder's Multi-Attack is Bug type.",
+    "gen": 7
   },
-  "slowbronite": {
-    "id": "slowbronite",
-    "name": "Slowbronite",
-    "num": 760,
-    "desc": "If held by a Slowbro, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "ghostmemory": {
+    "id": "ghostmemory",
+    "name": "Ghost Memory",
+    "num": 910,
+    "desc": "Holder's Multi-Attack is Ghost type.",
+    "gen": 7
   },
-  "steelixite": {
-    "id": "steelixite",
-    "name": "Steelixite",
-    "num": 761,
-    "desc": "If held by a Steelix, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "steelmemory": {
+    "id": "steelmemory",
+    "name": "Steel Memory",
+    "num": 911,
+    "desc": "Holder's Multi-Attack is Steel type.",
+    "gen": 7
   },
-  "pidgeotite": {
-    "id": "pidgeotite",
-    "name": "Pidgeotite",
-    "num": 762,
-    "desc": "If held by a Pidgeot, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "firememory": {
+    "id": "firememory",
+    "name": "Fire Memory",
+    "num": 912,
+    "desc": "Holder's Multi-Attack is Fire type.",
+    "gen": 7
   },
-  "glalitite": {
-    "id": "glalitite",
-    "name": "Glalitite",
-    "num": 763,
-    "desc": "If held by a Glalie, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "watermemory": {
+    "id": "watermemory",
+    "name": "Water Memory",
+    "num": 913,
+    "desc": "Holder's Multi-Attack is Water type.",
+    "gen": 7
   },
-  "diancite": {
-    "id": "diancite",
-    "name": "Diancite",
-    "num": 764,
-    "desc": "If held by a Diancie, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "grassmemory": {
+    "id": "grassmemory",
+    "name": "Grass Memory",
+    "num": 914,
+    "desc": "Holder's Multi-Attack is Grass type.",
+    "gen": 7
   },
-  "cameruptite": {
-    "id": "cameruptite",
-    "name": "Cameruptite",
-    "num": 767,
-    "desc": "If held by a Camerupt, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "electricmemory": {
+    "id": "electricmemory",
+    "name": "Electric Memory",
+    "num": 915,
+    "desc": "Holder's Multi-Attack is Electric type.",
+    "gen": 7
   },
-  "lopunnite": {
-    "id": "lopunnite",
-    "name": "Lopunnite",
-    "num": 768,
-    "desc": "If held by a Lopunny, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "psychicmemory": {
+    "id": "psychicmemory",
+    "name": "Psychic Memory",
+    "num": 916,
+    "desc": "Holder's Multi-Attack is Psychic type.",
+    "gen": 7
   },
-  "salamencite": {
-    "id": "salamencite",
-    "name": "Salamencite",
-    "num": 769,
-    "desc": "If held by a Salamence, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "icememory": {
+    "id": "icememory",
+    "name": "Ice Memory",
+    "num": 917,
+    "desc": "Holder's Multi-Attack is Ice type.",
+    "gen": 7
   },
-  "beedrillite": {
-    "id": "beedrillite",
-    "name": "Beedrillite",
-    "num": 770,
-    "desc": "If held by a Beedrill, this item allows it to Mega Evolve in battle.",
-    "gen": 6
+  "dragonmemory": {
+    "id": "dragonmemory",
+    "name": "Dragon Memory",
+    "num": 918,
+    "desc": "Holder's Multi-Attack is Dragon type.",
+    "gen": 7
+  },
+  "darkmemory": {
+    "id": "darkmemory",
+    "name": "Dark Memory",
+    "num": 919,
+    "desc": "Holder's Multi-Attack is Dark type.",
+    "gen": 7
+  },
+  "fairymemory": {
+    "id": "fairymemory",
+    "name": "Fairy Memory",
+    "num": 920,
+    "desc": "Holder's Multi-Attack is Fairy type.",
+    "gen": 7
+  },
+  "solganiumz": {
+    "id": "solganiumz",
+    "name": "Solganium Z",
+    "num": 921,
+    "desc": "Solgaleo or Dusk Mane Necrozma with Sunsteel Strike can use a special Z-Move.",
+    "zMove": "Searing Sunraze Smash",
+    "zMoveFrom": "Sunsteel Strike",
+    "zMoveUser": [
+      "Solgaleo",
+      "Necrozma-Dusk-Mane"
+    ],
+    "gen": 7
+  },
+  "lunaliumz": {
+    "id": "lunaliumz",
+    "name": "Lunalium Z",
+    "num": 922,
+    "desc": "Lunala or Dawn Wings Necrozma with Moongeist Beam can use a special Z-Move.",
+    "zMove": "Menacing Moonraze Maelstrom",
+    "zMoveFrom": "Moongeist Beam",
+    "zMoveUser": [
+      "Lunala",
+      "Necrozma-Dawn-Wings"
+    ],
+    "gen": 7
+  },
+  "ultranecroziumz": {
+    "id": "ultranecroziumz",
+    "name": "Ultranecrozium Z",
+    "num": 923,
+    "desc": "Dusk Mane/Dawn Wings Necrozma: Ultra Burst, then Z-Move w/ Photon Geyser.",
+    "zMove": "Light That Burns the Sky",
+    "zMoveFrom": "Photon Geyser",
+    "zMoveUser": [
+      "Necrozma-Ultra"
+    ],
+    "gen": 7
+  },
+  "mimikiumz": {
+    "id": "mimikiumz",
+    "name": "Mimikium Z",
+    "num": 924,
+    "desc": "If held by a Mimikyu with Play Rough, it can use Let's Snuggle Forever.",
+    "zMove": "Let's Snuggle Forever",
+    "zMoveFrom": "Play Rough",
+    "zMoveUser": [
+      "Mimikyu",
+      "Mimikyu-Busted",
+      "Mimikyu-Totem",
+      "Mimikyu-Busted-Totem"
+    ],
+    "gen": 7
+  },
+  "lycaniumz": {
+    "id": "lycaniumz",
+    "name": "Lycanium Z",
+    "num": 925,
+    "desc": "If held by a Lycanroc forme with Stone Edge, it can use Splintered Stormshards.",
+    "zMove": "Splintered Stormshards",
+    "zMoveFrom": "Stone Edge",
+    "zMoveUser": [
+      "Lycanroc",
+      "Lycanroc-Midnight",
+      "Lycanroc-Dusk"
+    ],
+    "gen": 7
+  },
+  "kommoniumz": {
+    "id": "kommoniumz",
+    "name": "Kommonium Z",
+    "num": 926,
+    "desc": "If held by a Kommo-o with Clanging Scales, it can use Clangorous Soulblaze.",
+    "zMove": "Clangorous Soulblaze",
+    "zMoveFrom": "Clanging Scales",
+    "zMoveUser": [
+      "Kommo-o",
+      "Kommo-o-Totem"
+    ],
+    "gen": 7
   }
 }

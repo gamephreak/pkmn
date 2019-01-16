@@ -8,6 +8,6 @@ describe('Generations', () => {
   test('fromString', () => {
     expect(Generations.fromString('RBY')).toBe(1);
     expect(Generations.fromString('ORAS')).toBe(6);
-    expect(Generations.fromString('foo')).toBe(undefined);
+    expect(Generations.fromString('foo')).not.toBeDefined();
   });
 });

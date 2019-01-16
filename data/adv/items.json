@@ -1,4 +1,17 @@
 {
+  "berry": {"exists": false },
+  "beserkgene": {"exists": false },
+  "bitterberry": {"exists": false },
+  "burntberry": {"exists": false },
+  "goldberry": {"exists": false },
+  "iceberry": {"exists": false },
+  "mintberry": {"exists": false },
+  "miracleberry": {"exists": false },
+  "mysteryberry": {"exists": false },
+  "pinkbow": {"exists": false },
+  "polkadotbow": {"exists": false },
+  "przcureberry": {"exists": false },
+  "psncureberry": {"exists": false },
   "safariball": {
     "id": "safariball",
     "name": "Safari Ball",
@@ -60,6 +73,7 @@
     "name": "Cheri Berry",
     "num": 149,
     "desc": "Holder cures itself if it is paralyzed. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "chestoberry": {
@@ -67,6 +81,7 @@
     "name": "Chesto Berry",
     "num": 150,
     "desc": "Holder wakes up if it is asleep. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "pechaberry": {
@@ -74,6 +89,7 @@
     "name": "Pecha Berry",
     "num": 151,
     "desc": "Holder is cured if it is poisoned. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "rawstberry": {
@@ -81,6 +97,7 @@
     "name": "Rawst Berry",
     "num": 152,
     "desc": "Holder is cured if it is burned. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "aspearberry": {
@@ -88,6 +105,7 @@
     "name": "Aspear Berry",
     "num": 153,
     "desc": "Holder is cured if it is frozen. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "leppaberry": {
@@ -95,6 +113,7 @@
     "name": "Leppa Berry",
     "num": 154,
     "desc": "Restores 10 PP to the first of the holder's moves to reach 0 PP. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "oranberry": {
@@ -102,6 +121,7 @@
     "name": "Oran Berry",
     "num": 155,
     "desc": "Restores 10 HP when at 1/2 max HP or less. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "persimberry": {
@@ -109,6 +129,7 @@
     "name": "Persim Berry",
     "num": 156,
     "desc": "Holder is cured if it is confused. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "lumberry": {
@@ -116,6 +137,7 @@
     "name": "Lum Berry",
     "num": 157,
     "desc": "Holder cures itself if it is confused or has a major status condition. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "sitrusberry": {
@@ -123,6 +145,7 @@
     "name": "Sitrus Berry",
     "num": 158,
     "desc": "Restores 30 HP when at 1/2 max HP or less. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "figyberry": {
@@ -130,6 +153,7 @@
     "name": "Figy Berry",
     "num": 159,
     "desc": "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Atk Nature. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "wikiberry": {
@@ -137,6 +161,7 @@
     "name": "Wiki Berry",
     "num": 160,
     "desc": "Restores 1/8 max HP at 1/2 max HP or less; confuses if -SpA Nature. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "magoberry": {
@@ -144,6 +169,7 @@
     "name": "Mago Berry",
     "num": 161,
     "desc": "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Spe Nature. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "aguavberry": {
@@ -151,6 +177,7 @@
     "name": "Aguav Berry",
     "num": 162,
     "desc": "Restores 1/8 max HP at 1/2 max HP or less; confuses if -SpD Nature. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "iapapaberry": {
@@ -158,6 +185,7 @@
     "name": "Iapapa Berry",
     "num": 163,
     "desc": "Restores 1/8 max HP at 1/2 max HP or less; confuses if -Def Nature. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "razzberry": {
@@ -165,6 +193,7 @@
     "name": "Razz Berry",
     "num": 164,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "blukberry": {
@@ -172,6 +201,7 @@
     "name": "Bluk Berry",
     "num": 165,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "nanabberry": {
@@ -179,6 +209,7 @@
     "name": "Nanab Berry",
     "num": 166,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "wepearberry": {
@@ -186,6 +217,7 @@
     "name": "Wepear Berry",
     "num": 167,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "pinapberry": {
@@ -193,6 +225,7 @@
     "name": "Pinap Berry",
     "num": 168,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "pomegberry": {
@@ -200,6 +233,7 @@
     "name": "Pomeg Berry",
     "num": 169,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "kelpsyberry": {
@@ -207,6 +241,7 @@
     "name": "Kelpsy Berry",
     "num": 170,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "qualotberry": {
@@ -214,6 +249,7 @@
     "name": "Qualot Berry",
     "num": 171,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "hondewberry": {
@@ -221,6 +257,7 @@
     "name": "Hondew Berry",
     "num": 172,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "grepaberry": {
@@ -228,6 +265,7 @@
     "name": "Grepa Berry",
     "num": 173,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "tamatoberry": {
@@ -235,6 +273,7 @@
     "name": "Tamato Berry",
     "num": 174,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "cornnberry": {
@@ -242,6 +281,7 @@
     "name": "Cornn Berry",
     "num": 175,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "magostberry": {
@@ -249,6 +289,7 @@
     "name": "Magost Berry",
     "num": 176,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "rabutaberry": {
@@ -256,6 +297,7 @@
     "name": "Rabuta Berry",
     "num": 177,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "nomelberry": {
@@ -263,6 +305,7 @@
     "name": "Nomel Berry",
     "num": 178,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "spelonberry": {
@@ -270,6 +313,7 @@
     "name": "Spelon Berry",
     "num": 179,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "pamtreberry": {
@@ -277,6 +321,7 @@
     "name": "Pamtre Berry",
     "num": 180,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "watmelberry": {
@@ -284,6 +329,7 @@
     "name": "Watmel Berry",
     "num": 181,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "durinberry": {
@@ -291,6 +337,7 @@
     "name": "Durin Berry",
     "num": 182,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "belueberry": {
@@ -298,6 +345,7 @@
     "name": "Belue Berry",
     "num": 183,
     "desc": "Cannot be eaten by the holder. No effect when eaten with Bug Bite or Pluck.",
+    "isBerry": true,
     "gen": 3
   },
   "liechiberry": {
@@ -305,6 +353,7 @@
     "name": "Liechi Berry",
     "num": 201,
     "desc": "Raises holder's Attack by 1 stage when at 1/4 max HP or less. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "ganlonberry": {
@@ -312,6 +361,7 @@
     "name": "Ganlon Berry",
     "num": 202,
     "desc": "Raises holder's Defense by 1 stage when at 1/4 max HP or less. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "salacberry": {
@@ -319,6 +369,7 @@
     "name": "Salac Berry",
     "num": 203,
     "desc": "Raises holder's Speed by 1 stage when at 1/4 max HP or less. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "petayaberry": {
@@ -326,6 +377,7 @@
     "name": "Petaya Berry",
     "num": 204,
     "desc": "Raises holder's Sp. Atk by 1 stage when at 1/4 max HP or less. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "apicotberry": {
@@ -333,6 +385,7 @@
     "name": "Apicot Berry",
     "num": 205,
     "desc": "Raises holder's Sp. Def by 1 stage when at 1/4 max HP or less. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "lansatberry": {
@@ -340,6 +393,7 @@
     "name": "Lansat Berry",
     "num": 206,
     "desc": "Holder gains the Focus Energy effect when at 1/4 max HP or less. Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "starfberry": {
@@ -347,6 +401,7 @@
     "name": "Starf Berry",
     "num": 207,
     "desc": "Raises a random stat by 2 when at 1/4 max HP or less (not acc/eva). Single use.",
+    "isBerry": true,
     "gen": 3
   },
   "enigmaberry": {
@@ -354,7 +409,11 @@
     "name": "Enigma Berry",
     "num": 208,
     "desc": "No competitive use.",
+    "isBerry": true,
     "gen": 3
+  },
+  "brightpowder": {
+    "desc": "The accuracy of attacks against the holder is 0.9x."
   },
   "whiteherb": {
     "id": "whiteherb",
@@ -369,6 +428,9 @@
     "num": 215,
     "desc": "Holder's Speed is halved. The Klutz Ability does not ignore this effect.",
     "gen": 3
+  },
+  "quickclaw": {
+    "desc": "Each turn, holder has a 20% chance to move first in its priority bracket."
   },
   "mentalherb": {
     "id": "mentalherb",
@@ -407,6 +469,15 @@
     "desc": "If held by a Clamperl, its Sp. Def is doubled. Evolves Clamperl into Gorebyss when traded.",
     "gen": 3
   },
+  "focusband": {
+    "desc": "Holder has a 10% chance to survive an attack that would KO it with 1 HP."
+  },
+  "dragonscale": {
+    "desc": "Evolves Seadra into Kingdra when traded."
+  },
+  "dragonfang": {
+    "desc": "Holder's Dragon-type attacks have 1.1x power."
+  },
   "silkscarf": {
     "id": "silkscarf",
     "name": "Silk Scarf",
@@ -434,6 +505,15 @@
     "num": 255,
     "desc": "The accuracy of attacks against the holder is 0.95x.",
     "gen": 3
+  },
+  "luckypunch": {
+    "desc": "If held by a Chansey, its critical hit ratio is raised by 2 stages."
+  },
+  "metalpowder": {
+    "desc": "If held by a Ditto that hasn't Transformed, its Defense is doubled."
+  },
+  "stick": {
+    "desc": "If held by a Farfetch'd, its critical hit ratio is raised by 2 stages."
   },
   "redorb": {
     "id": "redorb",

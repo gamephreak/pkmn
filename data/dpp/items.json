@@ -100,11 +100,15 @@
     "desc": "If held by a Palkia, its Water- and Dragon-type attacks have 1.2x power.",
     "gen": 4
   },
+  "sitrusberry": {
+    "desc": "Restores 1/4 max HP when at 1/2 max HP or less. Single use."
+  },
   "occaberry": {
     "id": "occaberry",
     "name": "Occa Berry",
     "num": 184,
     "desc": "Halves damage taken from a supereffective Fire-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "passhoberry": {
@@ -112,6 +116,7 @@
     "name": "Passho Berry",
     "num": 185,
     "desc": "Halves damage taken from a supereffective Water-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "wacanberry": {
@@ -119,6 +124,7 @@
     "name": "Wacan Berry",
     "num": 186,
     "desc": "Halves damage taken from a supereffective Electric-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "rindoberry": {
@@ -126,6 +132,7 @@
     "name": "Rindo Berry",
     "num": 187,
     "desc": "Halves damage taken from a supereffective Grass-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "yacheberry": {
@@ -133,6 +140,7 @@
     "name": "Yache Berry",
     "num": 188,
     "desc": "Halves damage taken from a supereffective Ice-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "chopleberry": {
@@ -140,6 +148,7 @@
     "name": "Chople Berry",
     "num": 189,
     "desc": "Halves damage taken from a supereffective Fighting-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "kebiaberry": {
@@ -147,6 +156,7 @@
     "name": "Kebia Berry",
     "num": 190,
     "desc": "Halves damage taken from a supereffective Poison-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "shucaberry": {
@@ -154,6 +164,7 @@
     "name": "Shuca Berry",
     "num": 191,
     "desc": "Halves damage taken from a supereffective Ground-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "cobaberry": {
@@ -161,6 +172,7 @@
     "name": "Coba Berry",
     "num": 192,
     "desc": "Halves damage taken from a supereffective Flying-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "payapaberry": {
@@ -168,6 +180,7 @@
     "name": "Payapa Berry",
     "num": 193,
     "desc": "Halves damage taken from a supereffective Psychic-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "tangaberry": {
@@ -175,6 +188,7 @@
     "name": "Tanga Berry",
     "num": 194,
     "desc": "Halves damage taken from a supereffective Bug-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "chartiberry": {
@@ -182,6 +196,7 @@
     "name": "Charti Berry",
     "num": 195,
     "desc": "Halves damage taken from a supereffective Rock-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "kasibberry": {
@@ -189,6 +204,7 @@
     "name": "Kasib Berry",
     "num": 196,
     "desc": "Halves damage taken from a supereffective Ghost-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "habanberry": {
@@ -196,6 +212,7 @@
     "name": "Haban Berry",
     "num": 197,
     "desc": "Halves damage taken from a supereffective Dragon-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "colburberry": {
@@ -203,6 +220,7 @@
     "name": "Colbur Berry",
     "num": 198,
     "desc": "Halves damage taken from a supereffective Dark-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "babiriberry": {
@@ -210,6 +228,7 @@
     "name": "Babiri Berry",
     "num": 199,
     "desc": "Halves damage taken from a supereffective Steel-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "chilanberry": {
@@ -217,13 +236,18 @@
     "name": "Chilan Berry",
     "num": 200,
     "desc": "Halves damage taken from a Normal-type attack. Single use.",
+    "isBerry": true,
     "gen": 4
+  },
+  "enigmaberry": {
+    "desc": "Restores 1/4 max HP after holder is hit by a supereffective move. Single use."
   },
   "micleberry": {
     "id": "micleberry",
     "name": "Micle Berry",
     "num": 209,
     "desc": "Holder's next move has 1.2x accuracy when at 1/4 max HP or less. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "custapberry": {
@@ -231,6 +255,7 @@
     "name": "Custap Berry",
     "num": 210,
     "desc": "Holder moves first in its priority bracket when at 1/4 max HP or less. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "jabocaberry": {
@@ -238,6 +263,7 @@
     "name": "Jaboca Berry",
     "num": 211,
     "desc": "If holder is hit by a physical move, attacker loses 1/8 of its max HP. Single use.",
+    "isBerry": true,
     "gen": 4
   },
   "rowapberry": {
@@ -245,7 +271,68 @@
     "name": "Rowap Berry",
     "num": 212,
     "desc": "If holder is hit by a special move, attacker loses 1/8 of its max HP. Single use.",
+    "isBerry": true,
     "gen": 4
+  },
+  "silverpowder": {
+    "desc": "Holder's Bug-type attacks have 1.2x power."
+  },
+  "metalcoat": {
+    "desc": "Holder's Steel-type attacks have 1.2x power. Evolves Onix into Steelix and Scyther into Scizor when traded."
+  },
+  "lightball": {
+    "desc": "If held by a Pikachu, its Attack and Sp. Atk are doubled."
+  },
+  "softsand": {
+    "desc": "Holder's Ground-type attacks have 1.2x power."
+  },
+  "hardstone": {
+    "desc": "Holder's Rock-type attacks have 1.2x power."
+  },
+  "miracleseed": {
+    "desc": "Holder's Grass-type attacks have 1.2x power."
+  },
+  "blackglasses": {
+    "desc": "Holder's Dark-type attacks have 1.2x power."
+  },
+  "blackbelt": {
+    "desc": "Holder's Fighting-type attacks have 1.2x power."
+  },
+  "magnet": {
+    "desc": "Holder's Electric-type attacks have 1.2x power."
+  },
+  "mysticwater": {
+    "desc": "Holder's Water-type attacks have 1.2x power."
+  },
+  "sharpbeak": {
+    "desc": "Holder's Flying-type attacks have 1.2x power."
+  },
+  "poisonbarb": {
+    "desc": "Holder's Poison-type attacks have 1.2x power."
+  },
+  "nevermeltice": {
+    "desc": "Holder's Ice-type attacks have 1.2x power."
+  },
+  "spelltag": {
+    "desc": "Holder's Ghost-type attacks have 1.2x power."
+  },
+  "twistedspoon": {
+    "desc": "Holder's Psychic-type attacks have 1.2x power."
+  },
+  "charcoal": {
+    "desc": "Holder's Fire-type attacks have 1.2x power."
+  },
+  "dragonfang": {
+    "desc": "Holder's Dragon-type attacks have 1.2x power."
+  },
+  "silkscarf": {
+    "desc": "Holder's Normal-type attacks have 1.2x power."
+  },
+  "seaincense": {
+    "desc": "Holder's Water-type attacks have 1.2x power."
+  },
+  "laxincense": {
+    "desc": "The accuracy of attacks against the holder is 0.9x."
   },
   "widelens": {
     "id": "widelens",

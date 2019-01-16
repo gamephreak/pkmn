@@ -1,4 +1,7 @@
 {
+  "griseousorb": {
+    "desc": "If held by a Giratina, its Ghost- and Dragon-type attacks have 1.2x power."
+  },
   "dousedrive": {
     "id": "dousedrive",
     "name": "Douse Drive",
@@ -26,6 +29,18 @@
     "num": 119,
     "desc": "Holder's Techno Blast is Ice type.",
     "gen": 5
+  },
+  "mentalherb": {
+    "desc": "Cures holder of Attract, Disable, Encore, Heal Block, Taunt, Torment. Single use."
+  },
+  "focussash": {
+    "desc": "If holder's HP is full, will survive an attack that would KO it with 1 HP. Single use."
+  },
+  "metronome": {
+    "desc": "Damage of moves used on consecutive turns is increased. Max 2x after 5 turns."
+  },
+  "ironball": {
+    "desc": "Holder is grounded, Speed halved. If Flying type, takes neutral Ground damage."
   },
   "prismscale": {
     "id": "prismscale",

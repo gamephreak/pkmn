@@ -9,9 +9,9 @@ describe('Natures', () => {
     expect(adamant.toString()).toBe('Adamant');
 
     const serious = Natures.fromString('Serious')!;
-    expect(serious.plus).toBe(undefined);
-    expect(serious.minus).toBe(undefined);
+    expect(serious.plus).not.toBeDefined();
+    expect(serious.minus).not.toBeDefined();
 
-    expect(Natures.fromString('foo')).toBe(undefined);
+    expect(Natures.fromString('foo')).not.toBeDefined();
   });
 });
