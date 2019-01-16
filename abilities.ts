@@ -1,15 +1,14 @@
 import {Data} from './data';
 import {Generation} from './gen';
 import {ID, toID} from './id';
-export interface Ability extends Data {}
+export interface Ability extends Readonly<Data> {}
 
 export class Abilities {
-  static fromGen(gen: Generation): Readonly<Array<Readonly<Ability>>> {
+  static forGen(gen: Generation): Readonly<Ability[]> {
     return [];  // TODO
   }
 
-  static getAbility(a: ID|string, gen?: Generation):
-      Readonly<Ability>|undefined {
+  static getAbility(a: ID|string, gen?: Generation): Ability|undefined {
     const id = toID(a);
 
     return undefined;  // TODO
