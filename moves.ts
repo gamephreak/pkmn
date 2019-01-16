@@ -1,7 +1,7 @@
 import {Data} from './data';
 import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
-import {Type} from './type';
+import {Type} from './types';
 
 export interface Move extends Data {
   readonly basePower: number;

@@ -1,4 +1,4 @@
-import {Generation} from './gen';
+import {CURRENT, Generation} from './gen';
 import {ID} from './id';
 
 export interface Data {
@@ -11,3 +11,5 @@ export interface Data {
   readonly isNonstandard?: string;
   readonly exists?: boolean;
 }
+
+export type DataTable<T extends Data> = Readonly<{[id: string]: T}>;
