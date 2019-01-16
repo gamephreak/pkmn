@@ -1,2 +1,2 @@
 import {Data} from './data';
-export interface Item extends Data { }
+export interface Item extends Data {}

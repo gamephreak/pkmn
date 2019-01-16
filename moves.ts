@@ -1,4 +1,5 @@
 import {Data} from './data';
+import {ID} from './id';
 import {Type} from './type';
 
 export interface Move extends Data {
