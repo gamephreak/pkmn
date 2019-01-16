@@ -1,4 +1,25 @@
 {
+  "keeneye": {
+    "desc": "Prevents other Pokemon from lowering this Pokemon's accuracy stat stage. This Pokemon ignores a target's evasiveness stat stage.",
+    "shortDesc": "This Pokemon's accuracy can't be lowered by others; ignores their evasiveness stat."
+  },
+  "oblivious": {
+    "desc": "This Pokemon cannot be infatuated or taunted. Gaining this Ability while affected cures it.",
+    "shortDesc": "This Pokemon cannot be infatuated or taunted. Gaining this Ability cures it."
+  },
+  "soundproof": {
+    "shortDesc": "This Pokemon is immune to sound-based moves, including Heal Bell."
+  },
+  "frisk": {
+    "shortDesc": "On switch-in, this Pokemon identifies the held items of all opposing Pokemon."
+  },
+  "infiltrator": {
+    "desc": "This Pokemon's moves ignore substitutes and the opposing side's Reflect, Light Screen, Safeguard, and Mist.",
+    "shortDesc": "Moves ignore substitutes and the foe's Reflect, Light Screen, Safeguard, and Mist."
+  },
+  "overcoat": {
+    "shortDesc": "This Pokemon is immune to powder moves and damage from Sandstorm or Hail."
+  },
   "aerilate": {
     "id": "aerilate",
     "name": "Aerilate",

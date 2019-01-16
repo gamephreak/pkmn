@@ -1,4 +1,82 @@
 {
+  "blaze": {
+    "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Fire-type attack.",
+    "shortDesc": "At 1/3 or less of its max HP, this Pokemon's attacking stat is 1.5x with Fire attacks."
+  },
+  "colorchange": {
+    "desc": "This Pokemon's type changes to match the type of the last move that hit it, unless that type is already one of its types. This effect applies after all hits from a multi-hit move; Sheer Force prevents it from activating if the move has a secondary effect."
+  },
+  "lightningrod": {
+    "desc": "This Pokemon is immune to Electric-type moves and raises its Special Attack by 1 stage when hit by an Electric-type move. If this Pokemon is not the target of a single-target Electric-type move used by another Pokemon, this Pokemon redirects that move to itself if it is within the range of that move.",
+    "shortDesc": "This Pokemon draws Electric moves to itself to raise Sp. Atk by 1; Electric immunity."
+  },
+  "minus": {
+    "desc": "If an active ally has this Ability or the Plus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
+    "shortDesc": "If an active ally has this Ability or the Plus Ability, this Pokemon's Sp. Atk is 1.5x."
+  },
+  "overgrow": {
+    "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Grass-type attack.",
+    "shortDesc": "At 1/3 or less of its max HP, this Pokemon's attacking stat is 1.5x with Grass attacks."
+  },
+  "pickup": {
+    "shortDesc": "If this Pokemon has no item, it finds one used by an adjacent Pokemon this turn."
+  },
+  "plus": {
+    "desc": "If an active ally has this Ability or the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
+    "shortDesc": "If an active ally has this Ability or the Minus Ability, this Pokemon's Sp. Atk is 1.5x."
+  },
+  "pressure": {
+    "desc": "If this Pokemon is the target of an opposing Pokemon's move, that move loses one additional PP.",
+    "shortDesc": "If this Pokemon is the target of a foe's move, that move loses one additional PP."
+  },
+  "stench": {
+    "shortDesc": "This Pokemon's attacks without a chance to flinch have a 10% chance to flinch."
+  },
+  "sturdy": {
+    "desc": "If this Pokemon is at full HP, it survives one hit with at least 1 HP. OHKO moves fail when used against this Pokemon.",
+    "shortDesc": "If this Pokemon is at full HP, it survives one hit with at least 1 HP. Immune to OHKO."
+  },
+  "swarm": {
+    "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Bug-type attack.",
+    "shortDesc": "At 1/3 or less of its max HP, this Pokemon's attacking stat is 1.5x with Bug attacks."
+  },
+  "synchronize": {
+    "desc": "If another Pokemon burns, paralyzes, poisons, or badly poisons this Pokemon, that Pokemon receives the same major status condition."
+  },
+  "thickfat": {
+    "desc": "If a Pokemon uses a Fire- or Ice-type attack against this Pokemon, that Pokemon's attacking stat is halved when calculating the damage to this Pokemon.",
+    "shortDesc": "Fire/Ice-type moves against this Pokemon deal damage with a halved attacking stat."
+  },
+  "torrent": {
+    "desc": "When this Pokemon has 1/3 or less of its maximum HP, rounded down, its attacking stat is multiplied by 1.5 while using a Water-type attack.",
+    "shortDesc": "At 1/3 or less of its max HP, this Pokemon's attacking stat is 1.5x with Water attacks."
+  },
+  "wonderguard": {
+    "shortDesc": "This Pokemon can only be damaged by supereffective moves and indirect damage."
+  },
+  "angerpoint": {
+    "desc": "If this Pokemon, but not its substitute, is struck by a critical hit, its Attack is raised by 12 stages.",
+    "shortDesc": "If this Pokemon (not its substitute) takes a critical hit, its Attack is raised 12 stages."
+  },
+  "flowergift": {
+    "desc": "If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5.",
+    "shortDesc": "If user is Cherrim and Sunny Day is active, it and allies' Attack and Sp. Def are 1.5x."
+  },
+  "leafguard": {
+    "desc": "If Sunny Day is active, this Pokemon cannot gain a major status condition and Rest will fail for it.",
+    "shortDesc": "If Sunny Day is active, this Pokemon cannot be statused and Rest will fail for it."
+  },
+  "magicguard": {
+    "desc": "This Pokemon can only be damaged by direct attacks. Curse and Substitute on use, Belly Drum, Pain Split, Struggle recoil, and confusion damage are considered direct damage.",
+    "shortDesc": "This Pokemon can only be damaged by direct attacks."
+  },
+  "simple": {
+    "shortDesc": "When this Pokemon's stat stages are raised or lowered, the effect is doubled instead."
+  },
+  "stormdrain": {
+    "desc": "This Pokemon is immune to Water-type moves and raises its Special Attack by 1 stage when hit by a Water-type move. If this Pokemon is not the target of a single-target Water-type move used by another Pokemon, this Pokemon redirects that move to itself if it is within the range of that move.",
+    "shortDesc": "This Pokemon draws Water moves to itself to raise Sp. Atk by 1; Water immunity."
+  },
   "analytic": {
     "id": "analytic",
     "name": "Analytic",

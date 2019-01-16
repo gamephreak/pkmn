@@ -1,4 +1,51 @@
 {
+  "cutecharm": {
+    "desc": "There is a 30% chance a Pokemon making contact with this Pokemon will become infatuated if it is of the opposite gender.",
+    "shortDesc": "30% chance of infatuating Pokemon of the opposite gender if they make contact."
+  },
+  "effectspore": {
+    "desc": "30% chance a Pokemon making contact with this Pokemon will be poisoned, paralyzed, or fall asleep.",
+    "shortDesc": "30% chance of poison/paralysis/sleep on others making contact with this Pokemon."
+  },
+  "flamebody": {
+    "shortDesc": "30% chance a Pokemon making contact with this Pokemon will be burned."
+  },
+  "flashfire": {
+    "desc": "This Pokemon is immune to Fire-type moves. The first time it is hit by a Fire-type move, its attacking stat is multiplied by 1.5 while using a Fire-type attack as long as it remains active and has this Ability. If this Pokemon is frozen, it cannot be defrosted by Fire-type attacks."
+  },
+  "lightningrod": {
+    "desc": "If this Pokemon is not the target of a single-target Electric-type move used by another Pokemon, this Pokemon redirects that move to itself.",
+    "shortDesc": "This Pokemon draws single-target Electric moves to itself."
+  },
+  "minus": {
+    "desc": "If an active ally has the Plus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
+    "shortDesc": "If an active ally has the Plus Ability, this Pokemon's Sp. Atk is 1.5x."
+  },
+  "plus": {
+    "desc": "If an active ally has the Minus Ability, this Pokemon's Special Attack is multiplied by 1.5.",
+    "shortDesc": "If an active ally has the Minus Ability, this Pokemon's Sp. Atk is 1.5x."
+  },
+  "poisonpoint": {
+    "shortDesc": "30% chance a Pokemon making contact with this Pokemon will be poisoned."
+  },
+  "roughskin": {
+    "desc": "Pokemon making contact with this Pokemon lose 1/8 of their maximum HP, rounded down.",
+    "shortDesc": "Pokemon making contact with this Pokemon lose 1/8 of their max HP."
+  },
+  "shadowtag": {
+    "desc": "Prevents adjacent opposing Pokemon from choosing to switch out unless they are immune to trapping or also have this Ability.",
+    "shortDesc": "Prevents adjacent foes from choosing to switch unless they also have this Ability."
+  },
+  "static": {
+    "shortDesc": "30% chance a Pokemon making contact with this Pokemon will be paralyzed."
+  },
+  "voltabsorb": {
+    "desc": "This Pokemon is immune to Electric-type moves and restores 1/4 of its maximum HP, rounded down, when hit by an Electric-type move.",
+    "shortDesc": "This Pokemon heals 1/4 of its max HP when hit by Electric moves; Electric immunity."
+  },
+  "wonderguard": {
+    "shortDesc": "This Pokemon is only damaged by Fire Fang, supereffective moves, indirect damage."
+  },
   "adaptability": {
     "id": "adaptability",
     "name": "Adaptability",

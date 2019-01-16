@@ -1,3 +1,4 @@
+export {Abilities, Ability} from './abilities';
 export {Aliases} from './aliases';
 export {Generation, Generations} from './gen';
 export {ID, toID} from './id';
