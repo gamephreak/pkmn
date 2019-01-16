@@ -1,4 +1,4 @@
-/* tslint:disable:forin no-conditional-assignment no-any */
+/* tslint:disable:no-conditional-assignment no-any */
 // jQuery JavaScript Library v2.0.3
 // Copyright 2005, 2013 jQuery Foundation, Inc. and other contributors
 const class2Type: {[c: string]: string} = {

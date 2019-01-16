@@ -1,3 +1,4 @@
+import {extend} from './extend';
 import {ID} from './id';
 
 export type Stat = 'hp'|'atk'|'def'|'spa'|'spd'|'spe';
@@ -21,9 +22,6 @@ export type BoostsTable = {
   accuracy: number,
   evasion: number
 };
-
-export type SparseStatsTable = Partial<StatsTable>;
-export type SparseBoostsTable = Partial<BoostsTable>;
 
 export const HP: Stat = 'hp';
 export const ATK: Stat = 'atk';
@@ -54,6 +52,7 @@ const STAT_IDS: {[id: string]: Stat} = {
   'spe': 'spe',
 };
 
+// TODO redo
 export function display(stat: Stat) {
   switch (stat) {
     case HP:
@@ -73,10 +72,27 @@ export function display(stat: Stat) {
   }
 }
 
-export function itod(iv: number) {
-  return Math.floor(iv / 2);
-}
+export class Stats {
+  private static fill(p: Partial<StatsTable>, val: number): StatsTable {
+    return extend(true, {}, {
+      'hp': val,
+      'atk': val,
+      'def': val,
+      'spa': val,
+      'spd': val,
+      'spe': val
+    });
+  }
 
-export function dtoi(dv: number) {
-  return dv * 2 + 1;
+  static fillIVs(pivs: Partial<StatsTable>): StatsTable {
+    return Stats.fill(pivs, 31);
+  }
+
+  static itod(iv: number) {
+    return Math.floor(iv / 2);
+  }
+
+  static dtoi(dv: number) {
+    return dv * 2 + 1;
+  }
 }

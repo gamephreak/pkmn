@@ -1,5 +1,5 @@
 import {Data} from './data';
-import {Generation} from './gen';
+import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
 import {Type} from './type';
 
@@ -11,7 +11,7 @@ export interface Move extends Data {
   readonly category: Category;
   readonly priority: number;
   readonly target: Target;
-  readonly flags: Readonly<MoveFlags>;
+  readonly flags: Readonly<Flags>;
   readonly critRatio?: number;
   readonly isZ?: ID;
   readonly zMovePower?: number;
@@ -28,7 +28,7 @@ export interface Move extends Data {
   readonly willCrit?: boolean;
 }
 
-type Category = 'Physical'|'Special'|'Status';
+export type Category = 'Physical'|'Special'|'Status';
 type Target =
     // single-target
     'normal'|'any'|'adjacentAlly'|'adjacentFoe'|'adjacentAllyOrSelf'|
@@ -41,7 +41,7 @@ type Target =
 type Recoil = boolean|number|'crash'|'Struggle';
 
 type Flag = 1|0;
-interface MoveFlags {
+interface Flags {
   /** Ignores a target's substitute. */
   authentic?: Flag;
   /**
@@ -118,7 +118,7 @@ export class Moves {
     return [];  // TODO
   }
 
-  static getMove(m: ID|string, gen?: Generation): Move|undefined {
+  static getMove(m: ID|string, gen: Generation = CURRENT): Move|undefined {
     const id = toID(m);
 
     return undefined;  // TODO

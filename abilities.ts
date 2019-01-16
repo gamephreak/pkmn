@@ -1,6 +1,7 @@
 import {Data} from './data';
-import {Generation} from './gen';
+import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
+
 export interface Ability extends Data {}
 
 export class Abilities {
@@ -8,7 +9,8 @@ export class Abilities {
     return [];  // TODO
   }
 
-  static getAbility(a: ID|string, gen?: Generation): Ability|undefined {
+  static getAbility(a: ID|string, gen: Generation = CURRENT): Ability
+      |undefined {
     const id = toID(a);
 
     return undefined;  // TODO

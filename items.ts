@@ -1,5 +1,5 @@
 import {Data} from './data';
-import {Generation} from './gen';
+import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
 
 export interface Item extends Data {}
@@ -9,7 +9,7 @@ export class Items {
     return [];  // TODO
   }
 
-  static getItem(i: ID|string, gen?: Generation): Item|undefined {
+  static getItem(i: ID|string, gen: Generation = CURRENT): Item|undefined {
     const id = toID(i);
 
     return undefined;  // TODO
