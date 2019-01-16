@@ -112,24 +112,32 @@ export class Types {
 
     const ivs: StatsTable = Stats.fillIVs(pivs);
     if (gen === 2) {
-      t = HIDDEN_POWER_TYPES[4 * (Stats.itod(ivs.atk) % 4) + (Stats.itod(ivs.def) % 4)];
-      basePower = 31;  // TODO
+      const atkDV = Stats.itod(ivs.atk);
+      const defDV = Stats.itod(ivs.def);
+      const speDV = Stats.itod(ivs.spe);
+      const spcDV = Stats.itod(ivs.spa);
+      t = HIDDEN_POWER_TYPES[4 * (atkDV % 4) + (defDV % 4)];
+      basePower = Math.floor(
+          (5 *
+               ((spcDV >> 3) + (2 * (speDV >> 3)) + (4 * (defDV >> 3)) +
+                (8 * (atkDV >> 3))) +
+           (spcDV % 4)) /
+              2 +
+          31);
     } else {
-      let val = 0;
+      let hpType = 0, hpPower = 0;
       let i = 1;
 
       let s: Stat;
       for (s in ivs) {
-        val += i * (ivs[s] % 2);
+        hpType += i * (ivs[s] % 2);
+        hpPower += i * (Math.floor(ivs[s] / 2) % 2);
         i *= 2;
       }
-      t = HIDDEN_POWER_TYPES[Math.floor(val * 15 / 63)];
-      basePower = 31;  // TODO
+      t = HIDDEN_POWER_TYPES[Math.floor(hpType * 15 / 63)];
+      basePower = (gen < 6) ? Math.floor(hpPower * 40 / 63) + 30 : 60;
     }
 
-    if (gen > 5) {
-      basePower = 60;
-    }
     return {type: t, basePower};
   }
 
