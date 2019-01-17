@@ -17,6 +17,11 @@ export interface Item extends Data {
   readonly zMoveFrom?: string;
   readonly zMoveType?: Type;
   readonly zMoveUser?: string[];
+
+  // TODO
+  readonly onPlate?: string;
+  readonly onMemory?: string;
+  readonly onDrive?: string;
 }
 
 const RBY: DataTable<Item> = {};

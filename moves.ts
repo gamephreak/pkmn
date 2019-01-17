@@ -1,31 +1,33 @@
 import {Data} from './data';
 import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
+import {StatsTable} from './stats';
 import {Type} from './types';
 
 export interface Move extends Data {
-  readonly basePower: number;
+  readonly basePower: number;  // bp
   readonly accuracy: number|true;
   readonly pp: number;
   readonly type: Type;
   readonly category: Category;
-  readonly priority: number;
-  readonly target: Target;
+  readonly priority: number;  // TODO hasPriority
+  readonly target: Target;    // TODO isSpread
   readonly flags: Readonly<Flags>;
   readonly critRatio?: number;
-  readonly isZ?: ID;
-  readonly zMovePower?: number;
-  readonly multihit?: number|number[];
-  readonly percentHealed?: number;
-  readonly dropsStats?: number;
-  readonly recoil?: Recoil;
-  readonly defensiveCategory?: Category;
-  readonly useHighest?: boolean;
-  readonly breaksProtect?: boolean;
-  readonly ignoreBurn?: boolean;
+  readonly isZ?: ID;             // TODO isZ
+  readonly zMovePower?: number;  // TODO zp
+  readonly zMoveBoost?: Partial<StatsTable>;
+  readonly multihit?: number|number[];    // TODO isMultiHit/isTwoHit
+  readonly percentHealed?: number;        // TODO percentHealed
+  readonly dropsStats?: number;           // TODO dropsStats
+  readonly recoil?: Recoil;               // TODO hasRecoil
+  readonly defensiveCategory?: Category;  // TODO dealsPhysicalDamage
+  readonly useHighest?: boolean;          // TODO usesHighestAttackStat
+  readonly breaksProtect?: boolean;       // TODO bypassesProtect
+  readonly ignoresBurn?: boolean;         // TODO ignoresBurn
   readonly secondary?: boolean;
-  readonly ignoreDefensive?: boolean;
-  readonly willCrit?: boolean;
+  readonly ignoreDefensive?: boolean;  // TODO ignoresDefenseBoosts
+  readonly willCrit?: boolean;         // TODO alwaysCrit
 }
 
 export type Category = 'Physical'|'Special'|'Status';
@@ -48,13 +50,13 @@ interface Flags {
    * Power is multiplied by 1.5 when used by a Pokemon with the Strong Jaw
    * Ability.
    */
-  bite?: Flag;
+  bite?: Flag;  // TODO isBite
   /** Has no effect on Pokemon with the Bulletproof Ability. */
-  bullet?: Flag;
+  bullet?: Flag;  // TODO isBullet
   /** The user is unable to make a move between turns. */
   charge?: Flag;
   /** Makes contact. */
-  contact?: Flag;
+  contact?: Flag;  // TODO makesContact
   /**
    * When used by a Pokemon, other Pokemon with the Dancer Ability can attempt
    * to execute the same move.
@@ -67,7 +69,7 @@ interface Flags {
   /** Prevented from being executed or selected during Gravity's effect. */
   gravity?: Flag;
   /** Prevented from being executed or selected during Heal Block's effect. */
-  heal?: Flag;
+  heal?: Flag;  // TODO givesHealth
   /** Can be copied by Mirror Move. */
   mirror?: Flag;
   /** Unknown effect. */
@@ -88,12 +90,12 @@ interface Flags {
    * Power is multiplied by 1.5 when used by a Pokemon with the Mega Launcher
    * Ability.
    */
-  pulse?: Flag;
+  pulse?: Flag;  // TODO isPulse
   /**
    * Power is multiplied by 1.2 when used by a Pokemon with the Iron Fist
    * Ability.
    */
-  punch?: Flag;
+  punch?: Flag;  // TODO isPunch
   /**
    * If this move is successful, the user must recharge on the following turn
    * and cannot make a move.
@@ -110,7 +112,7 @@ interface Flags {
    */
   snatch?: Flag;
   /** Has no effect on Pokemon with the Soundproof Ability. */
-  sound?: Flag;
+  sound?: Flag;  // TODO isSound
 }
 
 export class Moves {
