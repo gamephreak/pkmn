@@ -1,5 +1,5 @@
 import {Generation} from './gen';
-import {PokemonSet} from './set';
+import {_unpack, PokemonSet} from './set';
 import {Tier, Tiers} from './tiers';
 
 export class Team {
@@ -49,23 +49,50 @@ export class Team {
 }
 
 export class Teams {
-  static unpack(buf: string): Team {
+  static unpack(buf: string): Team|undefined {
     return Teams.unpackTeam(buf);
   }
 
-  static unpackTeam(buf: string): Team {
-    return [];  // TODO
+  static unpackTeam(buf: string): Team|undefined {
+    if (!buf) return undefined;
+    if (buf.charAt(0) === '[' && buf.charAt(buf.length - 1) === ']') {
+      return Teams.fromJSON(buf);
+    }
+
+    const team: PokemonSet[] = [];
+    let i = 0, j = 0;
+
+    while (true) {
+      const r = _unpack(buf, i, j);
+      if (!r.set) return undefined;
+
+      team.push(r.set);
+      i = r.i;
+      j = r.j;
+
+      if (j < 0) break;
+      i = j + 1;
+    }
+
+    return new Team(team);
   }
 
-  static importTeam(buf: string): Team {
-    return [];  // TODO
+  static importTeam(buf: string): Team|undefined {
+    return undefined;  // TODO
   }
 
-  static fromJSON(json: string): Team {
-    return [];  // TODO
+  static fromJSON(json: string): Team|undefined {
+    if (json.charAt(0) !== '[' || json.charAt(json.length - 1) !== ']') {
+      return undefined;
+    }
+    // BUG: this is completely unvalidated...
+    const team: PokemonSet[] = JSON.parse(json);
+    return new Team(team);
   }
 
-  static fromString(str: string): Team[] {
-    return [];  // TODO
+  static fromString(str: string): Team|undefined {
+    return Teams.importTeam(str);
   }
+
+  // TODO exportAll/imporAll
 }
