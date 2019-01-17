@@ -1,3 +1,7 @@
+import {patch} from './data';
+import * as gsc from './data/gsc/types.json';
+import * as rby from './data/rby/types.json';
+import * as xy from './data/xy/types.json';
 import {CURRENT, Generation} from './gen';
 import {Category} from './moves';
 import {Stat, Stats, StatsTable} from './stats';
@@ -9,6 +13,14 @@ export type Type = '???'|'Normal'|'Grass'|'Fire'|'Water'|'Electric'|'Ice'|
 export type TypeChart = {
   [type in Type]?: {[type in Type]?: number}
 };
+
+const RBY: TypeChart = rby;
+const GSC: TypeChart = patch(RBY, gsc);
+const ADV: TypeChart = GSC;
+const DPP: TypeChart = GSC;
+const BW: TypeChart = GSC;
+const XY: TypeChart = patch(BW, xy);
+const SM: TypeChart = XY;
 
 const SPECIAL: {[type in Type]?: 1} = {
   'Grass': 1,
@@ -95,10 +107,11 @@ const HIDDEN_POWERS:
       },
     };
 
+const TYPE_CHARTS: TypeChart[] = [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export class Types {
   static chart(gen: Generation = CURRENT): TypeChart {
-    return {};  // TODO
+    return TYPE_CHARTS[gen - 1];
   }
 
   static hiddenPower(pivs: Partial<StatsTable>, gen: Generation = CURRENT):
