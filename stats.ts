@@ -32,7 +32,9 @@ export const SPA: Stat = 'spa';
 export const SPD: Stat = 'spd';
 export const SPE: Stat = 'spe';
 
-const BOOSTS = [1, 1.5, 2, 2.5, 3, 3.5, 4];
+const STAT_BOOSTS = [1, 1.5, 2, 2.5, 3, 3.5, 4];
+// TODO: https://www.dragonflycave.com/mechanics/stat-stages
+const OTHER_BOOSTS = [1, 1.5, 2, 2.5, 3, 3.5, 4];
 
 const STAT_IDS: {[id: string]: Stat} = {
   'HP': 'hp',
