@@ -21,6 +21,7 @@ export type BoostsTable = {
   spa: number,
   spd: number,
   spe: number,
+  spc: number,
   accuracy: number,
   evasion: number
 };
@@ -33,8 +34,8 @@ export const SPD: Stat = 'spd';
 export const SPE: Stat = 'spe';
 
 const STAT_BOOSTS = [1, 1.5, 2, 2.5, 3, 3.5, 4];
-// TODO: https://www.dragonflycave.com/mechanics/stat-stages
-const OTHER_BOOSTS = [1, 1.5, 2, 2.5, 3, 3.5, 4];
+// NOTE: https://www.dragonflycave.com/mechanics/stat-stages
+const OTHER_BOOSTS = [1, 4 / 3, 5 / 3, 2, 7 / 3, 8 / 3, 3];
 
 const STAT_IDS: {[id: string]: Stat} = {
   'HP': 'hp',
@@ -131,13 +132,15 @@ export class Stats {
     return ivs;
   }
 
-  static boost(b: number): number {
+  static boost(s: Boost, b: number): number {
     if (b > 6) {
       b = 6;
     } else if (b < -6) {
       b = -6;
     }
-    const boost = BOOSTS[Math.abs(b)];
+    const abs = Math.abs(b);
+    const boost = (s === 'accuracy' || s === 'evasion') ? OTHER_BOOSTS[abs] :
+                                                          STAT_BOOSTS[abs];
     return b >= 0 ? boost : -boost;
   }
 

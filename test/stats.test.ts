@@ -43,12 +43,19 @@ describe('Stats', () => {
   });
 
   test('boost', () => {
-    expect(Stats.boost(3)).toBe(2.5);
-    expect(Stats.boost(4)).toBe(3);
-    expect(Stats.boost(10)).toBe(4);
-    expect(Stats.boost(-5)).toBe(-3.5);
-    expect(Stats.boost(0)).toBe(1);
-    expect(Stats.boost(-100)).toBe(-4);
+    expect(Stats.boost('atk', 3)).toBe(2.5);
+    expect(Stats.boost('def', 4)).toBe(3);
+    expect(Stats.boost('spc', 10)).toBe(4);
+    expect(Stats.boost('spd', -5)).toBe(-3.5);
+    expect(Stats.boost('spa', 0)).toBe(1);
+    expect(Stats.boost('spe', -100)).toBe(-4);
+
+    expect(Stats.boost('accuracy', 3)).toBe(2);
+    expect(Stats.boost('evasion', 4)).toBe(7 / 3);
+    expect(Stats.boost('evasion', 10)).toBe(3);
+    expect(Stats.boost('accuracy', -5)).toBe(-8 / 3);
+    expect(Stats.boost('evasion', 0)).toBe(1);
+    expect(Stats.boost('accuracy', -100)).toBe(-3);
   });
 
   test('getHPDV', () => {
