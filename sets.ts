@@ -1,5 +1,5 @@
 import {toID} from './id';
-import {Stat, STAT_NAMES, StatsTable} from './stats';
+import {Stat, STAT_NAMES, Stats, StatsTable} from './stats';
 
 export type PokemonSet = {
   readonly name: string;
@@ -17,6 +17,9 @@ export type PokemonSet = {
   readonly pokeball?: string;
   readonly hpType?: string;
 };
+
+type WriteableSet =
+    Partial<{-readonly[k in keyof PokemonSet] -?: PokemonSet[k]}>;
 
 export class Sets {
   static pack(s: PokemonSet): string {
@@ -226,8 +229,9 @@ export class Sets {
         let stat: Stat;
         for (stat in STAT_NAMES) {
           if (typeof s.ivs[stat] === 'undefined' || isNaN(s.ivs[stat]) ||
-              s.ivs[stat] === 31)
+              s.ivs[stat] === 31) {
             continue;
+          }
           if (first) {
             buf += 'IVs: ';
             first = false;
@@ -266,7 +270,7 @@ export class Sets {
   }
 
   static importSet(buf: string): PokemonSet|undefined {
-    return undefined;  // TODO
+    return _import(buf.split('\n')).set;
   }
 
   static toJSON(s: PokemonSet): string {
@@ -292,35 +296,36 @@ export class Sets {
 
 export function _unpack(
     buf: string, i = 0, j = 0): {set?: PokemonSet, i: number, j: number} {
+  const s: WriteableSet = {};
   // name
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  const name: string = buf.substring(i, j);
+  s.name = buf.substring(i, j);
   i = j + 1;
 
   // species
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  const species: string = buf.substring(i, j) || name;
+  s.species = buf.substring(i, j) || s.name;
   i = j + 1;
 
   // item
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  const item: string = buf.substring(i, j);
+  s.item = buf.substring(i, j);
   i = j + 1;
 
   // ability
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  const ability: string = buf.substring(i, j);
+  s.ability = buf.substring(i, j);
   /* TODO
     var template = Dex.getTemplate(set.species);
-    ability = (template.abilities && ability in {'':1, 0:1, 1:1, H:1} ?
+    s.ability = (template.abilities && ability in {'':1, 0:1, 1:1, H:1} ?
     template.abilities[ability || '0'] : ability);
 
     let template = dexes['base'].getTemplate(s.species);
-    ability = (template.abilities && ['', '0', '1', 'H'].includes(ability) ?
+    s.ability = (template.abilities && ['', '0', '1', 'H'].includes(ability) ?
       template.abilities[ability || '0'] : ability);
    */
   i = j + 1;
@@ -328,68 +333,65 @@ export function _unpack(
   // moves
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  const moves: string[] = buf.substring(i, j).split(',', 24).filter(x => x);
+  s.moves = buf.substring(i, j).split(',', 24).filter(x => x);
   i = j + 1;
 
   // nature
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  const nature: string = buf.substring(i, j);
+  s.nature = buf.substring(i, j);
   i = j + 1;
 
   // evs
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  const evs: StatsTable = {hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0};
+  s.evs = {hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0};
   if (j !== i) {
     const evstr = buf.substring(i, j);
     if (evstr.length > 5) {
-      const s = evstr.split(',');
-      evs.hp = Number(s[0]) || evs.hp;
-      evs.atk = Number(s[1]) || evs.atk;
-      evs.def = Number(s[2]) || evs.def;
-      evs.spa = Number(s[3]) || evs.spa;
-      evs.spd = Number(s[4]) || evs.spd;
-      evs.spe = Number(s[5]) || evs.spe;
+      const st = evstr.split(',');
+      s.evs.hp = Number(st[0]) || s.evs.hp;
+      s.evs.atk = Number(st[1]) || s.evs.atk;
+      s.evs.def = Number(st[2]) || s.evs.def;
+      s.evs.spa = Number(st[3]) || s.evs.spa;
+      s.evs.spd = Number(st[4]) || s.evs.spd;
+      s.evs.spe = Number(st[5]) || s.evs.spe;
     }
   }
   i = j + 1;
 
   // gender
-  let gender: string|undefined = undefined;
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  if (i !== j) gender = buf.substring(i, j);
+  if (i !== j) s.gender = buf.substring(i, j);
   i = j + 1;
 
   // ivs
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  const ivs: StatsTable = {hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0};
+  s.ivs = {hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0};
   if (j !== i) {
-    const s = buf.substring(i, j).split(',', 6);
-    ivs.hp = s[0] === '' ? 31 : Number(s[0]) || ivs.hp;
-    ivs.atk = s[1] === '' ? 31 : Number(s[1]) || ivs.atk;
-    ivs.def = s[2] === '' ? 31 : Number(s[2]) || ivs.def;
-    ivs.spa = s[3] === '' ? 31 : Number(s[3]) || ivs.spa;
-    ivs.spd = s[4] === '' ? 31 : Number(s[4]) || ivs.spd;
-    ivs.spe = s[5] === '' ? 31 : Number(s[5]) || ivs.spe;
+    const st = buf.substring(i, j).split(',', 6);
+    s.ivs.hp = st[0] === '' ? 31 : Number(st[0]) || s.ivs.hp;
+    s.ivs.atk = st[1] === '' ? 31 : Number(st[1]) || s.ivs.atk;
+    s.ivs.def = st[2] === '' ? 31 : Number(st[2]) || s.ivs.def;
+    s.ivs.spa = st[3] === '' ? 31 : Number(st[3]) || s.ivs.spa;
+    s.ivs.spd = st[4] === '' ? 31 : Number(st[4]) || s.ivs.spd;
+    s.ivs.spe = st[5] === '' ? 31 : Number(st[5]) || s.ivs.spe;
   }
   i = j + 1;
 
   // shiny
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  let shiny: boolean|undefined = undefined;
-  if (i !== j) shiny = true;
+  if (i !== j) s.shiny = true;
   i = j + 1;
 
   // level
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  let level: number|undefined = undefined;
   // tslint:disable-next-line:ban
-  if (i !== j) level = parseInt(buf.substring(i, j), 10);
+  if (i !== j) s.level = parseInt(buf.substring(i, j), 10);
   i = j + 1;
 
   // happiness
@@ -401,33 +403,126 @@ export function _unpack(
     if (i !== j) misc = buf.substring(i, j).split(',', 3);
   }
 
-  let happiness: number|undefined = undefined;
-  let hpType: string|undefined = undefined;
-  let pokeball: string|undefined = undefined;
   if (misc) {
-    happiness = (misc[0] ? Number(misc[0]) : 255);
-    hpType = misc[1];
-    pokeball = misc[2];
+    s.happiness = (misc[0] ? Number(misc[0]) : 255);
+    s.hpType = misc[1];
+    s.pokeball = misc[2];
   }
 
-  return {
-    set: {
-      name,
-      species,
-      item,
-      ability,
-      moves,
-      nature,
-      evs,
-      ivs,
-      gender,
-      level,
-      shiny,
-      happiness,
-      pokeball,
-      hpType
-    },
-    i,
-    j
-  };
+  return {set: toPokemonSet(s), i, j};
+}
+
+export function _import(
+    lines: string[], i = 0): {set?: PokemonSet, line: number} {
+  let s: WriteableSet|undefined = undefined;
+  for (; i < lines.length; i++) {
+    let line = lines[i].trim();
+    if (line === '' || line === '---' || line.substr(0, 3) === '===' ||
+        line.includes('|')) {
+      return {set: toPokemonSet(s), line: i};
+    } else if (!s) {
+      s = {name: '', species: '', gender: ''};
+      const atIndex = line.lastIndexOf(' @ ');
+      if (atIndex !== -1) {
+        s.item = line.substr(atIndex + 3);
+        if (toID(s.item) === 'noitem') s.item = '';
+        line = line.substr(0, atIndex);
+      }
+      if (line.substr(line.length - 4) === ' (M)') {
+        s.gender = 'M';
+        line = line.substr(0, line.length - 4);
+      }
+      if (line.substr(line.length - 4) === ' (F)') {
+        s.gender = 'F';
+        line = line.substr(0, line.length - 4);
+      }
+      const parenIndex = line.lastIndexOf(' (');
+      if (line.substr(line.length - 1) === ')' && parenIndex !== -1) {
+        line = line.substr(0, line.length - 1);
+        /* TODO s.species = Dex.getTemplate(line.substr(parenIndex +
+         * 2)).species; */
+        line = line.substr(0, parenIndex);
+        s.name = line;
+      } else {
+        /* TODO s.species = Dex.getTemplate(line).species; */
+        s.name = '';
+      }
+
+    } else if (line.substr(0, 7) === 'Trait: ') {
+      line = line.substr(7);
+      s.ability = line;
+    } else if (line.substr(0, 9) === 'Ability: ') {
+      line = line.substr(9);
+      s.ability = line;
+    } else if (line === 'Shiny: Yes') {
+      s.shiny = true;
+    } else if (line.substr(0, 7) === 'Level: ') {
+      line = line.substr(7);
+      s.level = +line;
+    } else if (line.substr(0, 11) === 'Happiness: ') {
+      line = line.substr(11);
+      s.happiness = +line;
+    } else if (line.substr(0, 5) === 'EVs: ') {
+      line = line.substr(5);
+      const evLines = line.split('/');
+      s.evs = {hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0};
+      for (let j = 0; j < evLines.length; j++) {
+        const evLine = evLines[j].trim();
+        const spaceIndex = evLine.indexOf(' ');
+        if (spaceIndex === -1) continue;
+        const stat = Stats.getStat(evLine.substr(spaceIndex + 1));
+        // tslint:disable-next-line:ban
+        const val = parseInt(evLine.substr(0, spaceIndex), 10);
+        if (!stat) continue;
+        s.evs[stat] = val;
+      }
+    } else if (line.substr(0, 5) === 'IVs: ') {
+      line = line.substr(5);
+      const ivLines = line.split(' / ');
+      s.ivs = {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31};
+      for (let j = 0; j < ivLines.length; j++) {
+        const ivLine = ivLines[j];
+        const spaceIndex = ivLine.indexOf(' ');
+        if (spaceIndex === -1) continue;
+        const stat = Stats.getStat(ivLine.substr(spaceIndex + 1));
+        // tslint:disable-next-line:ban
+        let val = parseInt(ivLine.substr(0, spaceIndex), 10);
+        if (!stat) continue;
+        if (isNaN(val)) val = 31;
+        s.ivs[stat] = val;
+      }
+    } else if (line.match(/^[A-Za-z]+ (N|n)ature/)) {
+      let natureIndex = line.indexOf(' Nature');
+      if (natureIndex === -1) natureIndex = line.indexOf(' nature');
+      if (natureIndex === -1) continue;
+      line = line.substr(0, natureIndex);
+      if (line !== 'undefined') s.nature = line;
+    } else if (line.substr(0, 1) === '-' || line.substr(0, 1) === '~') {
+      line = line.substr(1);
+      if (line.substr(0, 1) === ' ') line = line.substr(1);
+      if (!s.moves) s.moves = [];
+      if (line.substr(0, 14) === 'Hidden Power [') {
+        const hptype = line.substr(14, line.length - 15);
+        line = 'Hidden Power ' + hptype;
+        /* TODO
+        if (!s.ivs && window.BattleTypeChart && window.BattleTypeChart[hptype])
+        { s.ivs = {}; for (var stat in window.BattleTypeChart[hptype].HPivs) {
+            s.ivs[stat] = window.BattleTypeChart[hptype].HPivs[stat];
+          }
+        } */
+      }
+      if (line === 'Frustration') {
+        s.happiness = 0;
+      }
+      s.moves.push(line);
+    }
+  }
+
+  return {set: toPokemonSet(s), line: i + 1};
+}
+
+function toPokemonSet(s?: WriteableSet): PokemonSet|undefined {
+  if (!s) return undefined;
+
+  return undefined;  // TODO
 }
