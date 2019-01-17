@@ -1,5 +1,5 @@
 import {toID} from './id';
-import {Stat, StatsTable} from './stats';
+import {Stat, STAT_NAMES, StatsTable} from './stats';
 
 export type PokemonSet = {
   readonly name: string;
@@ -142,7 +142,119 @@ export class Sets {
   }
 
   static exportSet(s: PokemonSet): string {
-    return '';  // TODO
+    let buf = '';
+    if (s.name && s.name !== s.species) {
+      buf += '' + s.name + ' (' + s.species + ')';
+    } else {
+      buf += '' + s.species;
+    }
+    if (s.gender === 'M') buf += ' (M)';
+    if (s.gender === 'F') buf += ' (F)';
+    if (s.item) {
+      buf += ' @ ' + s.item;
+    }
+    buf += '  \n';
+    if (s.ability) {
+      buf += 'Ability: ' + s.ability + '  \n';
+    }
+    if (s.level && s.level !== 100) {
+      buf += 'Level: ' + s.level + '  \n';
+    }
+    if (s.shiny) {
+      buf += 'Shiny: Yes  \n';
+    }
+    if (typeof s.happiness === 'number' && s.happiness !== 255 &&
+        !isNaN(s.happiness)) {
+      buf += 'Happiness: ' + s.happiness + '  \n';
+    }
+    let first = true;
+    if (s.evs) {
+      let stat: Stat;
+      for (stat in STAT_NAMES) {
+        if (!s.evs[stat]) continue;
+        if (first) {
+          buf += 'EVs: ';
+          first = false;
+        } else {
+          buf += ' / ';
+        }
+        buf += '' + s.evs[stat] + ' ' + STAT_NAMES[stat];
+      }
+    }
+    if (!first) {
+      buf += '  \n';
+    }
+    if (s.nature) {
+      buf += '' + s.nature + ' Nature' +
+          '  \n';
+    }
+    first = true;
+    if (s.ivs) {
+      let defaultIvs = true;
+      let hpType = '';
+      for (const move in s.moves) {
+        if (move.substr(0, 13) === 'Hidden Power ' &&
+            move.substr(0, 14) !== 'Hidden Power [') {
+          hpType = move.substr(13);
+          /* TODO
+          if (!exports.BattleTypeChart[hpType].HPivs) {
+            alert("That is not a valid Hidden Power type.");
+            continue;
+          }
+           */
+          let stat: Stat;
+          for (stat in STAT_NAMES) {
+            /* TODO
+            if ((s.ivs[stat] === undefined ? 31 : s.ivs[stat]) !==
+            (exports.BattleTypeChart[hpType].HPivs[stat] || 31)) { defaultIvs =
+            false; break;
+            }
+            */
+          }
+        }
+      }
+      if (defaultIvs && !hpType) {
+        let stat: Stat;
+        for (stat in STAT_NAMES) {
+          if (s.ivs[stat] !== 31 && s.ivs[stat] !== undefined) {
+            defaultIvs = false;
+            break;
+          }
+        }
+      }
+      if (!defaultIvs) {
+        let stat: Stat;
+        for (stat in STAT_NAMES) {
+          if (typeof s.ivs[stat] === 'undefined' || isNaN(s.ivs[stat]) ||
+              s.ivs[stat] === 31)
+            continue;
+          if (first) {
+            buf += 'IVs: ';
+            first = false;
+          } else {
+            buf += ' / ';
+          }
+          buf += '' + s.ivs[stat] + ' ' + STAT_NAMES[stat];
+        }
+      }
+    }
+    if (!first) {
+      buf += '  \n';
+    }
+    if (s.moves) {
+      for (let j = 0; j < s.moves.length; j++) {
+        let move = s.moves[j];
+        if (move.substr(0, 13) === 'Hidden Power ') {
+          move = move.substr(0, 13) + '[' + move.substr(13) + ']';
+        }
+        if (move) {
+          buf += '- ' + move + '  \n';
+        }
+      }
+    }
+    buf += '\n';
+
+    return buf;
   }
 
   static unpack(buf: string): PokemonSet|undefined {

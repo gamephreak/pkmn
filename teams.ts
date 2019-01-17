@@ -33,16 +33,18 @@ export class Team {
 
   packTeam(): string {
     const buf = '';
-
     for (const s of this.team) {
       Sets.packSet(s, buf);
     }
-
     return buf;
   }
 
   exportTeam(): string {
-    return '';  // TODO
+    const buf = '';
+    for (const s of this.team) {
+      Sets.exportSet(s);
+    }
+    return buf;
   }
 
   toString(): string {
@@ -87,6 +89,22 @@ export class Teams {
     return undefined;  // TODO
   }
 
+  static importTeams(buf: string): Team[] {
+    return [];  // TODO
+  }
+
+  static exportTeams(teams: Team[]): string {
+    let buf = '';
+
+    for (const team of teams) {
+      buf += '=== ' + (team.format ? '[' + team.format + '] ' : '') +
+          (team.folder ? '' + team.folder + '/' : '') + team.name + ' ===\n\n';
+      buf += team.exportTeam();
+      buf += '\n';
+    }
+    return buf;
+  }
+
   static fromJSON(json: string): Team|undefined {
     if (json.charAt(0) !== '[' || json.charAt(json.length - 1) !== ']') {
       return undefined;
@@ -99,6 +117,4 @@ export class Teams {
   static fromString(str: string): Team|undefined {
     return Teams.importTeam(str);
   }
-
-  // TODO exportAll/imporAll
 }

@@ -59,13 +59,22 @@ const STAT_IDS: {[id: string]: Stat} = {
   'spe': 'spe',
 };
 
+export const STAT_NAMES: {[stat in Stat]: string} = {
+  hp: 'HP',
+  atk: 'Atk',
+  def: 'Def',
+  spa: 'SpA',
+  spd: 'SpD',
+  spe: 'Spe'
+};
+
 const DISPLAY: {[stat: string]: [string, string]} = {
-  hp: ['HP', 'HP'],
-  atk: ['Atk', 'Attack'],
-  def: ['Def', 'Defense'],
-  spa: ['SpA', 'Special Attack'],
-  spd: ['SpD', 'Special Defense'],
-  spe: ['Spe', 'Speed'],
+  hp: [STAT_NAMES.hp, 'HP'],
+  atk: [STAT_NAMES.atk, 'Attack'],
+  def: [STAT_NAMES.def, 'Defense'],
+  spa: [STAT_NAMES.spa, 'Special Attack'],
+  spd: [STAT_NAMES.spd, 'Special Defense'],
+  spe: [STAT_NAMES.spe, 'Speed'],
   spc: ['Spc', 'Special'],
 };
 
