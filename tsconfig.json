@@ -12,6 +12,7 @@
     "test/**/*.ts"
   ],
   "exclude": [
-    "build"
+    "build",
+    "wip"
   ]
 }
