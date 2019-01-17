@@ -4,4 +4,5 @@ export {Generation, Generations} from './gen';
 export {ID, toID} from './id';
 export {Nature, Natures} from './natures';
 export {Boost, BoostsTable, Stat, Stats, StatsTable} from './stats';
+export {Tier, Tiers} from './tiers';
 export {Type, TypeChart, Types} from './types';
