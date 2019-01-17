@@ -1,4 +1,5 @@
-import {StatsTable} from './stats';
+import {toID} from './id';
+import {Stat, StatsTable} from './stats';
 
 export type PokemonSet = {
   readonly name: string;
@@ -22,8 +23,122 @@ export class Sets {
     return Sets.packSet(s);
   }
 
-  static packSet(s: PokemonSet): string {
-    return '';  // TODO
+  static packSet(s: PokemonSet, buf = ''): string {
+    if (buf) buf += ']';
+
+    // name
+    buf += (s.name || s.species);
+
+    // species
+    const id = toID(s.species || s.name);
+    buf += '|' + (toID(s.name || s.species) === id ? '' : id);
+
+    // item
+    buf += '|' + toID(s.item);
+
+    /* TODO
+    // ability
+     let template = dexes['base'].getTemplate(s.species || s.name);
+     let abilities = template.abilities;
+     id = toID(s.ability);
+     if (abilities) {
+     if (id === toID(abilities['0'])) {
+     buf += '|';
+    } else if (id === toID(abilities['1'])) {
+     buf += '|1';
+    } else if (id === toID(abilities['H'])) {
+     buf += '|H';
+    } else {
+     buf += '|' + id;
+    }
+    } else {
+     buf += '|' + id;
+    } */
+
+    // moves
+    let hasHP = false;
+    buf += '|';
+    if (s.moves) {
+      for (let j = 0; j < s.moves.length; j++) {
+        const moveid = toID(s.moves[j]);
+        if (j && !moveid) continue;
+        buf += (j ? ',' : '') + moveid;
+        if (moveid.substr(0, 11) === 'hiddenpower' && moveid.length > 11) {
+          hasHP = true;
+        }
+      }
+    }
+
+    // nature
+    buf += '|' + (s.nature || '');
+
+    // evs
+    let evs = '|';
+    if (s.evs) {
+      evs = '|' + (s.evs['hp'] || '') + ',' + (s.evs['atk'] || '') + ',' +
+          (s.evs['def'] || '') + ',' + (s.evs['spa'] || '') + ',' +
+          (s.evs['spd'] || '') + ',' + (s.evs['spe'] || '');
+    }
+    if (evs === '|,,,,,') {
+      buf += '|';
+    } else {
+      buf += evs;
+    }
+
+    // gender
+    /* TODO
+     if (s.gender && s.gender !== template.gender) {
+     buf += '|' + s.gender;
+    } else {
+     buf += '|';
+    }*/
+
+    const getIV = (set: PokemonSet, s: Stat): string => {
+      return set.ivs[s] === 31 || set.ivs[s] === undefined ?
+          '' :
+          set.ivs[s].toString();
+    };
+
+    // ivs
+    let ivs = '|';
+    if (s.ivs) {
+      ivs = '|' + getIV(s, 'hp') + ',' + getIV(s, 'atk') + ',' +
+          getIV(s, 'def') + ',' + getIV(s, 'spa') + ',' + getIV(s, 'spd') +
+          ',' + getIV(s, 'spe');
+    }
+    if (ivs === '|,,,,,') {
+      buf += '|';
+    } else {
+      buf += ivs;
+    }
+
+    // shiny
+    if (s.shiny) {
+      buf += '|S';
+    } else {
+      buf += '|';
+    }
+
+    // level
+    if (s.level && s.level !== 100) {
+      buf += '|' + s.level;
+    } else {
+      buf += '|';
+    }
+
+    // happiness
+    if (s.happiness !== undefined && s.happiness !== 255) {
+      buf += '|' + s.happiness;
+    } else {
+      buf += '|';
+    }
+
+    if (s.pokeball || (s.hpType && !hasHP)) {
+      buf += ',' + (s.hpType || '');
+      buf += ',' + toID(s.pokeball);
+    }
+
+    return buf;
   }
 
   static exportSet(s: PokemonSet): string {
@@ -50,6 +165,7 @@ export class Sets {
     if (json.charAt(0) !== '{' || json.charAt(json.length - 1) !== '}') {
       return undefined;
     }
+    // BUG: this is completely unvalidated...
     return JSON.parse(json);
   }
 
@@ -87,13 +203,13 @@ export function _unpack(
   if (j < 0) return {i, j};
   const ability: string = buf.substring(i, j);
   /* TODO
-var template = Dex.getTemplate(set.species);
-ability = (template.abilities && ability in {'':1, 0:1, 1:1, H:1} ?
-template.abilities[ability || '0'] : ability);
-   *
-let template = dexes['base'].getTemplate(s.species);
-ability = (template.abilities && ['', '0', '1', 'H'].includes(ability) ?
+    var template = Dex.getTemplate(set.species);
+    ability = (template.abilities && ability in {'':1, 0:1, 1:1, H:1} ?
     template.abilities[ability || '0'] : ability);
+
+    let template = dexes['base'].getTemplate(s.species);
+    ability = (template.abilities && ['', '0', '1', 'H'].includes(ability) ?
+      template.abilities[ability || '0'] : ability);
    */
   i = j + 1;
 

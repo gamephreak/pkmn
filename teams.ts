@@ -1,5 +1,5 @@
 import {Generation} from './gen';
-import {_unpack, PokemonSet} from './set';
+import {_unpack, PokemonSet, Sets} from './set';
 import {Tier, Tiers} from './tiers';
 
 export class Team {
@@ -32,7 +32,13 @@ export class Team {
   }
 
   packTeam(): string {
-    return '';  // TODO
+    const buf = '';
+
+    for (const s of this.team) {
+      Sets.packSet(s, buf);
+    }
+
+    return buf;
   }
 
   exportTeam(): string {
@@ -44,7 +50,7 @@ export class Team {
   }
 
   toJSON(): string {
-    return '';  // TODO
+    return JSON.stringify(this.team);
   }
 }
 
