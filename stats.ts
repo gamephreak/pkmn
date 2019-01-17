@@ -103,12 +103,30 @@ export class Stats {
     return Stats.fill(pevs, gen < 3 ? 252 : 0);
   }
 
-  static itod(iv: number) {
+  static itod(iv: number): number {
     return Math.floor(iv / 2);
   }
 
-  static dtoi(dv: number) {
+  static dtoi(dv: number): number {
     return dv * 2 + 1;
+  }
+
+  static istods(ivs: Partial<StatsTable>): Partial<StatsTable> {
+    const dvs: Partial<StatsTable> = {};
+    let iv: Stat;
+    for (iv in ivs) {
+      dvs[iv] = Stats.itod(ivs[iv]!);
+    }
+    return dvs;
+  }
+
+  static dstois(dvs: Partial<StatsTable>): Partial<StatsTable> {
+    const ivs: Partial<StatsTable> = {};
+    let dv: Stat;
+    for (dv in dvs) {
+      ivs[dv] = Stats.dtoi(dvs[dv]!);
+    }
+    return ivs;
   }
 
   static boost(b: number): number {
@@ -127,8 +145,10 @@ export class Stats {
   }
 
   private static fill(p: Partial<StatsTable>, val: number): StatsTable {
+    // NOTE: order is importer for calculating Hidden Power.
     return extend(
-        true, {}, {hp: val, atk: val, def: val, spa: val, spd: val, spe: val});
+        true, {}, {hp: val, atk: val, def: val, spe: val, spa: val, spd: val},
+        p);
   }
 
   private static calcStatRBY(
