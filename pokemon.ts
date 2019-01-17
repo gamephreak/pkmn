@@ -1,1 +1,1 @@
-export type Gender = 'M'|'F'|'N'|'';
+export type Status = 'par'|'psn'|'frz'|'slp'|'brn';

@@ -1,91 +1,71 @@
-// dmgcalc
-export type Gender = 'male'|'female'|'genderless';
+import {StatsTable} from './stats';
+import {Type} from './types';
 
-export type Species = {
-  name?: string;
+export type Tier =
+    'Uber'|'OU'|'UUBL'|'UU'|'RUBL'|'RU'|'NUBL'|'NU'|'PUBL'|'PU'|'LC'|'Untiered';
+export type Gender = 'M'|'F'|'N';
+
+export interface Species extends Data {
   readonly type1: Type;
   readonly type2?: Type;
   readonly baseStats: StatsTable;
+
   readonly weight: number;
-  readonly canEvolve?: boolean;
+
   readonly gender?: Gender;
+  readonly abilities?: {0: string, 1?: string, H?: string, S?: string};
+
+	readonly tier?: Tier;
+}
+
+
+// dmgcalc
+
+export type Species = {
+  readonly canEvolve?: boolean;
   readonly formes?: string[];
   readonly isAlternateForme?: boolean;
-  readonly ability?: string;
-  readonly abilities?: {0: string, 1?: string, H?: string, S?: string};
 };
 
-// PS
+// PS + PSC
 interface TemplateData {
-	abilities: TemplateAbility
-	baseStats: StatsTable
-	color: string
-	eggGroups: string[]
-	heightm: number
-	num: number
-	species: string
-	types: string[]
-	weightkg: number
+	addedType?: string
 	baseForme?: string
 	baseSpecies?: string
-	evoLevel?: number
-	evoMove?: string
-	evos?: string[]
-	forme?: string
-	formeLetter?: string
-	gender?: GenderName
-	genderRatio?: {[k: string]: number}
-	maxHP?: number
-	otherForms?: string[]
-	otherFormes?: string[]
-	prevo?: string
-}
-interface TemplateFormatsData {
 	battleOnly?: boolean
 	comboMoves?: string[]
-	doublesTier?: string
 	essentialMove?: string
 	eventOnly?: boolean
 	eventPokemon?: EventInfo[]
+	evoLevel?: number
+	evoMove?: string
+	evos?: string[]
 	exclusiveMoves?: string[]
-	gen?: number
-	isNonstandard?: boolean | string
+	forme?: string
+	formeLetter?: string
+	formeid: string;
+	isMega?: boolean
+	isPrimal?: boolean
 	isUnreleased?: boolean
+	isTotem: boolean;
 	maleOnlyHidden?: boolean
-	randomBattleMoves?: string[]
-	randomDoubleBattleMoves?: string[]
+	maxHP?: number
+	nfe: boolean
+	originalMega?: string
+	otherFormes?: string[]
+	// TODO: rename to cosmeticForms
+	otherForms?: string[]
+	prevo?: string
 	requiredAbility?: string
 	requiredItem?: string
 	requiredItems?: string[]
 	requiredMove?: string
-	tier?: string
+	species: string
+	speciesid: string
+	spriteid: string
 	unreleasedHidden?: boolean
 }
-interface Template extends Readonly<BasicEffect & TemplateData & TemplateFormatsData> {
-	readonly effectType: 'Pokemon'
-	readonly baseSpecies: string
-	readonly doublesTier: string
-	readonly eventOnly: boolean
-	readonly evos: string[]
-	readonly forme: string
-	readonly formeLetter: string
-	readonly gender: GenderName
-	readonly genderRatio: {M: number, F: number}
-	readonly maleOnlyHidden: boolean
-	readonly nfe: boolean
-	readonly prevo: string
-	readonly speciesid: string
-	readonly spriteid: string
-	readonly tier: string
-	readonly addedType?: string
-	readonly isMega?: boolean
-	readonly isPrimal?: boolean
-	readonly learnset?: {[k: string]: MoveSource[]}
-	readonly originalMega?: string
-}
 
-
-// PSC
 const BattleBaseSpeciesChart = [
 	'pikachu',
 	'pichu',
@@ -146,52 +126,25 @@ const BattleBaseSpeciesChart = [
 
 
 class Template implements Effect {
-	// effect
-	readonly effectType = 'Template';
-	readonly id: ID;
 	readonly name: string;
-	readonly gen: number;
-	readonly exists: boolean;
-
-	// name
 	readonly species: string;
 	readonly speciesid: ID;
 	readonly baseSpecies: string;
 	readonly forme: string;
 	readonly formeid: string;
 	readonly spriteid: string;
-
-	// basic data
-	readonly num: number;
-	readonly types: ReadonlyArray<TypeName>;
-	readonly abilities: Readonly<{
-		0: string, 1?: string, H?: string, S?: string,
-	}>;
-	readonly baseStats: Readonly<{
-		hp: number, atk: number, def: number, spa: number, spd: number, spe: number,
-	}>;
-	readonly weightkg: number;
-
-	// flavor data
-	readonly heightm: number;
-	readonly gender: GenderName;
-	readonly color: string;
-	readonly genderRatio: Readonly<{M: number, F: number}> | null;
-	readonly eggGroups: ReadonlyArray<string>;
-
 	// format data
 	readonly otherFormes: ReadonlyArray<ID> | null;
 	// TODO: rename to cosmeticForms
 	readonly otherForms: ReadonlyArray<ID> | null;
+
 	readonly evos: ReadonlyArray<ID> | null;
 	readonly prevo: ID;
 	readonly requiredItem: string;
-	readonly tier: string;
 	readonly isTotem: boolean;
 	readonly isMega: boolean;
 	readonly isPrimal: boolean;
 	readonly battleOnly: boolean;
-	readonly isNonstandard: boolean;
 	readonly unreleasedHidden: boolean;
 
 	constructor(id: ID, name: string, data: any) {
