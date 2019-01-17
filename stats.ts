@@ -67,11 +67,11 @@ const DISPLAY: {[stat: string]: [string, string]} = {
 };
 
 export class Stats {
-  static calcStat(
+  static calc(
       gen: Generation, stat: Stat, base: number, iv: number, ev: number,
       level: number, nature?: Nature) {
-    return gen < 3 ? Stats.calcStatRBY(stat, base, iv, ev, level) :
-                     Stats.calcStatADV(stat, base, iv, ev, level, nature);
+    return gen < 3 ? Stats.calcRBY(stat, base, iv, ev, level) :
+                     Stats.calcADV(stat, base, iv, ev, level, nature);
   }
 
   static getStat(s: ID|string): Stat|undefined {
@@ -135,7 +135,8 @@ export class Stats {
     } else if (b < -6) {
       b = -6;
     }
-    return BOOSTS[b];
+    const boost = BOOSTS[Math.abs(b)];
+    return b >= 0 ? boost : -boost;
   }
 
   static getHPDV(pivs: Partial<StatsTable>): number {
@@ -151,7 +152,7 @@ export class Stats {
         p);
   }
 
-  private static calcStatRBY(
+  private static calcRBY(
       stat: Stat, base: number, iv: number, ev: number, level: number) {
     // BUG: we ignore EVs - do we care about converting ev to stat experience?
     const dv = Stats.itod(iv);
@@ -162,7 +163,7 @@ export class Stats {
     }
   }
 
-  private static calcStatADV(
+  private static calcADV(
       stat: Stat, base: number, iv: number, ev: number, level: number,
       nature?: Nature) {
     if (stat === HP) {
