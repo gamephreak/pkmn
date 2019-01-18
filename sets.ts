@@ -1,5 +1,7 @@
+import {CURRENT, Generation} from './gen';
 import {toID} from './id';
 import {Stat, STAT_NAMES, Stats, StatsTable} from './stats';
+import {Type, Types} from './types';
 
 export type PokemonSet = {
   readonly name: string;
@@ -144,7 +146,7 @@ export class Sets {
     return buf;
   }
 
-  static exportSet(s: PokemonSet): string {
+  static exportSet(s: PokemonSet, gen: Generation = CURRENT): string {
     let buf = '';
     if (s.name && s.name !== s.species) {
       buf += '' + s.name + ' (' + s.species + ')';
@@ -193,39 +195,42 @@ export class Sets {
     }
     first = true;
     if (s.ivs) {
-      let defaultIvs = true;
-      let hpType = '';
+      let defaultIVs = true;
+      let hpType: Type|undefined = undefined;
       for (const move in s.moves) {
         if (move.substr(0, 13) === 'Hidden Power ' &&
             move.substr(0, 14) !== 'Hidden Power [') {
-          hpType = move.substr(13);
-          /* TODO
-          if (!exports.BattleTypeChart[hpType].HPivs) {
-            alert("That is not a valid Hidden Power type.");
+          hpType = move.substr(13) as Type;
+
+          const hpIVs: Partial<StatsTable>|undefined = gen === 2 ?
+              Stats.dstois(Types.hiddenPowerDVs(hpType) || {}) :
+              Types.hiddenPowerIVs(hpType);
+
+          if (!hpIVs) {
+            // not a valid Hidden Power type
             continue;
           }
-           */
+
           let stat: Stat;
           for (stat in STAT_NAMES) {
-            /* TODO
             if ((s.ivs[stat] === undefined ? 31 : s.ivs[stat]) !==
-            (exports.BattleTypeChart[hpType].HPivs[stat] || 31)) { defaultIvs =
-            false; break;
+                (hpIVs[stat] || 31)) {
+              defaultIVs = false;
+              break;
             }
-            */
           }
         }
       }
-      if (defaultIvs && !hpType) {
+      if (defaultIVs && !hpType) {
         let stat: Stat;
         for (stat in STAT_NAMES) {
           if (s.ivs[stat] !== 31 && s.ivs[stat] !== undefined) {
-            defaultIvs = false;
+            defaultIVs = false;
             break;
           }
         }
       }
-      if (!defaultIvs) {
+      if (!defaultIVs) {
         let stat: Stat;
         for (stat in STAT_NAMES) {
           if (typeof s.ivs[stat] === 'undefined' || isNaN(s.ivs[stat]) ||
@@ -285,8 +290,8 @@ export class Sets {
     return JSON.parse(json);
   }
 
-  static toString(s: PokemonSet): string {
-    return Sets.exportSet(s);
+  static toString(s: PokemonSet, gen?: Generation): string {
+    return Sets.exportSet(s, gen);
   }
 
   static fromString(str: string): PokemonSet|undefined {
@@ -294,8 +299,8 @@ export class Sets {
   }
 }
 
-export function _unpack(
-    buf: string, i = 0, j = 0): {set?: PokemonSet, i: number, j: number} {
+export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
+    {set?: PokemonSet, i: number, j: number} {
   const s: WriteableSet = {};
   // name
   j = buf.indexOf('|', i);
@@ -409,17 +414,17 @@ export function _unpack(
     s.pokeball = misc[2];
   }
 
-  return {set: toPokemonSet(s), i, j};
+  return {set: toPokemonSet(s, gen), i, j};
 }
 
-export function _import(
-    lines: string[], i = 0): {set?: PokemonSet, line: number} {
+export function _import(lines: string[], i = 0, gen?: Generation):
+    {set?: PokemonSet, line: number} {
   let s: WriteableSet|undefined = undefined;
   for (; i < lines.length; i++) {
     let line = lines[i].trim();
     if (line === '' || line === '---' || line.substr(0, 3) === '===' ||
         line.includes('|')) {
-      return {set: toPokemonSet(s), line: i};
+      return {set: toPokemonSet(s, gen), line: i};
     } else if (!s) {
       s = {name: '', species: '', gender: ''};
       const atIndex = line.lastIndexOf(' @ ');
@@ -502,14 +507,18 @@ export function _import(
       if (line.substr(0, 1) === ' ') line = line.substr(1);
       if (!s.moves) s.moves = [];
       if (line.substr(0, 14) === 'Hidden Power [') {
-        const hptype = line.substr(14, line.length - 15);
-        line = 'Hidden Power ' + hptype;
-        /* TODO
-        if (!s.ivs && window.BattleTypeChart && window.BattleTypeChart[hptype])
-        { s.ivs = {}; for (var stat in window.BattleTypeChart[hptype].HPivs) {
-            s.ivs[stat] = window.BattleTypeChart[hptype].HPivs[stat];
+        const hpType = line.substr(14, line.length - 15) as Type;
+        line = 'Hidden Power ' + hpType.toString();
+        const hpIVs: Partial<StatsTable>|undefined = gen === 2 ?
+              Stats.dstois(Types.hiddenPowerDVs(hpType) || {}) :
+              Types.hiddenPowerIVs(hpType);
+        if (!s.ivs && hpIVs) {
+          s.ivs = {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31};
+          let stat: Stat;
+          for (stat in hpIVs) {
+            s.ivs[stat] = hpIVs[stat]!;
           }
-        } */
+        }
       }
       if (line === 'Frustration') {
         s.happiness = 0;
@@ -518,11 +527,27 @@ export function _import(
     }
   }
 
-  return {set: toPokemonSet(s), line: i + 1};
+  return {set: toPokemonSet(s, gen), line: i + 1};
 }
 
-function toPokemonSet(s?: WriteableSet): PokemonSet|undefined {
+function toPokemonSet(s?: WriteableSet, gen?: Generation): PokemonSet|
+    undefined {
   if (!s) return undefined;
 
-  return undefined;  // TODO
+  return {
+    name: s.name || '',
+    species: s.species || s.name || '',
+    item: s.item || '',
+    ability: s.ability || '',
+    moves: s.moves || [],
+    nature: s.nature || '',
+    evs: Stats.fillEVs(s.evs || {}, gen),
+    ivs: Stats.fillIVs(s.ivs || {}),
+    gender: s.gender,
+    level: s.level,
+    shiny: s.shiny,
+    happiness: s.happiness,
+    pokeball: s.pokeball,
+    hpType: s.hpType
+  };
 }

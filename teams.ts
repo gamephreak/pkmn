@@ -1,4 +1,4 @@
-import {Generation} from './gen';
+import {CURRENT, Generation} from './gen';
 import {_import, _unpack, PokemonSet, Sets} from './sets';
 import {Tier, Tiers} from './tiers';
 
@@ -39,16 +39,16 @@ export class Team {
     return buf;
   }
 
-  exportTeam(): string {
+  exportTeam(gen?: Generation): string {
     const buf = '';
     for (const s of this.team) {
-      Sets.exportSet(s);
+      Sets.exportSet(s, gen || this.gen());
     }
     return buf;
   }
 
-  toString(): string {
-    return this.exportTeam();
+  toString(gen?: Generation): string {
+    return this.exportTeam(gen);
   }
 
   toJSON(): string {
@@ -136,13 +136,13 @@ export class Teams {
     return teams;
   }
 
-  static exportTeams(teams: Team[]): string {
+  static exportTeams(teams: Team[], gen?: Generation): string {
     let buf = '';
 
     for (const team of teams) {
       buf += '=== ' + (team.format ? '[' + team.format + '] ' : '') +
           (team.folder ? '' + team.folder + '/' : '') + team.name + ' ===\n\n';
-      buf += team.exportTeam();
+      buf += team.exportTeam(gen);
       buf += '\n';
     }
     return buf;
