@@ -1,0 +1,5163 @@
+{
+  "venusaur": {
+    "tier": "NUBL"
+  },
+  "venusaurmega": {
+    "tier": "UUBL"
+  },
+  "charizard": {
+    "tier": "PUBL"
+  },
+  "blastoise": {
+    "tier": "NU"
+  },
+  "blastoisemega": {
+    "tier": "RU"
+  },
+  "pidgeotmega": {
+    "tier": "UU"
+  },
+  "rattataalola": {
+    "id": "rattataalola",
+    "name": "Rattata-Alola",
+    "num": 19,
+    "baseSpecies": "Rattata",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 30,
+      "atk": 56,
+      "def": 35,
+      "spa": 25,
+      "spd": 35,
+      "spe": 72
+    },
+    "abilities": {
+      "0": "Gluttony",
+      "1": "Hustle",
+      "H": "Thick Fat"
+    },
+    "evos": [
+      "raticatealola"
+    ],
+    "tier": "LC",
+    "weight": 3.8,
+    "type1": "Dark",
+    "type2": "Normal",
+    "gen": 7
+  },
+  "raticatealola": {
+    "id": "raticatealola",
+    "name": "Raticate-Alola",
+    "num": 20,
+    "baseSpecies": "Raticate",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 75,
+      "atk": 71,
+      "def": 70,
+      "spa": 40,
+      "spd": 80,
+      "spe": 77
+    },
+    "abilities": {
+      "0": "Gluttony",
+      "1": "Hustle",
+      "H": "Thick Fat"
+    },
+    "prevo": "rattataalola",
+    "tier": "PU",
+    "weight": 25.5,
+    "type1": "Dark",
+    "type2": "Normal",
+    "gen": 7
+  },
+  "raticatealolatotem": {
+    "id": "raticatealolatotem",
+    "name": "Raticate-Alola-Totem",
+    "num": 20,
+    "baseSpecies": "Raticate",
+    "forme": "Alola-Totem",
+    "formeLetter": "T",
+    "baseStats": {
+      "hp": 75,
+      "atk": 71,
+      "def": 70,
+      "spa": 40,
+      "spd": 80,
+      "spe": 77
+    },
+    "abilities": {
+      "0": "Thick Fat"
+    },
+    "tier": "PU",
+    "weight": 105,
+    "type1": "Dark",
+    "type2": "Normal",
+    "gen": 7
+  },
+  "arbok": {
+    "baseStats": {
+      "atk": 95
+    }
+  },
+  "pikachucosplay": {
+    "tier": "Illegal"
+  },
+  "pikachurockstar": {
+    "tier": "Illegal"
+  },
+  "pikachubelle": {
+    "tier": "Illegal"
+  },
+  "pikachupopstar": {
+    "tier": "Illegal"
+  },
+  "pikachuphd": {
+    "tier": "Illegal"
+  },
+  "pikachulibre": {
+    "tier": "Illegal"
+  },
+  "pikachuoriginal": {
+    "id": "pikachuoriginal",
+    "name": "Pikachu-Original",
+    "num": 25,
+    "baseSpecies": "Pikachu",
+    "forme": "Original",
+    "formeLetter": "O",
+    "gender": "M",
+    "baseStats": {
+      "hp": 35,
+      "atk": 55,
+      "def": 40,
+      "spa": 50,
+      "spd": 50,
+      "spe": 90
+    },
+    "abilities": {
+      "0": "Static"
+    },
+    "tier": "PU",
+    "weight": 6,
+    "type1": "Electric",
+    "gen": 7
+  },
+  "pikachuhoenn": {
+    "id": "pikachuhoenn",
+    "name": "Pikachu-Hoenn",
+    "num": 25,
+    "baseSpecies": "Pikachu",
+    "forme": "Hoenn",
+    "formeLetter": "H",
+    "gender": "M",
+    "baseStats": {
+      "hp": 35,
+      "atk": 55,
+      "def": 40,
+      "spa": 50,
+      "spd": 50,
+      "spe": 90
+    },
+    "abilities": {
+      "0": "Static"
+    },
+    "tier": "PU",
+    "weight": 6,
+    "type1": "Electric",
+    "gen": 7
+  },
+  "pikachusinnoh": {
+    "id": "pikachusinnoh",
+    "name": "Pikachu-Sinnoh",
+    "num": 25,
+    "baseSpecies": "Pikachu",
+    "forme": "Sinnoh",
+    "formeLetter": "S",
+    "gender": "M",
+    "baseStats": {
+      "hp": 35,
+      "atk": 55,
+      "def": 40,
+      "spa": 50,
+      "spd": 50,
+      "spe": 90
+    },
+    "abilities": {
+      "0": "Static"
+    },
+    "tier": "PU",
+    "weight": 6,
+    "type1": "Electric",
+    "gen": 7
+  },
+  "pikachuunova": {
+    "id": "pikachuunova",
+    "name": "Pikachu-Unova",
+    "num": 25,
+    "baseSpecies": "Pikachu",
+    "forme": "Unova",
+    "formeLetter": "U",
+    "gender": "M",
+    "baseStats": {
+      "hp": 35,
+      "atk": 55,
+      "def": 40,
+      "spa": 50,
+      "spd": 50,
+      "spe": 90
+    },
+    "abilities": {
+      "0": "Static"
+    },
+    "tier": "PU",
+    "weight": 6,
+    "type1": "Electric",
+    "gen": 7
+  },
+  "pikachukalos": {
+    "id": "pikachukalos",
+    "name": "Pikachu-Kalos",
+    "num": 25,
+    "baseSpecies": "Pikachu",
+    "forme": "Kalos",
+    "formeLetter": "K",
+    "gender": "M",
+    "baseStats": {
+      "hp": 35,
+      "atk": 55,
+      "def": 40,
+      "spa": 50,
+      "spd": 50,
+      "spe": 90
+    },
+    "abilities": {
+      "0": "Static"
+    },
+    "tier": "PU",
+    "weight": 6,
+    "type1": "Electric",
+    "gen": 7
+  },
+  "pikachualola": {
+    "id": "pikachualola",
+    "name": "Pikachu-Alola",
+    "num": 25,
+    "baseSpecies": "Pikachu",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "gender": "M",
+    "baseStats": {
+      "hp": 35,
+      "atk": 55,
+      "def": 40,
+      "spa": 50,
+      "spd": 50,
+      "spe": 90
+    },
+    "abilities": {
+      "0": "Static"
+    },
+    "tier": "PU",
+    "weight": 6,
+    "type1": "Electric",
+    "gen": 7
+  },
+  "pikachupartner": {
+    "id": "pikachupartner",
+    "name": "Pikachu-Partner",
+    "num": 25,
+    "baseSpecies": "Pikachu",
+    "forme": "Partner",
+    "formeLetter": "P",
+    "gender": "M",
+    "baseStats": {
+      "hp": 35,
+      "atk": 55,
+      "def": 40,
+      "spa": 50,
+      "spd": 50,
+      "spe": 90
+    },
+    "abilities": {
+      "0": "Static"
+    },
+    "tier": "PU",
+    "weight": 6,
+    "type1": "Electric",
+    "gen": 7
+  },
+  "pikachustarter": {
+    "id": "pikachustarter",
+    "name": "Pikachu-Starter",
+    "num": 25,
+    "isNonstandard": true,
+    "baseSpecies": "Pikachu",
+    "forme": "Starter",
+    "formeLetter": "S",
+    "baseStats": {
+      "hp": 45,
+      "atk": 80,
+      "def": 50,
+      "spa": 75,
+      "spd": 60,
+      "spe": 120
+    },
+    "abilities": {
+      "0": "Static",
+      "H": "Lightning Rod"
+    },
+    "tier": "Illegal",
+    "weight": 6,
+    "type1": "Electric",
+    "gen": 7
+  },
+  "raichualola": {
+    "id": "raichualola",
+    "name": "Raichu-Alola",
+    "num": 26,
+    "baseSpecies": "Raichu",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 60,
+      "atk": 85,
+      "def": 50,
+      "spa": 95,
+      "spd": 85,
+      "spe": 110
+    },
+    "abilities": {
+      "0": "Surge Surfer"
+    },
+    "prevo": "pikachu",
+    "tier": "PU",
+    "weight": 21,
+    "type1": "Electric",
+    "type2": "Psychic",
+    "gen": 7
+  },
+  "sandshrewalola": {
+    "id": "sandshrewalola",
+    "name": "Sandshrew-Alola",
+    "num": 27,
+    "baseSpecies": "Sandshrew",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 50,
+      "atk": 75,
+      "def": 90,
+      "spa": 10,
+      "spd": 35,
+      "spe": 40
+    },
+    "abilities": {
+      "0": "Snow Cloak",
+      "H": "Slush Rush"
+    },
+    "evos": [
+      "sandslashalola"
+    ],
+    "tier": "LC",
+    "weight": 40,
+    "type1": "Ice",
+    "type2": "Steel",
+    "gen": 7
+  },
+  "sandslash": {
+    "tier": "PU"
+  },
+  "sandslashalola": {
+    "id": "sandslashalola",
+    "name": "Sandslash-Alola",
+    "num": 28,
+    "baseSpecies": "Sandslash",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 75,
+      "atk": 100,
+      "def": 120,
+      "spa": 25,
+      "spd": 65,
+      "spe": 65
+    },
+    "abilities": {
+      "0": "Snow Cloak",
+      "H": "Slush Rush"
+    },
+    "prevo": "sandshrewalola",
+    "tier": "PU",
+    "weight": 55,
+    "type1": "Ice",
+    "type2": "Steel",
+    "gen": 7
+  },
+  "nidoqueen": {
+    "tier": "RU"
+  },
+  "vulpix": {
+    "tier": "LC Uber"
+  },
+  "vulpixalola": {
+    "id": "vulpixalola",
+    "name": "Vulpix-Alola",
+    "num": 37,
+    "baseSpecies": "Vulpix",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 38,
+      "atk": 41,
+      "def": 40,
+      "spa": 50,
+      "spd": 65,
+      "spe": 65
+    },
+    "abilities": {
+      "0": "Snow Cloak",
+      "H": "Snow Warning"
+    },
+    "evos": [
+      "ninetalesalola"
+    ],
+    "tier": "LC",
+    "weight": 9.9,
+    "type1": "Ice",
+    "gen": 7
+  },
+  "ninetales": {
+    "tier": "RU"
+  },
+  "ninetalesalola": {
+    "id": "ninetalesalola",
+    "name": "Ninetales-Alola",
+    "num": 38,
+    "baseSpecies": "Ninetales",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 73,
+      "atk": 67,
+      "def": 75,
+      "spa": 81,
+      "spd": 100,
+      "spe": 109
+    },
+    "abilities": {
+      "0": "Snow Cloak",
+      "H": "Snow Warning"
+    },
+    "prevo": "vulpixalola",
+    "tier": "UUBL",
+    "weight": 19.9,
+    "type1": "Ice",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "golbat": {
+    "tier": "NU"
+  },
+  "diglettalola": {
+    "id": "diglettalola",
+    "name": "Diglett-Alola",
+    "num": 50,
+    "baseSpecies": "Diglett",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 10,
+      "atk": 55,
+      "def": 30,
+      "spa": 35,
+      "spd": 45,
+      "spe": 90
+    },
+    "abilities": {
+      "0": "Sand Veil",
+      "1": "Tangling Hair",
+      "H": "Sand Force"
+    },
+    "evos": [
+      "dugtrioalola"
+    ],
+    "tier": "LC",
+    "weight": 1,
+    "type1": "Ground",
+    "type2": "Steel",
+    "gen": 7
+  },
+  "dugtrio": {
+    "baseStats": {
+      "atk": 100
+    },
+    "tier": "PU"
+  },
+  "dugtrioalola": {
+    "id": "dugtrioalola",
+    "name": "Dugtrio-Alola",
+    "num": 51,
+    "baseSpecies": "Dugtrio",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 35,
+      "atk": 100,
+      "def": 60,
+      "spa": 50,
+      "spd": 70,
+      "spe": 110
+    },
+    "abilities": {
+      "0": "Sand Veil",
+      "1": "Tangling Hair",
+      "H": "Sand Force"
+    },
+    "prevo": "diglettalola",
+    "tier": "PU",
+    "weight": 66.6,
+    "type1": "Ground",
+    "type2": "Steel",
+    "gen": 7
+  },
+  "meowthalola": {
+    "id": "meowthalola",
+    "name": "Meowth-Alola",
+    "num": 52,
+    "baseSpecies": "Meowth",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 40,
+      "atk": 35,
+      "def": 35,
+      "spa": 50,
+      "spd": 40,
+      "spe": 90
+    },
+    "abilities": {
+      "0": "Pickup",
+      "1": "Technician",
+      "H": "Rattled"
+    },
+    "evos": [
+      "persianalola"
+    ],
+    "tier": "LC",
+    "weight": 4.2,
+    "type1": "Dark",
+    "gen": 7
+  },
+  "persianalola": {
+    "id": "persianalola",
+    "name": "Persian-Alola",
+    "num": 53,
+    "baseSpecies": "Persian",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 65,
+      "atk": 60,
+      "def": 60,
+      "spa": 75,
+      "spd": 65,
+      "spe": 115
+    },
+    "abilities": {
+      "0": "Fur Coat",
+      "1": "Technician",
+      "H": "Rattled"
+    },
+    "prevo": "meowthalola",
+    "tier": "PU",
+    "weight": 33,
+    "type1": "Dark",
+    "gen": 7
+  },
+  "primeape": {
+    "tier": "PU"
+  },
+  "arcanine": {
+    "tier": "RU"
+  },
+  "poliwrath": {
+    "tier": "PU"
+  },
+  "kadabra": {
+    "tier": "NFE"
+  },
+  "alakazammega": {
+    "baseStats": {
+      "spd": 105
+    },
+    "tier": "OU"
+  },
+  "machoke": {
+    "tier": "NFE"
+  },
+  "machamp": {
+    "tier": "RU"
+  },
+  "victreebel": {
+    "tier": "PU"
+  },
+  "geodudealola": {
+    "id": "geodudealola",
+    "name": "Geodude-Alola",
+    "num": 74,
+    "baseSpecies": "Geodude",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 40,
+      "atk": 80,
+      "def": 100,
+      "spa": 30,
+      "spd": 30,
+      "spe": 20
+    },
+    "abilities": {
+      "0": "Magnet Pull",
+      "1": "Sturdy",
+      "H": "Galvanize"
+    },
+    "evos": [
+      "graveleralola"
+    ],
+    "tier": "LC",
+    "weight": 20.3,
+    "type1": "Rock",
+    "type2": "Electric",
+    "gen": 7
+  },
+  "graveleralola": {
+    "id": "graveleralola",
+    "name": "Graveler-Alola",
+    "num": 75,
+    "baseSpecies": "Graveler",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 55,
+      "atk": 95,
+      "def": 115,
+      "spa": 45,
+      "spd": 45,
+      "spe": 35
+    },
+    "abilities": {
+      "0": "Magnet Pull",
+      "1": "Sturdy",
+      "H": "Galvanize"
+    },
+    "prevo": "geodudealola",
+    "evos": [
+      "golemalola"
+    ],
+    "tier": "NFE",
+    "weight": 110,
+    "type1": "Rock",
+    "type2": "Electric",
+    "gen": 7
+  },
+  "golemalola": {
+    "id": "golemalola",
+    "name": "Golem-Alola",
+    "num": 76,
+    "baseSpecies": "Golem",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 80,
+      "atk": 120,
+      "def": 130,
+      "spa": 55,
+      "spd": 65,
+      "spe": 45
+    },
+    "abilities": {
+      "0": "Magnet Pull",
+      "1": "Sturdy",
+      "H": "Galvanize"
+    },
+    "prevo": "graveleralola",
+    "tier": "PU",
+    "weight": 316,
+    "type1": "Rock",
+    "type2": "Electric",
+    "gen": 7
+  },
+  "slowbro": {
+    "tier": "NU"
+  },
+  "slowbromega": {
+    "tier": "RUBL"
+  },
+  "magneton": {
+    "tier": "UU"
+  },
+  "farfetchd": {
+    "baseStats": {
+      "atk": 90
+    }
+  },
+  "dodrio": {
+    "baseStats": {
+      "spe": 110
+    }
+  },
+  "grimeralola": {
+    "id": "grimeralola",
+    "name": "Grimer-Alola",
+    "num": 88,
+    "baseSpecies": "Grimer",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 80,
+      "atk": 80,
+      "def": 50,
+      "spa": 40,
+      "spd": 50,
+      "spe": 25
+    },
+    "abilities": {
+      "0": "Poison Touch",
+      "1": "Gluttony",
+      "H": "Power of Alchemy"
+    },
+    "evos": [
+      "mukalola"
+    ],
+    "tier": "LC",
+    "weight": 42,
+    "type1": "Poison",
+    "type2": "Dark",
+    "gen": 7
+  },
+  "mukalola": {
+    "id": "mukalola",
+    "name": "Muk-Alola",
+    "num": 89,
+    "baseSpecies": "Muk",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 105,
+      "atk": 105,
+      "def": 75,
+      "spa": 65,
+      "spd": 100,
+      "spe": 50
+    },
+    "abilities": {
+      "0": "Poison Touch",
+      "1": "Gluttony",
+      "H": "Power of Alchemy"
+    },
+    "prevo": "grimeralola",
+    "tier": "UU",
+    "weight": 52,
+    "type1": "Poison",
+    "type2": "Dark",
+    "gen": 7
+  },
+  "cloyster": {
+    "tier": "RU"
+  },
+  "haunter": {
+    "tier": "PU"
+  },
+  "gengar": {
+    "abilities": {
+      "0": "Cursed Body"
+    },
+    "tier": "UU"
+  },
+  "kingler": {
+    "tier": "NU"
+  },
+  "electrode": {
+    "baseStats": {
+      "spe": 150
+    }
+  },
+  "exeggutor": {
+    "baseStats": {
+      "spd": 75
+    },
+    "tier": "PU"
+  },
+  "exeggutoralola": {
+    "id": "exeggutoralola",
+    "name": "Exeggutor-Alola",
+    "num": 103,
+    "baseSpecies": "Exeggutor",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 95,
+      "atk": 105,
+      "def": 85,
+      "spa": 125,
+      "spd": 75,
+      "spe": 45
+    },
+    "abilities": {
+      "0": "Frisk",
+      "H": "Harvest"
+    },
+    "prevo": "exeggcute",
+    "tier": "PU",
+    "weight": 415.6,
+    "type1": "Grass",
+    "type2": "Dragon",
+    "gen": 7
+  },
+  "marowakalola": {
+    "id": "marowakalola",
+    "name": "Marowak-Alola",
+    "num": 105,
+    "baseSpecies": "Marowak",
+    "forme": "Alola",
+    "formeLetter": "A",
+    "baseStats": {
+      "hp": 60,
+      "atk": 80,
+      "def": 110,
+      "spa": 50,
+      "spd": 80,
+      "spe": 45
+    },
+    "abilities": {
+      "0": "Cursed Body",
+      "1": "Lightning Rod",
+      "H": "Rock Head"
+    },
+    "prevo": "cubone",
+    "tier": "RU",
+    "weight": 34,
+    "type1": "Fire",
+    "type2": "Ghost",
+    "gen": 7
+  },
+  "marowakalolatotem": {
+    "id": "marowakalolatotem",
+    "name": "Marowak-Alola-Totem",
+    "num": 105,
+    "baseSpecies": "Marowak",
+    "forme": "Alola-Totem",
+    "formeLetter": "T",
+    "baseStats": {
+      "hp": 60,
+      "atk": 80,
+      "def": 110,
+      "spa": 50,
+      "spd": 80,
+      "spe": 45
+    },
+    "abilities": {
+      "0": "Rock Head"
+    },
+    "tier": "RU",
+    "weight": 98,
+    "type1": "Fire",
+    "type2": "Ghost",
+    "gen": 7
+  },
+  "hitmonlee": {
+    "tier": "NU"
+  },
+  "hitmonchan": {
+    "tier": "PU"
+  },
+  "tangela": {
+    "tier": "LC Uber"
+  },
+  "kangaskhan": {
+    "tier": "PU"
+  },
+  "starmie": {
+    "tier": "UU"
+  },
+  "scyther": {
+    "tier": "PU"
+  },
+  "jynx": {
+    "tier": "PU"
+  },
+  "pinsir": {
+    "tier": "PU"
+  },
+  "tauros": {
+    "tier": "PUBL"
+  },
+  "gyarados": {
+    "tier": "UUBL"
+  },
+  "gyaradosmega": {
+    "tier": "OU"
+  },
+  "eeveestarter": {
+    "id": "eeveestarter",
+    "name": "Eevee-Starter",
+    "num": 133,
+    "isNonstandard": true,
+    "baseSpecies": "Eevee",
+    "forme": "Starter",
+    "formeLetter": "S",
+    "baseStats": {
+      "hp": 65,
+      "atk": 75,
+      "def": 70,
+      "spa": 65,
+      "spd": 85,
+      "spe": 75
+    },
+    "abilities": {
+      "0": "Run Away",
+      "1": "Adaptability",
+      "H": "Anticipation"
+    },
+    "tier": "Illegal",
+    "weight": 6.5,
+    "type1": "Normal",
+    "gen": 7
+  },
+  "vaporeon": {
+    "tier": "NU"
+  },
+  "porygon": {
+    "tier": "LC Uber"
+  },
+  "omastar": {
+    "tier": "PU"
+  },
+  "kabutops": {
+    "tier": "PU"
+  },
+  "aerodactyl": {
+    "tier": "NU"
+  },
+  "snorlax": {
+    "tier": "RU"
+  },
+  "moltres": {
+    "tier": "UU"
+  },
+  "dragonite": {
+    "tier": "UUBL"
+  },
+  "typhlosion": {
+    "tier": "PUBL"
+  },
+  "feraligatr": {
+    "tier": "RU"
+  },
+  "noctowl": {
+    "baseStats": {
+      "spa": 86
+    }
+  },
+  "ariados": {
+    "baseStats": {
+      "spd": 70
+    }
+  },
+  "lanturn": {
+    "tier": "PU"
+  },
+  "togetic": {
+    "tier": "NFE"
+  },
+  "ampharosmega": {
+    "tier": "RU"
+  },
+  "azumarill": {
+    "tier": "UUBL"
+  },
+  "aipom": {
+    "tier": "LC Uber"
+  },
+  "quagsire": {
+    "tier": "PU"
+  },
+  "espeon": {
+    "tier": "RU"
+  },
+  "umbreon": {
+    "tier": "RU"
+  },
+  "slowking": {
+    "tier": "NU"
+  },
+  "misdreavus": {
+    "tier": "LC Uber"
+  },
+  "forretress": {
+    "tier": "RU"
+  },
+  "steelixmega": {
+    "tier": "UU"
+  },
+  "granbull": {
+    "tier": "PU"
+  },
+  "qwilfish": {
+    "baseStats": {
+      "def": 85
+    },
+    "tier": "PU"
+  },
+  "scizor": {
+    "tier": "UU"
+  },
+  "shuckle": {
+    "tier": "PU"
+  },
+  "heracrossmega": {
+    "tier": "UUBL"
+  },
+  "sneasel": {
+    "tier": "NU"
+  },
+  "magcargo": {
+    "baseStats": {
+      "hp": 60,
+      "spa": 90
+    }
+  },
+  "corsola": {
+    "baseStats": {
+      "hp": 65,
+      "def": 95,
+      "spd": 95
+    }
+  },
+  "mantine": {
+    "baseStats": {
+      "hp": 85
+    },
+    "tier": "RU"
+  },
+  "houndoom": {
+    "tier": "NU"
+  },
+  "kingdra": {
+    "tier": "NUBL"
+  },
+  "donphan": {
+    "tier": "RU"
+  },
+  "porygon2": {
+    "tier": "RU"
+  },
+  "hitmontop": {
+    "tier": "NU"
+  },
+  "raikou": {
+    "abilities": {
+      "0": "Pressure",
+      "H": "Inner Focus"
+    },
+    "tier": "RU"
+  },
+  "entei": {
+    "abilities": {
+      "0": "Pressure",
+      "H": "Inner Focus"
+    },
+    "tier": "RUBL"
+  },
+  "suicune": {
+    "abilities": {
+      "0": "Pressure",
+      "H": "Inner Focus"
+    }
+  },
+  "sceptile": {
+    "tier": "NU"
+  },
+  "sceptilemega": {
+    "tier": "RUBL"
+  },
+  "torchic": {
+    "tier": "LC Uber"
+  },
+  "combusken": {
+    "tier": "NFE"
+  },
+  "swampertmega": {
+    "tier": "OU"
+  },
+  "linoone": {
+    "tier": "RU"
+  },
+  "ludicolo": {
+    "tier": "PU"
+  },
+  "shiftry": {
+    "tier": "PU"
+  },
+  "swellow": {
+    "baseStats": {
+      "spa": 75
+    },
+    "tier": "RU"
+  },
+  "wingull": {
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Hydration",
+      "H": "Rain Dish"
+    },
+    "tier": "LC Uber"
+  },
+  "pelipper": {
+    "baseStats": {
+      "spa": 95
+    },
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Drizzle",
+      "H": "Rain Dish"
+    },
+    "tier": "OU"
+  },
+  "gardevoir": {
+    "tier": "RU"
+  },
+  "gardevoirmega": {
+    "tier": "UUBL"
+  },
+  "masquerain": {
+    "baseStats": {
+      "spa": 100,
+      "spe": 80
+    }
+  },
+  "breloom": {
+    "tier": "UUBL"
+  },
+  "vigoroth": {
+    "tier": "NFE"
+  },
+  "exploud": {
+    "tier": "NUBL"
+  },
+  "delcatty": {
+    "baseStats": {
+      "spe": 90
+    }
+  },
+  "sableye": {
+    "tier": "PU"
+  },
+  "sableyemega": {
+    "tier": "OU"
+  },
+  "mawilemega": {
+    "tier": "OU"
+  },
+  "aggron": {
+    "tier": "PU"
+  },
+  "medicham": {
+    "tier": "NU"
+  },
+  "manectric": {
+    "tier": "PU"
+  },
+  "manectricmega": {
+    "tier": "UU"
+  },
+  "volbeat": {
+    "baseStats": {
+      "def": 75,
+      "spd": 85
+    }
+  },
+  "illumise": {
+    "baseStats": {
+      "def": 75,
+      "spd": 85
+    }
+  },
+  "cameruptmega": {
+    "tier": "NUBL"
+  },
+  "torkoal": {
+    "abilities": {
+      "0": "White Smoke",
+      "1": "Drought",
+      "H": "Shell Armor"
+    }
+  },
+  "altariamega": {
+    "tier": "UU"
+  },
+  "zangoose": {
+    "tier": "PU"
+  },
+  "lunatone": {
+    "baseStats": {
+      "hp": 90
+    }
+  },
+  "solrock": {
+    "baseStats": {
+      "hp": 90
+    }
+  },
+  "claydol": {
+    "tier": "PU"
+  },
+  "cradily": {
+    "tier": "PU"
+  },
+  "milotic": {
+    "tier": "RU"
+  },
+  "kecleon": {
+    "tier": "PU"
+  },
+  "chimecho": {
+    "baseStats": {
+      "hp": 75,
+      "def": 80,
+      "spd": 90
+    }
+  },
+  "absol": {
+    "tier": "PU"
+  },
+  "absolmega": {
+    "tier": "RUBL"
+  },
+  "glaliemega": {
+    "tier": "NU"
+  },
+  "metang": {
+    "tier": "NFE"
+  },
+  "metagross": {
+    "tier": "RU"
+  },
+  "metagrossmega": {
+    "tier": "Uber"
+  },
+  "regirock": {
+    "tier": "PU"
+  },
+  "latias": {
+    "tier": "UU"
+  },
+  "latiasmega": {
+    "tier": "UUBL"
+  },
+  "latios": {
+    "tier": "UUBL"
+  },
+  "latiosmega": {
+    "tier": "UUBL"
+  },
+  "monferno": {
+    "tier": "NFE"
+  },
+  "prinplup": {
+    "tier": "NFE"
+  },
+  "roserade": {
+    "tier": "RU"
+  },
+  "gastrodon": {
+    "tier": "PU"
+  },
+  "ambipom": {
+    "tier": "NU"
+  },
+  "honchkrow": {
+    "tier": "RU"
+  },
+  "skuntank": {
+    "tier": "PU"
+  },
+  "spiritomb": {
+    "tier": "PU"
+  },
+  "gabite": {
+    "tier": "NFE"
+  },
+  "hippowdon": {
+    "tier": "UU"
+  },
+  "toxicroak": {
+    "tier": "RU"
+  },
+  "abomasnow": {
+    "tier": "PU"
+  },
+  "abomasnowmega": {
+    "tier": "NU"
+  },
+  "weavile": {
+    "tier": "UUBL"
+  },
+  "electivire": {
+    "tier": "PU"
+  },
+  "togekiss": {
+    "tier": "UU"
+  },
+  "yanmega": {
+    "tier": "RU"
+  },
+  "porygonz": {
+    "tier": "UUBL"
+  },
+  "gallade": {
+    "tier": "PUBL"
+  },
+  "froslass": {
+    "tier": "PU"
+  },
+  "mesprit": {
+    "tier": "PU"
+  },
+  "azelf": {
+    "tier": "UU"
+  },
+  "heatran": {
+    "abilities": {
+      "0": "Flash Fire",
+      "H": "Flame Body"
+    }
+  },
+  "cresselia": {
+    "tier": "RU"
+  },
+  "manaphy": {
+    "tier": "UUBL"
+  },
+  "shaymin": {
+    "tier": "RU"
+  },
+  "victini": {
+    "tier": "OU"
+  },
+  "samurott": {
+    "tier": "PUBL"
+  },
+  "liepard": {
+    "tier": "PU"
+  },
+  "musharna": {
+    "tier": "PU"
+  },
+  "roggenrola": {
+    "abilities": {
+      "0": "Sturdy",
+      "1": "Weak Armor",
+      "H": "Sand Force"
+    }
+  },
+  "boldore": {
+    "abilities": {
+      "0": "Sturdy",
+      "1": "Weak Armor",
+      "H": "Sand Force"
+    }
+  },
+  "gigalith": {
+    "abilities": {
+      "0": "Sturdy",
+      "1": "Sand Stream",
+      "H": "Sand Force"
+    },
+    "tier": "NUBL"
+  },
+  "woobat": {
+    "baseStats": {
+      "hp": 65
+    }
+  },
+  "gurdurr": {
+    "tier": "PU"
+  },
+  "conkeldurr": {
+    "tier": "UUBL"
+  },
+  "seismitoad": {
+    "tier": "NU"
+  },
+  "throh": {
+    "tier": "PU"
+  },
+  "sawk": {
+    "tier": "PUBL"
+  },
+  "whimsicott": {
+    "tier": "NU"
+  },
+  "lilligant": {
+    "tier": "PU"
+  },
+  "darmanitan": {
+    "tier": "RUBL"
+  },
+  "darmanitanzen": {
+    "tier": "RUBL"
+  },
+  "crustle": {
+    "baseStats": {
+      "atk": 105
+    }
+  },
+  "scrafty": {
+    "tier": "NU"
+  },
+  "sigilyph": {
+    "tier": "NU"
+  },
+  "cofagrigus": {
+    "tier": "NUBL"
+  },
+  "carracosta": {
+    "tier": "PU"
+  },
+  "archeops": {
+    "tier": "PUBL"
+  },
+  "cinccino": {
+    "tier": "NU"
+  },
+  "gothita": {
+    "tier": "LC Uber"
+  },
+  "reuniclus": {
+    "tier": "RUBL"
+  },
+  "vanillite": {
+    "abilities": {
+      "0": "Ice Body",
+      "1": "Snow Cloak",
+      "H": "Weak Armor"
+    }
+  },
+  "vanillish": {
+    "abilities": {
+      "0": "Ice Body",
+      "1": "Snow Cloak",
+      "H": "Weak Armor"
+    }
+  },
+  "vanilluxe": {
+    "abilities": {
+      "0": "Ice Body",
+      "1": "Snow Warning",
+      "H": "Weak Armor"
+    },
+    "tier": "NU"
+  },
+  "amoonguss": {
+    "tier": "UU"
+  },
+  "jellicent": {
+    "tier": "PU"
+  },
+  "alomomola": {
+    "tier": "UU"
+  },
+  "galvantula": {
+    "tier": "RU"
+  },
+  "eelektross": {
+    "tier": "PU"
+  },
+  "cubchoo": {
+    "abilities": {
+      "0": "Snow Cloak",
+      "1": "Slush Rush",
+      "H": "Rattled"
+    }
+  },
+  "beartic": {
+    "baseStats": {
+      "atk": 130
+    },
+    "abilities": {
+      "0": "Snow Cloak",
+      "1": "Slush Rush",
+      "H": "Swift Swim"
+    }
+  },
+  "cryogonal": {
+    "baseStats": {
+      "hp": 80,
+      "def": 50
+    },
+    "tier": "NU"
+  },
+  "accelgor": {
+    "tier": "NU"
+  },
+  "mienshao": {
+    "tier": "RUBL"
+  },
+  "druddigon": {
+    "tier": "NU"
+  },
+  "golurk": {
+    "tier": "PU"
+  },
+  "pawniard": {
+    "tier": "LC"
+  },
+  "bisharp": {
+    "tier": "UU"
+  },
+  "braviary": {
+    "tier": "NU"
+  },
+  "vullaby": {
+    "tier": "LC"
+  },
+  "mandibuzz": {
+    "tier": "RU"
+  },
+  "volcarona": {
+    "tier": "OU"
+  },
+  "terrakion": {
+    "tier": "UU"
+  },
+  "tornadus": {
+    "tier": "RUBL"
+  },
+  "thundurus": {
+    "tier": "UUBL"
+  },
+  "delphox": {
+    "tier": "NU"
+  },
+  "greninja": {
+    "abilities": {
+      "0": "Torrent",
+      "H": "Protean",
+      "S": "Battle Bond"
+    },
+    "tier": "OU"
+  },
+  "greninjaash": {
+    "id": "greninjaash",
+    "name": "Greninja-Ash",
+    "num": 658,
+    "baseSpecies": "Greninja",
+    "forme": "Ash",
+    "formeLetter": "A",
+    "gender": "M",
+    "baseStats": {
+      "hp": 72,
+      "atk": 145,
+      "def": 67,
+      "spa": 153,
+      "spd": 71,
+      "spe": 132
+    },
+    "abilities": {
+      "0": "Battle Bond"
+    },
+    "tier": "OU",
+    "weight": 40,
+    "type1": "Water",
+    "type2": "Dark",
+    "gen": 7
+  },
+  "fletchinder": {
+    "tier": "NFE"
+  },
+  "talonflame": {
+    "tier": "RUBL"
+  },
+  "pyroar": {
+    "tier": "PUBL"
+  },
+  "florges": {
+    "tier": "RU"
+  },
+  "pangoro": {
+    "tier": "RU"
+  },
+  "aromatisse": {
+    "tier": "PUBL"
+  },
+  "slurpuff": {
+    "tier": "NUBL"
+  },
+  "barbaracle": {
+    "tier": "NUBL"
+  },
+  "dragalge": {
+    "tier": "RU"
+  },
+  "clawitzer": {
+    "tier": "NU"
+  },
+  "heliolisk": {
+    "tier": "NU"
+  },
+  "tyrantrum": {
+    "tier": "RU"
+  },
+  "aurorus": {
+    "tier": "PU"
+  },
+  "hawlucha": {
+    "tier": "OU"
+  },
+  "goodra": {
+    "tier": "RU"
+  },
+  "pumpkaboosmall": {
+    "abilities": {
+      "0": "Pickup",
+      "1": "Frisk",
+      "H": "Insomnia"
+    }
+  },
+  "pumpkaboolarge": {
+    "abilities": {
+      "0": "Pickup",
+      "1": "Frisk",
+      "H": "Insomnia"
+    }
+  },
+  "gourgeistsmall": {
+    "abilities": {
+      "0": "Pickup",
+      "1": "Frisk",
+      "H": "Insomnia"
+    }
+  },
+  "gourgeistlarge": {
+    "abilities": {
+      "0": "Pickup",
+      "1": "Frisk",
+      "H": "Insomnia"
+    }
+  },
+  "noivern": {
+    "tier": "RU"
+  },
+  "zygarde": {
+    "abilities": {
+      "0": "Aura Break",
+      "H": "Power Construct"
+    },
+    "tier": "Uber"
+  },
+  "zygarde10": {
+    "id": "zygarde10",
+    "name": "Zygarde-10%",
+    "num": 718,
+    "baseSpecies": "Zygarde",
+    "forme": "10%",
+    "formeLetter": "T",
+    "gender": "N",
+    "baseStats": {
+      "hp": 54,
+      "atk": 100,
+      "def": 71,
+      "spa": 61,
+      "spd": 85,
+      "spe": 115
+    },
+    "abilities": {
+      "0": "Aura Break",
+      "H": "Power Construct"
+    },
+    "tier": "RU",
+    "weight": 33.5,
+    "type1": "Dragon",
+    "type2": "Ground",
+    "gen": 7
+  },
+  "zygardecomplete": {
+    "id": "zygardecomplete",
+    "name": "Zygarde-Complete",
+    "num": 718,
+    "baseSpecies": "Zygarde",
+    "forme": "Complete",
+    "formeLetter": "C",
+    "gender": "N",
+    "baseStats": {
+      "hp": 216,
+      "atk": 100,
+      "def": 121,
+      "spa": 91,
+      "spd": 95,
+      "spe": 85
+    },
+    "abilities": {
+      "0": "Power Construct"
+    },
+    "tier": "Uber",
+    "weight": 610,
+    "type1": "Dragon",
+    "type2": "Ground",
+    "gen": 7
+  },
+  "diancie": {
+    "tier": "NU"
+  },
+  "hoopa": {
+    "tier": "NUBL"
+  },
+  "hoopaunbound": {
+    "tier": "UUBL"
+  },
+  "volcanion": {
+    "tier": "UU"
+  },
+  "rowlet": {
+    "id": "rowlet",
+    "name": "Rowlet",
+    "num": 722,
+    "baseStats": {
+      "hp": 68,
+      "atk": 55,
+      "def": 55,
+      "spa": 50,
+      "spd": 50,
+      "spe": 42
+    },
+    "abilities": {
+      "0": "Overgrow",
+      "H": "Long Reach"
+    },
+    "evos": [
+      "dartrix"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Rowlet",
+    "weight": 1.5,
+    "type1": "Grass",
+    "type2": "Flying",
+    "gen": 7
+  },
+  "dartrix": {
+    "id": "dartrix",
+    "name": "Dartrix",
+    "num": 723,
+    "baseStats": {
+      "hp": 78,
+      "atk": 75,
+      "def": 75,
+      "spa": 70,
+      "spd": 70,
+      "spe": 52
+    },
+    "abilities": {
+      "0": "Overgrow",
+      "H": "Long Reach"
+    },
+    "prevo": "rowlet",
+    "evos": [
+      "decidueye"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Dartrix",
+    "weight": 16,
+    "type1": "Grass",
+    "type2": "Flying",
+    "gen": 7
+  },
+  "decidueye": {
+    "id": "decidueye",
+    "name": "Decidueye",
+    "num": 724,
+    "baseStats": {
+      "hp": 78,
+      "atk": 107,
+      "def": 75,
+      "spa": 100,
+      "spd": 100,
+      "spe": 70
+    },
+    "abilities": {
+      "0": "Overgrow",
+      "H": "Long Reach"
+    },
+    "prevo": "dartrix",
+    "tier": "NU",
+    "baseSpecies": "Decidueye",
+    "weight": 36.6,
+    "type1": "Grass",
+    "type2": "Ghost",
+    "gen": 7
+  },
+  "litten": {
+    "id": "litten",
+    "name": "Litten",
+    "num": 725,
+    "baseStats": {
+      "hp": 45,
+      "atk": 65,
+      "def": 40,
+      "spa": 60,
+      "spd": 40,
+      "spe": 70
+    },
+    "abilities": {
+      "0": "Blaze",
+      "H": "Intimidate"
+    },
+    "evos": [
+      "torracat"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Litten",
+    "weight": 4.3,
+    "type1": "Fire",
+    "gen": 7
+  },
+  "torracat": {
+    "id": "torracat",
+    "name": "Torracat",
+    "num": 726,
+    "baseStats": {
+      "hp": 65,
+      "atk": 85,
+      "def": 50,
+      "spa": 80,
+      "spd": 50,
+      "spe": 90
+    },
+    "abilities": {
+      "0": "Blaze",
+      "H": "Intimidate"
+    },
+    "prevo": "litten",
+    "evos": [
+      "incineroar"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Torracat",
+    "weight": 25,
+    "type1": "Fire",
+    "gen": 7
+  },
+  "incineroar": {
+    "id": "incineroar",
+    "name": "Incineroar",
+    "num": 727,
+    "baseStats": {
+      "hp": 95,
+      "atk": 115,
+      "def": 90,
+      "spa": 80,
+      "spd": 90,
+      "spe": 60
+    },
+    "abilities": {
+      "0": "Blaze",
+      "H": "Intimidate"
+    },
+    "prevo": "torracat",
+    "tier": "NU",
+    "baseSpecies": "Incineroar",
+    "weight": 83,
+    "type1": "Fire",
+    "type2": "Dark",
+    "gen": 7
+  },
+  "popplio": {
+    "id": "popplio",
+    "name": "Popplio",
+    "num": 728,
+    "baseStats": {
+      "hp": 50,
+      "atk": 54,
+      "def": 54,
+      "spa": 66,
+      "spd": 56,
+      "spe": 40
+    },
+    "abilities": {
+      "0": "Torrent",
+      "H": "Liquid Voice"
+    },
+    "evos": [
+      "brionne"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Popplio",
+    "weight": 7.5,
+    "type1": "Water",
+    "gen": 7
+  },
+  "brionne": {
+    "id": "brionne",
+    "name": "Brionne",
+    "num": 729,
+    "baseStats": {
+      "hp": 60,
+      "atk": 69,
+      "def": 69,
+      "spa": 91,
+      "spd": 81,
+      "spe": 50
+    },
+    "abilities": {
+      "0": "Torrent",
+      "H": "Liquid Voice"
+    },
+    "prevo": "popplio",
+    "evos": [
+      "primarina"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Brionne",
+    "weight": 17.5,
+    "type1": "Water",
+    "gen": 7
+  },
+  "primarina": {
+    "id": "primarina",
+    "name": "Primarina",
+    "num": 730,
+    "baseStats": {
+      "hp": 80,
+      "atk": 74,
+      "def": 74,
+      "spa": 126,
+      "spd": 116,
+      "spe": 60
+    },
+    "abilities": {
+      "0": "Torrent",
+      "H": "Liquid Voice"
+    },
+    "prevo": "brionne",
+    "tier": "UU",
+    "baseSpecies": "Primarina",
+    "weight": 44,
+    "type1": "Water",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "pikipek": {
+    "id": "pikipek",
+    "name": "Pikipek",
+    "num": 731,
+    "baseStats": {
+      "hp": 35,
+      "atk": 75,
+      "def": 30,
+      "spa": 30,
+      "spd": 30,
+      "spe": 65
+    },
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Skill Link",
+      "H": "Pickup"
+    },
+    "evos": [
+      "trumbeak"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Pikipek",
+    "weight": 1.2,
+    "type1": "Normal",
+    "type2": "Flying",
+    "gen": 7
+  },
+  "trumbeak": {
+    "id": "trumbeak",
+    "name": "Trumbeak",
+    "num": 732,
+    "baseStats": {
+      "hp": 55,
+      "atk": 85,
+      "def": 50,
+      "spa": 40,
+      "spd": 50,
+      "spe": 75
+    },
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Skill Link",
+      "H": "Pickup"
+    },
+    "prevo": "pikipek",
+    "evos": [
+      "toucannon"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Trumbeak",
+    "weight": 14.8,
+    "type1": "Normal",
+    "type2": "Flying",
+    "gen": 7
+  },
+  "toucannon": {
+    "id": "toucannon",
+    "name": "Toucannon",
+    "num": 733,
+    "baseStats": {
+      "hp": 80,
+      "atk": 120,
+      "def": 75,
+      "spa": 75,
+      "spd": 75,
+      "spe": 60
+    },
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Skill Link",
+      "H": "Sheer Force"
+    },
+    "prevo": "trumbeak",
+    "tier": "PU",
+    "baseSpecies": "Toucannon",
+    "weight": 26,
+    "type1": "Normal",
+    "type2": "Flying",
+    "gen": 7
+  },
+  "yungoos": {
+    "id": "yungoos",
+    "name": "Yungoos",
+    "num": 734,
+    "baseStats": {
+      "hp": 48,
+      "atk": 70,
+      "def": 30,
+      "spa": 30,
+      "spd": 30,
+      "spe": 45
+    },
+    "abilities": {
+      "0": "Stakeout",
+      "1": "Strong Jaw",
+      "H": "Adaptability"
+    },
+    "evos": [
+      "gumshoos"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Yungoos",
+    "weight": 6,
+    "type1": "Normal",
+    "gen": 7
+  },
+  "gumshoos": {
+    "id": "gumshoos",
+    "name": "Gumshoos",
+    "num": 735,
+    "baseStats": {
+      "hp": 88,
+      "atk": 110,
+      "def": 60,
+      "spa": 55,
+      "spd": 60,
+      "spe": 45
+    },
+    "abilities": {
+      "0": "Stakeout",
+      "1": "Strong Jaw",
+      "H": "Adaptability"
+    },
+    "prevo": "yungoos",
+    "otherFormes": [
+      "gumshoostotem"
+    ],
+    "tier": "PU",
+    "baseSpecies": "Gumshoos",
+    "weight": 14.2,
+    "type1": "Normal",
+    "gen": 7
+  },
+  "gumshoostotem": {
+    "id": "gumshoostotem",
+    "name": "Gumshoos-Totem",
+    "num": 735,
+    "baseSpecies": "Gumshoos",
+    "forme": "Totem",
+    "formeLetter": "T",
+    "baseStats": {
+      "hp": 88,
+      "atk": 110,
+      "def": 60,
+      "spa": 55,
+      "spd": 60,
+      "spe": 45
+    },
+    "abilities": {
+      "0": "Adaptability"
+    },
+    "tier": "PU",
+    "weight": 60,
+    "type1": "Normal",
+    "gen": 7
+  },
+  "grubbin": {
+    "id": "grubbin",
+    "name": "Grubbin",
+    "num": 736,
+    "baseStats": {
+      "hp": 47,
+      "atk": 62,
+      "def": 45,
+      "spa": 55,
+      "spd": 45,
+      "spe": 46
+    },
+    "abilities": {
+      "0": "Swarm"
+    },
+    "evos": [
+      "charjabug"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Grubbin",
+    "weight": 4.4,
+    "type1": "Bug",
+    "gen": 7
+  },
+  "charjabug": {
+    "id": "charjabug",
+    "name": "Charjabug",
+    "num": 737,
+    "baseStats": {
+      "hp": 57,
+      "atk": 82,
+      "def": 95,
+      "spa": 55,
+      "spd": 75,
+      "spe": 36
+    },
+    "abilities": {
+      "0": "Battery"
+    },
+    "prevo": "grubbin",
+    "evos": [
+      "vikavolt"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Charjabug",
+    "weight": 10.5,
+    "type1": "Bug",
+    "type2": "Electric",
+    "gen": 7
+  },
+  "vikavolt": {
+    "id": "vikavolt",
+    "name": "Vikavolt",
+    "num": 738,
+    "baseStats": {
+      "hp": 77,
+      "atk": 70,
+      "def": 90,
+      "spa": 145,
+      "spd": 75,
+      "spe": 43
+    },
+    "abilities": {
+      "0": "Levitate"
+    },
+    "prevo": "charjabug",
+    "otherFormes": [
+      "vikavolttotem"
+    ],
+    "tier": "NU",
+    "baseSpecies": "Vikavolt",
+    "weight": 45,
+    "type1": "Bug",
+    "type2": "Electric",
+    "gen": 7
+  },
+  "vikavolttotem": {
+    "id": "vikavolttotem",
+    "name": "Vikavolt-Totem",
+    "num": 738,
+    "baseSpecies": "Vikavolt",
+    "forme": "Totem",
+    "formeLetter": "T",
+    "baseStats": {
+      "hp": 77,
+      "atk": 70,
+      "def": 90,
+      "spa": 145,
+      "spd": 75,
+      "spe": 43
+    },
+    "abilities": {
+      "0": "Levitate"
+    },
+    "tier": "NU",
+    "weight": 147.5,
+    "type1": "Bug",
+    "type2": "Electric",
+    "gen": 7
+  },
+  "crabrawler": {
+    "id": "crabrawler",
+    "name": "Crabrawler",
+    "num": 739,
+    "baseStats": {
+      "hp": 47,
+      "atk": 82,
+      "def": 57,
+      "spa": 42,
+      "spd": 47,
+      "spe": 63
+    },
+    "abilities": {
+      "0": "Hyper Cutter",
+      "1": "Iron Fist",
+      "H": "Anger Point"
+    },
+    "evos": [
+      "crabominable"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Crabrawler",
+    "weight": 7,
+    "type1": "Fighting",
+    "gen": 7
+  },
+  "crabominable": {
+    "id": "crabominable",
+    "name": "Crabominable",
+    "num": 740,
+    "baseStats": {
+      "hp": 97,
+      "atk": 132,
+      "def": 77,
+      "spa": 62,
+      "spd": 67,
+      "spe": 43
+    },
+    "abilities": {
+      "0": "Hyper Cutter",
+      "1": "Iron Fist",
+      "H": "Anger Point"
+    },
+    "prevo": "crabrawler",
+    "tier": "PU",
+    "baseSpecies": "Crabominable",
+    "weight": 180,
+    "type1": "Fighting",
+    "type2": "Ice",
+    "gen": 7
+  },
+  "oricorio": {
+    "id": "oricorio",
+    "name": "Oricorio",
+    "num": 741,
+    "baseForme": "Baile",
+    "baseStats": {
+      "hp": 75,
+      "atk": 70,
+      "def": 70,
+      "spa": 98,
+      "spd": 70,
+      "spe": 93
+    },
+    "abilities": {
+      "0": "Dancer"
+    },
+    "otherFormes": [
+      "oricoriopompom",
+      "oricoriopau",
+      "oricoriosensu"
+    ],
+    "tier": "PU",
+    "baseSpecies": "Oricorio",
+    "weight": 3.4,
+    "type1": "Fire",
+    "type2": "Flying",
+    "gen": 7
+  },
+  "oricoriopompom": {
+    "id": "oricoriopompom",
+    "name": "Oricorio-Pom-Pom",
+    "num": 741,
+    "baseSpecies": "Oricorio",
+    "forme": "Pom-Pom",
+    "formeLetter": "P",
+    "baseStats": {
+      "hp": 75,
+      "atk": 70,
+      "def": 70,
+      "spa": 98,
+      "spd": 70,
+      "spe": 93
+    },
+    "abilities": {
+      "0": "Dancer"
+    },
+    "tier": "PU",
+    "weight": 3.4,
+    "type1": "Electric",
+    "type2": "Flying",
+    "gen": 7
+  },
+  "oricoriopau": {
+    "id": "oricoriopau",
+    "name": "Oricorio-Pa'u",
+    "num": 741,
+    "baseSpecies": "Oricorio",
+    "forme": "Pa'u",
+    "formeLetter": "P",
+    "baseStats": {
+      "hp": 75,
+      "atk": 70,
+      "def": 70,
+      "spa": 98,
+      "spd": 70,
+      "spe": 93
+    },
+    "abilities": {
+      "0": "Dancer"
+    },
+    "tier": "PU",
+    "weight": 3.4,
+    "type1": "Psychic",
+    "type2": "Flying",
+    "gen": 7
+  },
+  "oricoriosensu": {
+    "id": "oricoriosensu",
+    "name": "Oricorio-Sensu",
+    "num": 741,
+    "baseSpecies": "Oricorio",
+    "forme": "Sensu",
+    "formeLetter": "S",
+    "baseStats": {
+      "hp": 75,
+      "atk": 70,
+      "def": 70,
+      "spa": 98,
+      "spd": 70,
+      "spe": 93
+    },
+    "abilities": {
+      "0": "Dancer"
+    },
+    "tier": "PU",
+    "weight": 3.4,
+    "type1": "Ghost",
+    "type2": "Flying",
+    "gen": 7
+  },
+  "cutiefly": {
+    "id": "cutiefly",
+    "name": "Cutiefly",
+    "num": 742,
+    "baseStats": {
+      "hp": 40,
+      "atk": 45,
+      "def": 40,
+      "spa": 55,
+      "spd": 40,
+      "spe": 84
+    },
+    "abilities": {
+      "0": "Honey Gather",
+      "1": "Shield Dust",
+      "H": "Sweet Veil"
+    },
+    "evos": [
+      "ribombee"
+    ],
+    "tier": "LC Uber",
+    "baseSpecies": "Cutiefly",
+    "weight": 0.2,
+    "type1": "Bug",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "ribombee": {
+    "id": "ribombee",
+    "name": "Ribombee",
+    "num": 743,
+    "baseStats": {
+      "hp": 60,
+      "atk": 55,
+      "def": 60,
+      "spa": 95,
+      "spd": 70,
+      "spe": 124
+    },
+    "abilities": {
+      "0": "Honey Gather",
+      "1": "Shield Dust",
+      "H": "Sweet Veil"
+    },
+    "prevo": "cutiefly",
+    "otherFormes": [
+      "ribombeetotem"
+    ],
+    "tier": "NUBL",
+    "baseSpecies": "Ribombee",
+    "weight": 0.5,
+    "type1": "Bug",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "ribombeetotem": {
+    "id": "ribombeetotem",
+    "name": "Ribombee-Totem",
+    "num": 743,
+    "baseSpecies": "Ribombee",
+    "forme": "Totem",
+    "formeLetter": "T",
+    "baseStats": {
+      "hp": 60,
+      "atk": 55,
+      "def": 60,
+      "spa": 95,
+      "spd": 70,
+      "spe": 124
+    },
+    "abilities": {
+      "0": "Sweet Veil"
+    },
+    "tier": "NUBL",
+    "weight": 2,
+    "type1": "Bug",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "rockruff": {
+    "id": "rockruff",
+    "name": "Rockruff",
+    "num": 744,
+    "baseForme": "Midday",
+    "baseStats": {
+      "hp": 45,
+      "atk": 65,
+      "def": 40,
+      "spa": 30,
+      "spd": 40,
+      "spe": 60
+    },
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Vital Spirit",
+      "H": "Steadfast",
+      "S": "Own Tempo"
+    },
+    "evos": [
+      "lycanroc",
+      "lycanrocmidnight",
+      "lycanrocdusk"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Rockruff",
+    "weight": 9.2,
+    "type1": "Rock",
+    "gen": 7
+  },
+  "lycanroc": {
+    "id": "lycanroc",
+    "name": "Lycanroc",
+    "num": 745,
+    "baseForme": "Midday",
+    "baseStats": {
+      "hp": 75,
+      "atk": 115,
+      "def": 65,
+      "spa": 55,
+      "spd": 65,
+      "spe": 112
+    },
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Sand Rush",
+      "H": "Steadfast"
+    },
+    "prevo": "rockruff",
+    "otherFormes": [
+      "lycanrocmidnight",
+      "lycanrocdusk"
+    ],
+    "tier": "PU",
+    "baseSpecies": "Lycanroc",
+    "weight": 25,
+    "type1": "Rock",
+    "gen": 7
+  },
+  "lycanrocmidnight": {
+    "id": "lycanrocmidnight",
+    "name": "Lycanroc-Midnight",
+    "num": 745,
+    "baseSpecies": "Lycanroc",
+    "forme": "Midnight",
+    "formeLetter": "M",
+    "baseStats": {
+      "hp": 85,
+      "atk": 115,
+      "def": 75,
+      "spa": 55,
+      "spd": 75,
+      "spe": 82
+    },
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Vital Spirit",
+      "H": "No Guard"
+    },
+    "prevo": "rockruff",
+    "tier": "PU",
+    "weight": 25,
+    "type1": "Rock",
+    "gen": 7
+  },
+  "lycanrocdusk": {
+    "id": "lycanrocdusk",
+    "name": "Lycanroc-Dusk",
+    "num": 745,
+    "baseSpecies": "Lycanroc",
+    "forme": "Dusk",
+    "formeLetter": "D",
+    "baseStats": {
+      "hp": 75,
+      "atk": 117,
+      "def": 65,
+      "spa": 55,
+      "spd": 65,
+      "spe": 110
+    },
+    "abilities": {
+      "0": "Tough Claws"
+    },
+    "prevo": "rockruff",
+    "tier": "RU",
+    "weight": 25,
+    "type1": "Rock",
+    "gen": 7
+  },
+  "wishiwashi": {
+    "id": "wishiwashi",
+    "name": "Wishiwashi",
+    "num": 746,
+    "baseForme": "Solo",
+    "baseStats": {
+      "hp": 45,
+      "atk": 20,
+      "def": 20,
+      "spa": 25,
+      "spd": 25,
+      "spe": 40
+    },
+    "abilities": {
+      "0": "Schooling"
+    },
+    "otherFormes": [
+      "wishiwashischool"
+    ],
+    "tier": "PU",
+    "baseSpecies": "Wishiwashi",
+    "weight": 0.3,
+    "type1": "Water",
+    "gen": 7
+  },
+  "wishiwashischool": {
+    "id": "wishiwashischool",
+    "name": "Wishiwashi-School",
+    "num": 746,
+    "baseSpecies": "Wishiwashi",
+    "forme": "School",
+    "formeLetter": "S",
+    "baseStats": {
+      "hp": 45,
+      "atk": 140,
+      "def": 130,
+      "spa": 140,
+      "spd": 135,
+      "spe": 30
+    },
+    "abilities": {
+      "0": "Schooling"
+    },
+    "tier": "PU",
+    "weight": 78.6,
+    "type1": "Water",
+    "gen": 7
+  },
+  "mareanie": {
+    "id": "mareanie",
+    "name": "Mareanie",
+    "num": 747,
+    "baseStats": {
+      "hp": 50,
+      "atk": 53,
+      "def": 62,
+      "spa": 43,
+      "spd": 52,
+      "spe": 45
+    },
+    "abilities": {
+      "0": "Merciless",
+      "1": "Limber",
+      "H": "Regenerator"
+    },
+    "evos": [
+      "toxapex"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Mareanie",
+    "weight": 8,
+    "type1": "Poison",
+    "type2": "Water",
+    "gen": 7
+  },
+  "toxapex": {
+    "id": "toxapex",
+    "name": "Toxapex",
+    "num": 748,
+    "baseStats": {
+      "hp": 50,
+      "atk": 63,
+      "def": 152,
+      "spa": 53,
+      "spd": 142,
+      "spe": 35
+    },
+    "abilities": {
+      "0": "Merciless",
+      "1": "Limber",
+      "H": "Regenerator"
+    },
+    "prevo": "mareanie",
+    "tier": "OU",
+    "baseSpecies": "Toxapex",
+    "weight": 14.5,
+    "type1": "Poison",
+    "type2": "Water",
+    "gen": 7
+  },
+  "mudbray": {
+    "id": "mudbray",
+    "name": "Mudbray",
+    "num": 749,
+    "baseStats": {
+      "hp": 70,
+      "atk": 100,
+      "def": 70,
+      "spa": 45,
+      "spd": 55,
+      "spe": 45
+    },
+    "abilities": {
+      "0": "Own Tempo",
+      "1": "Stamina",
+      "H": "Inner Focus"
+    },
+    "evos": [
+      "mudsdale"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Mudbray",
+    "weight": 110,
+    "type1": "Ground",
+    "gen": 7
+  },
+  "mudsdale": {
+    "id": "mudsdale",
+    "name": "Mudsdale",
+    "num": 750,
+    "baseStats": {
+      "hp": 100,
+      "atk": 125,
+      "def": 100,
+      "spa": 55,
+      "spd": 85,
+      "spe": 35
+    },
+    "abilities": {
+      "0": "Own Tempo",
+      "1": "Stamina",
+      "H": "Inner Focus"
+    },
+    "prevo": "mudbray",
+    "tier": "PU",
+    "baseSpecies": "Mudsdale",
+    "weight": 920,
+    "type1": "Ground",
+    "gen": 7
+  },
+  "dewpider": {
+    "id": "dewpider",
+    "name": "Dewpider",
+    "num": 751,
+    "baseStats": {
+      "hp": 38,
+      "atk": 40,
+      "def": 52,
+      "spa": 40,
+      "spd": 72,
+      "spe": 27
+    },
+    "abilities": {
+      "0": "Water Bubble",
+      "H": "Water Absorb"
+    },
+    "evos": [
+      "araquanid"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Dewpider",
+    "weight": 4,
+    "type1": "Water",
+    "type2": "Bug",
+    "gen": 7
+  },
+  "araquanid": {
+    "id": "araquanid",
+    "name": "Araquanid",
+    "num": 752,
+    "baseStats": {
+      "hp": 68,
+      "atk": 70,
+      "def": 92,
+      "spa": 50,
+      "spd": 132,
+      "spe": 42
+    },
+    "abilities": {
+      "0": "Water Bubble",
+      "H": "Water Absorb"
+    },
+    "prevo": "dewpider",
+    "otherFormes": [
+      "araquanidtotem"
+    ],
+    "tier": "RU",
+    "baseSpecies": "Araquanid",
+    "weight": 82,
+    "type1": "Water",
+    "type2": "Bug",
+    "gen": 7
+  },
+  "araquanidtotem": {
+    "id": "araquanidtotem",
+    "name": "Araquanid-Totem",
+    "num": 752,
+    "baseSpecies": "Araquanid",
+    "forme": "Totem",
+    "formeLetter": "T",
+    "baseStats": {
+      "hp": 68,
+      "atk": 70,
+      "def": 92,
+      "spa": 50,
+      "spd": 132,
+      "spe": 42
+    },
+    "abilities": {
+      "0": "Water Bubble"
+    },
+    "tier": "RU",
+    "weight": 217.5,
+    "type1": "Water",
+    "type2": "Bug",
+    "gen": 7
+  },
+  "fomantis": {
+    "id": "fomantis",
+    "name": "Fomantis",
+    "num": 753,
+    "baseStats": {
+      "hp": 40,
+      "atk": 55,
+      "def": 35,
+      "spa": 50,
+      "spd": 35,
+      "spe": 35
+    },
+    "abilities": {
+      "0": "Leaf Guard",
+      "H": "Contrary"
+    },
+    "evos": [
+      "lurantis"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Fomantis",
+    "weight": 1.5,
+    "type1": "Grass",
+    "gen": 7
+  },
+  "lurantis": {
+    "id": "lurantis",
+    "name": "Lurantis",
+    "num": 754,
+    "baseStats": {
+      "hp": 70,
+      "atk": 105,
+      "def": 90,
+      "spa": 80,
+      "spd": 90,
+      "spe": 45
+    },
+    "abilities": {
+      "0": "Leaf Guard",
+      "H": "Contrary"
+    },
+    "prevo": "fomantis",
+    "otherFormes": [
+      "lurantistotem"
+    ],
+    "tier": "PU",
+    "baseSpecies": "Lurantis",
+    "weight": 18.5,
+    "type1": "Grass",
+    "gen": 7
+  },
+  "lurantistotem": {
+    "id": "lurantistotem",
+    "name": "Lurantis-Totem",
+    "num": 754,
+    "baseSpecies": "Lurantis",
+    "forme": "Totem",
+    "formeLetter": "T",
+    "baseStats": {
+      "hp": 70,
+      "atk": 105,
+      "def": 90,
+      "spa": 80,
+      "spd": 90,
+      "spe": 45
+    },
+    "abilities": {
+      "0": "Leaf Guard"
+    },
+    "tier": "PU",
+    "weight": 58,
+    "type1": "Grass",
+    "gen": 7
+  },
+  "morelull": {
+    "id": "morelull",
+    "name": "Morelull",
+    "num": 755,
+    "baseStats": {
+      "hp": 40,
+      "atk": 35,
+      "def": 55,
+      "spa": 65,
+      "spd": 75,
+      "spe": 15
+    },
+    "abilities": {
+      "0": "Illuminate",
+      "1": "Effect Spore",
+      "H": "Rain Dish"
+    },
+    "evos": [
+      "shiinotic"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Morelull",
+    "weight": 1.5,
+    "type1": "Grass",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "shiinotic": {
+    "id": "shiinotic",
+    "name": "Shiinotic",
+    "num": 756,
+    "baseStats": {
+      "hp": 60,
+      "atk": 45,
+      "def": 80,
+      "spa": 90,
+      "spd": 100,
+      "spe": 30
+    },
+    "abilities": {
+      "0": "Illuminate",
+      "1": "Effect Spore",
+      "H": "Rain Dish"
+    },
+    "prevo": "morelull",
+    "tier": "PU",
+    "baseSpecies": "Shiinotic",
+    "weight": 11.5,
+    "type1": "Grass",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "salandit": {
+    "id": "salandit",
+    "name": "Salandit",
+    "num": 757,
+    "baseStats": {
+      "hp": 48,
+      "atk": 44,
+      "def": 40,
+      "spa": 71,
+      "spd": 40,
+      "spe": 77
+    },
+    "abilities": {
+      "0": "Corrosion",
+      "H": "Oblivious"
+    },
+    "evos": [
+      "salazzle"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Salandit",
+    "weight": 4.8,
+    "type1": "Poison",
+    "type2": "Fire",
+    "gen": 7
+  },
+  "salazzle": {
+    "id": "salazzle",
+    "name": "Salazzle",
+    "num": 758,
+    "gender": "F",
+    "baseStats": {
+      "hp": 68,
+      "atk": 64,
+      "def": 60,
+      "spa": 111,
+      "spd": 60,
+      "spe": 117
+    },
+    "abilities": {
+      "0": "Corrosion",
+      "H": "Oblivious"
+    },
+    "prevo": "salandit",
+    "otherFormes": [
+      "salazzletotem"
+    ],
+    "tier": "RU",
+    "baseSpecies": "Salazzle",
+    "weight": 22.2,
+    "type1": "Poison",
+    "type2": "Fire",
+    "gen": 7
+  },
+  "salazzletotem": {
+    "id": "salazzletotem",
+    "name": "Salazzle-Totem",
+    "num": 758,
+    "baseSpecies": "Salazzle",
+    "forme": "Totem",
+    "formeLetter": "T",
+    "gender": "F",
+    "baseStats": {
+      "hp": 68,
+      "atk": 64,
+      "def": 60,
+      "spa": 111,
+      "spd": 60,
+      "spe": 117
+    },
+    "abilities": {
+      "0": "Corrosion"
+    },
+    "tier": "RU",
+    "weight": 81,
+    "type1": "Poison",
+    "type2": "Fire",
+    "gen": 7
+  },
+  "stufful": {
+    "id": "stufful",
+    "name": "Stufful",
+    "num": 759,
+    "baseStats": {
+      "hp": 70,
+      "atk": 75,
+      "def": 50,
+      "spa": 45,
+      "spd": 50,
+      "spe": 50
+    },
+    "abilities": {
+      "0": "Fluffy",
+      "1": "Klutz",
+      "H": "Cute Charm"
+    },
+    "evos": [
+      "bewear"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Stufful",
+    "weight": 6.8,
+    "type1": "Normal",
+    "type2": "Fighting",
+    "gen": 7
+  },
+  "bewear": {
+    "id": "bewear",
+    "name": "Bewear",
+    "num": 760,
+    "baseStats": {
+      "hp": 120,
+      "atk": 125,
+      "def": 80,
+      "spa": 55,
+      "spd": 60,
+      "spe": 60
+    },
+    "abilities": {
+      "0": "Fluffy",
+      "1": "Klutz",
+      "H": "Unnerve"
+    },
+    "prevo": "stufful",
+    "tier": "RU",
+    "baseSpecies": "Bewear",
+    "weight": 135,
+    "type1": "Normal",
+    "type2": "Fighting",
+    "gen": 7
+  },
+  "bounsweet": {
+    "id": "bounsweet",
+    "name": "Bounsweet",
+    "num": 761,
+    "gender": "F",
+    "baseStats": {
+      "hp": 42,
+      "atk": 30,
+      "def": 38,
+      "spa": 30,
+      "spd": 38,
+      "spe": 32
+    },
+    "abilities": {
+      "0": "Leaf Guard",
+      "1": "Oblivious",
+      "H": "Sweet Veil"
+    },
+    "evos": [
+      "steenee"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Bounsweet",
+    "weight": 3.2,
+    "type1": "Grass",
+    "gen": 7
+  },
+  "steenee": {
+    "id": "steenee",
+    "name": "Steenee",
+    "num": 762,
+    "gender": "F",
+    "baseStats": {
+      "hp": 52,
+      "atk": 40,
+      "def": 48,
+      "spa": 40,
+      "spd": 48,
+      "spe": 62
+    },
+    "abilities": {
+      "0": "Leaf Guard",
+      "1": "Oblivious",
+      "H": "Sweet Veil"
+    },
+    "prevo": "bounsweet",
+    "evos": [
+      "tsareena"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Steenee",
+    "weight": 8.2,
+    "type1": "Grass",
+    "gen": 7
+  },
+  "tsareena": {
+    "id": "tsareena",
+    "name": "Tsareena",
+    "num": 763,
+    "gender": "F",
+    "baseStats": {
+      "hp": 72,
+      "atk": 120,
+      "def": 98,
+      "spa": 50,
+      "spd": 98,
+      "spe": 72
+    },
+    "abilities": {
+      "0": "Leaf Guard",
+      "1": "Queenly Majesty",
+      "H": "Sweet Veil"
+    },
+    "prevo": "steenee",
+    "tier": "RU",
+    "baseSpecies": "Tsareena",
+    "weight": 21.4,
+    "type1": "Grass",
+    "gen": 7
+  },
+  "comfey": {
+    "id": "comfey",
+    "name": "Comfey",
+    "num": 764,
+    "baseStats": {
+      "hp": 51,
+      "atk": 52,
+      "def": 90,
+      "spa": 82,
+      "spd": 110,
+      "spe": 100
+    },
+    "abilities": {
+      "0": "Flower Veil",
+      "1": "Triage",
+      "H": "Natural Cure"
+    },
+    "tier": "NU",
+    "baseSpecies": "Comfey",
+    "weight": 0.3,
+    "type1": "Fairy",
+    "gen": 7
+  },
+  "oranguru": {
+    "id": "oranguru",
+    "name": "Oranguru",
+    "num": 765,
+    "baseStats": {
+      "hp": 90,
+      "atk": 60,
+      "def": 80,
+      "spa": 90,
+      "spd": 110,
+      "spe": 60
+    },
+    "abilities": {
+      "0": "Inner Focus",
+      "1": "Telepathy",
+      "H": "Symbiosis"
+    },
+    "tier": "PU",
+    "baseSpecies": "Oranguru",
+    "weight": 76,
+    "type1": "Normal",
+    "type2": "Psychic",
+    "gen": 7
+  },
+  "passimian": {
+    "id": "passimian",
+    "name": "Passimian",
+    "num": 766,
+    "baseStats": {
+      "hp": 100,
+      "atk": 120,
+      "def": 90,
+      "spa": 40,
+      "spd": 60,
+      "spe": 80
+    },
+    "abilities": {
+      "0": "Receiver",
+      "H": "Defiant"
+    },
+    "tier": "NU",
+    "baseSpecies": "Passimian",
+    "weight": 82.8,
+    "type1": "Fighting",
+    "gen": 7
+  },
+  "wimpod": {
+    "id": "wimpod",
+    "name": "Wimpod",
+    "num": 767,
+    "baseStats": {
+      "hp": 25,
+      "atk": 35,
+      "def": 40,
+      "spa": 20,
+      "spd": 30,
+      "spe": 80
+    },
+    "abilities": {
+      "0": "Wimp Out"
+    },
+    "evos": [
+      "golisopod"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Wimpod",
+    "weight": 12,
+    "type1": "Bug",
+    "type2": "Water",
+    "gen": 7
+  },
+  "golisopod": {
+    "id": "golisopod",
+    "name": "Golisopod",
+    "num": 768,
+    "baseStats": {
+      "hp": 75,
+      "atk": 125,
+      "def": 140,
+      "spa": 60,
+      "spd": 90,
+      "spe": 40
+    },
+    "abilities": {
+      "0": "Emergency Exit"
+    },
+    "prevo": "wimpod",
+    "tier": "RU",
+    "baseSpecies": "Golisopod",
+    "weight": 108,
+    "type1": "Bug",
+    "type2": "Water",
+    "gen": 7
+  },
+  "sandygast": {
+    "id": "sandygast",
+    "name": "Sandygast",
+    "num": 769,
+    "baseStats": {
+      "hp": 55,
+      "atk": 55,
+      "def": 80,
+      "spa": 70,
+      "spd": 45,
+      "spe": 15
+    },
+    "abilities": {
+      "0": "Water Compaction",
+      "H": "Sand Veil"
+    },
+    "evos": [
+      "palossand"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Sandygast",
+    "weight": 70,
+    "type1": "Ghost",
+    "type2": "Ground",
+    "gen": 7
+  },
+  "palossand": {
+    "id": "palossand",
+    "name": "Palossand",
+    "num": 770,
+    "baseStats": {
+      "hp": 85,
+      "atk": 75,
+      "def": 110,
+      "spa": 100,
+      "spd": 75,
+      "spe": 35
+    },
+    "abilities": {
+      "0": "Water Compaction",
+      "H": "Sand Veil"
+    },
+    "prevo": "sandygast",
+    "tier": "NU",
+    "baseSpecies": "Palossand",
+    "weight": 250,
+    "type1": "Ghost",
+    "type2": "Ground",
+    "gen": 7
+  },
+  "pyukumuku": {
+    "id": "pyukumuku",
+    "name": "Pyukumuku",
+    "num": 771,
+    "baseStats": {
+      "hp": 55,
+      "atk": 60,
+      "def": 130,
+      "spa": 30,
+      "spd": 130,
+      "spe": 5
+    },
+    "abilities": {
+      "0": "Innards Out",
+      "H": "Unaware"
+    },
+    "tier": "PU",
+    "baseSpecies": "Pyukumuku",
+    "weight": 1.2,
+    "type1": "Water",
+    "gen": 7
+  },
+  "typenull": {
+    "id": "typenull",
+    "name": "Type: Null",
+    "num": 772,
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 59
+    },
+    "abilities": {
+      "0": "Battle Armor"
+    },
+    "evos": [
+      "silvally"
+    ],
+    "tier": "PU",
+    "baseSpecies": "Type: Null",
+    "weight": 120.5,
+    "type1": "Normal",
+    "gen": 7
+  },
+  "silvally": {
+    "id": "silvally",
+    "name": "Silvally",
+    "num": 773,
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "otherFormes": [
+      "silvallybug",
+      "silvallydark",
+      "silvallydragon",
+      "silvallyelectric",
+      "silvallyfairy",
+      "silvallyfighting",
+      "silvallyfire",
+      "silvallyflying",
+      "silvallyghost",
+      "silvallygrass",
+      "silvallyground",
+      "silvallyice",
+      "silvallypoison",
+      "silvallypsychic",
+      "silvallyrock",
+      "silvallysteel",
+      "silvallywater"
+    ],
+    "tier": "PU",
+    "baseSpecies": "Silvally",
+    "weight": 100.5,
+    "type1": "Normal",
+    "gen": 7
+  },
+  "silvallybug": {
+    "id": "silvallybug",
+    "name": "Silvally-Bug",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Bug",
+    "formeLetter": "B",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Bug",
+    "gen": 7
+  },
+  "silvallydark": {
+    "id": "silvallydark",
+    "name": "Silvally-Dark",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Dark",
+    "formeLetter": "D",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Dark",
+    "gen": 7
+  },
+  "silvallydragon": {
+    "id": "silvallydragon",
+    "name": "Silvally-Dragon",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Dragon",
+    "formeLetter": "D",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Dragon",
+    "gen": 7
+  },
+  "silvallyelectric": {
+    "id": "silvallyelectric",
+    "name": "Silvally-Electric",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Electric",
+    "formeLetter": "E",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Electric",
+    "gen": 7
+  },
+  "silvallyfairy": {
+    "id": "silvallyfairy",
+    "name": "Silvally-Fairy",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Fairy",
+    "formeLetter": "F",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Fairy",
+    "gen": 7
+  },
+  "silvallyfighting": {
+    "id": "silvallyfighting",
+    "name": "Silvally-Fighting",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Fighting",
+    "formeLetter": "F",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Fighting",
+    "gen": 7
+  },
+  "silvallyfire": {
+    "id": "silvallyfire",
+    "name": "Silvally-Fire",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Fire",
+    "formeLetter": "F",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Fire",
+    "gen": 7
+  },
+  "silvallyflying": {
+    "id": "silvallyflying",
+    "name": "Silvally-Flying",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Flying",
+    "formeLetter": "F",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Flying",
+    "gen": 7
+  },
+  "silvallyghost": {
+    "id": "silvallyghost",
+    "name": "Silvally-Ghost",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Ghost",
+    "formeLetter": "G",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Ghost",
+    "gen": 7
+  },
+  "silvallygrass": {
+    "id": "silvallygrass",
+    "name": "Silvally-Grass",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Grass",
+    "formeLetter": "G",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Grass",
+    "gen": 7
+  },
+  "silvallyground": {
+    "id": "silvallyground",
+    "name": "Silvally-Ground",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Ground",
+    "formeLetter": "G",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Ground",
+    "gen": 7
+  },
+  "silvallyice": {
+    "id": "silvallyice",
+    "name": "Silvally-Ice",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Ice",
+    "formeLetter": "I",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Ice",
+    "gen": 7
+  },
+  "silvallypoison": {
+    "id": "silvallypoison",
+    "name": "Silvally-Poison",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Poison",
+    "formeLetter": "P",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Poison",
+    "gen": 7
+  },
+  "silvallypsychic": {
+    "id": "silvallypsychic",
+    "name": "Silvally-Psychic",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Psychic",
+    "formeLetter": "P",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Psychic",
+    "gen": 7
+  },
+  "silvallyrock": {
+    "id": "silvallyrock",
+    "name": "Silvally-Rock",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Rock",
+    "formeLetter": "R",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Rock",
+    "gen": 7
+  },
+  "silvallysteel": {
+    "id": "silvallysteel",
+    "name": "Silvally-Steel",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Steel",
+    "formeLetter": "S",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "NU",
+    "weight": 100.5,
+    "type1": "Steel",
+    "gen": 7
+  },
+  "silvallywater": {
+    "id": "silvallywater",
+    "name": "Silvally-Water",
+    "num": 773,
+    "baseSpecies": "Silvally",
+    "forme": "Water",
+    "formeLetter": "W",
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "RKS System"
+    },
+    "prevo": "typenull",
+    "tier": "PU",
+    "weight": 100.5,
+    "type1": "Water",
+    "gen": 7
+  },
+  "minior": {
+    "id": "minior",
+    "name": "Minior",
+    "num": 774,
+    "baseForme": "Red",
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 100,
+      "def": 60,
+      "spa": 100,
+      "spd": 60,
+      "spe": 120
+    },
+    "abilities": {
+      "0": "Shields Down"
+    },
+    "otherFormes": [
+      "miniormeteor"
+    ],
+    "tier": "PUBL",
+    "baseSpecies": "Minior",
+    "weight": 0.3,
+    "cosmeticForms": [
+      "miniororange",
+      "minioryellow",
+      "miniorgreen",
+      "miniorblue",
+      "miniorindigo",
+      "miniorviolet"
+    ],
+    "type1": "Rock",
+    "type2": "Flying",
+    "gen": 7
+  },
+  "miniormeteor": {
+    "id": "miniormeteor",
+    "name": "Minior-Meteor",
+    "num": 774,
+    "baseSpecies": "Minior",
+    "forme": "Meteor",
+    "formeLetter": "M",
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 60,
+      "def": 100,
+      "spa": 60,
+      "spd": 100,
+      "spe": 60
+    },
+    "abilities": {
+      "0": "Shields Down"
+    },
+    "tier": "PUBL",
+    "weight": 40,
+    "type1": "Rock",
+    "type2": "Flying",
+    "gen": 7
+  },
+  "komala": {
+    "id": "komala",
+    "name": "Komala",
+    "num": 775,
+    "baseStats": {
+      "hp": 65,
+      "atk": 115,
+      "def": 65,
+      "spa": 75,
+      "spd": 95,
+      "spe": 65
+    },
+    "abilities": {
+      "0": "Comatose"
+    },
+    "tier": "PU",
+    "baseSpecies": "Komala",
+    "weight": 19.9,
+    "type1": "Normal",
+    "gen": 7
+  },
+  "turtonator": {
+    "id": "turtonator",
+    "name": "Turtonator",
+    "num": 776,
+    "baseStats": {
+      "hp": 60,
+      "atk": 78,
+      "def": 135,
+      "spa": 91,
+      "spd": 85,
+      "spe": 36
+    },
+    "abilities": {
+      "0": "Shell Armor"
+    },
+    "tier": "PU",
+    "baseSpecies": "Turtonator",
+    "weight": 212,
+    "type1": "Fire",
+    "type2": "Dragon",
+    "gen": 7
+  },
+  "togedemaru": {
+    "id": "togedemaru",
+    "name": "Togedemaru",
+    "num": 777,
+    "baseStats": {
+      "hp": 65,
+      "atk": 98,
+      "def": 63,
+      "spa": 40,
+      "spd": 73,
+      "spe": 96
+    },
+    "abilities": {
+      "0": "Iron Barbs",
+      "1": "Lightning Rod",
+      "H": "Sturdy"
+    },
+    "otherFormes": [
+      "togedemarutotem"
+    ],
+    "tier": "NU",
+    "baseSpecies": "Togedemaru",
+    "weight": 3.3,
+    "type1": "Electric",
+    "type2": "Steel",
+    "gen": 7
+  },
+  "togedemarutotem": {
+    "id": "togedemarutotem",
+    "name": "Togedemaru-Totem",
+    "num": 777,
+    "baseSpecies": "Togedemaru",
+    "forme": "Totem",
+    "formeLetter": "T",
+    "baseStats": {
+      "hp": 65,
+      "atk": 98,
+      "def": 63,
+      "spa": 40,
+      "spd": 73,
+      "spe": 96
+    },
+    "abilities": {
+      "0": "Sturdy"
+    },
+    "tier": "NU",
+    "weight": 13,
+    "type1": "Electric",
+    "type2": "Steel",
+    "gen": 7
+  },
+  "mimikyu": {
+    "id": "mimikyu",
+    "name": "Mimikyu",
+    "num": 778,
+    "baseStats": {
+      "hp": 55,
+      "atk": 90,
+      "def": 80,
+      "spa": 50,
+      "spd": 105,
+      "spe": 96
+    },
+    "abilities": {
+      "0": "Disguise"
+    },
+    "otherFormes": [
+      "mimikyubusted",
+      "mimikyutotem",
+      "mimikyubustedtotem"
+    ],
+    "tier": "OU",
+    "baseSpecies": "Mimikyu",
+    "weight": 0.7,
+    "type1": "Ghost",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "mimikyubusted": {
+    "id": "mimikyubusted",
+    "name": "Mimikyu-Busted",
+    "num": 778,
+    "baseSpecies": "Mimikyu",
+    "forme": "Busted",
+    "formeLetter": "B",
+    "baseStats": {
+      "hp": 55,
+      "atk": 90,
+      "def": 80,
+      "spa": 50,
+      "spd": 105,
+      "spe": 96
+    },
+    "abilities": {
+      "0": "Disguise"
+    },
+    "tier": "OU",
+    "weight": 0.7,
+    "type1": "Ghost",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "mimikyutotem": {
+    "id": "mimikyutotem",
+    "name": "Mimikyu-Totem",
+    "num": 778,
+    "baseSpecies": "Mimikyu",
+    "forme": "Totem",
+    "formeLetter": "T",
+    "baseStats": {
+      "hp": 55,
+      "atk": 90,
+      "def": 80,
+      "spa": 50,
+      "spd": 105,
+      "spe": 96
+    },
+    "abilities": {
+      "0": "Disguise"
+    },
+    "tier": "OU",
+    "weight": 2.8,
+    "type1": "Ghost",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "mimikyubustedtotem": {
+    "id": "mimikyubustedtotem",
+    "name": "Mimikyu-Busted-Totem",
+    "num": 778,
+    "baseSpecies": "Mimikyu",
+    "forme": "Busted-Totem",
+    "formeLetter": "T",
+    "baseStats": {
+      "hp": 55,
+      "atk": 90,
+      "def": 80,
+      "spa": 50,
+      "spd": 105,
+      "spe": 96
+    },
+    "abilities": {
+      "0": "Disguise"
+    },
+    "tier": "OU",
+    "weight": 2.8,
+    "type1": "Ghost",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "bruxish": {
+    "id": "bruxish",
+    "name": "Bruxish",
+    "num": 779,
+    "baseStats": {
+      "hp": 68,
+      "atk": 105,
+      "def": 70,
+      "spa": 70,
+      "spd": 70,
+      "spe": 92
+    },
+    "abilities": {
+      "0": "Dazzling",
+      "1": "Strong Jaw",
+      "H": "Wonder Skin"
+    },
+    "tier": "NUBL",
+    "baseSpecies": "Bruxish",
+    "weight": 19,
+    "type1": "Water",
+    "type2": "Psychic",
+    "gen": 7
+  },
+  "drampa": {
+    "id": "drampa",
+    "name": "Drampa",
+    "num": 780,
+    "baseStats": {
+      "hp": 78,
+      "atk": 60,
+      "def": 85,
+      "spa": 135,
+      "spd": 91,
+      "spe": 36
+    },
+    "abilities": {
+      "0": "Berserk",
+      "1": "Sap Sipper",
+      "H": "Cloud Nine"
+    },
+    "tier": "PU",
+    "baseSpecies": "Drampa",
+    "weight": 185,
+    "type1": "Normal",
+    "type2": "Dragon",
+    "gen": 7
+  },
+  "dhelmise": {
+    "id": "dhelmise",
+    "name": "Dhelmise",
+    "num": 781,
+    "gender": "N",
+    "baseStats": {
+      "hp": 70,
+      "atk": 131,
+      "def": 100,
+      "spa": 86,
+      "spd": 90,
+      "spe": 40
+    },
+    "abilities": {
+      "0": "Steelworker"
+    },
+    "tier": "NU",
+    "baseSpecies": "Dhelmise",
+    "weight": 210,
+    "type1": "Ghost",
+    "type2": "Grass",
+    "gen": 7
+  },
+  "jangmoo": {
+    "id": "jangmoo",
+    "name": "Jangmo-o",
+    "num": 782,
+    "baseStats": {
+      "hp": 45,
+      "atk": 55,
+      "def": 65,
+      "spa": 45,
+      "spd": 45,
+      "spe": 45
+    },
+    "abilities": {
+      "0": "Bulletproof",
+      "1": "Soundproof",
+      "H": "Overcoat"
+    },
+    "evos": [
+      "hakamoo"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Jangmo-o",
+    "weight": 29.7,
+    "type1": "Dragon",
+    "gen": 7
+  },
+  "hakamoo": {
+    "id": "hakamoo",
+    "name": "Hakamo-o",
+    "num": 783,
+    "baseStats": {
+      "hp": 55,
+      "atk": 75,
+      "def": 90,
+      "spa": 65,
+      "spd": 70,
+      "spe": 65
+    },
+    "abilities": {
+      "0": "Bulletproof",
+      "1": "Soundproof",
+      "H": "Overcoat"
+    },
+    "prevo": "jangmoo",
+    "evos": [
+      "kommoo"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Hakamo-o",
+    "weight": 47,
+    "type1": "Dragon",
+    "type2": "Fighting",
+    "gen": 7
+  },
+  "kommoo": {
+    "id": "kommoo",
+    "name": "Kommo-o",
+    "num": 784,
+    "baseStats": {
+      "hp": 75,
+      "atk": 110,
+      "def": 125,
+      "spa": 100,
+      "spd": 105,
+      "spe": 85
+    },
+    "abilities": {
+      "0": "Bulletproof",
+      "1": "Soundproof",
+      "H": "Overcoat"
+    },
+    "prevo": "hakamoo",
+    "otherFormes": [
+      "kommoototem"
+    ],
+    "tier": "UU",
+    "baseSpecies": "Kommo-o",
+    "weight": 78.2,
+    "type1": "Dragon",
+    "type2": "Fighting",
+    "gen": 7
+  },
+  "kommoototem": {
+    "id": "kommoototem",
+    "name": "Kommo-o-Totem",
+    "num": 784,
+    "baseSpecies": "Kommo-o",
+    "forme": "Totem",
+    "formeLetter": "T",
+    "baseStats": {
+      "hp": 75,
+      "atk": 110,
+      "def": 125,
+      "spa": 100,
+      "spd": 105,
+      "spe": 85
+    },
+    "abilities": {
+      "0": "Overcoat"
+    },
+    "tier": "UU",
+    "weight": 207.5,
+    "type1": "Dragon",
+    "type2": "Fighting",
+    "gen": 7
+  },
+  "tapukoko": {
+    "id": "tapukoko",
+    "name": "Tapu Koko",
+    "num": 785,
+    "gender": "N",
+    "baseStats": {
+      "hp": 70,
+      "atk": 115,
+      "def": 85,
+      "spa": 95,
+      "spd": 75,
+      "spe": 130
+    },
+    "abilities": {
+      "0": "Electric Surge",
+      "H": "Telepathy"
+    },
+    "tier": "OU",
+    "baseSpecies": "Tapu Koko",
+    "weight": 20.5,
+    "type1": "Electric",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "tapulele": {
+    "id": "tapulele",
+    "name": "Tapu Lele",
+    "num": 786,
+    "gender": "N",
+    "baseStats": {
+      "hp": 70,
+      "atk": 85,
+      "def": 75,
+      "spa": 130,
+      "spd": 115,
+      "spe": 95
+    },
+    "abilities": {
+      "0": "Psychic Surge",
+      "H": "Telepathy"
+    },
+    "tier": "OU",
+    "baseSpecies": "Tapu Lele",
+    "weight": 18.6,
+    "type1": "Psychic",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "tapubulu": {
+    "id": "tapubulu",
+    "name": "Tapu Bulu",
+    "num": 787,
+    "gender": "N",
+    "baseStats": {
+      "hp": 70,
+      "atk": 130,
+      "def": 115,
+      "spa": 85,
+      "spd": 95,
+      "spe": 75
+    },
+    "abilities": {
+      "0": "Grassy Surge",
+      "H": "Telepathy"
+    },
+    "tier": "OU",
+    "baseSpecies": "Tapu Bulu",
+    "weight": 45.5,
+    "type1": "Grass",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "tapufini": {
+    "id": "tapufini",
+    "name": "Tapu Fini",
+    "num": 788,
+    "gender": "N",
+    "baseStats": {
+      "hp": 70,
+      "atk": 75,
+      "def": 115,
+      "spa": 95,
+      "spd": 130,
+      "spe": 85
+    },
+    "abilities": {
+      "0": "Misty Surge",
+      "H": "Telepathy"
+    },
+    "tier": "OU",
+    "baseSpecies": "Tapu Fini",
+    "weight": 21.2,
+    "type1": "Water",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "cosmog": {
+    "id": "cosmog",
+    "name": "Cosmog",
+    "num": 789,
+    "gender": "N",
+    "baseStats": {
+      "hp": 43,
+      "atk": 29,
+      "def": 31,
+      "spa": 29,
+      "spd": 31,
+      "spe": 37
+    },
+    "abilities": {
+      "0": "Unaware"
+    },
+    "evos": [
+      "cosmoem"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Cosmog",
+    "weight": 0.1,
+    "type1": "Psychic",
+    "gen": 7
+  },
+  "cosmoem": {
+    "id": "cosmoem",
+    "name": "Cosmoem",
+    "num": 790,
+    "gender": "N",
+    "baseStats": {
+      "hp": 43,
+      "atk": 29,
+      "def": 131,
+      "spa": 29,
+      "spd": 131,
+      "spe": 37
+    },
+    "abilities": {
+      "0": "Sturdy"
+    },
+    "prevo": "cosmog",
+    "evos": [
+      "solgaleo",
+      "lunala"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Cosmoem",
+    "weight": 999.9,
+    "type1": "Psychic",
+    "gen": 7
+  },
+  "solgaleo": {
+    "id": "solgaleo",
+    "name": "Solgaleo",
+    "num": 791,
+    "gender": "N",
+    "baseStats": {
+      "hp": 137,
+      "atk": 137,
+      "def": 107,
+      "spa": 113,
+      "spd": 89,
+      "spe": 97
+    },
+    "abilities": {
+      "0": "Full Metal Body"
+    },
+    "prevo": "cosmoem",
+    "tier": "Uber",
+    "baseSpecies": "Solgaleo",
+    "weight": 230,
+    "type1": "Psychic",
+    "type2": "Steel",
+    "gen": 7
+  },
+  "lunala": {
+    "id": "lunala",
+    "name": "Lunala",
+    "num": 792,
+    "gender": "N",
+    "baseStats": {
+      "hp": 137,
+      "atk": 113,
+      "def": 89,
+      "spa": 137,
+      "spd": 107,
+      "spe": 97
+    },
+    "abilities": {
+      "0": "Shadow Shield"
+    },
+    "prevo": "cosmoem",
+    "tier": "Uber",
+    "baseSpecies": "Lunala",
+    "weight": 120,
+    "type1": "Psychic",
+    "type2": "Ghost",
+    "gen": 7
+  },
+  "nihilego": {
+    "id": "nihilego",
+    "name": "Nihilego",
+    "num": 793,
+    "gender": "N",
+    "baseStats": {
+      "hp": 109,
+      "atk": 53,
+      "def": 47,
+      "spa": 127,
+      "spd": 131,
+      "spe": 103
+    },
+    "abilities": {
+      "0": "Beast Boost"
+    },
+    "tier": "UU",
+    "baseSpecies": "Nihilego",
+    "weight": 55.5,
+    "type1": "Rock",
+    "type2": "Poison",
+    "gen": 7
+  },
+  "buzzwole": {
+    "id": "buzzwole",
+    "name": "Buzzwole",
+    "num": 794,
+    "gender": "N",
+    "baseStats": {
+      "hp": 107,
+      "atk": 139,
+      "def": 139,
+      "spa": 53,
+      "spd": 53,
+      "spe": 79
+    },
+    "abilities": {
+      "0": "Beast Boost"
+    },
+    "tier": "UUBL",
+    "baseSpecies": "Buzzwole",
+    "weight": 333.6,
+    "type1": "Bug",
+    "type2": "Fighting",
+    "gen": 7
+  },
+  "pheromosa": {
+    "id": "pheromosa",
+    "name": "Pheromosa",
+    "num": 795,
+    "gender": "N",
+    "baseStats": {
+      "hp": 71,
+      "atk": 137,
+      "def": 37,
+      "spa": 137,
+      "spd": 37,
+      "spe": 151
+    },
+    "abilities": {
+      "0": "Beast Boost"
+    },
+    "tier": "Uber",
+    "baseSpecies": "Pheromosa",
+    "weight": 25,
+    "type1": "Bug",
+    "type2": "Fighting",
+    "gen": 7
+  },
+  "xurkitree": {
+    "id": "xurkitree",
+    "name": "Xurkitree",
+    "num": 796,
+    "gender": "N",
+    "baseStats": {
+      "hp": 83,
+      "atk": 89,
+      "def": 71,
+      "spa": 173,
+      "spd": 71,
+      "spe": 83
+    },
+    "abilities": {
+      "0": "Beast Boost"
+    },
+    "tier": "UUBL",
+    "baseSpecies": "Xurkitree",
+    "weight": 100,
+    "type1": "Electric",
+    "gen": 7
+  },
+  "celesteela": {
+    "id": "celesteela",
+    "name": "Celesteela",
+    "num": 797,
+    "gender": "N",
+    "baseStats": {
+      "hp": 97,
+      "atk": 101,
+      "def": 103,
+      "spa": 107,
+      "spd": 101,
+      "spe": 61
+    },
+    "abilities": {
+      "0": "Beast Boost"
+    },
+    "tier": "OU",
+    "baseSpecies": "Celesteela",
+    "weight": 999.9,
+    "type1": "Steel",
+    "type2": "Flying",
+    "gen": 7
+  },
+  "kartana": {
+    "id": "kartana",
+    "name": "Kartana",
+    "num": 798,
+    "gender": "N",
+    "baseStats": {
+      "hp": 59,
+      "atk": 181,
+      "def": 131,
+      "spa": 59,
+      "spd": 31,
+      "spe": 109
+    },
+    "abilities": {
+      "0": "Beast Boost"
+    },
+    "tier": "OU",
+    "baseSpecies": "Kartana",
+    "weight": 0.1,
+    "type1": "Grass",
+    "type2": "Steel",
+    "gen": 7
+  },
+  "guzzlord": {
+    "id": "guzzlord",
+    "name": "Guzzlord",
+    "num": 799,
+    "gender": "N",
+    "baseStats": {
+      "hp": 223,
+      "atk": 101,
+      "def": 53,
+      "spa": 97,
+      "spd": 53,
+      "spe": 43
+    },
+    "abilities": {
+      "0": "Beast Boost"
+    },
+    "tier": "NU",
+    "baseSpecies": "Guzzlord",
+    "weight": 888,
+    "type1": "Dark",
+    "type2": "Dragon",
+    "gen": 7
+  },
+  "necrozma": {
+    "id": "necrozma",
+    "name": "Necrozma",
+    "num": 800,
+    "gender": "N",
+    "baseStats": {
+      "hp": 97,
+      "atk": 107,
+      "def": 101,
+      "spa": 127,
+      "spd": 89,
+      "spe": 79
+    },
+    "abilities": {
+      "0": "Prism Armor"
+    },
+    "otherFormes": [
+      "necrozmaduskmane",
+      "necrozmadawnwings",
+      "necrozmaultra"
+    ],
+    "tier": "RU",
+    "baseSpecies": "Necrozma",
+    "weight": 230,
+    "type1": "Psychic",
+    "gen": 7
+  },
+  "necrozmaduskmane": {
+    "id": "necrozmaduskmane",
+    "name": "Necrozma-Dusk-Mane",
+    "num": 800,
+    "baseSpecies": "Necrozma",
+    "forme": "Dusk-Mane",
+    "formeLetter": "D",
+    "gender": "N",
+    "baseStats": {
+      "hp": 97,
+      "atk": 157,
+      "def": 127,
+      "spa": 113,
+      "spd": 109,
+      "spe": 77
+    },
+    "abilities": {
+      "0": "Prism Armor"
+    },
+    "tier": "Uber",
+    "weight": 460,
+    "type1": "Psychic",
+    "type2": "Steel",
+    "gen": 7
+  },
+  "necrozmadawnwings": {
+    "id": "necrozmadawnwings",
+    "name": "Necrozma-Dawn-Wings",
+    "num": 800,
+    "baseSpecies": "Necrozma",
+    "forme": "Dawn-Wings",
+    "formeLetter": "D",
+    "gender": "N",
+    "baseStats": {
+      "hp": 97,
+      "atk": 113,
+      "def": 109,
+      "spa": 157,
+      "spd": 127,
+      "spe": 77
+    },
+    "abilities": {
+      "0": "Prism Armor"
+    },
+    "tier": "Uber",
+    "weight": 350,
+    "type1": "Psychic",
+    "type2": "Ghost",
+    "gen": 7
+  },
+  "necrozmaultra": {
+    "id": "necrozmaultra",
+    "name": "Necrozma-Ultra",
+    "num": 800,
+    "baseSpecies": "Necrozma",
+    "forme": "Ultra",
+    "formeLetter": "U",
+    "gender": "N",
+    "baseStats": {
+      "hp": 97,
+      "atk": 167,
+      "def": 97,
+      "spa": 167,
+      "spd": 97,
+      "spe": 129
+    },
+    "abilities": {
+      "0": "Neuroforce"
+    },
+    "tier": "Uber",
+    "weight": 230,
+    "type1": "Psychic",
+    "type2": "Dragon",
+    "gen": 7
+  },
+  "magearna": {
+    "id": "magearna",
+    "name": "Magearna",
+    "num": 801,
+    "gender": "N",
+    "baseStats": {
+      "hp": 80,
+      "atk": 95,
+      "def": 115,
+      "spa": 130,
+      "spd": 115,
+      "spe": 65
+    },
+    "abilities": {
+      "0": "Soul-Heart"
+    },
+    "otherFormes": [
+      "magearnaoriginal"
+    ],
+    "tier": "OU",
+    "baseSpecies": "Magearna",
+    "weight": 80.5,
+    "type1": "Steel",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "magearnaoriginal": {
+    "id": "magearnaoriginal",
+    "name": "Magearna-Original",
+    "num": 801,
+    "isUnreleased": true,
+    "baseSpecies": "Magearna",
+    "forme": "Original",
+    "formeLetter": "O",
+    "gender": "N",
+    "baseStats": {
+      "hp": 80,
+      "atk": 95,
+      "def": 115,
+      "spa": 130,
+      "spd": 115,
+      "spe": 65
+    },
+    "abilities": {
+      "0": "Soul-Heart"
+    },
+    "tier": "Unreleased",
+    "weight": 80.5,
+    "type1": "Steel",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "marshadow": {
+    "id": "marshadow",
+    "name": "Marshadow",
+    "num": 802,
+    "gender": "N",
+    "baseStats": {
+      "hp": 90,
+      "atk": 125,
+      "def": 80,
+      "spa": 90,
+      "spd": 90,
+      "spe": 125
+    },
+    "abilities": {
+      "0": "Technician"
+    },
+    "tier": "Uber",
+    "baseSpecies": "Marshadow",
+    "weight": 22.2,
+    "type1": "Fighting",
+    "type2": "Ghost",
+    "gen": 7
+  },
+  "poipole": {
+    "id": "poipole",
+    "name": "Poipole",
+    "num": 803,
+    "gender": "N",
+    "baseStats": {
+      "hp": 67,
+      "atk": 73,
+      "def": 67,
+      "spa": 73,
+      "spd": 67,
+      "spe": 73
+    },
+    "abilities": {
+      "0": "Beast Boost"
+    },
+    "evos": [
+      "naganadel"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Poipole",
+    "weight": 1.8,
+    "type1": "Poison",
+    "gen": 7
+  },
+  "naganadel": {
+    "id": "naganadel",
+    "name": "Naganadel",
+    "num": 804,
+    "gender": "N",
+    "baseStats": {
+      "hp": 73,
+      "atk": 73,
+      "def": 73,
+      "spa": 127,
+      "spd": 73,
+      "spe": 121
+    },
+    "abilities": {
+      "0": "Beast Boost"
+    },
+    "prevo": "poipole",
+    "tier": "Uber",
+    "baseSpecies": "Naganadel",
+    "weight": 150,
+    "type1": "Poison",
+    "type2": "Dragon",
+    "gen": 7
+  },
+  "stakataka": {
+    "id": "stakataka",
+    "name": "Stakataka",
+    "num": 805,
+    "gender": "N",
+    "baseStats": {
+      "hp": 61,
+      "atk": 131,
+      "def": 211,
+      "spa": 53,
+      "spd": 101,
+      "spe": 13
+    },
+    "abilities": {
+      "0": "Beast Boost"
+    },
+    "tier": "RU",
+    "baseSpecies": "Stakataka",
+    "weight": 820,
+    "type1": "Rock",
+    "type2": "Steel",
+    "gen": 7
+  },
+  "blacephalon": {
+    "id": "blacephalon",
+    "name": "Blacephalon",
+    "num": 806,
+    "gender": "N",
+    "baseStats": {
+      "hp": 53,
+      "atk": 127,
+      "def": 53,
+      "spa": 151,
+      "spd": 79,
+      "spe": 107
+    },
+    "abilities": {
+      "0": "Beast Boost"
+    },
+    "tier": "OU",
+    "baseSpecies": "Blacephalon",
+    "weight": 13,
+    "type1": "Fire",
+    "type2": "Ghost",
+    "gen": 7
+  },
+  "zeraora": {
+    "id": "zeraora",
+    "name": "Zeraora",
+    "num": 807,
+    "gender": "N",
+    "baseStats": {
+      "hp": 88,
+      "atk": 112,
+      "def": 75,
+      "spa": 102,
+      "spd": 80,
+      "spe": 143
+    },
+    "abilities": {
+      "0": "Volt Absorb"
+    },
+    "tier": "UU",
+    "baseSpecies": "Zeraora",
+    "weight": 44.5,
+    "type1": "Electric",
+    "gen": 7
+  },
+  "meltan": {
+    "id": "meltan",
+    "name": "Meltan",
+    "num": 808,
+    "isNonstandard": true,
+    "gender": "N",
+    "baseStats": {
+      "hp": 46,
+      "atk": 65,
+      "def": 65,
+      "spa": 55,
+      "spd": 35,
+      "spe": 34
+    },
+    "abilities": {
+      "0": "Magnet Pull"
+    },
+    "tier": "Illegal",
+    "baseSpecies": "Meltan",
+    "weight": 8,
+    "type1": "Steel",
+    "gen": 7
+  },
+  "melmetal": {
+    "id": "melmetal",
+    "name": "Melmetal",
+    "num": 809,
+    "isNonstandard": true,
+    "gender": "N",
+    "baseStats": {
+      "hp": 135,
+      "atk": 143,
+      "def": 143,
+      "spa": 80,
+      "spd": 65,
+      "spe": 34
+    },
+    "abilities": {
+      "0": "Iron Fist"
+    },
+    "tier": "Illegal",
+    "baseSpecies": "Melmetal",
+    "weight": 800,
+    "type1": "Steel",
+    "gen": 7
+  },
+  "syclant": {
+    "abilities": {
+      "0": "Compound Eyes",
+      "1": "Mountaineer",
+      "H": "Ice Body"
+    }
+  },
+  "revenankh": {
+    "abilities": {
+      "0": "Shed Skin",
+      "1": "Air Lock",
+      "H": "Triage"
+    }
+  },
+  "pyroak": {
+    "abilities": {
+      "0": "Rock Head",
+      "1": "Battle Armor",
+      "H": "White Smoke"
+    }
+  },
+  "fidgit": {
+    "abilities": {
+      "0": "Persistent",
+      "1": "Vital Spirit",
+      "H": "Frisk"
+    }
+  },
+  "stratagem": {
+    "abilities": {
+      "0": "Levitate",
+      "1": "Technician",
+      "H": "Sniper"
+    }
+  },
+  "arghonaut": {
+    "abilities": {
+      "0": "Unaware",
+      "H": "Technician"
+    }
+  },
+  "kitsunoh": {
+    "abilities": {
+      "0": "Frisk",
+      "1": "Limber",
+      "H": "Iron Fist"
+    }
+  },
+  "cyclohm": {
+    "abilities": {
+      "0": "Shield Dust",
+      "1": "Static",
+      "H": "Damp"
+    }
+  },
+  "colossoil": {
+    "abilities": {
+      "0": "Rebound",
+      "1": "Guts",
+      "H": "Unnerve"
+    }
+  },
+  "krilowatt": {
+    "abilities": {
+      "0": "Trace",
+      "1": "Magic Guard",
+      "H": "Minus"
+    }
+  },
+  "voodoom": {
+    "abilities": {
+      "0": "Volt Absorb",
+      "1": "Lightning Rod",
+      "H": "Cursed Body"
+    }
+  },
+  "aurumoth": {
+    "abilities": {
+      "0": "Weak Armor",
+      "1": "No Guard",
+      "H": "Light Metal"
+    }
+  },
+  "malaconda": {
+    "abilities": {
+      "0": "Harvest",
+      "1": "Infiltrator",
+      "H": "Drought"
+    }
+  },
+  "naviathan": {
+    "abilities": {
+      "0": "Guts",
+      "1": "Heatproof",
+      "H": "Light Metal"
+    }
+  },
+  "pajantom": {
+    "id": "pajantom",
+    "name": "Pajantom",
+    "num": -23,
+    "isNonstandard": true,
+    "baseStats": {
+      "hp": 84,
+      "atk": 133,
+      "def": 71,
+      "spa": 51,
+      "spd": 111,
+      "spe": 101
+    },
+    "abilities": {
+      "0": "Comatose"
+    },
+    "tier": "CAP",
+    "baseSpecies": "Pajantom",
+    "weight": 3.1,
+    "type1": "Dragon",
+    "type2": "Ghost",
+    "gen": 7
+  },
+  "jumbao": {
+    "id": "jumbao",
+    "name": "Jumbao",
+    "num": -24,
+    "isNonstandard": true,
+    "baseStats": {
+      "hp": 92,
+      "atk": 63,
+      "def": 97,
+      "spa": 124,
+      "spd": 104,
+      "spe": 96
+    },
+    "abilities": {
+      "0": "Drought",
+      "1": "Trace",
+      "H": "Overcoat"
+    },
+    "prevo": "mumbao",
+    "tier": "CAP",
+    "baseSpecies": "Jumbao",
+    "weight": 600,
+    "type1": "Grass",
+    "type2": "Fairy",
+    "gen": 7
+  },
+  "caribolt": {
+    "id": "caribolt",
+    "name": "Caribolt",
+    "num": -25,
+    "isNonstandard": true,
+    "baseStats": {
+      "hp": 84,
+      "atk": 106,
+      "def": 82,
+      "spa": 77,
+      "spd": 80,
+      "spe": 106
+    },
+    "abilities": {
+      "0": "Overgrow",
+      "H": "Galvanize"
+    },
+    "tier": "CAP",
+    "baseSpecies": "Caribolt",
+    "weight": 140,
+    "type1": "Grass",
+    "type2": "Electric",
+    "gen": 7
+  },
+  "smokomodo": {
+    "id": "smokomodo",
+    "name": "Smokomodo",
+    "num": -26,
+    "isNonstandard": true,
+    "baseStats": {
+      "hp": 88,
+      "atk": 116,
+      "def": 67,
+      "spa": 88,
+      "spd": 78,
+      "spe": 97
+    },
+    "abilities": {
+      "0": "Blaze",
+      "H": "Technician"
+    },
+    "tier": "CAP",
+    "baseSpecies": "Smokomodo",
+    "weight": 205,
+    "type1": "Fire",
+    "type2": "Ground",
+    "gen": 7
+  },
+  "snaelstrom": {
+    "id": "snaelstrom",
+    "name": "Snaelstrom",
+    "num": -27,
+    "isNonstandard": true,
+    "baseStats": {
+      "hp": 91,
+      "atk": 94,
+      "def": 110,
+      "spa": 80,
+      "spd": 97,
+      "spe": 63
+    },
+    "abilities": {
+      "0": "Torrent",
+      "H": "Poison Heal"
+    },
+    "tier": "CAP",
+    "baseSpecies": "Snaelstrom",
+    "weight": 120,
+    "type1": "Water",
+    "type2": "Bug",
+    "gen": 7
+  },
+  "mumbao": {
+    "id": "mumbao",
+    "name": "Mumbao",
+    "num": -120,
+    "isNonstandard": true,
+    "baseStats": {
+      "hp": 55,
+      "atk": 30,
+      "def": 64,
+      "spa": 87,
+      "spd": 73,
+      "spe": 66
+    },
+    "abilities": {
+      "0": "Solar Power",
+      "1": "Trace",
+      "H": "Overcoat"
+    },
+    "evos": [
+      "jumbao"
+    ],
+    "tier": "CAP LC",
+    "baseSpecies": "Mumbao",
+    "weight": 250,
+    "type1": "Grass",
+    "type2": "Fairy",
+    "gen": 7
+  }
+}

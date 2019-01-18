@@ -1,0 +1,3217 @@
+{
+  "bulbasaur": {
+    "id": "bulbasaur",
+    "name": "Bulbasaur",
+    "num": 1,
+    "gender": "N",
+    "baseStats": {
+      "hp": 45,
+      "atk": 49,
+      "def": 49,
+      "spa": 65,
+      "spd": 65,
+      "spe": 45
+    },
+    "evos": [
+      "ivysaur"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Bulbasaur",
+    "weight": 6.9,
+    "type1": "Grass",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "ivysaur": {
+    "id": "ivysaur",
+    "name": "Ivysaur",
+    "num": 2,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 62,
+      "def": 63,
+      "spa": 80,
+      "spd": 80,
+      "spe": 60
+    },
+    "prevo": "bulbasaur",
+    "evos": [
+      "venusaur"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Ivysaur",
+    "weight": 13,
+    "type1": "Grass",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "venusaur": {
+    "id": "venusaur",
+    "name": "Venusaur",
+    "num": 3,
+    "gender": "N",
+    "baseStats": {
+      "hp": 80,
+      "atk": 82,
+      "def": 83,
+      "spa": 100,
+      "spd": 100,
+      "spe": 80
+    },
+    "prevo": "ivysaur",
+    "tier": "UU",
+    "baseSpecies": "Venusaur",
+    "weight": 100,
+    "type1": "Grass",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "charmander": {
+    "id": "charmander",
+    "name": "Charmander",
+    "num": 4,
+    "gender": "N",
+    "baseStats": {
+      "hp": 39,
+      "atk": 52,
+      "def": 43,
+      "spa": 50,
+      "spd": 50,
+      "spe": 65
+    },
+    "evos": [
+      "charmeleon"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Charmander",
+    "weight": 8.5,
+    "type1": "Fire",
+    "gen": 1
+  },
+  "charmeleon": {
+    "id": "charmeleon",
+    "name": "Charmeleon",
+    "num": 5,
+    "gender": "N",
+    "baseStats": {
+      "hp": 58,
+      "atk": 64,
+      "def": 58,
+      "spa": 65,
+      "spd": 65,
+      "spe": 80
+    },
+    "prevo": "charmander",
+    "evos": [
+      "charizard"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Charmeleon",
+    "weight": 19,
+    "type1": "Fire",
+    "gen": 1
+  },
+  "charizard": {
+    "id": "charizard",
+    "name": "Charizard",
+    "num": 6,
+    "gender": "N",
+    "baseStats": {
+      "hp": 78,
+      "atk": 84,
+      "def": 78,
+      "spa": 85,
+      "spd": 85,
+      "spe": 100
+    },
+    "prevo": "charmeleon",
+    "tier": "UU",
+    "baseSpecies": "Charizard",
+    "weight": 90.5,
+    "type1": "Fire",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "squirtle": {
+    "id": "squirtle",
+    "name": "Squirtle",
+    "num": 7,
+    "gender": "N",
+    "baseStats": {
+      "hp": 44,
+      "atk": 48,
+      "def": 65,
+      "spa": 50,
+      "spd": 50,
+      "spe": 43
+    },
+    "evos": [
+      "wartortle"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Squirtle",
+    "weight": 9,
+    "type1": "Water",
+    "gen": 1
+  },
+  "wartortle": {
+    "id": "wartortle",
+    "name": "Wartortle",
+    "num": 8,
+    "gender": "N",
+    "baseStats": {
+      "hp": 59,
+      "atk": 63,
+      "def": 80,
+      "spa": 65,
+      "spd": 65,
+      "spe": 58
+    },
+    "prevo": "squirtle",
+    "evos": [
+      "blastoise"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Wartortle",
+    "weight": 22.5,
+    "type1": "Water",
+    "gen": 1
+  },
+  "blastoise": {
+    "id": "blastoise",
+    "name": "Blastoise",
+    "num": 9,
+    "gender": "N",
+    "baseStats": {
+      "hp": 79,
+      "atk": 83,
+      "def": 100,
+      "spa": 85,
+      "spd": 85,
+      "spe": 78
+    },
+    "prevo": "wartortle",
+    "tier": "UU",
+    "baseSpecies": "Blastoise",
+    "weight": 85.5,
+    "type1": "Water",
+    "gen": 1
+  },
+  "caterpie": {
+    "id": "caterpie",
+    "name": "Caterpie",
+    "num": 10,
+    "gender": "N",
+    "baseStats": {
+      "hp": 45,
+      "atk": 30,
+      "def": 35,
+      "spa": 20,
+      "spd": 20,
+      "spe": 45
+    },
+    "evos": [
+      "metapod"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Caterpie",
+    "weight": 2.9,
+    "type1": "Bug",
+    "gen": 1
+  },
+  "metapod": {
+    "id": "metapod",
+    "name": "Metapod",
+    "num": 11,
+    "gender": "N",
+    "baseStats": {
+      "hp": 50,
+      "atk": 20,
+      "def": 55,
+      "spa": 25,
+      "spd": 25,
+      "spe": 30
+    },
+    "prevo": "caterpie",
+    "evos": [
+      "butterfree"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Metapod",
+    "weight": 9.9,
+    "type1": "Bug",
+    "gen": 1
+  },
+  "butterfree": {
+    "id": "butterfree",
+    "name": "Butterfree",
+    "num": 12,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 45,
+      "def": 50,
+      "spa": 80,
+      "spd": 80,
+      "spe": 70
+    },
+    "prevo": "metapod",
+    "tier": "UU",
+    "baseSpecies": "Butterfree",
+    "weight": 32,
+    "type1": "Bug",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "weedle": {
+    "id": "weedle",
+    "name": "Weedle",
+    "num": 13,
+    "gender": "N",
+    "baseStats": {
+      "hp": 40,
+      "atk": 35,
+      "def": 30,
+      "spa": 20,
+      "spd": 20,
+      "spe": 50
+    },
+    "evos": [
+      "kakuna"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Weedle",
+    "weight": 3.2,
+    "type1": "Bug",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "kakuna": {
+    "id": "kakuna",
+    "name": "Kakuna",
+    "num": 14,
+    "gender": "N",
+    "baseStats": {
+      "hp": 45,
+      "atk": 25,
+      "def": 50,
+      "spa": 25,
+      "spd": 25,
+      "spe": 35
+    },
+    "prevo": "weedle",
+    "evos": [
+      "beedrill"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Kakuna",
+    "weight": 10,
+    "type1": "Bug",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "beedrill": {
+    "id": "beedrill",
+    "name": "Beedrill",
+    "num": 15,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 80,
+      "def": 40,
+      "spa": 45,
+      "spd": 45,
+      "spe": 75
+    },
+    "prevo": "kakuna",
+    "tier": "UU",
+    "baseSpecies": "Beedrill",
+    "weight": 29.5,
+    "type1": "Bug",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "pidgey": {
+    "id": "pidgey",
+    "name": "Pidgey",
+    "num": 16,
+    "gender": "N",
+    "baseStats": {
+      "hp": 40,
+      "atk": 45,
+      "def": 40,
+      "spa": 35,
+      "spd": 35,
+      "spe": 56
+    },
+    "evos": [
+      "pidgeotto"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Pidgey",
+    "weight": 1.8,
+    "type1": "Normal",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "pidgeotto": {
+    "id": "pidgeotto",
+    "name": "Pidgeotto",
+    "num": 17,
+    "gender": "N",
+    "baseStats": {
+      "hp": 63,
+      "atk": 60,
+      "def": 55,
+      "spa": 50,
+      "spd": 50,
+      "spe": 71
+    },
+    "prevo": "pidgey",
+    "evos": [
+      "pidgeot"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Pidgeotto",
+    "weight": 30,
+    "type1": "Normal",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "pidgeot": {
+    "id": "pidgeot",
+    "name": "Pidgeot",
+    "num": 18,
+    "gender": "N",
+    "baseStats": {
+      "hp": 83,
+      "atk": 80,
+      "def": 75,
+      "spa": 70,
+      "spd": 70,
+      "spe": 91
+    },
+    "prevo": "pidgeotto",
+    "tier": "UU",
+    "baseSpecies": "Pidgeot",
+    "weight": 39.5,
+    "type1": "Normal",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "rattata": {
+    "id": "rattata",
+    "name": "Rattata",
+    "num": 19,
+    "gender": "N",
+    "baseStats": {
+      "hp": 30,
+      "atk": 56,
+      "def": 35,
+      "spa": 25,
+      "spd": 25,
+      "spe": 72
+    },
+    "evos": [
+      "raticate"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Rattata",
+    "weight": 3.5,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "raticate": {
+    "id": "raticate",
+    "name": "Raticate",
+    "num": 20,
+    "gender": "N",
+    "baseStats": {
+      "hp": 55,
+      "atk": 81,
+      "def": 60,
+      "spa": 50,
+      "spd": 50,
+      "spe": 97
+    },
+    "prevo": "rattata",
+    "tier": "UU",
+    "baseSpecies": "Raticate",
+    "weight": 18.5,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "spearow": {
+    "id": "spearow",
+    "name": "Spearow",
+    "num": 21,
+    "gender": "N",
+    "baseStats": {
+      "hp": 40,
+      "atk": 60,
+      "def": 30,
+      "spa": 31,
+      "spd": 31,
+      "spe": 70
+    },
+    "evos": [
+      "fearow"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Spearow",
+    "weight": 2,
+    "type1": "Normal",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "fearow": {
+    "id": "fearow",
+    "name": "Fearow",
+    "num": 22,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 90,
+      "def": 65,
+      "spa": 61,
+      "spd": 61,
+      "spe": 100
+    },
+    "prevo": "spearow",
+    "tier": "UU",
+    "baseSpecies": "Fearow",
+    "weight": 38,
+    "type1": "Normal",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "ekans": {
+    "id": "ekans",
+    "name": "Ekans",
+    "num": 23,
+    "gender": "N",
+    "baseStats": {
+      "hp": 35,
+      "atk": 60,
+      "def": 44,
+      "spa": 40,
+      "spd": 40,
+      "spe": 55
+    },
+    "evos": [
+      "arbok"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Ekans",
+    "weight": 6.9,
+    "type1": "Poison",
+    "gen": 1
+  },
+  "arbok": {
+    "id": "arbok",
+    "name": "Arbok",
+    "num": 24,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 85,
+      "def": 69,
+      "spa": 65,
+      "spd": 65,
+      "spe": 80
+    },
+    "prevo": "ekans",
+    "tier": "UU",
+    "baseSpecies": "Arbok",
+    "weight": 65,
+    "type1": "Poison",
+    "gen": 1
+  },
+  "pikachu": {
+    "id": "pikachu",
+    "name": "Pikachu",
+    "num": 25,
+    "gender": "N",
+    "baseStats": {
+      "hp": 35,
+      "atk": 55,
+      "def": 30,
+      "spa": 50,
+      "spd": 50,
+      "spe": 90
+    },
+    "evos": [
+      "raichu"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Pikachu",
+    "weight": 6,
+    "type1": "Electric",
+    "gen": 1
+  },
+  "raichu": {
+    "id": "raichu",
+    "name": "Raichu",
+    "num": 26,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 90,
+      "def": 55,
+      "spa": 90,
+      "spd": 90,
+      "spe": 100
+    },
+    "prevo": "pikachu",
+    "tier": "UU",
+    "baseSpecies": "Raichu",
+    "weight": 30,
+    "type1": "Electric",
+    "gen": 1
+  },
+  "sandshrew": {
+    "id": "sandshrew",
+    "name": "Sandshrew",
+    "num": 27,
+    "gender": "N",
+    "baseStats": {
+      "hp": 50,
+      "atk": 75,
+      "def": 85,
+      "spa": 30,
+      "spd": 30,
+      "spe": 40
+    },
+    "evos": [
+      "sandslash"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Sandshrew",
+    "weight": 12,
+    "type1": "Ground",
+    "gen": 1
+  },
+  "sandslash": {
+    "id": "sandslash",
+    "name": "Sandslash",
+    "num": 28,
+    "gender": "N",
+    "baseStats": {
+      "hp": 75,
+      "atk": 100,
+      "def": 110,
+      "spa": 55,
+      "spd": 55,
+      "spe": 65
+    },
+    "prevo": "sandshrew",
+    "tier": "UU",
+    "baseSpecies": "Sandslash",
+    "weight": 29.5,
+    "type1": "Ground",
+    "gen": 1
+  },
+  "nidoranf": {
+    "id": "nidoranf",
+    "name": "Nidoran-F",
+    "num": 29,
+    "gender": "N",
+    "baseStats": {
+      "hp": 55,
+      "atk": 47,
+      "def": 52,
+      "spa": 40,
+      "spd": 40,
+      "spe": 41
+    },
+    "evos": [
+      "nidorina"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Nidoran-F",
+    "weight": 7,
+    "type1": "Poison",
+    "gen": 1
+  },
+  "nidorina": {
+    "id": "nidorina",
+    "name": "Nidorina",
+    "num": 30,
+    "gender": "N",
+    "baseStats": {
+      "hp": 70,
+      "atk": 62,
+      "def": 67,
+      "spa": 55,
+      "spd": 55,
+      "spe": 56
+    },
+    "prevo": "nidoranf",
+    "evos": [
+      "nidoqueen"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Nidorina",
+    "weight": 20,
+    "type1": "Poison",
+    "gen": 1
+  },
+  "nidoqueen": {
+    "id": "nidoqueen",
+    "name": "Nidoqueen",
+    "num": 31,
+    "gender": "N",
+    "baseStats": {
+      "hp": 90,
+      "atk": 82,
+      "def": 87,
+      "spa": 75,
+      "spd": 75,
+      "spe": 76
+    },
+    "prevo": "nidorina",
+    "tier": "UU",
+    "baseSpecies": "Nidoqueen",
+    "weight": 60,
+    "type1": "Poison",
+    "type2": "Ground",
+    "gen": 1
+  },
+  "nidoranm": {
+    "id": "nidoranm",
+    "name": "Nidoran-M",
+    "num": 32,
+    "gender": "N",
+    "baseStats": {
+      "hp": 46,
+      "atk": 57,
+      "def": 40,
+      "spa": 40,
+      "spd": 40,
+      "spe": 50
+    },
+    "evos": [
+      "nidorino"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Nidoran-M",
+    "weight": 9,
+    "type1": "Poison",
+    "gen": 1
+  },
+  "nidorino": {
+    "id": "nidorino",
+    "name": "Nidorino",
+    "num": 33,
+    "gender": "N",
+    "baseStats": {
+      "hp": 61,
+      "atk": 72,
+      "def": 57,
+      "spa": 55,
+      "spd": 55,
+      "spe": 65
+    },
+    "prevo": "nidoranm",
+    "evos": [
+      "nidoking"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Nidorino",
+    "weight": 19.5,
+    "type1": "Poison",
+    "gen": 1
+  },
+  "nidoking": {
+    "id": "nidoking",
+    "name": "Nidoking",
+    "num": 34,
+    "gender": "N",
+    "baseStats": {
+      "hp": 81,
+      "atk": 92,
+      "def": 77,
+      "spa": 75,
+      "spd": 75,
+      "spe": 85
+    },
+    "prevo": "nidorino",
+    "tier": "UU",
+    "baseSpecies": "Nidoking",
+    "weight": 62,
+    "type1": "Poison",
+    "type2": "Ground",
+    "gen": 1
+  },
+  "clefairy": {
+    "id": "clefairy",
+    "name": "Clefairy",
+    "num": 35,
+    "gender": "N",
+    "baseStats": {
+      "hp": 70,
+      "atk": 45,
+      "def": 48,
+      "spa": 60,
+      "spd": 60,
+      "spe": 35
+    },
+    "evos": [
+      "clefable"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Clefairy",
+    "weight": 7.5,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "clefable": {
+    "id": "clefable",
+    "name": "Clefable",
+    "num": 36,
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 70,
+      "def": 73,
+      "spa": 85,
+      "spd": 85,
+      "spe": 60
+    },
+    "prevo": "clefairy",
+    "tier": "UU",
+    "baseSpecies": "Clefable",
+    "weight": 40,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "vulpix": {
+    "id": "vulpix",
+    "name": "Vulpix",
+    "num": 37,
+    "gender": "N",
+    "baseStats": {
+      "hp": 38,
+      "atk": 41,
+      "def": 40,
+      "spa": 65,
+      "spd": 65,
+      "spe": 65
+    },
+    "evos": [
+      "ninetales"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Vulpix",
+    "weight": 9.9,
+    "type1": "Fire",
+    "gen": 1
+  },
+  "ninetales": {
+    "id": "ninetales",
+    "name": "Ninetales",
+    "num": 38,
+    "gender": "N",
+    "baseStats": {
+      "hp": 73,
+      "atk": 76,
+      "def": 75,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
+    },
+    "prevo": "vulpix",
+    "tier": "UU",
+    "baseSpecies": "Ninetales",
+    "weight": 19.9,
+    "type1": "Fire",
+    "gen": 1
+  },
+  "jigglypuff": {
+    "id": "jigglypuff",
+    "name": "Jigglypuff",
+    "num": 39,
+    "gender": "N",
+    "baseStats": {
+      "hp": 115,
+      "atk": 45,
+      "def": 20,
+      "spa": 25,
+      "spd": 25,
+      "spe": 20
+    },
+    "evos": [
+      "wigglytuff"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Jigglypuff",
+    "weight": 5.5,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "wigglytuff": {
+    "id": "wigglytuff",
+    "name": "Wigglytuff",
+    "num": 40,
+    "gender": "N",
+    "baseStats": {
+      "hp": 140,
+      "atk": 70,
+      "def": 45,
+      "spa": 50,
+      "spd": 50,
+      "spe": 45
+    },
+    "prevo": "jigglypuff",
+    "tier": "UU",
+    "baseSpecies": "Wigglytuff",
+    "weight": 12,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "zubat": {
+    "id": "zubat",
+    "name": "Zubat",
+    "num": 41,
+    "gender": "N",
+    "baseStats": {
+      "hp": 40,
+      "atk": 45,
+      "def": 35,
+      "spa": 40,
+      "spd": 40,
+      "spe": 55
+    },
+    "evos": [
+      "golbat"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Zubat",
+    "weight": 7.5,
+    "type1": "Poison",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "golbat": {
+    "id": "golbat",
+    "name": "Golbat",
+    "num": 42,
+    "gender": "N",
+    "baseStats": {
+      "hp": 75,
+      "atk": 80,
+      "def": 70,
+      "spa": 75,
+      "spd": 75,
+      "spe": 90
+    },
+    "prevo": "zubat",
+    "tier": "UU",
+    "baseSpecies": "Golbat",
+    "weight": 55,
+    "type1": "Poison",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "oddish": {
+    "id": "oddish",
+    "name": "Oddish",
+    "num": 43,
+    "gender": "N",
+    "baseStats": {
+      "hp": 45,
+      "atk": 50,
+      "def": 55,
+      "spa": 75,
+      "spd": 75,
+      "spe": 30
+    },
+    "evos": [
+      "gloom"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Oddish",
+    "weight": 5.4,
+    "type1": "Grass",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "gloom": {
+    "id": "gloom",
+    "name": "Gloom",
+    "num": 44,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 65,
+      "def": 70,
+      "spa": 85,
+      "spd": 85,
+      "spe": 40
+    },
+    "prevo": "oddish",
+    "evos": [
+      "vileplume"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Gloom",
+    "weight": 8.6,
+    "type1": "Grass",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "vileplume": {
+    "id": "vileplume",
+    "name": "Vileplume",
+    "num": 45,
+    "gender": "N",
+    "baseStats": {
+      "hp": 75,
+      "atk": 80,
+      "def": 85,
+      "spa": 100,
+      "spd": 100,
+      "spe": 50
+    },
+    "prevo": "gloom",
+    "tier": "UU",
+    "baseSpecies": "Vileplume",
+    "weight": 18.6,
+    "type1": "Grass",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "paras": {
+    "id": "paras",
+    "name": "Paras",
+    "num": 46,
+    "gender": "N",
+    "baseStats": {
+      "hp": 35,
+      "atk": 70,
+      "def": 55,
+      "spa": 55,
+      "spd": 55,
+      "spe": 25
+    },
+    "evos": [
+      "parasect"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Paras",
+    "weight": 5.4,
+    "type1": "Bug",
+    "type2": "Grass",
+    "gen": 1
+  },
+  "parasect": {
+    "id": "parasect",
+    "name": "Parasect",
+    "num": 47,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 95,
+      "def": 80,
+      "spa": 80,
+      "spd": 80,
+      "spe": 30
+    },
+    "prevo": "paras",
+    "tier": "UU",
+    "baseSpecies": "Parasect",
+    "weight": 29.5,
+    "type1": "Bug",
+    "type2": "Grass",
+    "gen": 1
+  },
+  "venonat": {
+    "id": "venonat",
+    "name": "Venonat",
+    "num": 48,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 55,
+      "def": 50,
+      "spa": 40,
+      "spd": 40,
+      "spe": 45
+    },
+    "evos": [
+      "venomoth"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Venonat",
+    "weight": 30,
+    "type1": "Bug",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "venomoth": {
+    "id": "venomoth",
+    "name": "Venomoth",
+    "num": 49,
+    "gender": "N",
+    "baseStats": {
+      "hp": 70,
+      "atk": 65,
+      "def": 60,
+      "spa": 90,
+      "spd": 90,
+      "spe": 90
+    },
+    "prevo": "venonat",
+    "tier": "UU",
+    "baseSpecies": "Venomoth",
+    "weight": 12.5,
+    "type1": "Bug",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "diglett": {
+    "id": "diglett",
+    "name": "Diglett",
+    "num": 50,
+    "gender": "N",
+    "baseStats": {
+      "hp": 10,
+      "atk": 55,
+      "def": 25,
+      "spa": 45,
+      "spd": 45,
+      "spe": 95
+    },
+    "evos": [
+      "dugtrio"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Diglett",
+    "weight": 0.8,
+    "type1": "Ground",
+    "gen": 1
+  },
+  "dugtrio": {
+    "id": "dugtrio",
+    "name": "Dugtrio",
+    "num": 51,
+    "gender": "N",
+    "baseStats": {
+      "hp": 35,
+      "atk": 80,
+      "def": 50,
+      "spa": 70,
+      "spd": 70,
+      "spe": 120
+    },
+    "prevo": "diglett",
+    "tier": "UU",
+    "baseSpecies": "Dugtrio",
+    "weight": 33.3,
+    "type1": "Ground",
+    "gen": 1
+  },
+  "meowth": {
+    "id": "meowth",
+    "name": "Meowth",
+    "num": 52,
+    "gender": "N",
+    "baseStats": {
+      "hp": 40,
+      "atk": 45,
+      "def": 35,
+      "spa": 40,
+      "spd": 40,
+      "spe": 90
+    },
+    "evos": [
+      "persian"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Meowth",
+    "weight": 4.2,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "persian": {
+    "id": "persian",
+    "name": "Persian",
+    "num": 53,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 70,
+      "def": 60,
+      "spa": 65,
+      "spd": 65,
+      "spe": 115
+    },
+    "prevo": "meowth",
+    "tier": "UU",
+    "baseSpecies": "Persian",
+    "weight": 32,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "psyduck": {
+    "id": "psyduck",
+    "name": "Psyduck",
+    "num": 54,
+    "gender": "N",
+    "baseStats": {
+      "hp": 50,
+      "atk": 52,
+      "def": 48,
+      "spa": 50,
+      "spd": 50,
+      "spe": 55
+    },
+    "evos": [
+      "golduck"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Psyduck",
+    "weight": 19.6,
+    "type1": "Water",
+    "gen": 1
+  },
+  "golduck": {
+    "id": "golduck",
+    "name": "Golduck",
+    "num": 55,
+    "gender": "N",
+    "baseStats": {
+      "hp": 80,
+      "atk": 82,
+      "def": 78,
+      "spa": 80,
+      "spd": 80,
+      "spe": 85
+    },
+    "prevo": "psyduck",
+    "tier": "UU",
+    "baseSpecies": "Golduck",
+    "weight": 76.6,
+    "type1": "Water",
+    "gen": 1
+  },
+  "mankey": {
+    "id": "mankey",
+    "name": "Mankey",
+    "num": 56,
+    "gender": "N",
+    "baseStats": {
+      "hp": 40,
+      "atk": 80,
+      "def": 35,
+      "spa": 35,
+      "spd": 35,
+      "spe": 70
+    },
+    "evos": [
+      "primeape"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Mankey",
+    "weight": 28,
+    "type1": "Fighting",
+    "gen": 1
+  },
+  "primeape": {
+    "id": "primeape",
+    "name": "Primeape",
+    "num": 57,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 105,
+      "def": 60,
+      "spa": 60,
+      "spd": 60,
+      "spe": 95
+    },
+    "prevo": "mankey",
+    "tier": "UU",
+    "baseSpecies": "Primeape",
+    "weight": 32,
+    "type1": "Fighting",
+    "gen": 1
+  },
+  "growlithe": {
+    "id": "growlithe",
+    "name": "Growlithe",
+    "num": 58,
+    "gender": "N",
+    "baseStats": {
+      "hp": 55,
+      "atk": 70,
+      "def": 45,
+      "spa": 50,
+      "spd": 50,
+      "spe": 60
+    },
+    "evos": [
+      "arcanine"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Growlithe",
+    "weight": 19,
+    "type1": "Fire",
+    "gen": 1
+  },
+  "arcanine": {
+    "id": "arcanine",
+    "name": "Arcanine",
+    "num": 59,
+    "gender": "N",
+    "baseStats": {
+      "hp": 90,
+      "atk": 110,
+      "def": 80,
+      "spa": 80,
+      "spd": 80,
+      "spe": 95
+    },
+    "prevo": "growlithe",
+    "tier": "UU",
+    "baseSpecies": "Arcanine",
+    "weight": 155,
+    "type1": "Fire",
+    "gen": 1
+  },
+  "poliwag": {
+    "id": "poliwag",
+    "name": "Poliwag",
+    "num": 60,
+    "gender": "N",
+    "baseStats": {
+      "hp": 40,
+      "atk": 50,
+      "def": 40,
+      "spa": 40,
+      "spd": 40,
+      "spe": 90
+    },
+    "evos": [
+      "poliwhirl"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Poliwag",
+    "weight": 12.4,
+    "type1": "Water",
+    "gen": 1
+  },
+  "poliwhirl": {
+    "id": "poliwhirl",
+    "name": "Poliwhirl",
+    "num": 61,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 65,
+      "def": 65,
+      "spa": 50,
+      "spd": 50,
+      "spe": 90
+    },
+    "prevo": "poliwag",
+    "evos": [
+      "poliwrath"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Poliwhirl",
+    "weight": 20,
+    "type1": "Water",
+    "gen": 1
+  },
+  "poliwrath": {
+    "id": "poliwrath",
+    "name": "Poliwrath",
+    "num": 62,
+    "gender": "N",
+    "baseStats": {
+      "hp": 90,
+      "atk": 85,
+      "def": 95,
+      "spa": 70,
+      "spd": 70,
+      "spe": 70
+    },
+    "prevo": "poliwhirl",
+    "tier": "UU",
+    "baseSpecies": "Poliwrath",
+    "weight": 54,
+    "type1": "Water",
+    "type2": "Fighting",
+    "gen": 1
+  },
+  "abra": {
+    "id": "abra",
+    "name": "Abra",
+    "num": 63,
+    "gender": "N",
+    "baseStats": {
+      "hp": 25,
+      "atk": 20,
+      "def": 15,
+      "spa": 105,
+      "spd": 105,
+      "spe": 90
+    },
+    "evos": [
+      "kadabra"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Abra",
+    "weight": 19.5,
+    "type1": "Psychic",
+    "gen": 1
+  },
+  "kadabra": {
+    "id": "kadabra",
+    "name": "Kadabra",
+    "num": 64,
+    "gender": "N",
+    "baseStats": {
+      "hp": 40,
+      "atk": 35,
+      "def": 30,
+      "spa": 120,
+      "spd": 120,
+      "spe": 105
+    },
+    "prevo": "abra",
+    "evos": [
+      "alakazam"
+    ],
+    "tier": "UU",
+    "baseSpecies": "Kadabra",
+    "weight": 56.5,
+    "type1": "Psychic",
+    "gen": 1
+  },
+  "alakazam": {
+    "id": "alakazam",
+    "name": "Alakazam",
+    "num": 65,
+    "gender": "N",
+    "baseStats": {
+      "hp": 55,
+      "atk": 50,
+      "def": 45,
+      "spa": 135,
+      "spd": 135,
+      "spe": 120
+    },
+    "prevo": "kadabra",
+    "tier": "OU",
+    "baseSpecies": "Alakazam",
+    "weight": 48,
+    "type1": "Psychic",
+    "gen": 1
+  },
+  "machop": {
+    "id": "machop",
+    "name": "Machop",
+    "num": 66,
+    "gender": "N",
+    "baseStats": {
+      "hp": 70,
+      "atk": 80,
+      "def": 50,
+      "spa": 35,
+      "spd": 35,
+      "spe": 35
+    },
+    "evos": [
+      "machoke"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Machop",
+    "weight": 19.5,
+    "type1": "Fighting",
+    "gen": 1
+  },
+  "machoke": {
+    "id": "machoke",
+    "name": "Machoke",
+    "num": 67,
+    "gender": "N",
+    "baseStats": {
+      "hp": 80,
+      "atk": 100,
+      "def": 70,
+      "spa": 50,
+      "spd": 50,
+      "spe": 45
+    },
+    "prevo": "machop",
+    "evos": [
+      "machamp"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Machoke",
+    "weight": 70.5,
+    "type1": "Fighting",
+    "gen": 1
+  },
+  "machamp": {
+    "id": "machamp",
+    "name": "Machamp",
+    "num": 68,
+    "gender": "N",
+    "baseStats": {
+      "hp": 90,
+      "atk": 130,
+      "def": 80,
+      "spa": 65,
+      "spd": 65,
+      "spe": 55
+    },
+    "prevo": "machoke",
+    "tier": "UU",
+    "baseSpecies": "Machamp",
+    "weight": 130,
+    "type1": "Fighting",
+    "gen": 1
+  },
+  "bellsprout": {
+    "id": "bellsprout",
+    "name": "Bellsprout",
+    "num": 69,
+    "gender": "N",
+    "baseStats": {
+      "hp": 50,
+      "atk": 75,
+      "def": 35,
+      "spa": 70,
+      "spd": 70,
+      "spe": 40
+    },
+    "evos": [
+      "weepinbell"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Bellsprout",
+    "weight": 4,
+    "type1": "Grass",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "weepinbell": {
+    "id": "weepinbell",
+    "name": "Weepinbell",
+    "num": 70,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 90,
+      "def": 50,
+      "spa": 85,
+      "spd": 85,
+      "spe": 55
+    },
+    "prevo": "bellsprout",
+    "evos": [
+      "victreebel"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Weepinbell",
+    "weight": 6.4,
+    "type1": "Grass",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "victreebel": {
+    "id": "victreebel",
+    "name": "Victreebel",
+    "num": 71,
+    "gender": "N",
+    "baseStats": {
+      "hp": 80,
+      "atk": 105,
+      "def": 65,
+      "spa": 100,
+      "spd": 100,
+      "spe": 70
+    },
+    "prevo": "weepinbell",
+    "tier": "UU",
+    "baseSpecies": "Victreebel",
+    "weight": 15.5,
+    "type1": "Grass",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "tentacool": {
+    "id": "tentacool",
+    "name": "Tentacool",
+    "num": 72,
+    "gender": "N",
+    "baseStats": {
+      "hp": 40,
+      "atk": 40,
+      "def": 35,
+      "spa": 100,
+      "spd": 100,
+      "spe": 70
+    },
+    "evos": [
+      "tentacruel"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Tentacool",
+    "weight": 45.5,
+    "type1": "Water",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "tentacruel": {
+    "id": "tentacruel",
+    "name": "Tentacruel",
+    "num": 73,
+    "gender": "N",
+    "baseStats": {
+      "hp": 80,
+      "atk": 70,
+      "def": 65,
+      "spa": 120,
+      "spd": 120,
+      "spe": 100
+    },
+    "prevo": "tentacool",
+    "tier": "UU",
+    "baseSpecies": "Tentacruel",
+    "weight": 55,
+    "type1": "Water",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "geodude": {
+    "id": "geodude",
+    "name": "Geodude",
+    "num": 74,
+    "gender": "N",
+    "baseStats": {
+      "hp": 40,
+      "atk": 80,
+      "def": 100,
+      "spa": 30,
+      "spd": 30,
+      "spe": 20
+    },
+    "evos": [
+      "graveler"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Geodude",
+    "weight": 20,
+    "type1": "Rock",
+    "type2": "Ground",
+    "gen": 1
+  },
+  "graveler": {
+    "id": "graveler",
+    "name": "Graveler",
+    "num": 75,
+    "gender": "N",
+    "baseStats": {
+      "hp": 55,
+      "atk": 95,
+      "def": 115,
+      "spa": 45,
+      "spd": 45,
+      "spe": 35
+    },
+    "prevo": "geodude",
+    "evos": [
+      "golem"
+    ],
+    "tier": "UU",
+    "baseSpecies": "Graveler",
+    "weight": 105,
+    "type1": "Rock",
+    "type2": "Ground",
+    "gen": 1
+  },
+  "golem": {
+    "id": "golem",
+    "name": "Golem",
+    "num": 76,
+    "gender": "N",
+    "baseStats": {
+      "hp": 80,
+      "atk": 110,
+      "def": 130,
+      "spa": 55,
+      "spd": 55,
+      "spe": 45
+    },
+    "prevo": "graveler",
+    "tier": "OU",
+    "baseSpecies": "Golem",
+    "weight": 300,
+    "type1": "Rock",
+    "type2": "Ground",
+    "gen": 1
+  },
+  "ponyta": {
+    "id": "ponyta",
+    "name": "Ponyta",
+    "num": 77,
+    "gender": "N",
+    "baseStats": {
+      "hp": 50,
+      "atk": 85,
+      "def": 55,
+      "spa": 65,
+      "spd": 65,
+      "spe": 90
+    },
+    "evos": [
+      "rapidash"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Ponyta",
+    "weight": 30,
+    "type1": "Fire",
+    "gen": 1
+  },
+  "rapidash": {
+    "id": "rapidash",
+    "name": "Rapidash",
+    "num": 78,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 100,
+      "def": 70,
+      "spa": 80,
+      "spd": 80,
+      "spe": 105
+    },
+    "prevo": "ponyta",
+    "tier": "UU",
+    "baseSpecies": "Rapidash",
+    "weight": 95,
+    "type1": "Fire",
+    "gen": 1
+  },
+  "slowpoke": {
+    "id": "slowpoke",
+    "name": "Slowpoke",
+    "num": 79,
+    "gender": "N",
+    "baseStats": {
+      "hp": 90,
+      "atk": 65,
+      "def": 65,
+      "spa": 40,
+      "spd": 40,
+      "spe": 15
+    },
+    "evos": [
+      "slowbro"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Slowpoke",
+    "weight": 36,
+    "type1": "Water",
+    "type2": "Psychic",
+    "gen": 1
+  },
+  "slowbro": {
+    "id": "slowbro",
+    "name": "Slowbro",
+    "num": 80,
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 75,
+      "def": 110,
+      "spa": 80,
+      "spd": 80,
+      "spe": 30
+    },
+    "prevo": "slowpoke",
+    "tier": "OU",
+    "baseSpecies": "Slowbro",
+    "weight": 78.5,
+    "type1": "Water",
+    "type2": "Psychic",
+    "gen": 1
+  },
+  "magnemite": {
+    "id": "magnemite",
+    "name": "Magnemite",
+    "num": 81,
+    "gender": "N",
+    "baseStats": {
+      "hp": 25,
+      "atk": 35,
+      "def": 70,
+      "spa": 95,
+      "spd": 95,
+      "spe": 45
+    },
+    "evos": [
+      "magneton"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Magnemite",
+    "weight": 6,
+    "type1": "Electric",
+    "gen": 1
+  },
+  "magneton": {
+    "id": "magneton",
+    "name": "Magneton",
+    "num": 82,
+    "gender": "N",
+    "baseStats": {
+      "hp": 50,
+      "atk": 60,
+      "def": 95,
+      "spa": 120,
+      "spd": 120,
+      "spe": 70
+    },
+    "prevo": "magnemite",
+    "tier": "UU",
+    "baseSpecies": "Magneton",
+    "weight": 60,
+    "type1": "Electric",
+    "gen": 1
+  },
+  "farfetchd": {
+    "id": "farfetchd",
+    "name": "Farfetch'd",
+    "num": 83,
+    "gender": "N",
+    "baseStats": {
+      "hp": 52,
+      "atk": 65,
+      "def": 55,
+      "spa": 58,
+      "spd": 58,
+      "spe": 60
+    },
+    "tier": "UU",
+    "baseSpecies": "Farfetch'd",
+    "weight": 15,
+    "type1": "Normal",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "doduo": {
+    "id": "doduo",
+    "name": "Doduo",
+    "num": 84,
+    "gender": "N",
+    "baseStats": {
+      "hp": 35,
+      "atk": 85,
+      "def": 45,
+      "spa": 35,
+      "spd": 35,
+      "spe": 75
+    },
+    "evos": [
+      "dodrio"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Doduo",
+    "weight": 39.2,
+    "type1": "Normal",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "dodrio": {
+    "id": "dodrio",
+    "name": "Dodrio",
+    "num": 85,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 110,
+      "def": 70,
+      "spa": 60,
+      "spd": 60,
+      "spe": 100
+    },
+    "prevo": "doduo",
+    "tier": "UU",
+    "baseSpecies": "Dodrio",
+    "weight": 85.2,
+    "type1": "Normal",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "seel": {
+    "id": "seel",
+    "name": "Seel",
+    "num": 86,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 45,
+      "def": 55,
+      "spa": 70,
+      "spd": 70,
+      "spe": 45
+    },
+    "evos": [
+      "dewgong"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Seel",
+    "weight": 90,
+    "type1": "Water",
+    "gen": 1
+  },
+  "dewgong": {
+    "id": "dewgong",
+    "name": "Dewgong",
+    "num": 87,
+    "gender": "N",
+    "baseStats": {
+      "hp": 90,
+      "atk": 70,
+      "def": 80,
+      "spa": 95,
+      "spd": 95,
+      "spe": 70
+    },
+    "prevo": "seel",
+    "tier": "UU",
+    "baseSpecies": "Dewgong",
+    "weight": 120,
+    "type1": "Water",
+    "type2": "Ice",
+    "gen": 1
+  },
+  "grimer": {
+    "id": "grimer",
+    "name": "Grimer",
+    "num": 88,
+    "gender": "N",
+    "baseStats": {
+      "hp": 80,
+      "atk": 80,
+      "def": 50,
+      "spa": 40,
+      "spd": 40,
+      "spe": 25
+    },
+    "evos": [
+      "muk"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Grimer",
+    "weight": 30,
+    "type1": "Poison",
+    "gen": 1
+  },
+  "muk": {
+    "id": "muk",
+    "name": "Muk",
+    "num": 89,
+    "gender": "N",
+    "baseStats": {
+      "hp": 105,
+      "atk": 105,
+      "def": 75,
+      "spa": 65,
+      "spd": 65,
+      "spe": 50
+    },
+    "prevo": "grimer",
+    "tier": "UU",
+    "baseSpecies": "Muk",
+    "weight": 30,
+    "type1": "Poison",
+    "gen": 1
+  },
+  "shellder": {
+    "id": "shellder",
+    "name": "Shellder",
+    "num": 90,
+    "gender": "N",
+    "baseStats": {
+      "hp": 30,
+      "atk": 65,
+      "def": 100,
+      "spa": 45,
+      "spd": 45,
+      "spe": 40
+    },
+    "evos": [
+      "cloyster"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Shellder",
+    "weight": 4,
+    "type1": "Water",
+    "gen": 1
+  },
+  "cloyster": {
+    "id": "cloyster",
+    "name": "Cloyster",
+    "num": 91,
+    "gender": "N",
+    "baseStats": {
+      "hp": 50,
+      "atk": 95,
+      "def": 180,
+      "spa": 85,
+      "spd": 85,
+      "spe": 70
+    },
+    "prevo": "shellder",
+    "tier": "OU",
+    "baseSpecies": "Cloyster",
+    "weight": 132.5,
+    "type1": "Water",
+    "type2": "Ice",
+    "gen": 1
+  },
+  "gastly": {
+    "id": "gastly",
+    "name": "Gastly",
+    "num": 92,
+    "gender": "N",
+    "baseStats": {
+      "hp": 30,
+      "atk": 35,
+      "def": 30,
+      "spa": 100,
+      "spd": 100,
+      "spe": 80
+    },
+    "evos": [
+      "haunter"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Gastly",
+    "weight": 0.1,
+    "type1": "Ghost",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "haunter": {
+    "id": "haunter",
+    "name": "Haunter",
+    "num": 93,
+    "gender": "N",
+    "baseStats": {
+      "hp": 45,
+      "atk": 50,
+      "def": 45,
+      "spa": 115,
+      "spd": 115,
+      "spe": 95
+    },
+    "prevo": "gastly",
+    "evos": [
+      "gengar"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Haunter",
+    "weight": 0.1,
+    "type1": "Ghost",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "gengar": {
+    "id": "gengar",
+    "name": "Gengar",
+    "num": 94,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 65,
+      "def": 60,
+      "spa": 130,
+      "spd": 130,
+      "spe": 110
+    },
+    "prevo": "haunter",
+    "tier": "OU",
+    "baseSpecies": "Gengar",
+    "weight": 40.5,
+    "type1": "Ghost",
+    "type2": "Poison",
+    "gen": 1
+  },
+  "onix": {
+    "id": "onix",
+    "name": "Onix",
+    "num": 95,
+    "gender": "N",
+    "baseStats": {
+      "hp": 35,
+      "atk": 45,
+      "def": 160,
+      "spa": 30,
+      "spd": 30,
+      "spe": 70
+    },
+    "tier": "UU",
+    "baseSpecies": "Onix",
+    "weight": 210,
+    "type1": "Rock",
+    "type2": "Ground",
+    "gen": 1
+  },
+  "drowzee": {
+    "id": "drowzee",
+    "name": "Drowzee",
+    "num": 96,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 48,
+      "def": 45,
+      "spa": 90,
+      "spd": 90,
+      "spe": 42
+    },
+    "evos": [
+      "hypno"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Drowzee",
+    "weight": 32.4,
+    "type1": "Psychic",
+    "gen": 1
+  },
+  "hypno": {
+    "id": "hypno",
+    "name": "Hypno",
+    "num": 97,
+    "gender": "N",
+    "baseStats": {
+      "hp": 85,
+      "atk": 73,
+      "def": 70,
+      "spa": 115,
+      "spd": 115,
+      "spe": 67
+    },
+    "prevo": "drowzee",
+    "tier": "UU",
+    "baseSpecies": "Hypno",
+    "weight": 75.6,
+    "type1": "Psychic",
+    "gen": 1
+  },
+  "krabby": {
+    "id": "krabby",
+    "name": "Krabby",
+    "num": 98,
+    "gender": "N",
+    "baseStats": {
+      "hp": 30,
+      "atk": 105,
+      "def": 90,
+      "spa": 25,
+      "spd": 25,
+      "spe": 50
+    },
+    "evos": [
+      "kingler"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Krabby",
+    "weight": 6.5,
+    "type1": "Water",
+    "gen": 1
+  },
+  "kingler": {
+    "id": "kingler",
+    "name": "Kingler",
+    "num": 99,
+    "gender": "N",
+    "baseStats": {
+      "hp": 55,
+      "atk": 130,
+      "def": 115,
+      "spa": 50,
+      "spd": 50,
+      "spe": 75
+    },
+    "prevo": "krabby",
+    "tier": "UU",
+    "baseSpecies": "Kingler",
+    "weight": 60,
+    "type1": "Water",
+    "gen": 1
+  },
+  "voltorb": {
+    "id": "voltorb",
+    "name": "Voltorb",
+    "num": 100,
+    "gender": "N",
+    "baseStats": {
+      "hp": 40,
+      "atk": 30,
+      "def": 50,
+      "spa": 55,
+      "spd": 55,
+      "spe": 100
+    },
+    "evos": [
+      "electrode"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Voltorb",
+    "weight": 10.4,
+    "type1": "Electric",
+    "gen": 1
+  },
+  "electrode": {
+    "id": "electrode",
+    "name": "Electrode",
+    "num": 101,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 50,
+      "def": 70,
+      "spa": 80,
+      "spd": 80,
+      "spe": 140
+    },
+    "prevo": "voltorb",
+    "tier": "UU",
+    "baseSpecies": "Electrode",
+    "weight": 66.6,
+    "type1": "Electric",
+    "gen": 1
+  },
+  "exeggcute": {
+    "id": "exeggcute",
+    "name": "Exeggcute",
+    "num": 102,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 40,
+      "def": 80,
+      "spa": 60,
+      "spd": 60,
+      "spe": 40
+    },
+    "evos": [
+      "exeggutor"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Exeggcute",
+    "weight": 2.5,
+    "type1": "Grass",
+    "type2": "Psychic",
+    "gen": 1
+  },
+  "exeggutor": {
+    "id": "exeggutor",
+    "name": "Exeggutor",
+    "num": 103,
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 95,
+      "def": 85,
+      "spa": 125,
+      "spd": 125,
+      "spe": 55
+    },
+    "prevo": "exeggcute",
+    "tier": "OU",
+    "baseSpecies": "Exeggutor",
+    "weight": 120,
+    "type1": "Grass",
+    "type2": "Psychic",
+    "gen": 1
+  },
+  "cubone": {
+    "id": "cubone",
+    "name": "Cubone",
+    "num": 104,
+    "gender": "N",
+    "baseStats": {
+      "hp": 50,
+      "atk": 50,
+      "def": 95,
+      "spa": 40,
+      "spd": 40,
+      "spe": 35
+    },
+    "evos": [
+      "marowak"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Cubone",
+    "weight": 6.5,
+    "type1": "Ground",
+    "gen": 1
+  },
+  "marowak": {
+    "id": "marowak",
+    "name": "Marowak",
+    "num": 105,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 80,
+      "def": 110,
+      "spa": 50,
+      "spd": 50,
+      "spe": 45
+    },
+    "prevo": "cubone",
+    "tier": "UU",
+    "baseSpecies": "Marowak",
+    "weight": 45,
+    "type1": "Ground",
+    "gen": 1
+  },
+  "hitmonlee": {
+    "id": "hitmonlee",
+    "name": "Hitmonlee",
+    "num": 106,
+    "gender": "N",
+    "baseStats": {
+      "hp": 50,
+      "atk": 120,
+      "def": 53,
+      "spa": 35,
+      "spd": 35,
+      "spe": 87
+    },
+    "tier": "UU",
+    "baseSpecies": "Hitmonlee",
+    "weight": 49.8,
+    "type1": "Fighting",
+    "gen": 1
+  },
+  "hitmonchan": {
+    "id": "hitmonchan",
+    "name": "Hitmonchan",
+    "num": 107,
+    "gender": "N",
+    "baseStats": {
+      "hp": 50,
+      "atk": 105,
+      "def": 79,
+      "spa": 35,
+      "spd": 35,
+      "spe": 76
+    },
+    "tier": "UU",
+    "baseSpecies": "Hitmonchan",
+    "weight": 50.2,
+    "type1": "Fighting",
+    "gen": 1
+  },
+  "lickitung": {
+    "id": "lickitung",
+    "name": "Lickitung",
+    "num": 108,
+    "gender": "N",
+    "baseStats": {
+      "hp": 90,
+      "atk": 55,
+      "def": 75,
+      "spa": 60,
+      "spd": 60,
+      "spe": 30
+    },
+    "tier": "UU",
+    "baseSpecies": "Lickitung",
+    "weight": 65.5,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "koffing": {
+    "id": "koffing",
+    "name": "Koffing",
+    "num": 109,
+    "gender": "N",
+    "baseStats": {
+      "hp": 40,
+      "atk": 65,
+      "def": 95,
+      "spa": 60,
+      "spd": 60,
+      "spe": 35
+    },
+    "evos": [
+      "weezing"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Koffing",
+    "weight": 1,
+    "type1": "Poison",
+    "gen": 1
+  },
+  "weezing": {
+    "id": "weezing",
+    "name": "Weezing",
+    "num": 110,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 90,
+      "def": 120,
+      "spa": 85,
+      "spd": 85,
+      "spe": 60
+    },
+    "prevo": "koffing",
+    "tier": "UU",
+    "baseSpecies": "Weezing",
+    "weight": 9.5,
+    "type1": "Poison",
+    "gen": 1
+  },
+  "rhyhorn": {
+    "id": "rhyhorn",
+    "name": "Rhyhorn",
+    "num": 111,
+    "gender": "N",
+    "baseStats": {
+      "hp": 80,
+      "atk": 85,
+      "def": 95,
+      "spa": 30,
+      "spd": 30,
+      "spe": 25
+    },
+    "evos": [
+      "rhydon"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Rhyhorn",
+    "weight": 115,
+    "type1": "Ground",
+    "type2": "Rock",
+    "gen": 1
+  },
+  "rhydon": {
+    "id": "rhydon",
+    "name": "Rhydon",
+    "num": 112,
+    "gender": "N",
+    "baseStats": {
+      "hp": 105,
+      "atk": 130,
+      "def": 120,
+      "spa": 45,
+      "spd": 45,
+      "spe": 40
+    },
+    "prevo": "rhyhorn",
+    "tier": "OU",
+    "baseSpecies": "Rhydon",
+    "weight": 120,
+    "type1": "Ground",
+    "type2": "Rock",
+    "gen": 1
+  },
+  "chansey": {
+    "id": "chansey",
+    "name": "Chansey",
+    "num": 113,
+    "gender": "N",
+    "baseStats": {
+      "hp": 250,
+      "atk": 5,
+      "def": 5,
+      "spa": 105,
+      "spd": 105,
+      "spe": 50
+    },
+    "tier": "OU",
+    "baseSpecies": "Chansey",
+    "weight": 34.6,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "tangela": {
+    "id": "tangela",
+    "name": "Tangela",
+    "num": 114,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 55,
+      "def": 115,
+      "spa": 100,
+      "spd": 100,
+      "spe": 60
+    },
+    "tier": "UU",
+    "baseSpecies": "Tangela",
+    "weight": 35,
+    "type1": "Grass",
+    "gen": 1
+  },
+  "kangaskhan": {
+    "id": "kangaskhan",
+    "name": "Kangaskhan",
+    "num": 115,
+    "gender": "N",
+    "baseStats": {
+      "hp": 105,
+      "atk": 95,
+      "def": 80,
+      "spa": 40,
+      "spd": 40,
+      "spe": 90
+    },
+    "tier": "UU",
+    "baseSpecies": "Kangaskhan",
+    "weight": 80,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "horsea": {
+    "id": "horsea",
+    "name": "Horsea",
+    "num": 116,
+    "gender": "N",
+    "baseStats": {
+      "hp": 30,
+      "atk": 40,
+      "def": 70,
+      "spa": 70,
+      "spd": 70,
+      "spe": 60
+    },
+    "evos": [
+      "seadra"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Horsea",
+    "weight": 8,
+    "type1": "Water",
+    "gen": 1
+  },
+  "seadra": {
+    "id": "seadra",
+    "name": "Seadra",
+    "num": 117,
+    "gender": "N",
+    "baseStats": {
+      "hp": 55,
+      "atk": 65,
+      "def": 95,
+      "spa": 95,
+      "spd": 95,
+      "spe": 85
+    },
+    "prevo": "horsea",
+    "tier": "UU",
+    "baseSpecies": "Seadra",
+    "weight": 25,
+    "type1": "Water",
+    "gen": 1
+  },
+  "goldeen": {
+    "id": "goldeen",
+    "name": "Goldeen",
+    "num": 118,
+    "gender": "N",
+    "baseStats": {
+      "hp": 45,
+      "atk": 67,
+      "def": 60,
+      "spa": 50,
+      "spd": 50,
+      "spe": 63
+    },
+    "evos": [
+      "seaking"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Goldeen",
+    "weight": 15,
+    "type1": "Water",
+    "gen": 1
+  },
+  "seaking": {
+    "id": "seaking",
+    "name": "Seaking",
+    "num": 119,
+    "gender": "N",
+    "baseStats": {
+      "hp": 80,
+      "atk": 92,
+      "def": 65,
+      "spa": 80,
+      "spd": 80,
+      "spe": 68
+    },
+    "prevo": "goldeen",
+    "tier": "UU",
+    "baseSpecies": "Seaking",
+    "weight": 39,
+    "type1": "Water",
+    "gen": 1
+  },
+  "staryu": {
+    "id": "staryu",
+    "name": "Staryu",
+    "num": 120,
+    "gender": "N",
+    "baseStats": {
+      "hp": 30,
+      "atk": 45,
+      "def": 55,
+      "spa": 70,
+      "spd": 70,
+      "spe": 85
+    },
+    "evos": [
+      "starmie"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Staryu",
+    "weight": 34.5,
+    "type1": "Water",
+    "gen": 1
+  },
+  "starmie": {
+    "id": "starmie",
+    "name": "Starmie",
+    "num": 121,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 75,
+      "def": 85,
+      "spa": 100,
+      "spd": 100,
+      "spe": 115
+    },
+    "prevo": "staryu",
+    "tier": "OU",
+    "baseSpecies": "Starmie",
+    "weight": 80,
+    "type1": "Water",
+    "type2": "Psychic",
+    "gen": 1
+  },
+  "mrmime": {
+    "id": "mrmime",
+    "name": "Mr. Mime",
+    "num": 122,
+    "gender": "N",
+    "baseStats": {
+      "hp": 40,
+      "atk": 45,
+      "def": 65,
+      "spa": 100,
+      "spd": 100,
+      "spe": 90
+    },
+    "tier": "UU",
+    "baseSpecies": "Mr. Mime",
+    "weight": 54.5,
+    "type1": "Psychic",
+    "gen": 1
+  },
+  "scyther": {
+    "id": "scyther",
+    "name": "Scyther",
+    "num": 123,
+    "gender": "N",
+    "baseStats": {
+      "hp": 70,
+      "atk": 110,
+      "def": 80,
+      "spa": 55,
+      "spd": 55,
+      "spe": 105
+    },
+    "tier": "UU",
+    "baseSpecies": "Scyther",
+    "weight": 56,
+    "type1": "Bug",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "jynx": {
+    "id": "jynx",
+    "name": "Jynx",
+    "num": 124,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 50,
+      "def": 35,
+      "spa": 95,
+      "spd": 95,
+      "spe": 95
+    },
+    "tier": "OU",
+    "baseSpecies": "Jynx",
+    "weight": 40.6,
+    "type1": "Ice",
+    "type2": "Psychic",
+    "gen": 1
+  },
+  "electabuzz": {
+    "id": "electabuzz",
+    "name": "Electabuzz",
+    "num": 125,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 83,
+      "def": 57,
+      "spa": 85,
+      "spd": 85,
+      "spe": 105
+    },
+    "tier": "UU",
+    "baseSpecies": "Electabuzz",
+    "weight": 30,
+    "type1": "Electric",
+    "gen": 1
+  },
+  "magmar": {
+    "id": "magmar",
+    "name": "Magmar",
+    "num": 126,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 95,
+      "def": 57,
+      "spa": 85,
+      "spd": 85,
+      "spe": 93
+    },
+    "tier": "UU",
+    "baseSpecies": "Magmar",
+    "weight": 44.5,
+    "type1": "Fire",
+    "gen": 1
+  },
+  "pinsir": {
+    "id": "pinsir",
+    "name": "Pinsir",
+    "num": 127,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 125,
+      "def": 100,
+      "spa": 55,
+      "spd": 55,
+      "spe": 85
+    },
+    "tier": "UU",
+    "baseSpecies": "Pinsir",
+    "weight": 55,
+    "type1": "Bug",
+    "gen": 1
+  },
+  "tauros": {
+    "id": "tauros",
+    "name": "Tauros",
+    "num": 128,
+    "gender": "N",
+    "baseStats": {
+      "hp": 75,
+      "atk": 100,
+      "def": 95,
+      "spa": 70,
+      "spd": 70,
+      "spe": 110
+    },
+    "tier": "OU",
+    "baseSpecies": "Tauros",
+    "weight": 88.4,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "magikarp": {
+    "id": "magikarp",
+    "name": "Magikarp",
+    "num": 129,
+    "gender": "N",
+    "baseStats": {
+      "hp": 20,
+      "atk": 10,
+      "def": 55,
+      "spa": 20,
+      "spd": 20,
+      "spe": 80
+    },
+    "evos": [
+      "gyarados"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Magikarp",
+    "weight": 10,
+    "type1": "Water",
+    "gen": 1
+  },
+  "gyarados": {
+    "id": "gyarados",
+    "name": "Gyarados",
+    "num": 130,
+    "gender": "N",
+    "baseStats": {
+      "hp": 95,
+      "atk": 125,
+      "def": 79,
+      "spa": 100,
+      "spd": 100,
+      "spe": 81
+    },
+    "prevo": "magikarp",
+    "tier": "UU",
+    "baseSpecies": "Gyarados",
+    "weight": 235,
+    "type1": "Water",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "lapras": {
+    "id": "lapras",
+    "name": "Lapras",
+    "num": 131,
+    "gender": "N",
+    "baseStats": {
+      "hp": 130,
+      "atk": 85,
+      "def": 80,
+      "spa": 95,
+      "spd": 95,
+      "spe": 60
+    },
+    "tier": "OU",
+    "baseSpecies": "Lapras",
+    "weight": 220,
+    "type1": "Water",
+    "type2": "Ice",
+    "gen": 1
+  },
+  "ditto": {
+    "id": "ditto",
+    "name": "Ditto",
+    "num": 132,
+    "gender": "N",
+    "baseStats": {
+      "hp": 48,
+      "atk": 48,
+      "def": 48,
+      "spa": 48,
+      "spd": 48,
+      "spe": 48
+    },
+    "tier": "UU",
+    "baseSpecies": "Ditto",
+    "weight": 4,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "eevee": {
+    "id": "eevee",
+    "name": "Eevee",
+    "num": 133,
+    "gender": "N",
+    "baseStats": {
+      "hp": 55,
+      "atk": 55,
+      "def": 50,
+      "spa": 65,
+      "spd": 65,
+      "spe": 55
+    },
+    "evos": [
+      "vaporeon",
+      "jolteon",
+      "flareon"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Eevee",
+    "weight": 6.5,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "vaporeon": {
+    "id": "vaporeon",
+    "name": "Vaporeon",
+    "num": 134,
+    "gender": "N",
+    "baseStats": {
+      "hp": 130,
+      "atk": 65,
+      "def": 60,
+      "spa": 110,
+      "spd": 110,
+      "spe": 65
+    },
+    "prevo": "eevee",
+    "tier": "UU",
+    "baseSpecies": "Vaporeon",
+    "weight": 29,
+    "type1": "Water",
+    "gen": 1
+  },
+  "jolteon": {
+    "id": "jolteon",
+    "name": "Jolteon",
+    "num": 135,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 65,
+      "def": 60,
+      "spa": 110,
+      "spd": 110,
+      "spe": 130
+    },
+    "prevo": "eevee",
+    "tier": "OU",
+    "baseSpecies": "Jolteon",
+    "weight": 24.5,
+    "type1": "Electric",
+    "gen": 1
+  },
+  "flareon": {
+    "id": "flareon",
+    "name": "Flareon",
+    "num": 136,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 130,
+      "def": 60,
+      "spa": 110,
+      "spd": 110,
+      "spe": 65
+    },
+    "prevo": "eevee",
+    "tier": "UU",
+    "baseSpecies": "Flareon",
+    "weight": 25,
+    "type1": "Fire",
+    "gen": 1
+  },
+  "porygon": {
+    "id": "porygon",
+    "name": "Porygon",
+    "num": 137,
+    "gender": "N",
+    "baseStats": {
+      "hp": 65,
+      "atk": 60,
+      "def": 70,
+      "spa": 75,
+      "spd": 75,
+      "spe": 40
+    },
+    "tier": "UU",
+    "baseSpecies": "Porygon",
+    "weight": 36.5,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "omanyte": {
+    "id": "omanyte",
+    "name": "Omanyte",
+    "num": 138,
+    "gender": "N",
+    "baseStats": {
+      "hp": 35,
+      "atk": 40,
+      "def": 100,
+      "spa": 90,
+      "spd": 90,
+      "spe": 35
+    },
+    "evos": [
+      "omastar"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Omanyte",
+    "weight": 7.5,
+    "type1": "Rock",
+    "type2": "Water",
+    "gen": 1
+  },
+  "omastar": {
+    "id": "omastar",
+    "name": "Omastar",
+    "num": 139,
+    "gender": "N",
+    "baseStats": {
+      "hp": 70,
+      "atk": 60,
+      "def": 125,
+      "spa": 115,
+      "spd": 115,
+      "spe": 55
+    },
+    "prevo": "omanyte",
+    "tier": "UU",
+    "baseSpecies": "Omastar",
+    "weight": 35,
+    "type1": "Rock",
+    "type2": "Water",
+    "gen": 1
+  },
+  "kabuto": {
+    "id": "kabuto",
+    "name": "Kabuto",
+    "num": 140,
+    "gender": "N",
+    "baseStats": {
+      "hp": 30,
+      "atk": 80,
+      "def": 90,
+      "spa": 45,
+      "spd": 45,
+      "spe": 55
+    },
+    "evos": [
+      "kabutops"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Kabuto",
+    "weight": 11.5,
+    "type1": "Rock",
+    "type2": "Water",
+    "gen": 1
+  },
+  "kabutops": {
+    "id": "kabutops",
+    "name": "Kabutops",
+    "num": 141,
+    "gender": "N",
+    "baseStats": {
+      "hp": 60,
+      "atk": 115,
+      "def": 105,
+      "spa": 70,
+      "spd": 70,
+      "spe": 80
+    },
+    "prevo": "kabuto",
+    "tier": "UU",
+    "baseSpecies": "Kabutops",
+    "weight": 40.5,
+    "type1": "Rock",
+    "type2": "Water",
+    "gen": 1
+  },
+  "aerodactyl": {
+    "id": "aerodactyl",
+    "name": "Aerodactyl",
+    "num": 142,
+    "gender": "N",
+    "baseStats": {
+      "hp": 80,
+      "atk": 105,
+      "def": 65,
+      "spa": 60,
+      "spd": 60,
+      "spe": 130
+    },
+    "tier": "UU",
+    "baseSpecies": "Aerodactyl",
+    "weight": 59,
+    "type1": "Rock",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "snorlax": {
+    "id": "snorlax",
+    "name": "Snorlax",
+    "num": 143,
+    "gender": "N",
+    "baseStats": {
+      "hp": 160,
+      "atk": 110,
+      "def": 65,
+      "spa": 65,
+      "spd": 65,
+      "spe": 30
+    },
+    "tier": "OU",
+    "baseSpecies": "Snorlax",
+    "weight": 460,
+    "type1": "Normal",
+    "gen": 1
+  },
+  "articuno": {
+    "id": "articuno",
+    "name": "Articuno",
+    "num": 144,
+    "gender": "N",
+    "baseStats": {
+      "hp": 90,
+      "atk": 85,
+      "def": 100,
+      "spa": 125,
+      "spd": 125,
+      "spe": 85
+    },
+    "tier": "UU",
+    "baseSpecies": "Articuno",
+    "weight": 55.4,
+    "type1": "Ice",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "zapdos": {
+    "id": "zapdos",
+    "name": "Zapdos",
+    "num": 145,
+    "gender": "N",
+    "baseStats": {
+      "hp": 90,
+      "atk": 90,
+      "def": 85,
+      "spa": 125,
+      "spd": 125,
+      "spe": 100
+    },
+    "tier": "OU",
+    "baseSpecies": "Zapdos",
+    "weight": 52.6,
+    "type1": "Electric",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "moltres": {
+    "id": "moltres",
+    "name": "Moltres",
+    "num": 146,
+    "gender": "N",
+    "baseStats": {
+      "hp": 90,
+      "atk": 100,
+      "def": 90,
+      "spa": 125,
+      "spd": 125,
+      "spe": 90
+    },
+    "tier": "UU",
+    "baseSpecies": "Moltres",
+    "weight": 60,
+    "type1": "Fire",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "dratini": {
+    "id": "dratini",
+    "name": "Dratini",
+    "num": 147,
+    "gender": "N",
+    "baseStats": {
+      "hp": 41,
+      "atk": 64,
+      "def": 45,
+      "spa": 50,
+      "spd": 50,
+      "spe": 50
+    },
+    "evos": [
+      "dragonair"
+    ],
+    "tier": "LC",
+    "baseSpecies": "Dratini",
+    "weight": 3.3,
+    "type1": "Dragon",
+    "gen": 1
+  },
+  "dragonair": {
+    "id": "dragonair",
+    "name": "Dragonair",
+    "num": 148,
+    "gender": "N",
+    "baseStats": {
+      "hp": 61,
+      "atk": 84,
+      "def": 65,
+      "spa": 70,
+      "spd": 70,
+      "spe": 70
+    },
+    "prevo": "dratini",
+    "evos": [
+      "dragonite"
+    ],
+    "tier": "NFE",
+    "baseSpecies": "Dragonair",
+    "weight": 16.5,
+    "type1": "Dragon",
+    "gen": 1
+  },
+  "dragonite": {
+    "id": "dragonite",
+    "name": "Dragonite",
+    "num": 149,
+    "gender": "N",
+    "baseStats": {
+      "hp": 91,
+      "atk": 134,
+      "def": 95,
+      "spa": 100,
+      "spd": 100,
+      "spe": 80
+    },
+    "prevo": "dragonair",
+    "tier": "UU",
+    "baseSpecies": "Dragonite",
+    "weight": 210,
+    "type1": "Dragon",
+    "type2": "Flying",
+    "gen": 1
+  },
+  "mewtwo": {
+    "id": "mewtwo",
+    "name": "Mewtwo",
+    "num": 150,
+    "gender": "N",
+    "baseStats": {
+      "hp": 106,
+      "atk": 110,
+      "def": 90,
+      "spa": 154,
+      "spd": 154,
+      "spe": 130
+    },
+    "tier": "Uber",
+    "baseSpecies": "Mewtwo",
+    "weight": 122,
+    "type1": "Psychic",
+    "gen": 1
+  },
+  "mew": {
+    "id": "mew",
+    "name": "Mew",
+    "num": 151,
+    "gender": "N",
+    "baseStats": {
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
+    },
+    "tier": "Uber",
+    "baseSpecies": "Mew",
+    "weight": 4,
+    "type1": "Psychic",
+    "gen": 1
+  }
+}
