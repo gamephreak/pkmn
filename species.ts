@@ -24,6 +24,7 @@ export interface Species extends Data {
   readonly gender?: Gender;
   readonly abilities?: {0: string, 1?: string, H?: string, S?: string};
   readonly tier?: Tier;
+  readonly prevo?: ID;
   readonly evos?: ID[];
   readonly baseSpecies?: string;  // Castform-Snowy -> Castform
   readonly baseForme?: string;

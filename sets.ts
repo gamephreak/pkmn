@@ -324,9 +324,9 @@ export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
   if (j < 0) return {i, j};
   const ability = buf.substring(i, j);
   const species = Pokedex.getSpecies(s.species);
-  // @ts-ignore
   s.ability =
       (species && species.abilities && ability in {'': 1, 0: 1, 1: 1, H: 1} ?
+           // @ts-ignore
            species.abilities[ability || '0'] :
            ability);
   i = j + 1;
