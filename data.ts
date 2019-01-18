@@ -10,6 +10,7 @@ export interface Data {
   readonly desc?: string;
   readonly shortDesc?: string;
   readonly isNonstandard?: string;
+  readonly isUnreleased?: boolean;
 }
 
 export type DataTable<T extends Data> = Readonly<{[id: string]: T}>;

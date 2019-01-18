@@ -1,5 +1,6 @@
 import {CURRENT, Generation} from './gen';
 import {toID} from './id';
+import {Pokedex} from './species';
 import {Stat, STAT_NAMES, Stats, StatsTable} from './stats';
 import {Type, Types} from './types';
 
@@ -35,30 +36,29 @@ export class Sets {
     buf += (s.name || s.species);
 
     // species
-    const id = toID(s.species || s.name);
+    let id = toID(s.species || s.name);
     buf += '|' + (toID(s.name || s.species) === id ? '' : id);
 
     // item
     buf += '|' + toID(s.item);
 
-    /* TODO
     // ability
-     let template = dexes['base'].getTemplate(s.species || s.name);
-     let abilities = template.abilities;
-     id = toID(s.ability);
-     if (abilities) {
-     if (id === toID(abilities['0'])) {
-     buf += '|';
-    } else if (id === toID(abilities['1'])) {
-     buf += '|1';
-    } else if (id === toID(abilities['H'])) {
-     buf += '|H';
+    const species = Pokedex.getSpecies(s.species || s.name);
+    id = toID(s.ability);
+    if (species && species.abilities) {
+      const abilities = species.abilities;
+      if (id === toID(abilities['0'])) {
+        buf += '|';
+      } else if (id === toID(abilities['1'])) {
+        buf += '|1';
+      } else if (id === toID(abilities['H'])) {
+        buf += '|H';
+      } else {
+        buf += '|' + id;
+      }
     } else {
-     buf += '|' + id;
+      buf += '|' + id;
     }
-    } else {
-     buf += '|' + id;
-    } */
 
     // moves
     let hasHP = false;
@@ -91,12 +91,11 @@ export class Sets {
     }
 
     // gender
-    /* TODO
-     if (s.gender && s.gender !== template.gender) {
-     buf += '|' + s.gender;
+    if (s.gender && (!species || s.gender !== species.gender)) {
+      buf += '|' + s.gender;
     } else {
-     buf += '|';
-    }*/
+      buf += '|';
+    }
 
     const getIV = (set: PokemonSet, s: Stat): string => {
       return set.ivs[s] === 31 || set.ivs[s] === undefined ?
@@ -323,16 +322,13 @@ export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
   // ability
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  s.ability = buf.substring(i, j);
-  /* TODO
-    var template = Dex.getTemplate(set.species);
-    s.ability = (template.abilities && ability in {'':1, 0:1, 1:1, H:1} ?
-    template.abilities[ability || '0'] : ability);
-
-    let template = dexes['base'].getTemplate(s.species);
-    s.ability = (template.abilities && ['', '0', '1', 'H'].includes(ability) ?
-      template.abilities[ability || '0'] : ability);
-   */
+  const ability = buf.substring(i, j);
+  const species = Pokedex.getSpecies(s.species);
+  // @ts-ignore
+  s.ability =
+      (species && species.abilities && ability in {'': 1, 0: 1, 1: 1, H: 1} ?
+           species.abilities[ability || '0'] :
+           ability);
   i = j + 1;
 
   // moves
@@ -444,12 +440,14 @@ export function _import(lines: string[], i = 0, gen?: Generation):
       const parenIndex = line.lastIndexOf(' (');
       if (line.substr(line.length - 1) === ')' && parenIndex !== -1) {
         line = line.substr(0, line.length - 1);
-        /* TODO s.species = Dex.getTemplate(line.substr(parenIndex +
-         * 2)).species; */
+        const sub = line.substr(parenIndex + 2);
+        const species = Pokedex.getSpecies(sub);
+        s.species = (species && species.name) || line;
         line = line.substr(0, parenIndex);
         s.name = line;
       } else {
-        /* TODO s.species = Dex.getTemplate(line).species; */
+        const species = Pokedex.getSpecies(line);
+        s.species = (species && species.name) || line;
         s.name = '';
       }
 
@@ -510,8 +508,8 @@ export function _import(lines: string[], i = 0, gen?: Generation):
         const hpType = line.substr(14, line.length - 15) as Type;
         line = 'Hidden Power ' + hpType.toString();
         const hpIVs: Partial<StatsTable>|undefined = gen === 2 ?
-              Stats.dstois(Types.hiddenPowerDVs(hpType) || {}) :
-              Types.hiddenPowerIVs(hpType);
+            Stats.dstois(Types.hiddenPowerDVs(hpType) || {}) :
+            Types.hiddenPowerIVs(hpType);
         if (!s.ivs && hpIVs) {
           s.ivs = {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31};
           let stat: Stat;

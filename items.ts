@@ -22,6 +22,7 @@ export interface Item extends Data {
   readonly onPlate?: string;
   readonly onMemory?: string;
   readonly onDrive?: string;
+  readonly isGem?: boolean;
 }
 
 const RBY: DataTable<Item> = {};
