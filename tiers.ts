@@ -1,6 +1,7 @@
 import {ID, toID} from './id';
-export type Tier =
-    'Uber'|'OU'|'UUBL'|'UU'|'RUBL'|'RU'|'NUBL'|'NU'|'PUBL'|'PU'|'LC';
+export type Tier =  // TODO new tiers..., official vs. unofficial
+    'Uber'|'OU'|'UUBL'|'UU'|'RUBL'|'RU'|'NUBL'|'NU'|'PUBL'|'PU'|'LC'|'AG'|'NFE'|
+    'Unreleased'|'Illegal'|'CAP'|'CAP NFE'|'CAP LC'|'LC Uber';
 
 export const UBER: Tier = 'Uber';
 export const OU: Tier = 'OU';
