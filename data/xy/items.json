@@ -1,51 +1,67 @@
 {
   "firegem": {
-    "desc": "Holder's first successful Fire-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Fire-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "watergem": {
-    "desc": "Holder's first successful Water-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Water-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "electricgem": {
-    "desc": "Holder's first successful Electric-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Electric-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "grassgem": {
-    "desc": "Holder's first successful Grass-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Grass-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "icegem": {
-    "desc": "Holder's first successful Ice-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Ice-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "fightinggem": {
-    "desc": "Holder's first successful Fighting-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Fighting-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "poisongem": {
-    "desc": "Holder's first successful Poison-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Poison-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "groundgem": {
-    "desc": "Holder's first successful Ground-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Ground-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "flyinggem": {
-    "desc": "Holder's first successful Flying-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Flying-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "psychicgem": {
-    "desc": "Holder's first successful Psychic-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Psychic-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "buggem": {
-    "desc": "Holder's first successful Bug-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Bug-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "rockgem": {
-    "desc": "Holder's first successful Rock-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Rock-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "ghostgem": {
-    "desc": "Holder's first successful Ghost-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Ghost-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "dragongem": {
-    "desc": "Holder's first successful Dragon-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Dragon-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "darkgem": {
-    "desc": "Holder's first successful Dark-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Dark-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "steelgem": {
-    "desc": "Holder's first successful Steel-type attack will have 1.3x power. Single use."
+    "desc": "Holder's first successful Steel-type attack will have 1.3x power. Single use.",
+    "isUnreleased": true
   },
   "normalgem": {
     "desc": "Holder's first successful Normal-type attack will have 1.3x power. Single use."
@@ -69,6 +85,7 @@
     "name": "Pixie Plate",
     "num": 644,
     "desc": "Holder's Fairy-type attacks have 1.2x power. Judgment is Fairy type.",
+    "onPlate": "Fairy",
     "gen": 6
   },
   "whippeddream": {
@@ -418,7 +435,9 @@
     "id": "fairygem",
     "name": "Fairy Gem",
     "num": 715,
+    "isUnreleased": true,
     "desc": "Holder's first successful Fairy-type attack will have 1.3x power. Single use.",
+    "isGem": true,
     "gen": 6
   },
   "swampertite": {

@@ -7,6 +7,7 @@
     "name": "Douse Drive",
     "num": 116,
     "desc": "Holder's Techno Blast is Water type.",
+    "onDrive": "Water",
     "gen": 5
   },
   "shockdrive": {
@@ -14,6 +15,7 @@
     "name": "Shock Drive",
     "num": 117,
     "desc": "Holder's Techno Blast is Electric type.",
+    "onDrive": "Electric",
     "gen": 5
   },
   "burndrive": {
@@ -21,6 +23,7 @@
     "name": "Burn Drive",
     "num": 118,
     "desc": "Holder's Techno Blast is Fire type.",
+    "onDrive": "Fire",
     "gen": 5
   },
   "chilldrive": {
@@ -28,6 +31,7 @@
     "name": "Chill Drive",
     "num": 119,
     "desc": "Holder's Techno Blast is Ice type.",
+    "onDrive": "Ice",
     "gen": 5
   },
   "mentalherb": {
@@ -124,6 +128,7 @@
     "name": "Fire Gem",
     "num": 548,
     "desc": "Holder's first successful Fire-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "watergem": {
@@ -131,6 +136,7 @@
     "name": "Water Gem",
     "num": 549,
     "desc": "Holder's first successful Water-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "electricgem": {
@@ -138,6 +144,7 @@
     "name": "Electric Gem",
     "num": 550,
     "desc": "Holder's first successful Electric-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "grassgem": {
@@ -145,6 +152,7 @@
     "name": "Grass Gem",
     "num": 551,
     "desc": "Holder's first successful Grass-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "icegem": {
@@ -152,6 +160,7 @@
     "name": "Ice Gem",
     "num": 552,
     "desc": "Holder's first successful Ice-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "fightinggem": {
@@ -159,6 +168,7 @@
     "name": "Fighting Gem",
     "num": 553,
     "desc": "Holder's first successful Fighting-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "poisongem": {
@@ -166,6 +176,7 @@
     "name": "Poison Gem",
     "num": 554,
     "desc": "Holder's first successful Poison-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "groundgem": {
@@ -173,6 +184,7 @@
     "name": "Ground Gem",
     "num": 555,
     "desc": "Holder's first successful Ground-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "flyinggem": {
@@ -180,6 +192,7 @@
     "name": "Flying Gem",
     "num": 556,
     "desc": "Holder's first successful Flying-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "psychicgem": {
@@ -187,6 +200,7 @@
     "name": "Psychic Gem",
     "num": 557,
     "desc": "Holder's first successful Psychic-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "buggem": {
@@ -194,6 +208,7 @@
     "name": "Bug Gem",
     "num": 558,
     "desc": "Holder's first successful Bug-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "rockgem": {
@@ -201,6 +216,7 @@
     "name": "Rock Gem",
     "num": 559,
     "desc": "Holder's first successful Rock-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "ghostgem": {
@@ -208,6 +224,7 @@
     "name": "Ghost Gem",
     "num": 560,
     "desc": "Holder's first successful Ghost-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "dragongem": {
@@ -215,6 +232,7 @@
     "name": "Dragon Gem",
     "num": 561,
     "desc": "Holder's first successful Dragon-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "darkgem": {
@@ -222,6 +240,7 @@
     "name": "Dark Gem",
     "num": 562,
     "desc": "Holder's first successful Dark-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "steelgem": {
@@ -229,6 +248,7 @@
     "name": "Steel Gem",
     "num": 563,
     "desc": "Holder's first successful Steel-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "normalgem": {
@@ -236,6 +256,7 @@
     "name": "Normal Gem",
     "num": 564,
     "desc": "Holder's first successful Normal-type attack will have 1.5x power. Single use.",
+    "isGem": true,
     "gen": 5
   },
   "coverfossil": {

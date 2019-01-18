@@ -68,6 +68,9 @@
     "desc": "A rare Poke Ball that has been crafted to commemorate an event.",
     "gen": 3
   },
+  "berryjuice": {
+    "isUnreleased": true
+  },
   "cheriberry": {
     "id": "cheriberry",
     "name": "Cheri Berry",
@@ -408,6 +411,7 @@
     "id": "enigmaberry",
     "name": "Enigma Berry",
     "num": 208,
+    "isUnreleased": true,
     "desc": "No competitive use.",
     "isBerry": true,
     "gen": 3

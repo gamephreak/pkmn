@@ -570,6 +570,7 @@
     "name": "Flame Plate",
     "num": 298,
     "desc": "Holder's Fire-type attacks have 1.2x power. Judgment is Fire type.",
+    "onPlate": "Fire",
     "gen": 4
   },
   "splashplate": {
@@ -577,6 +578,7 @@
     "name": "Splash Plate",
     "num": 299,
     "desc": "Holder's Water-type attacks have 1.2x power. Judgment is Water type.",
+    "onPlate": "Water",
     "gen": 4
   },
   "zapplate": {
@@ -584,6 +586,7 @@
     "name": "Zap Plate",
     "num": 300,
     "desc": "Holder's Electric-type attacks have 1.2x power. Judgment is Electric type.",
+    "onPlate": "Electric",
     "gen": 4
   },
   "meadowplate": {
@@ -591,6 +594,7 @@
     "name": "Meadow Plate",
     "num": 301,
     "desc": "Holder's Grass-type attacks have 1.2x power. Judgment is Grass type.",
+    "onPlate": "Grass",
     "gen": 4
   },
   "icicleplate": {
@@ -598,6 +602,7 @@
     "name": "Icicle Plate",
     "num": 302,
     "desc": "Holder's Ice-type attacks have 1.2x power. Judgment is Ice type.",
+    "onPlate": "Ice",
     "gen": 4
   },
   "fistplate": {
@@ -605,6 +610,7 @@
     "name": "Fist Plate",
     "num": 303,
     "desc": "Holder's Fighting-type attacks have 1.2x power. Judgment is Fighting type.",
+    "onPlate": "Fighting",
     "gen": 4
   },
   "toxicplate": {
@@ -612,6 +618,7 @@
     "name": "Toxic Plate",
     "num": 304,
     "desc": "Holder's Poison-type attacks have 1.2x power. Judgment is Poison type.",
+    "onPlate": "Poison",
     "gen": 4
   },
   "earthplate": {
@@ -619,6 +626,7 @@
     "name": "Earth Plate",
     "num": 305,
     "desc": "Holder's Ground-type attacks have 1.2x power. Judgment is Ground type.",
+    "onPlate": "Ground",
     "gen": 4
   },
   "skyplate": {
@@ -626,6 +634,7 @@
     "name": "Sky Plate",
     "num": 306,
     "desc": "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type.",
+    "onPlate": "Flying",
     "gen": 4
   },
   "mindplate": {
@@ -633,6 +642,7 @@
     "name": "Mind Plate",
     "num": 307,
     "desc": "Holder's Psychic-type attacks have 1.2x power. Judgment is Psychic type.",
+    "onPlate": "Psychic",
     "gen": 4
   },
   "insectplate": {
@@ -640,6 +650,7 @@
     "name": "Insect Plate",
     "num": 308,
     "desc": "Holder's Bug-type attacks have 1.2x power. Judgment is Bug type.",
+    "onPlate": "Bug",
     "gen": 4
   },
   "stoneplate": {
@@ -647,6 +658,7 @@
     "name": "Stone Plate",
     "num": 309,
     "desc": "Holder's Rock-type attacks have 1.2x power. Judgment is Rock type.",
+    "onPlate": "Rock",
     "gen": 4
   },
   "spookyplate": {
@@ -654,6 +666,7 @@
     "name": "Spooky Plate",
     "num": 310,
     "desc": "Holder's Ghost-type attacks have 1.2x power. Judgment is Ghost type.",
+    "onPlate": "Ghost",
     "gen": 4
   },
   "dracoplate": {
@@ -661,6 +674,7 @@
     "name": "Draco Plate",
     "num": 311,
     "desc": "Holder's Dragon-type attacks have 1.2x power. Judgment is Dragon type.",
+    "onPlate": "Dragon",
     "gen": 4
   },
   "dreadplate": {
@@ -668,6 +682,7 @@
     "name": "Dread Plate",
     "num": 312,
     "desc": "Holder's Dark-type attacks have 1.2x power. Judgment is Dark type.",
+    "onPlate": "Dark",
     "gen": 4
   },
   "ironplate": {
@@ -675,6 +690,7 @@
     "name": "Iron Plate",
     "num": 313,
     "desc": "Holder's Steel-type attacks have 1.2x power. Judgment is Steel type.",
+    "onPlate": "Steel",
     "gen": 4
   },
   "oddincense": {

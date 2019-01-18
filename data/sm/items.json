@@ -14,6 +14,45 @@
   "iapapaberry": {
     "desc": "Restores 1/2 max HP at 1/4 max HP or less; confuses if -Def Nature. Single use."
   },
+  "razzberry": {
+    "isUnreleased": true
+  },
+  "nanabberry": {
+    "isUnreleased": true
+  },
+  "wepearberry": {
+    "isUnreleased": true
+  },
+  "cornnberry": {
+    "isUnreleased": true
+  },
+  "magostberry": {
+    "isUnreleased": true
+  },
+  "rabutaberry": {
+    "isUnreleased": true
+  },
+  "nomelberry": {
+    "isUnreleased": true
+  },
+  "spelonberry": {
+    "isUnreleased": true
+  },
+  "pamtreberry": {
+    "isUnreleased": true
+  },
+  "watmelberry": {
+    "isUnreleased": true
+  },
+  "durinberry": {
+    "isUnreleased": true
+  },
+  "belueberry": {
+    "isUnreleased": true
+  },
+  "machobrace": {
+    "isUnreleased": true
+  },
   "souldew": {
     "desc": "If held by a Latias/Latios, its Dragon- and Psychic-type moves have 1.2x power."
   },
@@ -37,6 +76,7 @@
     "name": "Firium Z",
     "num": 777,
     "desc": "If holder has a Fire move, this item allows it to use a Fire Z-Move.",
+    "onPlate": "Fire",
     "zMove": true,
     "zMoveType": "Fire",
     "gen": 7
@@ -46,6 +86,7 @@
     "name": "Waterium Z",
     "num": 778,
     "desc": "If holder has a Water move, this item allows it to use a Water Z-Move.",
+    "onPlate": "Water",
     "zMove": true,
     "zMoveType": "Water",
     "gen": 7
@@ -55,6 +96,7 @@
     "name": "Electrium Z",
     "num": 779,
     "desc": "If holder has an Electric move, this item allows it to use an Electric Z-Move.",
+    "onPlate": "Electric",
     "zMove": true,
     "zMoveType": "Electric",
     "gen": 7
@@ -64,6 +106,7 @@
     "name": "Grassium Z",
     "num": 780,
     "desc": "If holder has a Grass move, this item allows it to use a Grass Z-Move.",
+    "onPlate": "Grass",
     "zMove": true,
     "zMoveType": "Grass",
     "gen": 7
@@ -73,6 +116,7 @@
     "name": "Icium Z",
     "num": 781,
     "desc": "If holder has an Ice move, this item allows it to use an Ice Z-Move.",
+    "onPlate": "Ice",
     "zMove": true,
     "zMoveType": "Ice",
     "gen": 7
@@ -82,6 +126,7 @@
     "name": "Fightinium Z",
     "num": 782,
     "desc": "If holder has a Fighting move, this item allows it to use a Fighting Z-Move.",
+    "onPlate": "Fighting",
     "zMove": true,
     "zMoveType": "Fighting",
     "gen": 7
@@ -91,6 +136,7 @@
     "name": "Poisonium Z",
     "num": 783,
     "desc": "If holder has a Poison move, this item allows it to use a Poison Z-Move.",
+    "onPlate": "Poison",
     "zMove": true,
     "zMoveType": "Poison",
     "gen": 7
@@ -100,6 +146,7 @@
     "name": "Groundium Z",
     "num": 784,
     "desc": "If holder has a Ground move, this item allows it to use a Ground Z-Move.",
+    "onPlate": "Ground",
     "zMove": true,
     "zMoveType": "Ground",
     "gen": 7
@@ -109,6 +156,7 @@
     "name": "Flyinium Z",
     "num": 785,
     "desc": "If holder has a Flying move, this item allows it to use a Flying Z-Move.",
+    "onPlate": "Flying",
     "zMove": true,
     "zMoveType": "Flying",
     "gen": 7
@@ -118,6 +166,7 @@
     "name": "Psychium Z",
     "num": 786,
     "desc": "If holder has a Psychic move, this item allows it to use a Psychic Z-Move.",
+    "onPlate": "Psychic",
     "zMove": true,
     "zMoveType": "Psychic",
     "gen": 7
@@ -127,6 +176,7 @@
     "name": "Buginium Z",
     "num": 787,
     "desc": "If holder has a Bug move, this item allows it to use a Bug Z-Move.",
+    "onPlate": "Bug",
     "zMove": true,
     "zMoveType": "Bug",
     "gen": 7
@@ -136,6 +186,7 @@
     "name": "Rockium Z",
     "num": 788,
     "desc": "If holder has a Rock move, this item allows it to use a Rock Z-Move.",
+    "onPlate": "Rock",
     "zMove": true,
     "zMoveType": "Rock",
     "gen": 7
@@ -145,6 +196,7 @@
     "name": "Ghostium Z",
     "num": 789,
     "desc": "If holder has a Ghost move, this item allows it to use a Ghost Z-Move.",
+    "onPlate": "Ghost",
     "zMove": true,
     "zMoveType": "Ghost",
     "gen": 7
@@ -154,6 +206,7 @@
     "name": "Dragonium Z",
     "num": 790,
     "desc": "If holder has a Dragon move, this item allows it to use a Dragon Z-Move.",
+    "onPlate": "Dragon",
     "zMove": true,
     "zMoveType": "Dragon",
     "gen": 7
@@ -163,6 +216,7 @@
     "name": "Darkinium Z",
     "num": 791,
     "desc": "If holder has a Dark move, this item allows it to use a Dark Z-Move.",
+    "onPlate": "Dark",
     "zMove": true,
     "zMoveType": "Dark",
     "gen": 7
@@ -172,6 +226,7 @@
     "name": "Steelium Z",
     "num": 792,
     "desc": "If holder has a Steel move, this item allows it to use a Steel Z-Move.",
+    "onPlate": "Steel",
     "zMove": true,
     "zMoveType": "Steel",
     "gen": 7
@@ -181,6 +236,7 @@
     "name": "Fairium Z",
     "num": 793,
     "desc": "If holder has a Fairy move, this item allows it to use a Fairy Z-Move.",
+    "onPlate": "Fairy",
     "zMove": true,
     "zMoveType": "Fairy",
     "gen": 7
@@ -395,6 +451,7 @@
     "name": "Fighting Memory",
     "num": 904,
     "desc": "Holder's Multi-Attack is Fighting type.",
+    "onMemory": "Fighting",
     "gen": 7
   },
   "flyingmemory": {
@@ -402,6 +459,7 @@
     "name": "Flying Memory",
     "num": 905,
     "desc": "Holder's Multi-Attack is Flying type.",
+    "onMemory": "Flying",
     "gen": 7
   },
   "poisonmemory": {
@@ -409,6 +467,7 @@
     "name": "Poison Memory",
     "num": 906,
     "desc": "Holder's Multi-Attack is Poison type.",
+    "onMemory": "Poison",
     "gen": 7
   },
   "groundmemory": {
@@ -416,6 +475,7 @@
     "name": "Ground Memory",
     "num": 907,
     "desc": "Holder's Multi-Attack is Ground type.",
+    "onMemory": "Ground",
     "gen": 7
   },
   "rockmemory": {
@@ -423,6 +483,7 @@
     "name": "Rock Memory",
     "num": 908,
     "desc": "Holder's Multi-Attack is Rock type.",
+    "onMemory": "Rock",
     "gen": 7
   },
   "bugmemory": {
@@ -430,6 +491,7 @@
     "name": "Bug Memory",
     "num": 909,
     "desc": "Holder's Multi-Attack is Bug type.",
+    "onMemory": "Bug",
     "gen": 7
   },
   "ghostmemory": {
@@ -437,6 +499,7 @@
     "name": "Ghost Memory",
     "num": 910,
     "desc": "Holder's Multi-Attack is Ghost type.",
+    "onMemory": "Ghost",
     "gen": 7
   },
   "steelmemory": {
@@ -444,6 +507,7 @@
     "name": "Steel Memory",
     "num": 911,
     "desc": "Holder's Multi-Attack is Steel type.",
+    "onMemory": "Steel",
     "gen": 7
   },
   "firememory": {
@@ -451,6 +515,7 @@
     "name": "Fire Memory",
     "num": 912,
     "desc": "Holder's Multi-Attack is Fire type.",
+    "onMemory": "Fire",
     "gen": 7
   },
   "watermemory": {
@@ -458,6 +523,7 @@
     "name": "Water Memory",
     "num": 913,
     "desc": "Holder's Multi-Attack is Water type.",
+    "onMemory": "Water",
     "gen": 7
   },
   "grassmemory": {
@@ -465,6 +531,7 @@
     "name": "Grass Memory",
     "num": 914,
     "desc": "Holder's Multi-Attack is Grass type.",
+    "onMemory": "Grass",
     "gen": 7
   },
   "electricmemory": {
@@ -472,6 +539,7 @@
     "name": "Electric Memory",
     "num": 915,
     "desc": "Holder's Multi-Attack is Electric type.",
+    "onMemory": "Electric",
     "gen": 7
   },
   "psychicmemory": {
@@ -479,6 +547,7 @@
     "name": "Psychic Memory",
     "num": 916,
     "desc": "Holder's Multi-Attack is Psychic type.",
+    "onMemory": "Psychic",
     "gen": 7
   },
   "icememory": {
@@ -486,6 +555,7 @@
     "name": "Ice Memory",
     "num": 917,
     "desc": "Holder's Multi-Attack is Ice type.",
+    "onMemory": "Ice",
     "gen": 7
   },
   "dragonmemory": {
@@ -493,6 +563,7 @@
     "name": "Dragon Memory",
     "num": 918,
     "desc": "Holder's Multi-Attack is Dragon type.",
+    "onMemory": "Dragon",
     "gen": 7
   },
   "darkmemory": {
@@ -500,6 +571,7 @@
     "name": "Dark Memory",
     "num": 919,
     "desc": "Holder's Multi-Attack is Dark type.",
+    "onMemory": "Dark",
     "gen": 7
   },
   "fairymemory": {
@@ -507,6 +579,7 @@
     "name": "Fairy Memory",
     "num": 920,
     "desc": "Holder's Multi-Attack is Fairy type.",
+    "onMemory": "Fairy",
     "gen": 7
   },
   "solganiumz": {
