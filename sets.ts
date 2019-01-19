@@ -4,6 +4,7 @@ import {Pokedex} from './species';
 import {Stat, STAT_NAMES, Stats, StatsTable} from './stats';
 import {Type, Types} from './types';
 
+// BUG: moves, evs and ivs should be Readonly
 export type PokemonSet = {
   readonly name: string;
   readonly species: string;

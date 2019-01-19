@@ -17,7 +17,7 @@ export const LC: Tier = 'LC';
 
 export const STANDARD: Tier = OU;
 
-const TIERS: {[id: string]: Tier} = {
+const TIERS: Readonly<{[id: string]: Tier}> = {
   'uber': UBER,
   'ou': OU,
   'uubl': UUBL,

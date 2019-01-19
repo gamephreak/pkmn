@@ -31,7 +31,8 @@ const BW: DataTable<Item> = patch(DPP, bw);
 const XY: DataTable<Item> = patch(BW, xy);
 const SM: DataTable<Item> = patch(XY, sm);
 
-const ITEMS: Array<DataTable<Item>> = [RBY, GSC, ADV, DPP, BW, XY, SM];
+const ITEMS: Readonly<Array<DataTable<Item>>> =
+    [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export class Items {
   static forGen(gen: Generation): DataTable<Item> {

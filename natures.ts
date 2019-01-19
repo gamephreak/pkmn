@@ -17,7 +17,7 @@ export class Nature {
   }
 }
 
-const NATURES: {[id: string]: Nature} = {
+const NATURES: Readonly<{[id: string]: Nature}> = {
   'adamant': new Nature('Adamant', stat.ATK, stat.SPA),
   'bashful': new Nature('Bashful'),
   'bold': new Nature('Bold', stat.DEF, stat.ATK),

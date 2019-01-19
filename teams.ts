@@ -4,7 +4,7 @@ import {Tier, Tiers} from './tiers';
 
 export class Team {
   constructor(
-      readonly team: PokemonSet[], readonly format?: string,
+      readonly team: Readonly<PokemonSet[]>, readonly format?: string,
       readonly name?: string, readonly folder?: string) {
     this.team = team;
     this.format = format;
@@ -136,7 +136,7 @@ export class Teams {
     return teams;
   }
 
-  static exportTeams(teams: Team[], gen?: Generation): string {
+  static exportTeams(teams: Readonly<Team[]>, gen?: Generation): string {
     let buf = '';
 
     for (const team of teams) {

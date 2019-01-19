@@ -17,7 +17,8 @@ const BW: DataTable<Ability> = patch(DPP, bw);
 const XY: DataTable<Ability> = patch(BW, xy);
 const SM: DataTable<Ability> = patch(XY, sm);
 
-const ABILITIES: Array<DataTable<Ability>> = [RBY, GSC, ADV, DPP, BW, XY, SM];
+const ABILITIES: Readonly<Array<DataTable<Ability>>> =
+    [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export class Abilities {
   static forGen(gen: Generation): DataTable<Ability> {

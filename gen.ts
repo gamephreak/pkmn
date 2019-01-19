@@ -28,8 +28,9 @@ export const USUM: Generation = SM;
 
 export const CURRENT: Generation = SM;
 
-const NAMES: string[] = ['RBY', 'GSC', 'ADV', 'DPP', 'BW', 'XY', 'SM'];
-const LOOKUP: {[id: string]: Generation} = {
+const NAMES: Readonly<string[]> =
+    ['RBY', 'GSC', 'ADV', 'DPP', 'BW', 'XY', 'SM'];
+const LOOKUP: Readonly<{[id: string]: Generation}> = {
   'rby': RBY,
   'gsc': GSC,
   'adv': ADV,

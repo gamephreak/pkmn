@@ -33,11 +33,11 @@ export const SPA: Stat = 'spa';
 export const SPD: Stat = 'spd';
 export const SPE: Stat = 'spe';
 
-const STAT_BOOSTS = [1, 1.5, 2, 2.5, 3, 3.5, 4];
+const STAT_BOOSTS: Readonly<number[]> = [1, 1.5, 2, 2.5, 3, 3.5, 4];
 // NOTE: https://www.dragonflycave.com/mechanics/stat-stages
-const OTHER_BOOSTS = [1, 4 / 3, 5 / 3, 2, 7 / 3, 8 / 3, 3];
+const OTHER_BOOSTS: Readonly<number[]> = [1, 4 / 3, 5 / 3, 2, 7 / 3, 8 / 3, 3];
 
-const STAT_IDS: {[id: string]: Stat} = {
+const STAT_IDS: Readonly<{[id: string]: Stat}> = {
   'HP': 'hp',
   'hp': 'hp',
   'Atk': 'atk',
@@ -59,7 +59,7 @@ const STAT_IDS: {[id: string]: Stat} = {
   'spe': 'spe',
 };
 
-export const STAT_NAMES: {[stat in Stat]: string} = {
+export const STAT_NAMES: Readonly<{[stat in Stat]: string}> = {
   hp: 'HP',
   atk: 'Atk',
   def: 'Def',
@@ -68,7 +68,7 @@ export const STAT_NAMES: {[stat in Stat]: string} = {
   spe: 'Spe'
 };
 
-const DISPLAY: {[stat: string]: [string, string]} = {
+const DISPLAY: Readonly<{[stat: string]: Readonly<[string, string]>}> = {
   hp: [STAT_NAMES.hp, 'HP'],
   atk: [STAT_NAMES.atk, 'Attack'],
   def: [STAT_NAMES.def, 'Defense'],
@@ -106,12 +106,13 @@ export class Stats {
     return DISPLAY[s][+full];
   }
 
-  static fillIVs(pivs: Partial<StatsTable>): StatsTable {
+  static fillIVs(pivs: Readonly<Partial<StatsTable>>): StatsTable {
     return Stats.fill(pivs, 31);
   }
 
-  static fillEVs(pevs: Partial<StatsTable>, gen: Generation = CURRENT):
-      StatsTable {
+  static fillEVs(
+      pevs: Readonly<Partial<StatsTable>>,
+      gen: Generation = CURRENT): StatsTable {
     return Stats.fill(pevs, gen < 3 ? 252 : 0);
   }
 
@@ -123,7 +124,7 @@ export class Stats {
     return dv * 2 + 1;
   }
 
-  static istods(ivs: Partial<StatsTable>): Partial<StatsTable> {
+  static istods(ivs: Readonly<Partial<StatsTable>>): Partial<StatsTable> {
     const dvs: Partial<StatsTable> = {};
     let iv: Stat;
     for (iv in ivs) {
@@ -132,7 +133,7 @@ export class Stats {
     return dvs;
   }
 
-  static dstois(dvs: Partial<StatsTable>): Partial<StatsTable> {
+  static dstois(dvs: Readonly<Partial<StatsTable>>): Partial<StatsTable> {
     const ivs: Partial<StatsTable> = {};
     let dv: Stat;
     for (dv in dvs) {
@@ -153,13 +154,14 @@ export class Stats {
     return b >= 0 ? boost : -boost;
   }
 
-  static getHPDV(pivs: Partial<StatsTable>): number {
+  static getHPDV(pivs: Readonly<Partial<StatsTable>>): number {
     const ivs: StatsTable = Stats.fillIVs(pivs);
     return (Stats.itod(ivs.atk) % 2) * 8 + (Stats.itod(ivs.def) % 2) * 4 +
         (Stats.itod(ivs.spe) % 2) * 2 + (Stats.itod(ivs.spa) % 2);
   }
 
-  private static fill(p: Partial<StatsTable>, val: number): StatsTable {
+  private static fill(p: Readonly<Partial<StatsTable>>, val: number):
+      StatsTable {
     // NOTE: order is importer for calculating Hidden Power.
     return extend(
         true, {}, {hp: val, atk: val, def: val, spe: val, spa: val, spd: val},

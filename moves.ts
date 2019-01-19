@@ -130,7 +130,8 @@ const BW: DataTable<Move> = patch(DPP, bw);
 const XY: DataTable<Move> = patch(BW, xy);
 const SM: DataTable<Move> = patch(XY, sm);
 
-const MOVES: Array<DataTable<Move>> = [RBY, GSC, ADV, DPP, BW, XY, SM];
+const MOVES: Readonly<Array<DataTable<Move>>> =
+    [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export class Moves {
   static forGen(gen: Generation): DataTable<Move> {

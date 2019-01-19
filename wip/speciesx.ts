@@ -58,9 +58,9 @@ type PokemonSources = {
   readonly sources: PokemonSource[];
   readonly sourcesBefore: number;
   readonly babyOnly?: string;
-  readonly sketchMove?: string;
+  //readonly sketchMove?: string;
   readonly hm?: string;
-  readonly restrictiveMoves?: string[];
+  readonly restrictiveMoves?: string[]; // TODO
   readonly limitedEgg?: Array<string|'self'>;
   readonly isHidden?: boolean;
   readonly fastCheck?: true;
@@ -88,4 +88,5 @@ export interface Speciesx extends Species {
   readonly unreleasedHidden?: boolean;
   readonly eventOnly: boolean;
   readonly eventPokemon?: EventInfo[];
+  readonly learnset?: {[k: string]: MoveSource[]}
 }

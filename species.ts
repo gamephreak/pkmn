@@ -19,20 +19,22 @@ export type Gender = 'M'|'F'|'N';
 export interface Species extends Data {
   readonly type1: Type;
   readonly type2?: Type;
-  readonly baseStats: StatsTable;
+  readonly baseStats: Readonly<StatsTable>;
   readonly weight: number;
   readonly gender?: Gender;
-  readonly abilities?: {0: string, 1?: string, H?: string, S?: string};
+  readonly abilities?:
+      Readonly<{0: string, 1?: string, H?: string, S?: string}>;
   readonly tier?: Tier;
   readonly prevo?: ID;
-  readonly evos?: ID[];
+  readonly evos?: Readonly<ID[]>;
   readonly baseSpecies?: string;  // Castform-Snowy -> Castform
   readonly baseForme?: string;
   readonly forme?: string;        // Castform-Snowy -> Snowy
   readonly formeLetter?: string;  // S
   readonly otherFormes?:
       ID[];  // castform -> castformsunny, castformrainy, castformsnowy
-  readonly cosmeticForms?: ID[];  // = otherForms. shellos -> shelloseast
+  readonly cosmeticForms?:
+      Readonly<ID[]>;  // = otherForms. shellos -> shelloseast
 }
 
 const RBY: DataTable<Species> = patch({}, rby);
@@ -43,7 +45,8 @@ const BW: DataTable<Species> = patch(DPP, bw);
 const XY: DataTable<Species> = patch(BW, xy);
 const SM: DataTable<Species> = patch(XY, sm);
 
-const SPECIES: Array<DataTable<Species>> = [RBY, GSC, ADV, DPP, BW, XY, SM];
+const SPECIES: Readonly<Array<DataTable<Species>>> =
+    [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export class Pokedex {
   static forGen(gen: Generation): DataTable<Species> {
