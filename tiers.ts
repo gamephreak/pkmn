@@ -1,5 +1,6 @@
 import {extend} from './extend';
 import {ID, toID} from './id';
+import {Species} from './species';
 
 export type Tier = 'AG'|'Uber'|'OU'|'UUBL'|'UU'|'RUBL'|'RU'|'NUBL'|'NU'|'PUBL'|
     'PU'|'NFE'|'LC Uber'|'LC'|'Unreleased'|'Illegal'|'CAP'|'CAP NFE'|'CAP LC';
@@ -73,5 +74,9 @@ export class Tiers {
 
   static isNonstandard(t: Tier): boolean {
     return !!NON_STANDARD[t];
+  }
+
+  static isAllowed(s: Species): boolean {
+    return true;  // TODO implement
   }
 }
