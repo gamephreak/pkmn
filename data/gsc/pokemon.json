@@ -15,7 +15,8 @@
     "baseStats": {
       "spd": 40
     },
-    "tier": "UU"
+    "tier": "UU",
+    "prevo": "pichu"
   },
   "raichu": {
     "baseStats": {
@@ -40,7 +41,8 @@
     "baseStats": {
       "spd": 65
     },
-    "tier": "NFE"
+    "tier": "NFE",
+    "prevo": "cleffa"
   },
   "clefable": {
     "baseStats": {
@@ -52,7 +54,8 @@
     "baseStats": {
       "spa": 45
     },
-    "tier": "NFE"
+    "tier": "NFE",
+    "prevo": "igglybuff"
   },
   "wigglytuff": {
     "baseStats": {
@@ -97,17 +100,20 @@
     "baseStats": {
       "spa": 95
     },
+    "gender": "N",
     "tier": "UUBL"
   },
   "zapdos": {
     "baseStats": {
       "spd": 90
-    }
+    },
+    "gender": "N"
   },
   "moltres": {
     "baseStats": {
       "spd": 85
     },
+    "gender": "N",
     "tier": "UUBL"
   },
   "chikorita": {
@@ -597,6 +603,9 @@
       "spd": 75
     }
   },
+  "electrode": {
+    "gender": "N"
+  },
   "exeggutor": {
     "baseStats": {
       "spd": 65
@@ -814,7 +823,10 @@
     "baseStats": {
       "spa": 65
     },
-    "tier": "NFE"
+    "tier": "NFE",
+    "evos": [
+      "crobat"
+    ]
   },
   "oddish": {
     "baseStats": {
@@ -824,7 +836,11 @@
   "gloom": {
     "baseStats": {
       "spd": 75
-    }
+    },
+    "evos": [
+      "vileplume",
+      "bellossom"
+    ]
   },
   "paras": {
     "baseStats": {
@@ -888,6 +904,12 @@
       "spa": 100
     }
   },
+  "poliwhirl": {
+    "evos": [
+      "poliwrath",
+      "politoed"
+    ]
+  },
   "abra": {
     "baseStats": {
       "spd": 55
@@ -936,6 +958,12 @@
   "rapidash": {
     "tier": "NU"
   },
+  "slowpoke": {
+    "evos": [
+      "slowbro",
+      "slowking"
+    ]
+  },
   "slowbro": {
     "baseStats": {
       "spa": 100
@@ -946,13 +974,15 @@
     "type2": "Steel",
     "baseStats": {
       "spd": 55
-    }
+    },
+    "gender": "N"
   },
   "magneton": {
     "type2": "Steel",
     "baseStats": {
       "spd": 70
-    }
+    },
+    "gender": "N"
   },
   "seel": {
     "baseStats": {
@@ -1001,7 +1031,10 @@
     "baseStats": {
       "spd": 45
     },
-    "tier": "LC"
+    "tier": "LC",
+    "evos": [
+      "steelix"
+    ]
   },
   "drowzee": {
     "baseStats": {
@@ -1015,6 +1048,9 @@
   },
   "kingler": {
     "tier": "NU"
+  },
+  "voltorb": {
+    "gender": "N"
   },
   "exeggcute": {
     "baseStats": {
@@ -1037,14 +1073,16 @@
       "spd": 110
     },
     "gender": "M",
-    "tier": "NU"
+    "tier": "NU",
+    "prevo": "tyrogue"
   },
   "hitmonchan": {
     "baseStats": {
       "spd": 110
     },
     "gender": "M",
-    "tier": "NU"
+    "tier": "NU",
+    "prevo": "tyrogue"
   },
   "lickitung": {
     "baseStats": {
@@ -1068,7 +1106,10 @@
       "spa": 35
     },
     "gender": "F",
-    "tier": "UU"
+    "tier": "UU",
+    "evos": [
+      "blissey"
+    ]
   },
   "tangela": {
     "baseStats": {
@@ -1092,7 +1133,10 @@
     "baseStats": {
       "spd": 45
     },
-    "tier": "NFE"
+    "tier": "NFE",
+    "evos": [
+      "kingdra"
+    ]
   },
   "goldeen": {
     "baseStats": {
@@ -1108,35 +1152,43 @@
   "staryu": {
     "baseStats": {
       "spd": 55
-    }
+    },
+    "gender": "N"
   },
   "starmie": {
     "baseStats": {
       "spd": 85
-    }
+    },
+    "gender": "N"
   },
   "scyther": {
     "baseStats": {
       "spd": 80
-    }
+    },
+    "evos": [
+      "scizor"
+    ]
   },
   "jynx": {
     "baseStats": {
       "spa": 115
     },
     "gender": "F",
-    "tier": "UUBL"
+    "tier": "UUBL",
+    "prevo": "smoochum"
   },
   "electabuzz": {
     "baseStats": {
       "spa": 95
-    }
+    },
+    "prevo": "elekid"
   },
   "magmar": {
     "baseStats": {
       "spa": 100
     },
-    "tier": "NU"
+    "tier": "NU",
+    "prevo": "magby"
   },
   "pinsir": {
     "baseStats": {
@@ -1167,12 +1219,20 @@
     "tier": "UUBL"
   },
   "ditto": {
+    "gender": "N",
     "tier": "NU"
   },
   "eevee": {
     "baseStats": {
       "spa": 45
-    }
+    },
+    "evos": [
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon"
+    ]
   },
   "vaporeon": {
     "baseStats": {
@@ -1195,7 +1255,11 @@
     "baseStats": {
       "spa": 85
     },
-    "tier": "LC"
+    "gender": "N",
+    "tier": "LC",
+    "evos": [
+      "porygon2"
+    ]
   },
   "omanyte": {
     "baseStats": {
@@ -1234,7 +1298,11 @@
   "mewtwo": {
     "baseStats": {
       "spd": 90
-    }
+    },
+    "gender": "N"
+  },
+  "mew": {
+    "gender": "N"
   },
   "sentret": {
     "id": "sentret",

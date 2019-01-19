@@ -55,6 +55,11 @@
   "dodrio": {
     "tier": "PU"
   },
+  "gengar": {
+    "otherFormes": [
+      "gengarmega"
+    ]
+  },
   "electrode": {
     "tier": "PU"
   },
@@ -176,6 +181,27 @@
   },
   "cherrim": {
     "tier": "PU"
+  },
+  "arceus": {
+    "otherFormes": [
+      "arceusbug",
+      "arceusdark",
+      "arceusdragon",
+      "arceuselectric",
+      "arceusfairy",
+      "arceusfighting",
+      "arceusfire",
+      "arceusflying",
+      "arceusghost",
+      "arceusgrass",
+      "arceusground",
+      "arceusice",
+      "arceuspoison",
+      "arceuspsychic",
+      "arceusrock",
+      "arceussteel",
+      "arceuswater"
+    ]
   },
   "gigalith": {
     "baseStats": {
@@ -479,7 +505,10 @@
     "gen": 6
   },
   "venusaur": {
-    "tier": "RU"
+    "tier": "RU",
+    "otherFormes": [
+      "venusaurmega"
+    ]
   },
   "venusaurmega": {
     "id": "venusaurmega",
@@ -504,6 +533,12 @@
     "type1": "Grass",
     "type2": "Poison",
     "gen": 6
+  },
+  "charizard": {
+    "otherFormes": [
+      "charizardmegax",
+      "charizardmegay"
+    ]
   },
   "charizardmegay": {
     "id": "charizardmegay",
@@ -533,7 +568,10 @@
     "tier": "NFE"
   },
   "blastoise": {
-    "tier": "RU"
+    "tier": "RU",
+    "otherFormes": [
+      "blastoisemega"
+    ]
   },
   "blastoisemega": {
     "id": "blastoisemega",
@@ -568,7 +606,10 @@
     "baseStats": {
       "atk": 90
     },
-    "tier": "PU"
+    "tier": "PU",
+    "otherFormes": [
+      "beedrillmega"
+    ]
   },
   "beedrillmega": {
     "id": "beedrillmega",
@@ -598,7 +639,10 @@
     "baseStats": {
       "spe": 101
     },
-    "tier": "PU"
+    "tier": "PU",
+    "otherFormes": [
+      "pidgeotmega"
+    ]
   },
   "pidgeotmega": {
     "id": "pidgeotmega",
@@ -635,7 +679,15 @@
       "def": 40,
       "spd": 50
     },
-    "tier": "NFE"
+    "tier": "NFE",
+    "otherFormes": [
+      "pikachucosplay",
+      "pikachurockstar",
+      "pikachubelle",
+      "pikachupopstar",
+      "pikachuphd",
+      "pikachulibre"
+    ]
   },
   "pikachucosplay": {
     "id": "pikachucosplay",
@@ -867,7 +919,10 @@
     "baseStats": {
       "spd": 95
     },
-    "tier": "UUBL"
+    "tier": "UUBL",
+    "otherFormes": [
+      "alakazammega"
+    ]
   },
   "machoke": {
     "tier": "PUBL"
@@ -891,7 +946,10 @@
     "tier": "PU"
   },
   "slowbro": {
-    "tier": "OU"
+    "tier": "OU",
+    "otherFormes": [
+      "slowbromega"
+    ]
   },
   "slowbromega": {
     "id": "slowbromega",
@@ -971,6 +1029,11 @@
   "tangela": {
     "tier": "PU"
   },
+  "kangaskhan": {
+    "otherFormes": [
+      "kangaskhanmega"
+    ]
+  },
   "kangaskhanmega": {
     "id": "kangaskhanmega",
     "name": "Kangaskhan-Mega",
@@ -1014,6 +1077,11 @@
   "electabuzz": {
     "tier": "NFE"
   },
+  "pinsir": {
+    "otherFormes": [
+      "pinsirmega"
+    ]
+  },
   "pinsirmega": {
     "id": "pinsirmega",
     "name": "Pinsir-Mega",
@@ -1039,7 +1107,10 @@
     "gen": 6
   },
   "gyarados": {
-    "tier": "UU"
+    "tier": "UU",
+    "otherFormes": [
+      "gyaradosmega"
+    ]
   },
   "gyaradosmega": {
     "id": "gyaradosmega",
@@ -1071,6 +1142,18 @@
   "ditto": {
     "tier": "PU"
   },
+  "eevee": {
+    "evos": [
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon",
+      "leafeon",
+      "glaceon",
+      "sylveon"
+    ]
+  },
   "vaporeon": {
     "tier": "UU"
   },
@@ -1085,6 +1168,11 @@
   },
   "kabutops": {
     "tier": "NU"
+  },
+  "aerodactyl": {
+    "otherFormes": [
+      "aerodactylmega"
+    ]
   },
   "aerodactylmega": {
     "id": "aerodactylmega",
@@ -1133,6 +1221,12 @@
   },
   "dragonair": {
     "tier": "NFE"
+  },
+  "mewtwo": {
+    "otherFormes": [
+      "mewtwomegax",
+      "mewtwomegay"
+    ]
   },
   "mewtwomegax": {
     "id": "mewtwomegax",
@@ -1279,7 +1373,10 @@
     "baseStats": {
       "def": 85
     },
-    "tier": "PU"
+    "tier": "PU",
+    "otherFormes": [
+      "ampharosmega"
+    ]
   },
   "ampharosmega": {
     "id": "ampharosmega",
@@ -1364,7 +1461,10 @@
     "tier": "PU"
   },
   "steelix": {
-    "tier": "NU"
+    "tier": "NU",
+    "otherFormes": [
+      "steelixmega"
+    ]
   },
   "steelixmega": {
     "id": "steelixmega",
@@ -1397,6 +1497,11 @@
     "type1": "Fairy",
     "tier": "RU"
   },
+  "scizor": {
+    "otherFormes": [
+      "scizormega"
+    ]
+  },
   "scizormega": {
     "id": "scizormega",
     "name": "Scizor-Mega",
@@ -1423,6 +1528,11 @@
   },
   "shuckle": {
     "tier": "RUBL"
+  },
+  "heracross": {
+    "otherFormes": [
+      "heracrossmega"
+    ]
   },
   "heracrossmega": {
     "id": "heracrossmega",
@@ -1461,7 +1571,10 @@
     "tier": "PU"
   },
   "houndoom": {
-    "tier": "RU"
+    "tier": "RU",
+    "otherFormes": [
+      "houndoommega"
+    ]
   },
   "houndoommega": {
     "id": "houndoommega",
@@ -1505,6 +1618,11 @@
   "blissey": {
     "tier": "UU"
   },
+  "tyranitar": {
+    "otherFormes": [
+      "tyranitarmega"
+    ]
+  },
   "tyranitarmega": {
     "id": "tyranitarmega",
     "name": "Tyranitar-Mega",
@@ -1533,7 +1651,10 @@
     "tier": "UU"
   },
   "sceptile": {
-    "tier": "NUBL"
+    "tier": "NUBL",
+    "otherFormes": [
+      "sceptilemega"
+    ]
   },
   "sceptilemega": {
     "id": "sceptilemega",
@@ -1562,6 +1683,11 @@
   "combusken": {
     "tier": "PU"
   },
+  "blaziken": {
+    "otherFormes": [
+      "blazikenmega"
+    ]
+  },
   "blazikenmega": {
     "id": "blazikenmega",
     "name": "Blaziken-Mega",
@@ -1585,6 +1711,11 @@
     "type1": "Fire",
     "type2": "Fighting",
     "gen": 6
+  },
+  "swampert": {
+    "otherFormes": [
+      "swampertmega"
+    ]
   },
   "swampertmega": {
     "id": "swampertmega",
@@ -1633,7 +1764,10 @@
   },
   "gardevoir": {
     "type2": "Fairy",
-    "tier": "UU"
+    "tier": "UU",
+    "otherFormes": [
+      "gardevoirmega"
+    ]
   },
   "gardevoirmega": {
     "id": "gardevoirmega",
@@ -1684,7 +1818,10 @@
     "type2": "Fairy"
   },
   "sableye": {
-    "tier": "RUBL"
+    "tier": "RUBL",
+    "otherFormes": [
+      "sableyemega"
+    ]
   },
   "sableyemega": {
     "id": "sableyemega",
@@ -1712,7 +1849,10 @@
   },
   "mawile": {
     "type2": "Fairy",
-    "tier": "PU"
+    "tier": "PU",
+    "otherFormes": [
+      "mawilemega"
+    ]
   },
   "mawilemega": {
     "id": "mawilemega",
@@ -1742,7 +1882,10 @@
     "tier": "NFE"
   },
   "aggron": {
-    "tier": "NU"
+    "tier": "NU",
+    "otherFormes": [
+      "aggronmega"
+    ]
   },
   "aggronmega": {
     "id": "aggronmega",
@@ -1766,6 +1909,11 @@
     "weight": 395,
     "type1": "Steel",
     "gen": 6
+  },
+  "medicham": {
+    "otherFormes": [
+      "medichammega"
+    ]
   },
   "medichammega": {
     "id": "medichammega",
@@ -1792,7 +1940,10 @@
     "gen": 6
   },
   "manectric": {
-    "tier": "NU"
+    "tier": "NU",
+    "otherFormes": [
+      "manectricmega"
+    ]
   },
   "manectricmega": {
     "id": "manectricmega",
@@ -1838,7 +1989,10 @@
     "tier": "PU"
   },
   "sharpedo": {
-    "tier": "RUBL"
+    "tier": "RUBL",
+    "otherFormes": [
+      "sharpedomega"
+    ]
   },
   "sharpedomega": {
     "id": "sharpedomega",
@@ -1868,7 +2022,10 @@
     "tier": "PU"
   },
   "camerupt": {
-    "tier": "PU"
+    "tier": "PU",
+    "otherFormes": [
+      "cameruptmega"
+    ]
   },
   "cameruptmega": {
     "id": "cameruptmega",
@@ -1907,7 +2064,10 @@
     "tier": "PU"
   },
   "altaria": {
-    "tier": "PU"
+    "tier": "PU",
+    "otherFormes": [
+      "altariamega"
+    ]
   },
   "altariamega": {
     "id": "altariamega",
@@ -1965,7 +2125,10 @@
     }
   },
   "banette": {
-    "tier": "PU"
+    "tier": "PU",
+    "otherFormes": [
+      "banettemega"
+    ]
   },
   "banettemega": {
     "id": "banettemega",
@@ -2006,6 +2169,11 @@
   "tropius": {
     "tier": "PU"
   },
+  "absol": {
+    "otherFormes": [
+      "absolmega"
+    ]
+  },
   "absolmega": {
     "id": "absolmega",
     "name": "Absol-Mega",
@@ -2030,7 +2198,10 @@
     "gen": 6
   },
   "glalie": {
-    "tier": "PU"
+    "tier": "PU",
+    "otherFormes": [
+      "glaliemega"
+    ]
   },
   "glaliemega": {
     "id": "glaliemega",
@@ -2074,7 +2245,10 @@
     "tier": "NFE"
   },
   "salamence": {
-    "tier": "UUBL"
+    "tier": "UUBL",
+    "otherFormes": [
+      "salamencemega"
+    ]
   },
   "salamencemega": {
     "id": "salamencemega",
@@ -2104,7 +2278,10 @@
     "tier": "PU"
   },
   "metagross": {
-    "tier": "UU"
+    "tier": "UU",
+    "otherFormes": [
+      "metagrossmega"
+    ]
   },
   "metagrossmega": {
     "id": "metagrossmega",
@@ -2151,6 +2328,21 @@
     },
     "tier": "RU"
   },
+  "latias": {
+    "otherFormes": [
+      "latiasmega"
+    ]
+  },
+  "latios": {
+    "otherFormes": [
+      "latiosmega"
+    ]
+  },
+  "kyogre": {
+    "otherFormes": [
+      "kyogreprimal"
+    ]
+  },
   "kyogreprimal": {
     "id": "kyogreprimal",
     "name": "Kyogre-Primal",
@@ -2174,6 +2366,11 @@
     "weight": 430,
     "type1": "Water",
     "gen": 6
+  },
+  "groudon": {
+    "otherFormes": [
+      "groudonprimal"
+    ]
   },
   "groudonprimal": {
     "id": "groudonprimal",
@@ -2199,6 +2396,11 @@
     "type1": "Ground",
     "type2": "Fire",
     "gen": 6
+  },
+  "rayquaza": {
+    "otherFormes": [
+      "rayquazamega"
+    ]
   },
   "rayquazamega": {
     "id": "rayquazamega",
@@ -2293,7 +2495,10 @@
     "tier": "PU"
   },
   "lopunny": {
-    "tier": "PU"
+    "tier": "PU",
+    "otherFormes": [
+      "lopunnymega"
+    ]
   },
   "lopunnymega": {
     "id": "lopunnymega",
@@ -2340,6 +2545,11 @@
   "gabite": {
     "tier": "PU"
   },
+  "garchomp": {
+    "otherFormes": [
+      "garchompmega"
+    ]
+  },
   "garchompmega": {
     "id": "garchompmega",
     "name": "Garchomp-Mega",
@@ -2368,7 +2578,10 @@
     "tier": "LC"
   },
   "lucario": {
-    "tier": "UU"
+    "tier": "UU",
+    "otherFormes": [
+      "lucariomega"
+    ]
   },
   "lucariomega": {
     "id": "lucariomega",
@@ -2404,7 +2617,10 @@
     "tier": "PU"
   },
   "abomasnow": {
-    "tier": "NU"
+    "tier": "NU",
+    "otherFormes": [
+      "abomasnowmega"
+    ]
   },
   "abomasnowmega": {
     "id": "abomasnowmega",
@@ -2463,6 +2679,11 @@
   },
   "mamoswine": {
     "tier": "UU"
+  },
+  "gallade": {
+    "otherFormes": [
+      "gallademega"
+    ]
   },
   "gallademega": {
     "id": "gallademega",
@@ -2648,7 +2869,10 @@
     "tier": "PU"
   },
   "audino": {
-    "tier": "PU"
+    "tier": "PU",
+    "otherFormes": [
+      "audinomega"
+    ]
   },
   "conkeldurr": {
     "tier": "UU"
@@ -5058,6 +5282,11 @@
     "type1": "Fairy",
     "type2": "Fighting",
     "gen": 6
+  },
+  "cawdet": {
+    "evos": [
+      "cawmodore"
+    ]
   },
   "volkritter": {
     "id": "volkritter",

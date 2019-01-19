@@ -146,7 +146,8 @@
     "tier": "NU"
   },
   "mrmime": {
-    "tier": "NU"
+    "tier": "NU",
+    "prevo": "mimejr"
   },
   "articuno": {
     "tier": "NU"
@@ -159,6 +160,11 @@
   },
   "typhlosion": {
     "tier": "NU"
+  },
+  "togetic": {
+    "evos": [
+      "togekiss"
+    ]
   },
   "ampharos": {
     "tier": "NU"
@@ -175,6 +181,12 @@
   "entei": {
     "tier": "NUBL"
   },
+  "kirlia": {
+    "evos": [
+      "gardevoir",
+      "gallade"
+    ]
+  },
   "gardevoir": {
     "tier": "NU"
   },
@@ -185,7 +197,10 @@
     "tier": "UU"
   },
   "dusclops": {
-    "tier": "NU"
+    "tier": "NU",
+    "evos": [
+      "dusknoir"
+    ]
   },
   "regirock": {
     "tier": "NU"
@@ -374,7 +389,8 @@
     "tier": "UU"
   },
   "mantine": {
-    "tier": "NU"
+    "tier": "NU",
+    "prevo": "mantyke"
   },
   "swellow": {
     "tier": "UU"
@@ -384,6 +400,9 @@
   },
   "solrock": {
     "tier": "NU"
+  },
+  "chimecho": {
+    "prevo": "chingling"
   },
   "burmy": {
     "id": "burmy",
@@ -883,7 +902,10 @@
     "tier": "UU"
   },
   "magneton": {
-    "tier": "NU"
+    "tier": "NU",
+    "evos": [
+      "magnezone"
+    ]
   },
   "muk": {
     "tier": "NU"
@@ -898,16 +920,28 @@
     "tier": "NU"
   },
   "lickitung": {
-    "tier": "LC"
+    "tier": "LC",
+    "evos": [
+      "lickilicky"
+    ]
   },
   "weezing": {
     "tier": "UU"
   },
   "rhydon": {
-    "tier": "NFE"
+    "tier": "NFE",
+    "evos": [
+      "rhyperior"
+    ]
   },
   "chansey": {
-    "tier": "UU"
+    "tier": "UU",
+    "prevo": "happiny"
+  },
+  "tangela": {
+    "evos": [
+      "tangrowth"
+    ]
   },
   "seadra": {
     "tier": "NFE"
@@ -916,10 +950,16 @@
     "tier": "NU"
   },
   "electabuzz": {
-    "tier": "NU"
+    "tier": "NU",
+    "evos": [
+      "electivire"
+    ]
   },
   "magmar": {
-    "tier": "NFE"
+    "tier": "NFE",
+    "evos": [
+      "magmortar"
+    ]
   },
   "pinsir": {
     "tier": "NU"
@@ -930,14 +970,33 @@
   "lapras": {
     "tier": "NU"
   },
+  "eevee": {
+    "evos": [
+      "vaporeon",
+      "jolteon",
+      "flareon",
+      "espeon",
+      "umbreon",
+      "leafeon",
+      "glaceon"
+    ]
+  },
   "vaporeon": {
     "tier": "OU"
+  },
+  "snorlax": {
+    "prevo": "munchlax"
   },
   "dragonair": {
     "tier": "NU"
   },
   "dragonite": {
     "tier": "OU"
+  },
+  "pichu": {
+    "otherFormes": [
+      "pichuspikyeared"
+    ]
   },
   "pichuspikyeared": {
     "id": "pichuspikyeared",
@@ -965,11 +1024,22 @@
   "xatu": {
     "tier": "NU"
   },
+  "sudowoodo": {
+    "prevo": "bonsly"
+  },
   "politoed": {
     "tier": "NU"
   },
   "aipom": {
-    "tier": "LC"
+    "tier": "LC",
+    "evos": [
+      "ambipom"
+    ]
+  },
+  "yanma": {
+    "evos": [
+      "yanmega"
+    ]
   },
   "quagsire": {
     "tier": "NU"
@@ -980,17 +1050,28 @@
   "umbreon": {
     "tier": "OU"
   },
+  "murkrow": {
+    "evos": [
+      "honchkrow"
+    ]
+  },
   "slowking": {
     "tier": "NU"
   },
   "misdreavus": {
-    "tier": "NU"
+    "tier": "NU",
+    "evos": [
+      "mismagius"
+    ]
   },
   "girafarig": {
     "tier": "NU"
   },
   "gligar": {
-    "tier": "NU"
+    "tier": "NU",
+    "evos": [
+      "gliscor"
+    ]
   },
   "steelix": {
     "tier": "UU"
@@ -1002,10 +1083,18 @@
     "tier": "UUBL"
   },
   "sneasel": {
-    "tier": "NU"
+    "tier": "NU",
+    "evos": [
+      "weavile"
+    ]
   },
   "ursaring": {
     "tier": "UU"
+  },
+  "piloswine": {
+    "evos": [
+      "mamoswine"
+    ]
   },
   "houndoom": {
     "tier": "UU"
@@ -1017,7 +1106,10 @@
     "tier": "UU"
   },
   "porygon2": {
-    "tier": "NU"
+    "tier": "NU",
+    "evos": [
+      "porygonz"
+    ]
   },
   "stantler": {
     "tier": "NU"
@@ -1062,7 +1154,10 @@
     "tier": "UU"
   },
   "nosepass": {
-    "tier": "LC"
+    "tier": "LC",
+    "evos": [
+      "probopass"
+    ]
   },
   "meditite": {
     "tier": "LC Uber"
@@ -1072,6 +1167,12 @@
   },
   "manectric": {
     "tier": "NU"
+  },
+  "roselia": {
+    "prevo": "budew",
+    "evos": [
+      "roserade"
+    ]
   },
   "sharpedo": {
     "tier": "NU"
@@ -1096,6 +1197,12 @@
   },
   "banette": {
     "tier": "NU"
+  },
+  "snorunt": {
+    "evos": [
+      "glalie",
+      "froslass"
+    ]
   },
   "walrein": {
     "tier": "NU"

@@ -1,36 +1,247 @@
 {
+  "butterfree": {
+    "abilities": {
+      "0": "Compound Eyes"
+    }
+  },
+  "beedrill": {
+    "abilities": {
+      "0": "Swarm"
+    }
+  },
+  "pidgeot": {
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Tangled Feet"
+    }
+  },
   "pikachu": {
+    "abilities": {
+      "0": "Static"
+    },
     "tier": "NU"
   },
   "raichu": {
+    "abilities": {
+      "0": "Static"
+    },
     "tier": "UU"
+  },
+  "nidoqueen": {
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Rivalry"
+    }
   },
   "nidoking": {
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Rivalry"
+    },
     "tier": "UU"
+  },
+  "clefairy": {
+    "abilities": {
+      "0": "Cute Charm",
+      "1": "Magic Guard"
+    }
   },
   "clefable": {
+    "abilities": {
+      "0": "Cute Charm",
+      "1": "Magic Guard"
+    },
     "tier": "UU"
+  },
+  "jigglypuff": {
+    "abilities": {
+      "0": "Cute Charm"
+    }
+  },
+  "wigglytuff": {
+    "abilities": {
+      "0": "Cute Charm"
+    }
+  },
+  "vileplume": {
+    "abilities": {
+      "0": "Chlorophyll"
+    }
   },
   "poliwrath": {
+    "abilities": {
+      "0": "Water Absorb",
+      "1": "Damp"
+    },
     "tier": "UU"
+  },
+  "alakazam": {
+    "abilities": {
+      "0": "Synchronize",
+      "1": "Inner Focus"
+    }
+  },
+  "victreebel": {
+    "abilities": {
+      "0": "Chlorophyll"
+    }
   },
   "golem": {
+    "abilities": {
+      "0": "Rock Head",
+      "1": "Sturdy"
+    },
     "tier": "UU"
+  },
+  "mrmime": {
+    "abilities": {
+      "0": "Soundproof",
+      "1": "Filter"
+    }
+  },
+  "articuno": {
+    "abilities": {
+      "0": "Pressure"
+    }
+  },
+  "zapdos": {
+    "abilities": {
+      "0": "Pressure"
+    }
+  },
+  "moltres": {
+    "abilities": {
+      "0": "Pressure"
+    }
+  },
+  "chikorita": {
+    "abilities": {
+      "0": "Overgrow"
+    }
+  },
+  "bayleef": {
+    "abilities": {
+      "0": "Overgrow"
+    }
   },
   "meganium": {
+    "abilities": {
+      "0": "Overgrow"
+    },
     "tier": "UU"
   },
+  "cyndaquil": {
+    "abilities": {
+      "0": "Blaze"
+    }
+  },
+  "quilava": {
+    "abilities": {
+      "0": "Blaze"
+    }
+  },
+  "typhlosion": {
+    "abilities": {
+      "0": "Blaze"
+    }
+  },
+  "totodile": {
+    "abilities": {
+      "0": "Torrent"
+    }
+  },
+  "croconaw": {
+    "abilities": {
+      "0": "Torrent"
+    }
+  },
+  "feraligatr": {
+    "abilities": {
+      "0": "Torrent"
+    }
+  },
+  "igglybuff": {
+    "abilities": {
+      "0": "Cute Charm"
+    }
+  },
+  "togepi": {
+    "abilities": {
+      "0": "Hustle",
+      "1": "Serene Grace"
+    }
+  },
+  "togetic": {
+    "abilities": {
+      "0": "Hustle",
+      "1": "Serene Grace"
+    }
+  },
+  "cleffa": {
+    "abilities": {
+      "0": "Cute Charm",
+      "1": "Magic Guard"
+    }
+  },
+  "ampharos": {
+    "abilities": {
+      "0": "Static"
+    }
+  },
   "bellossom": {
+    "abilities": {
+      "0": "Chlorophyll"
+    },
     "tier": "NU"
   },
   "marill": {
-    "tier": "NFE"
+    "abilities": {
+      "0": "Thick Fat",
+      "1": "Huge Power"
+    },
+    "tier": "NFE",
+    "prevo": "azurill"
   },
   "azumarill": {
+    "abilities": {
+      "0": "Thick Fat",
+      "1": "Huge Power"
+    },
     "tier": "UU"
   },
   "jumpluff": {
+    "abilities": {
+      "0": "Chlorophyll",
+      "1": "Leaf Guard"
+    },
     "tier": "UUBL"
+  },
+  "snubbull": {
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Run Away"
+    }
+  },
+  "granbull": {
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Quick Feet"
+    }
+  },
+  "raikou": {
+    "abilities": {
+      "0": "Pressure"
+    }
+  },
+  "entei": {
+    "abilities": {
+      "0": "Pressure"
+    }
+  },
+  "suicune": {
+    "abilities": {
+      "0": "Pressure"
+    }
   },
   "beautifly": {
     "id": "beautifly",
@@ -395,16 +606,84 @@
     "type1": "Steel",
     "gen": 3
   },
+  "arbok": {
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Shed Skin"
+    }
+  },
   "dugtrio": {
+    "abilities": {
+      "0": "Sand Veil",
+      "1": "Arena Trap"
+    },
     "tier": "OU"
   },
+  "farfetchd": {
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Inner Focus"
+    }
+  },
   "dodrio": {
+    "abilities": {
+      "0": "Run Away",
+      "1": "Early Bird"
+    },
     "tier": "UUBL"
+  },
+  "gengar": {
+    "abilities": {
+      "0": "Levitate"
+    }
+  },
+  "electrode": {
+    "abilities": {
+      "0": "Soundproof",
+      "1": "Static"
+    }
   },
   "exeggutor": {
+    "abilities": {
+      "0": "Chlorophyll"
+    },
     "tier": "UUBL"
   },
+  "noctowl": {
+    "abilities": {
+      "0": "Insomnia",
+      "1": "Keen Eye"
+    }
+  },
+  "ariados": {
+    "abilities": {
+      "0": "Swarm",
+      "1": "Insomnia"
+    }
+  },
+  "qwilfish": {
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Swift Swim"
+    }
+  },
+  "magcargo": {
+    "abilities": {
+      "0": "Magma Armor",
+      "1": "Flame Body"
+    }
+  },
+  "corsola": {
+    "abilities": {
+      "0": "Hustle",
+      "1": "Natural Cure"
+    }
+  },
   "mantine": {
+    "abilities": {
+      "0": "Swift Swim",
+      "1": "Water Absorb"
+    },
     "tier": "UU"
   },
   "swellow": {
@@ -730,133 +1009,1154 @@
     "type1": "Psychic",
     "gen": 3
   },
+  "bulbasaur": {
+    "abilities": {
+      "0": "Overgrow"
+    }
+  },
+  "ivysaur": {
+    "abilities": {
+      "0": "Overgrow"
+    }
+  },
+  "venusaur": {
+    "abilities": {
+      "0": "Overgrow"
+    }
+  },
+  "charmander": {
+    "abilities": {
+      "0": "Blaze"
+    }
+  },
+  "charmeleon": {
+    "abilities": {
+      "0": "Blaze"
+    }
+  },
+  "charizard": {
+    "abilities": {
+      "0": "Blaze"
+    }
+  },
+  "squirtle": {
+    "abilities": {
+      "0": "Torrent"
+    }
+  },
+  "wartortle": {
+    "abilities": {
+      "0": "Torrent"
+    }
+  },
+  "blastoise": {
+    "abilities": {
+      "0": "Torrent"
+    }
+  },
+  "caterpie": {
+    "abilities": {
+      "0": "Shield Dust"
+    }
+  },
+  "metapod": {
+    "abilities": {
+      "0": "Shed Skin"
+    }
+  },
+  "weedle": {
+    "abilities": {
+      "0": "Shield Dust"
+    }
+  },
+  "kakuna": {
+    "abilities": {
+      "0": "Shed Skin"
+    }
+  },
+  "pidgey": {
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Tangled Feet"
+    }
+  },
+  "pidgeotto": {
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Tangled Feet"
+    }
+  },
+  "rattata": {
+    "abilities": {
+      "0": "Run Away",
+      "1": "Guts"
+    }
+  },
+  "raticate": {
+    "abilities": {
+      "0": "Run Away",
+      "1": "Guts"
+    }
+  },
+  "spearow": {
+    "abilities": {
+      "0": "Keen Eye"
+    }
+  },
   "fearow": {
+    "abilities": {
+      "0": "Keen Eye"
+    },
     "tier": "UU"
+  },
+  "ekans": {
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Shed Skin"
+    }
+  },
+  "sandshrew": {
+    "abilities": {
+      "0": "Sand Veil"
+    }
+  },
+  "sandslash": {
+    "abilities": {
+      "0": "Sand Veil"
+    }
+  },
+  "nidoranf": {
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Rivalry"
+    }
+  },
+  "nidorina": {
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Rivalry"
+    }
+  },
+  "nidoranm": {
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Rivalry"
+    }
+  },
+  "nidorino": {
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Rivalry"
+    }
+  },
+  "vulpix": {
+    "abilities": {
+      "0": "Flash Fire"
+    }
   },
   "ninetales": {
+    "abilities": {
+      "0": "Flash Fire"
+    },
     "tier": "UU"
+  },
+  "zubat": {
+    "abilities": {
+      "0": "Inner Focus"
+    }
   },
   "golbat": {
+    "abilities": {
+      "0": "Inner Focus"
+    },
     "tier": "NU"
+  },
+  "oddish": {
+    "abilities": {
+      "0": "Chlorophyll"
+    }
+  },
+  "gloom": {
+    "abilities": {
+      "0": "Chlorophyll"
+    }
+  },
+  "paras": {
+    "abilities": {
+      "0": "Effect Spore",
+      "1": "Dry Skin"
+    }
+  },
+  "parasect": {
+    "abilities": {
+      "0": "Effect Spore",
+      "1": "Dry Skin"
+    }
+  },
+  "venonat": {
+    "abilities": {
+      "0": "Compound Eyes",
+      "1": "Tinted Lens"
+    }
+  },
+  "venomoth": {
+    "abilities": {
+      "0": "Shield Dust",
+      "1": "Tinted Lens"
+    }
   },
   "diglett": {
+    "abilities": {
+      "0": "Sand Veil",
+      "1": "Arena Trap"
+    },
     "tier": "NU"
   },
+  "meowth": {
+    "abilities": {
+      "0": "Pickup",
+      "1": "Technician"
+    }
+  },
   "persian": {
+    "abilities": {
+      "0": "Limber",
+      "1": "Technician"
+    },
     "tier": "UU"
+  },
+  "psyduck": {
+    "abilities": {
+      "0": "Damp",
+      "1": "Cloud Nine"
+    }
   },
   "golduck": {
+    "abilities": {
+      "0": "Damp",
+      "1": "Cloud Nine"
+    },
     "tier": "UU"
+  },
+  "mankey": {
+    "abilities": {
+      "0": "Vital Spirit",
+      "1": "Anger Point"
+    }
   },
   "primeape": {
+    "abilities": {
+      "0": "Vital Spirit",
+      "1": "Anger Point"
+    },
     "tier": "UU"
   },
+  "growlithe": {
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Flash Fire"
+    }
+  },
   "arcanine": {
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Flash Fire"
+    },
     "tier": "UUBL"
   },
+  "poliwag": {
+    "abilities": {
+      "0": "Water Absorb",
+      "1": "Damp"
+    }
+  },
+  "poliwhirl": {
+    "abilities": {
+      "0": "Water Absorb",
+      "1": "Damp"
+    }
+  },
   "abra": {
+    "abilities": {
+      "0": "Synchronize",
+      "1": "Inner Focus"
+    },
     "tier": "NU"
   },
   "kadabra": {
+    "abilities": {
+      "0": "Synchronize",
+      "1": "Inner Focus"
+    },
     "tier": "UUBL"
+  },
+  "machop": {
+    "abilities": {
+      "0": "Guts",
+      "1": "No Guard"
+    }
+  },
+  "machoke": {
+    "abilities": {
+      "0": "Guts",
+      "1": "No Guard"
+    }
   },
   "machamp": {
+    "abilities": {
+      "0": "Guts",
+      "1": "No Guard"
+    },
     "tier": "UUBL"
+  },
+  "bellsprout": {
+    "abilities": {
+      "0": "Chlorophyll"
+    }
+  },
+  "weepinbell": {
+    "abilities": {
+      "0": "Chlorophyll"
+    }
+  },
+  "tentacool": {
+    "abilities": {
+      "0": "Clear Body",
+      "1": "Liquid Ooze"
+    }
   },
   "tentacruel": {
+    "abilities": {
+      "0": "Clear Body",
+      "1": "Liquid Ooze"
+    },
     "tier": "UU"
+  },
+  "geodude": {
+    "abilities": {
+      "0": "Rock Head",
+      "1": "Sturdy"
+    }
   },
   "graveler": {
+    "abilities": {
+      "0": "Rock Head",
+      "1": "Sturdy"
+    },
     "tier": "NU"
+  },
+  "ponyta": {
+    "abilities": {
+      "0": "Run Away",
+      "1": "Flash Fire"
+    }
   },
   "rapidash": {
+    "abilities": {
+      "0": "Run Away",
+      "1": "Flash Fire"
+    },
     "tier": "UU"
+  },
+  "slowpoke": {
+    "abilities": {
+      "0": "Oblivious",
+      "1": "Own Tempo"
+    }
   },
   "slowbro": {
+    "abilities": {
+      "0": "Oblivious",
+      "1": "Own Tempo"
+    },
     "tier": "UUBL"
   },
+  "magnemite": {
+    "abilities": {
+      "0": "Magnet Pull",
+      "1": "Sturdy"
+    }
+  },
   "magneton": {
+    "abilities": {
+      "0": "Magnet Pull",
+      "1": "Sturdy"
+    },
     "tier": "OU"
   },
+  "doduo": {
+    "abilities": {
+      "0": "Run Away",
+      "1": "Early Bird"
+    }
+  },
+  "seel": {
+    "abilities": {
+      "0": "Thick Fat",
+      "1": "Hydration"
+    }
+  },
+  "dewgong": {
+    "abilities": {
+      "0": "Thick Fat",
+      "1": "Hydration"
+    }
+  },
+  "grimer": {
+    "abilities": {
+      "0": "Stench",
+      "1": "Sticky Hold"
+    }
+  },
   "muk": {
+    "abilities": {
+      "0": "Stench",
+      "1": "Sticky Hold"
+    },
     "tier": "UU"
   },
+  "shellder": {
+    "abilities": {
+      "0": "Shell Armor",
+      "1": "Skill Link"
+    }
+  },
+  "cloyster": {
+    "abilities": {
+      "0": "Shell Armor",
+      "1": "Skill Link"
+    }
+  },
+  "gastly": {
+    "abilities": {
+      "0": "Levitate"
+    }
+  },
   "haunter": {
+    "abilities": {
+      "0": "Levitate"
+    },
     "tier": "NU"
   },
+  "onix": {
+    "abilities": {
+      "0": "Rock Head",
+      "1": "Sturdy"
+    }
+  },
+  "drowzee": {
+    "abilities": {
+      "0": "Insomnia",
+      "1": "Forewarn"
+    }
+  },
+  "hypno": {
+    "abilities": {
+      "0": "Insomnia",
+      "1": "Forewarn"
+    }
+  },
+  "krabby": {
+    "abilities": {
+      "0": "Hyper Cutter",
+      "1": "Shell Armor"
+    }
+  },
+  "kingler": {
+    "abilities": {
+      "0": "Hyper Cutter",
+      "1": "Shell Armor"
+    }
+  },
+  "voltorb": {
+    "abilities": {
+      "0": "Soundproof",
+      "1": "Static"
+    }
+  },
+  "exeggcute": {
+    "abilities": {
+      "0": "Chlorophyll"
+    }
+  },
+  "cubone": {
+    "abilities": {
+      "0": "Rock Head",
+      "1": "Lightning Rod"
+    }
+  },
   "marowak": {
+    "abilities": {
+      "0": "Rock Head",
+      "1": "Lightning Rod"
+    },
     "tier": "UUBL"
   },
   "hitmonlee": {
+    "abilities": {
+      "0": "Limber",
+      "1": "Reckless"
+    },
     "tier": "UU"
   },
+  "hitmonchan": {
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Iron Fist"
+    }
+  },
+  "lickitung": {
+    "abilities": {
+      "0": "Own Tempo",
+      "1": "Oblivious"
+    }
+  },
+  "koffing": {
+    "abilities": {
+      "0": "Levitate"
+    }
+  },
   "weezing": {
+    "abilities": {
+      "0": "Levitate"
+    },
     "tier": "UUBL"
   },
+  "rhyhorn": {
+    "abilities": {
+      "0": "Lightning Rod",
+      "1": "Rock Head"
+    }
+  },
   "rhydon": {
+    "abilities": {
+      "0": "Lightning Rod",
+      "1": "Rock Head"
+    },
     "tier": "UUBL"
   },
   "chansey": {
+    "abilities": {
+      "0": "Natural Cure",
+      "1": "Serene Grace"
+    },
     "tier": "UUBL"
+  },
+  "tangela": {
+    "abilities": {
+      "0": "Chlorophyll",
+      "1": "Leaf Guard"
+    }
   },
   "kangaskhan": {
+    "abilities": {
+      "0": "Early Bird",
+      "1": "Scrappy"
+    },
     "tier": "UU"
+  },
+  "horsea": {
+    "abilities": {
+      "0": "Swift Swim",
+      "1": "Sniper"
+    }
   },
   "seadra": {
+    "abilities": {
+      "0": "Poison Point",
+      "1": "Sniper"
+    },
     "tier": "NU"
+  },
+  "goldeen": {
+    "abilities": {
+      "0": "Swift Swim",
+      "1": "Water Veil"
+    }
+  },
+  "seaking": {
+    "abilities": {
+      "0": "Swift Swim",
+      "1": "Water Veil"
+    }
+  },
+  "staryu": {
+    "abilities": {
+      "0": "Illuminate",
+      "1": "Natural Cure"
+    }
+  },
+  "starmie": {
+    "abilities": {
+      "0": "Illuminate",
+      "1": "Natural Cure"
+    }
+  },
+  "scyther": {
+    "abilities": {
+      "0": "Swarm",
+      "1": "Technician"
+    }
+  },
+  "jynx": {
+    "abilities": {
+      "0": "Oblivious",
+      "1": "Forewarn"
+    }
+  },
+  "electabuzz": {
+    "abilities": {
+      "0": "Static"
+    }
   },
   "magmar": {
+    "abilities": {
+      "0": "Flame Body"
+    },
     "tier": "UU"
+  },
+  "pinsir": {
+    "abilities": {
+      "0": "Hyper Cutter",
+      "1": "Mold Breaker"
+    }
+  },
+  "tauros": {
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Anger Point"
+    }
+  },
+  "magikarp": {
+    "abilities": {
+      "0": "Swift Swim"
+    }
   },
   "gyarados": {
+    "abilities": {
+      "0": "Intimidate"
+    },
     "tier": "OU"
+  },
+  "lapras": {
+    "abilities": {
+      "0": "Water Absorb",
+      "1": "Shell Armor"
+    }
+  },
+  "ditto": {
+    "abilities": {
+      "0": "Limber"
+    }
+  },
+  "eevee": {
+    "abilities": {
+      "0": "Run Away",
+      "1": "Adaptability"
+    }
   },
   "vaporeon": {
+    "abilities": {
+      "0": "Water Absorb"
+    },
     "tier": "UUBL"
+  },
+  "jolteon": {
+    "abilities": {
+      "0": "Volt Absorb"
+    }
+  },
+  "flareon": {
+    "abilities": {
+      "0": "Flash Fire"
+    }
+  },
+  "porygon": {
+    "abilities": {
+      "0": "Trace",
+      "1": "Download"
+    }
+  },
+  "omanyte": {
+    "abilities": {
+      "0": "Swift Swim",
+      "1": "Shell Armor"
+    }
+  },
+  "omastar": {
+    "abilities": {
+      "0": "Swift Swim",
+      "1": "Shell Armor"
+    }
+  },
+  "kabuto": {
+    "abilities": {
+      "0": "Swift Swim",
+      "1": "Battle Armor"
+    }
+  },
+  "kabutops": {
+    "abilities": {
+      "0": "Swift Swim",
+      "1": "Battle Armor"
+    }
   },
   "aerodactyl": {
+    "abilities": {
+      "0": "Rock Head",
+      "1": "Pressure"
+    },
     "tier": "OU"
   },
+  "snorlax": {
+    "abilities": {
+      "0": "Immunity",
+      "1": "Thick Fat"
+    }
+  },
+  "dratini": {
+    "abilities": {
+      "0": "Shed Skin"
+    }
+  },
+  "dragonair": {
+    "abilities": {
+      "0": "Shed Skin"
+    }
+  },
+  "dragonite": {
+    "abilities": {
+      "0": "Inner Focus"
+    }
+  },
+  "mewtwo": {
+    "abilities": {
+      "0": "Pressure"
+    }
+  },
+  "mew": {
+    "abilities": {
+      "0": "Synchronize"
+    }
+  },
+  "sentret": {
+    "abilities": {
+      "0": "Run Away",
+      "1": "Keen Eye"
+    }
+  },
+  "furret": {
+    "abilities": {
+      "0": "Run Away",
+      "1": "Keen Eye"
+    }
+  },
+  "hoothoot": {
+    "abilities": {
+      "0": "Insomnia",
+      "1": "Keen Eye"
+    }
+  },
+  "ledyba": {
+    "abilities": {
+      "0": "Swarm",
+      "1": "Early Bird"
+    }
+  },
+  "ledian": {
+    "abilities": {
+      "0": "Swarm",
+      "1": "Early Bird"
+    }
+  },
+  "spinarak": {
+    "abilities": {
+      "0": "Swarm",
+      "1": "Insomnia"
+    }
+  },
   "crobat": {
+    "abilities": {
+      "0": "Inner Focus"
+    },
     "tier": "UUBL"
+  },
+  "chinchou": {
+    "abilities": {
+      "0": "Volt Absorb",
+      "1": "Illuminate"
+    }
+  },
+  "lanturn": {
+    "abilities": {
+      "0": "Volt Absorb",
+      "1": "Illuminate"
+    }
+  },
+  "pichu": {
+    "abilities": {
+      "0": "Static"
+    }
+  },
+  "natu": {
+    "abilities": {
+      "0": "Synchronize",
+      "1": "Early Bird"
+    }
   },
   "xatu": {
+    "abilities": {
+      "0": "Synchronize",
+      "1": "Early Bird"
+    },
     "tier": "UU"
+  },
+  "mareep": {
+    "abilities": {
+      "0": "Static"
+    }
+  },
+  "flaaffy": {
+    "abilities": {
+      "0": "Static"
+    }
+  },
+  "sudowoodo": {
+    "abilities": {
+      "0": "Sturdy",
+      "1": "Rock Head"
+    }
+  },
+  "politoed": {
+    "abilities": {
+      "0": "Water Absorb",
+      "1": "Damp"
+    }
+  },
+  "hoppip": {
+    "abilities": {
+      "0": "Chlorophyll",
+      "1": "Leaf Guard"
+    }
+  },
+  "skiploom": {
+    "abilities": {
+      "0": "Chlorophyll",
+      "1": "Leaf Guard"
+    }
+  },
+  "aipom": {
+    "abilities": {
+      "0": "Run Away",
+      "1": "Pickup"
+    }
+  },
+  "sunkern": {
+    "abilities": {
+      "0": "Chlorophyll",
+      "1": "Solar Power"
+    }
+  },
+  "sunflora": {
+    "abilities": {
+      "0": "Chlorophyll",
+      "1": "Solar Power"
+    }
+  },
+  "yanma": {
+    "abilities": {
+      "0": "Speed Boost",
+      "1": "Compound Eyes"
+    }
+  },
+  "wooper": {
+    "abilities": {
+      "0": "Damp",
+      "1": "Water Absorb"
+    }
+  },
+  "quagsire": {
+    "abilities": {
+      "0": "Damp",
+      "1": "Water Absorb"
+    }
+  },
+  "espeon": {
+    "abilities": {
+      "0": "Synchronize"
+    }
   },
   "umbreon": {
+    "abilities": {
+      "0": "Synchronize"
+    },
     "tier": "UUBL"
+  },
+  "murkrow": {
+    "abilities": {
+      "0": "Insomnia",
+      "1": "Super Luck"
+    }
+  },
+  "slowking": {
+    "abilities": {
+      "0": "Oblivious",
+      "1": "Own Tempo"
+    }
   },
   "misdreavus": {
+    "abilities": {
+      "0": "Levitate"
+    },
     "tier": "UU"
+  },
+  "unown": {
+    "abilities": {
+      "0": "Levitate"
+    }
   },
   "wobbuffet": {
-    "tier": "Uber"
+    "abilities": {
+      "0": "Shadow Tag"
+    },
+    "tier": "Uber",
+    "prevo": "wynaut"
+  },
+  "girafarig": {
+    "abilities": {
+      "0": "Inner Focus",
+      "1": "Early Bird"
+    }
+  },
+  "pineco": {
+    "abilities": {
+      "0": "Sturdy"
+    }
+  },
+  "forretress": {
+    "abilities": {
+      "0": "Sturdy"
+    }
+  },
+  "dunsparce": {
+    "abilities": {
+      "0": "Serene Grace",
+      "1": "Run Away"
+    }
+  },
+  "gligar": {
+    "abilities": {
+      "0": "Hyper Cutter",
+      "1": "Sand Veil"
+    }
   },
   "steelix": {
+    "abilities": {
+      "0": "Rock Head",
+      "1": "Sturdy"
+    },
     "tier": "UUBL"
   },
+  "scizor": {
+    "abilities": {
+      "0": "Swarm",
+      "1": "Technician"
+    }
+  },
+  "shuckle": {
+    "abilities": {
+      "0": "Sturdy",
+      "1": "Gluttony"
+    }
+  },
+  "heracross": {
+    "abilities": {
+      "0": "Swarm",
+      "1": "Guts"
+    }
+  },
   "sneasel": {
+    "abilities": {
+      "0": "Inner Focus",
+      "1": "Keen Eye"
+    },
     "tier": "UU"
+  },
+  "teddiursa": {
+    "abilities": {
+      "0": "Pickup",
+      "1": "Quick Feet"
+    }
+  },
+  "ursaring": {
+    "abilities": {
+      "0": "Guts",
+      "1": "Quick Feet"
+    }
+  },
+  "slugma": {
+    "abilities": {
+      "0": "Magma Armor",
+      "1": "Flame Body"
+    }
+  },
+  "swinub": {
+    "abilities": {
+      "0": "Oblivious",
+      "1": "Snow Cloak"
+    }
   },
   "piloswine": {
+    "abilities": {
+      "0": "Oblivious",
+      "1": "Snow Cloak"
+    },
     "tier": "NU"
   },
+  "remoraid": {
+    "abilities": {
+      "0": "Hustle",
+      "1": "Sniper"
+    }
+  },
+  "octillery": {
+    "abilities": {
+      "0": "Suction Cups",
+      "1": "Sniper"
+    }
+  },
+  "delibird": {
+    "abilities": {
+      "0": "Vital Spirit",
+      "1": "Hustle"
+    }
+  },
+  "skarmory": {
+    "abilities": {
+      "0": "Keen Eye",
+      "1": "Sturdy"
+    }
+  },
+  "houndour": {
+    "abilities": {
+      "0": "Early Bird",
+      "1": "Flash Fire"
+    }
+  },
+  "houndoom": {
+    "abilities": {
+      "0": "Early Bird",
+      "1": "Flash Fire"
+    }
+  },
+  "kingdra": {
+    "abilities": {
+      "0": "Swift Swim",
+      "1": "Sniper"
+    }
+  },
+  "phanpy": {
+    "abilities": {
+      "0": "Pickup"
+    }
+  },
+  "donphan": {
+    "abilities": {
+      "0": "Sturdy"
+    }
+  },
+  "porygon2": {
+    "abilities": {
+      "0": "Trace",
+      "1": "Download"
+    }
+  },
   "stantler": {
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Frisk"
+    },
     "tier": "UU"
+  },
+  "smeargle": {
+    "abilities": {
+      "0": "Own Tempo",
+      "1": "Technician"
+    }
+  },
+  "tyrogue": {
+    "abilities": {
+      "0": "Guts",
+      "1": "Steadfast"
+    }
   },
   "hitmontop": {
+    "abilities": {
+      "0": "Intimidate",
+      "1": "Technician"
+    },
     "tier": "UU"
   },
+  "smoochum": {
+    "abilities": {
+      "0": "Oblivious",
+      "1": "Forewarn"
+    }
+  },
+  "elekid": {
+    "abilities": {
+      "0": "Static"
+    }
+  },
   "magby": {
+    "abilities": {
+      "0": "Flame Body"
+    },
     "tier": "NU"
   },
   "miltank": {
+    "abilities": {
+      "0": "Thick Fat",
+      "1": "Scrappy"
+    },
     "tier": "UUBL"
   },
+  "blissey": {
+    "abilities": {
+      "0": "Natural Cure",
+      "1": "Serene Grace"
+    }
+  },
+  "larvitar": {
+    "abilities": {
+      "0": "Guts"
+    }
+  },
   "pupitar": {
+    "abilities": {
+      "0": "Shed Skin"
+    },
     "tier": "NU"
   },
+  "tyranitar": {
+    "abilities": {
+      "0": "Sand Stream"
+    }
+  },
+  "lugia": {
+    "abilities": {
+      "0": "Pressure"
+    }
+  },
+  "hooh": {
+    "abilities": {
+      "0": "Pressure"
+    }
+  },
   "celebi": {
+    "abilities": {
+      "0": "Natural Cure"
+    },
     "tier": "OU"
   },
   "treecko": {

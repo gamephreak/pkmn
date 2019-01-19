@@ -17,6 +17,11 @@
   "pidgeotmega": {
     "tier": "UU"
   },
+  "rattata": {
+    "otherFormes": [
+      "rattataalola"
+    ]
+  },
   "rattataalola": {
     "id": "rattataalola",
     "name": "Rattata-Alola",
@@ -45,6 +50,12 @@
     "type1": "Dark",
     "type2": "Normal",
     "gen": 7
+  },
+  "raticate": {
+    "otherFormes": [
+      "raticatealola",
+      "raticatealolatotem"
+    ]
   },
   "raticatealola": {
     "id": "raticatealola",
@@ -101,6 +112,28 @@
     "baseStats": {
       "atk": 95
     }
+  },
+  "pikachu": {
+    "evos": [
+      "raichu",
+      "raichualola"
+    ],
+    "otherFormes": [
+      "pikachucosplay",
+      "pikachurockstar",
+      "pikachubelle",
+      "pikachupopstar",
+      "pikachuphd",
+      "pikachulibre",
+      "pikachuoriginal",
+      "pikachuhoenn",
+      "pikachusinnoh",
+      "pikachuunova",
+      "pikachukalos",
+      "pikachualola",
+      "pikachupartner",
+      "pikachustarter"
+    ]
   },
   "pikachucosplay": {
     "tier": "Illegal"
@@ -313,6 +346,11 @@
     "type1": "Electric",
     "gen": 7
   },
+  "raichu": {
+    "otherFormes": [
+      "raichualola"
+    ]
+  },
   "raichualola": {
     "id": "raichualola",
     "name": "Raichu-Alola",
@@ -337,6 +375,11 @@
     "type1": "Electric",
     "type2": "Psychic",
     "gen": 7
+  },
+  "sandshrew": {
+    "otherFormes": [
+      "sandshrewalola"
+    ]
   },
   "sandshrewalola": {
     "id": "sandshrewalola",
@@ -367,7 +410,10 @@
     "gen": 7
   },
   "sandslash": {
-    "tier": "PU"
+    "tier": "PU",
+    "otherFormes": [
+      "sandslashalola"
+    ]
   },
   "sandslashalola": {
     "id": "sandslashalola",
@@ -399,7 +445,10 @@
     "tier": "RU"
   },
   "vulpix": {
-    "tier": "LC Uber"
+    "tier": "LC Uber",
+    "otherFormes": [
+      "vulpixalola"
+    ]
   },
   "vulpixalola": {
     "id": "vulpixalola",
@@ -429,7 +478,10 @@
     "gen": 7
   },
   "ninetales": {
-    "tier": "RU"
+    "tier": "RU",
+    "otherFormes": [
+      "ninetalesalola"
+    ]
   },
   "ninetalesalola": {
     "id": "ninetalesalola",
@@ -459,6 +511,11 @@
   },
   "golbat": {
     "tier": "NU"
+  },
+  "diglett": {
+    "otherFormes": [
+      "diglettalola"
+    ]
   },
   "diglettalola": {
     "id": "diglettalola",
@@ -493,7 +550,10 @@
     "baseStats": {
       "atk": 100
     },
-    "tier": "PU"
+    "tier": "PU",
+    "otherFormes": [
+      "dugtrioalola"
+    ]
   },
   "dugtrioalola": {
     "id": "dugtrioalola",
@@ -522,6 +582,11 @@
     "type2": "Steel",
     "gen": 7
   },
+  "meowth": {
+    "otherFormes": [
+      "meowthalola"
+    ]
+  },
   "meowthalola": {
     "id": "meowthalola",
     "name": "Meowth-Alola",
@@ -549,6 +614,11 @@
     "weight": 4.2,
     "type1": "Dark",
     "gen": 7
+  },
+  "persian": {
+    "otherFormes": [
+      "persianalola"
+    ]
   },
   "persianalola": {
     "id": "persianalola",
@@ -603,6 +673,11 @@
   "victreebel": {
     "tier": "PU"
   },
+  "geodude": {
+    "otherFormes": [
+      "geodudealola"
+    ]
+  },
   "geodudealola": {
     "id": "geodudealola",
     "name": "Geodude-Alola",
@@ -631,6 +706,11 @@
     "type1": "Rock",
     "type2": "Electric",
     "gen": 7
+  },
+  "graveler": {
+    "otherFormes": [
+      "graveleralola"
+    ]
   },
   "graveleralola": {
     "id": "graveleralola",
@@ -661,6 +741,11 @@
     "type1": "Rock",
     "type2": "Electric",
     "gen": 7
+  },
+  "golem": {
+    "otherFormes": [
+      "golemalola"
+    ]
   },
   "golemalola": {
     "id": "golemalola",
@@ -708,6 +793,11 @@
       "spe": 110
     }
   },
+  "grimer": {
+    "otherFormes": [
+      "grimeralola"
+    ]
+  },
   "grimeralola": {
     "id": "grimeralola",
     "name": "Grimer-Alola",
@@ -736,6 +826,11 @@
     "type1": "Poison",
     "type2": "Dark",
     "gen": 7
+  },
+  "muk": {
+    "otherFormes": [
+      "mukalola"
+    ]
   },
   "mukalola": {
     "id": "mukalola",
@@ -784,11 +879,20 @@
       "spe": 150
     }
   },
+  "exeggcute": {
+    "evos": [
+      "exeggutor",
+      "exeggutoralola"
+    ]
+  },
   "exeggutor": {
     "baseStats": {
       "spd": 75
     },
-    "tier": "PU"
+    "tier": "PU",
+    "otherFormes": [
+      "exeggutoralola"
+    ]
   },
   "exeggutoralola": {
     "id": "exeggutoralola",
@@ -815,6 +919,18 @@
     "type1": "Grass",
     "type2": "Dragon",
     "gen": 7
+  },
+  "cubone": {
+    "evos": [
+      "marowak",
+      "marowakalola"
+    ]
+  },
+  "marowak": {
+    "otherFormes": [
+      "marowakalola",
+      "marowakalolatotem"
+    ]
   },
   "marowakalola": {
     "id": "marowakalola",
@@ -899,6 +1015,11 @@
   },
   "gyaradosmega": {
     "tier": "OU"
+  },
+  "eevee": {
+    "otherFormes": [
+      "eeveestarter"
+    ]
   },
   "eeveestarter": {
     "id": "eeveestarter",
@@ -1548,7 +1669,10 @@
       "H": "Protean",
       "S": "Battle Bond"
     },
-    "tier": "OU"
+    "tier": "OU",
+    "otherFormes": [
+      "greninjaash"
+    ]
   },
   "greninjaash": {
     "id": "greninjaash",
@@ -1656,7 +1780,11 @@
       "0": "Aura Break",
       "H": "Power Construct"
     },
-    "tier": "Uber"
+    "tier": "Uber",
+    "otherFormes": [
+      "zygarde10",
+      "zygardecomplete"
+    ]
   },
   "zygarde10": {
     "id": "zygarde10",
