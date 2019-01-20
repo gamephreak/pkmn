@@ -8,7 +8,8 @@ import * as sm from './data/sm/moves.json';
 import * as xy from './data/xy/moves.json';
 import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
-import {StatsTable} from './stats';
+import {BoostsTable} from './stats';
+import {Status} from './status';
 import {Type} from './types';
 
 export type Category = 'Physical'|'Special'|'Status';
@@ -96,30 +97,56 @@ interface Flags {
   sound?: Flag;  // TODO isSound
 }
 
+interface SelfEffect {
+  readonly boosts?: Partial<BoostsTable>;
+  readonly chance?: number;
+  readonly sideCondition?: string;   // TODO
+  readonly volatileStatus?: string;  // TODO
+}
+
+interface SecondaryEffect {
+  readonly chance?: number;
+  // readonly ability?: Ability; // TODO
+  readonly boosts?: Partial<BoostsTable>;
+  readonly self?: SelfEffect;
+
+  readonly status?: Status;
+  readonly volatileStatus?: string;  // TODO
+  readonly dustproof?: boolean;
+  readonly kingsrock?: boolean;
+}
+
 export interface Move extends Data {
-  readonly basePower: number;  // bp
   readonly accuracy: number|true;
   readonly pp: number;
   readonly type: Type;
-  readonly category: Category;
-  readonly priority: number;  // TODO hasPriority
-  readonly target: Target;    // TODO isSpread
-  readonly flags: Readonly<Flags>;
+  readonly target: Target;  // TODO isSpread
+
+  readonly flags?: Readonly<Flags>;
+  readonly basePower?: number;  // bp
+  readonly priority?: number;   // TODO hasPriority
+  readonly category?: Category;
   readonly critRatio?: number;
   readonly isZ?: ID;             // TODO isZ
   readonly zMovePower?: number;  // TODO zp
-  readonly zMoveBoost?: Partial<StatsTable>;
+  readonly zMoveBoosts?: Partial<BoostsTable>;
   readonly multihit?: number|number[];    // TODO isMultiHit/isTwoHit
   readonly percentHealed?: number;        // TODO percentHealed
-  readonly dropsStats?: number;           // TODO dropsStats
   readonly recoil?: Recoil;               // TODO hasRecoil
   readonly defensiveCategory?: Category;  // TODO dealsPhysicalDamage
-  readonly useHighest?: boolean;          // TODO usesHighestAttackStat
-  readonly breaksProtect?: boolean;       // TODO bypassesProtect
-  readonly ignoresBurn?: boolean;         // TODO ignoresBurn
-  readonly secondary?: boolean;
+  // readonly useHighest?: boolean;          // hardcode Zs
+  readonly breaksProtect?: boolean;  // TODO bypassesProtect
+  // readonly ignoresBurn?: boolean;         // TODO  hardcode Facade
+  // dropsStats ignoresBurn?: boolean;         // TODO deduce from
+  // self.boosts/boosts?
+  readonly secondaries?: SecondaryEffect[];
   readonly ignoreDefensive?: boolean;  // TODO ignoresDefenseBoosts
   readonly willCrit?: boolean;         // TODO alwaysCrit
+
+  readonly status?: Status;          // TODO
+  readonly sideCondition?: string;   // TODO
+  readonly volatileStatus?: string;  // TODO
+  readonly boosts?: Partial<BoostsTable>|false;
 }
 
 const RBY: DataTable<Move> = patch({}, rby);
