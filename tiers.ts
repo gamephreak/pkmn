@@ -63,6 +63,114 @@ const NON_STANDARD: Readonly<{[id: string]: Tier}> = {
 const TIERS: Readonly<{[id: string]: Tier}> =
     extend(true, {}, OFFICIAL, BANLISTS, OTHER, NON_STANDARD);
 
+const ALLOWED: Readonly<{[tier in Tier]: Readonly<{[tier in Tier]?: 1}>}> = {
+  'AG': {
+    'AG': 1,
+    'Uber': 1,
+    'OU': 1,
+    'UUBL': 1,
+    'UU': 1,
+    'RUBL': 1,
+    'RU': 1,
+    'NUBL': 1,
+    'NU': 1,
+    'PUBL': 1,
+    'PU': 1,
+    'NFE': 1,
+    'LC Uber': 1,
+    'LC': 1
+  },
+  'Uber': {
+    'Uber': 1,
+    'OU': 1,
+    'UUBL': 1,
+    'UU': 1,
+    'RUBL': 1,
+    'RU': 1,
+    'NUBL': 1,
+    'NU': 1,
+    'PUBL': 1,
+    'PU': 1,
+    'NFE': 1,
+    'LC Uber': 1,
+    'LC': 1
+  },
+  'OU': {
+    'OU': 1,
+    'UUBL': 1,
+    'UU': 1,
+    'RUBL': 1,
+    'RU': 1,
+    'NUBL': 1,
+    'NU': 1,
+    'PUBL': 1,
+    'PU': 1,
+    'NFE': 1,
+    'LC Uber': 1,
+    'LC': 1
+  },
+  'UUBL': {
+    'UUBL': 1,
+    'UU': 1,
+    'RUBL': 1,
+    'RU': 1,
+    'NUBL': 1,
+    'NU': 1,
+    'PUBL': 1,
+    'PU': 1,
+    'NFE': 1,
+    'LC Uber': 1,
+    'LC': 1
+  },
+  'UU': {
+    'UU': 1,
+    'RUBL': 1,
+    'RU': 1,
+    'NUBL': 1,
+    'NU': 1,
+    'PUBL': 1,
+    'PU': 1,
+    'NFE': 1,
+    'LC Uber': 1,
+    'LC': 1
+  },
+  'RUBL': {
+    'RUBL': 1,
+    'RU': 1,
+    'NUBL': 1,
+    'NU': 1,
+    'PUBL': 1,
+    'PU': 1,
+    'NFE': 1,
+    'LC Uber': 1,
+    'LC': 1
+  },
+  'RU': {
+    'RU': 1,
+    'NUBL': 1,
+    'NU': 1,
+    'PUBL': 1,
+    'PU': 1,
+    'NFE': 1,
+    'LC Uber': 1,
+    'LC': 1
+  },
+  'NUBL':
+      {'NUBL': 1, 'NU': 1, 'PUBL': 1, 'PU': 1, 'NFE': 1, 'LC Uber': 1, 'LC': 1},
+  'NU': {'NU': 1, 'PUBL': 1, 'PU': 1, 'NFE': 1, 'LC Uber': 1, 'LC': 1},
+  'PUBL': {'PUBL': 1, 'PU': 1, 'NFE': 1, 'LC Uber': 1, 'LC': 1},
+  'PU': {'PU': 1, 'NFE': 1, 'LC Uber': 1, 'LC': 1},
+  'NFE': {'NFE': 1, 'LC Uber': 1, 'LC': 1},
+  'LC Uber': {'LC Uber': 1, 'LC': 1},
+  'LC': {'LC': 1},
+  'Unreleased': {},
+  'Illegal': {},
+  // BUG: TBH, I have no clue how these work?
+  'CAP': {'CAP': 1, 'CAP NFE': 1, 'CAP LC': 1},
+  'CAP NFE': {'CAP NFE': 1, 'CAP LC': 1},
+  'CAP LC': {'CAP LC': 1}
+};
+
 export class Tiers {
   static fromString(t: string): Tier|undefined {
     return TIERS[toID(t)];
@@ -76,7 +184,7 @@ export class Tiers {
     return !!NON_STANDARD[t];
   }
 
-  static isAllowed(s: Species): boolean {
-    return true;  // TODO implement
+  static isAllowed(s: Species, t: Tier): boolean {
+    return !!s.tier && !!ALLOWED[t][s.tier];
   }
 }
