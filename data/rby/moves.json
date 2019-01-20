@@ -1,0 +1,3080 @@
+{
+  "absorb": {
+    "id": "absorb",
+    "name": "Absorb",
+    "num": 71,
+    "shortDesc": "User recovers 50% of the damage dealt.",
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded down. If this move breaks the target's substitute, the user does not recover any HP.",
+    "flags": {
+      "mirror": 1
+    },
+    "pp": 20,
+    "accuracy": 100,
+    "basePower": 20,
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "acid": {
+    "id": "acid",
+    "name": "Acid",
+    "num": 51,
+    "shortDesc": "33% chance to lower the target's Defense by 1.",
+    "desc": "Has a 33% chance to lower the target's Defense by 1 stage.",
+    "flags": {
+      "mirror": 1
+    },
+    "target": "normal",
+    "accuracy": 100,
+    "basePower": 40,
+    "pp": 30,
+    "type": "Poison",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 33,
+        "boosts": {
+          "def": -1
+        }
+      }
+    ],
+    "gen": 1
+  },
+  "acidarmor": {
+    "id": "acidarmor",
+    "name": "Acid Armor",
+    "num": 151,
+    "shortDesc": "Raises the user's Defense by 2.",
+    "desc": "Raises the user's Defense by 2 stages.",
+    "flags": {},
+    "pp": 40,
+    "accuracy": true,
+    "category": "Status",
+    "boosts": {
+      "def": 2
+    },
+    "target": "self",
+    "type": "Poison",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "agility": {
+    "id": "agility",
+    "name": "Agility",
+    "num": 97,
+    "shortDesc": "Raises the user's Speed by 2.",
+    "desc": "Raises the user's Speed by 2 stages.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 30,
+    "boosts": {
+      "spe": 2
+    },
+    "target": "self",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "amnesia": {
+    "id": "amnesia",
+    "name": "Amnesia",
+    "num": 133,
+    "shortDesc": "Raises the user's Special by 2.",
+    "desc": "Raises the user's Special by 2 stages.",
+    "flags": {},
+    "boosts": {
+      "spd": 2,
+      "spa": 2
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "target": "self",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "aurorabeam": {
+    "id": "aurorabeam",
+    "name": "Aurora Beam",
+    "num": 62,
+    "shortDesc": "33% chance to lower the target's Attack by 1.",
+    "desc": "Has a 33% chance to lower the target's Attack by 1 stage.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 65,
+    "pp": 20,
+    "target": "normal",
+    "type": "Ice",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 33,
+        "boosts": {
+          "atk": -1
+        }
+      }
+    ],
+    "gen": 1
+  },
+  "barrage": {
+    "id": "barrage",
+    "name": "Barrage",
+    "num": 140,
+    "shortDesc": "Hits 2-5 times in one turn.",
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 85,
+    "basePower": 15,
+    "pp": 20,
+    "multihit": [
+      2,
+      5
+    ],
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "barrier": {
+    "id": "barrier",
+    "name": "Barrier",
+    "num": 112,
+    "shortDesc": "Raises the user's Defense by 2.",
+    "desc": "Raises the user's Defense by 2 stages.",
+    "flags": {},
+    "pp": 30,
+    "accuracy": true,
+    "category": "Status",
+    "boosts": {
+      "def": 2
+    },
+    "target": "self",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "bide": {
+    "id": "bide",
+    "name": "Bide",
+    "num": 117,
+    "shortDesc": "Waits 2-3 turns; deals double the damage taken.",
+    "desc": "The user spends two or three turns locked into this move and then, on the second or third turn after using this move, the user attacks the opponent, inflicting double the damage in HP it lost during those turns. This move ignores type immunity and cannot be avoided even if the target is using Dig or Fly. The user can choose to switch out during the effect. If the user switches out or is prevented from moving during this move's use, the effect ends. During the effect, if the opposing Pokemon switches out or uses Confuse Ray, Conversion, Focus Energy, Glare, Haze, Leech Seed, Light Screen, Mimic, Mist, Poison Gas, Poison Powder, Recover, Reflect, Rest, Soft-Boiled, Splash, Stun Spore, Substitute, Supersonic, Teleport, Thunder Wave, Toxic, or Transform, the previous damage dealt to the user will be added to the total.",
+    "flags": {},
+    "accuracy": true,
+    "type": "???",
+    "pp": 10,
+    "volatileStatus": "bide",
+    "target": "self",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "bind": {
+    "id": "bind",
+    "name": "Bind",
+    "num": 20,
+    "shortDesc": "Prevents the target from moving for 2-5 turns.",
+    "desc": "The user spends two to five turns using this move. Has a 3/8 chance to last two or three turns, and a 1/8 chance to last four or five turns. The damage calculated for the first turn is used for every other turn. The user cannot select a move and the target cannot execute a move during the effect, but both may switch out. If the user switches out, the target remains unable to execute a move during that turn. If the target switches out, the user uses this move again automatically, and if it had 0 PP at the time, it becomes 63. If the user or the target switch out, or the user is prevented from moving, the effect ends. This move can prevent the target from moving even if it has type immunity, but will not deal damage.",
+    "flags": {
+      "mirror": 1
+    },
+    "volatileStatus": "partiallytrapped",
+    "accuracy": 75,
+    "basePower": 15,
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "bite": {
+    "id": "bite",
+    "name": "Bite",
+    "num": 44,
+    "shortDesc": "10% chance to flinch the target.",
+    "desc": "Has a 10% chance to flinch the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "type": "Normal",
+    "accuracy": 100,
+    "basePower": 60,
+    "pp": 25,
+    "target": "normal",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "volatileStatus": "flinch"
+      }
+    ],
+    "gen": 1
+  },
+  "blizzard": {
+    "id": "blizzard",
+    "name": "Blizzard",
+    "num": 59,
+    "shortDesc": "10% chance to freeze the target.",
+    "desc": "Has a 10% chance to freeze the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "target": "normal",
+    "basePower": 120,
+    "pp": 5,
+    "type": "Ice",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "status": "frz"
+      }
+    ],
+    "gen": 1
+  },
+  "bodyslam": {
+    "id": "bodyslam",
+    "name": "Body Slam",
+    "num": 34,
+    "shortDesc": "30% chance to paralyze the target.",
+    "desc": "Has a 30% chance to paralyze the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 85,
+    "pp": 15,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "status": "par"
+      }
+    ],
+    "gen": 1
+  },
+  "boneclub": {
+    "id": "boneclub",
+    "name": "Bone Club",
+    "num": 125,
+    "shortDesc": "10% chance to flinch the target.",
+    "desc": "Has a 10% chance to flinch the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 85,
+    "basePower": 65,
+    "pp": 20,
+    "target": "normal",
+    "type": "Ground",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "volatileStatus": "flinch"
+      }
+    ],
+    "gen": 1
+  },
+  "bonemerang": {
+    "id": "bonemerang",
+    "name": "Bonemerang",
+    "num": 155,
+    "shortDesc": "Hits 2 times in one turn.",
+    "desc": "Hits twice. If the first hit breaks the target's substitute, the move ends.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "basePower": 50,
+    "pp": 10,
+    "multihit": 2,
+    "target": "normal",
+    "type": "Ground",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "bubble": {
+    "id": "bubble",
+    "name": "Bubble",
+    "num": 145,
+    "shortDesc": "33% chance to lower the target's Speed by 1.",
+    "desc": "Has a 33% chance to lower the target's Speed by 1 stage.",
+    "flags": {
+      "mirror": 1
+    },
+    "target": "normal",
+    "basePower": 20,
+    "accuracy": 100,
+    "pp": 30,
+    "type": "Water",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 33,
+        "boosts": {
+          "spe": -1
+        }
+      }
+    ],
+    "gen": 1
+  },
+  "bubblebeam": {
+    "id": "bubblebeam",
+    "name": "Bubble Beam",
+    "num": 61,
+    "shortDesc": "33% chance to lower the target's Speed by 1.",
+    "desc": "Has a 33% chance to lower the target's Speed by 1 stage.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 65,
+    "pp": 20,
+    "target": "normal",
+    "type": "Water",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 33,
+        "boosts": {
+          "spe": -1
+        }
+      }
+    ],
+    "gen": 1
+  },
+  "clamp": {
+    "id": "clamp",
+    "name": "Clamp",
+    "num": 128,
+    "shortDesc": "Prevents the target from moving for 2-5 turns.",
+    "desc": "The user spends two to five turns using this move. Has a 3/8 chance to last two or three turns, and a 1/8 chance to last four or five turns. The damage calculated for the first turn is used for every other turn. The user cannot select a move and the target cannot execute a move during the effect, but both may switch out. If the user switches out, the target remains unable to execute a move during that turn. If the target switches out, the user uses this move again automatically, and if it had 0 PP at the time, it becomes 63. If the user or the target switch out, or the user is prevented from moving, the effect ends. This move can prevent the target from moving even if it has type immunity, but will not deal damage.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 75,
+    "pp": 10,
+    "volatileStatus": "partiallytrapped",
+    "basePower": 35,
+    "target": "normal",
+    "type": "Water",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "cometpunch": {
+    "id": "cometpunch",
+    "name": "Comet Punch",
+    "num": 4,
+    "shortDesc": "Hits 2-5 times in one turn.",
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 85,
+    "basePower": 18,
+    "pp": 15,
+    "multihit": [
+      2,
+      5
+    ],
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "confuseray": {
+    "id": "confuseray",
+    "name": "Confuse Ray",
+    "num": 109,
+    "shortDesc": "Confuses the target.",
+    "desc": "Causes the target to become confused.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 10,
+    "volatileStatus": "confusion",
+    "target": "normal",
+    "type": "Ghost",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "confusion": {
+    "id": "confusion",
+    "name": "Confusion",
+    "num": 93,
+    "shortDesc": "10% chance to confuse the target.",
+    "desc": "Has a 10% chance to confuse the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 50,
+    "pp": 25,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "volatileStatus": "confusion"
+      }
+    ],
+    "gen": 1
+  },
+  "constrict": {
+    "id": "constrict",
+    "name": "Constrict",
+    "num": 132,
+    "shortDesc": "33% chance to lower the target's Speed by 1.",
+    "desc": "Has a 33% chance to lower the target's Speed by 1 stage.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 10,
+    "pp": 35,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 33,
+        "boosts": {
+          "spe": -1
+        }
+      }
+    ],
+    "gen": 1
+  },
+  "conversion": {
+    "id": "conversion",
+    "name": "Conversion",
+    "num": 160,
+    "shortDesc": "User becomes the same type as the target.",
+    "desc": "Causes the user's types to become the same as the current types of the target.",
+    "flags": {},
+    "volatileStatus": "conversion",
+    "accuracy": true,
+    "target": "normal",
+    "category": "Status",
+    "pp": 30,
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "counter": {
+    "id": "counter",
+    "name": "Counter",
+    "num": 68,
+    "shortDesc": "If hit by physical attack, returns double damage.",
+    "desc": "Deals damage to the opposing Pokemon equal to twice the damage dealt by the last move used in the battle. This move ignores type immunity. Fails if the user moves first, or if the opposing side's last move was Counter, had 0 power, or was not Normal or Fighting type. Fails if the last move used by either side did 0 damage and was not Confuse Ray, Conversion, Focus Energy, Glare, Haze, Leech Seed, Light Screen, Mimic, Mist, Poison Gas, Poison Powder, Recover, Reflect, Rest, Soft-Boiled, Splash, Stun Spore, Substitute, Supersonic, Teleport, Thunder Wave, Toxic, or Transform.",
+    "flags": {},
+    "priority": -1,
+    "accuracy": 100,
+    "pp": 20,
+    "target": "scripted",
+    "type": "Fighting",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "crabhammer": {
+    "id": "crabhammer",
+    "name": "Crabhammer",
+    "num": 152,
+    "shortDesc": "High critical hit ratio.",
+    "desc": "Has a higher chance for a critical hit.",
+    "flags": {
+      "mirror": 1
+    },
+    "critRatio": 2,
+    "accuracy": 85,
+    "basePower": 90,
+    "pp": 10,
+    "target": "normal",
+    "type": "Water",
+    "gen": 1
+  },
+  "cut": {
+    "id": "cut",
+    "name": "Cut",
+    "num": 15,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 95,
+    "basePower": 50,
+    "pp": 30,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "defensecurl": {
+    "id": "defensecurl",
+    "name": "Defense Curl",
+    "num": 111,
+    "shortDesc": "Raises the user's Defense by 1.",
+    "desc": "Raises the user's Defense by 1 stage.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 40,
+    "boosts": {
+      "def": 1
+    },
+    "volatileStatus": "defensecurl",
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "dig": {
+    "id": "dig",
+    "name": "Dig",
+    "num": 91,
+    "shortDesc": "Digs underground turn 1, strikes turn 2.",
+    "desc": "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Bide, Swift, and Transform. If the user is fully paralyzed on the second turn, it continues avoiding attacks until it switches out or successfully executes the second turn of this move or Fly.",
+    "flags": {
+      "charge": 1,
+      "mirror": 1
+    },
+    "basePower": 100,
+    "accuracy": 100,
+    "pp": 10,
+    "target": "normal",
+    "type": "Ground",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "disable": {
+    "id": "disable",
+    "name": "Disable",
+    "num": 50,
+    "shortDesc": "For 0-7 turns, disables one of the target's moves.",
+    "desc": "For 0 to 7 turns, one of the target's known moves that has at least 1 PP remaining becomes disabled, at random. Fails if one of the target's moves is already disabled, or if none of the target's moves have PP remaining. If any Pokemon uses Haze, this effect ends. Whether or not this move was successful, it counts as a hit for the purposes of the opponent's use of Rage.",
+    "flags": {
+      "mirror": 1,
+      "authentic": 1
+    },
+    "accuracy": 55,
+    "volatileStatus": "disable",
+    "category": "Status",
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "dizzypunch": {
+    "id": "dizzypunch",
+    "name": "Dizzy Punch",
+    "num": 146,
+    "shortDesc": "No additional effect.",
+    "desc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 70,
+    "pp": 10,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "doublekick": {
+    "id": "doublekick",
+    "name": "Double Kick",
+    "num": 24,
+    "shortDesc": "Hits 2 times in one turn.",
+    "desc": "Hits twice. Damage is calculated once for the first hit and used for both hits. If the first hit breaks the target's substitute, the move ends.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 30,
+    "pp": 30,
+    "multihit": 2,
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "doubleslap": {
+    "id": "doubleslap",
+    "name": "Double Slap",
+    "num": 3,
+    "shortDesc": "Hits 2-5 times in one turn.",
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 85,
+    "basePower": 15,
+    "pp": 10,
+    "multihit": [
+      2,
+      5
+    ],
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "doubleteam": {
+    "id": "doubleteam",
+    "name": "Double Team",
+    "num": 104,
+    "shortDesc": "Raises the user's evasiveness by 1.",
+    "desc": "Raises the user's evasiveness by 1 stage.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 15,
+    "boosts": {
+      "evasion": 1
+    },
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "doubleedge": {
+    "id": "doubleedge",
+    "name": "Double-Edge",
+    "num": 38,
+    "shortDesc": "Has 1/4 recoil.",
+    "desc": "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 100,
+    "recoil": 25,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "dragonrage": {
+    "id": "dragonrage",
+    "name": "Dragon Rage",
+    "num": 82,
+    "shortDesc": "Deals 40 HP of damage to the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 1,
+    "accuracy": 100,
+    "pp": 10,
+    "target": "normal",
+    "type": "Dragon",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "dreameater": {
+    "id": "dreameater",
+    "name": "Dream Eater",
+    "num": 138,
+    "shortDesc": "User gains 1/2 HP inflicted. Sleeping target only.",
+    "desc": "The target is unaffected by this move unless it is asleep. The user recovers 1/2 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not recover any HP.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "percentHealed": 0.5,
+    "gen": 1
+  },
+  "drillpeck": {
+    "id": "drillpeck",
+    "name": "Drill Peck",
+    "num": 65,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 80,
+    "pp": 20,
+    "target": "any",
+    "type": "Flying",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "earthquake": {
+    "id": "earthquake",
+    "name": "Earthquake",
+    "num": 89,
+    "shortDesc": "No additional effect.",
+    "desc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 100,
+    "pp": 10,
+    "target": "allAdjacent",
+    "type": "Ground",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "eggbomb": {
+    "id": "eggbomb",
+    "name": "Egg Bomb",
+    "num": 121,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 75,
+    "basePower": 100,
+    "pp": 10,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "ember": {
+    "id": "ember",
+    "name": "Ember",
+    "num": 52,
+    "shortDesc": "10% chance to burn the target.",
+    "desc": "Has a 10% chance to burn the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 40,
+    "pp": 25,
+    "target": "normal",
+    "type": "Fire",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "status": "brn"
+      }
+    ],
+    "gen": 1
+  },
+  "explosion": {
+    "id": "explosion",
+    "name": "Explosion",
+    "num": 153,
+    "shortDesc": "The user faints.",
+    "desc": "The user faints after using this move, unless this move broke the target's substitute. The target's Defense is halved during damage calculation.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 170,
+    "target": "normal",
+    "accuracy": 100,
+    "pp": 5,
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "fireblast": {
+    "id": "fireblast",
+    "name": "Fire Blast",
+    "num": 126,
+    "shortDesc": "30% chance to burn the target.",
+    "desc": "Has a 30% chance to burn the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 120,
+    "accuracy": 85,
+    "pp": 5,
+    "target": "normal",
+    "type": "Fire",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "status": "brn"
+      }
+    ],
+    "gen": 1
+  },
+  "firepunch": {
+    "id": "firepunch",
+    "name": "Fire Punch",
+    "num": 7,
+    "shortDesc": "10% chance to burn the target.",
+    "desc": "Has a 10% chance to burn the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 75,
+    "pp": 15,
+    "target": "normal",
+    "type": "Fire",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "status": "brn"
+      }
+    ],
+    "gen": 1
+  },
+  "firespin": {
+    "id": "firespin",
+    "name": "Fire Spin",
+    "num": 83,
+    "shortDesc": "Prevents the target from moving for 2-5 turns.",
+    "desc": "The user spends two to five turns using this move. Has a 3/8 chance to last two or three turns, and a 1/8 chance to last four or five turns. The damage calculated for the first turn is used for every other turn. The user cannot select a move and the target cannot execute a move during the effect, but both may switch out. If the user switches out, the target remains unable to execute a move during that turn. If the target switches out, the user uses this move again automatically, and if it had 0 PP at the time, it becomes 63. If the user or the target switch out, or the user is prevented from moving, the effect ends. This move can prevent the target from moving even if it has type immunity, but will not deal damage.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 70,
+    "basePower": 15,
+    "volatileStatus": "partiallytrapped",
+    "pp": 15,
+    "target": "normal",
+    "type": "Fire",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "fissure": {
+    "id": "fissure",
+    "name": "Fissure",
+    "num": 90,
+    "shortDesc": "Deals 65535 damage. Fails if target is faster.",
+    "desc": "Deals 65535 damage to the target. Fails if the target's Speed is greater than the user's.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 30,
+    "pp": 5,
+    "target": "normal",
+    "type": "Ground",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "flamethrower": {
+    "id": "flamethrower",
+    "name": "Flamethrower",
+    "num": 53,
+    "shortDesc": "10% chance to burn the target.",
+    "desc": "Has a 10% chance to burn the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 95,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Fire",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "status": "brn"
+      }
+    ],
+    "gen": 1
+  },
+  "flash": {
+    "id": "flash",
+    "name": "Flash",
+    "num": 148,
+    "shortDesc": "Lowers the target's accuracy by 1.",
+    "desc": "Lowers the target's accuracy by 1 stage.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 70,
+    "category": "Status",
+    "pp": 20,
+    "boosts": {
+      "accuracy": -1
+    },
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "fly": {
+    "id": "fly",
+    "name": "Fly",
+    "num": 19,
+    "shortDesc": "Flies up on first turn, then strikes the next turn.",
+    "desc": "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Bide, Swift, and Transform. If the user is fully paralyzed on the second turn, it continues avoiding attacks until it switches out or successfully executes the second turn of this move or Dig.",
+    "flags": {
+      "charge": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 95,
+    "pp": 15,
+    "target": "any",
+    "type": "Flying",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "focusenergy": {
+    "id": "focusenergy",
+    "name": "Focus Energy",
+    "num": 116,
+    "shortDesc": "Quarters the user's chance for a critical hit.",
+    "desc": "While the user remains active, its chance for a critical hit is quartered. Fails if the user already has the effect. If any Pokemon uses Haze, this effect ends.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 30,
+    "volatileStatus": "focusenergy",
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "furyattack": {
+    "id": "furyattack",
+    "name": "Fury Attack",
+    "num": 31,
+    "shortDesc": "Hits 2-5 times in one turn.",
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 85,
+    "basePower": 15,
+    "pp": 20,
+    "multihit": [
+      2,
+      5
+    ],
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "furyswipes": {
+    "id": "furyswipes",
+    "name": "Fury Swipes",
+    "num": 154,
+    "shortDesc": "Hits 2-5 times in one turn.",
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 80,
+    "basePower": 18,
+    "pp": 15,
+    "multihit": [
+      2,
+      5
+    ],
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "glare": {
+    "id": "glare",
+    "name": "Glare",
+    "num": 137,
+    "shortDesc": "Paralyzes the target.",
+    "desc": "Paralyzes the target.",
+    "status": "par",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 75,
+    "category": "Status",
+    "pp": 30,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "growl": {
+    "id": "growl",
+    "name": "Growl",
+    "num": 45,
+    "shortDesc": "Lowers the target's Attack by 1.",
+    "desc": "Lowers the target's Attack by 1 stage.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 40,
+    "boosts": {
+      "atk": -1
+    },
+    "target": "allAdjacentFoes",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "growth": {
+    "id": "growth",
+    "name": "Growth",
+    "num": 74,
+    "shortDesc": "Raises the user's Special by 1.",
+    "desc": "Raises the user's Special by 1 stage.",
+    "flags": {},
+    "boosts": {
+      "spa": 1,
+      "spd": 1
+    },
+    "pp": 40,
+    "accuracy": true,
+    "category": "Status",
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "guillotine": {
+    "id": "guillotine",
+    "name": "Guillotine",
+    "num": 12,
+    "shortDesc": "Deals 65535 damage. Fails if target is faster.",
+    "desc": "Deals 65535 damage to the target. Fails if the target's Speed is greater than the user's.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 30,
+    "pp": 5,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "gust": {
+    "id": "gust",
+    "name": "Gust",
+    "num": 16,
+    "shortDesc": "No additional effect.",
+    "desc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "type": "Normal",
+    "accuracy": 100,
+    "basePower": 40,
+    "pp": 35,
+    "target": "any",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "harden": {
+    "id": "harden",
+    "name": "Harden",
+    "num": 106,
+    "shortDesc": "Raises the user's Defense by 1.",
+    "desc": "Raises the user's Defense by 1 stage.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 30,
+    "boosts": {
+      "def": 1
+    },
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "haze": {
+    "id": "haze",
+    "name": "Haze",
+    "num": 114,
+    "shortDesc": "Resets all stat changes. Removes foe's status.",
+    "desc": "Resets the stat stages of both Pokemon to 0 and removes stat reductions due to burn and paralysis. Resets Toxic counters to 0 and removes the effect of confusion, Disable, Focus Energy, Leech Seed, Light Screen, Mist, and Reflect from both Pokemon. Removes the opponent's major status condition.",
+    "flags": {
+      "authentic": 1
+    },
+    "target": "self",
+    "accuracy": true,
+    "category": "Status",
+    "pp": 30,
+    "type": "Ice",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "headbutt": {
+    "id": "headbutt",
+    "name": "Headbutt",
+    "num": 29,
+    "shortDesc": "30% chance to flinch the target.",
+    "desc": "Has a 30% chance to flinch the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 70,
+    "pp": 15,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "volatileStatus": "flinch"
+      }
+    ],
+    "gen": 1
+  },
+  "highjumpkick": {
+    "id": "highjumpkick",
+    "name": "High Jump Kick",
+    "num": 136,
+    "shortDesc": "User takes 1 HP of damage if it misses.",
+    "desc": "If this attack misses the target, the user takes 1 HP of crash damage. If the user has a substitute, the crash damage is dealt to the target's substitute if it has one, otherwise no crash damage is dealt.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 85,
+    "pp": 20,
+    "accuracy": 90,
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "recoil": "crash",
+    "gen": 1
+  },
+  "hornattack": {
+    "id": "hornattack",
+    "name": "Horn Attack",
+    "num": 30,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 65,
+    "pp": 25,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "horndrill": {
+    "id": "horndrill",
+    "name": "Horn Drill",
+    "num": 32,
+    "shortDesc": "Deals 65535 damage. Fails if target is faster.",
+    "desc": "Deals 65535 damage to the target. Fails if the target's Speed is greater than the user's.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 30,
+    "pp": 5,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "hydropump": {
+    "id": "hydropump",
+    "name": "Hydro Pump",
+    "num": 56,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 120,
+    "accuracy": 80,
+    "pp": 5,
+    "target": "normal",
+    "type": "Water",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "hyperbeam": {
+    "id": "hyperbeam",
+    "name": "Hyper Beam",
+    "num": 63,
+    "shortDesc": "Can't move next turn if target or sub is not KOed.",
+    "desc": "If this move is successful, the user must recharge on the following turn and cannot select a move, unless the target or its substitute was knocked out by this move.",
+    "flags": {
+      "recharge": 1,
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "basePower": 150,
+    "pp": 5,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "volatileStatus": "mustrecharge",
+    "gen": 1
+  },
+  "hyperfang": {
+    "id": "hyperfang",
+    "name": "Hyper Fang",
+    "num": 158,
+    "shortDesc": "10% chance to flinch the target.",
+    "desc": "Has a 10% chance to flinch the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "basePower": 80,
+    "pp": 15,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "volatileStatus": "flinch"
+      }
+    ],
+    "gen": 1
+  },
+  "hypnosis": {
+    "id": "hypnosis",
+    "name": "Hypnosis",
+    "num": 95,
+    "shortDesc": "Causes the target to fall asleep.",
+    "status": "slp",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 60,
+    "category": "Status",
+    "pp": 20,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "icebeam": {
+    "id": "icebeam",
+    "name": "Ice Beam",
+    "num": 58,
+    "shortDesc": "10% chance to freeze the target.",
+    "desc": "Has a 10% chance to freeze the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 95,
+    "accuracy": 100,
+    "pp": 10,
+    "target": "normal",
+    "type": "Ice",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "status": "frz"
+      }
+    ],
+    "gen": 1
+  },
+  "icepunch": {
+    "id": "icepunch",
+    "name": "Ice Punch",
+    "num": 8,
+    "shortDesc": "10% chance to freeze the target.",
+    "desc": "Has a 10% chance to freeze the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 75,
+    "pp": 15,
+    "target": "normal",
+    "type": "Ice",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "status": "frz"
+      }
+    ],
+    "gen": 1
+  },
+  "jumpkick": {
+    "id": "jumpkick",
+    "name": "Jump Kick",
+    "num": 26,
+    "shortDesc": "User takes 1 HP of damage if it misses.",
+    "desc": "If this attack misses the target, the user takes 1 HP of crash damage. If the user has a substitute, the crash damage is dealt to the target's substitute if it has one, otherwise no crash damage is dealt.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 70,
+    "pp": 25,
+    "accuracy": 95,
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "recoil": "crash",
+    "gen": 1
+  },
+  "karatechop": {
+    "id": "karatechop",
+    "name": "Karate Chop",
+    "num": 2,
+    "shortDesc": "High critical hit ratio.",
+    "desc": "Has a higher chance for a critical hit.",
+    "flags": {
+      "mirror": 1
+    },
+    "critRatio": 2,
+    "type": "Normal",
+    "accuracy": 100,
+    "basePower": 50,
+    "pp": 25,
+    "target": "normal",
+    "gen": 1
+  },
+  "kinesis": {
+    "id": "kinesis",
+    "name": "Kinesis",
+    "num": 134,
+    "shortDesc": "Lowers the target's accuracy by 1.",
+    "desc": "Lowers the target's accuracy by 1 stage.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 80,
+    "category": "Status",
+    "pp": 15,
+    "boosts": {
+      "accuracy": -1
+    },
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "leechlife": {
+    "id": "leechlife",
+    "name": "Leech Life",
+    "num": 141,
+    "shortDesc": "User recovers 50% of the damage dealt.",
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded down.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 20,
+    "pp": 15,
+    "accuracy": 100,
+    "target": "normal",
+    "type": "Bug",
+    "critRatio": 1,
+    "percentHealed": 0.5,
+    "gen": 1
+  },
+  "leechseed": {
+    "id": "leechseed",
+    "name": "Leech Seed",
+    "num": 73,
+    "shortDesc": "1/8 of target's HP is restored to user every turn.",
+    "desc": "At the end of each of the target's turns, The Pokemon at the user's position steals 1/16 of the target's maximum HP, rounded down and multiplied by the target's current Toxic counter if it has one, even if the target currently has less than that amount of HP remaining. If the target switches out or any Pokemon uses Haze, this effect ends. Grass-type Pokemon are immune to this move.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "category": "Status",
+    "pp": 10,
+    "volatileStatus": "leechseed",
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "leer": {
+    "id": "leer",
+    "name": "Leer",
+    "num": 43,
+    "shortDesc": "Lowers the target's Defense by 1.",
+    "desc": "Lowers the target's Defense by 1 stage.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 30,
+    "boosts": {
+      "def": -1
+    },
+    "target": "allAdjacentFoes",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "lick": {
+    "id": "lick",
+    "name": "Lick",
+    "num": 122,
+    "shortDesc": "30% chance to paralyze the target.",
+    "desc": "Has a 30% chance to paralyze the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 20,
+    "accuracy": 100,
+    "pp": 30,
+    "target": "normal",
+    "type": "Ghost",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "status": "par"
+      }
+    ],
+    "gen": 1
+  },
+  "lightscreen": {
+    "id": "lightscreen",
+    "name": "Light Screen",
+    "num": 113,
+    "shortDesc": "While active, user's Special is 2x when damaged.",
+    "desc": "While the user remains active, its Special is doubled when taking damage. Critical hits ignore this effect. If any Pokemon uses Haze, this effect ends.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 30,
+    "volatileStatus": "lightscreen",
+    "target": "self",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "lovelykiss": {
+    "id": "lovelykiss",
+    "name": "Lovely Kiss",
+    "num": 142,
+    "shortDesc": "Causes the target to fall asleep.",
+    "status": "slp",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 75,
+    "category": "Status",
+    "pp": 10,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "lowkick": {
+    "id": "lowkick",
+    "name": "Low Kick",
+    "num": 67,
+    "shortDesc": "30% chance to flinch the target.",
+    "desc": "Has a 30% chance to flinch the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "basePower": 50,
+    "pp": 20,
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "volatileStatus": "flinch"
+      }
+    ],
+    "gen": 1
+  },
+  "meditate": {
+    "id": "meditate",
+    "name": "Meditate",
+    "num": 96,
+    "shortDesc": "Raises the user's Attack by 1.",
+    "desc": "Raises the user's Attack by 1 stage.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 40,
+    "boosts": {
+      "atk": 1
+    },
+    "target": "self",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "megadrain": {
+    "id": "megadrain",
+    "name": "Mega Drain",
+    "num": 72,
+    "shortDesc": "User recovers 50% of the damage dealt.",
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded down.",
+    "flags": {
+      "mirror": 1
+    },
+    "pp": 10,
+    "accuracy": 100,
+    "basePower": 40,
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "percentHealed": 0.5,
+    "gen": 1
+  },
+  "megakick": {
+    "id": "megakick",
+    "name": "Mega Kick",
+    "num": 25,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 75,
+    "basePower": 120,
+    "pp": 5,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "megapunch": {
+    "id": "megapunch",
+    "name": "Mega Punch",
+    "num": 5,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 85,
+    "basePower": 80,
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "metronome": {
+    "id": "metronome",
+    "name": "Metronome",
+    "num": 118,
+    "shortDesc": "Picks a random move.",
+    "desc": "A random move is selected for use, other than Metronome or Struggle.",
+    "flags": {},
+    "target": "self",
+    "type": "Normal",
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "critRatio": 1,
+    "gen": 1
+  },
+  "mimic": {
+    "id": "mimic",
+    "name": "Mimic",
+    "num": 102,
+    "shortDesc": "Random move known by the target replaces this.",
+    "desc": "While the user remains active, this move is replaced by a random move known by the target, even if the user already knows that move. The copied move keeps the remaining PP for this move, regardless of the copied move's maximum PP. Whenever one PP is used for a copied move, one PP is used for this move.",
+    "flags": {
+      "authentic": 1,
+      "mystery": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "minimize": {
+    "id": "minimize",
+    "name": "Minimize",
+    "num": 107,
+    "shortDesc": "Raises the user's evasiveness by 1.",
+    "desc": "Raises the user's evasiveness by 1 stage.",
+    "flags": {},
+    "boosts": {
+      "evasion": 1
+    },
+    "pp": 20,
+    "accuracy": true,
+    "category": "Status",
+    "volatileStatus": "minimize",
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "mirrormove": {
+    "id": "mirrormove",
+    "name": "Mirror Move",
+    "num": 119,
+    "shortDesc": "User uses the target's last used move against it.",
+    "desc": "The user uses the last move used by the target. Fails if the target has not made a move, or if the last move used was Mirror Move.",
+    "flags": {},
+    "target": "self",
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "type": "Flying",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "mist": {
+    "id": "mist",
+    "name": "Mist",
+    "num": 54,
+    "shortDesc": "While active, user is protected from stat drops.",
+    "desc": "While the user remains active, it is protected from having its stat stages lowered by other Pokemon, unless caused by the secondary effect of a move. Fails if the user already has the effect. If any Pokemon uses Haze, this effect ends.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 30,
+    "sideCondition": "mist",
+    "target": "allySide",
+    "type": "Ice",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "nightshade": {
+    "id": "nightshade",
+    "name": "Night Shade",
+    "num": 101,
+    "shortDesc": "Damage = user's level. Can hit Normal types.",
+    "desc": "Deals damage to the target equal to the user's level. This move ignores type immunity.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 1,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Ghost",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "payday": {
+    "id": "payday",
+    "name": "Pay Day",
+    "num": 6,
+    "shortDesc": "Scatters coins.",
+    "desc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 40,
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "peck": {
+    "id": "peck",
+    "name": "Peck",
+    "num": 64,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 35,
+    "pp": 35,
+    "target": "any",
+    "type": "Flying",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "petaldance": {
+    "id": "petaldance",
+    "name": "Petal Dance",
+    "num": 80,
+    "shortDesc": "Lasts 3-4 turns. Confuses the user afterwards.",
+    "desc": "Whether or not this move is successful, the user spends three or four turns locked into this move and becomes confused immediately after its move on the last turn of the effect, even if it is already confused. If the user is prevented from moving, the effect ends without causing confusion. During the effect, this move's accuracy is overwritten every turn with the current calculated accuracy including stat stage changes, but not to less than 1/256 or more than 255/256.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 70,
+    "pp": 20,
+    "accuracy": 100,
+    "target": "randomNormal",
+    "type": "Grass",
+    "critRatio": 1,
+    "volatileStatus": "lockedmove",
+    "gen": 1
+  },
+  "pinmissile": {
+    "id": "pinmissile",
+    "name": "Pin Missile",
+    "num": 42,
+    "shortDesc": "Hits 2-5 times in one turn.",
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 85,
+    "basePower": 14,
+    "pp": 20,
+    "multihit": [
+      2,
+      5
+    ],
+    "target": "normal",
+    "type": "Bug",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "poisongas": {
+    "id": "poisongas",
+    "name": "Poison Gas",
+    "num": 139,
+    "shortDesc": "Poisons the target.",
+    "desc": "Poisons the target.",
+    "status": "psn",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 55,
+    "target": "normal",
+    "category": "Status",
+    "pp": 40,
+    "type": "Poison",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "poisonpowder": {
+    "id": "poisonpowder",
+    "name": "Poison Powder",
+    "num": 77,
+    "shortDesc": "Poisons the target.",
+    "desc": "Poisons the target.",
+    "status": "psn",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 75,
+    "category": "Status",
+    "pp": 35,
+    "target": "normal",
+    "type": "Poison",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "poisonsting": {
+    "id": "poisonsting",
+    "name": "Poison Sting",
+    "num": 40,
+    "shortDesc": "20% chance to poison the target.",
+    "desc": "Has a 20% chance to poison the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 15,
+    "pp": 35,
+    "target": "normal",
+    "type": "Poison",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 20,
+        "status": "psn"
+      }
+    ],
+    "gen": 1
+  },
+  "pound": {
+    "id": "pound",
+    "name": "Pound",
+    "num": 1,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 40,
+    "pp": 35,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "psybeam": {
+    "id": "psybeam",
+    "name": "Psybeam",
+    "num": 60,
+    "shortDesc": "10% chance to confuse the target.",
+    "desc": "Has a 10% chance to confuse the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 65,
+    "pp": 20,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "volatileStatus": "confusion"
+      }
+    ],
+    "gen": 1
+  },
+  "psychic": {
+    "id": "psychic",
+    "name": "Psychic",
+    "num": 94,
+    "shortDesc": "33% chance to lower the target's Special by 1.",
+    "desc": "Has a 33% chance to lower the target's Special by 1 stage.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "pp": 10,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 33,
+        "boosts": {
+          "spd": -1,
+          "spa": -1
+        }
+      }
+    ],
+    "gen": 1
+  },
+  "psywave": {
+    "id": "psywave",
+    "name": "Psywave",
+    "num": 149,
+    "shortDesc": "Random damage from 1 to (user's level*1.5 - 1).",
+    "desc": "Deals damage to the target equal to a random number from 1 to (user's level * 1.5 - 1), rounded down, but not less than 1 HP.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 1,
+    "accuracy": 80,
+    "pp": 15,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "quickattack": {
+    "id": "quickattack",
+    "name": "Quick Attack",
+    "num": 98,
+    "shortDesc": "Usually goes first.",
+    "desc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 40,
+    "pp": 30,
+    "priority": 1,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "rage": {
+    "id": "rage",
+    "name": "Rage",
+    "num": 99,
+    "shortDesc": "Lasts forever. Raises user's Attack by 1 when hit.",
+    "desc": "Once this move is successfully used, the user automatically uses this move every turn and can no longer switch out. During the effect, the user's Attack is raised by 1 stage every time it is hit by the opposing Pokemon, and this move's accuracy is overwritten every turn with the current calculated accuracy including stat stage changes, but not to less than 1/256 or more than 255/256.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 20,
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "volatileStatus": "rage",
+    "gen": 1
+  },
+  "razorleaf": {
+    "id": "razorleaf",
+    "name": "Razor Leaf",
+    "num": 75,
+    "shortDesc": "High critical hit ratio.",
+    "desc": "Has a higher chance for a critical hit.",
+    "flags": {
+      "mirror": 1
+    },
+    "critRatio": 2,
+    "target": "normal",
+    "accuracy": 95,
+    "basePower": 55,
+    "pp": 25,
+    "type": "Grass",
+    "gen": 1
+  },
+  "razorwind": {
+    "id": "razorwind",
+    "name": "Razor Wind",
+    "num": 13,
+    "shortDesc": "Charges turn 1. Hits turn 2.",
+    "desc": "This attack charges on the first turn and executes on the second.",
+    "flags": {
+      "charge": 1,
+      "mirror": 1
+    },
+    "critRatio": 1,
+    "target": "normal",
+    "accuracy": 75,
+    "basePower": 80,
+    "pp": 10,
+    "type": "Normal",
+    "gen": 1
+  },
+  "recover": {
+    "id": "recover",
+    "name": "Recover",
+    "num": 105,
+    "shortDesc": "Heals the user by 50% of its max HP.",
+    "desc": "The user restores 1/2 of its maximum HP, rounded down. Fails if (user's maximum HP - user's current HP + 1) is divisible by 256.",
+    "flags": {
+      "heal": 1
+    },
+    "pp": 20,
+    "accuracy": true,
+    "category": "Status",
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "reflect": {
+    "id": "reflect",
+    "name": "Reflect",
+    "num": 115,
+    "shortDesc": "While active, the user's Defense is doubled.",
+    "desc": "While the user remains active, its Defense is doubled when taking damage. Critical hits ignore this protection. This effect can be removed by Haze.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "volatileStatus": "reflect",
+    "target": "self",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "rest": {
+    "id": "rest",
+    "name": "Rest",
+    "num": 156,
+    "shortDesc": "User sleeps 2 turns and restores HP and status.",
+    "desc": "The user falls asleep for the next two turns and restores all of its HP, curing itself of any major status condition in the process. This does not remove the user's stat penalty for burn or paralysis. Fails if the user has full HP.",
+    "flags": {
+      "heal": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "self",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "roar": {
+    "id": "roar",
+    "name": "Roar",
+    "num": 46,
+    "shortDesc": "No competitive use.",
+    "desc": "No competitive use.",
+    "flags": {
+      "mirror": 1,
+      "authentic": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "rockslide": {
+    "id": "rockslide",
+    "name": "Rock Slide",
+    "num": 157,
+    "shortDesc": "No additional effect.",
+    "desc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "target": "normal",
+    "accuracy": 90,
+    "basePower": 75,
+    "pp": 10,
+    "type": "Rock",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "rockthrow": {
+    "id": "rockthrow",
+    "name": "Rock Throw",
+    "num": 88,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 65,
+    "basePower": 50,
+    "pp": 15,
+    "target": "normal",
+    "type": "Rock",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "rollingkick": {
+    "id": "rollingkick",
+    "name": "Rolling Kick",
+    "num": 27,
+    "shortDesc": "30% chance to flinch the target.",
+    "desc": "Has a 30% chance to flinch the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 85,
+    "basePower": 60,
+    "pp": 15,
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "volatileStatus": "flinch"
+      }
+    ],
+    "gen": 1
+  },
+  "sandattack": {
+    "id": "sandattack",
+    "name": "Sand Attack",
+    "num": 28,
+    "shortDesc": "Lowers the target's accuracy by 1.",
+    "desc": "Lowers the target's accuracy by 1 stage.",
+    "flags": {
+      "mirror": 1
+    },
+    "type": "Normal",
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 15,
+    "boosts": {
+      "accuracy": -1
+    },
+    "target": "normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "scratch": {
+    "id": "scratch",
+    "name": "Scratch",
+    "num": 10,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 40,
+    "pp": 35,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "screech": {
+    "id": "screech",
+    "name": "Screech",
+    "num": 103,
+    "shortDesc": "Lowers the target's Defense by 2.",
+    "desc": "Lowers the target's Defense by 2 stages.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 85,
+    "category": "Status",
+    "pp": 40,
+    "boosts": {
+      "def": -2
+    },
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "seismictoss": {
+    "id": "seismictoss",
+    "name": "Seismic Toss",
+    "num": 69,
+    "shortDesc": "Damage = user's level. Can hit Ghost types.",
+    "desc": "Deals damage to the target equal to the user's level. This move ignores type immunity.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 1,
+    "accuracy": 100,
+    "pp": 20,
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "selfdestruct": {
+    "id": "selfdestruct",
+    "name": "Self-Destruct",
+    "num": 120,
+    "shortDesc": "The user faints.",
+    "desc": "The user faints after using this move, unless the target's substitute was broken by the damage. The target's Defense is halved during damage calculation.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 130,
+    "target": "normal",
+    "accuracy": 100,
+    "pp": 5,
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "sharpen": {
+    "id": "sharpen",
+    "name": "Sharpen",
+    "num": 159,
+    "shortDesc": "Raises the user's Attack by 1.",
+    "desc": "Raises the user's Attack by 1 stage.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 30,
+    "boosts": {
+      "atk": 1
+    },
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "sing": {
+    "id": "sing",
+    "name": "Sing",
+    "num": 47,
+    "shortDesc": "Causes the target to fall asleep.",
+    "status": "slp",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 55,
+    "category": "Status",
+    "pp": 15,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "skullbash": {
+    "id": "skullbash",
+    "name": "Skull Bash",
+    "num": 130,
+    "shortDesc": "Charges turn 1. Hits turn 2.",
+    "desc": "This attack charges on the first turn and executes on the second.",
+    "flags": {
+      "charge": 1,
+      "mirror": 1
+    },
+    "basePower": 100,
+    "pp": 15,
+    "accuracy": 100,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "skyattack": {
+    "id": "skyattack",
+    "name": "Sky Attack",
+    "num": 143,
+    "shortDesc": "Charges turn 1. Hits turn 2.",
+    "desc": "This attack charges on the first turn and executes on the second.",
+    "flags": {
+      "charge": 1,
+      "mirror": 1
+    },
+    "critRatio": 1,
+    "accuracy": 90,
+    "basePower": 140,
+    "pp": 5,
+    "target": "any",
+    "type": "Flying",
+    "gen": 1
+  },
+  "slam": {
+    "id": "slam",
+    "name": "Slam",
+    "num": 21,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 75,
+    "basePower": 80,
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "slash": {
+    "id": "slash",
+    "name": "Slash",
+    "num": 163,
+    "shortDesc": "High critical hit ratio.",
+    "desc": "Has a higher chance for a critical hit.",
+    "flags": {
+      "mirror": 1
+    },
+    "critRatio": 2,
+    "accuracy": 100,
+    "basePower": 70,
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "gen": 1
+  },
+  "sleeppowder": {
+    "id": "sleeppowder",
+    "name": "Sleep Powder",
+    "num": 79,
+    "shortDesc": "Causes the target to fall asleep.",
+    "status": "slp",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 75,
+    "category": "Status",
+    "pp": 15,
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "sludge": {
+    "id": "sludge",
+    "name": "Sludge",
+    "num": 124,
+    "shortDesc": "40% chance to poison the target.",
+    "desc": "Has a 40% chance to poison the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 65,
+    "pp": 20,
+    "target": "normal",
+    "type": "Poison",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "status": "psn"
+      }
+    ],
+    "gen": 1
+  },
+  "smog": {
+    "id": "smog",
+    "name": "Smog",
+    "num": 123,
+    "shortDesc": "40% chance to poison the target.",
+    "desc": "Has a 40% chance to poison the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 20,
+    "accuracy": 70,
+    "pp": 20,
+    "target": "normal",
+    "type": "Poison",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 40,
+        "status": "psn"
+      }
+    ],
+    "gen": 1
+  },
+  "smokescreen": {
+    "id": "smokescreen",
+    "name": "Smokescreen",
+    "num": 108,
+    "shortDesc": "Lowers the target's accuracy by 1.",
+    "desc": "Lowers the target's accuracy by 1 stage.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 20,
+    "boosts": {
+      "accuracy": -1
+    },
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "softboiled": {
+    "id": "softboiled",
+    "name": "Soft-Boiled",
+    "num": 135,
+    "shortDesc": "Heals the user by 50% of its max HP.",
+    "desc": "The user restores 1/2 of its maximum HP, rounded down. Fails if (user's maximum HP - user's current HP + 1) is divisible by 256.",
+    "flags": {
+      "heal": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "solarbeam": {
+    "id": "solarbeam",
+    "name": "Solar Beam",
+    "num": 76,
+    "shortDesc": "Charges turn 1. Hits turn 2.",
+    "desc": "This attack charges on the first turn and executes on the second.",
+    "flags": {
+      "charge": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 120,
+    "pp": 10,
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "sonicboom": {
+    "id": "sonicboom",
+    "name": "Sonic Boom",
+    "num": 49,
+    "shortDesc": "Always does 20 HP of damage.",
+    "desc": "Deals 20 HP of damage to the target. This move ignores type immunity.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "spikecannon": {
+    "id": "spikecannon",
+    "name": "Spike Cannon",
+    "num": 131,
+    "shortDesc": "Hits 2-5 times in one turn.",
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. Damage is calculated once for the first hit and used for every hit. If one of the hits breaks the target's substitute, the move ends.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 20,
+    "pp": 15,
+    "multihit": [
+      2,
+      5
+    ],
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "splash": {
+    "id": "splash",
+    "name": "Splash",
+    "num": 150,
+    "shortDesc": "No competitive use.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 40,
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "spore": {
+    "id": "spore",
+    "name": "Spore",
+    "num": 147,
+    "shortDesc": "Causes the target to fall asleep.",
+    "status": "slp",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 15,
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "stomp": {
+    "id": "stomp",
+    "name": "Stomp",
+    "num": 23,
+    "shortDesc": "30% chance to flinch the target.",
+    "desc": "Has a 30% chance to flinch the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 65,
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "volatileStatus": "flinch"
+      }
+    ],
+    "gen": 1
+  },
+  "strength": {
+    "id": "strength",
+    "name": "Strength",
+    "num": 70,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 80,
+    "pp": 15,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "stringshot": {
+    "id": "stringshot",
+    "name": "String Shot",
+    "num": 81,
+    "shortDesc": "Lowers the target's Speed by 1.",
+    "desc": "Lowers the target's Speed by 1 stage.",
+    "flags": {
+      "mirror": 1
+    },
+    "boosts": {
+      "spe": -1
+    },
+    "accuracy": 95,
+    "category": "Status",
+    "pp": 40,
+    "target": "allAdjacentFoes",
+    "type": "Bug",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "struggle": {
+    "id": "struggle",
+    "name": "Struggle",
+    "num": 165,
+    "shortDesc": "User loses 1/2 the HP lost by the target.",
+    "desc": "Deals Normal-type damage. If this move was successful, the user takes damage equal to 1/2 the HP lost by the target, rounded down, but not less than 1 HP. This move is automatically used if none of the user's known moves can be selected.",
+    "flags": {},
+    "recoil": 50,
+    "accuracy": 100,
+    "basePower": 50,
+    "pp": 1,
+    "target": "randomNormal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "stunspore": {
+    "id": "stunspore",
+    "name": "Stun Spore",
+    "num": 78,
+    "shortDesc": "Paralyzes the target.",
+    "desc": "Paralyzes the target.",
+    "status": "par",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 75,
+    "category": "Status",
+    "pp": 30,
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "submission": {
+    "id": "submission",
+    "name": "Submission",
+    "num": 66,
+    "shortDesc": "Has 1/4 recoil.",
+    "desc": "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",
+    "flags": {
+      "mirror": 1
+    },
+    "pp": 25,
+    "accuracy": 80,
+    "basePower": 80,
+    "recoil": 25,
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "substitute": {
+    "id": "substitute",
+    "name": "Substitute",
+    "num": 164,
+    "shortDesc": "User takes 1/4 its max HP to put in a Substitute.",
+    "desc": "The user takes 1/4 of its maximum HP, rounded down, and puts it into a substitute to take its place in battle. The substitute has 1 HP plus the HP used to create it, and is removed once enough damage is inflicted on it or 255 damage is inflicted at once, or if the user switches out or faints. Until the substitute is broken, it receives damage from all attacks made by the opposing Pokemon and shields the user from status effects and stat stage changes caused by the opponent, unless the effect is Disable, Leech Seed, sleep, primary paralysis, or secondary confusion and the user's substitute did not break. The user still takes normal damage from status effects while behind its substitute, unless the effect is confusion damage, which is applied to the opposing Pokemon's substitute instead. If the substitute breaks during a multi-hit attack, the attack ends. Fails if the user does not have enough HP remaining to create a substitute, or if it already has a substitute. The user will create a substitute and then faint if its current HP is exactly 1/4 of its maximum HP.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "volatileStatus": "Substitute",
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "superfang": {
+    "id": "superfang",
+    "name": "Super Fang",
+    "num": 162,
+    "shortDesc": "Damage = 1/2 target's current HP. Hits Ghosts.",
+    "desc": "Deals damage to the target equal to half of its current HP, rounded down, but not less than 1 HP. This move ignores type immunity.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 1,
+    "accuracy": 90,
+    "pp": 10,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "supersonic": {
+    "id": "supersonic",
+    "name": "Supersonic",
+    "num": 48,
+    "shortDesc": "Causes the target to become confused.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 55,
+    "category": "Status",
+    "pp": 20,
+    "volatileStatus": "confusion",
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "surf": {
+    "id": "surf",
+    "name": "Surf",
+    "num": 57,
+    "shortDesc": "No additional effect.",
+    "desc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "target": "allAdjacentFoes",
+    "basePower": 95,
+    "accuracy": 100,
+    "pp": 15,
+    "type": "Water",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "swift": {
+    "id": "swift",
+    "name": "Swift",
+    "num": 129,
+    "shortDesc": "Never misses, even against Dig and Fly.",
+    "desc": "This move does not check accuracy and hits even if the target is using Dig or Fly.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": true,
+    "basePower": 60,
+    "pp": 20,
+    "target": "allAdjacentFoes",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "swordsdance": {
+    "id": "swordsdance",
+    "name": "Swords Dance",
+    "num": 14,
+    "shortDesc": "Raises the user's Attack by 2.",
+    "desc": "Raises the user's Attack by 2 stages.",
+    "flags": {},
+    "pp": 30,
+    "accuracy": true,
+    "category": "Status",
+    "boosts": {
+      "atk": 2
+    },
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "tackle": {
+    "id": "tackle",
+    "name": "Tackle",
+    "num": 33,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 95,
+    "basePower": 35,
+    "pp": 35,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "tailwhip": {
+    "id": "tailwhip",
+    "name": "Tail Whip",
+    "num": 39,
+    "shortDesc": "Lowers the target's Defense by 1.",
+    "desc": "Lowers the target's Defense by 1 stage.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 30,
+    "boosts": {
+      "def": -1
+    },
+    "target": "allAdjacentFoes",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "takedown": {
+    "id": "takedown",
+    "name": "Take Down",
+    "num": 36,
+    "shortDesc": "Has 1/4 recoil.",
+    "desc": "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move breaks the target's substitute, the user does not take any recoil damage.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 85,
+    "basePower": 90,
+    "pp": 20,
+    "recoil": 25,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "teleport": {
+    "id": "teleport",
+    "name": "Teleport",
+    "num": 100,
+    "shortDesc": "Fails when used.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "target": "self",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "thrash": {
+    "id": "thrash",
+    "name": "Thrash",
+    "num": 37,
+    "shortDesc": "Lasts 3-4 turns. Confuses the user afterwards.",
+    "desc": "Whether or not this move is successful, the user spends three or four turns locked into this move and becomes confused immediately after its move on the last turn of the effect, even if it is already confused. If the user is prevented from moving, the effect ends without causing confusion. During the effect, this move's accuracy is overwritten every turn with the current calculated accuracy including stat stage changes, but not to less than 1/256 or more than 255/256.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 90,
+    "pp": 20,
+    "accuracy": 100,
+    "target": "randomNormal",
+    "type": "Normal",
+    "critRatio": 1,
+    "volatileStatus": "lockedmove",
+    "gen": 1
+  },
+  "thunder": {
+    "id": "thunder",
+    "name": "Thunder",
+    "num": 87,
+    "shortDesc": "10% chance to paralyze the target.",
+    "desc": "Has a 10% chance to paralyze the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 120,
+    "accuracy": 70,
+    "pp": 10,
+    "target": "normal",
+    "type": "Electric",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "status": "par"
+      }
+    ],
+    "gen": 1
+  },
+  "thunderpunch": {
+    "id": "thunderpunch",
+    "name": "Thunder Punch",
+    "num": 9,
+    "shortDesc": "10% chance to paralyze the target.",
+    "desc": "Has a 10% chance to paralyze the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 75,
+    "pp": 15,
+    "target": "normal",
+    "type": "Electric",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "status": "par"
+      }
+    ],
+    "gen": 1
+  },
+  "thundershock": {
+    "id": "thundershock",
+    "name": "Thunder Shock",
+    "num": 84,
+    "shortDesc": "10% chance to paralyze the target.",
+    "desc": "Has a 10% chance to paralyze the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 40,
+    "pp": 30,
+    "target": "normal",
+    "type": "Electric",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "status": "par"
+      }
+    ],
+    "gen": 1
+  },
+  "thunderwave": {
+    "id": "thunderwave",
+    "name": "Thunder Wave",
+    "num": 86,
+    "shortDesc": "Paralyzes the target.",
+    "desc": "Paralyzes the target. This move does not ignore type immunity.",
+    "status": "par",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 20,
+    "target": "normal",
+    "type": "Electric",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "thunderbolt": {
+    "id": "thunderbolt",
+    "name": "Thunderbolt",
+    "num": 85,
+    "shortDesc": "10% chance to paralyze the target.",
+    "desc": "Has a 10% chance to paralyze the target.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 95,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Electric",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "status": "par"
+      }
+    ],
+    "gen": 1
+  },
+  "toxic": {
+    "id": "toxic",
+    "name": "Toxic",
+    "num": 92,
+    "shortDesc": "Badly poisons the target.",
+    "desc": "Badly poisons the target.",
+    "status": "tox",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 85,
+    "category": "Status",
+    "pp": 10,
+    "target": "normal",
+    "type": "Poison",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "transform": {
+    "id": "transform",
+    "name": "Transform",
+    "num": 144,
+    "shortDesc": "Copies target's stats, moves, types, and species.",
+    "desc": "The user transforms into the target. The target's current stats, stat stages, types, moves, DVs, species, and sprite are copied. The user's level and HP remain the same and each copied move receives only 5 PP. This move can hit a target using Dig or Fly.",
+    "flags": {
+      "authentic": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "triattack": {
+    "id": "triattack",
+    "name": "Tri Attack",
+    "num": 161,
+    "shortDesc": "No additional effect.",
+    "desc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 80,
+    "pp": 10,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "twineedle": {
+    "id": "twineedle",
+    "name": "Twineedle",
+    "num": 41,
+    "shortDesc": "Hits 2 times. Last hit has 20% chance to poison.",
+    "desc": "Hits twice, with the second hit having a 20% chance to poison the target. If the first hit breaks the target's substitute, the move ends.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 25,
+    "pp": 20,
+    "multihit": 2,
+    "target": "normal",
+    "type": "Bug",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 20,
+        "status": "psn"
+      }
+    ],
+    "gen": 1
+  },
+  "vicegrip": {
+    "id": "vicegrip",
+    "name": "Vice Grip",
+    "num": 11,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 55,
+    "pp": 30,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "vinewhip": {
+    "id": "vinewhip",
+    "name": "Vine Whip",
+    "num": 22,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "pp": 10,
+    "basePower": 35,
+    "accuracy": 100,
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "watergun": {
+    "id": "watergun",
+    "name": "Water Gun",
+    "num": 55,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 40,
+    "pp": 25,
+    "target": "normal",
+    "type": "Water",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "waterfall": {
+    "id": "waterfall",
+    "name": "Waterfall",
+    "num": 127,
+    "shortDesc": "No additional effect.",
+    "desc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 80,
+    "pp": 15,
+    "target": "normal",
+    "type": "Water",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "whirlwind": {
+    "id": "whirlwind",
+    "name": "Whirlwind",
+    "num": 18,
+    "shortDesc": "No competitive use.",
+    "desc": "No competitive use.",
+    "flags": {
+      "mirror": 1,
+      "authentic": 1
+    },
+    "accuracy": 85,
+    "category": "Status",
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "wingattack": {
+    "id": "wingattack",
+    "name": "Wing Attack",
+    "num": 17,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "mirror": 1
+    },
+    "basePower": 35,
+    "accuracy": 100,
+    "pp": 35,
+    "target": "any",
+    "type": "Flying",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "withdraw": {
+    "id": "withdraw",
+    "name": "Withdraw",
+    "num": 110,
+    "shortDesc": "Raises the user's Defense by 1.",
+    "desc": "Raises the user's Defense by 1 stage.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 40,
+    "boosts": {
+      "def": 1
+    },
+    "target": "self",
+    "type": "Water",
+    "critRatio": 1,
+    "gen": 1
+  },
+  "wrap": {
+    "id": "wrap",
+    "name": "Wrap",
+    "num": 35,
+    "shortDesc": "Prevents the target from moving for 2-5 turns.",
+    "desc": "The user spends two to five turns using this move. Has a 3/8 chance to last two or three turns, and a 1/8 chance to last four or five turns. The damage calculated for the first turn is used for every other turn. The user cannot select a move and the target cannot execute a move during the effect, but both may switch out. If the user switches out, the target remains unable to execute a move during that turn. If the target switches out, the user uses this move again automatically, and if it had 0 PP at the time, it becomes 63. If the user or the target switch out, or the user is prevented from moving, the effect ends. This move can prevent the target from moving even if it has type immunity, but will not deal damage.",
+    "flags": {
+      "mirror": 1
+    },
+    "accuracy": 85,
+    "volatileStatus": "partiallytrapped",
+    "basePower": 15,
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 1
+  }
+}

@@ -1,0 +1,3455 @@
+{
+  "absorb": {
+    "zMovePower": 100
+  },
+  "acid": {
+    "zMovePower": 100
+  },
+  "aurorabeam": {
+    "zMovePower": 120
+  },
+  "barrage": {
+    "zMovePower": 100
+  },
+  "bide": {
+    "zMovePower": 100
+  },
+  "bind": {
+    "zMovePower": 100
+  },
+  "bite": {
+    "zMovePower": 120
+  },
+  "blizzard": {
+    "zMovePower": 185
+  },
+  "bodyslam": {
+    "zMovePower": 160
+  },
+  "boneclub": {
+    "zMovePower": 120
+  },
+  "bonemerang": {
+    "zMovePower": 100
+  },
+  "bubble": {
+    "zMovePower": 100
+  },
+  "bubblebeam": {
+    "zMovePower": 120
+  },
+  "clamp": {
+    "zMovePower": 100
+  },
+  "cometpunch": {
+    "zMovePower": 100
+  },
+  "confusion": {
+    "zMovePower": 100
+  },
+  "constrict": {
+    "zMovePower": 100
+  },
+  "counter": {
+    "desc": "Deals damage to the last opposing Pokemon to hit the user with a physical attack this turn equal to twice the HP lost by the user from that attack. If the user did not lose HP from the attack, this move deals 1 HP of damage instead. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. Only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's physical attack this turn.",
+    "zMovePower": 100
+  },
+  "crabhammer": {
+    "zMovePower": 180
+  },
+  "cut": {
+    "zMovePower": 100
+  },
+  "dig": {
+    "zMovePower": 160
+  },
+  "dizzypunch": {
+    "zMovePower": 140
+  },
+  "doublekick": {
+    "zMovePower": 100
+  },
+  "doubleslap": {
+    "zMovePower": 100
+  },
+  "doubleedge": {
+    "zMovePower": 190
+  },
+  "dragonrage": {
+    "zMovePower": 100
+  },
+  "dreameater": {
+    "zMovePower": 180
+  },
+  "drillpeck": {
+    "zMovePower": 160
+  },
+  "earthquake": {
+    "zMovePower": 180
+  },
+  "eggbomb": {
+    "zMovePower": 180
+  },
+  "ember": {
+    "zMovePower": 100
+  },
+  "explosion": {
+    "zMovePower": 200
+  },
+  "fireblast": {
+    "zMovePower": 185
+  },
+  "firepunch": {
+    "zMovePower": 140
+  },
+  "firespin": {
+    "zMovePower": 100
+  },
+  "fissure": {
+    "zMovePower": 180
+  },
+  "flamethrower": {
+    "zMovePower": 175
+  },
+  "fly": {
+    "zMovePower": 175
+  },
+  "furyattack": {
+    "zMovePower": 100
+  },
+  "furyswipes": {
+    "zMovePower": 100
+  },
+  "guillotine": {
+    "zMovePower": 180
+  },
+  "gust": {
+    "zMovePower": 100
+  },
+  "headbutt": {
+    "zMovePower": 140
+  },
+  "highjumpkick": {
+    "zMovePower": 195
+  },
+  "hornattack": {
+    "zMovePower": 120
+  },
+  "horndrill": {
+    "zMovePower": 180
+  },
+  "hydropump": {
+    "zMovePower": 185
+  },
+  "hyperbeam": {
+    "zMovePower": 200
+  },
+  "hyperfang": {
+    "zMovePower": 160
+  },
+  "icebeam": {
+    "zMovePower": 175
+  },
+  "icepunch": {
+    "zMovePower": 140
+  },
+  "jumpkick": {
+    "zMovePower": 180
+  },
+  "karatechop": {
+    "zMovePower": 100
+  },
+  "leechlife": {
+    "pp": 10,
+    "basePower": 80,
+    "zMovePower": 160
+  },
+  "lick": {
+    "zMovePower": 100
+  },
+  "lightscreen": {
+    "desc": "For 5 turns, the user and its party members take 0.5x damage from special attacks, or 0.66x damage if in a Double Battle. Damage is not reduced further with Aurora Veil. Critical hits ignore this effect. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Lasts for 8 turns if the user is holding Light Clay. Fails if the effect is already active on the user's side."
+  },
+  "lowkick": {
+    "zMovePower": 160
+  },
+  "megadrain": {
+    "zMovePower": 120
+  },
+  "megakick": {
+    "zMovePower": 190
+  },
+  "megapunch": {
+    "zMovePower": 160
+  },
+  "metronome": {
+    "desc": "A random move is selected for use, other than After You, Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Celebrate, Chatter, Copycat, Counter, Covet, Crafty Shield, Destiny Bond, Detect, Diamond Storm, Endure, Feint, Fleur Cannon, Focus Punch, Follow Me, Freeze Shock, Helping Hand, Hold Hands, Hyperspace Hole, Ice Burn, Instruct, King's Shield, Light of Ruin, Mat Block, Me First, Metronome, Mimic, Mind Blown, Mirror Coat, Mirror Move, Nature Power, Photon Geyser, Plasma Fists, Protect, Quash, Quick Guard, Rage Powder, Relic Song, Secret Sword, Shell Trap, Sketch, Sleep Talk, Snarl, Snatch, Snore, Spectral Thief, Spiky Shield, Spotlight, Steam Eruption, Struggle, Switcheroo, Techno Blast, Thief, Thousand Arrows, Thousand Waves, Transform, Trick, V-create, or Wide Guard."
+  },
+  "mimic": {
+    "desc": "While the user remains active, this move is replaced by the last move used by the target. The copied move has the maximum PP for that move. Fails if the target has not made a move, if the user has Transformed, if the user already knows the move, or if the move is Chatter, Mimic, Sketch, Struggle, Transform, or any Z-Move."
+  },
+  "minimize": {
+    "desc": "Raises the user's evasiveness by 2 stages. Whether or not the user's evasiveness was changed, Body Slam, Dragon Rush, Flying Press, Heat Crash, Heavy Slam, Malicious Moonsault, Steamroller, and Stomp will not check accuracy and have their damage doubled if used against the user while it is active."
+  },
+  "nightshade": {
+    "zMovePower": 100
+  },
+  "payday": {
+    "zMovePower": 100
+  },
+  "peck": {
+    "zMovePower": 100
+  },
+  "petaldance": {
+    "desc": "The user spends two or three turns locked into this move and becomes confused immediately after its move on the last turn of the effect if it is not already. This move targets an opposing Pokemon at random on each turn. If the user is prevented from moving, is asleep at the beginning of a turn, or the attack is not successful against the target on the first turn of the effect or the second turn of a three-turn effect, the effect ends without causing confusion. If this move is called by Sleep Talk and the user is asleep, the move is used for one turn and does not confuse the user.",
+    "zMovePower": 190
+  },
+  "pinmissile": {
+    "zMovePower": 140
+  },
+  "poisonsting": {
+    "zMovePower": 100
+  },
+  "pound": {
+    "zMovePower": 100
+  },
+  "psybeam": {
+    "zMovePower": 120
+  },
+  "psychic": {
+    "zMovePower": 175
+  },
+  "psywave": {
+    "zMovePower": 100
+  },
+  "quickattack": {
+    "zMovePower": 100
+  },
+  "rage": {
+    "zMovePower": 100
+  },
+  "razorleaf": {
+    "zMovePower": 100
+  },
+  "razorwind": {
+    "zMovePower": 160
+  },
+  "reflect": {
+    "desc": "For 5 turns, the user and its party members take 0.5x damage from physical attacks, or 0.66x damage if in a Double Battle. Damage is not reduced further with Aurora Veil. Critical hits ignore this effect. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Lasts for 8 turns if the user is holding Light Clay. Fails if the effect is already active on the user's side."
+  },
+  "rockslide": {
+    "zMovePower": 140
+  },
+  "rockthrow": {
+    "zMovePower": 100
+  },
+  "rollingkick": {
+    "zMovePower": 120
+  },
+  "scratch": {
+    "zMovePower": 100
+  },
+  "seismictoss": {
+    "zMovePower": 100
+  },
+  "selfdestruct": {
+    "zMovePower": 200
+  },
+  "skullbash": {
+    "zMovePower": 195
+  },
+  "skyattack": {
+    "zMovePower": 200
+  },
+  "slam": {
+    "zMovePower": 160
+  },
+  "slash": {
+    "zMovePower": 140
+  },
+  "sludge": {
+    "zMovePower": 120
+  },
+  "smog": {
+    "zMovePower": 100
+  },
+  "solarbeam": {
+    "zMovePower": 190
+  },
+  "sonicboom": {
+    "zMovePower": 100
+  },
+  "spikecannon": {
+    "zMovePower": 100
+  },
+  "stomp": {
+    "zMovePower": 120
+  },
+  "strength": {
+    "zMovePower": 160
+  },
+  "struggle": {
+    "desc": "Deals typeless damage to a random opposing Pokemon. If this move was successful, the user loses 1/4 of its maximum HP, rounded half up, and the Rock Head Ability does not prevent this. This move is automatically used if none of the user's known moves can be selected.",
+    "zMovePower": 1
+  },
+  "submission": {
+    "zMovePower": 160
+  },
+  "superfang": {
+    "zMovePower": 100
+  },
+  "surf": {
+    "zMovePower": 175
+  },
+  "swift": {
+    "zMovePower": 120
+  },
+  "tackle": {
+    "basePower": 40,
+    "zMovePower": 100
+  },
+  "takedown": {
+    "zMovePower": 175
+  },
+  "thrash": {
+    "desc": "The user spends two or three turns locked into this move and becomes confused immediately after its move on the last turn of the effect if it is not already. This move targets an opposing Pokemon at random on each turn. If the user is prevented from moving, is asleep at the beginning of a turn, or the attack is not successful against the target on the first turn of the effect or the second turn of a three-turn effect, the effect ends without causing confusion. If this move is called by Sleep Talk and the user is asleep, the move is used for one turn and does not confuse the user.",
+    "zMovePower": 190
+  },
+  "thunder": {
+    "zMovePower": 185
+  },
+  "thunderpunch": {
+    "zMovePower": 140
+  },
+  "thundershock": {
+    "zMovePower": 100
+  },
+  "thunderwave": {
+    "accuracy": 90
+  },
+  "thunderbolt": {
+    "zMovePower": 175
+  },
+  "triattack": {
+    "zMovePower": 160
+  },
+  "twineedle": {
+    "zMovePower": 100
+  },
+  "vicegrip": {
+    "zMovePower": 100
+  },
+  "vinewhip": {
+    "zMovePower": 100
+  },
+  "watergun": {
+    "zMovePower": 100
+  },
+  "waterfall": {
+    "zMovePower": 160
+  },
+  "wingattack": {
+    "zMovePower": 120
+  },
+  "wrap": {
+    "zMovePower": 100
+  },
+  "aeroblast": {
+    "zMovePower": 180
+  },
+  "ancientpower": {
+    "zMovePower": 120
+  },
+  "beatup": {
+    "zMovePower": 100
+  },
+  "bonerush": {
+    "zMovePower": 140
+  },
+  "crosschop": {
+    "zMovePower": 180
+  },
+  "crunch": {
+    "zMovePower": 160
+  },
+  "destinybond": {
+    "desc": "Until the user's next move, if an opposing Pokemon's attack knocks the user out, that Pokemon faints as well, unless the attack was Doom Desire or Future Sight. Fails if the user used this move successfully as its last move, disregarding moves used through the Dancer Ability."
+  },
+  "detect": {
+    "desc": "The user is protected from most attacks made by other Pokemon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn."
+  },
+  "dragonbreath": {
+    "zMovePower": 120
+  },
+  "dynamicpunch": {
+    "zMovePower": 180
+  },
+  "encore": {
+    "desc": "For its next 3 turns, the target is forced to repeat its last move used. If the affected move runs out of PP, the effect ends. Fails if the target is already under this effect, if it has not made a move, if the move has 0 PP, or if the move is Assist, Copycat, Encore, Me First, Metronome, Mimic, Mirror Move, Nature Power, Sketch, Sleep Talk, Struggle, Transform, or any Z-Move."
+  },
+  "endure": {
+    "desc": "The user will survive attacks made by other Pokemon during this turn with at least 1 HP. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn."
+  },
+  "extremespeed": {
+    "zMovePower": 160
+  },
+  "falseswipe": {
+    "zMovePower": 100
+  },
+  "feintattack": {
+    "zMovePower": 120
+  },
+  "flail": {
+    "zMovePower": 160
+  },
+  "flamewheel": {
+    "zMovePower": 120
+  },
+  "frustration": {
+    "zMovePower": 160
+  },
+  "furycutter": {
+    "zMovePower": 100
+  },
+  "futuresight": {
+    "zMovePower": 190
+  },
+  "gigadrain": {
+    "zMovePower": 140
+  },
+  "hiddenpower": {
+    "zMovePower": 120
+  },
+  "icywind": {
+    "zMovePower": 100
+  },
+  "irontail": {
+    "zMovePower": 180
+  },
+  "machpunch": {
+    "zMovePower": 100
+  },
+  "magnitude": {
+    "zMovePower": 140
+  },
+  "megahorn": {
+    "zMovePower": 190
+  },
+  "metalclaw": {
+    "zMovePower": 100
+  },
+  "mirrorcoat": {
+    "desc": "Deals damage to the last opposing Pokemon to hit the user with a special attack this turn equal to twice the HP lost by the user from that attack. If the user did not lose HP from the attack, this move deals 1 HP of damage instead. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. Only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's special attack this turn.",
+    "zMovePower": 100
+  },
+  "mudslap": {
+    "zMovePower": 100
+  },
+  "octazooka": {
+    "zMovePower": 120
+  },
+  "outrage": {
+    "desc": "The user spends two or three turns locked into this move and becomes confused immediately after its move on the last turn of the effect if it is not already. This move targets an opposing Pokemon at random on each turn. If the user is prevented from moving, is asleep at the beginning of a turn, or the attack is not successful against the target on the first turn of the effect or the second turn of a three-turn effect, the effect ends without causing confusion. If this move is called by Sleep Talk and the user is asleep, the move is used for one turn and does not confuse the user.",
+    "zMovePower": 190
+  },
+  "powdersnow": {
+    "zMovePower": 100
+  },
+  "present": {
+    "zMovePower": 100
+  },
+  "protect": {
+    "desc": "The user is protected from most attacks made by other Pokemon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn."
+  },
+  "pursuit": {
+    "desc": "If an opposing Pokemon switches out this turn, this move hits that Pokemon before it leaves the field, even if it was not the original target. If the user moves after an opponent using Parting Shot, U-turn, or Volt Switch, but not Baton Pass, it will hit that opponent before it leaves the field. Power doubles and no accuracy check is done if the user hits an opponent switching out, and the user's turn is over; if an opponent faints from this, the replacement Pokemon does not become active until the end of the turn.",
+    "zMovePower": 100
+  },
+  "rapidspin": {
+    "zMovePower": 100
+  },
+  "return": {
+    "zMovePower": 160
+  },
+  "reversal": {
+    "zMovePower": 160
+  },
+  "rocksmash": {
+    "zMovePower": 100
+  },
+  "rollout": {
+    "desc": "If this move is successful, the user is locked into this move and cannot make another move until it misses, 5 turns have passed, or the attack cannot be used. Power doubles with each successful hit of this move and doubles again if Defense Curl was used previously by the user. If this move is called by Sleep Talk, the move is used for one turn. If this move hits an active Disguise during the effect, the power multiplier is paused but the turn counter is not, potentially allowing the multiplier to be used on the user's next move after this effect ends.",
+    "zMovePower": 100
+  },
+  "sacredfire": {
+    "zMovePower": 180
+  },
+  "shadowball": {
+    "zMovePower": 160
+  },
+  "sleeptalk": {
+    "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Celebrate, Chatter, Copycat, Focus Punch, Hold Hands, Me First, Metronome, Mimic, Mirror Move, Nature Power, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, any two-turn move, or any Z-Move."
+  },
+  "sludgebomb": {
+    "zMovePower": 175
+  },
+  "snore": {
+    "zMovePower": 100
+  },
+  "spark": {
+    "zMovePower": 120
+  },
+  "steelwing": {
+    "zMovePower": 140
+  },
+  "swagger": {
+    "accuracy": 85
+  },
+  "thief": {
+    "desc": "If this attack was successful and the user has not fainted, it steals the target's held item if the user is not holding one. The target's item is not stolen if it is a Mail or Z-Crystal, or if the target is a Kyogre holding a Blue Orb, a Groudon holding a Red Orb, a Giratina holding a Griseous Orb, an Arceus holding a Plate, a Genesect holding a Drive, a Silvally holding a Memory, or a Pokemon that can Mega Evolve holding the Mega Stone for its species. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+    "zMovePower": 120
+  },
+  "triplekick": {
+    "zMovePower": 120
+  },
+  "twister": {
+    "zMovePower": 100
+  },
+  "vitalthrow": {
+    "zMovePower": 140
+  },
+  "whirlpool": {
+    "zMovePower": 100
+  },
+  "zapcannon": {
+    "zMovePower": 190
+  },
+  "aerialace": {
+    "zMovePower": 120
+  },
+  "aircutter": {
+    "zMovePower": 120
+  },
+  "armthrust": {
+    "zMovePower": 100
+  },
+  "assist": {
+    "desc": "A random move among those known by the user's party members is selected for use. Does not select Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Bounce, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Destiny Bond, Detect, Dig, Dive, Dragon Tail, Endure, Feint, Fly, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Phantom Force, Protect, Rage Powder, Roar, Shadow Force, Shell Trap, Sketch, Sky Drop, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, Whirlwind, or any Z-Move."
+  },
+  "astonish": {
+    "zMovePower": 100
+  },
+  "blastburn": {
+    "zMovePower": 200
+  },
+  "blazekick": {
+    "zMovePower": 160
+  },
+  "bounce": {
+    "zMovePower": 160
+  },
+  "brickbreak": {
+    "desc": "If this attack does not miss, the effects of Reflect, Light Screen, and Aurora Veil end for the target's side of the field before damage is calculated.",
+    "zMovePower": 140
+  },
+  "bulletseed": {
+    "zMovePower": 140
+  },
+  "camouflage": {
+    "desc": "The user's type changes based on the battle terrain. Normal type on the regular Wi-Fi terrain, Electric type during Electric Terrain, Fairy type during Misty Terrain, Grass type during Grassy Terrain, and Psychic type during Psychic Terrain. Fails if the user's type cannot be changed or if the user is already purely that type."
+  },
+  "covet": {
+    "desc": "If this attack was successful and the user has not fainted, it steals the target's held item if the user is not holding one. The target's item is not stolen if it is a Mail or Z-Crystal, or if the target is a Kyogre holding a Blue Orb, a Groudon holding a Red Orb, a Giratina holding a Griseous Orb, an Arceus holding a Plate, a Genesect holding a Drive, a Silvally holding a Memory, or a Pokemon that can Mega Evolve holding the Mega Stone for its species. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+    "zMovePower": 120
+  },
+  "crushclaw": {
+    "zMovePower": 140
+  },
+  "dive": {
+    "zMovePower": 160
+  },
+  "doomdesire": {
+    "zMovePower": 200
+  },
+  "dragonclaw": {
+    "zMovePower": 160
+  },
+  "endeavor": {
+    "zMovePower": 160
+  },
+  "eruption": {
+    "zMovePower": 200
+  },
+  "extrasensory": {
+    "zMovePower": 160
+  },
+  "facade": {
+    "zMovePower": 140
+  },
+  "fakeout": {
+    "zMovePower": 100
+  },
+  "focuspunch": {
+    "zMovePower": 200
+  },
+  "followme": {
+    "desc": "Until the end of the turn, all single-target attacks from the opposing side are redirected to the user. Such attacks are redirected to the user before they can be reflected by Magic Coat or the Magic Bounce Ability, or drawn in by the Lightning Rod or Storm Drain Abilities. Fails if it is not a Double Battle or Battle Royal. This effect is ignored while the user is under the effect of Sky Drop."
+  },
+  "frenzyplant": {
+    "zMovePower": 200
+  },
+  "heatwave": {
+    "zMovePower": 175
+  },
+  "hydrocannon": {
+    "zMovePower": 200
+  },
+  "hypervoice": {
+    "zMovePower": 175
+  },
+  "iceball": {
+    "desc": "If this move is successful, the user is locked into this move and cannot make another move until it misses, 5 turns have passed, or the attack cannot be used. Power doubles with each successful hit of this move and doubles again if Defense Curl was used previously by the user. If this move is called by Sleep Talk, the move is used for one turn. If this move hits an active Disguise during the effect, the power multiplier is paused but the turn counter is not, potentially allowing the multiplier to be used on the user's next move after this effect ends.",
+    "zMovePower": 100
+  },
+  "iciclespear": {
+    "zMovePower": 140
+  },
+  "knockoff": {
+    "desc": "If the target is holding an item that can be removed from it, ignoring the Sticky Hold Ability, this move's power is multiplied by 1.5. If the user has not fainted, the target loses its held item. This move cannot remove Z-Crystals, cause Pokemon with the Sticky Hold Ability to lose their held item, cause Pokemon that can Mega Evolve to lose the Mega Stone for their species, or cause a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, or a Silvally to lose their Blue Orb, Red Orb, Griseous Orb, Plate, Drive, or Memory respectively. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
+    "zMovePower": 120
+  },
+  "leafblade": {
+    "zMovePower": 175
+  },
+  "lusterpurge": {
+    "zMovePower": 140
+  },
+  "magicalleaf": {
+    "zMovePower": 120
+  },
+  "meteormash": {
+    "zMovePower": 175
+  },
+  "mistball": {
+    "zMovePower": 140
+  },
+  "mudshot": {
+    "zMovePower": 100
+  },
+  "muddywater": {
+    "zMovePower": 175
+  },
+  "naturepower": {
+    "desc": "This move calls another move for use based on the battle terrain. Tri Attack on the regular Wi-Fi terrain, Thunderbolt during Electric Terrain, Moonblast during Misty Terrain, Energy Ball during Grassy Terrain, and Psychic during Psychic Terrain."
+  },
+  "needlearm": {
+    "zMovePower": 120
+  },
+  "overheat": {
+    "zMovePower": 195
+  },
+  "poisonfang": {
+    "zMovePower": 100
+  },
+  "poisontail": {
+    "zMovePower": 100
+  },
+  "psychoboost": {
+    "zMovePower": 200
+  },
+  "revenge": {
+    "zMovePower": 120
+  },
+  "rockblast": {
+    "flags": {
+      "bullet": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "zMovePower": 140
+  },
+  "rocktomb": {
+    "zMovePower": 120
+  },
+  "roleplay": {
+    "desc": "The user's Ability changes to match the target's Ability. Fails if the user's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or already matches the target, or if the target's Ability is Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Illusion, Imposter, Multitype, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, or Zen Mode."
+  },
+  "sandtomb": {
+    "zMovePower": 100
+  },
+  "secretpower": {
+    "desc": "Has a 30% chance to cause a secondary effect on the target based on the battle terrain. Causes paralysis on the regular Wi-Fi terrain, causes paralysis during Electric Terrain, lowers Special Attack by 1 stage during Misty Terrain, causes sleep during Grassy Terrain and lowers Speed by 1 stage during Psychic Terrain.",
+    "zMovePower": 140
+  },
+  "shadowpunch": {
+    "zMovePower": 120
+  },
+  "sheercold": {
+    "desc": "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack's accuracy is equal to (user's level - target's level + X)%, where X is 30 if the user is an Ice type and 20 otherwise, and fails if the target is at a higher level. Ice-type Pokemon and Pokemon with the Sturdy Ability are immune.",
+    "shortDesc": "OHKOs non-Ice targets. Fails if user's lower level.",
+    "zMovePower": 180
+  },
+  "shockwave": {
+    "zMovePower": 120
+  },
+  "signalbeam": {
+    "zMovePower": 140
+  },
+  "silverwind": {
+    "zMovePower": 120
+  },
+  "skillswap": {
+    "desc": "The user swaps its Ability with the target's Ability. Fails if either the user or the target's Ability is Battle Bond, Comatose, Disguise, Illusion, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Wonder Guard, or Zen Mode."
+  },
+  "skyuppercut": {
+    "zMovePower": 160
+  },
+  "smellingsalts": {
+    "zMovePower": 140
+  },
+  "spitup": {
+    "zMovePower": 100
+  },
+  "superpower": {
+    "zMovePower": 190
+  },
+  "trick": {
+    "desc": "The user swaps its held item with the target's held item. Fails if either the user or the target is holding a Mail or Z-Crystal, if neither is holding an item, if the user is trying to give or take a Mega Stone to or from the species that can Mega Evolve with it, or if the user is trying to give or take a Blue Orb, a Red Orb, a Griseous Orb, a Plate, a Drive, or a Memory to or from a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, or a Silvally, respectively. The target is immune to this move if it has the Sticky Hold Ability."
+  },
+  "uproar": {
+    "desc": "The user spends three turns locked into this move. This move targets an opponent at random on each turn. On the first of the three turns, all sleeping active Pokemon wake up. During the three turns, no active Pokemon can fall asleep by any means, and Pokemon switched in during the effect do not wake up. If the user is prevented from moving or the attack is not successful against the target during one of the turns, the effect ends.",
+    "zMovePower": 175
+  },
+  "volttackle": {
+    "zMovePower": 190
+  },
+  "waterpulse": {
+    "zMovePower": 120
+  },
+  "waterspout": {
+    "zMovePower": 200
+  },
+  "weatherball": {
+    "zMovePower": 160
+  },
+  "airslash": {
+    "zMovePower": 140
+  },
+  "aquajet": {
+    "zMovePower": 100
+  },
+  "aquatail": {
+    "zMovePower": 175
+  },
+  "assurance": {
+    "zMovePower": 120
+  },
+  "attackorder": {
+    "zMovePower": 175
+  },
+  "aurasphere": {
+    "zMovePower": 160
+  },
+  "avalanche": {
+    "zMovePower": 120
+  },
+  "bravebird": {
+    "zMovePower": 190
+  },
+  "brine": {
+    "zMovePower": 120
+  },
+  "bugbite": {
+    "zMovePower": 120
+  },
+  "bugbuzz": {
+    "zMovePower": 175
+  },
+  "bulletpunch": {
+    "zMovePower": 100
+  },
+  "chargebeam": {
+    "zMovePower": 100
+  },
+  "chatter": {
+    "zMovePower": 120
+  },
+  "closecombat": {
+    "zMovePower": 190
+  },
+  "copycat": {
+    "desc": "The user uses the last move used by any Pokemon, including itself. Fails if no move has been used, or if the last move used was Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Destiny Bond, Detect, Dragon Tail, Endure, Feint, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Protect, Rage Powder, Roar, Shell Trap, Sketch, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, Whirlwind, or any Z-Move."
+  },
+  "crosspoison": {
+    "zMovePower": 140
+  },
+  "crushgrip": {
+    "zMovePower": 190
+  },
+  "darkpulse": {
+    "zMovePower": 160
+  },
+  "darkvoid": {
+    "accuracy": 50,
+    "desc": "Causes the target to fall asleep. This move cannot be used successfully unless the user's current form, while considering Transform, is Darkrai.",
+    "shortDesc": "Darkrai: Causes the foe(s) to fall asleep."
+  },
+  "defog": {
+    "desc": "Lowers the target's evasiveness by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness."
+  },
+  "discharge": {
+    "zMovePower": 160
+  },
+  "doublehit": {
+    "zMovePower": 140
+  },
+  "dracometeor": {
+    "zMovePower": 195
+  },
+  "dragonpulse": {
+    "zMovePower": 160
+  },
+  "dragonrush": {
+    "zMovePower": 180
+  },
+  "drainpunch": {
+    "zMovePower": 140
+  },
+  "earthpower": {
+    "zMovePower": 175
+  },
+  "energyball": {
+    "zMovePower": 175
+  },
+  "feint": {
+    "desc": "If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokemon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the target's side normally.",
+    "zMovePower": 100
+  },
+  "firefang": {
+    "zMovePower": 120
+  },
+  "flareblitz": {
+    "zMovePower": 190
+  },
+  "flashcannon": {
+    "zMovePower": 160
+  },
+  "fling": {
+    "zMovePower": 100
+  },
+  "focusblast": {
+    "zMovePower": 190
+  },
+  "forcepalm": {
+    "zMovePower": 120
+  },
+  "gastroacid": {
+    "desc": "Causes the target's Ability to be rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode, this move fails, and receiving the effect through Baton Pass ends the effect immediately."
+  },
+  "gigaimpact": {
+    "zMovePower": 200
+  },
+  "grassknot": {
+    "zMovePower": 160
+  },
+  "gunkshot": {
+    "zMovePower": 190
+  },
+  "gyroball": {
+    "zMovePower": 160
+  },
+  "hammerarm": {
+    "zMovePower": 180
+  },
+  "headsmash": {
+    "zMovePower": 200
+  },
+  "icefang": {
+    "zMovePower": 120
+  },
+  "iceshard": {
+    "zMovePower": 100
+  },
+  "ironhead": {
+    "zMovePower": 160
+  },
+  "judgment": {
+    "zMovePower": 180
+  },
+  "lastresort": {
+    "zMovePower": 200
+  },
+  "lavaplume": {
+    "zMovePower": 160
+  },
+  "leafstorm": {
+    "zMovePower": 195
+  },
+  "magmastorm": {
+    "zMovePower": 180
+  },
+  "magnetbomb": {
+    "zMovePower": 120
+  },
+  "mefirst": {
+    "desc": "The user uses the move the target chose for use this turn against it, if possible, with its power multiplied by 1.5. The move must be a damaging move other than Beak Blast, Chatter, Counter, Covet, Focus Punch, Me First, Metal Burst, Mirror Coat, Shell Trap, Struggle, Thief, or any Z-Move. Fails if the target moves before the user. Ignores the target's substitute for the purpose of copying the move."
+  },
+  "metalburst": {
+    "desc": "Deals damage to the last opposing Pokemon to hit the user with an attack this turn equal to 1.5 times the HP lost by the user from that attack, rounded down. If the user did not lose HP from the attack, this move deals 1 HP of damage instead. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. Only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's attack this turn.",
+    "zMovePower": 100
+  },
+  "mirrorshot": {
+    "zMovePower": 120
+  },
+  "mudbomb": {
+    "zMovePower": 120
+  },
+  "naturalgift": {
+    "zMovePower": 160
+  },
+  "nightslash": {
+    "zMovePower": 140
+  },
+  "ominouswind": {
+    "zMovePower": 120
+  },
+  "payback": {
+    "desc": "Power doubles if the user moves after the target this turn, including actions taken through Instruct or the Dancer Ability. Switching in does not count as an action.",
+    "zMovePower": 100
+  },
+  "pluck": {
+    "zMovePower": 120
+  },
+  "poisonjab": {
+    "zMovePower": 160
+  },
+  "powergem": {
+    "zMovePower": 160
+  },
+  "powerwhip": {
+    "zMovePower": 190
+  },
+  "psychocut": {
+    "zMovePower": 140
+  },
+  "punishment": {
+    "zMovePower": 160
+  },
+  "roaroftime": {
+    "zMovePower": 200
+  },
+  "rockclimb": {
+    "zMovePower": 175
+  },
+  "rockwrecker": {
+    "zMovePower": 200
+  },
+  "seedbomb": {
+    "zMovePower": 160
+  },
+  "seedflare": {
+    "zMovePower": 190
+  },
+  "shadowclaw": {
+    "zMovePower": 140
+  },
+  "shadowforce": {
+    "desc": "If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokemon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the target's side normally. This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks. If the user is holding a Power Herb, the move completes in one turn.",
+    "zMovePower": 190
+  },
+  "shadowsneak": {
+    "zMovePower": 100
+  },
+  "spacialrend": {
+    "zMovePower": 180
+  },
+  "stoneedge": {
+    "zMovePower": 180
+  },
+  "suckerpunch": {
+    "basePower": 70,
+    "zMovePower": 140
+  },
+  "switcheroo": {
+    "desc": "The user swaps its held item with the target's held item. Fails if either the user or the target is holding a Mail or Z-Crystal, if neither is holding an item, if the user is trying to give or take a Mega Stone to or from the species that can Mega Evolve with it, or if the user is trying to give or take a Blue Orb, a Red Orb, a Griseous Orb, a Plate, a Drive, or a Memory to or from a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, or a Silvally, respectively. The target is immune to this move if it has the Sticky Hold Ability."
+  },
+  "thunderfang": {
+    "zMovePower": 120
+  },
+  "trumpcard": {
+    "zMovePower": 160
+  },
+  "uturn": {
+    "desc": "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
+    "zMovePower": 140
+  },
+  "vacuumwave": {
+    "zMovePower": 100
+  },
+  "wakeupslap": {
+    "zMovePower": 140
+  },
+  "woodhammer": {
+    "zMovePower": 190
+  },
+  "worryseed": {
+    "desc": "Causes the target's Ability to become Insomnia. Fails if the target's Ability is Battle Bond, Comatose, Disguise, Insomnia, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, or Zen Mode."
+  },
+  "wringout": {
+    "zMovePower": 190
+  },
+  "xscissor": {
+    "zMovePower": 160
+  },
+  "zenheadbutt": {
+    "zMovePower": 160
+  },
+  "acidspray": {
+    "zMovePower": 100
+  },
+  "acrobatics": {
+    "zMovePower": 100
+  },
+  "allyswitch": {
+    "desc": "The user swaps positions with its ally. Fails if the user is the only Pokemon on its side.",
+    "shortDesc": "The user swaps positions with its ally.",
+    "priority": 2
+  },
+  "bestow": {
+    "desc": "The target receives the user's held item. Fails if the user has no item or is holding a Mail or Z-Crystal, if the target is already holding an item, if the user is a Kyogre holding a Blue Orb, a Groudon holding a Red Orb, a Giratina holding a Griseous Orb, an Arceus holding a Plate, a Genesect holding a Drive, a Silvally holding a Memory, a Pokemon that can Mega Evolve holding the Mega Stone for its species, or if the target is one of those Pokemon and the user is holding the respective item."
+  },
+  "blueflare": {
+    "zMovePower": 195
+  },
+  "boltstrike": {
+    "zMovePower": 195
+  },
+  "bulldoze": {
+    "zMovePower": 120
+  },
+  "chipaway": {
+    "zMovePower": 140
+  },
+  "circlethrow": {
+    "zMovePower": 120
+  },
+  "clearsmog": {
+    "zMovePower": 100
+  },
+  "dragontail": {
+    "zMovePower": 120
+  },
+  "drillrun": {
+    "zMovePower": 160
+  },
+  "dualchop": {
+    "zMovePower": 100
+  },
+  "echoedvoice": {
+    "zMovePower": 100
+  },
+  "electroball": {
+    "zMovePower": 160
+  },
+  "electroweb": {
+    "zMovePower": 100
+  },
+  "entrainment": {
+    "desc": "Causes the target's Ability to become the same as the user's. Fails if the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, or the same Ability as the user, or if the user's Ability is Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Illusion, Imposter, Multitype, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, or Zen Mode."
+  },
+  "fierydance": {
+    "zMovePower": 160
+  },
+  "finalgambit": {
+    "zMovePower": 180
+  },
+  "firepledge": {
+    "zMovePower": 160
+  },
+  "flameburst": {
+    "desc": "If this move is successful, the target's ally loses 1/16 of its maximum HP, rounded down, unless it has the Magic Guard Ability.",
+    "zMovePower": 140
+  },
+  "flamecharge": {
+    "zMovePower": 100
+  },
+  "foulplay": {
+    "zMovePower": 175
+  },
+  "freezeshock": {
+    "zMovePower": 200
+  },
+  "frostbreath": {
+    "zMovePower": 120
+  },
+  "fusionbolt": {
+    "zMovePower": 180
+  },
+  "fusionflare": {
+    "zMovePower": 180
+  },
+  "geargrind": {
+    "zMovePower": 180
+  },
+  "glaciate": {
+    "zMovePower": 120
+  },
+  "grasspledge": {
+    "zMovePower": 160
+  },
+  "headcharge": {
+    "zMovePower": 190
+  },
+  "heartstamp": {
+    "zMovePower": 120
+  },
+  "heatcrash": {
+    "zMovePower": 160
+  },
+  "heavyslam": {
+    "desc": "The power of this move depends on (user's weight / target's weight), rounded down. Power is equal to 120 if the result is 5 or more, 100 if 4, 80 if 3, 60 if 2, and 40 if 1 or less. Damage doubles and no accuracy check is done if the target has used Minimize while active.",
+    "zMovePower": 160
+  },
+  "hex": {
+    "zMovePower": 160
+  },
+  "hornleech": {
+    "zMovePower": 140
+  },
+  "hurricane": {
+    "zMovePower": 185
+  },
+  "iceburn": {
+    "zMovePower": 200
+  },
+  "iciclecrash": {
+    "zMovePower": 160
+  },
+  "incinerate": {
+    "zMovePower": 120
+  },
+  "inferno": {
+    "zMovePower": 180
+  },
+  "leaftornado": {
+    "zMovePower": 120
+  },
+  "lowsweep": {
+    "zMovePower": 120
+  },
+  "nightdaze": {
+    "zMovePower": 160
+  },
+  "psyshock": {
+    "zMovePower": 160
+  },
+  "psystrike": {
+    "zMovePower": 180
+  },
+  "quickguard": {
+    "desc": "The user and its party members are protected from attacks with original or altered priority greater than 0 made by other Pokemon, including allies, during this turn. This move modifies the same 1/X chance of being successful used by other protection moves, where X starts at 1 and triples each time this move is successfully used, but does not use the chance to check for failure. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn or if this move is already in effect for the user's side."
+  },
+  "ragepowder": {
+    "desc": "Until the end of the turn, all single-target attacks from the opposing side are redirected to the user. Such attacks are redirected to the user before they can be reflected by Magic Coat or the Magic Bounce Ability, or drawn in by the Lightning Rod or Storm Drain Abilities. Fails if it is not a Double Battle or Battle Royal. This effect is ignored while the user is under the effect of Sky Drop."
+  },
+  "razorshell": {
+    "zMovePower": 140
+  },
+  "reflecttype": {
+    "desc": "Causes the user's types to become the same as the current types of the target. If the target's current types include typeless and a non-added type, typeless is ignored. If the target's current types include typeless and an added type from Forest's Curse or Trick-or-Treat, typeless is copied as the Normal type instead. Fails if the user is an Arceus or a Silvally, or if the target's current type is typeless alone."
+  },
+  "relicsong": {
+    "zMovePower": 140
+  },
+  "retaliate": {
+    "zMovePower": 140
+  },
+  "round": {
+    "zMovePower": 120
+  },
+  "sacredsword": {
+    "zMovePower": 175
+  },
+  "scald": {
+    "zMovePower": 160
+  },
+  "searingshot": {
+    "zMovePower": 180
+  },
+  "secretsword": {
+    "zMovePower": 160
+  },
+  "simplebeam": {
+    "desc": "Causes the target's Ability to become Simple. Fails if the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Simple, Stance Change, Truant, or Zen Mode."
+  },
+  "skydrop": {
+    "zMovePower": 120
+  },
+  "sludgewave": {
+    "zMovePower": 175
+  },
+  "smackdown": {
+    "zMovePower": 100
+  },
+  "snarl": {
+    "zMovePower": 100
+  },
+  "soak": {
+    "desc": "Causes the target to become a Water type. Fails if the target is an Arceus or a Silvally."
+  },
+  "steamroller": {
+    "zMovePower": 120
+  },
+  "storedpower": {
+    "zMovePower": 160
+  },
+  "stormthrow": {
+    "zMovePower": 120
+  },
+  "strugglebug": {
+    "zMovePower": 100
+  },
+  "synchronoise": {
+    "zMovePower": 190
+  },
+  "tailslap": {
+    "zMovePower": 140
+  },
+  "technoblast": {
+    "zMovePower": 190
+  },
+  "telekinesis": {
+    "desc": "For 3 turns, the target cannot avoid any attacks made against it, other than OHKO moves, as long as it remains active. During the effect, the target is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability as long as it remains active. If the target uses Baton Pass, the replacement will gain the effect. Ingrain, Smack Down, Thousand Arrows, and Iron Ball override this move if the target is under any of their effects. Fails if the target is already under this effect or the effects of Ingrain, Smack Down, or Thousand Arrows. The target is immune to this move on use if its species is Diglett, Dugtrio, Alolan Diglett, Alolan Dugtrio, Sandygast, Palossand, or Gengar while Mega-Evolved. Mega Gengar cannot be under this effect by any means."
+  },
+  "vcreate": {
+    "zMovePower": 220
+  },
+  "venoshock": {
+    "zMovePower": 120
+  },
+  "voltswitch": {
+    "desc": "If this move is successful and the user has not fainted, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if there are no unfainted party members, or if the target switched out using an Eject Button or through the effect of the Emergency Exit or Wimp Out Abilities.",
+    "zMovePower": 140
+  },
+  "waterpledge": {
+    "zMovePower": 160
+  },
+  "wideguard": {
+    "desc": "The user and its party members are protected from moves made by other Pokemon, including allies, during this turn that target all adjacent foes or all adjacent Pokemon. This move modifies the same 1/X chance of being successful used by other protection moves, where X starts at 1 and triples each time this move is successfully used, but does not use the chance to check for failure. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn or if this move is already in effect for the user's side.",
+    "shortDesc": "Protects allies from multi-target moves this turn."
+  },
+  "wildcharge": {
+    "zMovePower": 175
+  },
+  "belch": {
+    "zMovePower": 190
+  },
+  "boomburst": {
+    "zMovePower": 200
+  },
+  "dazzlinggleam": {
+    "zMovePower": 160
+  },
+  "diamondstorm": {
+    "desc": "Has a 50% chance to raise the user's Defense by 2 stages.",
+    "shortDesc": "50% chance to raise user's Def by 2 for each hit.",
+    "zMovePower": 180,
+    "secondaries": [
+      {
+        "self": {
+          "boosts": {
+            "def": 2
+          }
+        }
+      }
+    ]
+  },
+  "disarmingvoice": {
+    "zMovePower": 100
+  },
+  "dragonascent": {
+    "zMovePower": 190
+  },
+  "drainingkiss": {
+    "zMovePower": 100
+  },
+  "fairywind": {
+    "zMovePower": 100
+  },
+  "fellstinger": {
+    "desc": "Raises the user's Attack by 3 stages if this move knocks out the target.",
+    "shortDesc": "Raises user's Attack by 3 if this KOes the target.",
+    "basePower": 50,
+    "zMovePower": 100
+  },
+  "flyingpress": {
+    "basePower": 100,
+    "zMovePower": 170
+  },
+  "freezedry": {
+    "zMovePower": 140
+  },
+  "holdback": {
+    "zMovePower": 100
+  },
+  "hyperspacefury": {
+    "desc": "Lowers the user's Defense by 1 stage. This move cannot be used successfully unless the user's current form, while considering Transform, is Hoopa Unbound. If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokemon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the target's side normally.",
+    "zMovePower": 180
+  },
+  "hyperspacehole": {
+    "desc": "If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokemon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the target's side normally.",
+    "zMovePower": 160
+  },
+  "infestation": {
+    "zMovePower": 100
+  },
+  "kingsshield": {
+    "desc": "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user have their Attack lowered by 2 stages. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn."
+  },
+  "landswrath": {
+    "zMovePower": 185
+  },
+  "lightofruin": {
+    "zMovePower": 200
+  },
+  "mistyterrain": {
+    "desc": "For 5 turns, the terrain becomes Misty Terrain. During the effect, the power of Dragon-type attacks used against grounded Pokemon is multiplied by 0.5 and grounded Pokemon cannot be inflicted with a major status condition nor confusion. Camouflage transforms the user into a Fairy type, Nature Power becomes Moonblast, and Secret Power has a 30% chance to lower Special Attack by 1 stage. Fails if the current terrain is Misty Terrain."
+  },
+  "moonblast": {
+    "zMovePower": 175
+  },
+  "mysticalfire": {
+    "basePower": 75,
+    "zMovePower": 140
+  },
+  "nuzzle": {
+    "zMovePower": 100
+  },
+  "oblivionwing": {
+    "zMovePower": 160
+  },
+  "originpulse": {
+    "zMovePower": 185
+  },
+  "paraboliccharge": {
+    "basePower": 65,
+    "zMovePower": 120
+  },
+  "partingshot": {
+    "desc": "Lowers the target's Attack and Special Attack by 1 stage. If this move is successful, the user switches out even if it is trapped and is replaced immediately by a selected party member. The user does not switch out if the target's Attack and Special Attack stat stages were both unchanged, or if there are no unfainted party members."
+  },
+  "petalblizzard": {
+    "zMovePower": 175
+  },
+  "phantomforce": {
+    "desc": "If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokemon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the target's side normally. This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks. If the user is holding a Power Herb, the move completes in one turn.",
+    "zMovePower": 175
+  },
+  "playrough": {
+    "zMovePower": 175
+  },
+  "powder": {
+    "desc": "If the target uses a Fire-type move this turn, it is prevented from executing and the target loses 1/4 of its maximum HP, rounded half up. This effect does not happen if the Fire-type move is prevented by Primordial Sea."
+  },
+  "poweruppunch": {
+    "zMovePower": 100
+  },
+  "precipiceblades": {
+    "zMovePower": 190
+  },
+  "spikyshield": {
+    "desc": "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon making contact with the user lose 1/8 of their maximum HP, rounded down. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn."
+  },
+  "steameruption": {
+    "zMovePower": 185
+  },
+  "thousandarrows": {
+    "zMovePower": 180
+  },
+  "thousandwaves": {
+    "zMovePower": 175
+  },
+  "watershuriken": {
+    "desc": "Hits two to five times. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is an Ash-Greninja with the Battle Bond Ability, this move has a power of 20 and always hits three times.",
+    "category": "Special",
+    "zMovePower": 100
+  },
+  "10000000voltthunderbolt": {
+    "id": "10000000voltthunderbolt",
+    "name": "10,000,000 Volt Thunderbolt",
+    "num": 719,
+    "shortDesc": "Very high critical hit ratio.",
+    "desc": "Has a very high chance for a critical hit.",
+    "accuracy": true,
+    "basePower": 195,
+    "category": "Special",
+    "pp": 1,
+    "isZ": "pikashuniumz",
+    "critRatio": 3,
+    "target": "normal",
+    "type": "Electric",
+    "gen": 7
+  },
+  "accelerock": {
+    "id": "accelerock",
+    "name": "Accelerock",
+    "num": 709,
+    "shortDesc": "Usually goes first.",
+    "desc": "No additional effect.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 40,
+    "category": "Physical",
+    "pp": 20,
+    "priority": 1,
+    "target": "normal",
+    "type": "Rock",
+    "zMovePower": 100,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "aciddownpour": {
+    "id": "aciddownpour",
+    "name": "Acid Downpour",
+    "num": 628,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "poisoniumz",
+    "target": "normal",
+    "type": "Poison",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "alloutpummeling": {
+    "id": "alloutpummeling",
+    "name": "All-Out Pummeling",
+    "num": 624,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "fightiniumz",
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "anchorshot": {
+    "id": "anchorshot",
+    "name": "Anchor Shot",
+    "num": 677,
+    "shortDesc": "Prevents the target from switching out.",
+    "desc": "Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 80,
+    "category": "Physical",
+    "pp": 20,
+    "target": "normal",
+    "type": "Steel",
+    "zMovePower": 160,
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 100
+      }
+    ],
+    "gen": 7
+  },
+  "auroraveil": {
+    "id": "auroraveil",
+    "name": "Aurora Veil",
+    "num": 694,
+    "shortDesc": "For 5 turns, damage to allies is halved. Hail only.",
+    "desc": "For 5 turns, the user and its party members take 0.5x damage from physical and special attacks, or 0.66x damage if in a Double Battle; does not reduce damage further with Reflect or Light Screen. Critical hits ignore this protection. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Brick Break and Psychic Fangs remove the effect before damage is calculated. Lasts for 8 turns if the user is holding Light Clay. Fails unless the weather is Hail.",
+    "flags": {
+      "snatch": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "sideCondition": "auroraveil",
+    "target": "allySide",
+    "type": "Ice",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "baddybad": {
+    "id": "baddybad",
+    "name": "Baddy Bad",
+    "num": 737,
+    "shortDesc": "Summons Reflect.",
+    "desc": "This move summons Reflect for 5 turns upon use.",
+    "isNonstandard": true,
+    "flags": {
+      "protect": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Special",
+    "pp": 15,
+    "target": "normal",
+    "type": "Dark",
+    "critRatio": 1,
+    "sideCondition": "reflect",
+    "gen": 7
+  },
+  "banefulbunker": {
+    "id": "banefulbunker",
+    "name": "Baneful Bunker",
+    "num": 661,
+    "shortDesc": "Protects from moves. Contact: poison.",
+    "desc": "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon making contact with the user become poisoned. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "priority": 4,
+    "volatileStatus": "banefulbunker",
+    "target": "self",
+    "type": "Poison",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "beakblast": {
+    "id": "beakblast",
+    "name": "Beak Blast",
+    "num": 690,
+    "shortDesc": "Burns on contact with the user before it moves.",
+    "desc": "If the user is hit by a contact move this turn before it can execute this move, the attacker is burned.",
+    "flags": {
+      "bullet": 1,
+      "protect": 1
+    },
+    "accuracy": 100,
+    "basePower": 100,
+    "category": "Physical",
+    "pp": 15,
+    "priority": -3,
+    "target": "normal",
+    "type": "Flying",
+    "zMovePower": 180,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "blackholeeclipse": {
+    "id": "blackholeeclipse",
+    "name": "Black Hole Eclipse",
+    "num": 654,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "darkiniumz",
+    "target": "normal",
+    "type": "Dark",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "bloomdoom": {
+    "id": "bloomdoom",
+    "name": "Bloom Doom",
+    "num": 644,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "grassiumz",
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "bouncybubble": {
+    "id": "bouncybubble",
+    "name": "Bouncy Bubble",
+    "num": 733,
+    "shortDesc": "User recovers 50% of the damage dealt.",
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
+    "isNonstandard": true,
+    "flags": {
+      "protect": 1,
+      "heal": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Special",
+    "pp": 15,
+    "target": "normal",
+    "type": "Water",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "breakneckblitz": {
+    "id": "breakneckblitz",
+    "name": "Breakneck Blitz",
+    "num": 622,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "normaliumz",
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "brutalswing": {
+    "id": "brutalswing",
+    "name": "Brutal Swing",
+    "num": 693,
+    "shortDesc": "No additional effect. Hits adjacent Pokemon.",
+    "desc": "No additional effect.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 60,
+    "category": "Physical",
+    "pp": 20,
+    "target": "allAdjacent",
+    "type": "Dark",
+    "zMovePower": 120,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "burnup": {
+    "id": "burnup",
+    "name": "Burn Up",
+    "num": 682,
+    "shortDesc": "User's Fire type becomes typeless; must be Fire.",
+    "desc": "Fails unless the user is a Fire type. If this move is successful, the user's Fire type becomes typeless as long as it remains active.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "defrost": 1
+    },
+    "accuracy": 100,
+    "basePower": 130,
+    "category": "Special",
+    "pp": 5,
+    "target": "normal",
+    "type": "Fire",
+    "zMovePower": 195,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "buzzybuzz": {
+    "id": "buzzybuzz",
+    "name": "Buzzy Buzz",
+    "num": 734,
+    "shortDesc": "100% chance to paralyze the foe.",
+    "desc": "Has a 100% chance to paralyze the foe.",
+    "isNonstandard": true,
+    "flags": {
+      "protect": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Special",
+    "pp": 15,
+    "target": "normal",
+    "type": "Electric",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 100,
+        "status": "par"
+      }
+    ],
+    "gen": 7
+  },
+  "catastropika": {
+    "id": "catastropika",
+    "name": "Catastropika",
+    "num": 658,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "contact": 1
+    },
+    "accuracy": true,
+    "basePower": 210,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "pikaniumz",
+    "target": "normal",
+    "type": "Electric",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "clangingscales": {
+    "id": "clangingscales",
+    "name": "Clanging Scales",
+    "num": 691,
+    "shortDesc": "Lowers the user's Defense by 1.",
+    "desc": "Lowers the user's Defense by 1 stage.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "sound": 1,
+      "authentic": 1
+    },
+    "accuracy": 100,
+    "basePower": 110,
+    "category": "Special",
+    "pp": 5,
+    "target": "allAdjacentFoes",
+    "type": "Dragon",
+    "zMovePower": 185,
+    "critRatio": 1,
+    "boosts": {
+      "def": -1
+    },
+    "gen": 7
+  },
+  "clangoroussoulblaze": {
+    "id": "clangoroussoulblaze",
+    "name": "Clangorous Soulblaze",
+    "num": 728,
+    "shortDesc": "Raises the user's Atk/Def/SpAtk/SpDef/Spe by 1.",
+    "desc": "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
+    "flags": {
+      "sound": 1,
+      "authentic": 1
+    },
+    "accuracy": true,
+    "basePower": 185,
+    "category": "Special",
+    "pp": 1,
+    "isZ": "kommoniumz",
+    "target": "allAdjacentFoes",
+    "type": "Dragon",
+    "critRatio": 1,
+    "secondaries": [
+      {}
+    ],
+    "boosts": {
+      "atk": 1,
+      "def": 1,
+      "spa": 1,
+      "spd": 1,
+      "spe": 1
+    },
+    "gen": 7
+  },
+  "continentalcrush": {
+    "id": "continentalcrush",
+    "name": "Continental Crush",
+    "num": 632,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "rockiumz",
+    "target": "normal",
+    "type": "Rock",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "coreenforcer": {
+    "id": "coreenforcer",
+    "name": "Core Enforcer",
+    "num": 687,
+    "shortDesc": "Nullifies the foe(s) Ability if the foe(s) move first.",
+    "desc": "If the user moves after the target, the target's Ability is rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode, this effect does not happen, and receiving the effect through Baton Pass ends the effect immediately.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 100,
+    "category": "Special",
+    "pp": 10,
+    "target": "allAdjacentFoes",
+    "type": "Dragon",
+    "zMovePower": 140,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "corkscrewcrash": {
+    "id": "corkscrewcrash",
+    "name": "Corkscrew Crash",
+    "num": 638,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "steeliumz",
+    "target": "normal",
+    "type": "Steel",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "darkestlariat": {
+    "id": "darkestlariat",
+    "name": "Darkest Lariat",
+    "num": 663,
+    "shortDesc": "Ignores the target's stat stage changes.",
+    "desc": "Ignores the target's stat stage changes, including evasiveness.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 85,
+    "category": "Physical",
+    "pp": 10,
+    "ignoreDefensive": true,
+    "target": "normal",
+    "type": "Dark",
+    "zMovePower": 160,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "devastatingdrake": {
+    "id": "devastatingdrake",
+    "name": "Devastating Drake",
+    "num": 652,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "dragoniumz",
+    "target": "normal",
+    "type": "Dragon",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "doubleironbash": {
+    "id": "doubleironbash",
+    "name": "Double Iron Bash",
+    "num": 742,
+    "shortDesc": "Hits twice. 30% chance to flinch.",
+    "desc": "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. Has a 30% chance to flinch the target.",
+    "isNonstandard": true,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "punch": 1
+    },
+    "accuracy": 100,
+    "basePower": 60,
+    "category": "Physical",
+    "pp": 5,
+    "multihit": 2,
+    "target": "normal",
+    "type": "Steel",
+    "zMovePower": 180,
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "volatileStatus": "flinch"
+      }
+    ],
+    "gen": 7
+  },
+  "dragonhammer": {
+    "id": "dragonhammer",
+    "name": "Dragon Hammer",
+    "num": 692,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Physical",
+    "pp": 15,
+    "target": "normal",
+    "type": "Dragon",
+    "zMovePower": 175,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "extremeevoboost": {
+    "id": "extremeevoboost",
+    "name": "Extreme Evoboost",
+    "num": 702,
+    "shortDesc": "Raises user's Atk, Def, SpA, SpD, and Spe by 2.",
+    "desc": "Raises the user's Attack, Defense, Special Attack, Special Defense, and Speed by 2 stages.",
+    "accuracy": true,
+    "category": "Status",
+    "pp": 1,
+    "isZ": "eeviumz",
+    "boosts": {
+      "atk": 2,
+      "def": 2,
+      "spa": 2,
+      "spd": 2,
+      "spe": 2
+    },
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "firelash": {
+    "id": "firelash",
+    "name": "Fire Lash",
+    "num": 680,
+    "shortDesc": "100% chance to lower the target's Defense by 1.",
+    "desc": "Has a 100% chance to lower the target's Defense by 1 stage.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 80,
+    "category": "Physical",
+    "pp": 15,
+    "target": "normal",
+    "type": "Fire",
+    "zMovePower": 160,
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 100,
+        "boosts": {
+          "def": -1
+        }
+      }
+    ],
+    "gen": 7
+  },
+  "firstimpression": {
+    "id": "firstimpression",
+    "name": "First Impression",
+    "num": 660,
+    "shortDesc": "Hits first. First turn out only.",
+    "desc": "Fails unless it is the user's first turn on the field.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Physical",
+    "pp": 10,
+    "priority": 2,
+    "target": "normal",
+    "type": "Bug",
+    "zMovePower": 175,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "fleurcannon": {
+    "id": "fleurcannon",
+    "name": "Fleur Cannon",
+    "num": 705,
+    "shortDesc": "Lowers the user's Sp. Atk by 2.",
+    "desc": "Lowers the user's Special Attack by 2 stages.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "basePower": 130,
+    "category": "Special",
+    "pp": 5,
+    "target": "normal",
+    "type": "Fairy",
+    "zMovePower": 195,
+    "critRatio": 1,
+    "boosts": {
+      "spa": -2
+    },
+    "gen": 7
+  },
+  "floatyfall": {
+    "id": "floatyfall",
+    "name": "Floaty Fall",
+    "num": 731,
+    "shortDesc": "30% chance to flinch the target.",
+    "desc": "Has a 30% chance to flinch the target.",
+    "isNonstandard": true,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "gravity": 1
+    },
+    "accuracy": 95,
+    "basePower": 90,
+    "category": "Physical",
+    "pp": 15,
+    "target": "normal",
+    "type": "Flying",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "volatileStatus": "flinch"
+      }
+    ],
+    "gen": 7
+  },
+  "floralhealing": {
+    "id": "floralhealing",
+    "name": "Floral Healing",
+    "num": 666,
+    "shortDesc": "Heals the target by 50% of its max HP.",
+    "desc": "The target restores 1/2 of its maximum HP, rounded half up. If the terrain is Grassy Terrain, the target instead restores 2/3 of its maximum HP, rounded half down.",
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "heal": 1,
+      "mystery": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "normal",
+    "type": "Fairy",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "freezyfrost": {
+    "id": "freezyfrost",
+    "name": "Freezy Frost",
+    "num": 739,
+    "shortDesc": "Eliminates all stat changes.",
+    "desc": "Resets the stat stages of all active Pokemon to 0.",
+    "isNonstandard": true,
+    "flags": {
+      "protect": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Special",
+    "pp": 15,
+    "target": "normal",
+    "type": "Ice",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "gearup": {
+    "id": "gearup",
+    "name": "Gear Up",
+    "num": 674,
+    "shortDesc": "Raises Atk, Sp. Atk of allies with Plus/Minus by 1.",
+    "desc": "Raises the Attack and Special Attack of Pokemon on the user's side with the Plus or Minus Abilities by 1 stage.",
+    "flags": {
+      "snatch": 1,
+      "authentic": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "target": "allySide",
+    "type": "Steel",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "genesissupernova": {
+    "id": "genesissupernova",
+    "name": "Genesis Supernova",
+    "num": 703,
+    "shortDesc": "Summons Psychic Terrain.",
+    "desc": "If this move is successful, the terrain becomes Psychic Terrain.",
+    "accuracy": true,
+    "basePower": 185,
+    "category": "Special",
+    "pp": 1,
+    "isZ": "mewniumz",
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 100,
+        "self": {}
+      }
+    ],
+    "gen": 7
+  },
+  "gigavolthavoc": {
+    "id": "gigavolthavoc",
+    "name": "Gigavolt Havoc",
+    "num": 646,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "electriumz",
+    "target": "normal",
+    "type": "Electric",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "glitzyglow": {
+    "id": "glitzyglow",
+    "name": "Glitzy Glow",
+    "num": 736,
+    "shortDesc": "Summons Light Screen.",
+    "desc": "This move summons Light Screen for 5 turns upon use.",
+    "isNonstandard": true,
+    "flags": {
+      "protect": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Special",
+    "pp": 15,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "sideCondition": "lightscreen",
+    "gen": 7
+  },
+  "guardianofalola": {
+    "id": "guardianofalola",
+    "name": "Guardian of Alola",
+    "num": 698,
+    "shortDesc": "Does damage equal to 3/4 target's current HP.",
+    "desc": "Deals damage to the target equal to 3/4 of its current HP, rounded down, but not less than 1 HP.",
+    "accuracy": true,
+    "category": "Special",
+    "pp": 1,
+    "isZ": "tapuniumz",
+    "target": "normal",
+    "type": "Fairy",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "highhorsepower": {
+    "id": "highhorsepower",
+    "name": "High Horsepower",
+    "num": 667,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 95,
+    "basePower": 95,
+    "category": "Physical",
+    "pp": 10,
+    "target": "normal",
+    "type": "Ground",
+    "zMovePower": 175,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "hydrovortex": {
+    "id": "hydrovortex",
+    "name": "Hydro Vortex",
+    "num": 642,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "wateriumz",
+    "target": "normal",
+    "type": "Water",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "icehammer": {
+    "id": "icehammer",
+    "name": "Ice Hammer",
+    "num": 665,
+    "shortDesc": "Lowers the user's Speed by 1.",
+    "desc": "Lowers the user's Speed by 1 stage.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "punch": 1
+    },
+    "accuracy": 90,
+    "basePower": 100,
+    "category": "Physical",
+    "pp": 10,
+    "target": "normal",
+    "type": "Ice",
+    "zMovePower": 180,
+    "critRatio": 1,
+    "boosts": {
+      "spe": -1
+    },
+    "gen": 7
+  },
+  "infernooverdrive": {
+    "id": "infernooverdrive",
+    "name": "Inferno Overdrive",
+    "num": 640,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "firiumz",
+    "target": "normal",
+    "type": "Fire",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "instruct": {
+    "id": "instruct",
+    "name": "Instruct",
+    "num": 689,
+    "shortDesc": "The target immediately uses its last used move.",
+    "desc": "The target immediately uses its last used move. Fails if the target has not made a move, if the move has 0 PP, if the target is preparing to use Beak Blast, Focus Punch, or Shell Trap, or if the move is Assist, Beak Blast, Belch, Bide, Celebrate, Copycat, Focus Punch, Ice Ball, Instruct, King's Shield, Me First, Metronome, Mimic, Mirror Move, Nature Power, Outrage, Petal Dance, Rollout, Shell Trap, Sketch, Sleep Talk, Struggle, Thrash, Transform, Uproar, any two-turn move, any recharge move, or any Z-Move.",
+    "flags": {
+      "protect": 1,
+      "authentic": 1,
+      "mystery": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 15,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "laserfocus": {
+    "id": "laserfocus",
+    "name": "Laser Focus",
+    "num": 673,
+    "shortDesc": "Until the end of the next turn, user's moves crit.",
+    "desc": "Until the end of the next turn, the user's attacks will be critical hits.",
+    "flags": {
+      "snatch": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 30,
+    "volatileStatus": "laserfocus",
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "leafage": {
+    "id": "leafage",
+    "name": "Leafage",
+    "num": 670,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 40,
+    "category": "Physical",
+    "pp": 40,
+    "target": "normal",
+    "type": "Grass",
+    "zMovePower": 100,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "letssnuggleforever": {
+    "id": "letssnuggleforever",
+    "name": "Let's Snuggle Forever",
+    "num": 726,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "contact": 1
+    },
+    "accuracy": true,
+    "basePower": 190,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "mimikiumz",
+    "target": "normal",
+    "type": "Fairy",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "lightthatburnsthesky": {
+    "id": "lightthatburnsthesky",
+    "name": "Light That Burns the Sky",
+    "num": 723,
+    "shortDesc": "Physical if user's Atk > Sp. Atk. Ignores Abilities.",
+    "desc": "This move becomes a physical attack if the user's Attack is greater than its Special Attack, including stat stage changes. This move and its effects ignore the Abilities of other Pokemon.",
+    "accuracy": true,
+    "basePower": 200,
+    "category": "Special",
+    "pp": 1,
+    "isZ": "ultranecroziumz",
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "liquidation": {
+    "id": "liquidation",
+    "name": "Liquidation",
+    "num": 710,
+    "shortDesc": "20% chance to lower the target's Defense by 1.",
+    "desc": "Has a 20% chance to lower the target's Defense by 1 stage.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 85,
+    "category": "Physical",
+    "pp": 10,
+    "target": "normal",
+    "type": "Water",
+    "zMovePower": 160,
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 20,
+        "boosts": {
+          "def": -1
+        }
+      }
+    ],
+    "gen": 7
+  },
+  "lunge": {
+    "id": "lunge",
+    "name": "Lunge",
+    "num": 679,
+    "shortDesc": "100% chance to lower the target's Attack by 1.",
+    "desc": "Has a 100% chance to lower the target's Attack by 1 stage.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 80,
+    "category": "Physical",
+    "pp": 15,
+    "target": "normal",
+    "type": "Bug",
+    "zMovePower": 160,
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 100,
+        "boosts": {
+          "atk": -1
+        }
+      }
+    ],
+    "gen": 7
+  },
+  "maliciousmoonsault": {
+    "id": "maliciousmoonsault",
+    "name": "Malicious Moonsault",
+    "num": 696,
+    "shortDesc": "Damage doubles if the target used Minimize.",
+    "desc": "Damage doubles and no accuracy check is done if the target has used Minimize while active.",
+    "flags": {
+      "contact": 1
+    },
+    "accuracy": true,
+    "basePower": 180,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "inciniumz",
+    "target": "normal",
+    "type": "Dark",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "menacingmoonrazemaelstrom": {
+    "id": "menacingmoonrazemaelstrom",
+    "name": "Menacing Moonraze Maelstrom",
+    "num": 725,
+    "shortDesc": "Ignores the Abilities of other Pokemon.",
+    "desc": "This move and its effects ignore the Abilities of other Pokemon.",
+    "accuracy": true,
+    "basePower": 200,
+    "category": "Special",
+    "pp": 1,
+    "isZ": "lunaliumz",
+    "target": "normal",
+    "type": "Ghost",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "mindblown": {
+    "id": "mindblown",
+    "name": "Mind Blown",
+    "num": 720,
+    "shortDesc": "User loses 50% max HP. Hits adjacent Pokemon.",
+    "desc": "Whether or not this move is successful and even if it would cause fainting, the user loses 1/2 of its maximum HP, rounded up, unless the user has the Magic Guard Ability. This move is prevented from executing and the user does not lose HP if any active Pokemon has the Damp Ability, or if this move is Fire type and the user is affected by Powder or the weather is Primordial Sea.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 150,
+    "category": "Special",
+    "pp": 5,
+    "target": "allAdjacent",
+    "type": "Fire",
+    "zMovePower": 200,
+    "critRatio": 1,
+    "recoil": true,
+    "gen": 7
+  },
+  "moongeistbeam": {
+    "id": "moongeistbeam",
+    "name": "Moongeist Beam",
+    "num": 714,
+    "shortDesc": "Ignores the Abilities of other Pokemon.",
+    "desc": "This move and its effects ignore the Abilities of other Pokemon.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 100,
+    "category": "Special",
+    "pp": 5,
+    "target": "normal",
+    "type": "Ghost",
+    "zMovePower": 180,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "multiattack": {
+    "id": "multiattack",
+    "name": "Multi-Attack",
+    "num": 718,
+    "shortDesc": "Type varies based on the held Memory.",
+    "desc": "This move's type depends on the user's held Memory.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Physical",
+    "pp": 10,
+    "target": "normal",
+    "type": "Normal",
+    "zMovePower": 185,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "naturesmadness": {
+    "id": "naturesmadness",
+    "name": "Nature's Madness",
+    "num": 717,
+    "shortDesc": "Does damage equal to 1/2 target's current HP.",
+    "desc": "Deals damage to the target equal to half of its current HP, rounded down, but not less than 1 HP.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "category": "Special",
+    "pp": 10,
+    "target": "normal",
+    "type": "Fairy",
+    "zMovePower": 100,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "neverendingnightmare": {
+    "id": "neverendingnightmare",
+    "name": "Never-Ending Nightmare",
+    "num": 636,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "ghostiumz",
+    "target": "normal",
+    "type": "Ghost",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "oceanicoperetta": {
+    "id": "oceanicoperetta",
+    "name": "Oceanic Operetta",
+    "num": 697,
+    "shortDesc": "No additional effect.",
+    "accuracy": true,
+    "basePower": 195,
+    "category": "Special",
+    "pp": 1,
+    "isZ": "primariumz",
+    "target": "normal",
+    "type": "Water",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "photongeyser": {
+    "id": "photongeyser",
+    "name": "Photon Geyser",
+    "num": 722,
+    "shortDesc": "Physical if user's Atk > Sp. Atk. Ignores Abilities.",
+    "desc": "This move becomes a physical attack if the user's Attack is greater than its Special Attack, including stat stage changes. This move and its effects ignore the Abilities of other Pokemon.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 100,
+    "category": "Special",
+    "pp": 5,
+    "target": "normal",
+    "type": "Psychic",
+    "zMovePower": 180,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "pikapapow": {
+    "id": "pikapapow",
+    "name": "Pika Papow",
+    "num": 732,
+    "shortDesc": "Max happiness: 102 power. Can't miss.",
+    "desc": "Power is equal to the greater of (user's Happiness * 2/5), rounded down, or 1.",
+    "isNonstandard": true,
+    "flags": {
+      "protect": 1
+    },
+    "accuracy": true,
+    "category": "Special",
+    "pp": 20,
+    "target": "normal",
+    "type": "Electric",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "plasmafists": {
+    "id": "plasmafists",
+    "name": "Plasma Fists",
+    "num": 721,
+    "shortDesc": "Normal moves become Electric type this turn.",
+    "desc": "If this move is successful, causes Normal-type moves to become Electric type this turn.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "punch": 1
+    },
+    "accuracy": 100,
+    "basePower": 100,
+    "category": "Physical",
+    "pp": 15,
+    "target": "normal",
+    "type": "Electric",
+    "zMovePower": 180,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "pollenpuff": {
+    "id": "pollenpuff",
+    "name": "Pollen Puff",
+    "num": 676,
+    "shortDesc": "If the target is an ally, heals 50% of its max HP.",
+    "desc": "If the target is an ally, this move restores 1/2 of its maximum HP, rounded down, instead of dealing damage.",
+    "flags": {
+      "bullet": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Special",
+    "pp": 15,
+    "target": "normal",
+    "type": "Bug",
+    "zMovePower": 175,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "powertrip": {
+    "id": "powertrip",
+    "name": "Power Trip",
+    "num": 681,
+    "shortDesc": " + 20 power for each of the user's stat boosts.",
+    "desc": "Power is equal to 20+(X*20), where X is the user's total stat stage changes that are greater than 0.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 20,
+    "category": "Physical",
+    "pp": 10,
+    "target": "normal",
+    "type": "Dark",
+    "zMovePower": 160,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "prismaticlaser": {
+    "id": "prismaticlaser",
+    "name": "Prismatic Laser",
+    "num": 711,
+    "shortDesc": "User cannot move next turn.",
+    "desc": "If this move is successful, the user must recharge on the following turn and cannot select a move.",
+    "flags": {
+      "recharge": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 160,
+    "category": "Special",
+    "pp": 10,
+    "target": "normal",
+    "type": "Psychic",
+    "zMovePower": 200,
+    "critRatio": 1,
+    "volatileStatus": "mustrecharge",
+    "gen": 7
+  },
+  "psychicfangs": {
+    "id": "psychicfangs",
+    "name": "Psychic Fangs",
+    "num": 706,
+    "shortDesc": "Destroys screens, unless the target is immune.",
+    "desc": "If this attack does not miss, the effects of Reflect, Light Screen, and Aurora Veil end for the target's side of the field before damage is calculated.",
+    "flags": {
+      "bite": 1,
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 85,
+    "category": "Physical",
+    "pp": 10,
+    "target": "normal",
+    "type": "Psychic",
+    "zMovePower": 160,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "psychicterrain": {
+    "id": "psychicterrain",
+    "name": "Psychic Terrain",
+    "num": 678,
+    "shortDesc": "5 turns. Grounded: +Psychic power, priority-safe.",
+    "desc": "For 5 turns, the terrain becomes Psychic Terrain. During the effect, the power of Psychic-type attacks made by grounded Pokemon is multiplied by 1.5 and grounded Pokemon cannot be hit by moves with priority greater than 0, unless the target is an ally. Camouflage transforms the user into a Psychic type, Nature Power becomes Psychic, and Secret Power has a 30% chance to lower the target's Speed by 1 stage. Fails if the current terrain is Psychic Terrain.",
+    "flags": {
+      "nonsky": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "all",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "pulverizingpancake": {
+    "id": "pulverizingpancake",
+    "name": "Pulverizing Pancake",
+    "num": 701,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "contact": 1
+    },
+    "accuracy": true,
+    "basePower": 210,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "snorliumz",
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "purify": {
+    "id": "purify",
+    "name": "Purify",
+    "num": 685,
+    "shortDesc": "Cures target's status; heals user 1/2 maxHP if so.",
+    "desc": "The target is cured if it has a major status condition. If the target was cured, the user restores 1/2 of its maximum HP, rounded half up.",
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "heal": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "target": "normal",
+    "type": "Poison",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "revelationdance": {
+    "id": "revelationdance",
+    "name": "Revelation Dance",
+    "num": 686,
+    "shortDesc": "Type varies based on the user's primary type.",
+    "desc": "This move's type depends on the user's primary type. If the user's primary type is typeless, this move's type is the user's secondary type if it has one, otherwise the added type from Forest's Curse or Trick-or-Treat. This move is typeless if the user's type is typeless alone.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "dance": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Special",
+    "pp": 15,
+    "target": "normal",
+    "type": "Normal",
+    "zMovePower": 175,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "sappyseed": {
+    "id": "sappyseed",
+    "name": "Sappy Seed",
+    "num": 738,
+    "shortDesc": "Summons Leech Seed.",
+    "desc": "This move summons Leech Seed on the foe.",
+    "isNonstandard": true,
+    "flags": {
+      "protect": 1,
+      "reflectable": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Physical",
+    "pp": 15,
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "savagespinout": {
+    "id": "savagespinout",
+    "name": "Savage Spin-Out",
+    "num": 634,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "buginiumz",
+    "target": "normal",
+    "type": "Bug",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "searingsunrazesmash": {
+    "id": "searingsunrazesmash",
+    "name": "Searing Sunraze Smash",
+    "num": 724,
+    "shortDesc": "Ignores the Abilities of other Pokemon.",
+    "desc": "This move and its effects ignore the Abilities of other Pokemon.",
+    "flags": {
+      "contact": 1
+    },
+    "accuracy": true,
+    "basePower": 200,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "solganiumz",
+    "target": "normal",
+    "type": "Steel",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "shadowbone": {
+    "id": "shadowbone",
+    "name": "Shadow Bone",
+    "num": 708,
+    "shortDesc": "20% chance to lower the target's Defense by 1.",
+    "desc": "Has a 20% chance to lower the target's Defense by 1 stage.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 85,
+    "category": "Physical",
+    "pp": 10,
+    "target": "normal",
+    "type": "Ghost",
+    "zMovePower": 160,
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 20,
+        "boosts": {
+          "def": -1
+        }
+      }
+    ],
+    "gen": 7
+  },
+  "shatteredpsyche": {
+    "id": "shatteredpsyche",
+    "name": "Shattered Psyche",
+    "num": 648,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "psychiumz",
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "shelltrap": {
+    "id": "shelltrap",
+    "name": "Shell Trap",
+    "num": 704,
+    "shortDesc": "User must take physical damage before moving.",
+    "desc": "Fails unless the user is hit by a physical attack from an opponent this turn before it can execute the move. If the user was hit and has not fainted, it attacks immediately after being hit, and the effect ends. If the opponent's physical attack had a secondary effect removed by the Sheer Force Ability, it does not count for the purposes of this effect.",
+    "flags": {
+      "protect": 1
+    },
+    "accuracy": 100,
+    "basePower": 150,
+    "category": "Special",
+    "pp": 5,
+    "priority": -3,
+    "target": "allAdjacentFoes",
+    "type": "Fire",
+    "zMovePower": 200,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "shoreup": {
+    "id": "shoreup",
+    "name": "Shore Up",
+    "num": 659,
+    "shortDesc": "User restores 1/2 its max HP; 2/3 in Sandstorm.",
+    "desc": "The user restores 1/2 of its maximum HP, rounded half down. If the weather is Sandstorm, the user instead restores 2/3 of its maximum HP, rounded half down.",
+    "flags": {
+      "snatch": 1,
+      "heal": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "self",
+    "type": "Ground",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "sinisterarrowraid": {
+    "id": "sinisterarrowraid",
+    "name": "Sinister Arrow Raid",
+    "num": 695,
+    "shortDesc": "No additional effect.",
+    "accuracy": true,
+    "basePower": 180,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "decidiumz",
+    "target": "normal",
+    "type": "Ghost",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "sizzlyslide": {
+    "id": "sizzlyslide",
+    "name": "Sizzly Slide",
+    "num": 735,
+    "shortDesc": "100% chance to burn the foe.",
+    "desc": "Has a 100% chance to burn the foe.",
+    "isNonstandard": true,
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "defrost": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Physical",
+    "pp": 15,
+    "target": "normal",
+    "type": "Fire",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 100,
+        "status": "brn"
+      }
+    ],
+    "gen": 7
+  },
+  "smartstrike": {
+    "id": "smartstrike",
+    "name": "Smart Strike",
+    "num": 684,
+    "shortDesc": "This move does not check accuracy.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": true,
+    "basePower": 70,
+    "category": "Physical",
+    "pp": 10,
+    "target": "normal",
+    "type": "Steel",
+    "zMovePower": 140,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "solarblade": {
+    "id": "solarblade",
+    "name": "Solar Blade",
+    "num": 669,
+    "shortDesc": "Charges turn 1. Hits turn 2. No charge in sunlight.",
+    "desc": "This attack charges on the first turn and executes on the second. Power is halved if the weather is Hail, Primordial Sea, Rain Dance, or Sandstorm. If the user is holding a Power Herb or the weather is Desolate Land or Sunny Day, the move completes in one turn.",
+    "flags": {
+      "contact": 1,
+      "charge": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 125,
+    "category": "Physical",
+    "pp": 10,
+    "target": "normal",
+    "type": "Grass",
+    "zMovePower": 190,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "soulstealing7starstrike": {
+    "id": "soulstealing7starstrike",
+    "name": "Soul-Stealing 7-Star Strike",
+    "num": 699,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "contact": 1
+    },
+    "accuracy": true,
+    "basePower": 195,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "marshadiumz",
+    "target": "normal",
+    "type": "Ghost",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "sparklingaria": {
+    "id": "sparklingaria",
+    "name": "Sparkling Aria",
+    "num": 664,
+    "shortDesc": "The target is cured of its burn.",
+    "desc": "If the user has not fainted, the target is cured of its burn.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "sound": 1,
+      "authentic": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Special",
+    "pp": 10,
+    "target": "allAdjacent",
+    "type": "Water",
+    "zMovePower": 175,
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "dustproof": true,
+        "chance": 100
+      }
+    ],
+    "gen": 7
+  },
+  "sparklyswirl": {
+    "id": "sparklyswirl",
+    "name": "Sparkly Swirl",
+    "num": 740,
+    "shortDesc": "Cures the user's party of all status conditions.",
+    "desc": "Every Pokemon in the user's party is cured of its major status condition.",
+    "isNonstandard": true,
+    "flags": {
+      "protect": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Special",
+    "pp": 15,
+    "target": "normal",
+    "type": "Fairy",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "spectralthief": {
+    "id": "spectralthief",
+    "name": "Spectral Thief",
+    "num": 712,
+    "shortDesc": "Steals target's boosts before dealing damage.",
+    "desc": "The target's stat stages greater than 0 are stolen from it and applied to the user before dealing damage.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1,
+      "authentic": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Physical",
+    "pp": 10,
+    "target": "normal",
+    "type": "Ghost",
+    "zMovePower": 175,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "speedswap": {
+    "id": "speedswap",
+    "name": "Speed Swap",
+    "num": 683,
+    "shortDesc": "Swaps Speed stat with target.",
+    "desc": "The user swaps its Speed stat with the target. Stat stage changes are unaffected.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "authentic": 1,
+      "mystery": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "spiritshackle": {
+    "id": "spiritshackle",
+    "name": "Spirit Shackle",
+    "num": 662,
+    "shortDesc": "Prevents the target from switching out.",
+    "desc": "Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 80,
+    "category": "Physical",
+    "pp": 10,
+    "target": "normal",
+    "type": "Ghost",
+    "zMovePower": 160,
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 100
+      }
+    ],
+    "gen": 7
+  },
+  "splinteredstormshards": {
+    "id": "splinteredstormshards",
+    "name": "Splintered Stormshards",
+    "num": 727,
+    "shortDesc": "Ends the effects of Terrain.",
+    "desc": "Ends the effects of Electric Terrain, Grassy Terrain, Misty Terrain, and Psychic Terrain.",
+    "accuracy": true,
+    "basePower": 190,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "lycaniumz",
+    "target": "normal",
+    "type": "Rock",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "splishysplash": {
+    "id": "splishysplash",
+    "name": "Splishy Splash",
+    "num": 730,
+    "shortDesc": "30% chance to paralyze the target.",
+    "desc": "Has a 30% chance to paralyze the target.",
+    "isNonstandard": true,
+    "flags": {
+      "protect": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "category": "Special",
+    "pp": 15,
+    "target": "allAdjacentFoes",
+    "type": "Water",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "status": "par"
+      }
+    ],
+    "gen": 7
+  },
+  "spotlight": {
+    "id": "spotlight",
+    "name": "Spotlight",
+    "num": 671,
+    "shortDesc": "Target's foes' moves are redirected to it this turn.",
+    "desc": "Until the end of the turn, all single-target attacks from opponents of the target are redirected to the target. Such attacks are redirected to the target before they can be reflected by Magic Coat or the Magic Bounce Ability, or drawn in by the Lightning Rod or Storm Drain Abilities. Fails if it is not a Double Battle or Battle Royal.",
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mystery": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 15,
+    "priority": 3,
+    "volatileStatus": "spotlight",
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "stokedsparksurfer": {
+    "id": "stokedsparksurfer",
+    "name": "Stoked Sparksurfer",
+    "num": 700,
+    "shortDesc": "100% chance to paralyze the target.",
+    "desc": "Has a 100% chance to paralyze the target.",
+    "accuracy": true,
+    "basePower": 175,
+    "category": "Special",
+    "pp": 1,
+    "isZ": "aloraichiumz",
+    "target": "normal",
+    "type": "Electric",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 100,
+        "status": "par"
+      }
+    ],
+    "gen": 7
+  },
+  "stompingtantrum": {
+    "id": "stompingtantrum",
+    "name": "Stomping Tantrum",
+    "num": 707,
+    "shortDesc": "Power doubles if the user's last move failed.",
+    "desc": "Power doubles if the user's last move on the previous turn, including moves called by other moves or those used through Instruct, Magic Coat, Snatch, or the Dancer or Magic Bounce Abilities, failed to do any of its normal effects, not including damage from an unsuccessful High Jump Kick, Jump Kick, or Mind Blown, or if the user was prevented from moving by any effect other than recharging or Sky Drop. A move that was blocked by Baneful Bunker, Detect, King's Shield, Protect, Spiky Shield, Crafty Shield, Mat Block, Quick Guard, or Wide Guard will not double this move's power, nor will Bounce or Fly ending early due to the effect of Gravity, Smack Down, or Thousand Arrows.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 75,
+    "category": "Physical",
+    "pp": 10,
+    "target": "normal",
+    "type": "Ground",
+    "zMovePower": 140,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "strengthsap": {
+    "id": "strengthsap",
+    "name": "Strength Sap",
+    "num": 668,
+    "shortDesc": "User heals HP=target's Atk stat. Lowers Atk by 1.",
+    "desc": "Lowers the target's Attack by 1 stage. The user restores its HP equal to the target's Attack stat calculated with its stat stage before this move was used. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. Fails if the target's Attack stat stage is -6.",
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "heal": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 10,
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "subzeroslammer": {
+    "id": "subzeroslammer",
+    "name": "Subzero Slammer",
+    "num": 650,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "iciumz",
+    "target": "normal",
+    "type": "Ice",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "sunsteelstrike": {
+    "id": "sunsteelstrike",
+    "name": "Sunsteel Strike",
+    "num": 713,
+    "shortDesc": "Ignores the Abilities of other Pokemon.",
+    "desc": "This move and its effects ignore the Abilities of other Pokemon.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 100,
+    "category": "Physical",
+    "pp": 5,
+    "target": "normal",
+    "type": "Steel",
+    "zMovePower": 180,
+    "critRatio": 1,
+    "gen": 7
+  },
+  "supersonicskystrike": {
+    "id": "supersonicskystrike",
+    "name": "Supersonic Skystrike",
+    "num": 626,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "flyiniumz",
+    "target": "normal",
+    "type": "Flying",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "tearfullook": {
+    "id": "tearfullook",
+    "name": "Tearful Look",
+    "num": 715,
+    "shortDesc": "Lowers the target's Attack and Sp. Atk by 1.",
+    "desc": "Lowers the target's Attack and Special Attack by 1 stage.",
+    "flags": {
+      "reflectable": 1,
+      "mirror": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "boosts": {
+      "atk": -1,
+      "spa": -1
+    },
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "tectonicrage": {
+    "id": "tectonicrage",
+    "name": "Tectonic Rage",
+    "num": 630,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "groundiumz",
+    "target": "normal",
+    "type": "Ground",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "throatchop": {
+    "id": "throatchop",
+    "name": "Throat Chop",
+    "num": 675,
+    "shortDesc": "For 2 turns, the target cannot use sound moves.",
+    "desc": "For 2 turns, the target cannot use sound-based moves.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 80,
+    "category": "Physical",
+    "pp": 15,
+    "target": "normal",
+    "type": "Dark",
+    "zMovePower": 160,
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 100
+      }
+    ],
+    "gen": 7
+  },
+  "toxicthread": {
+    "id": "toxicthread",
+    "name": "Toxic Thread",
+    "num": 672,
+    "shortDesc": "Lowers the target's Speed by 1 and poisons it.",
+    "desc": "Lowers the target's Speed by 1 stage and poisons it.",
+    "status": "psn",
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 20,
+    "boosts": {
+      "spe": -1
+    },
+    "target": "normal",
+    "type": "Poison",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "tropkick": {
+    "id": "tropkick",
+    "name": "Trop Kick",
+    "num": 688,
+    "shortDesc": "100% chance to lower the target's Attack by 1.",
+    "desc": "Has a 100% chance to lower the target's Attack by 1 stage.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 70,
+    "category": "Physical",
+    "pp": 15,
+    "target": "normal",
+    "type": "Grass",
+    "zMovePower": 140,
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 100,
+        "boosts": {
+          "atk": -1
+        }
+      }
+    ],
+    "gen": 7
+  },
+  "twinkletackle": {
+    "id": "twinkletackle",
+    "name": "Twinkle Tackle",
+    "num": 656,
+    "shortDesc": "Power is equal to the base move's Z-Power.",
+    "accuracy": true,
+    "basePower": 1,
+    "category": "Physical",
+    "pp": 1,
+    "isZ": "fairiumz",
+    "target": "normal",
+    "type": "Fairy",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "veeveevolley": {
+    "id": "veeveevolley",
+    "name": "Veevee Volley",
+    "num": 741,
+    "shortDesc": "Max happiness: 102 power. Can't miss.",
+    "desc": "Power is equal to the greater of (user's Happiness * 2/5), rounded down, or 1.",
+    "isNonstandard": true,
+    "flags": {
+      "contact": 1,
+      "protect": 1
+    },
+    "accuracy": true,
+    "category": "Physical",
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 7
+  },
+  "zingzap": {
+    "id": "zingzap",
+    "name": "Zing Zap",
+    "num": 716,
+    "shortDesc": "30% chance to flinch the target.",
+    "desc": "Has a 30% chance to flinch the target.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 80,
+    "category": "Physical",
+    "pp": 10,
+    "target": "normal",
+    "type": "Electric",
+    "zMovePower": 160,
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "volatileStatus": "flinch"
+      }
+    ],
+    "gen": 7
+  },
+  "zippyzap": {
+    "id": "zippyzap",
+    "name": "Zippy Zap",
+    "num": 729,
+    "shortDesc": "Nearly always goes first. Always crits.",
+    "desc": "Will always result in a critical hit.",
+    "isNonstandard": true,
+    "flags": {
+      "contact": 1,
+      "protect": 1
+    },
+    "accuracy": 100,
+    "basePower": 50,
+    "category": "Physical",
+    "pp": 15,
+    "priority": 2,
+    "willCrit": true,
+    "target": "normal",
+    "type": "Electric",
+    "critRatio": 1,
+    "gen": 7
+  }
+}

@@ -1,0 +1,2450 @@
+{
+  "absorb": {
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded down."
+  },
+  "acid": {
+    "shortDesc": "10% chance to lower the foe(s) Defense by 1."
+  },
+  "bide": {
+    "desc": "The user spends two turns locked into this move and then, on the second turn after using this move, the user attacks the last Pokemon that hit it, inflicting double the damage in HP it lost during the two turns. If the last Pokemon that hit it is no longer active, the user attacks a random opposing Pokemon instead. If the user is prevented from moving during this move's use, the effect ends. This move does not ignore type immunity.",
+    "shortDesc": "Waits 2 turns; deals double the damage taken."
+  },
+  "blizzard": {
+    "shortDesc": "10% chance to freeze foe(s)."
+  },
+  "bubble": {
+    "shortDesc": "10% chance to lower the foe(s) Speed by 1."
+  },
+  "counter": {
+    "desc": "Deals damage to the last opposing Pokemon to hit the user with a physical attack this turn equal to twice the HP lost by the user from that attack. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. This move considers Hidden Power as Normal type, and only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's physical attack this turn, or if the user did not lose HP from the attack.",
+    "priority": -5
+  },
+  "crabhammer": {
+    "critRatio": 2
+  },
+  "defensecurl": {
+    "desc": "Raises the user's Defense by 1 stage. As long as the user remains active, the power of the user's Ice Ball and Rollout will be doubled (this effect is not stackable)."
+  },
+  "dig": {
+    "desc": "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Earthquake and Magnitude, which have doubled power when used against it, and is also unaffected by weather."
+  },
+  "disable": {
+    "desc": "For 2 to 5 turns, the target's last move used becomes disabled. Fails if one of the target's moves is already disabled, if the target has not made a move, if the target no longer knows the move, or if the move has 0 PP.",
+    "shortDesc": "For 2-5 turns, disables the target's last move."
+  },
+  "doubleedge": {
+    "desc": "If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded down, but not less than 1 HP.",
+    "shortDesc": "Has 1/3 recoil.",
+    "recoil": 33
+  },
+  "earthquake": {
+    "shortDesc": "Hits adjacent Pokemon. Power doubles on Dig."
+  },
+  "explosion": {
+    "desc": "The user faints after using this move. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+    "shortDesc": "Hits adjacent Pokemon. The user faints.",
+    "basePower": 500
+  },
+  "fissure": {
+    "desc": "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack's accuracy is equal to (user's level - target's level + 30)%, and fails if the target is at a higher level. Pokemon with the Sturdy Ability are immune."
+  },
+  "fly": {
+    "desc": "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Sky Uppercut, Thunder, and Twister, and Gust and Twister have doubled power when used against it."
+  },
+  "focusenergy": {
+    "desc": "Raises the user's chance for a critical hit by 2 stages. Fails if the user already has the effect. Baton Pass can be used to transfer this effect to an ally.",
+    "shortDesc": "Raises the user's critical hit ratio by 2."
+  },
+  "growl": {
+    "shortDesc": "Lowers the foe(s) Attack by 1."
+  },
+  "guillotine": {
+    "desc": "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack's accuracy is equal to (user's level - target's level + 30)%, and fails if the target is at a higher level. Pokemon with the Sturdy Ability are immune."
+  },
+  "gust": {
+    "desc": "Power doubles if the target is using Bounce or Fly.",
+    "shortDesc": "Power doubles during Bounce and Fly."
+  },
+  "highjumpkick": {
+    "desc": "If this attack is not successful and the target was not immune, the user loses HP equal to half of the damage the target would have taken, rounded down, but no less than 1 HP and no more than half of the target's maximum HP, as crash damage.",
+    "shortDesc": "If miss, user takes 1/2 damage it would've dealt."
+  },
+  "horndrill": {
+    "desc": "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack's accuracy is equal to (user's level - target's level + 30)%, and fails if the target is at a higher level. Pokemon with the Sturdy Ability are immune."
+  },
+  "jumpkick": {
+    "desc": "If this attack is not successful and the target was not immune, the user loses HP equal to half of the damage the target would have taken, rounded down, but no less than 1 HP and no more than half of the target's maximum HP, as crash damage.",
+    "shortDesc": "If miss, user takes 1/2 damage it would've dealt."
+  },
+  "karatechop": {
+    "critRatio": 2
+  },
+  "leer": {
+    "shortDesc": "Lowers the foe(s) Defense by 1."
+  },
+  "lightscreen": {
+    "desc": "For 5 turns, the user and its party members take 1/2 damage from special attacks, or 2/3 damage if there are multiple active Pokemon on the user's side. Critical hits ignore this effect. It is removed from the user's side if the user or an ally is successfully hit by Brick Break. Fails if the effect is already active on the user's side.",
+    "shortDesc": "For 5 turns, special damage to allies is halved."
+  },
+  "lowkick": {
+    "accuracy": 100,
+    "desc": "This move's power is 20 if the target weighs less than 10 kg, 40 if less than 25 kg, 60 if less than 50 kg, 80 if less than 100 kg, 100 if less than 200 kg, and 120 if greater than or equal to 200 kg.",
+    "shortDesc": "More power the heavier the target."
+  },
+  "metronome": {
+    "desc": "A random move is selected for use, other than Counter, Covet, Destiny Bond, Detect, Endure, Focus Punch, Follow Me, Helping Hand, Metronome, Mimic, Mirror Coat, Protect, Sketch, Sleep Talk, Snatch, Struggle, Thief, or Trick."
+  },
+  "mimic": {
+    "desc": "While the user remains active, this move is replaced by the last move used by the target. The copied move has 5 PP. Fails if the target has not made a move, if the user has Transformed, if the user already knows the move, or if the move is Metronome, Mimic, Sketch, or Struggle."
+  },
+  "minimize": {
+    "desc": "Raises the user's evasiveness by 1 stage. Whether or not the user's evasiveness was changed, Astonish, Extrasensory, Needle Arm, and Stomp will have their damage doubled if used against the user while it is active."
+  },
+  "mirrormove": {
+    "desc": "The user uses the last move that successfully targeted the user. The copied move is used with no specific target. Fails if no move has targeted the user, if the move missed, failed, or had no effect on the user, or if the move cannot be copied by this move."
+  },
+  "mist": {
+    "desc": "For 5 turns, the user and its party members are protected from having their stat stages lowered by other Pokemon. Fails if the effect is already active on the user's side.",
+    "shortDesc": "For 5 turns, protects user's party from stat drops."
+  },
+  "petaldance": {
+    "desc": "The user spends two or three turns locked into this move and becomes confused at the end of the last turn of the effect if it is not already. This move targets an opposing Pokemon at random on each turn. If the user is prevented from moving, falls asleep, becomes frozen, or the attack is not successful against the target, the effect ends without causing confusion. If this move is called by Sleep Talk, the move is used for one turn and does not confuse the user."
+  },
+  "poisongas": {
+    "shortDesc": "Poisons the foe(s)."
+  },
+  "psywave": {
+    "desc": "Deals damage to the target equal to (user's level) * (X * 10 + 50) / 100, where X is a random number from 0 to 10, rounded down, but not less than 1 HP.",
+    "shortDesc": "Random damage equal to 0.5x-1.5x user's level."
+  },
+  "rage": {
+    "desc": "Once this move is used and unless the target protected itself, the user's Attack is raised by 1 stage every time it is hit by another Pokemon's attack as long as this move is chosen for use.",
+    "shortDesc": "Raises the user's Attack by 1 if hit during use."
+  },
+  "razorleaf": {
+    "shortDesc": "High critical hit ratio. Hits adjacent foes.",
+    "critRatio": 2
+  },
+  "razorwind": {
+    "accuracy": 100,
+    "desc": "This attack charges on the first turn and executes on the second.",
+    "shortDesc": "Charges, then hits foe(s) turn 2.",
+    "critRatio": 2
+  },
+  "reflect": {
+    "desc": "For 5 turns, the user and its party members take 1/2 damage from physical attacks, or 2/3 damage if there are multiple active Pokemon on the user's side. Critical hits ignore this effect. It is removed from the user's side if the user or an ally is successfully hit by Brick Break. Fails if the effect is already active on the user's side.",
+    "shortDesc": "For 5 turns, physical damage to allies is halved."
+  },
+  "rest": {
+    "desc": "The user falls asleep for the next two turns and restores all of its HP, curing itself of any major status condition in the process. Fails if the user has full HP, is already asleep, or if another effect is preventing sleep."
+  },
+  "roar": {
+    "desc": "The target is forced to switch out and be replaced with a random unfainted ally. Fails if the target is the last unfainted Pokemon in its party, if the target used Ingrain previously or has the Suction Cups Ability, or if the user's level is lower than the target's and X * (user's level + target's level) / 256 + 1 is less than or equal to (target's level / 4), rounded down, where X is a random number from 0 to 255.",
+    "priority": -6
+  },
+  "rockslide": {
+    "shortDesc": "30% chance to flinch the foe(s)."
+  },
+  "selfdestruct": {
+    "desc": "The user faints after using this move. The target's Defense is halved during damage calculation. This move is prevented from executing if any active Pokemon has the Damp Ability.",
+    "shortDesc": "Hits adjacent Pokemon. The user faints.",
+    "basePower": 400
+  },
+  "skyattack": {
+    "desc": "Has a 30% chance to flinch the target and a higher chance for a critical hit. This attack charges on the first turn and executes on the second.",
+    "shortDesc": "Charges, then hits turn 2. 30% flinch. High crit.",
+    "critRatio": 2,
+    "secondaries": [
+      {
+        "chance": 30,
+        "volatileStatus": "flinch"
+      }
+    ]
+  },
+  "slash": {
+    "critRatio": 2
+  },
+  "solarbeam": {
+    "desc": "This attack charges on the first turn and executes on the second. Damage is halved if the weather is Hail, Rain Dance, or Sandstorm. If the weather is Sunny Day, the move completes in one turn."
+  },
+  "stomp": {
+    "desc": "Has a 30% chance to flinch the target. Damage doubles if the target has used Minimize while active."
+  },
+  "stringshot": {
+    "shortDesc": "Lowers the foe(s) Speed by 1."
+  },
+  "struggle": {
+    "desc": "Deals typeless damage to a random opposing Pokemon. If this move was successful, the user takes damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP, and the Rock Head Ability does not prevent this. This move is automatically used if none of the user's known moves can be selected."
+  },
+  "submission": {
+    "desc": "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP."
+  },
+  "surf": {
+    "desc": "Power doubles if the target is using Dive.",
+    "shortDesc": "Hits foes. Power doubles against Dive."
+  },
+  "swift": {
+    "shortDesc": "This move does not check accuracy. Hits foes."
+  },
+  "tailwhip": {
+    "shortDesc": "Lowers the foe(s) Defense by 1."
+  },
+  "takedown": {
+    "desc": "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP."
+  },
+  "thrash": {
+    "desc": "The user spends two or three turns locked into this move and becomes confused at the end of the last turn of the effect if it is not already. This move targets an opposing Pokemon at random on each turn. If the user is prevented from moving, falls asleep, becomes frozen, or the attack is not successful against the target, the effect ends without causing confusion. If this move is called by Sleep Talk, the move is used for one turn and does not confuse the user."
+  },
+  "thunder": {
+    "desc": "Has a 30% chance to paralyze the target. This move can hit a target using Bounce or Fly. If the weather is Rain Dance, this move does not check accuracy. If the weather is Sunny Day, this move's accuracy is 50%."
+  },
+  "transform": {
+    "desc": "The user transforms into the target. The target's current stats, stat stages, types, moves, Ability, weight, IVs, species, and sprite are copied. The user's level and HP remain the same and each copied move receives only 5 PP. This move fails if the target has transformed.",
+    "shortDesc": "Copies target's stats, moves, types, and Ability."
+  },
+  "triattack": {
+    "desc": "Has a 20% chance to either burn, freeze, or paralyze the target."
+  },
+  "twineedle": {
+    "desc": "Hits twice, with each hit having a 20% chance to poison the target. If the first hit breaks the target's substitute, it will take damage for the second hit.",
+    "shortDesc": "Hits 2 times. Each hit has 20% chance to poison."
+  },
+  "whirlwind": {
+    "desc": "The target is forced to switch out and be replaced with a random unfainted ally. Fails if the target is the last unfainted Pokemon in its party, if the target used Ingrain previously or has the Suction Cups Ability, or if the user's level is lower than the target's and X * (user's level + target's level) / 256 + 1 is less than or equal to (target's level / 4), rounded down, where X is a random number from 0 to 255.",
+    "priority": -6
+  },
+  "aeroblast": {
+    "critRatio": 2
+  },
+  "attract": {
+    "desc": "Causes the target to become infatuated, making it unable to attack 50% of the time. Fails if both the user and the target are the same gender, if either is genderless, or if the target is already infatuated. The effect ends when either the user or the target is no longer active. Pokemon with the Oblivious Ability are immune."
+  },
+  "beatup": {
+    "desc": "Deals typeless damage. Hits one time for each unfainted Pokemon without a major status condition in the user's party, or fails if no Pokemon meet the criteria. For each hit, the damage formula uses the participating Pokemon's base Attack as the Attack stat, the target's base Defense as the Defense stat, and ignores stat stages and other effects that modify Attack or Defense; each hit is considered to come from the user."
+  },
+  "conversion2": {
+    "desc": "The user's type changes to match a type that resists or is immune to the type of the last move used against the user, if it was successful against the user, but not either of its current types. The determined type of the move is used rather than the original type, but considers Struggle as Normal. Fails if the last move used against the user was not successful, or if this move would only be able to select one of the user's current types.",
+    "shortDesc": "User's type changes to resist last move against it."
+  },
+  "crosschop": {
+    "critRatio": 2
+  },
+  "curse": {
+    "desc": "If the user is not a Ghost type, lowers the user's Speed by 1 stage and raises the user's Attack and Defense by 1 stage. If the user is a Ghost type, the user loses 1/2 of its maximum HP, rounded down and even if it would cause fainting, in exchange for the target losing 1/4 of its maximum HP, rounded down, at the end of each turn while it is active. If the target uses Baton Pass, the replacement will continue to be affected. Fails if there is no target or if the target is already affected or has a substitute."
+  },
+  "destinybond": {
+    "desc": "Until the user's next turn, if an opposing Pokemon's attack knocks the user out, that Pokemon faints as well, unless the attack was Doom Desire or Future Sight."
+  },
+  "detect": {
+    "desc": "The user is protected from most attacks made by other Pokemon during this turn. This move has an X/65536 chance of being successful, where X starts at 65535 and halves, rounded down, each time this move is successfully used. After the fourth successful use in a row, X drops to 118 and continues with seemingly random values from 0-65535 on subsequent successful uses. X resets to 65535 if this move fails or if the user's last move used is not Detect, Endure, or Protect. Fails if the user moves last this turn.",
+    "priority": 3
+  },
+  "encore": {
+    "desc": "For 3 to 6 turns, the target is forced to repeat its last move used. If the affected move runs out of PP, the effect ends. Fails if the target is already under this effect, if it has not made a move, if the move has 0 PP, or if the move is Encore, Mimic, Mirror Move, Sketch, Struggle, or Transform."
+  },
+  "endure": {
+    "desc": "The user will survive attacks made by other Pokemon during this turn with at least 1 HP. This move has an X/65536 chance of being successful, where X starts at 65535 and halves, rounded down, each time this move is successfully used. After the fourth successful use in a row, X drops to 118 and continues with seemingly random values from 0-65535 on subsequent successful uses. X resets to 65535 if this move fails or if the user's last move used is not Detect, Endure, or Protect. Fails if the user moves last this turn.",
+    "priority": 4
+  },
+  "flail": {
+    "desc": "The power of this move is 20 if X is 33 to 48, 40 if X is 17 to 32, 80 if X is 10 to 16, 100 if X is 5 to 9, 150 if X is 2 to 4, and 200 if X is 0 or 1, where X is equal to (user's current HP * 48 / user's maximum HP), rounded down."
+  },
+  "foresight": {
+    "desc": "As long as the target remains active, its evasiveness stat stage is ignored during accuracy checks against it, and Normal- and Fighting-type attacks can hit the target if it is a Ghost type."
+  },
+  "futuresight": {
+    "desc": "Deals typeless damage that cannot be a critical hit two turns after this move is used. Damage is calculated against the target on use, and at the end of the final turn that damage is dealt to the Pokemon at the position the original target had at the time. Fails if this move or Doom Desire is already in effect for the target's position."
+  },
+  "healbell": {
+    "desc": "Every Pokemon in the user's party is cured of its major status condition. Pokemon with the Soundproof Ability are not cured."
+  },
+  "icywind": {
+    "shortDesc": "100% chance to lower the foe(s) Speed by 1."
+  },
+  "lockon": {
+    "desc": "Until the end of the next turn, the target cannot avoid the user's moves, even if the target is in the middle of a two-turn move. When this effect is started against the target, this and Mind Reader's effects end for every other Pokemon against that target. If the target leaves the field using Baton Pass, the replacement remains under this effect. If the user leaves the field using Baton Pass, this effect is restarted against the same target for the replacement. The effect ends if either the user or the target leaves the field.",
+    "shortDesc": "User's next move will not miss the target."
+  },
+  "mindreader": {
+    "desc": "Until the end of the next turn, the target cannot avoid the user's moves, even if the target is in the middle of a two-turn move. When this effect is started against the target, this and Lock-On's effects end for every other Pokemon against that target. If the target leaves the field using Baton Pass, the replacement remains under this effect. If the user leaves the field using Baton Pass, this effect is restarted against the same target for the replacement. The effect ends if either the user or the target leaves the field.",
+    "shortDesc": "User's next move will not miss the target."
+  },
+  "mirrorcoat": {
+    "desc": "Deals damage to the last opposing Pokemon to hit the user with a special attack this turn equal to twice the HP lost by the user from that attack. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. This move considers Hidden Power as Normal type, and only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's special attack this turn, or if the user did not lose HP from the attack.",
+    "priority": -5
+  },
+  "moonlight": {
+    "desc": "The user restores 1/2 of its maximum HP if no weather conditions are in effect, 2/3 of its maximum HP if the weather is Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Rain Dance, or Sandstorm, all rounded down."
+  },
+  "morningsun": {
+    "desc": "The user restores 1/2 of its maximum HP if no weather conditions are in effect, 2/3 of its maximum HP if the weather is Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Rain Dance, or Sandstorm, all rounded down."
+  },
+  "outrage": {
+    "desc": "The user spends two or three turns locked into this move and becomes confused at the end of the last turn of the effect if it is not already. This move targets an opposing Pokemon at random on each turn. If the user is prevented from moving, falls asleep, becomes frozen, or the attack is not successful against the target, the effect ends without causing confusion. If this move is called by Sleep Talk, the move is used for one turn and does not confuse the user."
+  },
+  "powdersnow": {
+    "shortDesc": "10% chance to freeze the foe(s)."
+  },
+  "present": {
+    "desc": "If this move is successful, it deals damage or heals the target. 40% chance for 40 power, 30% chance for 80 power, 10% chance for 120 power, and 20% chance to heal the target by 1/4 of its maximum HP, rounded down."
+  },
+  "protect": {
+    "desc": "The user is protected from most attacks made by other Pokemon during this turn. This move has an X/65536 chance of being successful, where X starts at 65535 and halves, rounded down, each time this move is successfully used. After the fourth successful use in a row, X drops to 118 and continues with seemingly random values from 0-65535 on subsequent successful uses. X resets to 65535 if this move fails or if the user's last move used is not Detect, Endure, or Protect. Fails if the user moves last this turn.",
+    "priority": 3
+  },
+  "psychup": {
+    "desc": "The user copies all of the target's current stat stage changes."
+  },
+  "pursuit": {
+    "desc": "If the target is an opposing Pokemon and it switches out this turn, this move hits that Pokemon before it leaves the field. Power doubles and no accuracy check is done if the user hits an opponent switching out, and the user's turn is over; if an opponent faints from this, the replacement Pokemon becomes active immediately.",
+    "shortDesc": "Power doubles if the targeted foe is switching out."
+  },
+  "raindance": {
+    "desc": "For 5 turns, the weather becomes Rain Dance. The damage of Water-type attacks is multiplied by 1.5 and the damage of Fire-type attacks is multiplied by 0.5 during the effect. Fails if the current weather is Rain Dance."
+  },
+  "reversal": {
+    "desc": "The power of this move is 20 if X is 33 to 48, 40 if X is 17 to 32, 80 if X is 10 to 16, 100 if X is 5 to 9, 150 if X is 2 to 4, and 200 if X is 0 or 1, where X is equal to (user's current HP * 48 / user's maximum HP), rounded down."
+  },
+  "safeguard": {
+    "desc": "For 5 turns, the user and its party members cannot have major status conditions or confusion inflicted on them by other Pokemon. Fails if the effect is already active on the user's side."
+  },
+  "sandstorm": {
+    "desc": "For 5 turns, the weather becomes Sandstorm. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are a Ground, Rock, or Steel type, or have the Sand Veil Ability. Fails if the current weather is Sandstorm."
+  },
+  "sketch": {
+    "desc": "This move is permanently replaced by the last move used by the target. The copied move has the maximum PP for that move. Fails if the target has not made a move, if the user has Transformed, or if the move is Sketch, Struggle, or any move the user knows.",
+    "shortDesc": "Permanently copies the last move target used."
+  },
+  "sleeptalk": {
+    "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, but if it currently has 0 PP it will fail to be used. This move cannot select Assist, Bide, Focus Punch, Metronome, Mirror Move, Sleep Talk, Uproar, or any two-turn move."
+  },
+  "spikes": {
+    "desc": "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in, unless it is a Flying-type Pokemon or has the Levitate Ability. Can be used up to three times before failing. Opponents lose 1/8 of their maximum HP with one layer, 1/6 of their maximum HP with two layers, and 1/4 of their maximum HP with three layers, all rounded down. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin successfully.",
+    "shortDesc": "Hurts grounded foes on switch-in. Max 3 layers."
+  },
+  "spite": {
+    "desc": "Causes the target's last move used to lose 2 to 5 PP, at random. Fails if the target has not made a move, if the move has 0 or 1 PP, or if it no longer knows the move."
+  },
+  "sunnyday": {
+    "desc": "For 5 turns, the weather becomes Sunny Day. The damage of Fire-type attacks is multiplied by 1.5 and the damage of Water-type attacks is multiplied by 0.5 during the effect. Fails if the current weather is Sunny Day."
+  },
+  "swagger": {
+    "desc": "Raises the target's Attack by 2 stages and confuses it."
+  },
+  "sweetscent": {
+    "shortDesc": "Lowers the foe(s) evasiveness by 1."
+  },
+  "synthesis": {
+    "desc": "The user restores 1/2 of its maximum HP if no weather conditions are in effect, 2/3 of its maximum HP if the weather is Sunny Day, and 1/4 of its maximum HP if the weather is Hail, Rain Dance, or Sandstorm, all rounded down."
+  },
+  "thief": {
+    "desc": "If this attack was successful and the user has not fainted, it steals the target's held item if the user is not holding one. The target's item is not stolen if it is a Mail or Enigma Berry. Items lost to this move cannot be regained with Recycle."
+  },
+  "triplekick": {
+    "desc": "Hits three times. Power increases to 20 for the second hit and 30 for the third. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+    "shortDesc": "Hits 3 times. Each hit can miss, but power rises.",
+    "multihit": 3
+  },
+  "twister": {
+    "desc": "Has a 20% chance to flinch the target. Power doubles if the target is using Bounce or Fly.",
+    "shortDesc": "20% chance to flinch the foe(s)."
+  },
+  "aerialace": {
+    "id": "aerialace",
+    "name": "Aerial Ace",
+    "num": 332,
+    "shortDesc": "This move does not check accuracy.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": true,
+    "basePower": 60,
+    "pp": 20,
+    "target": "any",
+    "type": "Flying",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "aircutter": {
+    "id": "aircutter",
+    "name": "Air Cutter",
+    "num": 314,
+    "shortDesc": "High critical hit ratio. Hits adjacent foes.",
+    "desc": "Has a higher chance for a critical hit.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 55,
+    "accuracy": 95,
+    "pp": 25,
+    "critRatio": 2,
+    "target": "allAdjacentFoes",
+    "type": "Flying",
+    "gen": 3
+  },
+  "armthrust": {
+    "id": "armthrust",
+    "name": "Arm Thrust",
+    "num": 292,
+    "shortDesc": "Hits 2-5 times in one turn.",
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 15,
+    "pp": 20,
+    "multihit": [
+      2,
+      5
+    ],
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "aromatherapy": {
+    "id": "aromatherapy",
+    "name": "Aromatherapy",
+    "num": 312,
+    "shortDesc": "Cures the user's party of all status conditions.",
+    "desc": "Every Pokemon in the user's party is cured of its major status condition.",
+    "flags": {
+      "snatch": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 5,
+    "target": "allyTeam",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "assist": {
+    "id": "assist",
+    "name": "Assist",
+    "num": 274,
+    "shortDesc": "Uses a random move known by a team member.",
+    "desc": "A random move among those known by the user's party members is selected for use. Does not select Assist, Counter, Covet, Destiny Bond, Detect, Endure, Focus Punch, Follow Me, Helping Hand, Metronome, Mimic, Mirror Coat, Mirror Move, Protect, Sketch, Sleep Talk, Snatch, Struggle, Thief, or Trick.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "astonish": {
+    "id": "astonish",
+    "name": "Astonish",
+    "num": 310,
+    "shortDesc": "30% chance to flinch the target.",
+    "desc": "Has a 30% chance to flinch the target. Damage doubles if the target has used Minimize while active.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 30,
+    "pp": 15,
+    "target": "normal",
+    "type": "Ghost",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "volatileStatus": "flinch"
+      }
+    ],
+    "gen": 3
+  },
+  "blastburn": {
+    "id": "blastburn",
+    "name": "Blast Burn",
+    "num": 307,
+    "shortDesc": "User cannot move next turn.",
+    "desc": "If this move is successful, the user must recharge on the following turn and cannot make a move.",
+    "flags": {
+      "recharge": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "basePower": 150,
+    "pp": 5,
+    "target": "normal",
+    "type": "Fire",
+    "critRatio": 1,
+    "volatileStatus": "mustrecharge",
+    "gen": 3
+  },
+  "blazekick": {
+    "id": "blazekick",
+    "name": "Blaze Kick",
+    "num": 299,
+    "shortDesc": "High critical hit ratio. 10% chance to burn.",
+    "desc": "Has a 10% chance to burn the target and a higher chance for a critical hit.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "basePower": 85,
+    "pp": 10,
+    "critRatio": 2,
+    "target": "normal",
+    "type": "Fire",
+    "secondaries": [
+      {
+        "chance": 10,
+        "status": "brn"
+      }
+    ],
+    "gen": 3
+  },
+  "block": {
+    "id": "block",
+    "name": "Block",
+    "num": 335,
+    "shortDesc": "Prevents the target from switching out.",
+    "desc": "Prevents the target from switching out. The target can still switch out if it uses Baton Pass. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field, unless it uses Baton Pass, in which case the target will remain trapped.",
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 5,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "bounce": {
+    "id": "bounce",
+    "name": "Bounce",
+    "num": 340,
+    "shortDesc": "Bounces turn 1. Hits turn 2. 30% paralyze.",
+    "desc": "Has a 30% chance to paralyze the target. This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Sky Uppercut, Thunder, and Twister, and Gust and Twister have doubled power when used against it.",
+    "flags": {
+      "contact": 1,
+      "charge": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 85,
+    "basePower": 85,
+    "pp": 5,
+    "target": "any",
+    "type": "Flying",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "status": "par"
+      }
+    ],
+    "gen": 3
+  },
+  "brickbreak": {
+    "id": "brickbreak",
+    "name": "Brick Break",
+    "num": 280,
+    "shortDesc": "Destroys screens, even if the target is immune.",
+    "desc": "If this attack does not miss and whether or not the target is immune, the effects of Reflect and Light Screen end for the target's side of the field before damage is calculated.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 75,
+    "pp": 15,
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "bulkup": {
+    "id": "bulkup",
+    "name": "Bulk Up",
+    "num": 339,
+    "shortDesc": "Raises the user's Attack and Defense by 1.",
+    "desc": "Raises the user's Attack and Defense by 1 stage.",
+    "flags": {
+      "snatch": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "boosts": {
+      "atk": 1,
+      "def": 1
+    },
+    "target": "self",
+    "type": "Fighting",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "bulletseed": {
+    "id": "bulletseed",
+    "name": "Bullet Seed",
+    "num": 331,
+    "shortDesc": "Hits 2-5 times in one turn.",
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 10,
+    "accuracy": 100,
+    "pp": 30,
+    "multihit": [
+      2,
+      5
+    ],
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "calmmind": {
+    "id": "calmmind",
+    "name": "Calm Mind",
+    "num": 347,
+    "shortDesc": "Raises the user's Sp. Atk and Sp. Def by 1.",
+    "desc": "Raises the user's Special Attack and Special Defense by 1 stage.",
+    "flags": {
+      "snatch": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "boosts": {
+      "spa": 1,
+      "spd": 1
+    },
+    "target": "self",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "camouflage": {
+    "id": "camouflage",
+    "name": "Camouflage",
+    "num": 293,
+    "shortDesc": "Changes user's type based on terrain. (Normal)",
+    "desc": "The user's type changes based on the battle terrain. Normal type on the regular Wi-Fi terrain. Fails if the type is one of the user's current types.",
+    "flags": {
+      "snatch": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "charge": {
+    "id": "charge",
+    "name": "Charge",
+    "num": 268,
+    "shortDesc": "The user's Electric attack next turn has 2x power.",
+    "desc": "If the user uses an Electric-type attack on the next turn, its power will be doubled.",
+    "flags": {
+      "snatch": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "volatileStatus": "charge",
+    "target": "self",
+    "type": "Electric",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "cosmicpower": {
+    "id": "cosmicpower",
+    "name": "Cosmic Power",
+    "num": 322,
+    "shortDesc": "Raises the user's Defense and Sp. Def by 1.",
+    "desc": "Raises the user's Defense and Special Defense by 1 stage.",
+    "flags": {
+      "snatch": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "boosts": {
+      "def": 1,
+      "spd": 1
+    },
+    "target": "self",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "covet": {
+    "id": "covet",
+    "name": "Covet",
+    "num": 343,
+    "shortDesc": "If the user has no item, it steals the target's.",
+    "desc": "If this attack was successful and the user has not fainted, it steals the target's held item if the user is not holding one. The target's item is not stolen if it is a Mail or Enigma Berry. Items lost to this move cannot be regained with Recycle.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 40,
+    "pp": 40,
+    "accuracy": 100,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "crushclaw": {
+    "id": "crushclaw",
+    "name": "Crush Claw",
+    "num": 306,
+    "shortDesc": "50% chance to lower the target's Defense by 1.",
+    "desc": "Has a 50% chance to lower the target's Defense by 1 stage.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 95,
+    "basePower": 75,
+    "pp": 10,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 50,
+        "boosts": {
+          "def": -1
+        }
+      }
+    ],
+    "gen": 3
+  },
+  "dive": {
+    "id": "dive",
+    "name": "Dive",
+    "num": 291,
+    "shortDesc": "Dives underwater turn 1, strikes turn 2.",
+    "desc": "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Surf and Whirlpool, which have doubled power when used against it, and is also unaffected by weather.",
+    "flags": {
+      "contact": 1,
+      "charge": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 60,
+    "accuracy": 100,
+    "pp": 10,
+    "target": "normal",
+    "type": "Water",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "doomdesire": {
+    "id": "doomdesire",
+    "name": "Doom Desire",
+    "num": 353,
+    "shortDesc": "Hits two turns after being used.",
+    "desc": "Deals typeless damage that cannot be a critical hit two turns after this move is used. Damage is calculated against the target on use, and at the end of the final turn that damage is dealt to the Pokemon at the position the original target had at the time. Fails if this move or Future Sight is already in effect for the target's position.",
+    "flags": {},
+    "accuracy": 85,
+    "basePower": 120,
+    "pp": 5,
+    "target": "normal",
+    "type": "Steel",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "dragonclaw": {
+    "id": "dragonclaw",
+    "name": "Dragon Claw",
+    "num": 337,
+    "shortDesc": "No additional effect.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 80,
+    "pp": 15,
+    "target": "normal",
+    "type": "Dragon",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "dragondance": {
+    "id": "dragondance",
+    "name": "Dragon Dance",
+    "num": 349,
+    "shortDesc": "Raises the user's Attack and Speed by 1.",
+    "desc": "Raises the user's Attack and Speed by 1 stage.",
+    "flags": {
+      "snatch": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "boosts": {
+      "atk": 1,
+      "spe": 1
+    },
+    "target": "self",
+    "type": "Dragon",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "endeavor": {
+    "id": "endeavor",
+    "name": "Endeavor",
+    "num": 283,
+    "shortDesc": "Lowers the target's HP to the user's HP.",
+    "desc": "Deals damage to the target equal to (target's current HP - user's current HP). The target is unaffected if its current HP is less than or equal to the user's current HP.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "pp": 5,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "eruption": {
+    "id": "eruption",
+    "name": "Eruption",
+    "num": 284,
+    "shortDesc": "Less power as user's HP decreases. Hits foe(s).",
+    "desc": "Power is equal to (user's current HP * 150 / user's maximum HP), rounded down, but not less than 1.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 150,
+    "pp": 5,
+    "target": "allAdjacentFoes",
+    "type": "Fire",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "extrasensory": {
+    "id": "extrasensory",
+    "name": "Extrasensory",
+    "num": 326,
+    "shortDesc": "10% chance to flinch the target.",
+    "desc": "Has a 10% chance to flinch the target. Damage doubles if the target has used Minimize while active.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "pp": 30,
+    "accuracy": 100,
+    "basePower": 80,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "volatileStatus": "flinch"
+      }
+    ],
+    "gen": 3
+  },
+  "facade": {
+    "id": "facade",
+    "name": "Facade",
+    "num": 263,
+    "shortDesc": "Power doubles if user is burn/poison/paralyzed.",
+    "desc": "Power doubles if the user is burned, paralyzed, or poisoned.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 70,
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "fakeout": {
+    "id": "fakeout",
+    "name": "Fake Out",
+    "num": 252,
+    "shortDesc": "Hits first. First turn out only. 100% flinch chance.",
+    "desc": "Has a 100% chance to flinch the target. Fails unless it is the user's first turn on the field.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "priority": 1,
+    "accuracy": 100,
+    "basePower": 40,
+    "pp": 10,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 100,
+        "volatileStatus": "flinch"
+      }
+    ],
+    "gen": 3
+  },
+  "faketears": {
+    "id": "faketears",
+    "name": "Fake Tears",
+    "num": 313,
+    "shortDesc": "Lowers the target's Sp. Def by 2.",
+    "desc": "Lowers the target's Special Defense by 2 stages.",
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "mystery": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 20,
+    "boosts": {
+      "spd": -2
+    },
+    "target": "normal",
+    "type": "Dark",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "featherdance": {
+    "id": "featherdance",
+    "name": "Feather Dance",
+    "num": 297,
+    "shortDesc": "Lowers the target's Attack by 2.",
+    "desc": "Lowers the target's Attack by 2 stages.",
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "mystery": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 15,
+    "boosts": {
+      "atk": -2
+    },
+    "target": "normal",
+    "type": "Flying",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "flatter": {
+    "id": "flatter",
+    "name": "Flatter",
+    "num": 260,
+    "shortDesc": "Raises the target's Sp. Atk by 1 and confuses it.",
+    "desc": "Raises the target's Special Attack by 1 stage and confuses it.",
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "mystery": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 15,
+    "volatileStatus": "confusion",
+    "boosts": {
+      "spa": 1
+    },
+    "target": "normal",
+    "type": "Dark",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "focuspunch": {
+    "id": "focuspunch",
+    "name": "Focus Punch",
+    "num": 264,
+    "shortDesc": "Fails if the user takes damage before it hits.",
+    "desc": "The user loses its focus and does nothing if it is hit by a damaging attack this turn before it can execute the move, but it still loses PP.",
+    "flags": {
+      "contact": 1,
+      "protect": 1
+    },
+    "accuracy": 100,
+    "basePower": 150,
+    "pp": 20,
+    "priority": -3,
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "followme": {
+    "id": "followme",
+    "name": "Follow Me",
+    "num": 266,
+    "shortDesc": "The foes' moves target the user on the turn used.",
+    "desc": "Until the end of the turn, all single-target attacks from the opposing side are redirected to the user. Such attacks are redirected to the user before they can be reflected by Magic Coat, or drawn in by the Lightning Rod Ability. This effect remains active even if the user leaves the field. Fails if it is not a Double Battle.",
+    "flags": {},
+    "priority": 3,
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "volatileStatus": "followme",
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "frenzyplant": {
+    "id": "frenzyplant",
+    "name": "Frenzy Plant",
+    "num": 338,
+    "shortDesc": "User cannot move next turn.",
+    "desc": "If this move is successful, the user must recharge on the following turn and cannot select a move.",
+    "flags": {
+      "recharge": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "basePower": 150,
+    "pp": 5,
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "volatileStatus": "mustrecharge",
+    "gen": 3
+  },
+  "grasswhistle": {
+    "id": "grasswhistle",
+    "name": "Grass Whistle",
+    "num": 320,
+    "shortDesc": "Causes the target to fall asleep.",
+    "status": "slp",
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "sound": 1
+    },
+    "accuracy": 55,
+    "category": "Status",
+    "pp": 15,
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "grudge": {
+    "id": "grudge",
+    "name": "Grudge",
+    "num": 288,
+    "shortDesc": "If the user faints, the attack used loses all its PP.",
+    "desc": "Until the user's next turn, if an opposing Pokemon's attack knocks the user out, that move loses all its remaining PP.",
+    "flags": {
+      "authentic": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 5,
+    "volatileStatus": "grudge",
+    "target": "self",
+    "type": "Ghost",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "hail": {
+    "id": "hail",
+    "name": "Hail",
+    "num": 258,
+    "shortDesc": "For 5 turns, hail crashes down.",
+    "desc": "For 5 turns, the weather becomes Hail. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are an Ice type. Fails if the current weather is Hail.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "all",
+    "type": "Ice",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "heatwave": {
+    "id": "heatwave",
+    "name": "Heat Wave",
+    "num": 257,
+    "shortDesc": "10% chance to burn the foe(s).",
+    "desc": "Has a 10% chance to burn the target.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 100,
+    "accuracy": 90,
+    "pp": 10,
+    "target": "allAdjacentFoes",
+    "type": "Fire",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "status": "brn"
+      }
+    ],
+    "gen": 3
+  },
+  "helpinghand": {
+    "id": "helpinghand",
+    "name": "Helping Hand",
+    "num": 270,
+    "shortDesc": "One adjacent ally's move power is 1.5x this turn.",
+    "desc": "The power of the target's attack this turn is multiplied by 1.5 (this effect is stackable). Fails if there is no ally adjacent to the user or if the ally already moved this turn, but does not fail if the ally is using a two-turn move.",
+    "flags": {
+      "authentic": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "priority": 5,
+    "volatileStatus": "helpinghand",
+    "target": "adjacentAlly",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "howl": {
+    "id": "howl",
+    "name": "Howl",
+    "num": 336,
+    "shortDesc": "Raises the user's Attack by 1.",
+    "desc": "Raises the user's Attack by 1 stage.",
+    "flags": {
+      "snatch": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 40,
+    "boosts": {
+      "atk": 1
+    },
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "hydrocannon": {
+    "id": "hydrocannon",
+    "name": "Hydro Cannon",
+    "num": 308,
+    "shortDesc": "User cannot move next turn.",
+    "desc": "If this move is successful, the user must recharge on the following turn and cannot select a move.",
+    "flags": {
+      "recharge": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "basePower": 150,
+    "pp": 5,
+    "target": "normal",
+    "type": "Water",
+    "critRatio": 1,
+    "volatileStatus": "mustrecharge",
+    "gen": 3
+  },
+  "hypervoice": {
+    "id": "hypervoice",
+    "name": "Hyper Voice",
+    "num": 304,
+    "shortDesc": "No additional effect. Hits adjacent foes.",
+    "desc": "No additional effect.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "sound": 1
+    },
+    "accuracy": 100,
+    "basePower": 90,
+    "pp": 10,
+    "target": "allAdjacentFoes",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "iceball": {
+    "id": "iceball",
+    "name": "Ice Ball",
+    "num": 301,
+    "shortDesc": "Power doubles with each hit. Repeats for 5 turns.",
+    "desc": "If this move is successful, the user is locked into this move and cannot make another move until it misses, 5 turns have passed, or the attack cannot be used. Power doubles with each successful hit of this move and doubles again if Defense Curl was used previously by the user. If this move is called by Sleep Talk, the move is used for one turn.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "basePower": 30,
+    "pp": 20,
+    "target": "normal",
+    "type": "Ice",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "iciclespear": {
+    "id": "iciclespear",
+    "name": "Icicle Spear",
+    "num": 333,
+    "shortDesc": "Hits 2-5 times in one turn.",
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 10,
+    "accuracy": 100,
+    "pp": 30,
+    "multihit": [
+      2,
+      5
+    ],
+    "target": "normal",
+    "type": "Ice",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "imprison": {
+    "id": "imprison",
+    "name": "Imprison",
+    "num": 286,
+    "shortDesc": "No foe can use any move known by the user.",
+    "desc": "The user prevents all opposing Pokemon from using any moves that the user also knows as long as the user remains active. Fails if no opposing Pokemon know any of the user's moves.",
+    "flags": {
+      "authentic": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "volatileStatus": "imprison",
+    "target": "self",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "ingrain": {
+    "id": "ingrain",
+    "name": "Ingrain",
+    "num": 275,
+    "shortDesc": "User recovers 1/16 max HP per turn. Traps user.",
+    "desc": "The user has 1/16 of its maximum HP restored at the end of each turn, but it is prevented from switching out and other Pokemon cannot force the user to switch out. The user can still switch out if it uses Baton Pass, and the replacement will remain trapped and still receive the healing effect.",
+    "flags": {
+      "snatch": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "volatileStatus": "ingrain",
+    "target": "self",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "irondefense": {
+    "id": "irondefense",
+    "name": "Iron Defense",
+    "num": 334,
+    "shortDesc": "Raises the user's Defense by 2.",
+    "desc": "Raises the user's Defense by 2 stages.",
+    "flags": {
+      "snatch": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 15,
+    "boosts": {
+      "def": 2
+    },
+    "target": "self",
+    "type": "Steel",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "knockoff": {
+    "id": "knockoff",
+    "name": "Knock Off",
+    "num": 282,
+    "shortDesc": "Target's item is lost and it cannot obtain another.",
+    "desc": "The target's held item is lost for the rest of the battle, unless it has the Sticky Hold Ability. During the effect, the target cannot gain a new item by any means.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 20,
+    "accuracy": 100,
+    "pp": 20,
+    "target": "normal",
+    "type": "Dark",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "leafblade": {
+    "id": "leafblade",
+    "name": "Leaf Blade",
+    "num": 348,
+    "shortDesc": "High critical hit ratio.",
+    "desc": "Has a higher chance for a critical hit.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "critRatio": 2,
+    "target": "normal",
+    "type": "Grass",
+    "gen": 3
+  },
+  "lusterpurge": {
+    "id": "lusterpurge",
+    "name": "Luster Purge",
+    "num": 295,
+    "shortDesc": "50% chance to lower the target's Sp. Def by 1.",
+    "desc": "Has a 50% chance to lower the target's Special Defense by 1 stage.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 70,
+    "pp": 5,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 50,
+        "boosts": {
+          "spd": -1
+        }
+      }
+    ],
+    "gen": 3
+  },
+  "magiccoat": {
+    "id": "magiccoat",
+    "name": "Magic Coat",
+    "num": 277,
+    "shortDesc": "Bounces back certain non-damaging moves.",
+    "desc": "The user is unaffected by certain non-damaging moves directed at it and will instead use such moves against the original user. If the move targets both opposing Pokemon and the Pokemon under this effect is on the left side, it will reflect the move targeting both opposing Pokemon and its ally will not be affected by the original move; otherwise, if the Pokemon under this effect is on the right side, its ally will be affected by the original move and this Pokemon will reflect the move only targeting the original user. The effect ends once a move is reflected or at the end of the turn. Moves reflected in this way can be reflected again by another Pokemon under this effect. If the user has the Soundproof Ability, it nullifies sound-based moves before this effect happens. The Lightning Rod Ability redirects Electric moves before this move takes effect.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 15,
+    "priority": 4,
+    "volatileStatus": "magiccoat",
+    "target": "self",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "magicalleaf": {
+    "id": "magicalleaf",
+    "name": "Magical Leaf",
+    "num": 345,
+    "shortDesc": "This move does not check accuracy.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": true,
+    "basePower": 60,
+    "pp": 20,
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "memento": {
+    "id": "memento",
+    "name": "Memento",
+    "num": 262,
+    "shortDesc": "Lowers target's Attack, Sp. Atk by 2. User faints.",
+    "desc": "Lowers the target's Attack and Special Attack by 2 stages. The user faints. This move does not check accuracy, and can hit targets in the middle of a two-turn move. Fails entirely if the target's Attack and Special Attack stat stages are both -6.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 10,
+    "boosts": {
+      "atk": -2,
+      "spa": -2
+    },
+    "target": "normal",
+    "type": "Dark",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "metalsound": {
+    "id": "metalsound",
+    "name": "Metal Sound",
+    "num": 319,
+    "shortDesc": "Lowers the target's Sp. Def by 2.",
+    "desc": "Lowers the target's Special Defense by 2 stages.",
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "sound": 1
+    },
+    "accuracy": 85,
+    "category": "Status",
+    "pp": 40,
+    "boosts": {
+      "spd": -2
+    },
+    "target": "normal",
+    "type": "Steel",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "meteormash": {
+    "id": "meteormash",
+    "name": "Meteor Mash",
+    "num": 309,
+    "shortDesc": "20% chance to raise the user's Attack by 1.",
+    "desc": "Has a 20% chance to raise the user's Attack by 1 stage.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 85,
+    "basePower": 100,
+    "pp": 10,
+    "target": "normal",
+    "type": "Steel",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 20,
+        "self": {
+          "boosts": {
+            "atk": 1
+          }
+        }
+      }
+    ],
+    "gen": 3
+  },
+  "mistball": {
+    "id": "mistball",
+    "name": "Mist Ball",
+    "num": 296,
+    "shortDesc": "50% chance to lower the target's Sp. Atk by 1.",
+    "desc": "Has a 50% chance to lower the target's Special Attack by 1 stage.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 70,
+    "pp": 5,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 50,
+        "boosts": {
+          "spa": -1
+        }
+      }
+    ],
+    "gen": 3
+  },
+  "mudshot": {
+    "id": "mudshot",
+    "name": "Mud Shot",
+    "num": 341,
+    "shortDesc": "100% chance to lower the target's Speed by 1.",
+    "desc": "Has a 100% chance to lower the target's Speed by 1 stage.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 95,
+    "basePower": 55,
+    "pp": 15,
+    "target": "normal",
+    "type": "Ground",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 100,
+        "boosts": {
+          "spe": -1
+        }
+      }
+    ],
+    "gen": 3
+  },
+  "mudsport": {
+    "id": "mudsport",
+    "name": "Mud Sport",
+    "num": 300,
+    "shortDesc": "Weakens Electric-type attacks to 1/2 their power.",
+    "desc": "While the user is active, all Electric-type attacks used by any active Pokemon have their power halved. Fails if this effect is already active for the user. Baton Pass can be used to transfer this effect to an ally.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 15,
+    "volatileStatus": "mudsport",
+    "target": "all",
+    "type": "Ground",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "muddywater": {
+    "id": "muddywater",
+    "name": "Muddy Water",
+    "num": 330,
+    "shortDesc": "30% chance to lower the foe(s) accuracy by 1.",
+    "desc": "Has a 30% chance to lower the target's accuracy by 1 stage.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 95,
+    "accuracy": 85,
+    "pp": 10,
+    "target": "allAdjacentFoes",
+    "type": "Water",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "boosts": {
+          "accuracy": -1
+        }
+      }
+    ],
+    "gen": 3
+  },
+  "naturepower": {
+    "id": "naturepower",
+    "name": "Nature Power",
+    "num": 267,
+    "shortDesc": "Attack changes based on terrain. (Swift)",
+    "desc": "This move calls another move for use depending on the battle terrain. Swift in Wi-Fi battles.",
+    "flags": {},
+    "accuracy": true,
+    "target": "self",
+    "category": "Status",
+    "pp": 20,
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "needlearm": {
+    "id": "needlearm",
+    "name": "Needle Arm",
+    "num": 302,
+    "shortDesc": "30% chance to flinch the target.",
+    "desc": "Has a 30% chance to flinch the target. Damage doubles if the target has used Minimize while active.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 60,
+    "pp": 15,
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "volatileStatus": "flinch"
+      }
+    ],
+    "gen": 3
+  },
+  "odorsleuth": {
+    "id": "odorsleuth",
+    "name": "Odor Sleuth",
+    "num": 316,
+    "shortDesc": "Fighting, Normal hit Ghost. Evasiveness ignored.",
+    "desc": "As long as the target remains active, its evasiveness stat stage is ignored during accuracy checks against it, and Normal- and Fighting-type attacks can hit the target if it is a Ghost type.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "authentic": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 40,
+    "volatileStatus": "foresight",
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "overheat": {
+    "id": "overheat",
+    "name": "Overheat",
+    "num": 315,
+    "shortDesc": "Lowers the user's Sp. Atk by 2.",
+    "desc": "Lowers the user's Special Attack by 2 stages.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 140,
+    "accuracy": 90,
+    "pp": 5,
+    "target": "normal",
+    "type": "Fire",
+    "critRatio": 1,
+    "boosts": {
+      "spa": -2
+    },
+    "gen": 3
+  },
+  "poisonfang": {
+    "id": "poisonfang",
+    "name": "Poison Fang",
+    "num": 305,
+    "shortDesc": "30% chance to badly poison the target.",
+    "desc": "Has a 30% chance to badly poison the target.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 50,
+    "pp": 15,
+    "target": "normal",
+    "type": "Poison",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "status": "tox"
+      }
+    ],
+    "gen": 3
+  },
+  "poisontail": {
+    "id": "poisontail",
+    "name": "Poison Tail",
+    "num": 342,
+    "shortDesc": "High critical hit ratio. 10% chance to poison.",
+    "desc": "Has a 10% chance to poison the target and a higher chance for a critical hit.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 50,
+    "pp": 25,
+    "critRatio": 2,
+    "target": "normal",
+    "type": "Poison",
+    "secondaries": [
+      {
+        "chance": 10,
+        "status": "psn"
+      }
+    ],
+    "gen": 3
+  },
+  "psychoboost": {
+    "id": "psychoboost",
+    "name": "Psycho Boost",
+    "num": 354,
+    "shortDesc": "Lowers the user's Sp. Atk by 2.",
+    "desc": "Lowers the user's Special Attack by 2 stages.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "basePower": 140,
+    "pp": 5,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "boosts": {
+      "spa": -2
+    },
+    "gen": 3
+  },
+  "recycle": {
+    "id": "recycle",
+    "name": "Recycle",
+    "num": 278,
+    "shortDesc": "Restores the item the user last used.",
+    "desc": "The user regains the item last used by a Pokemon in its current position on the field, even if that Pokemon was not the user. Fails if the user is holding an item, if no items have been used at the user's position, or if the item was lost to Covet, Knock Off, or Thief. Items thrown with Fling can be regained.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "refresh": {
+    "id": "refresh",
+    "name": "Refresh",
+    "num": 287,
+    "shortDesc": "User cures its burn, poison, or paralysis.",
+    "desc": "The user cures its burn, poison, or paralysis. Fails if the user is not burned, poisoned, or paralyzed.",
+    "flags": {
+      "snatch": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "revenge": {
+    "id": "revenge",
+    "name": "Revenge",
+    "num": 279,
+    "shortDesc": "Damage doubles if user is hit by the target.",
+    "desc": "Damage doubles if the user was hit by a Pokemon in the target's current position this turn, and that Pokemon was the last to hit the user.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 60,
+    "pp": 10,
+    "priority": -4,
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "rockblast": {
+    "id": "rockblast",
+    "name": "Rock Blast",
+    "num": 350,
+    "shortDesc": "Hits 2-5 times in one turn.",
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 80,
+    "basePower": 25,
+    "pp": 10,
+    "multihit": [
+      2,
+      5
+    ],
+    "target": "normal",
+    "type": "Rock",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "rocktomb": {
+    "id": "rocktomb",
+    "name": "Rock Tomb",
+    "num": 317,
+    "shortDesc": "100% chance to lower the target's Speed by 1.",
+    "desc": "Has a 100% chance to lower the target's Speed by 1 stage.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 80,
+    "basePower": 50,
+    "pp": 10,
+    "target": "normal",
+    "type": "Rock",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 100,
+        "boosts": {
+          "spe": -1
+        }
+      }
+    ],
+    "gen": 3
+  },
+  "roleplay": {
+    "id": "roleplay",
+    "name": "Role Play",
+    "num": 272,
+    "shortDesc": "User replaces its Ability with the target's.",
+    "desc": "The user's Ability changes to match the target's Ability. Fails if the target's Ability is Wonder Guard.",
+    "flags": {
+      "authentic": 1,
+      "mystery": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "sandtomb": {
+    "id": "sandtomb",
+    "name": "Sand Tomb",
+    "num": 328,
+    "shortDesc": "Traps and damages the target for 2-5 turns.",
+    "desc": "Prevents the target from switching for two to five turns. Causes damage to the target equal to 1/16 of its maximum HP, rounded down, at the end of each turn during effect. The target can still switch out if it uses Baton Pass. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 70,
+    "basePower": 15,
+    "pp": 15,
+    "volatileStatus": "partiallytrapped",
+    "target": "normal",
+    "type": "Ground",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "secretpower": {
+    "id": "secretpower",
+    "name": "Secret Power",
+    "num": 290,
+    "shortDesc": "Effect varies with terrain. (30% paralysis chance)",
+    "desc": "Has a 30% chance to cause a secondary effect on the target based on the battle terrain. Causes paralysis on the regular Wi-Fi terrain.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 70,
+    "pp": 20,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 30,
+        "status": "par"
+      }
+    ],
+    "gen": 3
+  },
+  "shadowpunch": {
+    "id": "shadowpunch",
+    "name": "Shadow Punch",
+    "num": 325,
+    "shortDesc": "This move does not check accuracy.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": true,
+    "basePower": 60,
+    "pp": 20,
+    "target": "normal",
+    "type": "Ghost",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "sheercold": {
+    "id": "sheercold",
+    "name": "Sheer Cold",
+    "num": 329,
+    "shortDesc": "OHKOs the target. Fails if user is a lower level.",
+    "desc": "Deals damage to the target equal to the target's maximum HP. Ignores accuracy and evasiveness modifiers. This attack's accuracy is equal to (user's level - target's level + 30)%, and fails if the target is at a higher level. Pokemon with the Sturdy Ability are immune.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 30,
+    "pp": 5,
+    "target": "normal",
+    "type": "Ice",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "shockwave": {
+    "id": "shockwave",
+    "name": "Shock Wave",
+    "num": 351,
+    "shortDesc": "This move does not check accuracy.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": true,
+    "basePower": 60,
+    "pp": 20,
+    "target": "normal",
+    "type": "Electric",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "signalbeam": {
+    "id": "signalbeam",
+    "name": "Signal Beam",
+    "num": 324,
+    "shortDesc": "10% chance to confuse the target.",
+    "desc": "Has a 10% chance to confuse the target.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 75,
+    "pp": 15,
+    "target": "normal",
+    "type": "Bug",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "volatileStatus": "confusion"
+      }
+    ],
+    "gen": 3
+  },
+  "silverwind": {
+    "id": "silverwind",
+    "name": "Silver Wind",
+    "num": 318,
+    "shortDesc": "10% chance to raise all stats by 1 (not acc/eva).",
+    "desc": "Has a 10% chance to raise the user's Attack, Defense, Special Attack, Special Defense, and Speed by 1 stage.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 60,
+    "pp": 5,
+    "target": "normal",
+    "type": "Bug",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 10,
+        "self": {
+          "boosts": {
+            "atk": 1,
+            "def": 1,
+            "spa": 1,
+            "spd": 1,
+            "spe": 1
+          }
+        }
+      }
+    ],
+    "gen": 3
+  },
+  "skillswap": {
+    "id": "skillswap",
+    "name": "Skill Swap",
+    "num": 285,
+    "shortDesc": "The user and the target trade Abilities.",
+    "desc": "The user swaps its Ability with the target's Ability. Fails if either the user or the target's Ability is Wonder Guard.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "authentic": 1,
+      "mystery": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "skyuppercut": {
+    "id": "skyuppercut",
+    "name": "Sky Uppercut",
+    "num": 327,
+    "shortDesc": "Can hit Pokemon using Bounce or Fly.",
+    "desc": "This move can hit a target using Bounce or Fly.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 90,
+    "basePower": 85,
+    "pp": 15,
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "slackoff": {
+    "id": "slackoff",
+    "name": "Slack Off",
+    "num": 303,
+    "shortDesc": "Heals the user by 50% of its max HP.",
+    "desc": "The user restores 1/2 of its maximum HP, rounded down.",
+    "flags": {
+      "snatch": 1,
+      "heal": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "smellingsalts": {
+    "id": "smellingsalts",
+    "name": "Smelling Salts",
+    "num": 265,
+    "shortDesc": "Damage doubles if target is paralyzed; cures it.",
+    "desc": "Damage doubles if the target is paralyzed. If this move is successful, the target is cured of paralysis.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 60,
+    "accuracy": 100,
+    "pp": 10,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "snatch": {
+    "id": "snatch",
+    "name": "Snatch",
+    "num": 289,
+    "shortDesc": "User steals certain support moves to use itself.",
+    "desc": "If another Pokemon uses certain non-damaging moves this turn, the user steals that move to use itself. If multiple Pokemon use this move this turn, the applicable moves are stolen by each of those Pokemon in turn order, and only the last user in turn order will gain the effects.",
+    "flags": {
+      "authentic": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "priority": 4,
+    "volatileStatus": "snatch",
+    "target": "self",
+    "type": "Dark",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "spitup": {
+    "id": "spitup",
+    "name": "Spit Up",
+    "num": 255,
+    "shortDesc": "More power with more uses of Stockpile.",
+    "desc": "Damage is multiplied by the user's Stockpile count. This move does not apply damage variance and cannot be a critical hit. Fails if the user's Stockpile count is 0. Unless this move misses, the user's Stockpile count resets to 0.",
+    "flags": {
+      "protect": 1
+    },
+    "accuracy": 100,
+    "pp": 10,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "stockpile": {
+    "id": "stockpile",
+    "name": "Stockpile",
+    "num": 254,
+    "shortDesc": "Raises user's Stockpile count by 1. Max 3 uses.",
+    "desc": "The user's Stockpile count increases by 1. Fails if the user's Stockpile count is 3. The user's Stockpile count is reset to 0 when it is no longer active.",
+    "flags": {
+      "snatch": 1
+    },
+    "pp": 10,
+    "accuracy": true,
+    "category": "Status",
+    "volatileStatus": "stockpile",
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "superpower": {
+    "id": "superpower",
+    "name": "Superpower",
+    "num": 276,
+    "shortDesc": "Lowers the user's Attack and Defense by 1.",
+    "desc": "Lowers the user's Attack and Defense by 1 stage.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 120,
+    "pp": 5,
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "boosts": {
+      "atk": -1,
+      "def": -1
+    },
+    "gen": 3
+  },
+  "swallow": {
+    "id": "swallow",
+    "name": "Swallow",
+    "num": 256,
+    "shortDesc": "Heals the user based on uses of Stockpile.",
+    "desc": "The user restores its HP based on its Stockpile count. Restores 1/4 of its maximum HP if it's 1, 1/2 of its maximum HP if it's 2, both rounded half down, and all of its HP if it's 3. Fails if the user's Stockpile count is 0. The user's Stockpile count resets to 0.",
+    "flags": {
+      "snatch": 1,
+      "heal": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "tailglow": {
+    "id": "tailglow",
+    "name": "Tail Glow",
+    "num": 294,
+    "shortDesc": "Raises the user's Sp. Atk by 2.",
+    "desc": "Raises the user's Special Attack by 2 stages.",
+    "flags": {
+      "snatch": 1
+    },
+    "boosts": {
+      "spa": 2
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 20,
+    "target": "self",
+    "type": "Bug",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "taunt": {
+    "id": "taunt",
+    "name": "Taunt",
+    "num": 269,
+    "shortDesc": "For 2 turns, the target can't use status moves.",
+    "desc": "For 2 turns, prevents the target from using non-damaging moves.",
+    "flags": {
+      "protect": 1,
+      "authentic": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 20,
+    "volatileStatus": "taunt",
+    "target": "normal",
+    "type": "Dark",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "teeterdance": {
+    "id": "teeterdance",
+    "name": "Teeter Dance",
+    "num": 298,
+    "shortDesc": "Confuses adjacent Pokemon.",
+    "desc": "Causes the target to become confused.",
+    "flags": {
+      "protect": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 20,
+    "volatileStatus": "confusion",
+    "target": "allAdjacent",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "tickle": {
+    "id": "tickle",
+    "name": "Tickle",
+    "num": 321,
+    "shortDesc": "Lowers the target's Attack and Defense by 1.",
+    "desc": "Lowers the target's Attack and Defense by 1 stage.",
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1,
+      "authentic": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 20,
+    "boosts": {
+      "atk": -1,
+      "def": -1
+    },
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "torment": {
+    "id": "torment",
+    "name": "Torment",
+    "num": 259,
+    "shortDesc": "Target can't select the same move twice in a row.",
+    "desc": "Prevents the target from selecting the same move for use two turns in a row. This effect ends when the target is no longer active.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "authentic": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 15,
+    "volatileStatus": "torment",
+    "target": "normal",
+    "type": "Dark",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "trick": {
+    "id": "trick",
+    "name": "Trick",
+    "num": 271,
+    "shortDesc": "User switches its held item with the target's.",
+    "desc": "The user swaps its held item with the target's held item. Fails if either the user or the target is holding a Mail, if neither is holding an item, if either is under the effect of Knock Off, or if the target has the Sticky Hold Ability.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "mystery": 1
+    },
+    "accuracy": 100,
+    "category": "Status",
+    "pp": 10,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "uproar": {
+    "id": "uproar",
+    "name": "Uproar",
+    "num": 253,
+    "shortDesc": "Lasts 3-5 turns. Active Pokemon cannot sleep.",
+    "desc": "The user spends three to five turns locked into this move. This move targets an opposing Pokemon at random on each turn. During effect, no active Pokemon can fall asleep by any means, and Pokemon that are already asleep wake up as their turn starts or at the end of each turn, including the last one. If the user is prevented from moving or the attack is not successful against the target during one of the turns, the effect ends.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1,
+      "sound": 1
+    },
+    "basePower": 50,
+    "accuracy": 100,
+    "pp": 10,
+    "target": "randomNormal",
+    "type": "Normal",
+    "critRatio": 1,
+    "volatileStatus": "uproar",
+    "gen": 3
+  },
+  "volttackle": {
+    "id": "volttackle",
+    "name": "Volt Tackle",
+    "num": 344,
+    "shortDesc": "Has 1/3 recoil.",
+    "desc": "If the target lost HP, the user takes recoil damage equal to 1/3 the HP lost by the target, rounded down, but not less than 1 HP.",
+    "flags": {
+      "contact": 1,
+      "protect": 1,
+      "mirror": 1
+    },
+    "recoil": 33,
+    "accuracy": 100,
+    "basePower": 120,
+    "pp": 15,
+    "target": "normal",
+    "type": "Electric",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "waterpulse": {
+    "id": "waterpulse",
+    "name": "Water Pulse",
+    "num": 352,
+    "shortDesc": "20% chance to confuse the target.",
+    "desc": "Has a 20% chance to confuse the target.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 60,
+    "pp": 20,
+    "target": "any",
+    "type": "Water",
+    "critRatio": 1,
+    "secondaries": [
+      {
+        "chance": 20,
+        "volatileStatus": "confusion"
+      }
+    ],
+    "gen": 3
+  },
+  "watersport": {
+    "id": "watersport",
+    "name": "Water Sport",
+    "num": 346,
+    "shortDesc": "Weakens Fire-type attacks to 1/2 their power.",
+    "desc": "While the user is active, all Fire-type attacks used by any active Pokemon have their power halved. Fails if this effect is already active for the user. Baton Pass can be used to transfer this effect to an ally.",
+    "flags": {},
+    "accuracy": true,
+    "category": "Status",
+    "pp": 15,
+    "volatileStatus": "watersport",
+    "target": "all",
+    "type": "Water",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "waterspout": {
+    "id": "waterspout",
+    "name": "Water Spout",
+    "num": 323,
+    "shortDesc": "Less power as user's HP decreases. Hits foe(s).",
+    "desc": "Power is equal to (user's current HP * 150 / user's maximum HP), rounded down, but not less than 1.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 150,
+    "pp": 5,
+    "target": "allAdjacentFoes",
+    "type": "Water",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "weatherball": {
+    "id": "weatherball",
+    "name": "Weather Ball",
+    "num": 311,
+    "shortDesc": "Damage doubles and type varies during weather.",
+    "desc": "Damage doubles if a weather condition is active, and this move's type changes to match. Ice type during Hail, Water type during Rain Dance, Rock type during Sandstorm, and Fire type during Sunny Day.",
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "accuracy": 100,
+    "basePower": 50,
+    "pp": 10,
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "willowisp": {
+    "id": "willowisp",
+    "name": "Will-O-Wisp",
+    "num": 261,
+    "shortDesc": "Burns the target.",
+    "desc": "Burns the target.",
+    "status": "brn",
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1
+    },
+    "accuracy": 75,
+    "category": "Status",
+    "pp": 15,
+    "target": "normal",
+    "type": "Fire",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "wish": {
+    "id": "wish",
+    "name": "Wish",
+    "num": 273,
+    "shortDesc": "Next turn, heals 50% of the recipient's max HP.",
+    "desc": "At the end of the next turn, the Pokemon at the user's position has 1/2 of its maximum HP restored to it, rounded down. Fails if this move is already in effect for the user's position.",
+    "flags": {
+      "heal": 1
+    },
+    "sideCondition": "Wish",
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "target": "self",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  },
+  "yawn": {
+    "id": "yawn",
+    "name": "Yawn",
+    "num": 281,
+    "shortDesc": "Puts the target to sleep after 1 turn.",
+    "desc": "Causes the target to fall asleep at the end of the next turn. Fails when used if the target cannot fall asleep or if it already has a major status condition. At the end of the next turn, if the target is still active, does not have a major status condition, and can fall asleep, it falls asleep. If the target becomes affected, this effect cannot be prevented by Safeguard or a substitute, or by falling asleep and waking up during the effect.",
+    "flags": {
+      "protect": 1,
+      "reflectable": 1,
+      "mirror": 1
+    },
+    "accuracy": true,
+    "category": "Status",
+    "pp": 10,
+    "volatileStatus": "yawn",
+    "target": "normal",
+    "type": "Normal",
+    "critRatio": 1,
+    "gen": 3
+  }
+}
