@@ -14,8 +14,6 @@ import {Type} from './types';
 
 export type Gender = 'M'|'F'|'N';
 
-// name = species
-// id = speciesid
 export interface Species extends Data {
   readonly type1: Type;
   readonly type2?: Type;
@@ -27,14 +25,12 @@ export interface Species extends Data {
   readonly tier?: Tier;
   readonly prevo?: ID;
   readonly evos?: Readonly<ID[]>;
-  readonly baseSpecies?: string;  // Castform-Snowy -> Castform
+  readonly baseSpecies?: string;
   readonly baseForme?: string;
-  readonly forme?: string;        // Castform-Snowy -> Snowy
-  readonly formeLetter?: string;  // S
-  readonly otherFormes?:
-      ID[];  // castform -> castformsunny, castformrainy, castformsnowy
-  readonly cosmeticForms?:
-      Readonly<ID[]>;  // = otherForms. shellos -> shelloseast
+  readonly forme?: string;
+  readonly formeLetter?: string;
+  readonly otherFormes?: ID[];
+  readonly cosmeticForms?: Readonly<ID[]>;
 }
 
 const RBY: DataTable<Species> = patch({}, rby);
