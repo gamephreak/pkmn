@@ -14,17 +14,17 @@ export class Field {
   terrain: Terrain;
   weather: Weather;
   isGravity: boolean;
-  isSR: boolean;
-  spikes: number;
-  isReflect: boolean;
-  isLightScreen: boolean;
-  isProtected: boolean;
-  isAttackerSeeded: boolean;
-  isDefenderSeeded: boolean;
-  isForesight: boolean;
-  isHelpingHand: boolean;
-  isFriendGuard: boolean;
-  isAuroraVeil: boolean;
+  isSR: boolean; // side
+  spikes: number; // side
+  isReflect: boolean; // side | volatile (gen 1)
+  isLightScreen: boolean; // side | volatile (gen 1)
+  isProtected: boolean; // volatile
+  isAttackerSeeded: boolean; // volatile
+  isDefenderSeeded: boolean; // volatile
+  isForesight: boolean; // volatile
+  isHelpingHand: boolean; // volatile
+  isFriendGuard: boolean; // volatile
+  isAuroraVeil: boolean; // side
 
   constructor(
       format?: Format, terrain?: Terrain, weather?: Weather,

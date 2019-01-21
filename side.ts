@@ -1,5 +1,9 @@
-// TODO how do side conditions stack?
-export type SideCondition =
-    'wish'|'auroraveil'|'craftyshield'|'healingwish'|'lightscreen'|'luckychant'|
-    'lunardance'|'matblock'|'mist'|'quickguard'|'reflect'|'safeguard'|'spikes'|
-    'stealthrock'|'stickyweb'|'tailwind'|'toxicspikes'|'wideguard';
+import {Pokemon} from './pokemon';
+
+// TODO how do side conditions (spikes, etc) stack?
+export interface Side {  // class
+  // NOTE: volatiles and status go on POKEMON, not side
+  pokemon: Pokemon[];
+  active?: number;  // index into pokemon, not set during team previow
+  conditions?: string[];
+}
