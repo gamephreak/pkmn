@@ -431,7 +431,6 @@
     "num": 274,
     "shortDesc": "Uses a random move known by a team member.",
     "desc": "A random move among those known by the user's party members is selected for use. Does not select Assist, Counter, Covet, Destiny Bond, Detect, Endure, Focus Punch, Follow Me, Helping Hand, Metronome, Mimic, Mirror Coat, Mirror Move, Protect, Sketch, Sleep Talk, Snatch, Struggle, Thief, or Trick.",
-    "flags": {},
     "accuracy": true,
     "category": "Status",
     "pp": 20,
@@ -479,10 +478,12 @@
     "accuracy": 90,
     "basePower": 150,
     "pp": 5,
+    "self": {
+      "volatileStatus": "mustrecharge"
+    },
     "target": "normal",
     "type": "Fire",
     "critRatio": 1,
-    "volatileStatus": "mustrecharge",
     "gen": 3
   },
   "blazekick": {
@@ -765,7 +766,6 @@
     "num": 353,
     "shortDesc": "Hits two turns after being used.",
     "desc": "Deals typeless damage that cannot be a critical hit two turns after this move is used. Damage is calculated against the target on use, and at the end of the final turn that damage is dealt to the Pokemon at the position the original target had at the time. Fails if this move or Future Sight is already in effect for the target's position.",
-    "flags": {},
     "accuracy": 85,
     "basePower": 120,
     "pp": 5,
@@ -1012,7 +1012,6 @@
     "num": 266,
     "shortDesc": "The foes' moves target the user on the turn used.",
     "desc": "Until the end of the turn, all single-target attacks from the opposing side are redirected to the user. Such attacks are redirected to the user before they can be reflected by Magic Coat, or drawn in by the Lightning Rod Ability. This effect remains active even if the user leaves the field. Fails if it is not a Double Battle.",
-    "flags": {},
     "priority": 3,
     "accuracy": true,
     "category": "Status",
@@ -1037,10 +1036,12 @@
     "accuracy": 90,
     "basePower": 150,
     "pp": 5,
+    "self": {
+      "volatileStatus": "mustrecharge"
+    },
     "target": "normal",
     "type": "Grass",
     "critRatio": 1,
-    "volatileStatus": "mustrecharge",
     "gen": 3
   },
   "grasswhistle": {
@@ -1087,7 +1088,6 @@
     "num": 258,
     "shortDesc": "For 5 turns, hail crashes down.",
     "desc": "For 5 turns, the weather becomes Hail. At the end of each turn except the last, all active Pokemon lose 1/16 of their maximum HP, rounded down, unless they are an Ice type. Fails if the current weather is Hail.",
-    "flags": {},
     "accuracy": true,
     "category": "Status",
     "pp": 10,
@@ -1173,10 +1173,12 @@
     "accuracy": 90,
     "basePower": 150,
     "pp": 5,
+    "self": {
+      "volatileStatus": "mustrecharge"
+    },
     "target": "normal",
     "type": "Water",
     "critRatio": 1,
-    "volatileStatus": "mustrecharge",
     "gen": 3
   },
   "hypervoice": {
@@ -1365,7 +1367,6 @@
     "num": 277,
     "shortDesc": "Bounces back certain non-damaging moves.",
     "desc": "The user is unaffected by certain non-damaging moves directed at it and will instead use such moves against the original user. If the move targets both opposing Pokemon and the Pokemon under this effect is on the left side, it will reflect the move targeting both opposing Pokemon and its ally will not be affected by the original move; otherwise, if the Pokemon under this effect is on the right side, its ally will be affected by the original move and this Pokemon will reflect the move only targeting the original user. The effect ends once a move is reflected or at the end of the turn. Moves reflected in this way can be reflected again by another Pokemon under this effect. If the user has the Soundproof Ability, it nullifies sound-based moves before this effect happens. The Lightning Rod Ability redirects Electric moves before this move takes effect.",
-    "flags": {},
     "accuracy": true,
     "category": "Status",
     "pp": 15,
@@ -1525,7 +1526,6 @@
     "num": 300,
     "shortDesc": "Weakens Electric-type attacks to 1/2 their power.",
     "desc": "While the user is active, all Electric-type attacks used by any active Pokemon have their power halved. Fails if this effect is already active for the user. Baton Pass can be used to transfer this effect to an ally.",
-    "flags": {},
     "accuracy": true,
     "category": "Status",
     "pp": 15,
@@ -1567,7 +1567,6 @@
     "num": 267,
     "shortDesc": "Attack changes based on terrain. (Swift)",
     "desc": "This move calls another move for use depending on the battle terrain. Swift in Wi-Fi battles.",
-    "flags": {},
     "accuracy": true,
     "target": "self",
     "category": "Status",
@@ -1635,12 +1634,14 @@
     "basePower": 140,
     "accuracy": 90,
     "pp": 5,
+    "self": {
+      "boosts": {
+        "spa": -2
+      }
+    },
     "target": "normal",
     "type": "Fire",
     "critRatio": 1,
-    "boosts": {
-      "spa": -2
-    },
     "gen": 3
   },
   "poisonfang": {
@@ -1706,12 +1707,14 @@
     "accuracy": 90,
     "basePower": 140,
     "pp": 5,
+    "self": {
+      "boosts": {
+        "spa": -2
+      }
+    },
     "target": "normal",
     "type": "Psychic",
     "critRatio": 1,
-    "boosts": {
-      "spa": -2
-    },
     "gen": 3
   },
   "recycle": {
@@ -1720,7 +1723,6 @@
     "num": 278,
     "shortDesc": "Restores the item the user last used.",
     "desc": "The user regains the item last used by a Pokemon in its current position on the field, even if that Pokemon was not the user. Fails if the user is holding an item, if no items have been used at the user's position, or if the item was lost to Covet, Knock Off, or Thief. Items thrown with Fling can be regained.",
-    "flags": {},
     "accuracy": true,
     "category": "Status",
     "pp": 10,
@@ -2126,13 +2128,15 @@
     "accuracy": 100,
     "basePower": 120,
     "pp": 5,
+    "self": {
+      "boosts": {
+        "atk": -1,
+        "def": -1
+      }
+    },
     "target": "normal",
     "type": "Fighting",
     "critRatio": 1,
-    "boosts": {
-      "atk": -1,
-      "def": -1
-    },
     "gen": 3
   },
   "swallow": {
@@ -2287,10 +2291,12 @@
     "basePower": 50,
     "accuracy": 100,
     "pp": 10,
+    "self": {
+      "volatileStatus": "uproar"
+    },
     "target": "randomNormal",
     "type": "Normal",
     "critRatio": 1,
-    "volatileStatus": "uproar",
     "gen": 3
   },
   "volttackle": {
@@ -2343,7 +2349,6 @@
     "num": 346,
     "shortDesc": "Weakens Fire-type attacks to 1/2 their power.",
     "desc": "While the user is active, all Fire-type attacks used by any active Pokemon have their power halved. Fails if this effect is already active for the user. Baton Pass can be used to transfer this effect to an ally.",
-    "flags": {},
     "accuracy": true,
     "category": "Status",
     "pp": 15,

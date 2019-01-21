@@ -98,18 +98,16 @@ interface Flags {
 }
 
 interface SelfEffect {
-  readonly boosts?: Partial<BoostsTable>;
   readonly chance?: number;
   readonly sideCondition?: string;   // TODO
   readonly volatileStatus?: string;  // TODO
+  readonly boosts?: Partial<BoostsTable>;
 }
 
 interface SecondaryEffect {
   readonly chance?: number;
-  // readonly ability?: Ability; // TODO
   readonly boosts?: Partial<BoostsTable>;
   readonly self?: SelfEffect;
-
   readonly status?: Status;
   readonly volatileStatus?: string;  // TODO
   readonly dustproof?: boolean;
@@ -138,7 +136,6 @@ export interface Move extends Data {
   readonly breaksProtect?: boolean;  // TODO bypassesProtect
   // readonly ignoresBurn?: boolean;         // TODO  hardcode Facade
   // dropsStats ignoresBurn?: boolean;         // TODO deduce from
-  // self.boosts/boosts?
   readonly secondaries?: SecondaryEffect[];
   readonly ignoreDefensive?: boolean;  // TODO ignoresDefenseBoosts
   readonly willCrit?: boolean;         // TODO alwaysCrit
@@ -147,6 +144,7 @@ export interface Move extends Data {
   readonly sideCondition?: string;   // TODO
   readonly volatileStatus?: string;  // TODO
   readonly boosts?: Partial<BoostsTable>|false;
+  readonly self?: SelfEffect;
 }
 
 const RBY: DataTable<Move> = patch({}, rby);

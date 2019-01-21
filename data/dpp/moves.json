@@ -11,7 +11,8 @@
     "secondaries": [
       {
         "boosts": {
-          "spd": -1
+          "spd": -1,
+          "def": 0
         }
       }
     ]
@@ -445,8 +446,7 @@
   },
   "ancientpower": {
     "flags": {
-      "protect": 1,
-      "mirror": 1
+      "contact": 0
     },
     "category": "Special"
   },
@@ -471,7 +471,8 @@
     "secondaries": [
       {
         "boosts": {
-          "def": -1
+          "def": -1,
+          "spd": 0
         }
       }
     ]
@@ -500,9 +501,7 @@
   },
   "feintattack": {
     "flags": {
-      "contact": 1,
-      "protect": 1,
-      "mirror": 1
+      "contact": 1
     },
     "category": "Physical"
   },
@@ -717,12 +716,10 @@
     }
   },
   "covet": {
-    "flags": {
-      "contact": 1,
-      "protect": 1,
-      "mirror": 1
-    },
     "desc": "If this attack was successful and the user has not fainted, it steals the target's held item if the user is not holding one. The target's item is not stolen if it is a Mail or Griseous Orb, or if the target has the Multitype Ability. Items lost to this move cannot be regained with Recycle.",
+    "flags": {
+      "contact": 1
+    },
     "category": "Physical"
   },
   "crushclaw": {
@@ -754,9 +751,7 @@
   },
   "fakeout": {
     "flags": {
-      "contact": 1,
-      "protect": 1,
-      "mirror": 1
+      "contact": 1
     },
     "category": "Physical"
   },
@@ -837,8 +832,7 @@
   },
   "overheat": {
     "flags": {
-      "protect": 1,
-      "mirror": 1
+      "contact": 0
     },
     "category": "Special"
   },
@@ -915,26 +909,21 @@
     "desc": "The user restores its HP based on its Stockpile count. Restores 1/4 of its maximum HP if it's 1, 1/2 of its maximum HP if it's 2, both rounded down, and all of its HP if it's 3. Fails if the user's Stockpile count is 0. The user's Defense and Special Defense decrease by as many stages as Stockpile had increased them, and the user's Stockpile count resets to 0."
   },
   "taunt": {
-    "flags": {
-      "protect": 1,
-      "mirror": 1,
-      "authentic": 1
-    },
     "desc": "For 3 to 5 turns, prevents the target from using non-damaging moves.",
-    "shortDesc": "For 3-5 turns, the target can't use status moves."
+    "shortDesc": "For 3-5 turns, the target can't use status moves.",
+    "flags": {
+      "mirror": 1
+    }
   },
   "teeterdance": {
     "flags": {
-      "protect": 1,
       "mirror": 1
     }
   },
   "tickle": {
     "flags": {
-      "protect": 1,
-      "reflectable": 1,
-      "mirror": 1,
-      "mystery": 1
+      "mystery": 1,
+      "authentic": 0
     }
   },
   "trick": {
@@ -1036,7 +1025,6 @@
     "num": 392,
     "shortDesc": "User recovers 1/16 max HP per turn.",
     "desc": "The user has 1/16 of its maximum HP, rounded down, restored at the end of each turn while it remains active. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down. If the user uses Baton Pass, the replacement will receive the healing effect.",
-    "flags": {},
     "accuracy": true,
     "category": "Status",
     "pp": 20,
@@ -1344,13 +1332,15 @@
     "basePower": 120,
     "category": "Physical",
     "pp": 5,
+    "self": {
+      "boosts": {
+        "def": -1,
+        "spd": -1
+      }
+    },
     "target": "normal",
     "type": "Fighting",
     "critRatio": 1,
-    "boosts": {
-      "def": -1,
-      "spd": -1
-    },
     "gen": 4
   },
   "copycat": {
@@ -1359,7 +1349,6 @@
     "num": 383,
     "shortDesc": "Uses the last move used in the battle.",
     "desc": "The user uses the last move used by any Pokemon, including itself. Fails if no move has been used, or if the last move used was Assist, Chatter, Copycat, Counter, Covet, Destiny Bond, Detect, Endure, Feint, Focus Punch, Follow Me, Helping Hand, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Protect, Sketch, Sleep Talk, Snatch, Struggle, Switcheroo, Thief, or Trick.",
-    "flags": {},
     "accuracy": true,
     "category": "Status",
     "pp": 20,
@@ -1558,12 +1547,14 @@
     "accuracy": 90,
     "category": "Special",
     "pp": 5,
+    "self": {
+      "boosts": {
+        "spa": -2
+      }
+    },
     "target": "normal",
     "type": "Dragon",
     "critRatio": 1,
-    "boosts": {
-      "spa": -2
-    },
     "gen": 4
   },
   "dragonpulse": {
@@ -1711,7 +1702,6 @@
     "num": 364,
     "shortDesc": "Breaks protection. Fails if target is not protecting.",
     "desc": "Fails unless the target is using Detect or Protect. If this move is successful, it breaks through the target's Detect or Protect for this turn, allowing other Pokemon to attack the target normally.",
-    "flags": {},
     "basePower": 50,
     "accuracy": 100,
     "category": "Physical",
@@ -1917,10 +1907,12 @@
     "basePower": 150,
     "category": "Physical",
     "pp": 5,
+    "self": {
+      "volatileStatus": "mustrecharge"
+    },
     "target": "normal",
     "type": "Normal",
     "critRatio": 1,
-    "volatileStatus": "mustrecharge",
     "gen": 4
   },
   "grassknot": {
@@ -1948,7 +1940,6 @@
     "num": 356,
     "shortDesc": "For 5 turns, negates all Ground immunities.",
     "desc": "For 5 turns, the evasiveness of all active Pokemon is multiplied by 0.6. At the time of use, Bounce, Fly, and Magnet Rise end immediately for all active Pokemon. During the effect, Bounce, Fly, High Jump Kick, Jump Kick, Magnet Rise, and Splash are prevented from being used by all active Pokemon. Ground-type attacks, Spikes, Toxic Spikes, and the Arena Trap Ability can affect Flying types or Pokemon with the Levitate Ability. Fails if this move is already in effect.",
-    "flags": {},
     "accuracy": true,
     "category": "Status",
     "pp": 5,
@@ -2037,12 +2028,14 @@
     "basePower": 100,
     "category": "Physical",
     "pp": 10,
+    "self": {
+      "boosts": {
+        "spe": -1
+      }
+    },
     "target": "normal",
     "type": "Fighting",
     "critRatio": 1,
-    "boosts": {
-      "spe": -1
-    },
     "gen": 4
   },
   "headsmash": {
@@ -2295,12 +2288,14 @@
     "accuracy": 90,
     "category": "Special",
     "pp": 5,
+    "self": {
+      "boosts": {
+        "spa": -2
+      }
+    },
     "target": "normal",
     "type": "Grass",
     "critRatio": 1,
-    "boosts": {
-      "spa": -2
-    },
     "gen": 4
   },
   "luckychant": {
@@ -2309,7 +2304,6 @@
     "num": 381,
     "shortDesc": "For 5 turns, shields user's party from critical hits.",
     "desc": "For 5 turns, the user and its party members cannot be struck by a critical hit. Fails if the effect is already active on the user's side.",
-    "flags": {},
     "accuracy": true,
     "category": "Status",
     "pp": 30,
@@ -2704,7 +2698,6 @@
     "num": 379,
     "shortDesc": "Switches user's Attack and Defense stats.",
     "desc": "The user swaps its Attack and Defense stats, and stat stage changes remain on their respective stats. This move can be used again to swap the stats back. If the user uses Baton Pass, the replacement will have its Attack and Defense stats swapped if the effect is active. If the user has its stats recalculated by changing forme while its stats are swapped, this effect is ignored but is still active for the purposes of Baton Pass.",
-    "flags": {},
     "accuracy": true,
     "category": "Status",
     "pp": 10,
@@ -2765,6 +2758,7 @@
     "accuracy": 90,
     "category": "Status",
     "pp": 10,
+    "self": {},
     "target": "normal",
     "type": "Psychic",
     "critRatio": 1,
@@ -2804,10 +2798,12 @@
     "basePower": 150,
     "category": "Special",
     "pp": 5,
+    "self": {
+      "volatileStatus": "mustrecharge"
+    },
     "target": "normal",
     "type": "Dragon",
     "critRatio": 1,
-    "volatileStatus": "mustrecharge",
     "gen": 4
   },
   "rockclimb": {
@@ -2871,10 +2867,12 @@
     "basePower": 150,
     "category": "Physical",
     "pp": 5,
+    "self": {
+      "volatileStatus": "mustrecharge"
+    },
     "target": "normal",
     "type": "Rock",
     "critRatio": 1,
-    "volatileStatus": "mustrecharge",
     "gen": 4
   },
   "roost": {
@@ -2890,10 +2888,12 @@
     "accuracy": true,
     "category": "Status",
     "pp": 10,
+    "self": {
+      "volatileStatus": "roost"
+    },
     "target": "self",
     "type": "Flying",
     "critRatio": 1,
-    "volatileStatus": "roost",
     "gen": 4
   },
   "seedbomb": {
@@ -3028,7 +3028,6 @@
     "num": 446,
     "shortDesc": "Hurts foes on switch-in. Factors Rock weakness.",
     "desc": "Sets up a hazard on the opposing side of the field, damaging each opposing Pokemon that switches in. Fails if the effect is already active on the opposing side. Foes lose 1/32, 1/16, 1/8, 1/4, or 1/2 of their maximum HP, rounded down, based on their weakness to the Rock type; 0.25x, 0.5x, neutral, 2x, or 4x, respectively. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin successfully, or is hit by Defog.",
-    "flags": {},
     "accuracy": true,
     "category": "Status",
     "pp": 20,
@@ -3151,7 +3150,6 @@
     "num": 390,
     "shortDesc": "Poisons grounded foes on switch-in. Max 2 layers.",
     "desc": "Sets up a hazard on the opposing side of the field, poisoning each opposing Pokemon that switches in, unless it is a Flying-type Pokemon or has the Levitate Ability. Can be used up to two times before failing. Opposing Pokemon become poisoned with one layer and badly poisoned with two layers. Can be removed from the opposing side if any opposing Pokemon uses Rapid Spin successfully, is hit by Defog, or a grounded Poison-type Pokemon switches in. Safeguard prevents the opposing party from being poisoned on switch-in, as well as switching in with a substitute.",
-    "flags": {},
     "accuracy": true,
     "category": "Status",
     "pp": 20,

@@ -662,9 +662,7 @@
   },
   "rockblast": {
     "flags": {
-      "bullet": 1,
-      "protect": 1,
-      "mirror": 1
+      "bullet": 1
     },
     "zMovePower": 140
   },
@@ -1258,7 +1256,7 @@
       {
         "self": {
           "boosts": {
-            "def": 2
+            "def": 0
           }
         }
       }
@@ -1500,10 +1498,12 @@
     "basePower": 90,
     "category": "Special",
     "pp": 15,
+    "self": {
+      "sideCondition": "reflect"
+    },
     "target": "normal",
     "type": "Dark",
     "critRatio": 1,
-    "sideCondition": "reflect",
     "gen": 7
   },
   "banefulbunker": {
@@ -1644,6 +1644,7 @@
     "basePower": 130,
     "category": "Special",
     "pp": 5,
+    "self": {},
     "target": "normal",
     "type": "Fire",
     "zMovePower": 195,
@@ -1713,8 +1714,10 @@
     "type": "Dragon",
     "zMovePower": 185,
     "critRatio": 1,
-    "boosts": {
-      "def": -1
+    "self": {
+      "boosts": {
+        "def": -1
+      }
     },
     "gen": 7
   },
@@ -1739,12 +1742,14 @@
     "secondaries": [
       {}
     ],
-    "boosts": {
-      "atk": 1,
-      "def": 1,
-      "spa": 1,
-      "spd": 1,
-      "spe": 1
+    "self": {
+      "boosts": {
+        "atk": 1,
+        "def": 1,
+        "spa": 1,
+        "spd": 1,
+        "spe": 1
+      }
     },
     "gen": 7
   },
@@ -1972,13 +1977,15 @@
     "basePower": 130,
     "category": "Special",
     "pp": 5,
+    "self": {
+      "boosts": {
+        "spa": -2
+      }
+    },
     "target": "normal",
     "type": "Fairy",
     "zMovePower": 195,
     "critRatio": 1,
-    "boosts": {
-      "spa": -2
-    },
     "gen": 7
   },
   "floatyfall": {
@@ -2116,10 +2123,12 @@
     "basePower": 90,
     "category": "Special",
     "pp": 15,
+    "self": {
+      "sideCondition": "lightscreen"
+    },
     "target": "normal",
     "type": "Psychic",
     "critRatio": 1,
-    "sideCondition": "lightscreen",
     "gen": 7
   },
   "guardianofalola": {
@@ -2188,13 +2197,15 @@
     "basePower": 100,
     "category": "Physical",
     "pp": 10,
+    "self": {
+      "boosts": {
+        "spe": -1
+      }
+    },
     "target": "normal",
     "type": "Ice",
     "zMovePower": 180,
     "critRatio": 1,
-    "boosts": {
-      "spe": -1
-    },
     "gen": 7
   },
   "infernooverdrive": {
@@ -2623,11 +2634,13 @@
     "basePower": 160,
     "category": "Special",
     "pp": 10,
+    "self": {
+      "volatileStatus": "mustrecharge"
+    },
     "target": "normal",
     "type": "Psychic",
     "zMovePower": 200,
     "critRatio": 1,
-    "volatileStatus": "mustrecharge",
     "gen": 7
   },
   "psychicfangs": {
@@ -3006,6 +3019,7 @@
     "basePower": 90,
     "category": "Special",
     "pp": 15,
+    "self": {},
     "target": "normal",
     "type": "Fairy",
     "critRatio": 1,
