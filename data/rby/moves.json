@@ -2570,7 +2570,7 @@
     "accuracy": true,
     "category": "Status",
     "pp": 10,
-    "volatileStatus": "Substitute",
+    "volatileStatus": "substitute",
     "target": "self",
     "type": "Normal",
     "critRatio": 1,

@@ -2423,7 +2423,7 @@
     "flags": {
       "heal": 1
     },
-    "sideCondition": "Wish",
+    "sideCondition": "wish",
     "accuracy": true,
     "category": "Status",
     "pp": 10,
