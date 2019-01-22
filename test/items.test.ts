@@ -37,6 +37,9 @@ describe('Items', () => {
     expect(Items.getItem('Old Amber', 5)!.gen).toBe(4);
 
     expect(Items.getItem('salac')!.name).toBe('Salac Berry');
+    expect(Items.getItem('salac', 2)).not.toBeDefined();
     expect(Items.getItem('lo', 4)!.name).toBe('Life Orb');
+    expect(Items.getItem('')).not.toBeDefined();
+    expect(Items.getItem('', 2)).not.toBeDefined();  // '' + 'berry'
   });
 });

@@ -45,4 +45,10 @@ describe('extend', () => {
 
     expect(extend(true, {}, rby, gsc)).toEqual(gsc);
   });
+
+  test('edge', () => {
+    expect(extend(true, {}, undefined)).toEqual({});
+    expect(extend(true, 5, undefined)).toEqual({});
+    expect(extend(undefined)).toEqual({'extend': extend});
+  });
 });
