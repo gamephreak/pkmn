@@ -41,6 +41,41 @@
     "desc": "Can be revived into Cranidos.",
     "gen": 4
   },
+  "rootfossil": {
+    "id": "rootfossil",
+    "name": "Root Fossil",
+    "num": 99,
+    "desc": "Can be revived into Lileep.",
+    "gen": 4
+  },
+  "clawfossil": {
+    "id": "clawfossil",
+    "name": "Claw Fossil",
+    "num": 100,
+    "desc": "Can be revived into Anorith.",
+    "gen": 4
+  },
+  "oldamber": {
+    "id": "oldamber",
+    "name": "Old Amber",
+    "num": 103,
+    "desc": "Can be revived into Aerodactyl.",
+    "gen": 4
+  },
+  "helixfossil": {
+    "id": "helixfossil",
+    "name": "Helix Fossil",
+    "num": 101,
+    "desc": "Can be revived into Omanyte.",
+    "gen": 4
+  },
+  "domefossil": {
+    "id": "domefossil",
+    "name": "Dome Fossil",
+    "num": 102,
+    "desc": "Can be revived into Kabuto.",
+    "gen": 4
+  },
   "rarebone": {
     "id": "rarebone",
     "name": "Rare Bone",

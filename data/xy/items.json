@@ -1,4 +1,18 @@
 {
+  "redorb": {
+    "id": "redorb",
+    "name": "Red Orb",
+    "num": 534,
+    "desc": "If held by a Groudon, this item triggers its Primal Reversion in battle.",
+    "gen": 6
+  },
+  "blueorb": {
+    "id": "blueorb",
+    "name": "Blue Orb",
+    "num": 535,
+    "desc": "If held by a Kyogre, this item triggers its Primal Reversion in battle.",
+    "gen": 6
+  },
   "firegem": {
     "desc": "Holder's first successful Fire-type attack will have 1.3x power. Single use.",
     "isUnreleased": true

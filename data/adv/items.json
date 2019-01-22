@@ -518,54 +518,5 @@
   },
   "stick": {
     "desc": "If held by a Farfetch'd, its critical hit ratio is raised by 2 stages."
-  },
-  "redorb": {
-    "id": "redorb",
-    "name": "Red Orb",
-    "num": 534,
-    "desc": "If held by a Groudon, this item triggers its Primal Reversion in battle.",
-    "gen": 3
-  },
-  "blueorb": {
-    "id": "blueorb",
-    "name": "Blue Orb",
-    "num": 535,
-    "desc": "If held by a Kyogre, this item triggers its Primal Reversion in battle.",
-    "gen": 3
-  },
-  "rootfossil": {
-    "id": "rootfossil",
-    "name": "Root Fossil",
-    "num": 99,
-    "desc": "Can be revived into Lileep.",
-    "gen": 3
-  },
-  "clawfossil": {
-    "id": "clawfossil",
-    "name": "Claw Fossil",
-    "num": 100,
-    "desc": "Can be revived into Anorith.",
-    "gen": 3
-  },
-  "oldamber": {
-    "id": "oldamber",
-    "name": "Old Amber",
-    "num": 103,
-    "desc": "Can be revived into Aerodactyl.",
-    "gen": 3
-  },
-  "helixfossil": {
-    "id": "helixfossil",
-    "name": "Helix Fossil",
-    "num": 101,
-    "desc": "Can be revived into Omanyte.",
-    "gen": 3
-  },
-  "domefossil": {
-    "id": "domefossil",
-    "name": "Dome Fossil",
-    "num": 102,
-    "desc": "Can be revived into Kabuto.",
-    "gen": 3
   }
 }
