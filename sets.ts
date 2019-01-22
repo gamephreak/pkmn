@@ -1,6 +1,6 @@
 import {CURRENT, Generation} from './gen';
 import {toID} from './id';
-import {Pokedex} from './species';
+import {Species} from './species';
 import {Stat, STAT_NAMES, Stats, StatsTable} from './stats';
 import {Type, Types} from './types';
 
@@ -44,7 +44,7 @@ export class Sets {
     buf += '|' + toID(s.item);
 
     // ability
-    const species = Pokedex.getSpecies(s.species || s.name);
+    const species = Species.getSpecies(s.species || s.name);
     id = toID(s.ability);
     if (species && species.abilities) {
       const abilities = species.abilities;
@@ -324,7 +324,7 @@ export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
   const ability = buf.substring(i, j);
-  const species = Pokedex.getSpecies(s.species);
+  const species = Species.getSpecies(s.species);
   s.ability =
       (species && species.abilities && ability in {'': 1, 0: 1, 1: 1, H: 1} ?
            // @ts-ignore
@@ -442,12 +442,12 @@ export function _import(lines: string[], i = 0, gen?: Generation):
       if (line.substr(line.length - 1) === ')' && parenIndex !== -1) {
         line = line.substr(0, line.length - 1);
         const sub = line.substr(parenIndex + 2);
-        const species = Pokedex.getSpecies(sub);
+        const species = Species.getSpecies(sub);
         s.species = (species && species.name) || line;
         line = line.substr(0, parenIndex);
         s.name = line;
       } else {
-        const species = Pokedex.getSpecies(line);
+        const species = Species.getSpecies(line);
         s.species = (species && species.name) || line;
         s.name = '';
       }

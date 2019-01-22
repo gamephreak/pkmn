@@ -1,12 +1,12 @@
 import {Aliases} from './aliases';
 import {Data, DataTable, patch} from './data';
-import * as adv from './data/adv/pokemon.json';
-import * as bw from './data/bw/pokemon.json';
-import * as dpp from './data/dpp/pokemon.json';
-import * as gsc from './data/gsc/pokemon.json';
-import * as rby from './data/rby/pokemon.json';
-import * as sm from './data/sm/pokemon.json';
-import * as xy from './data/xy/pokemon.json';
+import * as adv from './data/adv/species.json';
+import * as bw from './data/bw/species.json';
+import * as dpp from './data/dpp/species.json';
+import * as gsc from './data/gsc/species.json';
+import * as rby from './data/rby/species.json';
+import * as sm from './data/sm/species.json';
+import * as xy from './data/xy/species.json';
 import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
 import {StatsTable} from './stats';
@@ -45,16 +45,15 @@ const SM: DataTable<Species> = patch(XY, sm);
 const SPECIES: Readonly<Array<DataTable<Species>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
 
-//  TODO rename Species with namespace?
-export class Pokedex {
-  static forGen(gen: Generation): DataTable<Species> {
+export namespace Species {
+  export function forGen(gen: Generation): DataTable<Species> {
     return SPECIES[gen - 1];
   }
 
-  static getSpeciesName(s: ID|string, gen: Generation = CURRENT): string
-      |undefined {
+  export function getSpeciesName(s: ID|string, gen: Generation = CURRENT):
+      string|undefined {
     const id = toID(s);
-    const species = Pokedex.getSpecies(id);
+    const species = Species.getSpecies(id);
     if (!species) return undefined;
     if (species.cosmeticForms && species.cosmeticForms.indexOf(id) >= 0) {
       const cosmeticForm = id.slice(species.name.length);
@@ -66,7 +65,7 @@ export class Pokedex {
     return species.name;
   }
 
-  static getSpecies(s: ID|string, gen: Generation = CURRENT): Species
+  export function getSpecies(s: ID|string, gen: Generation = CURRENT): Species
       |undefined {
     let id = toID(s);
     if (id === 'nidoran' && s.slice(-1) === '♀') {
@@ -75,27 +74,28 @@ export class Pokedex {
       id = 'nidoranm' as ID;
     }
 
-    const pokedex = Pokedex.forGen(gen);
+    const data = Species.forGen(gen);
 
     // BUG: Handle Rockruff-Dusk and other event pokemon?
     let alias = Aliases.lookup(id);
-    if (alias) return pokedex[alias];
+    console.log([id, alias]);
+    if (alias) return data[toID(alias)];
 
-    let species = pokedex[id];
+    let species = data[id];
     if (species) return species;
 
     alias = '';
-    if (id.startsWith('mega') && pokedex[id.slice(4) + 'mega']) {
+    if (id.startsWith('mega') && data[id.slice(4) + 'mega']) {
       alias = id.slice(4) + 'mega';
-    } else if (id.startsWith('m') && pokedex[id.slice(1) + 'mega']) {
+    } else if (id.startsWith('m') && data[id.slice(1) + 'mega']) {
       alias = id.slice(1) + 'mega';
-    } else if (id.startsWith('primal') && pokedex[id.slice(6) + 'primal']) {
+    } else if (id.startsWith('primal') && data[id.slice(6) + 'primal']) {
       alias = id.slice(6) + 'primal';
-    } else if (id.startsWith('p') && pokedex[id.slice(1) + 'primal']) {
+    } else if (id.startsWith('p') && data[id.slice(1) + 'primal']) {
       alias = id.slice(1) + 'primal';
     }
 
-    if (alias) species = pokedex[alias];
+    if (alias) species = data[alias];
     return species;
   }
 }

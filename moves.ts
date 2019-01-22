@@ -115,6 +115,7 @@ interface SecondaryEffect {
   readonly kingsrock?: boolean;
 }
 
+// TODO: verify through pkmnx testing!
 export interface Move extends Data {
   readonly basePower?: number;
   readonly type: Type;
@@ -128,7 +129,7 @@ export interface Move extends Data {
   readonly status?: Status;
   readonly sideCondition?: string;
   readonly volatileStatus?: string;
-  readonly boosts?: Partial<BoostsTable>|false;  // TODO when false?
+  readonly boosts?: Partial<BoostsTable>;
   readonly self?: SelfEffect;
   readonly secondaries?: SecondaryEffect[];
   readonly critRatio?: number;
@@ -136,7 +137,7 @@ export interface Move extends Data {
   readonly isZ?: ID;
   readonly zMovePower?: number;
   readonly zMoveBoosts?: Partial<BoostsTable>;
-  readonly multihit?: number|number[];  // TODO just number[]?
+  readonly multihit?: number|number[];
   readonly percentHealed?: number;
   readonly recoil?: Recoil;
   readonly breaksProtect?: boolean;
