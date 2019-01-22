@@ -6,4 +6,5 @@ export interface Field {  // class
   terrain?: Terrain;
   weather?: Weather;
   gravity?: boolean;
+  trickroom?: boolean;
 }
