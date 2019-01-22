@@ -1,3 +1,4 @@
+import {Aliases} from './aliases';
 import {Data, DataTable, patch} from './data';
 import * as adv from './data/adv/items.json';
 import * as bw from './data/bw/items.json';
@@ -40,6 +41,18 @@ export class Items {
   }
 
   static getItem(i: ID|string, gen: Generation = CURRENT): Item|undefined {
-    return Items.forGen(gen)[toID(i)];
+    const id = toID(i);
+    const items = Items.forGen(gen);
+
+    const alias = Aliases.lookup(id);
+    if (alias) return items[alias];
+
+    const item = items[id];
+    if (item) return item;
+
+    const berry = id ? items[id + 'berry'] : undefined;
+    if (berry) return berry;
+
+    return item;
   }
 }

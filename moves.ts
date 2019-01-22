@@ -1,3 +1,4 @@
+import {Aliases} from './aliases';
 import {Data, DataTable, patch} from './data';
 import * as adv from './data/adv/moves.json';
 import * as bw from './data/bw/moves.json';
@@ -159,6 +160,17 @@ export class Moves {
   }
 
   static getMove(m: ID|string, gen: Generation = CURRENT): Move|undefined {
-    return Moves.forGen(gen)[toID(m)];
+    let id = toID(m);
+    const moves = Moves.forGen(gen);
+
+    const alias = Aliases.lookup(id);
+    if (alias) return moves[alias];
+
+    if (id.substr(0, 11) === 'hiddenpower') {
+      const matches = /([a-z]*)([0-9]*)/.exec(id);
+      id = matches![1] as ID;
+    }
+
+    return moves[id];
   }
 }

@@ -1,3 +1,4 @@
+import {Aliases} from './aliases';
 import {Data, DataTable, patch} from './data';
 import * as adv from './data/adv/abilities.json';
 import * as bw from './data/bw/abilities.json';
@@ -27,6 +28,12 @@ export class Abilities {
 
   static getAbility(a: ID|string, gen: Generation = CURRENT): Ability
       |undefined {
-    return Abilities.forGen(gen)[toID(a)];
+    const id = toID(a);
+    const abilities = Abilities.forGen(gen);
+
+    const alias = Aliases.lookup(id);
+    if (alias) return abilities[alias];
+
+    return abilities[id];
   }
 }
