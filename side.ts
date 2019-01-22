@@ -1,4 +1,4 @@
-import {Pokemon} from './pokemon';
+import {Pokemon} from './p';
 
 // TODO how do side conditions (spikes, etc) stack?
 export interface Side {  // class
