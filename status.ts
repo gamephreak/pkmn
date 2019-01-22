@@ -10,7 +10,7 @@ const STATUSES: Readonly<{[s in Status]: string}> = {
 };
 
 export class Statuses {
-  static toString(s: Status|undefined): string {
-    return s ? STATUSES[s] : 'Healthy';
+  static toString(s: Status|''|undefined): string {
+    return s ? (STATUSES[s] || 'Healthy') : 'Healthy';
   }
 }

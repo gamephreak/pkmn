@@ -45,7 +45,7 @@ export class Items {
     const items = Items.forGen(gen);
 
     const alias = Aliases.lookup(id);
-    if (alias) return items[alias];
+    if (alias) return items[toID(alias)];
 
     const item = items[id];
     if (item) return item;

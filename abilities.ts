@@ -32,7 +32,7 @@ export class Abilities {
     const abilities = Abilities.forGen(gen);
 
     const alias = Aliases.lookup(id);
-    if (alias) return abilities[alias];
+    if (alias) return abilities[toID(alias)];
 
     return abilities[id];
   }

@@ -176,12 +176,12 @@ export class Tiers {
     return TIERS[toID(t)];
   }
 
-  static official(t: Tier): boolean {
-    return !!OFFICIAL[t];
+  static isOfficial(t: Tier): boolean {
+    return !!OFFICIAL[toID(t)];
   }
 
   static isNonstandard(t: Tier): boolean {
-    return !!NON_STANDARD[t];
+    return !!NON_STANDARD[toID(t)];
   }
 
   static isAllowed(s: Species, t: Tier): boolean {

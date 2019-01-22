@@ -1,4 +1,4 @@
-import {Abilities, Ability} from '../abilities';
+import {Abilities} from '../abilities';
 
 describe('Abilities', () => {
   test('forGen', () => {
@@ -23,5 +23,8 @@ describe('Abilities', () => {
         .toEqual(Abilities.getAbility('Shield Dust', 4));
     expect(Abilities.getAbility('Lightning Rod', 3))
         .not.toEqual(Abilities.getAbility('Lightning Rod', 4));
+
+    expect(Abilities.getAbility('ph')!.name).toBe('Poison Heal');
+    expect(Abilities.getAbility('stag')!.name).toBe('Shadow Tag');
   });
 });

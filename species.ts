@@ -78,7 +78,6 @@ export namespace Species {
 
     // BUG: Handle Rockruff-Dusk and other event pokemon?
     let alias = Aliases.lookup(id);
-    console.log([id, alias]);
     if (alias) return data[toID(alias)];
 
     let species = data[id];

@@ -165,7 +165,7 @@ export class Moves {
     const moves = Moves.forGen(gen);
 
     const alias = Aliases.lookup(id);
-    if (alias) return moves[alias];
+    if (alias) return moves[toID(alias)];
 
     if (id.substr(0, 11) === 'hiddenpower') {
       const matches = /([a-z]*)([0-9]*)/.exec(id);

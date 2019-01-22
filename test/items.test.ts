@@ -1,4 +1,4 @@
-import {Item, Items} from '../items';
+import {Items} from '../items';
 
 describe('Items', () => {
   test('getItem', () => {
@@ -29,5 +29,14 @@ describe('Items', () => {
     expect(Items.getItem('Lunalium Z')!.zMoveUser).toEqual([
       'Lunala', 'Necrozma-Dawn-Wings'
     ]);
+
+    // Gen for items which were previously key items became held items.
+    expect(Items.getItem('Red Orb', 3)).not.toBeDefined();
+    expect(Items.getItem('Red Orb', 6)!.gen).toBe(6);
+    expect(Items.getItem('Old Amber', 2)).not.toBeDefined();
+    expect(Items.getItem('Old Amber', 5)!.gen).toBe(4);
+
+    expect(Items.getItem('salac')!.name).toBe('Salac Berry');
+    expect(Items.getItem('lo', 4)!.name).toBe('Life Orb');
   });
 });
