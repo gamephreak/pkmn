@@ -32,13 +32,13 @@ interface Flags {
    * Power is multiplied by 1.5 when used by a Pokemon with the Strong Jaw
    * Ability.
    */
-  bite?: Flag;  // TODO isBite
+  bite?: Flag;
   /** Has no effect on Pokemon with the Bulletproof Ability. */
-  bullet?: Flag;  // TODO isBullet
+  bullet?: Flag;
   /** The user is unable to make a move between turns. */
   charge?: Flag;
   /** Makes contact. */
-  contact?: Flag;  // TODO makesContact
+  contact?: Flag;
   /**
    * When used by a Pokemon, other Pokemon with the Dancer Ability can attempt
    * to execute the same move.
@@ -51,7 +51,7 @@ interface Flags {
   /** Prevented from being executed or selected during Gravity's effect. */
   gravity?: Flag;
   /** Prevented from being executed or selected during Heal Block's effect. */
-  heal?: Flag;  // TODO givesHealth
+  heal?: Flag;
   /** Can be copied by Mirror Move. */
   mirror?: Flag;
   /** Unknown effect. */
@@ -72,12 +72,12 @@ interface Flags {
    * Power is multiplied by 1.5 when used by a Pokemon with the Mega Launcher
    * Ability.
    */
-  pulse?: Flag;  // TODO isPulse
+  pulse?: Flag;
   /**
    * Power is multiplied by 1.2 when used by a Pokemon with the Iron Fist
    * Ability.
    */
-  punch?: Flag;  // TODO isPunch
+  punch?: Flag;
   /**
    * If this move is successful, the user must recharge on the following turn
    * and cannot make a move.
@@ -94,13 +94,13 @@ interface Flags {
    */
   snatch?: Flag;
   /** Has no effect on Pokemon with the Soundproof Ability. */
-  sound?: Flag;  // TODO isSound
+  sound?: Flag;
 }
 
 interface SelfEffect {
   readonly chance?: number;
-  readonly sideCondition?: string;   // TODO
-  readonly volatileStatus?: string;  // TODO
+  readonly sideCondition?: string;
+  readonly volatileStatus?: string;
   readonly boosts?: Partial<BoostsTable>;
 }
 
@@ -109,42 +109,37 @@ interface SecondaryEffect {
   readonly boosts?: Partial<BoostsTable>;
   readonly self?: SelfEffect;
   readonly status?: Status;
-  readonly volatileStatus?: string;  // TODO
+  readonly volatileStatus?: string;
   readonly dustproof?: boolean;
   readonly kingsrock?: boolean;
 }
 
 export interface Move extends Data {
-  readonly accuracy: number|true;
-  readonly pp: number;
+  readonly basePower?: number;
   readonly type: Type;
-  readonly target: Target;  // TODO isSpread
-
-  readonly flags?: Readonly<Flags>;
-  readonly basePower?: number;  // bp
-  readonly priority?: number;   // TODO hasPriority
+  readonly pp: number;
+  readonly accuracy: number|true;
   readonly category?: Category;
-  readonly critRatio?: number;
-  readonly isZ?: ID;             // TODO isZ
-  readonly zMovePower?: number;  // TODO zp
-  readonly zMoveBoosts?: Partial<BoostsTable>;
-  readonly multihit?: number|number[];    // TODO isMultiHit/isTwoHit
-  readonly percentHealed?: number;        // TODO percentHealed
-  readonly recoil?: Recoil;               // TODO hasRecoil
-  readonly defensiveCategory?: Category;  // TODO dealsPhysicalDamage
-  // readonly useHighest?: boolean;          // hardcode Zs
-  readonly breaksProtect?: boolean;  // TODO bypassesProtect
-  // readonly ignoresBurn?: boolean;         // TODO  hardcode Facade
-  // dropsStats ignoresBurn?: boolean;         // TODO deduce from
-  readonly secondaries?: SecondaryEffect[];
-  readonly ignoreDefensive?: boolean;  // TODO ignoresDefenseBoosts
-  readonly willCrit?: boolean;         // TODO alwaysCrit
-
-  readonly status?: Status;          // TODO
-  readonly sideCondition?: string;   // TODO
-  readonly volatileStatus?: string;  // TODO
-  readonly boosts?: Partial<BoostsTable>|false;
+  readonly defensiveCategory?: Category;
+  readonly target: Target;
+  readonly priority?: number;
+  readonly flags?: Readonly<Flags>;
+  readonly status?: Status;
+  readonly sideCondition?: string;
+  readonly volatileStatus?: string;
+  readonly boosts?: Partial<BoostsTable>|false;  // TODO when false?
   readonly self?: SelfEffect;
+  readonly secondaries?: SecondaryEffect[];
+  readonly critRatio?: number;
+  readonly willCrit?: boolean;
+  readonly isZ?: ID;
+  readonly zMovePower?: number;
+  readonly zMoveBoosts?: Partial<BoostsTable>;
+  readonly multihit?: number|number[];  // TODO just number[]?
+  readonly percentHealed?: number;
+  readonly recoil?: Recoil;
+  readonly breaksProtect?: boolean;
+  readonly ignoreDefensive?: boolean;
 }
 
 const RBY: DataTable<Move> = patch({}, rby);
