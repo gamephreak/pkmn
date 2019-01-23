@@ -1,5 +1,8 @@
-import {CURRENT, Generation} from './gen';
+import {Abilities} from './abilities';
+import {Generation} from './gen';
 import {toID} from './id';
+import {Items} from './items';
+import {Moves} from './moves';
 import {Species} from './species';
 import {Stat, STAT_NAMES, Stats, StatsTable} from './stats';
 import {Type, Types} from './types';
@@ -26,11 +29,11 @@ type WriteableSet =
     Partial<{-readonly[k in keyof PokemonSet] -?: PokemonSet[k]}>;
 
 export class Sets {
-  static pack(s: PokemonSet): string {
-    return Sets.packSet(s);
+  static pack(s: PokemonSet, gen?: Generation): string {
+    return Sets.packSet(s, '', gen);
   }
 
-  static packSet(s: PokemonSet, buf = ''): string {
+  static packSet(s: PokemonSet, buf = '', gen?: Generation): string {
     if (buf) buf += ']';
 
     // name
@@ -44,7 +47,7 @@ export class Sets {
     buf += '|' + toID(s.item);
 
     // ability
-    const species = Species.getSpecies(s.species || s.name);
+    const species = Species.getSpecies(s.species || s.name, gen);
     id = toID(s.ability);
     if (species && species.abilities) {
       const abilities = species.abilities;
@@ -146,7 +149,7 @@ export class Sets {
     return buf;
   }
 
-  static exportSet(s: PokemonSet, gen: Generation = CURRENT): string {
+  static exportSet(s: PokemonSet, gen?: Generation): string {
     let buf = '';
     if (s.name && s.name !== s.species) {
       buf += '' + s.name + ' (' + s.species + ')';
@@ -266,16 +269,18 @@ export class Sets {
     return buf;
   }
 
-  static unpack(buf: string): PokemonSet|undefined {
-    return Sets.unpackSet(buf);
+  static unpack(buf: string, fast?: boolean, gen?: Generation): PokemonSet
+      |undefined {
+    return Sets.unpackSet(buf, fast, gen);
   }
 
-  static unpackSet(buf: string): PokemonSet|undefined {
-    return _unpack(buf).set;
+  static unpackSet(buf: string, fast?: boolean, gen?: Generation): PokemonSet
+      |undefined {
+    return _unpack(buf, 0, 0, fast, gen).set;
   }
 
-  static importSet(buf: string): PokemonSet|undefined {
-    return _import(buf.split('\n')).set;
+  static importSet(buf: string, gen?: Generation): PokemonSet|undefined {
+    return _import(buf.split('\n'), 0, gen).set;
   }
 
   static toJSON(s: PokemonSet): string {
@@ -299,8 +304,9 @@ export class Sets {
   }
 }
 
-export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
-    {set?: PokemonSet, i: number, j: number} {
+export function _unpack(
+    buf: string, i = 0, j = 0, fast?: boolean,
+    gen?: Generation): {set?: PokemonSet, i: number, j: number} {
   const s: WriteableSet = {};
   // name
   j = buf.indexOf('|', i);
@@ -317,25 +323,41 @@ export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
   // item
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  s.item = buf.substring(i, j);
+  let item = buf.substring(i, j);
+  if (!fast) {
+    const im = Items.getItem(item, gen);
+    item = (im && im.name) || item;
+  }
+  s.item = item;
   i = j + 1;
 
   // ability
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  const ability = buf.substring(i, j);
-  const species = Species.getSpecies(s.species);
-  s.ability =
+  let ability = buf.substring(i, j);
+  const species = Species.getSpecies(s.species, gen);
+  ability =
       (species && species.abilities && ability in {'': 1, 0: 1, 1: 1, H: 1} ?
            // @ts-ignore
            species.abilities[ability || '0'] :
            ability);
+  if (!fast) {
+    const a = Abilities.getAbility(ability, gen);
+    ability = (a && a.name) || ability;
+  }
+  s.ability = ability;
   i = j + 1;
 
   // moves
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
   s.moves = buf.substring(i, j).split(',', 24).filter(x => x);
+  if (!fast) {
+    s.moves = s.moves.map((move) => {
+      const m = Moves.getMove(move, gen);
+      return (m && m.name) || move;
+    });
+  }
   i = j + 1;
 
   // nature

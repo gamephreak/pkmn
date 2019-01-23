@@ -34,7 +34,7 @@ describe('Stats', () => {
 
   test('dstois', () => {
     expect(Stats.dstois({atk: 10, def: 12, spd: 15}))
-        .toEqual({atk: 21, def: 25, spd: 31});
+        .toEqual({atk: 20, def: 24, spd: 30});
   });
 
   test('istods', () => {

@@ -27,14 +27,14 @@ export class Team {
         Tiers.fromString(this.format);
   }
 
-  pack(): string {
+  pack(gen?: Generation): string {
     return this.packTeam();
   }
 
-  packTeam(): string {
+  packTeam(gen?: Generation): string {
     let buf = '';
     for (const s of this.team) {
-      buf += Sets.packSet(s, buf);
+      buf += Sets.packSet(s, buf, gen || this.gen());
     }
     return buf;
   }
@@ -42,9 +42,9 @@ export class Team {
   exportTeam(gen?: Generation): string {
     let buf = '';
     for (const s of this.team) {
-      buf += Sets.exportSet(s, gen || this.gen()) + '\n';
+      buf += Sets.exportSet(s, gen || this.gen());
     }
-    return buf.trim();
+    return buf;
   }
 
   toString(gen?: Generation): string {
@@ -57,11 +57,12 @@ export class Team {
 }
 
 export class Teams {
-  static unpack(buf: string): Team|undefined {
-    return Teams.unpackTeam(buf);
+  static unpack(buf: string, fast?: boolean, gen?: Generation): Team|undefined {
+    return Teams.unpackTeam(buf, fast, gen);
   }
 
-  static unpackTeam(buf: string): Team|undefined {
+  static unpackTeam(buf: string, fast?: boolean, gen?: Generation): Team
+      |undefined {
     if (!buf) return undefined;
     if (buf.charAt(0) === '[' && buf.charAt(buf.length - 1) === ']') {
       return Teams.fromJSON(buf);
@@ -71,7 +72,7 @@ export class Teams {
     let i = 0, j = 0;
 
     while (true) {
-      const r = _unpack(buf, i, j);
+      const r = _unpack(buf, i, j, fast, gen);
       if (!r.set) return undefined;
 
       team.push(r.set);
@@ -85,14 +86,15 @@ export class Teams {
     return new Team(team);
   }
 
-  static importTeam(buf: string, gen?: Generation): Team|undefined {
+  static importTeam(buf: string, fast?: boolean, gen?: Generation): Team
+      |undefined {
     return undefined;  // TODO use same pattern as _import but for team
   }
 
-  static importTeams(buf: string): Team[] {
+  static importTeams(buf: string, fast?: boolean, gen?: Generation): Team[] {
     const lines = buf.split('\n');
     if (lines.length === 1 || (lines.length === 2 && !lines[1])) {
-      const team: Team|undefined = Teams.unpackTeam(lines[0]);
+      const team: Team|undefined = Teams.unpackTeam(lines[0], fast, gen);
       return team ? [team] : [];
     }
 
@@ -106,7 +108,7 @@ export class Teams {
       if (line.substr(0, 3) === '===') {
         team = [];
         line = line.substr(3, line.length - 6).trim();
-        let format = 'gen7';
+        let format = 'gen' + (gen || CURRENT);
         const bracketIndex = line.indexOf(']');
         if (bracketIndex >= 0) {
           format = line.substr(1, bracketIndex - 1);
@@ -124,10 +126,10 @@ export class Teams {
         teams.push(new Team(team, format, line, folder));
       } else if (line.includes('|')) {
         // packed format
-        const t: Team|undefined = unpackLine(line);
+        const t: Team|undefined = unpackLine(line, fast, gen);
         if (t) teams.push(t);
       } else if (setLine !== i) {
-        const r = _import(lines, i);
+        const r = _import(lines, i, gen);
         if (r.set) team.push(r.set);
         if (r.line === i) {
           continue;
@@ -162,12 +164,14 @@ export class Teams {
     return new Team(team);
   }
 
-  static fromString(str: string): Team|undefined {
-    return Teams.importTeam(str);
+  static fromString(str: string, fast?: boolean, gen?: Generation): Team
+      |undefined {
+    return Teams.importTeam(str, fast, gen);
   }
 }
 
-function unpackLine(line: string): Team|undefined {
+function unpackLine(line: string, fast?: boolean, gen?: Generation): Team|
+    undefined {
   const pipeIndex = line.indexOf('|');
   if (pipeIndex < 0) return undefined;
 
@@ -178,10 +182,12 @@ function unpackLine(line: string): Team|undefined {
   // line.slice(slashIndex + 1, pipeIndex) will be ''
   if (slashIndex < 0) slashIndex = bracketIndex;
 
-  let format = bracketIndex > 0 ? line.slice(0, bracketIndex) : 'gen7';
+  let format =
+      bracketIndex > 0 ? line.slice(0, bracketIndex) : 'gen' + (gen || CURRENT);
   if (format && format.slice(0, 3) !== 'gen') format = 'gen6' + format;
 
-  const team: Team|undefined = Teams.unpackTeam(line.slice(pipeIndex + 1));
+  const team: Team|undefined =
+      Teams.unpackTeam(line.slice(pipeIndex + 1), fast, gen);
   return !team ?
       team :
       new Team(

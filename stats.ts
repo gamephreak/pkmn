@@ -142,7 +142,7 @@ export class Stats {
   }
 
   static dtoi(dv: number): number {
-    return dv * 2 + 1;
+    return dv * 2;  // + 1;
   }
 
   static istods(ivs: Readonly<Partial<StatsTable>>): Partial<StatsTable> {
