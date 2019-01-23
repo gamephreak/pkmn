@@ -25,9 +25,10 @@ function isWindow(obj: any) {
 }
 
 function getType(obj: any) {
-  if (obj == null) {
-    return String(obj);
-  }
+  // NOTE: Can't actually happen in this code.
+  // if (obj == null) {
+  //  return String(obj);
+  //}
   return typeof obj === 'object' || typeof obj === 'function' ?
       class2Type[coreToString.call(obj)] || 'object' :
       typeof obj;

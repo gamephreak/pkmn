@@ -85,7 +85,7 @@ export class Teams {
     return new Team(team);
   }
 
-  static importTeam(buf: string,  gen?: Generation): Team|undefined {
+  static importTeam(buf: string, gen?: Generation): Team|undefined {
     return undefined;  // TODO use same pattern as _import but for team
   }
 
@@ -98,7 +98,7 @@ export class Teams {
 
     const teams: Team[] = [];
 
-    let setLine: number = -1;
+    let setLine = -1;
     let team: PokemonSet[] = [];
     for (let i = 0; i < lines.length; i++) {
       let line = lines[i].trim();

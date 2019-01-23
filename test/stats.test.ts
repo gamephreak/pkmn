@@ -46,16 +46,42 @@ describe('Stats', () => {
     expect(Stats.boost('atk', 3)).toBe(2.5);
     expect(Stats.boost('def', 4)).toBe(3);
     expect(Stats.boost('spc', 10)).toBe(4);
-    expect(Stats.boost('spd', -5)).toBe(-3.5);
+    expect(Stats.boost('spd', -5)).toBe(2 / 7);
     expect(Stats.boost('spa', 0)).toBe(1);
-    expect(Stats.boost('spe', -100)).toBe(-4);
+    expect(Stats.boost('spe', -100)).toBe(0.25);
+
+    expect(Stats.boost('atk', 3, 1)).toBe(2.5);
+    expect(Stats.boost('def', 4, 1)).toBe(3);
+    expect(Stats.boost('spd', -5, 1)).toBe(0.28);
+    expect(Stats.boost('spd', -4, 1)).toBe(0.33);
+    expect(Stats.boost('spe', -100, 1)).toBe(0.25);
 
     expect(Stats.boost('accuracy', 3)).toBe(2);
-    expect(Stats.boost('evasion', 4)).toBe(7 / 3);
-    expect(Stats.boost('evasion', 10)).toBe(3);
-    expect(Stats.boost('accuracy', -5)).toBe(-8 / 3);
-    expect(Stats.boost('evasion', 0)).toBe(1);
-    expect(Stats.boost('accuracy', -100)).toBe(-3);
+    expect(Stats.boost('evasion', 4)).toBe(3 / 7);
+    expect(Stats.boost('evasion', 10)).toBe(1 / 3);
+    expect(Stats.boost('accuracy', -5)).toBe(3 / 8);
+    expect(Stats.boost('evasion', -6)).toBe(3);
+    expect(Stats.boost('accuracy', -100)).toBe(1 / 3);
+
+    expect(Stats.boost('accuracy', 3, 2)).toBe(2);
+    expect(Stats.boost('evasion', 4, 2)).toBe(0.43);
+    expect(Stats.boost('evasion', 10, 2)).toBe(0.33);
+    expect(Stats.boost('accuracy', -5, 2)).toBe(0.36);
+    expect(Stats.boost('evasion', 0, 2)).toBe(1);
+    expect(Stats.boost('accuracy', -100, 2)).toBe(0.33);
+
+    // Weird GSC multiplier
+    expect(Stats.boost('accuracy', 4, 2)).toBe(2.33);
+    expect(Stats.boost('accuracy', 4, 4)).toBe(2.5);
+    expect(Stats.boost('evasion', -4, 2)).toBe(2.33);
+    expect(Stats.boost('evasion', -4, 3)).toBe(2.5);
+  });
+
+  test('modify', () => {
+    expect(Stats.modify(300, 4)).toBe(1200);
+    expect(Stats.modify(300, 4, 2)).toBe(999);
+    expect(Stats.modify(2, 0.25)).toBe(0.5);
+    expect(Stats.modify(2, 0.25, 1)).toBe(1);
   });
 
   test('getHPDV', () => {
@@ -84,8 +110,8 @@ describe('Stats', () => {
       let stat: Stat;
       for (stat in rby) {
         const s = Stats.calc(
-            gen as Generation, stat, 100, 31, 252, 100,
-            Natures.fromString('Adamant'));
+            stat, 100, 31, 252, 100, Natures.fromString('Adamant'),
+            gen as Generation);
         if (gen < 3) {
           expect(s).toBe(rby[stat]);
         } else {
@@ -95,9 +121,9 @@ describe('Stats', () => {
     }
 
     // Shedinja
-    expect(Stats.calc(7, 'hp', 1, 31, 252, 100, Natures.fromString('Jolly')))
+    expect(Stats.calc('hp', 1, 31, 252, 100, Natures.fromString('Jolly'), 5))
         .toBe(1);
     // no nature
-    expect(Stats.calc(7, 'atk', 100, 31, 252, 100)).toBe(299);
+    expect(Stats.calc('atk', 100, 31, 252, 100)).toBe(299);
   });
 });

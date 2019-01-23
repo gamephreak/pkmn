@@ -33,10 +33,22 @@ export const SPA: Stat = 'spa';
 export const SPD: Stat = 'spd';
 export const SPE: Stat = 'spe';
 
-// TODO NOTE: https://www.dragonflycave.com/mechanics/stat-stages
-const IDEAL_STAT_BOOSTS: Readonly<number[]> = [1, 1.5, 2, 2.5, 3, 3.5, 4];
-const APPROX_STAT_UNBOOSTS: Readonly<number[]> = [66/100, , 50/100, 40/100, 33/100, 28/100, 25/100];
-const OTHER_BOOSTS: Readonly<number[]> = [1, 4 / 3, 5 / 3, 2, 7 / 3, 8 / 3, 3];
+// NOTE: https://www.dragonflycave.com/mechanics/stat-stages
+const IDEAL_STAT_BOOSTS: Readonly<number[]> =
+    [3 / 2, 4 / 2, 5 / 2, 6 / 2, 7 / 2, 8 / 2];
+const APPROX_STAT_BOOSTS: Readonly<number[]> = IDEAL_STAT_BOOSTS;
+const IDEAL_STAT_UNBOOSTS: Readonly<number[]> =
+    [2 / 3, 2 / 4, 2 / 5, 2 / 6, 2 / 7, 2 / 8];
+const APPROX_STAT_UNBOOSTS: Readonly<number[]> =
+    [66 / 100, 50 / 100, 40 / 100, 33 / 100, 28 / 100, 25 / 100];
+
+const IDEAL_OTHER_BOOSTS: Readonly<number[]> =
+    [4 / 3, 5 / 3, 6 / 3, 7 / 3, 8 / 3, 9 / 3];
+const APPROX_OTHER_BOOSTS: Readonly<number[]> = [1.33, 1.66, 2, 2.5, 2.66, 3];
+const IDEAL_OTHER_UNBOOSTS: Readonly<number[]> =
+    [3 / 4, 3 / 5, 3 / 5, 3 / 7, 3 / 8, 3 / 9];
+const APPROX_OTHER_UNBOOSTS: Readonly<number[]> =
+    [75 / 100, 60 / 100, 50 / 100, 43 / 100, 36 / 100, 33 / 100];
 
 const STAT_IDS: Readonly<{[id: string]: Stat}> = {
   'HP': 'hp',
@@ -81,8 +93,16 @@ const DISPLAY: Readonly<{[stat: string]: Readonly<[string, string]>}> = {
 
 export class Stats {
   static calc(
-      gen: Generation, stat: Stat, base: number, iv: number, ev: number,
-      level: number, nature?: Nature) {
+      stat: Stat, base: number, iv: number, ev: number, level: number,
+      gn?: Generation|Nature, g: Generation = CURRENT) {
+    let gen: Generation = g;
+    let nature: Nature|undefined = undefined;
+    if (gn instanceof Nature) {
+      nature = gn;
+    } else {
+      gen = gn || g;
+    }
+
     return gen < 3 ? Stats.calcRBY(stat, base, iv, ev, level) :
                      Stats.calcADV(stat, base, iv, ev, level, nature);
   }
@@ -143,16 +163,47 @@ export class Stats {
     return ivs;
   }
 
-  static boost(s: Boost, b: number): number {
-    if (b > 6) {
-      b = 6;
-    } else if (b < -6) {
-      b = -6;
+  static boost(b: Boost, n: number, gen: Generation = CURRENT): number {
+    if (n > 6) {
+      n = 6;
+    } else if (n < -6) {
+      n = -6;
     }
-    const abs = Math.abs(b);
-    const boost = (s === 'accuracy' || s === 'evasion') ? OTHER_BOOSTS[abs] :
-                                                          STAT_BOOSTS[abs];
-    return b >= 0 ? boost : -boost;
+    const abs = Math.abs(n);
+    if (abs === 0) return 1;
+
+    if (gen === 1) {
+      // RBY uses the same (nroken) tanles for accuracy/evasion as stats.
+      return (n > 0 ? APPROX_STAT_BOOSTS : APPROX_STAT_UNBOOSTS)[abs - 1];
+    }
+
+    switch (b) {
+      case 'accuracy':
+        if (gen >= 5) {
+          return (n > 0 ? IDEAL_OTHER_BOOSTS : IDEAL_OTHER_UNBOOSTS)[abs - 1];
+        }
+        if (gen === 2 && n === 4) {
+          return 2.33;
+        }
+        return (n > 0 ? APPROX_OTHER_BOOSTS : APPROX_OTHER_UNBOOSTS)[abs - 1];
+      case 'evasion':
+        // NOTE: we purposefully swap BOOSTS and UNBOOSTS for evasion!
+        if (gen >= 5) {
+          return (n > 0 ? IDEAL_OTHER_UNBOOSTS : IDEAL_OTHER_BOOSTS)[abs - 1];
+        }
+        if (gen === 2 && n === -4) {
+          return 2.33;
+        }
+        return (n > 0 ? APPROX_OTHER_UNBOOSTS : APPROX_OTHER_BOOSTS)[abs - 1];
+      default:
+        return (n > 0 ? IDEAL_STAT_BOOSTS : IDEAL_STAT_UNBOOSTS)[abs - 1];
+    }
+  }
+
+  // NOTE: https://www.dragonflycave.com/mechanics/gen-i-stat-modification
+  static modify(s: number, mod: number, gen: Generation = CURRENT): number {
+    s = s * mod;
+    return (gen < 3) ? Math.min(999, Math.max(1, s)) : s;
   }
 
   static getHPDV(pivs: Readonly<Partial<StatsTable>>): number {
