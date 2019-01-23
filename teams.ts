@@ -32,19 +32,19 @@ export class Team {
   }
 
   packTeam(): string {
-    const buf = '';
+    let buf = '';
     for (const s of this.team) {
-      Sets.packSet(s, buf);
+      buf += Sets.packSet(s, buf);
     }
     return buf;
   }
 
   exportTeam(gen?: Generation): string {
-    const buf = '';
+    let buf = '';
     for (const s of this.team) {
-      Sets.exportSet(s, gen || this.gen());
+      buf += Sets.exportSet(s, gen || this.gen()) + '\n';
     }
-    return buf;
+    return buf.trim();
   }
 
   toString(gen?: Generation): string {
@@ -85,7 +85,7 @@ export class Teams {
     return new Team(team);
   }
 
-  static importTeam(buf: string): Team|undefined {
+  static importTeam(buf: string,  gen?: Generation): Team|undefined {
     return undefined;  // TODO use same pattern as _import but for team
   }
 
