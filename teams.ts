@@ -98,12 +98,13 @@ export class Teams {
 
     const teams: Team[] = [];
 
-    let setImport: number = -1;
+    let setLine: number = -1;
     let team: PokemonSet[] = [];
     for (let i = 0; i < lines.length; i++) {
       let line = lines[i].trim();
 
       if (line.substr(0, 3) === '===') {
+        team = [];
         line = line.substr(3, line.length - 6).trim();
         let format = 'gen7';
         const bracketIndex = line.indexOf(']');
@@ -121,20 +122,19 @@ export class Teams {
         }
 
         teams.push(new Team(team, format, line, folder));
-        if (i) team = [];
       } else if (line.includes('|')) {
         // packed format
         const t: Team|undefined = unpackLine(line);
         if (t) teams.push(t);
-      } else if (setImport !== i) {
+      } else if (setLine !== i) {
         const r = _import(lines, i);
         if (r.set) team.push(r.set);
         if (r.line === i) {
           continue;
         }
         // Reread the line to find out if we can process what _import couldn't
-        setImport = r.line;
-        i = setImport - 1;
+        setLine = r.line;
+        i = setLine - 1;
       }
     }
 

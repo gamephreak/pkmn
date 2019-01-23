@@ -1,0 +1,385 @@
+=== [gen7ou] Bitchinator (Mega Aggron Stall) ===
+
+Aggron-Mega @ Aggronite  
+Ability: Filter  
+EVs: 248 HP / 56 Atk / 196 SpD / 8 Spe  
+Careful Nature  
+- Stealth Rock  
+- Heavy Slam  
+- Earthquake  
+- Protect  
+
+Chansey @ Eviolite  
+Ability: Natural Cure  
+EVs: 248 HP / 252 Def / 8 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Seismic Toss  
+- Soft-Boiled  
+- Toxic  
+- Heal Bell  
+
+Clefable @ Leftovers  
+Ability: Unaware  
+EVs: 252 HP / 252 Def / 4 Spe  
+Bold Nature  
+IVs: 0 Atk  
+- Wish  
+- Moonblast  
+- Calm Mind  
+- Protect  
+
+Alomomola @ Rocky Helmet  
+Ability: Regenerator  
+EVs: 40 HP / 216 Def / 252 SpD  
+Bold Nature  
+- Wish  
+- Toxic  
+- Knock Off  
+- Protect  
+
+Mew @ Leftovers  
+Ability: Synchronize  
+EVs: 80 HP / 244 SpD / 184 Spe  
+Careful Nature  
+- Earthquake  
+- Soft-Boiled  
+- Will-O-Wisp  
+- Defog  
+
+Zapdos @ Leftovers  
+Ability: Pressure  
+EVs: 252 HP / 252 Def / 4 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Thunderbolt  
+- Roost  
+- Heat Wave  
+- Defog  
+
+
+=== [gen7ou] ABR & BKC (Rain) ===
+
+Pelipper (M) @ Damp Rock  
+Ability: Drizzle  
+EVs: 248 HP / 36 Def / 224 SpD  
+Bold Nature  
+- Scald  
+- U-turn  
+- Defog  
+- Roost  
+
+Swampert-Mega (M) @ Swampertite  
+Ability: Swift Swim  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Stealth Rock  
+- Waterfall  
+- Earthquake  
+- Ice Punch  
+
+Ferrothorn (M) @ Leftovers  
+Ability: Iron Barbs  
+EVs: 252 HP / 80 Def / 176 SpD  
+Careful Nature  
+IVs: 29 Spe  
+- Leech Seed  
+- Spikes  
+- Power Whip  
+- Knock Off  
+
+Greninja-Ash @ Choice Specs  
+Ability: Battle Bond  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+- Water Shuriken  
+- Dark Pulse  
+- Surf  
+- Ice Beam  
+
+Magearna @ Steelium Z  
+Ability: Soul-Heart  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Shift Gear  
+- Calm Mind  
+- Flash Cannon  
+- Thunderbolt  
+
+Tornadus-Therian @ Life Orb  
+Ability: Regenerator  
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Naive Nature  
+- Taunt  
+- Hurricane  
+- Knock Off  
+- Superpower  
+
+
+=== [gen7ou] suapah (SG Magearna + M-Alakazam BO) ===
+
+Alakazam-Mega @ Alakazite  
+Ability: Magic Guard  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Psychic  
+- Focus Blast  
+- Shadow Ball  
+- Recover  
+
+Tangrowth @ Assault Vest  
+Ability: Regenerator  
+EVs: 248 HP / 8 Def / 252 SpD  
+Sassy Nature  
+- Giga Drain  
+- Knock Off  
+- Hidden Power [Ice]  
+- Earthquake  
+
+Gliscor @ Toxic Orb  
+Ability: Poison Heal  
+EVs: 244 HP / 152 SpD / 112 Spe  
+Jolly Nature  
+- Stealth Rock  
+- Earthquake  
+- Toxic  
+- Roost  
+
+Magnezone @ Choice Specs  
+Ability: Magnet Pull  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Thunderbolt  
+- Flash Cannon  
+- Hidden Power [Fire]  
+- Volt Switch  
+
+Tornadus-Therian @ Rocky Helmet  
+Ability: Regenerator  
+EVs: 248 HP / 8 Def / 252 Spe  
+Timid Nature  
+- Hurricane  
+- Heat Wave  
+- Knock Off  
+- Defog  
+
+Magearna @ Fairium Z  
+Ability: Soul-Heart  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Shift Gear  
+- Calm Mind  
+- Fleur Cannon  
+- Focus Blast  
+
+
+=== [gen1ou] Giga Punch (Cloyster) ===
+
+Alakazam  
+Ability: Synchronize  
+- Psychic  
+- Recover  
+- Seismic Toss  
+- Thunder Wave  
+
+Cloyster  
+Ability: Shell Armor  
+- Blizzard  
+- Clamp  
+- Explosion  
+- Rest  
+
+Exeggutor  
+- Explosion  
+- Mega Drain  
+- Psychic  
+- Sleep Powder  
+
+Chansey  
+Ability: Natural Cure  
+- Ice Beam  
+- Sing  
+- Soft-Boiled  
+- Thunder Wave  
+
+Tauros  
+Ability: Intimidate  
+- Blizzard  
+- Body Slam  
+- Earthquake  
+- Hyper Beam  
+
+Snorlax  
+Ability: Immunity  
+- Body Slam  
+- Earthquake  
+- Hyper Beam  
+- Self-Destruct  
+
+
+=== [gen4ou] Obi (Stall) ===
+
+Hippowdon (M) @ Leftovers  
+Ability: Sand Stream  
+EVs: 252 HP / 24 Atk / 192 Def / 40 SpD  
+Impish Nature  
+- Stealth Rock  
+- Slack Off  
+- Earthquake  
+- Ice Fang  
+
+Tentacruel (M) @ Leftovers  
+Ability: Liquid Ooze  
+EVs: 252 HP / 120 Def / 138 SpD  
+Calm Nature  
+- Toxic Spikes  
+- Rapid Spin  
+- Surf  
+- Hidden Power [Electric]  
+
+Skarmory (M) @ Shed Shell  
+Ability: Keen Eye  
+EVs: 252 HP / 200 Def / 42 SpD / 16 Spe  
+Impish Nature  
+- Whirlwind  
+- Spikes  
+- Roost  
+- Brave Bird  
+
+Blissey @ Leftovers  
+Ability: Natural Cure  
+EVs: 252 Def / 40 SpA / 218 SpD  
+Calm Nature  
+- Wish  
+- Protect  
+- Flamethrower  
+- Toxic  
+
+Celebi @ Leftovers  
+Ability: Natural Cure  
+EVs: 252 HP / 216 Def / 8 SpD / 34 Spe  
+Bold Nature  
+- Recover  
+- Perish Song  
+- Grass Knot  
+- U-turn  
+
+Spiritomb (M) @ Leftovers  
+Ability: Pressure  
+EVs: 252 HP / 100 Def / 158 SpD  
+Calm Nature  
+- Shadow Ball  
+- Rest  
+- Sleep Talk  
+- Hidden Power [Fighting]  
+
+
+=== [gen2ou] FM (No Snorlax) ===
+
+Dragonite (M) @ Leftovers  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+- Ice Beam  
+- Reflect  
+- Rest  
+- Thunder  
+
+Gengar (M) @ Leftovers  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+- Destiny Bond  
+- Fire Punch  
+- Hypnosis  
+- Thunderbolt  
+
+Marowak (M) @ Leftovers  
+Ability: Rock Head  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+IVs: 30 HP / 26 Atk / 26 Def  
+- Earthquake  
+- Hidden Power [Bug]  
+- Rock Slide  
+- Swords Dance  
+
+Umbreon (M) @ Leftovers  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+- Charm  
+- Pursuit  
+- Rest  
+- Zap Cannon  
+
+Heracross (M) @ Leftovers  
+Ability: Swarm  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+- Earthquake  
+- Megahorn  
+- Rest  
+- Sleep Talk  
+
+Tyranitar (M) @ Leftovers  
+EVs: 252 HP / 252 Atk / 252 Def / 252 SpA / 252 SpD / 252 Spe  
+- Crunch  
+- Flamethrower  
+- Rest  
+- Rock Slide  
+
+
+=== [gen4ou] Lady Bug (Goodbye Gen 4) ===
+
+Abomasnow (M) @ Leftovers  
+Ability: Snow Warning  
+EVs: 252 HP / 224 SpD / 32 Spe  
+Sassy Nature  
+- Wood Hammer  
+- Blizzard  
+- Protect  
+- Leech Seed  
+
+Nidoqueen @ Leftovers  
+Ability: Poison Point  
+EVs: 252 HP / 252 Def / 4 Spe  
+Relaxed Nature  
+- Toxic Spikes  
+- Stealth Rock  
+- Fire Blast  
+- Earthquake  
+
+Starmie @ Leftovers  
+Ability: Natural Cure  
+EVs: 252 HP / 228 Def / 28 Spe  
+Timid Nature  
+- Surf  
+- Thunderbolt  
+- Rapid Spin  
+- Recover  
+
+Skarmory (M) @ Leftovers  
+Ability: Keen Eye  
+EVs: 252 HP / 24 Def / 196 SpD / 36 Spe  
+Impish Nature  
+- Whirlwind  
+- Brave Bird  
+- Spikes  
+- Roost  
+
+Blissey @ Leftovers  
+Ability: Natural Cure  
+EVs: 148 HP / 252 Def / 108 SpD  
+Bold Nature  
+- Wish  
+- Toxic  
+- Protect  
+- Seismic Toss  
+
+Spiritomb (M) @ Leftovers  
+Ability: Pressure  
+EVs: 252 HP / 28 Def / 228 SpD  
+Careful Nature  
+- Will-O-Wisp  
+- Pursuit  
+- Rest  
+- Sleep Talk  
+
+
