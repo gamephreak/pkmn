@@ -33,8 +33,9 @@ export const SPA: Stat = 'spa';
 export const SPD: Stat = 'spd';
 export const SPE: Stat = 'spe';
 
-const STAT_BOOSTS: Readonly<number[]> = [1, 1.5, 2, 2.5, 3, 3.5, 4];
-// NOTE: https://www.dragonflycave.com/mechanics/stat-stages
+// TODO NOTE: https://www.dragonflycave.com/mechanics/stat-stages
+const IDEAL_STAT_BOOSTS: Readonly<number[]> = [1, 1.5, 2, 2.5, 3, 3.5, 4];
+const APPROX_STAT_UNBOOSTS: Readonly<number[]> = [66/100, , 50/100, 40/100, 33/100, 28/100, 25/100];
 const OTHER_BOOSTS: Readonly<number[]> = [1, 4 / 3, 5 / 3, 2, 7 / 3, 8 / 3, 3];
 
 const STAT_IDS: Readonly<{[id: string]: Stat}> = {
