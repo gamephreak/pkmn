@@ -50,5 +50,6 @@ describe('extend', () => {
     expect(extend(true, {}, undefined)).toEqual({});
     expect(extend(true, 5, undefined)).toEqual({});
     expect(extend(undefined)).toEqual({'extend': extend});
+    expect(extend(true)).toEqual({});
   });
 });
