@@ -149,21 +149,36 @@ export class Sets {
     return buf;
   }
 
-  static exportSet(s: PokemonSet, gen?: Generation): string {
+  static exportSet(s: PokemonSet, fast?: boolean, gen?: Generation): string {
     let buf = '';
-    if (s.name && s.name !== s.species) {
-      buf += '' + s.name + ' (' + s.species + ')';
+    let species = s.species;
+    if (!fast) {
+      const s = Species.getSpecies(species);
+      species = (s && s.name) || species;
+    }
+    if (s.name && s.name !== species) {
+      buf += '' + s.name + ' (' + species + ')';
     } else {
-      buf += '' + s.species;
+      buf += '' + species;
     }
     if (s.gender === 'M') buf += ' (M)';
     if (s.gender === 'F') buf += ' (F)';
     if (s.item) {
-      buf += ' @ ' + s.item;
+      let item = s.item;
+      if (!fast) {
+        const i = Items.getItem(item);
+        item = (i && i.name) || item;
+      }
+      buf += ' @ ' + item;
     }
     buf += '  \n';
     if (s.ability) {
-      buf += 'Ability: ' + s.ability + '  \n';
+      let ability = s.ability;
+      if (!fast) {
+        const a = Abilities.getAbility(ability);
+        ability = (a && a.name) || ability;
+      }
+      buf += 'Ability: ' + ability + '  \n';
     }
     if (s.level && s.level !== 100) {
       buf += 'Level: ' + s.level + '  \n';
@@ -200,11 +215,9 @@ export class Sets {
     if (s.ivs) {
       let defaultIVs = true;
       let hpType: Type|undefined = undefined;
-      for (const move in s.moves) {
-        if (move.substr(0, 13) === 'Hidden Power ' &&
-            move.substr(0, 14) !== 'Hidden Power [') {
-          hpType = move.substr(13) as Type;
-
+      for (const move of s.moves) {
+        hpType = Sets.getHiddenPowerType(move);
+        if (hpType) {
           const hpIVs: Partial<StatsTable>|undefined = gen === 2 ?
               Stats.dstois(Types.hiddenPowerDVs(hpType) || {}) :
               Types.hiddenPowerIVs(hpType);
@@ -254,19 +267,46 @@ export class Sets {
       buf += '  \n';
     }
     if (s.moves) {
-      for (let j = 0; j < s.moves.length; j++) {
-        let move = s.moves[j];
-        if (move.substr(0, 13) === 'Hidden Power ') {
-          move = move.substr(0, 13) + '[' + move.substr(13) + ']';
-        }
+      for (let move of s.moves) {
         if (move) {
-          buf += '- ' + move + '  \n';
+          if (!fast) {
+            const m = Moves.getMove(move);
+            move = (m && m.name) || move;
+          }
+          buf += '- ' + Sets.exportMove(move) + '  \n';
         }
       }
     }
     buf += '\n';
 
     return buf;
+  }
+
+  private static getHiddenPowerType(move: string): Type|undefined {
+    if (move.substr(0, 14) === 'Hidden Power [') {
+      return move.substr(14, move.indexOf(']', 14)) as Type;
+    }
+    if (move.substr(0, 13) === 'Hidden Power ') {
+      return move.substr(13) as Type;
+    }
+    if (move.substr(0, 11) === 'hiddenpower') {
+      return (move.substr(11, 1).toUpperCase() + move.substr(12)) as Type;
+    }
+    return undefined;
+  }
+
+  private static exportMove(move: string): string {
+    if (move.substr(0, 14) === 'Hidden Power [') {
+      return move;
+    }
+    if (move.substr(0, 13) === 'Hidden Power ') {
+      return move.substr(0, 13) + '[' + move.substr(13) + ']';
+    }
+    if (move.substr(0, 11) === 'hiddenpower') {
+      return 'Hidden Power ' +
+          '[' + move.substr(11, 1).toUpperCase() + move.substr(12) + ']';
+    }
+    return move;
   }
 
   static unpack(buf: string, gen?: Generation): PokemonSet|undefined {
@@ -293,8 +333,8 @@ export class Sets {
     return JSON.parse(json);
   }
 
-  static toString(s: PokemonSet, gen?: Generation): string {
-    return Sets.exportSet(s, gen);
+  static toString(s: PokemonSet, fast?: boolean, gen?: Generation): string {
+    return Sets.exportSet(s, fast, gen);
   }
 
   static fromString(str: string): PokemonSet|undefined {
@@ -474,8 +514,7 @@ export function _import(lines: string[], i = 0, gen?: Generation):
       line = line.substr(5);
       const evLines = line.split('/');
       s.evs = {hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0};
-      for (let j = 0; j < evLines.length; j++) {
-        const evLine = evLines[j].trim();
+      for (const evLine of evLines) {
         const spaceIndex = evLine.indexOf(' ');
         if (spaceIndex === -1) continue;
         const stat = Stats.getStat(evLine.substr(spaceIndex + 1));
@@ -488,8 +527,7 @@ export function _import(lines: string[], i = 0, gen?: Generation):
       line = line.substr(5);
       const ivLines = line.split(' / ');
       s.ivs = {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31};
-      for (let j = 0; j < ivLines.length; j++) {
-        const ivLine = ivLines[j];
+      for (const ivLine of ivLines) {
         const spaceIndex = ivLine.indexOf(' ');
         if (spaceIndex === -1) continue;
         const stat = Stats.getStat(ivLine.substr(spaceIndex + 1));

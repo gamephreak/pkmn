@@ -39,16 +39,16 @@ export class Team {
     return buf;
   }
 
-  exportTeam(gen?: Generation): string {
+  exportTeam(fast?: boolean, gen?: Generation): string {
     let buf = '';
     for (const s of this.team) {
-      buf += Sets.exportSet(s, gen || this.gen());
+      buf += Sets.exportSet(s, fast, gen || this.gen());
     }
     return buf;
   }
 
-  toString(gen?: Generation): string {
-    return this.exportTeam(gen);
+  toString(fast?: boolean, gen?: Generation): string {
+    return this.exportTeam(fast, gen);
   }
 
   toJSON(): string {
@@ -141,13 +141,14 @@ export class Teams {
     return teams;
   }
 
-  static exportTeams(teams: Readonly<Team[]>, gen?: Generation): string {
+  static exportTeams(teams: Readonly<Team[]>, fast?: boolean, gen?: Generation):
+      string {
     let buf = '';
 
     for (const team of teams) {
       buf += '=== ' + (team.format ? '[' + team.format + '] ' : '') +
           (team.folder ? '' + team.folder + '/' : '') + team.name + ' ===\n\n';
-      buf += team.exportTeam(gen);
+      buf += team.exportTeam(fast, gen);
       buf += '\n';
     }
     return buf;
