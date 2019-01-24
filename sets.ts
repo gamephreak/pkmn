@@ -375,7 +375,6 @@ export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
            // @ts-ignore
            species.abilities[ability || '0'] :
            ability);
-  s.ability = ability;
   i = j + 1;
 
   // moves
@@ -514,9 +513,9 @@ export function _import(lines: string[], i = 0, gen?: Generation):
       s.happiness = +line;
     } else if (line.substr(0, 5) === 'EVs: ') {
       line = line.substr(5);
-      const evLines = line.split('/');
+      const evLines = line.split(' / ');
       s.evs = {hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0};
-      for (const evLine of evLines) {
+      for (let evLine of evLines) {
         const spaceIndex = evLine.indexOf(' ');
         if (spaceIndex === -1) continue;
         const stat = Stats.getStat(evLine.substr(spaceIndex + 1));

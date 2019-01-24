@@ -24,13 +24,15 @@ describe('Sets', () => {
   });
 
   test('pack + unpack', () => {
-    let s = readSet('m-alakazam.sm.in')!;
-    let u = Sets.unpack(Sets.pack(Sets.importSet(s)!))!;
-    expect(Sets.exportSet(u)).toEqual(s);
+    let is = readSet('m-alakazam.sm.in')!;
+    let os = is;
+    let u = Sets.unpack(Sets.pack(Sets.importSet(is)!))!;
+    expect(Sets.exportSet(u)).toEqual(os);
 
-    s = readSet('magnezone.sm.in')!;
-    u = Sets.unpack(Sets.pack(Sets.importSet(s)!))!;
-    expect(Sets.exportSet(u)).toEqual(s);
+    is = readSet('magnezone.sm.in')!;
+    os = readSet('magnezone.sm.out');
+    u = Sets.unpack(Sets.pack(Sets.importSet(is)!))!;
+    expect(Sets.exportSet(u)).toEqual(os);
   });
 
   test('toJSON + fromJSON', () => {
