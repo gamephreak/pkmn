@@ -92,6 +92,8 @@ const DISPLAY: Readonly<{[stat: string]: Readonly<[string, string]>}> = {
 };
 
 export class Stats {
+  private constructor() {}
+
   static calc(
       stat: Stat, base: number, iv: number, ev: number, level: number,
       gn?: Generation|Nature, g: Generation = CURRENT) {

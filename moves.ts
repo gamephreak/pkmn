@@ -156,6 +156,8 @@ const MOVES: Readonly<Array<DataTable<Move>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export class Moves {
+  private constructor() {}
+
   static forGen(gen: Generation): DataTable<Move> {
     return MOVES[gen - 1];
   }

@@ -46,6 +46,8 @@ const NATURES: Readonly<{[id: string]: Nature}> = {
 };
 
 export class Natures {
+  private constructor() {}
+
   static getNature(n: ID|string): Nature|undefined {
     return NATURES[toID(n)];
   }

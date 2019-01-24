@@ -172,6 +172,8 @@ const ALLOWED: Readonly<{[tier in Tier]: Readonly<{[tier in Tier]?: 1}>}> = {
 };
 
 export class Tiers {
+  private constructor() {}
+
   static fromString(t: string): Tier|undefined {
     return TIERS[toID(t)];
   }

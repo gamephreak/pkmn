@@ -57,6 +57,8 @@ export class Team {
 }
 
 export class Teams {
+  private constructor() {}
+
   static unpack(buf: string, gen?: Generation): Team|undefined {
     return Teams.unpackTeam(buf, gen);
   }

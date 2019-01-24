@@ -113,6 +113,8 @@ const HIDDEN_POWERS: Readonly<{
 const TYPE_CHARTS: Readonly<TypeChart[]> = [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export class Types {
+  private constructor() {}
+
   static chart(gen: Generation = CURRENT): TypeChart {
     return TYPE_CHARTS[gen - 1];
   }

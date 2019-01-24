@@ -22,6 +22,8 @@ const ABILITIES: Readonly<Array<DataTable<Ability>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export class Abilities {
+  private constructor() {}
+
   static forGen(gen: Generation): DataTable<Ability> {
     return ABILITIES[gen - 1];
   }

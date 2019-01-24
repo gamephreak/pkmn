@@ -36,6 +36,8 @@ const ITEMS: Readonly<Array<DataTable<Item>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export class Items {
+  private constructor() {}
+
   static forGen(gen: Generation): DataTable<Item> {
     return ITEMS[gen - 1];
   }

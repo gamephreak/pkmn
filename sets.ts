@@ -29,6 +29,8 @@ type WriteableSet =
     Partial<{-readonly[k in keyof PokemonSet] -?: PokemonSet[k]}>;
 
 export class Sets {
+  private constructor() {}
+
   static pack(s: PokemonSet, gen?: Generation): string {
     return Sets.packSet(s, '', gen);
   }
