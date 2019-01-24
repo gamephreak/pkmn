@@ -46,6 +46,7 @@ const NATURES: Readonly<{[id: string]: Nature}> = {
 };
 
 export class Natures {
+  // istanbul ignore next
   private constructor() {}
 
   static getNature(n: ID|string): Nature|undefined {

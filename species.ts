@@ -57,6 +57,7 @@ export namespace Species {
     if (!species) return undefined;
     if (species.cosmeticForms && species.cosmeticForms.indexOf(id) >= 0) {
       const cosmeticForm = id.slice(species.name.length);
+      // istanbul ignore else
       if (cosmeticForm) {
         return species.name + '-' + cosmeticForm[0].toUpperCase() +
             cosmeticForm.slice(1);

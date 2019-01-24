@@ -22,6 +22,7 @@ const ABILITIES: Readonly<Array<DataTable<Ability>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export class Abilities {
+  // istanbul ignore next
   private constructor() {}
 
   static forGen(gen: Generation): DataTable<Ability> {

@@ -57,6 +57,7 @@ export class Team {
 }
 
 export class Teams {
+  // istanbul ignore next
   private constructor() {}
 
   static unpack(buf: string, gen?: Generation): Team|undefined {

@@ -10,6 +10,7 @@ const STATUSES: Readonly<{[s in Status]: string}> = {
 };
 
 export class Statuses {
+  // istanbul ignore next
   private constructor() {}
 
   static toString(s: Status|''|undefined): string {

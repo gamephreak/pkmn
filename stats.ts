@@ -92,6 +92,7 @@ const DISPLAY: Readonly<{[stat: string]: Readonly<[string, string]>}> = {
 };
 
 export class Stats {
+  // istanbul ignore next
   private constructor() {}
 
   static calc(

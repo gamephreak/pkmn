@@ -29,6 +29,7 @@ type WriteableSet =
     Partial<{-readonly[k in keyof PokemonSet] -?: PokemonSet[k]}>;
 
 export class Sets {
+  // istanbul ignore next
   private constructor() {}
 
   static pack(s: PokemonSet, gen?: Generation): string {
@@ -92,6 +93,7 @@ export class Sets {
     }
     if (evs === '|,,,,,') {
       buf += '|';
+      if (s.evs['hp'] === 0) buf += 0;
     } else {
       buf += evs;
     }
@@ -163,8 +165,10 @@ export class Sets {
     } else {
       buf += '' + species;
     }
-    if (s.gender === 'M') buf += ' (M)';
-    if (s.gender === 'F') buf += ' (F)';
+    if (!gen || gen >= 2) {
+      if (s.gender === 'M') buf += ' (M)';
+      if (s.gender === 'F') buf += ' (F)';
+    }
     if (s.item) {
       let item = s.item;
       if (!fast) {
@@ -174,7 +178,7 @@ export class Sets {
       buf += ' @ ' + item;
     }
     buf += '  \n';
-    if (s.ability) {
+    if (s.ability && (!gen || gen >= 3)) {
       let ability = s.ability;
       if (!fast) {
         const a = Abilities.getAbility(ability);
@@ -185,15 +189,15 @@ export class Sets {
     if (s.level && s.level !== 100) {
       buf += 'Level: ' + s.level + '  \n';
     }
-    if (s.shiny) {
+    if (s.shiny && (!gen || gen >= 2)) {
       buf += 'Shiny: Yes  \n';
     }
     if (typeof s.happiness === 'number' && s.happiness !== 255 &&
-        !isNaN(s.happiness)) {
+        !isNaN(s.happiness) && (!gen || gen >= 2)) {
       buf += 'Happiness: ' + s.happiness + '  \n';
     }
     let first = true;
-    if (s.evs) {
+    if (s.evs && (!gen || gen >= 3)) {
       let stat: Stat;
       for (stat in STAT_NAMES) {
         if (!s.evs[stat]) continue;
@@ -209,7 +213,7 @@ export class Sets {
     if (!first) {
       buf += '  \n';
     }
-    if (s.nature) {
+    if (s.nature && (!gen || gen >= 3)) {
       buf += '' + s.nature + ' Nature' +
           '  \n';
     }
@@ -218,7 +222,7 @@ export class Sets {
       let defaultIVs = true;
       let hpType: Type|undefined = undefined;
       for (const move of s.moves) {
-        hpType = Sets.getHiddenPowerType(move);
+        hpType = getHiddenPowerType(move);
         if (hpType) {
           const hpIVs: Partial<StatsTable>|undefined = gen === 2 ?
               Stats.dstois(Types.hiddenPowerDVs(hpType) || {}) :
@@ -275,40 +279,13 @@ export class Sets {
             const m = Moves.getMove(move);
             move = (m && m.name) || move;
           }
-          buf += '- ' + Sets.exportMove(move) + '  \n';
+          buf += '- ' + exportMove(move) + '  \n';
         }
       }
     }
     buf += '\n';
 
     return buf;
-  }
-
-  private static getHiddenPowerType(move: string): Type|undefined {
-    if (move.substr(0, 14) === 'Hidden Power [') {
-      return move.substr(14, move.indexOf(']', 14)) as Type;
-    }
-    if (move.substr(0, 13) === 'Hidden Power ') {
-      return move.substr(13) as Type;
-    }
-    if (move.substr(0, 11) === 'hiddenpower') {
-      return (move.substr(11, 1).toUpperCase() + move.substr(12)) as Type;
-    }
-    return undefined;
-  }
-
-  private static exportMove(move: string): string {
-    if (move.substr(0, 14) === 'Hidden Power [') {
-      return move;
-    }
-    if (move.substr(0, 13) === 'Hidden Power ') {
-      return move.substr(0, 13) + '[' + move.substr(13) + ']';
-    }
-    if (move.substr(0, 11) === 'hiddenpower') {
-      return 'Hidden Power ' +
-          '[' + move.substr(11, 1).toUpperCase() + move.substr(12) + ']';
-    }
-    return move;
   }
 
   static unpack(buf: string, gen?: Generation): PokemonSet|undefined {
@@ -416,15 +393,15 @@ export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
   // ivs
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  s.ivs = {hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0};
+  s.ivs = {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31};
   if (j !== i) {
     const st = buf.substring(i, j).split(',', 6);
-    s.ivs.hp = st[0] === '' ? 31 : Number(st[0]) || s.ivs.hp;
-    s.ivs.atk = st[1] === '' ? 31 : Number(st[1]) || s.ivs.atk;
-    s.ivs.def = st[2] === '' ? 31 : Number(st[2]) || s.ivs.def;
-    s.ivs.spa = st[3] === '' ? 31 : Number(st[3]) || s.ivs.spa;
-    s.ivs.spd = st[4] === '' ? 31 : Number(st[4]) || s.ivs.spd;
-    s.ivs.spe = st[5] === '' ? 31 : Number(st[5]) || s.ivs.spe;
+    s.ivs.hp = st[0] === '' ? 31 : Number(st[0]);
+    s.ivs.atk = st[1] === '' ? 31 : Number(st[1]);
+    s.ivs.def = st[2] === '' ? 31 : Number(st[2]);
+    s.ivs.spa = st[3] === '' ? 31 : Number(st[3]);
+    s.ivs.spd = st[4] === '' ? 31 : Number(st[4]);
+    s.ivs.spe = st[5] === '' ? 31 : Number(st[5]);
   }
   i = j + 1;
 
@@ -453,7 +430,7 @@ export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
   if (misc) {
     s.happiness = (misc[0] ? Number(misc[0]) : 255);
     s.hpType = misc[1];
-    s.pokeball = misc[2];
+    s.pokeball = misc[2] ? misc[2].trim() : misc[2];
   }
 
   return {set: toPokemonSet(s, gen), i, j};
@@ -488,7 +465,7 @@ export function _import(lines: string[], i = 0, gen?: Generation):
         line = line.substr(0, line.length - 1);
         const sub = line.substr(parenIndex + 2);
         const species = Species.getSpecies(sub);
-        s.species = (species && species.name) || line;
+        s.species = (species && species.name) || sub;
         line = line.substr(0, parenIndex);
         s.name = line;
       } else {
@@ -515,7 +492,7 @@ export function _import(lines: string[], i = 0, gen?: Generation):
       line = line.substr(5);
       const evLines = line.split(' / ');
       s.evs = {hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0};
-      for (let evLine of evLines) {
+      for (const evLine of evLines) {
         const spaceIndex = evLine.indexOf(' ');
         if (spaceIndex === -1) continue;
         const stat = Stats.getStat(evLine.substr(spaceIndex + 1));
@@ -548,8 +525,9 @@ export function _import(lines: string[], i = 0, gen?: Generation):
       line = line.substr(1);
       if (line.substr(0, 1) === ' ') line = line.substr(1);
       if (!s.moves) s.moves = [];
-      if (line.substr(0, 14) === 'Hidden Power [') {
-        const hpType = line.substr(14, line.length - 15) as Type;
+
+      const hpType = getHiddenPowerType(line);
+      if (hpType) {
         line = 'Hidden Power ' + hpType.toString();
         const hpIVs: Partial<StatsTable>|undefined = gen === 2 ?
             Stats.dstois(Types.hiddenPowerDVs(hpType) || {}) :
@@ -592,4 +570,32 @@ function toPokemonSet(s?: WriteableSet, gen?: Generation): PokemonSet|
     pokeball: s.pokeball,
     hpType: s.hpType
   };
+}
+
+
+function getHiddenPowerType(move: string): Type|undefined {
+  if (move.substr(0, 14) === 'Hidden Power [') {
+    return move.substr(14, move.length - 15) as Type;
+  }
+  if (move.substr(0, 13) === 'Hidden Power ') {
+    return move.substr(13) as Type;
+  }
+  if (move.substr(0, 11) === 'hiddenpower') {
+    return (move.substr(11, 1).toUpperCase() + move.substr(12)) as Type;
+  }
+  return undefined;
+}
+
+function exportMove(move: string): string {
+  if (move.substr(0, 14) === 'Hidden Power [') {
+    return move;
+  }
+  if (move.substr(0, 13) === 'Hidden Power ') {
+    return move.substr(0, 13) + '[' + move.substr(13) + ']';
+  }
+  if (move.substr(0, 11) === 'hiddenpower') {
+    return 'Hidden Power ' +
+        '[' + move.substr(11, 1).toUpperCase() + move.substr(12) + ']';
+  }
+  return move;
 }
