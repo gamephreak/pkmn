@@ -1,7 +1,7 @@
 # pkmn
 
 ![version](http://img.shields.io/badge/status-0.0.1.beta-yellow.svg)&nbsp;
-[![Build Status](https://api.travis-ci.com/gamephreak/pkmn.svg)](https://travis-ci.com/gamefreak/pkmn)
+[![Build Status](https://api.travis-ci.com/gamephreak/pkmn.svg)](https://travis-ci.com/gamephreak/pkmn)
 [![Coverage Status](https://coveralls.io/repos/github/gamephreak/pkmn/badge.svg?branch=master)](https://coveralls.io/github/gamephreak/pkmn?branch=master)
 
 pkmn provides fundamental types and data structures for building products around
