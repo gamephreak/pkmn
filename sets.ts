@@ -269,14 +269,12 @@ export class Sets {
     return buf;
   }
 
-  static unpack(buf: string, fast?: boolean, gen?: Generation): PokemonSet
-      |undefined {
-    return Sets.unpackSet(buf, fast, gen);
+  static unpack(buf: string, gen?: Generation): PokemonSet|undefined {
+    return Sets.unpackSet(buf, gen);
   }
 
-  static unpackSet(buf: string, fast?: boolean, gen?: Generation): PokemonSet
-      |undefined {
-    return _unpack(buf, 0, 0, fast, gen).set;
+  static unpackSet(buf: string, gen?: Generation): PokemonSet|undefined {
+    return _unpack(buf, 0, 0, gen).set;
   }
 
   static importSet(buf: string, gen?: Generation): PokemonSet|undefined {
@@ -304,9 +302,8 @@ export class Sets {
   }
 }
 
-export function _unpack(
-    buf: string, i = 0, j = 0, fast?: boolean,
-    gen?: Generation): {set?: PokemonSet, i: number, j: number} {
+export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
+    {set?: PokemonSet, i: number, j: number} {
   const s: WriteableSet = {};
   // name
   j = buf.indexOf('|', i);
@@ -323,28 +320,19 @@ export function _unpack(
   // item
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  let item = buf.substring(i, j);
-  if (!fast) {
-    const im = Items.getItem(item, gen);
-    item = (im && im.name) || item;
-  }
-  s.item = item;
+  s.item = buf.substring(i, j);
   i = j + 1;
 
   // ability
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
-  let ability = buf.substring(i, j);
+  const ability = buf.substring(i, j);
   const species = Species.getSpecies(s.species, gen);
-  ability =
+  s.ability =
       (species && species.abilities && ability in {'': 1, 0: 1, 1: 1, H: 1} ?
            // @ts-ignore
            species.abilities[ability || '0'] :
            ability);
-  if (!fast) {
-    const a = Abilities.getAbility(ability, gen);
-    ability = (a && a.name) || ability;
-  }
   s.ability = ability;
   i = j + 1;
 
@@ -352,12 +340,6 @@ export function _unpack(
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
   s.moves = buf.substring(i, j).split(',', 24).filter(x => x);
-  if (!fast) {
-    s.moves = s.moves.map((move) => {
-      const m = Moves.getMove(move, gen);
-      return (m && m.name) || move;
-    });
-  }
   i = j + 1;
 
   // nature
