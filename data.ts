@@ -26,3 +26,22 @@ export async function patch(obj: Promise<any>, diff: Promise<any>) {
   }
   return patched;
 }
+
+const HOP = Object.prototype.hasOwnProperty;
+
+export function cache<T>(
+    target: {}, key: string,
+    descriptor:
+        TypedPropertyDescriptor<(k: ID|string, gen?: Generation) => T>) {
+  const fn = descriptor.value;
+  if (!fn) return;
+  const c: {[kg: string]: T} = {};
+
+  descriptor.value = function(k: ID|string, gen?: Generation): T {
+    const g: Generation = gen || CURRENT;
+    const kg = `${k}|${g}`;
+    return HOP.call(c, kg) ? c[kg] : (c[kg] = fn.apply(this, [k, g]));
+  };
+
+  return descriptor;
+}

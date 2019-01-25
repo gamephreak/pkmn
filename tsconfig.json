@@ -3,7 +3,9 @@
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "build",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+     "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   },
   "include": [
     "*.ts",

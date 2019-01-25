@@ -57,4 +57,15 @@ describe('Items', () => {
     expect(await Items.getItem('')).not.toBeDefined();
     expect(await Items.getItem('', 2)).not.toBeDefined();  // '' + 'berry'
   });
+
+  test('cached', async () => {
+    const a = Items.getItem('Choice Band', 6);
+    const b = Items.getItem('Choice Band', 6);
+    const c = Items.getItem('Choice Band');
+
+    expect(b).toBe(a);
+    expect(c).not.toBe(a);
+    expect((await b)).toBeDefined();
+    expect((await b)!.name).toBe('Choice Band');
+  });
 });

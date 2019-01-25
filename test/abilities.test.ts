@@ -30,4 +30,15 @@ describe('Abilities', () => {
     expect((await Abilities.getAbility('ph'))!.name).toBe('Poison Heal');
     expect((await Abilities.getAbility('stag'))!.name).toBe('Shadow Tag');
   });
+
+  test('cached', async () => {
+    const a = Abilities.getAbility('Mummy', 6);
+    const b = Abilities.getAbility('Mummy', 6);
+    const c = Abilities.getAbility('Mummy');
+
+    expect(b).toBe(a);
+    expect(c).not.toBe(a);
+    expect((await b)).toBeDefined();
+    expect((await b)!.name).toBe('Mummy');
+  });
 });

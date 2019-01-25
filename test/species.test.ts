@@ -96,4 +96,24 @@ describe('Species', () => {
     expect((await Species.getSpecies('Gastrodon-East'))!.cosmeticForms)
         .toEqual(['gastrodoneast']);
   });
+
+  test('cached', async () => {
+    const a = Species.getSpecies('Gengar', 6);
+    const b = Species.getSpecies('Gengar', 6);
+    const c = Species.getSpecies('Gengar');
+
+    expect(b).toBe(a);
+    expect(c).not.toBe(a);
+    expect((await b)).toBeDefined();
+    expect((await b)!.name).toBe('Gengar');
+
+    const d = Species.getSpeciesName('Gastrodon-East', 6);
+    const e = Species.getSpeciesName('Gastrodon-East', 6);
+    const f = Species.getSpeciesName('Gastrodon-East');
+
+    expect(e).toBe(d);
+    expect(f).not.toBe(d);
+    expect((await e)).toBeDefined();
+    expect((await e)!).toBe('Gastrodon-East');
+  });
 });

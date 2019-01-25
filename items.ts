@@ -1,5 +1,5 @@
 import {Aliases} from './aliases';
-import {Data, DataTable, patch} from './data';
+import {cache, Data, DataTable, patch} from './data';
 import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
 import {Type} from './types';
@@ -40,6 +40,7 @@ export class Items {
     return ITEMS[gen - 1];
   }
 
+  @cache
   static async getItem(i: ID|string, gen: Generation = CURRENT):
       Promise<Item|undefined> {
     const id = toID(i);

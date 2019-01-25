@@ -1,5 +1,5 @@
 import {Aliases} from './aliases';
-import {Data, DataTable, patch} from './data';
+import {cache, Data, DataTable, patch} from './data';
 import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
 
@@ -29,6 +29,7 @@ export class Abilities {
     return ABILITIES[gen - 1];
   }
 
+  @cache
   static async getAbility(a: ID|string, gen: Generation = CURRENT):
       Promise<Ability|undefined> {
     const id = toID(a);

@@ -1,5 +1,5 @@
 import {Aliases} from './aliases';
-import {Data, DataTable, patch} from './data';
+import {cache, Data, DataTable, patch} from './data';
 import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
 import {BoostsTable} from './stats';
@@ -160,6 +160,7 @@ export class Moves {
     return MOVES[gen - 1];
   }
 
+  @cache
   static async getMove(m: ID|string, gen: Generation = CURRENT):
       Promise<Move|undefined> {
     let id = toID(m);

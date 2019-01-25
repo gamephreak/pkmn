@@ -1,5 +1,5 @@
 import {Aliases} from './aliases';
-import {Data, DataTable, patch} from './data';
+import {cache, Data, DataTable, patch} from './data';
 import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
 import {StatsTable} from './stats';
@@ -45,12 +45,13 @@ const SM: Promise<DataTable<Species>> =
 const SPECIES: Readonly<Array<Promise<DataTable<Species>>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
 
-export namespace Species {
-  export function forGen(gen: Generation): Promise<DataTable<Species>> {
+export class Species {
+  static forGen(gen: Generation): Promise<DataTable<Species>> {
     return SPECIES[gen - 1];
   }
 
-  export async function getSpeciesName(s: ID|string, gen: Generation = CURRENT):
+  @cache
+  static async getSpeciesName(s: ID|string, gen: Generation = CURRENT):
       Promise<string|undefined> {
     const id = toID(s);
     const species = await Species.getSpecies(id);
@@ -65,7 +66,8 @@ export namespace Species {
     return species.name;
   }
 
-  export async function getSpecies(s: ID|string, gen: Generation = CURRENT):
+  @cache
+  static async getSpecies(s: ID|string, gen: Generation = CURRENT):
       Promise<Species|undefined> {
     let id = toID(s);
     if (id === 'nidoran' && s.slice(-1) === '♀') {
