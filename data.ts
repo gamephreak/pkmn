@@ -16,8 +16,8 @@ export interface Data {
 export type DataTable<T extends Data> = Readonly<{[id: string]: T}>;
 
 // tslint:disable-next-line:no-any
-export function patch(obj: any, diff: any) {
-  const patched = extend(true, {}, obj, diff);
+export async function patch(obj: Promise<any>, diff: Promise<any>) {
+  const patched = extend(true, {}, await obj, await diff);
   for (const k of Object.keys(patched)) {
     const v = patched[k];
     if (v && typeof v.exists === 'boolean' && !v.exists) {

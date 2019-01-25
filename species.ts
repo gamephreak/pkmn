@@ -1,12 +1,5 @@
 import {Aliases} from './aliases';
 import {Data, DataTable, patch} from './data';
-import * as adv from './data/adv/species.json';
-import * as bw from './data/bw/species.json';
-import * as dpp from './data/dpp/species.json';
-import * as gsc from './data/gsc/species.json';
-import * as rby from './data/rby/species.json';
-import * as sm from './data/sm/species.json';
-import * as xy from './data/xy/species.json';
 import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
 import {StatsTable} from './stats';
@@ -34,30 +27,36 @@ export interface Species extends Data {
   readonly cosmeticForms?: Readonly<ID[]>;
 }
 
-const RBY: DataTable<Species> = patch({}, rby);
-const GSC: DataTable<Species> = patch(RBY, gsc);
-const ADV: DataTable<Species> = patch(GSC, adv);
-const DPP: DataTable<Species> = patch(ADV, dpp);
-const BW: DataTable<Species> = patch(DPP, bw);
-const XY: DataTable<Species> = patch(BW, xy);
-const SM: DataTable<Species> = patch(XY, sm);
+const RBY: Promise<DataTable<Species>> =
+    patch(Promise.resolve({}), import('./data/rby/species.json'));
+const GSC: Promise<DataTable<Species>> =
+    patch(RBY, import('./data/gsc/species.json'));
+const ADV: Promise<DataTable<Species>> =
+    patch(GSC, import('./data/adv/species.json'));
+const DPP: Promise<DataTable<Species>> =
+    patch(ADV, import('./data/dpp/species.json'));
+const BW: Promise<DataTable<Species>> =
+    patch(DPP, import('./data/bw/species.json'));
+const XY: Promise<DataTable<Species>> =
+    patch(BW, import('./data/xy/species.json'));
+const SM: Promise<DataTable<Species>> =
+    patch(XY, import('./data/sm/species.json'));
 
-const SPECIES: Readonly<Array<DataTable<Species>>> =
+const SPECIES: Readonly<Array<Promise<DataTable<Species>>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export namespace Species {
-  export function forGen(gen: Generation): DataTable<Species> {
+  export function forGen(gen: Generation): Promise<DataTable<Species>> {
     return SPECIES[gen - 1];
   }
 
-  export function getSpeciesName(s: ID|string, gen: Generation = CURRENT):
-      string|undefined {
+  export async function getSpeciesName(s: ID|string, gen: Generation = CURRENT):
+      Promise<string|undefined> {
     const id = toID(s);
-    const species = Species.getSpecies(id);
+    const species = await Species.getSpecies(id);
     if (!species) return undefined;
     if (species.cosmeticForms && species.cosmeticForms.indexOf(id) >= 0) {
       const cosmeticForm = id.slice(species.name.length);
-      // istanbul ignore else
       if (cosmeticForm) {
         return species.name + '-' + cosmeticForm[0].toUpperCase() +
             cosmeticForm.slice(1);
@@ -66,8 +65,8 @@ export namespace Species {
     return species.name;
   }
 
-  export function getSpecies(s: ID|string, gen: Generation = CURRENT): Species
-      |undefined {
+  export async function getSpecies(s: ID|string, gen: Generation = CURRENT):
+      Promise<Species|undefined> {
     let id = toID(s);
     if (id === 'nidoran' && s.slice(-1) === '♀') {
       id = 'nidoranf' as ID;
@@ -75,10 +74,10 @@ export namespace Species {
       id = 'nidoranm' as ID;
     }
 
-    const data = Species.forGen(gen);
+    const data = await Species.forGen(gen);
 
     // BUG: Handle Rockruff-Dusk and other event pokemon?
-    let alias = Aliases.lookup(id);
+    let alias = await Aliases.lookup(id);
     if (alias) return data[toID(alias)];
 
     let species = data[id];

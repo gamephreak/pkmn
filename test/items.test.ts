@@ -1,57 +1,60 @@
 import {Items} from '../items';
 
 describe('Items', () => {
-  test('deleted', () => {
-    expect(Items.getItem('Berry', 3)).not.toBeDefined();
-    expect(Items.getItem('Gold Berry', 3)).not.toBeDefined();
-    expect(Items.getItem('Pink Bow', 3)).not.toBeDefined();
-    expect(Items.getItem('Polkadot Bow', 3)).not.toBeDefined();
+  test('deleted', async () => {
+    expect(await Items.getItem('Berry', 3)).not.toBeDefined();
+    expect(await Items.getItem('Gold Berry', 3)).not.toBeDefined();
+    expect(await Items.getItem('Pink Bow', 3)).not.toBeDefined();
+    expect(await Items.getItem('Polkadot Bow', 3)).not.toBeDefined();
 
-    expect(Items.getItem('berry', 2)!.name).toBe('Berry');
-    expect(Items.getItem('berry', 2)!.isBerry).toBe(true);
-    expect(Items.getItem('goldberry', 2)!.name).toBe('Gold Berry');
-    expect(Items.getItem('goldberry', 2)!.isBerry).toBe(true);
-    expect(Items.getItem('Pink Bow', 2)).toBeDefined();
-    expect(Items.getItem('Polkadot Bow', 2)).toBeDefined();
+    expect((await Items.getItem('berry', 2))!.name).toBe('Berry');
+    expect((await Items.getItem('berry', 2))!.isBerry).toBe(true);
+    expect((await Items.getItem('goldberry', 2))!.name).toBe('Gold Berry');
+    expect((await Items.getItem('goldberry', 2))!.isBerry).toBe(true);
+    expect(await Items.getItem('Pink Bow', 2)).toBeDefined();
+    expect(await Items.getItem('Polkadot Bow', 2)).toBeDefined();
   });
 
-  test('getItem', () => {
-    expect(Items.getItem('foo')).not.toBeDefined();
+  test('getItem', async () => {
+    expect(await Items.getItem('foo')).not.toBeDefined();
 
-    expect(Items.getItem('Leftovers', 2)).toEqual(Items.getItem('Leftovers'));
-    expect(Items.getItem('Sitrus Berry', 3))
-        .not.toEqual(Items.getItem('Sitrus Berry', 4));
+    expect(await Items.getItem('Leftovers', 2))
+        .toEqual(await Items.getItem('Leftovers'));
+    expect(await Items.getItem('Sitrus Berry', 3))
+        .not.toEqual(await Items.getItem('Sitrus Berry', 4));
   });
 
-  test('fields', () => {
-    expect(Items.getItem('Sitrus Berry', 4)!.isBerry).toBe(true);
-    expect(Items.getItem('Heracronite')!.megaStone).toBe('Heracross-Mega');
-    expect(Items.getItem('Charizardite-X')!.megaEvolves).toBe('Charizard');
-    expect(Items.getItem('Pikanium Z')!.zMove).toBe('Catastropika');
-    expect(Items.getItem('Fairium Z')!.zMove).toBe(true);
-    expect(Items.getItem('Steelium Z')!.zMoveType).toBe('Steel');
-    expect(Items.getItem('Lunalium Z')!.zMoveUser).toEqual([
+  test('fields', async () => {
+    expect((await Items.getItem('Sitrus Berry', 4))!.isBerry).toBe(true);
+    expect((await Items.getItem('Heracronite'))!.megaStone)
+        .toBe('Heracross-Mega');
+    expect((await Items.getItem('Charizardite-X'))!.megaEvolves)
+        .toBe('Charizard');
+    expect((await Items.getItem('Pikanium Z'))!.zMove).toBe('Catastropika');
+    expect((await Items.getItem('Fairium Z'))!.zMove).toBe(true);
+    expect((await Items.getItem('Steelium Z'))!.zMoveType).toBe('Steel');
+    expect((await Items.getItem('Lunalium Z'))!.zMoveUser).toEqual([
       'Lunala', 'Necrozma-Dawn-Wings'
     ]);
-    expect(Items.getItem('Meadow Plate')!.onPlate).toBe('Grass');
-    expect(Items.getItem('Electric Memory')!.onMemory).toBe('Electric');
-    expect(Items.getItem('Douse Drive')!.onDrive).toBe('Water');
-    expect(Items.getItem('Electric Gem', 6)!.isGem).toBe(true);
+    expect((await Items.getItem('Meadow Plate'))!.onPlate).toBe('Grass');
+    expect((await Items.getItem('Electric Memory'))!.onMemory).toBe('Electric');
+    expect((await Items.getItem('Douse Drive'))!.onDrive).toBe('Water');
+    expect((await Items.getItem('Electric Gem', 6))!.isGem).toBe(true);
   });
 
-  test('previous', () => {
+  test('previous', async () => {
     // Gen for items which were previously key items became held items.
-    expect(Items.getItem('Red Orb', 3)).not.toBeDefined();
-    expect(Items.getItem('Red Orb', 6)!.gen).toBe(6);
-    expect(Items.getItem('Old Amber', 2)).not.toBeDefined();
-    expect(Items.getItem('Old Amber', 5)!.gen).toBe(4);
+    expect(await Items.getItem('Red Orb', 3)).not.toBeDefined();
+    expect((await Items.getItem('Red Orb', 6))!.gen).toBe(6);
+    expect(await Items.getItem('Old Amber', 2)).not.toBeDefined();
+    expect((await Items.getItem('Old Amber', 5))!.gen).toBe(4);
   });
 
-  test('aliases', () => {
-    expect(Items.getItem('salac')!.name).toBe('Salac Berry');
-    expect(Items.getItem('salac', 2)).not.toBeDefined();
-    expect(Items.getItem('lo', 4)!.name).toBe('Life Orb');
-    expect(Items.getItem('')).not.toBeDefined();
-    expect(Items.getItem('', 2)).not.toBeDefined();  // '' + 'berry'
+  test('aliases', async () => {
+    expect((await Items.getItem('salac'))!.name).toBe('Salac Berry');
+    expect(await Items.getItem('salac', 2)).not.toBeDefined();
+    expect((await Items.getItem('lo', 4))!.name).toBe('Life Orb');
+    expect(await Items.getItem('')).not.toBeDefined();
+    expect(await Items.getItem('', 2)).not.toBeDefined();  // '' + 'berry'
   });
 });

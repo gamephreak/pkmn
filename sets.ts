@@ -32,11 +32,12 @@ export class Sets {
   // istanbul ignore next
   private constructor() {}
 
-  static pack(s: PokemonSet, gen?: Generation): string {
+  static async pack(s: PokemonSet, gen?: Generation): Promise<string> {
     return Sets.packSet(s, '', gen);
   }
 
-  static packSet(s: PokemonSet, buf = '', gen?: Generation): string {
+  static async packSet(s: PokemonSet, buf = '', gen?: Generation):
+      Promise<string> {
     if (buf) buf += ']';
 
     // name
@@ -50,7 +51,7 @@ export class Sets {
     buf += '|' + toID(s.item);
 
     // ability
-    const species = Species.getSpecies(s.species || s.name, gen);
+    const species = await Species.getSpecies(s.species || s.name, gen);
     id = toID(s.ability);
     if (species && species.abilities) {
       const abilities = species.abilities;
@@ -153,11 +154,12 @@ export class Sets {
     return buf;
   }
 
-  static exportSet(s: PokemonSet, fast?: boolean, gen?: Generation): string {
+  static async exportSet(s: PokemonSet, fast?: boolean, gen?: Generation):
+      Promise<string> {
     let buf = '';
     let species = s.species;
     if (!fast) {
-      const s = Species.getSpecies(species);
+      const s = await Species.getSpecies(species);
       species = (s && s.name) || species;
     }
     if (s.name && s.name !== species) {
@@ -172,7 +174,7 @@ export class Sets {
     if (s.item) {
       let item = s.item;
       if (!fast) {
-        const i = Items.getItem(item);
+        const i = await Items.getItem(item);
         item = (i && i.name) || item;
       }
       buf += ' @ ' + item;
@@ -181,7 +183,7 @@ export class Sets {
     if (s.ability && (!gen || gen >= 3)) {
       let ability = s.ability;
       if (!fast) {
-        const a = Abilities.getAbility(ability);
+        const a = await Abilities.getAbility(ability);
         ability = (a && a.name) || ability;
       }
       buf += 'Ability: ' + ability + '  \n';
@@ -276,7 +278,7 @@ export class Sets {
       for (let move of s.moves) {
         if (move) {
           if (!fast) {
-            const m = Moves.getMove(move);
+            const m = await Moves.getMove(move);
             move = (m && m.name) || move;
           }
           buf += '- ' + exportMove(move) + '  \n';
@@ -288,16 +290,18 @@ export class Sets {
     return buf;
   }
 
-  static unpack(buf: string, gen?: Generation): PokemonSet|undefined {
+  static unpack(buf: string, gen?: Generation): Promise<PokemonSet|undefined> {
     return Sets.unpackSet(buf, gen);
   }
 
-  static unpackSet(buf: string, gen?: Generation): PokemonSet|undefined {
-    return _unpack(buf, 0, 0, gen).set;
+  static async unpackSet(buf: string, gen?: Generation):
+      Promise<PokemonSet|undefined> {
+    return (await _unpack(buf, 0, 0, gen)).set;
   }
 
-  static importSet(buf: string, gen?: Generation): PokemonSet|undefined {
-    return _import(buf.split('\n'), 0, gen).set;
+  static async importSet(buf: string, gen?: Generation):
+      Promise<PokemonSet|undefined> {
+    return (await _import(buf.split('\n'), 0, gen)).set;
   }
 
   static toJSON(s: PokemonSet): string {
@@ -312,17 +316,18 @@ export class Sets {
     return JSON.parse(json);
   }
 
-  static toString(s: PokemonSet, fast?: boolean, gen?: Generation): string {
+  static toString(s: PokemonSet, fast?: boolean, gen?: Generation):
+      Promise<string> {
     return Sets.exportSet(s, fast, gen);
   }
 
-  static fromString(str: string): PokemonSet|undefined {
+  static fromString(str: string): Promise<PokemonSet|undefined> {
     return Sets.importSet(str);
   }
 }
 
-export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
-    {set?: PokemonSet, i: number, j: number} {
+export async function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
+    Promise<{set?: PokemonSet, i: number, j: number}> {
   const s: WriteableSet = {};
   // name
   j = buf.indexOf('|', i);
@@ -346,7 +351,7 @@ export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
   const ability = buf.substring(i, j);
-  const species = Species.getSpecies(s.species, gen);
+  const species = await Species.getSpecies(s.species, gen);
   s.ability =
       (species && species.abilities && ability in {'': 1, 0: 1, 1: 1, H: 1} ?
            // @ts-ignore
@@ -436,8 +441,8 @@ export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
   return {set: toPokemonSet(s, gen), i, j};
 }
 
-export function _import(lines: string[], i = 0, gen?: Generation):
-    {set?: PokemonSet, line: number} {
+export async function _import(lines: string[], i = 0, gen?: Generation):
+    Promise<{set?: PokemonSet, line: number}> {
   let s: WriteableSet|undefined = undefined;
   for (; i < lines.length; i++) {
     let line = lines[i].trim();
@@ -464,12 +469,12 @@ export function _import(lines: string[], i = 0, gen?: Generation):
       if (line.substr(line.length - 1) === ')' && parenIndex !== -1) {
         line = line.substr(0, line.length - 1);
         const sub = line.substr(parenIndex + 2);
-        const species = Species.getSpecies(sub);
+        const species = await Species.getSpecies(sub);
         s.species = (species && species.name) || sub;
         line = line.substr(0, parenIndex);
         s.name = line;
       } else {
-        const species = Species.getSpecies(line);
+        const species = await Species.getSpecies(line);
         s.species = (species && species.name) || line;
         s.name = '';
       }
@@ -571,7 +576,6 @@ function toPokemonSet(s?: WriteableSet, gen?: Generation): PokemonSet|
     hpType: s.hpType
   };
 }
-
 
 function getHiddenPowerType(move: string): Type|undefined {
   if (move.substr(0, 14) === 'Hidden Power [') {

@@ -2,35 +2,35 @@ import {Stats} from '../stats';
 import {Types} from '../types';
 
 describe('Types', () => {
-  test('chart', () => {
-    expect(Types.chart()['Fighting']!['Fighting']).toBe(1);
-    expect(Types.chart()['Fighting']!['Normal']).toBe(2);
-    expect(Types.chart()['Fighting']!['Flying']).toBe(0.5);
-    expect(Types.chart()['Fighting']!['Ghost']).toBe(0);
+  test('chart', async () => {
+    expect((await Types.chart())['Fighting']!['Fighting']).toBe(1);
+    expect((await Types.chart())['Fighting']!['Normal']).toBe(2);
+    expect((await Types.chart())['Fighting']!['Flying']).toBe(0.5);
+    expect((await Types.chart())['Fighting']!['Ghost']).toBe(0);
 
-    expect(Types.chart(1)['Dark']).not.toBeDefined();
-    expect(Types.chart(1)['Steel']).not.toBeDefined();
-    expect(Types.chart(2)['Dark']).toBeDefined();
-    expect(Types.chart(2)['Steel']).toBeDefined();
-    expect(Types.chart(5)['Fairy']).not.toBeDefined();
-    expect(Types.chart(6)['Fairy']).toBeDefined();
+    expect((await Types.chart(1))['Dark']).not.toBeDefined();
+    expect((await Types.chart(1))['Steel']).not.toBeDefined();
+    expect((await Types.chart(2))['Dark']).toBeDefined();
+    expect((await Types.chart(2))['Steel']).toBeDefined();
+    expect((await Types.chart(5))['Fairy']).not.toBeDefined();
+    expect((await Types.chart(6))['Fairy']).toBeDefined();
 
-    expect(Types.chart(1)['Ice']!['Fire']).toBe(1);
-    expect(Types.chart(2)['Ice']!['Fire']).toBe(0.5);
+    expect((await Types.chart(1))['Ice']!['Fire']).toBe(1);
+    expect((await Types.chart(2))['Ice']!['Fire']).toBe(0.5);
 
-    expect(Types.chart(1)['Ghost']!['Psychic']).toBe(0);
-    expect(Types.chart(2)['Ghost']!['Psychic']).toBe(2);
+    expect((await Types.chart(1))['Ghost']!['Psychic']).toBe(0);
+    expect((await Types.chart(2))['Ghost']!['Psychic']).toBe(2);
 
-    expect(Types.chart(1)['Poison']!['Bug']).toBe(2);
-    expect(Types.chart(2)['Poison']!['Bug']).toBe(1);
+    expect((await Types.chart(1))['Poison']!['Bug']).toBe(2);
+    expect((await Types.chart(2))['Poison']!['Bug']).toBe(1);
 
-    expect(Types.chart(1)['Bug']!['Poison']).toBe(2);
-    expect(Types.chart(2)['Bug']!['Poison']).toBe(0.5);
+    expect((await Types.chart(1))['Bug']!['Poison']).toBe(2);
+    expect((await Types.chart(2))['Bug']!['Poison']).toBe(0.5);
 
-    expect(Types.chart(5)['Ghost']!['Steel']).toBe(0.5);
-    expect(Types.chart(5)['Dark']!['Steel']).toBe(0.5);
-    expect(Types.chart(6)['Ghost']!['Steel']).toBe(1);
-    expect(Types.chart(6)['Dark']!['Steel']).toBe(1);
+    expect((await Types.chart(5))['Ghost']!['Steel']).toBe(0.5);
+    expect((await Types.chart(5))['Dark']!['Steel']).toBe(0.5);
+    expect((await Types.chart(6))['Ghost']!['Steel']).toBe(1);
+    expect((await Types.chart(6))['Dark']!['Steel']).toBe(1);
   });
 
   test('category', () => {

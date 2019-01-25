@@ -1,12 +1,5 @@
 import {Aliases} from './aliases';
 import {Data, DataTable, patch} from './data';
-import * as adv from './data/adv/moves.json';
-import * as bw from './data/bw/moves.json';
-import * as dpp from './data/dpp/moves.json';
-import * as gsc from './data/gsc/moves.json';
-import * as rby from './data/rby/moves.json';
-import * as sm from './data/sm/moves.json';
-import * as xy from './data/xy/moves.json';
 import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
 import {BoostsTable} from './stats';
@@ -144,30 +137,35 @@ export interface Move extends Data {
   readonly ignoreDefensive?: boolean;
 }
 
-const RBY: DataTable<Move> = patch({}, rby);
-const GSC: DataTable<Move> = patch(RBY, gsc);
-const ADV: DataTable<Move> = patch(GSC, adv);
-const DPP: DataTable<Move> = patch(ADV, dpp);
-const BW: DataTable<Move> = patch(DPP, bw);
-const XY: DataTable<Move> = patch(BW, xy);
-const SM: DataTable<Move> = patch(XY, sm);
+const RBY: Promise<DataTable<Move>> =
+    patch(Promise.resolve({}), import('./data/rby/moves.json'));
+const GSC: Promise<DataTable<Move>> =
+    patch(RBY, import('./data/gsc/moves.json'));
+const ADV: Promise<DataTable<Move>> =
+    patch(GSC, import('./data/adv/moves.json'));
+const DPP: Promise<DataTable<Move>> =
+    patch(ADV, import('./data/dpp/moves.json'));
+const BW: Promise<DataTable<Move>> = patch(DPP, import('./data/bw/moves.json'));
+const XY: Promise<DataTable<Move>> = patch(BW, import('./data/xy/moves.json'));
+const SM: Promise<DataTable<Move>> = patch(XY, import('./data/sm/moves.json'));
 
-const MOVES: Readonly<Array<DataTable<Move>>> =
+const MOVES: Readonly<Array<Promise<DataTable<Move>>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export class Moves {
   // istanbul ignore next
   private constructor() {}
 
-  static forGen(gen: Generation): DataTable<Move> {
+  static forGen(gen: Generation): Promise<DataTable<Move>> {
     return MOVES[gen - 1];
   }
 
-  static getMove(m: ID|string, gen: Generation = CURRENT): Move|undefined {
+  static async getMove(m: ID|string, gen: Generation = CURRENT):
+      Promise<Move|undefined> {
     let id = toID(m);
-    const moves = Moves.forGen(gen);
+    const moves = await Moves.forGen(gen);
 
-    const alias = Aliases.lookup(id);
+    const alias = await Aliases.lookup(id);
     if (alias) return moves[toID(alias)];
 
     if (id.substr(0, 11) === 'hiddenpower') {

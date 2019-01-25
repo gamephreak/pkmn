@@ -29,8 +29,8 @@ const GEN1: string = readTeam('gen1ou-cloyster');
 
 // TODO
 describe('Team', () => {
-  test.skip('importTeam + exportTeam', () => {
-    expect(Teams.importTeam(GEN7)!.exportTeam()).toEqual(GEN7);
+  test.skip('importTeam + exportTeam', async () => {
+    expect(await (await Teams.importTeam(GEN7))!.exportTeam()).toEqual(GEN7);
   });
 
   test.skip('pack + unpack', () => {});
@@ -39,9 +39,9 @@ describe('Team', () => {
 
 // TODO
 describe('Teams', () => {
-  test('importTeams + exportTeams', () => {
+  test('importTeams + exportTeams', async () => {
     const teams = readTeam('teams');
-    const imported = Teams.importTeams(teams)!;
+    const imported = await Teams.importTeams(teams)!;
     expect(imported.length).toBe(2);
 
     expect(imported[0].gen()).toBe(7);
@@ -54,6 +54,6 @@ describe('Teams', () => {
     expect(imported[1].name).toBe('Cloyster');
     expect(imported[1].folder).toBe('RBY');
 
-    expect(Teams.exportTeams(imported)).toEqual(teams);
+    expect(await Teams.exportTeams(imported)).toEqual(teams);
   });
 });
