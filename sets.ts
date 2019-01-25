@@ -51,7 +51,7 @@ export class Sets {
     buf += '|' + toID(s.item);
 
     // ability
-    const species = await Species.getSpecies(s.species || s.name, gen);
+    const species = await Species.get(s.species || s.name, gen);
     id = toID(s.ability);
     if (species && species.abilities) {
       const abilities = species.abilities;
@@ -159,7 +159,7 @@ export class Sets {
     let buf = '';
     let species = s.species;
     if (!fast) {
-      const s = await Species.getSpecies(species);
+      const s = await Species.get(species);
       species = (s && s.name) || species;
     }
     if (s.name && s.name !== species) {
@@ -174,7 +174,7 @@ export class Sets {
     if (s.item) {
       let item = s.item;
       if (!fast) {
-        const i = await Items.getItem(item);
+        const i = await Items.get(item);
         item = (i && i.name) || item;
       }
       buf += ' @ ' + item;
@@ -183,7 +183,7 @@ export class Sets {
     if (s.ability && (!gen || gen >= 3)) {
       let ability = s.ability;
       if (!fast) {
-        const a = await Abilities.getAbility(ability);
+        const a = await Abilities.get(ability);
         ability = (a && a.name) || ability;
       }
       buf += 'Ability: ' + ability + '  \n';
@@ -278,7 +278,7 @@ export class Sets {
       for (let move of s.moves) {
         if (move) {
           if (!fast) {
-            const m = await Moves.getMove(move);
+            const m = await Moves.get(move);
             move = (m && m.name) || move;
           }
           buf += '- ' + exportMove(move) + '  \n';
@@ -351,7 +351,7 @@ export async function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
   const ability = buf.substring(i, j);
-  const species = await Species.getSpecies(s.species, gen);
+  const species = await Species.get(s.species, gen);
   s.ability =
       (species && species.abilities && ability in {'': 1, 0: 1, 1: 1, H: 1} ?
            // @ts-ignore
@@ -469,12 +469,12 @@ export async function _import(lines: string[], i = 0, gen?: Generation):
       if (line.substr(line.length - 1) === ')' && parenIndex !== -1) {
         line = line.substr(0, line.length - 1);
         const sub = line.substr(parenIndex + 2);
-        const species = await Species.getSpecies(sub);
+        const species = await Species.get(sub);
         s.species = (species && species.name) || sub;
         line = line.substr(0, parenIndex);
         s.name = line;
       } else {
-        const species = await Species.getSpecies(line);
+        const species = await Species.get(line);
         s.species = (species && species.name) || line;
         s.name = '';
       }
@@ -500,7 +500,7 @@ export async function _import(lines: string[], i = 0, gen?: Generation):
       for (const evLine of evLines) {
         const spaceIndex = evLine.indexOf(' ');
         if (spaceIndex === -1) continue;
-        const stat = Stats.getStat(evLine.substr(spaceIndex + 1));
+        const stat = Stats.get(evLine.substr(spaceIndex + 1));
         // tslint:disable-next-line:ban
         const val = parseInt(evLine.substr(0, spaceIndex), 10);
         if (!stat) continue;
@@ -513,7 +513,7 @@ export async function _import(lines: string[], i = 0, gen?: Generation):
       for (const ivLine of ivLines) {
         const spaceIndex = ivLine.indexOf(' ');
         if (spaceIndex === -1) continue;
-        const stat = Stats.getStat(ivLine.substr(spaceIndex + 1));
+        const stat = Stats.get(ivLine.substr(spaceIndex + 1));
         // tslint:disable-next-line:ban
         let val = parseInt(ivLine.substr(0, spaceIndex), 10);
         if (!stat) continue;

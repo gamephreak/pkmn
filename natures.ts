@@ -49,11 +49,11 @@ export class Natures {
   // istanbul ignore next
   private constructor() {}
 
-  static getNature(n: ID|string): Nature|undefined {
+  static get(n: ID|string): Nature|undefined {
     return NATURES[toID(n)];
   }
 
   static fromString(s: string): Nature|undefined {
-    return Natures.getNature(s);
+    return Natures.get(s);
   }
 }

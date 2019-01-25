@@ -41,12 +41,12 @@ export class Items {
   }
 
   @cache
-  static async getItem(i: ID|string, gen: Generation = CURRENT):
+  static async get(i: ID|string, gen: Generation = CURRENT):
       Promise<Item|undefined> {
     const id = toID(i);
     const items = await Items.forGen(gen);
 
-    const alias = await Aliases.lookup(id);
+    const alias = await Aliases.get(id);
     if (alias) return items[toID(alias)];
 
     const item = items[id];

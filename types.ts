@@ -115,8 +115,12 @@ export class Types {
   // istanbul ignore next
   private constructor() {}
 
-  static chart(gen: Generation = CURRENT): Promise<TypeChart> {
+  static get(gen: Generation = CURRENT): Promise<TypeChart> {
     return TYPE_CHARTS[gen - 1];
+  }
+
+  static chart(gen: Generation = CURRENT): Promise<TypeChart> {
+    return Types.get(gen);
   }
 
   static hiddenPower(

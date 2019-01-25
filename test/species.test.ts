@@ -25,91 +25,82 @@ describe('Species', () => {
         .toBe(809 + 6 + 46 + 23 + 81 + 77);
   });
 
-  test('getSpecies', async () => {
-    expect(await Species.getSpecies('foo')).not.toBeDefined();
+  test('get', async () => {
+    expect(await Species.get('foo')).not.toBeDefined();
 
     // normal
-    expect((await Species.getSpecies('gengar'))!.name).toBe('Gengar');
-    expect((await Species.getSpecies('Gastrodon-East'))!.name)
-        .toBe('Gastrodon');
+    expect((await Species.get('gengar'))!.name).toBe('Gengar');
+    expect((await Species.get('Gastrodon-East'))!.name).toBe('Gastrodon');
 
     // nidoran
-    expect((await Species.getSpecies('nidoran♀'))!.name).toBe('Nidoran-F');
-    expect((await Species.getSpecies('nidoran♂'))!.name).toBe('Nidoran-M');
+    expect((await Species.get('nidoran♀'))!.name).toBe('Nidoran-F');
+    expect((await Species.get('nidoran♂'))!.name).toBe('Nidoran-M');
 
     // alias
-    expect((await Species.getSpecies('cune'))!.name).toBe('Suicune');
-    expect((await Species.getSpecies('mence'))!.name).toBe('Salamence');
+    expect((await Species.get('cune'))!.name).toBe('Suicune');
+    expect((await Species.get('mence'))!.name).toBe('Salamence');
 
     // mega
-    expect((await Species.getSpecies('Mega Salamence'))!.name)
-        .toBe('Salamence-Mega');
-    expect((await Species.getSpecies('M-Alakazam'))!.name)
-        .toBe('Alakazam-Mega');
+    expect((await Species.get('Mega Salamence'))!.name).toBe('Salamence-Mega');
+    expect((await Species.get('M-Alakazam'))!.name).toBe('Alakazam-Mega');
 
     // primal
-    expect((await Species.getSpecies('Primal Kyogre'))!.name)
-        .toBe('Kyogre-Primal');
-    expect((await Species.getSpecies('p groudon'))!.name)
-        .toBe('Groudon-Primal');
+    expect((await Species.get('Primal Kyogre'))!.name).toBe('Kyogre-Primal');
+    expect((await Species.get('p groudon'))!.name).toBe('Groudon-Primal');
   });
 
-  test('getSpeciesName', async () => {
-    expect(await Species.getSpeciesName('foo')).not.toBeDefined();
+  test('getName', async () => {
+    expect(await Species.getName('foo')).not.toBeDefined();
 
-    expect(await Species.getSpeciesName('Gastrodon-East'))
-        .toBe('Gastrodon-East');
-    expect(await Species.getSpeciesName('sawsbuckwinter'))
-        .toBe('Sawsbuck-Winter');
-    expect(await Species.getSpeciesName('Gengar')).toBe('Gengar');
+    expect(await Species.getName('Gastrodon-East')).toBe('Gastrodon-East');
+    expect(await Species.getName('sawsbuckwinter')).toBe('Sawsbuck-Winter');
+    expect(await Species.getName('Gengar')).toBe('Gengar');
   });
 
   test('fields', async () => {
-    expect((await Species.getSpecies('Clefable'))!.type1).toBe('Fairy');
-    expect((await Species.getSpecies('Clefable', 3))!.type1).toBe('Normal');
-    expect((await Species.getSpecies('Gengar'))!.type2).toBe('Poison');
-    expect((await Species.getSpecies('Pikachu'))!.type2).not.toBeDefined();
-    expect((await Species.getSpecies('Mew'))!.baseStats)
+    expect((await Species.get('Clefable'))!.type1).toBe('Fairy');
+    expect((await Species.get('Clefable', 3))!.type1).toBe('Normal');
+    expect((await Species.get('Gengar'))!.type2).toBe('Poison');
+    expect((await Species.get('Pikachu'))!.type2).not.toBeDefined();
+    expect((await Species.get('Mew'))!.baseStats)
         .toEqual({hp: 100, atk: 100, def: 100, spa: 100, spd: 100, spe: 100});
-    expect((await Species.getSpecies('Tauros', 1))!.baseStats)
+    expect((await Species.get('Tauros', 1))!.baseStats)
         .toEqual({hp: 75, atk: 100, def: 95, spa: 70, spd: 70, spe: 110});
-    expect((await Species.getSpecies('Pelipper', 6))!.baseStats.spa)
-        .toEqual(85);
-    expect((await Species.getSpecies('Pelipper'))!.baseStats.spa).toEqual(95);
-    expect((await Species.getSpecies('Greninja', 6))!.abilities)
+    expect((await Species.get('Pelipper', 6))!.baseStats.spa).toEqual(85);
+    expect((await Species.get('Pelipper'))!.baseStats.spa).toEqual(95);
+    expect((await Species.get('Greninja', 6))!.abilities)
         .toEqual({'0': 'Torrent', 'H': 'Protean'});
-    expect((await Species.getSpecies('Greninja', 7))!.abilities)
+    expect((await Species.get('Greninja', 7))!.abilities)
         .toEqual({'0': 'Torrent', 'H': 'Protean', 'S': 'Battle Bond'});
-    expect((await Species.getSpecies('Snorlax', 2))!.tier).toBe('OU');
-    expect((await Species.getSpecies('Snorlax', 5))!.tier).toBe('UU');
-    expect((await Species.getSpecies('Chansey', 3))!.prevo).not.toBeDefined();
-    expect((await Species.getSpecies('Chansey', 4))!.prevo).toBe('happiny');
-    expect((await Species.getSpecies('Chansey', 2))!.evos).toEqual(['blissey']);
-    expect((await Species.getSpecies('Charizard-Mega-X'))!.baseSpecies)
+    expect((await Species.get('Snorlax', 2))!.tier).toBe('OU');
+    expect((await Species.get('Snorlax', 5))!.tier).toBe('UU');
+    expect((await Species.get('Chansey', 3))!.prevo).not.toBeDefined();
+    expect((await Species.get('Chansey', 4))!.prevo).toBe('happiny');
+    expect((await Species.get('Chansey', 2))!.evos).toEqual(['blissey']);
+    expect((await Species.get('Charizard-Mega-X'))!.baseSpecies)
         .toBe('Charizard');
-    expect((await Species.getSpecies('Giratina-O'))!.forme).toBe('Origin');
-    expect((await Species.getSpecies('Giratina-O'))!.formeLetter).toBe('O');
-    expect((await Species.getSpecies('Giratina'))!.baseForme).toBe('Altered');
-    expect((await Species.getSpecies('Shaymin'))!.otherFormes).toEqual([
-      'shayminsky'
+    expect((await Species.get('Giratina-O'))!.forme).toBe('Origin');
+    expect((await Species.get('Giratina-O'))!.formeLetter).toBe('O');
+    expect((await Species.get('Giratina'))!.baseForme).toBe('Altered');
+    expect((await Species.get('Shaymin'))!.otherFormes).toEqual(['shayminsky']);
+    expect((await Species.get('Gastrodon-East'))!.cosmeticForms).toEqual([
+      'gastrodoneast'
     ]);
-    expect((await Species.getSpecies('Gastrodon-East'))!.cosmeticForms)
-        .toEqual(['gastrodoneast']);
   });
 
   test('cached', async () => {
-    const a = Species.getSpecies('Gengar', 6);
-    const b = Species.getSpecies('Gengar', 6);
-    const c = Species.getSpecies('Gengar');
+    const a = Species.get('Gengar', 6);
+    const b = Species.get('Gengar', 6);
+    const c = Species.get('Gengar');
 
     expect(b).toBe(a);
     expect(c).not.toBe(a);
     expect((await b)).toBeDefined();
     expect((await b)!.name).toBe('Gengar');
 
-    const d = Species.getSpeciesName('Gastrodon-East', 6);
-    const e = Species.getSpeciesName('Gastrodon-East', 6);
-    const f = Species.getSpeciesName('Gastrodon-East');
+    const d = Species.getName('Gastrodon-East', 6);
+    const e = Species.getName('Gastrodon-East', 6);
+    const f = Species.getName('Gastrodon-East');
 
     expect(e).toBe(d);
     expect(f).not.toBe(d);

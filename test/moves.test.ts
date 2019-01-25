@@ -6,9 +6,9 @@ describe('Moves', () => {
   });
 
   test('cached', async () => {
-    const a = Moves.getMove('Earthquake', 6);
-    const b = Moves.getMove('Earthquake', 6);
-    const c = Moves.getMove('Earthquake');
+    const a = Moves.get('Earthquake', 6);
+    const b = Moves.get('Earthquake', 6);
+    const c = Moves.get('Earthquake');
 
     expect(b).toBe(a);
     expect(c).not.toBe(a);

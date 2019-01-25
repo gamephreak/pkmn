@@ -28,18 +28,14 @@ export class Team {
   }
 
   pack(gen?: Generation): Promise<string> {
-    return this.packTeam();
+    return Teams.packTeam(this, gen || this.gen());
   }
 
-  async packTeam(gen?: Generation): Promise<string> {
-    let buf = '';
-    for (const s of this.team) {
-      buf += await Sets.packSet(s, buf, gen || this.gen());
-    }
-    return buf;
+  static unpack(buf: string, gen?: Generation): Promise<Team|undefined> {
+    return Teams.unpackTeam(buf, gen);
   }
 
-  async exportTeam(fast?: boolean, gen?: Generation): Promise<string> {
+  async export(fast?: boolean, gen?: Generation): Promise<string> {
     let buf = '';
     for (const s of this.team) {
       buf += await Sets.exportSet(s, fast, gen || this.gen());
@@ -47,12 +43,29 @@ export class Team {
     return buf;
   }
 
+  static import(buf: string, gen?: Generation): Promise<Team|undefined> {
+    return Teams.importTeam(buf, gen);
+  }
+
   toString(fast?: boolean, gen?: Generation): Promise<string> {
-    return this.exportTeam(fast, gen);
+    return this.export(fast, gen);
+  }
+
+  static fromString(str: string, gen?: Generation): Promise<Team|undefined> {
+    return Teams.importTeam(str, gen);
   }
 
   toJSON(): string {
     return JSON.stringify(this.team);
+  }
+
+  static fromJSON(json: string): Team|undefined {
+    if (json.charAt(0) !== '[' || json.charAt(json.length - 1) !== ']') {
+      return undefined;
+    }
+    // BUG: this is completely unvalidated...
+    const team: PokemonSet[] = JSON.parse(json);
+    return new Team(team);
   }
 }
 
@@ -60,15 +73,19 @@ export class Teams {
   // istanbul ignore next
   private constructor() {}
 
-  static unpack(buf: string, gen?: Generation): Promise<Team|undefined> {
-    return Teams.unpackTeam(buf, gen);
+  static async packTeam(team: Team, gen?: Generation): Promise<string> {
+    let buf = '';
+    for (const s of team.team) {
+      buf += await Sets.packSet(s, buf, gen);
+    }
+    return buf;
   }
 
   static async unpackTeam(buf: string, gen?: Generation):
       Promise<Team|undefined> {
     if (!buf) return undefined;
     if (buf.charAt(0) === '[' && buf.charAt(buf.length - 1) === ']') {
-      return Promise.resolve(Teams.fromJSON(buf));
+      return Promise.resolve(Team.fromJSON(buf));
     }
 
     const team: PokemonSet[] = [];
@@ -90,8 +107,8 @@ export class Teams {
   }
 
   static importTeam(buf: string, gen?: Generation): Promise<Team|undefined> {
-    return Promise.resolve(
-        undefined);  // TODO use same pattern as _import but for team
+    // TODO use same pattern as _import but for team
+    return Promise.resolve(undefined);
   }
 
   static async importTeams(buf: string, gen?: Generation): Promise<Team[]> {
@@ -154,23 +171,19 @@ export class Teams {
     for (const team of teams) {
       buf += '=== ' + (team.format ? '[' + team.format + '] ' : '') +
           (team.folder ? '' + team.folder + '/' : '') + team.name + ' ===\n\n';
-      buf += await team.exportTeam(fast, gen);
+      buf += await team.export(fast, gen);
       buf += '\n';
     }
     return buf;
   }
 
-  static fromJSON(json: string): Team|undefined {
-    if (json.charAt(0) !== '[' || json.charAt(json.length - 1) !== ']') {
-      return undefined;
-    }
-    // BUG: this is completely unvalidated...
-    const team: PokemonSet[] = JSON.parse(json);
-    return new Team(team);
+  static toString(teams: Readonly<Team[]>, fast?: boolean, gen?: Generation):
+      Promise<string> {
+    return Teams.exportTeams(teams, fast, gen);
   }
 
-  static fromString(str: string, gen?: Generation): Promise<Team|undefined> {
-    return Teams.importTeam(str, gen);
+  static fromString(str: string, gen?: Generation): Promise<Team[]|undefined> {
+    return Teams.importTeams(str, gen);
   }
 }
 

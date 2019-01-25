@@ -30,7 +30,7 @@ const GEN1: string = readTeam('gen1ou-cloyster');
 // TODO
 describe('Team', () => {
   test.skip('importTeam + exportTeam', async () => {
-    expect(await (await Teams.importTeam(GEN7))!.exportTeam()).toEqual(GEN7);
+    expect(await (await Teams.importTeam(GEN7))!.export()).toEqual(GEN7);
   });
 
   test.skip('pack + unpack', () => {});

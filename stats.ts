@@ -110,12 +110,12 @@ export class Stats {
                      Stats.calcADV(stat, base, iv, ev, level, nature);
   }
 
-  static getStat(s: ID|string): Stat|undefined {
+  static get(s: ID|string): Stat|undefined {
     return STAT_IDS[s];
   }
 
   static fromString(s: string): Stat|undefined {
-    return Stats.getStat(s);
+    return Stats.get(s);
   }
 
   static display(str: string, gen: Generation = CURRENT, full = false): string {

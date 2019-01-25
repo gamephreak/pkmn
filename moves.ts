@@ -161,12 +161,12 @@ export class Moves {
   }
 
   @cache
-  static async getMove(m: ID|string, gen: Generation = CURRENT):
+  static async get(m: ID|string, gen: Generation = CURRENT):
       Promise<Move|undefined> {
     let id = toID(m);
     const moves = await Moves.forGen(gen);
 
-    const alias = await Aliases.lookup(id);
+    const alias = await Aliases.get(id);
     if (alias) return moves[toID(alias)];
 
     if (id.substr(0, 11) === 'hiddenpower') {

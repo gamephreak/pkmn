@@ -30,12 +30,12 @@ export class Abilities {
   }
 
   @cache
-  static async getAbility(a: ID|string, gen: Generation = CURRENT):
+  static async get(a: ID|string, gen: Generation = CURRENT):
       Promise<Ability|undefined> {
     const id = toID(a);
     const abilities = await Abilities.forGen(gen);
 
-    const alias = await Aliases.lookup(id);
+    const alias = await Aliases.get(id);
     if (alias) return abilities[toID(alias)];
 
     return abilities[id];

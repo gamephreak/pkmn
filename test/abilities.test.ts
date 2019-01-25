@@ -14,27 +14,25 @@ describe('Abilities', () => {
         .toBe(76 + 1 + 47 + 2 + 41 + 27 + 42);
   });
 
-  test('getAbility', async () => {
-    expect(await Abilities.getAbility('foo')).not.toBeDefined();
-    expect(
-        (await Abilities.getAbility('Flash Fire (Activated)'))!.isNonstandard)
+  test('get', async () => {
+    expect(await Abilities.get('foo')).not.toBeDefined();
+    expect((await Abilities.get('Flash Fire (Activated)'))!.isNonstandard)
         .toBe(true);
-    expect(await Abilities.getAbility('Beast Boost', 6)).not.toBeDefined();
-    expect((await Abilities.getAbility('Beast Boost', 7))!.name)
-        .toBe('Beast Boost');
-    expect(await Abilities.getAbility('Shield Dust', 3))
-        .toEqual(await Abilities.getAbility('Shield Dust', 4));
-    expect(await Abilities.getAbility('Lightning Rod', 3))
-        .not.toEqual(await Abilities.getAbility('Lightning Rod', 4));
+    expect(await Abilities.get('Beast Boost', 6)).not.toBeDefined();
+    expect((await Abilities.get('Beast Boost', 7))!.name).toBe('Beast Boost');
+    expect(await Abilities.get('Shield Dust', 3))
+        .toEqual(await Abilities.get('Shield Dust', 4));
+    expect(await Abilities.get('Lightning Rod', 3))
+        .not.toEqual(await Abilities.get('Lightning Rod', 4));
 
-    expect((await Abilities.getAbility('ph'))!.name).toBe('Poison Heal');
-    expect((await Abilities.getAbility('stag'))!.name).toBe('Shadow Tag');
+    expect((await Abilities.get('ph'))!.name).toBe('Poison Heal');
+    expect((await Abilities.get('stag'))!.name).toBe('Shadow Tag');
   });
 
   test('cached', async () => {
-    const a = Abilities.getAbility('Mummy', 6);
-    const b = Abilities.getAbility('Mummy', 6);
-    const c = Abilities.getAbility('Mummy');
+    const a = Abilities.get('Mummy', 6);
+    const b = Abilities.get('Mummy', 6);
+    const c = Abilities.get('Mummy');
 
     expect(b).toBe(a);
     expect(c).not.toBe(a);

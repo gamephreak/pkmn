@@ -51,10 +51,10 @@ export class Species {
   }
 
   @cache
-  static async getSpeciesName(s: ID|string, gen: Generation = CURRENT):
+  static async getName(s: ID|string, gen: Generation = CURRENT):
       Promise<string|undefined> {
     const id = toID(s);
-    const species = await Species.getSpecies(id);
+    const species = await Species.get(id);
     if (!species) return undefined;
     if (species.cosmeticForms && species.cosmeticForms.indexOf(id) >= 0) {
       const cosmeticForm = id.slice(species.name.length);
@@ -67,7 +67,7 @@ export class Species {
   }
 
   @cache
-  static async getSpecies(s: ID|string, gen: Generation = CURRENT):
+  static async get(s: ID|string, gen: Generation = CURRENT):
       Promise<Species|undefined> {
     let id = toID(s);
     if (id === 'nidoran' && s.slice(-1) === '♀') {
@@ -79,7 +79,7 @@ export class Species {
     const data = await Species.forGen(gen);
 
     // BUG: Handle Rockruff-Dusk and other event pokemon?
-    let alias = await Aliases.lookup(id);
+    let alias = await Aliases.get(id);
     if (alias) return data[toID(alias)];
 
     let species = data[id];
