@@ -11,7 +11,7 @@ const STATUSES: Readonly<{[s in Status]: string}> = {
 
 export class Statuses {
   // istanbul ignore next
-  private constructor() {}
+  protected constructor() {}
 
   static toString(s: Status|''|undefined): string {
     return s ? STATUSES[s] : 'Healthy';

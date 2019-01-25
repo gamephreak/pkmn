@@ -23,7 +23,7 @@ const ABILITIES: Readonly<Array<Promise<DataTable<Ability>>>> =
 
 export class Abilities {
   // istanbul ignore next
-  private constructor() {}
+  protected constructor() {}
 
   static forGen(gen: Generation): Promise<DataTable<Ability>> {
     return ABILITIES[gen - 1];

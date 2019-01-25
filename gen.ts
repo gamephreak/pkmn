@@ -55,7 +55,7 @@ const LOOKUP: Readonly<{[id: string]: Generation}> = {
 
 export class Generations {
   // istanbul ignore next
-  private constructor() {}
+  protected constructor() {}
 
   static toString(gen: Generation): string {
     return NAMES[gen - 1];

@@ -71,7 +71,7 @@ export class Team {
 
 export class Teams {
   // istanbul ignore next
-  private constructor() {}
+  protected constructor() {}
 
   static async packTeam(team: Team, gen?: Generation): Promise<string> {
     let buf = '';

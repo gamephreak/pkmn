@@ -30,7 +30,7 @@ type WriteableSet =
 
 export class Sets {
   // istanbul ignore next
-  private constructor() {}
+  protected constructor() {}
 
   static async pack(s: PokemonSet, gen?: Generation): Promise<string> {
     return Sets.packSet(s, '', gen);

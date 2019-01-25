@@ -154,7 +154,7 @@ const MOVES: Readonly<Array<Promise<DataTable<Move>>>> =
 
 export class Moves {
   // istanbul ignore next
-  private constructor() {}
+  protected constructor() {}
 
   static forGen(gen: Generation): Promise<DataTable<Move>> {
     return MOVES[gen - 1];

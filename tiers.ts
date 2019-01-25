@@ -173,7 +173,7 @@ const ALLOWED: Readonly<{[tier in Tier]: Readonly<{[tier in Tier]?: 1}>}> = {
 
 export class Tiers {
   // istanbul ignore next
-  private constructor() {}
+  protected constructor() {}
 
   static fromString(t: string): Tier|undefined {
     return TIERS[toID(t)];

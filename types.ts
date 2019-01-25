@@ -113,7 +113,7 @@ const TYPE_CHARTS: Readonly<Array<Promise<TypeChart>>> =
 
 export class Types {
   // istanbul ignore next
-  private constructor() {}
+  protected constructor() {}
 
   static get(gen: Generation = CURRENT): Promise<TypeChart> {
     return TYPE_CHARTS[gen - 1];

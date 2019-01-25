@@ -93,7 +93,7 @@ const DISPLAY: Readonly<{[stat: string]: Readonly<[string, string]>}> = {
 
 export class Stats {
   // istanbul ignore next
-  private constructor() {}
+  protected constructor() {}
 
   static calc(
       stat: Stat, base: number, iv: number, ev: number, level: number,
