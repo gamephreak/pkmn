@@ -115,7 +115,8 @@ export class Types {
   // istanbul ignore next
   protected constructor() {}
 
-  static get(gen: Generation = CURRENT): Promise<TypeChart> {
+  static get(/* istanbul ignore next */ gen: Generation = CURRENT):
+      Promise<TypeChart> {
     return TYPE_CHARTS[gen - 1];
   }
 

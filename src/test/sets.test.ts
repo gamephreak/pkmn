@@ -106,7 +106,7 @@ describe('Sets', () => {
         - Fake Move 1
         - Fake Move 2
         - Fake Move 3
-        - Fake Move 4`;
+        - Hidden Power [Fake]`;
 
       expect(await Sets.exportSet((await Sets.importSet(imported(fake)))!))
           .toEqual(exported(fake));

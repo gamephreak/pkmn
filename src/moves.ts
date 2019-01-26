@@ -161,7 +161,8 @@ export class Moves {
   }
 
   @cache
-  static async get(m: ID|string, gen: Generation = CURRENT):
+  static async get(
+      m: ID|string, /* istanbul ignore next */ gen: Generation = CURRENT):
       Promise<Move|undefined> {
     let id = toID(m);
     const moves = await Moves.forGen(gen);

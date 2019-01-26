@@ -106,12 +106,14 @@ export class Teams {
     return new Team(team);
   }
 
-  static importTeam(buf: string, gen?: Generation): Promise<Team|undefined> {
-    // TODO use same pattern as _import but for team
-    return Promise.resolve(undefined);
+  static async importTeam(buf: string, gen?: Generation):
+      Promise<Team|undefined> {
+    const teams = await Teams.importTeams(buf, gen, true);
+    return teams.length ? teams[0] : undefined;
   }
 
-  static async importTeams(buf: string, gen?: Generation): Promise<Team[]> {
+  static async importTeams(buf: string, gen?: Generation, one?: boolean):
+      Promise<Readonly<Team[]>> {
     const lines = buf.split('\n');
     if (lines.length === 1 || (lines.length === 2 && !lines[1])) {
       const team: Team|undefined = await Teams.unpackTeam(lines[0], gen);
@@ -126,6 +128,7 @@ export class Teams {
       let line = lines[i].trim();
 
       if (line.substr(0, 3) === '===') {
+        if (one && teams.length) return teams;
         team = [];
         line = line.substr(3, line.length - 6).trim();
         let format = 'gen' + (gen || CURRENT);
@@ -160,6 +163,12 @@ export class Teams {
       }
     }
 
+    // If we made it here we read in some sets but there was no '===' marker
+    // in the file so we assume only one (unnamed) team.
+    if (team.length && !teams.length) {
+      teams.push(new Team(team));
+    }
+
     return teams;
   }
 
@@ -182,7 +191,7 @@ export class Teams {
     return Teams.exportTeams(teams, fast, gen);
   }
 
-  static fromString(str: string, gen?: Generation): Promise<Team[]|undefined> {
+  static fromString(str: string, gen?: Generation): Promise<Readonly<Team[]>> {
     return Teams.importTeams(str, gen);
   }
 }

@@ -30,7 +30,8 @@ export class Abilities {
   }
 
   @cache
-  static async get(a: ID|string, gen: Generation = CURRENT):
+  static async get(
+      a: ID|string, /* istanbul ignore next */ gen: Generation = CURRENT):
       Promise<Ability|undefined> {
     const id = toID(a);
     const abilities = await Abilities.forGen(gen);

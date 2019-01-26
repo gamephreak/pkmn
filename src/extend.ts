@@ -25,12 +25,13 @@ function isWindow(obj: any) {
 }
 
 function getType(obj: any) {
-  // NOTE: Can't actually happen in this code.
-  // if (obj == null) {
-  //  return String(obj);
-  //}
+  // istanbul ignore if: Can't actually happen in this code.
+  if (obj == null) {
+    return String(obj);
+  }
   return typeof obj === 'object' || typeof obj === 'function' ?
-      class2Type[coreToString.call(obj)] || 'object' :
+      class2Type[coreToString.call(obj)] ||
+          /* istanbul ignore next */ 'object' :
       typeof obj;
 }
 
@@ -39,6 +40,7 @@ function isPlainObject(obj: any) {
     return false;
   }
 
+  // istanbul ignore next
   try {
     if (obj.constructor &&
         !coreHasOwn.call(obj.constructor.prototype, 'isPrototypeOf')) {
@@ -79,6 +81,7 @@ export function extend(this: any, ...args: any[]) {
         src = target[name];
         copy = options[name];
 
+        // istanbul ignore if
         if (target === copy) {
           continue;
         }
@@ -95,7 +98,7 @@ export function extend(this: any, ...args: any[]) {
 
           target[name] = extend(deep, clone, copy);
 
-        } else if (copy !== undefined) {
+        } else /* istanbul ignore next */ if (copy !== undefined) {
           target[name] = copy;
         }
       }

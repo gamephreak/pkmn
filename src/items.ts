@@ -41,7 +41,8 @@ export class Items {
   }
 
   @cache
-  static async get(i: ID|string, gen: Generation = CURRENT):
+  static async get(
+      i: ID|string, /* istanbul ignore next */ gen: Generation = CURRENT):
       Promise<Item|undefined> {
     const id = toID(i);
     const items = await Items.forGen(gen);

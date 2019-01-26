@@ -51,13 +51,15 @@ export class Species {
   }
 
   @cache
-  static async getName(s: ID|string, gen: Generation = CURRENT):
+  static async getName(
+      s: ID|string, /* istanbul ignore next */ gen: Generation = CURRENT):
       Promise<string|undefined> {
     const id = toID(s);
     const species = await Species.get(id);
     if (!species) return undefined;
     if (species.cosmeticForms && species.cosmeticForms.indexOf(id) >= 0) {
       const cosmeticForm = id.slice(species.name.length);
+      // istanbul ignore else
       if (cosmeticForm) {
         return species.name + '-' + cosmeticForm[0].toUpperCase() +
             cosmeticForm.slice(1);
@@ -67,7 +69,8 @@ export class Species {
   }
 
   @cache
-  static async get(s: ID|string, gen: Generation = CURRENT):
+  static async get(
+      s: ID|string, /* istanbul ignore next */ gen: Generation = CURRENT):
       Promise<Species|undefined> {
     let id = toID(s);
     if (id === 'nidoran' && s.slice(-1) === '♀') {
