@@ -76,7 +76,8 @@ export class Teams {
   static async packTeam(team: Team, gen?: Generation): Promise<string> {
     let buf = '';
     for (const s of team.team) {
-      buf += await Sets.packSet(s, buf, gen);
+      if (buf) buf += ']';
+      buf += await Sets.packSet(s, gen);
     }
     return buf;
   }
@@ -199,6 +200,7 @@ export class Teams {
 async function unpackLine(
     line: string, gen?: Generation): Promise<Team|undefined> {
   const pipeIndex = line.indexOf('|');
+  // istanbul ignore if: can't happen
   if (pipeIndex < 0) return undefined;
 
   let bracketIndex = line.indexOf(']');

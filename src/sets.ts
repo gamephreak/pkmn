@@ -33,13 +33,11 @@ export class Sets {
   protected constructor() {}
 
   static async pack(s: PokemonSet, gen?: Generation): Promise<string> {
-    return Sets.packSet(s, '', gen);
+    return Sets.packSet(s, gen);
   }
 
-  static async packSet(s: PokemonSet, buf = '', gen?: Generation):
-      Promise<string> {
-    if (buf) buf += ']';
-
+  static async packSet(s: PokemonSet, gen?: Generation): Promise<string> {
+    let buf = '';
     // name
     buf += (s.name || s.species);
 

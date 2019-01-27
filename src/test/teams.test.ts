@@ -21,18 +21,27 @@ function readTeam(file: string) {
 // const GEN1: string = readTeam('gen1ou-cloyster');
 
 
-// TODO
 describe('Team', () => {
   test('importTeam + exportTeam', async () => {
     const team = readTeam('gen7ou-bo');
-    expect(await (await Team.import(team))!.export()).toEqual(team);
+    expect(await (await Team.fromString(team))!.toString()).toEqual(team);
   });
 
-  test.skip('pack + unpack', () => {});
-  test.skip('toJSON', () => {});
+  test('pack + unpack', async () => {
+    const team = readTeam('gen7ou-bo');
+    const u = (await Team.unpack(await (await Team.import(team))!.pack()))!;
+    expect(await u.export()).toEqual(team);
+  });
+
+  test('toJSON + fromJSON', async () => {
+    const team = readTeam('gen7ou-bo');
+    const fj = (await Teams.unpackTeam((await Team.import(team))!.toJSON()))!;
+    expect(await fj.export()).toEqual(team);
+
+    expect(Team.fromJSON('{"foo": "bar"}')).not.toBeDefined();
+  });
 });
 
-// TODO
 describe('Teams', () => {
   test('importTeams + exportTeams', async () => {
     const teams = readTeam('teams');
@@ -50,5 +59,29 @@ describe('Teams', () => {
     expect(imported[1].folder).toBe('RBY');
 
     expect(await Teams.toString(imported)).toEqual(teams);
+  });
+
+  test('including packed', async () => {
+    const raw = readTeam('gen7ou-bo');
+    const teams = await Teams.importTeams(readTeam('teams'));
+    const team = (await Team.import(raw))!;
+    const both = 'gen1ou]RBY/Cloyster|' + (await teams[1].pack()) + '\n' +
+        (await Teams.exportTeams([teams[0]])) + '|' + (await team.pack());
+    const imported = await Teams.importTeams(both);
+    expect(imported.length).toBe(3);
+
+    expect(imported[0].team.length).toBe(6);
+    expect(imported[1].team.length).toBe(6);
+    expect(imported[2].team.length).toBe(6);
+
+    expect(imported[0].gen()).toBe(1);
+    expect(imported[0].tier()).toBe('OU');
+    expect(imported[0].name).toBe('Cloyster');
+    expect(imported[0].folder).toBe('RBY');
+
+    expect(await imported[2].export()).toBe(raw);
+
+    const again = (await Teams.importTeams(await team.pack()));
+    expect(await again[0].export()).toBe(raw);
   });
 });
