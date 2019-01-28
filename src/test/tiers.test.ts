@@ -18,11 +18,11 @@ describe('Tiers', () => {
     expect(Tiers.isNonstandard('CAP NFE')).toBe(true);
   });
 
-  test('isAllowed', async () => {
-    expect(Tiers.isAllowed((await Species.get('Gengar'))!, 'OU')).toBe(true);
-    expect(Tiers.isAllowed((await Species.get('Ekans'))!, 'UU')).toBe(true);
-    expect(Tiers.isAllowed((await Species.get('Kyogre'))!, 'PU')).toBe(false);
-    expect(Tiers.isAllowed((await Species.get('Syclar'))!, 'CAP')).toBe(true);
-    expect(Tiers.isAllowed((await Species.get('Voodoom'))!, 'OU')).toBe(false);
+  test('isAllowed', () => {
+    expect(Tiers.isAllowed(Species.get('Gengar')!, 'OU')).toBe(true);
+    expect(Tiers.isAllowed(Species.get('Ekans')!, 'UU')).toBe(true);
+    expect(Tiers.isAllowed(Species.get('Kyogre')!, 'PU')).toBe(false);
+    expect(Tiers.isAllowed(Species.get('Syclar')!, 'CAP')).toBe(true);
+    expect(Tiers.isAllowed(Species.get('Voodoom')!, 'OU')).toBe(false);
   });
 });

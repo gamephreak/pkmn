@@ -1,9 +1,9 @@
 import {Aliases} from '../aliases';
 
 describe('Aliases', () => {
-  test('get', async () => {
-    expect(await Aliases.get('foo')).not.toBeDefined();
-    expect(await Aliases.get('Nattorei')).toBe('Ferrothorn');
-    expect(await Aliases.get('eq')).toBe('Earthquake');
+  test('get', () => {
+    expect(Aliases.get('foo')).not.toBeDefined();
+    expect(Aliases.get('Nattorei')).toBe('Ferrothorn');
+    expect(Aliases.get('eq')).toBe('Earthquake');
   });
 });

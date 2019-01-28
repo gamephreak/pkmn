@@ -12,9 +12,11 @@ Pokémon. pkmn exposes curated data and methods (munged using
 
 pkmn is designed to support all generations of Pokémon, with later generations
 implemented as patches to the earlier ones. If your code does not require
-functionality from the latest generations you will not be forced to load all of
-the extra data. pkmn makes heavy use of `async` and `await` to defer loading of
-expensive data files until strictly required.
+functionality from the latest generations and you are worried about being
+forced to load extra data, please consider the
+**[pkmn-async]**(https://github.com/gamephreak/pkmn/tree/async) branch which
+makes heavy use of `async` and `await` to defer loading of expensive data files
+until strictly required.
 
 ## Sources
 

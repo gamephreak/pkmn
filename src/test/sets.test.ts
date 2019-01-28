@@ -17,7 +17,7 @@ function exported(s: string) {
 
 describe('Sets', () => {
   describe('importSet + exportSet', () => {
-    test('blissey', async () => {
+    test('blissey', () => {
       const blissey = `
         Blissey @ Leftovers
         Ability: Natural Cure
@@ -28,11 +28,11 @@ describe('Sets', () => {
         - Protect
         - Seismic Toss`;
 
-      expect(await Sets.toString((await Sets.fromString(imported(blissey)))!))
+      expect(Sets.toString(Sets.fromString(imported(blissey))!))
           .toEqual(exported(blissey));
     });
 
-    test('marowak (gen 2)', async () => {
+    test('marowak (gen 2)', () => {
       const marowakIn = imported(`
         Marowak (M) @ Leftovers
         - Earthquake
@@ -49,12 +49,11 @@ describe('Sets', () => {
         - Frustration
         - Swords Dance`);
 
-      expect(
-          await Sets.exportSet((await Sets.importSet(marowakIn, 2))!, false, 2))
+      expect(Sets.exportSet(Sets.importSet(marowakIn, 2)!, false, 2))
           .toEqual(marowakOut);
     });
 
-    test('magnezone', async () => {
+    test('magnezone', () => {
       const magnezoneIn = imported(`
         Maggy (Magnezone) @ No Item
         Trait: Sturdy
@@ -83,11 +82,11 @@ describe('Sets', () => {
         - Hidden Power [Flying]
         - Volt Switch`);
 
-      expect(await Sets.exportSet((await Sets.importSet(magnezoneIn))!))
+      expect(Sets.exportSet(Sets.importSet(magnezoneIn)!))
           .toEqual(magnezoneOut);
     });
 
-    test('tauros (rby)', async () => {
+    test('tauros (rby)', () => {
       const tauros = `
         Tauros
         - Blizzard
@@ -95,11 +94,11 @@ describe('Sets', () => {
         - Earthquake
         - Hyper Beam`;
 
-      expect(await Sets.exportSet((await Sets.importSet(imported(tauros)))!))
+      expect(Sets.exportSet(Sets.importSet(imported(tauros))!))
           .toEqual(exported(tauros));
     });
 
-    test('fake', async () => {
+    test('fake', () => {
       const fake = `
         Fakey (Fake) @ Fake
         Ability: Fake
@@ -108,17 +107,17 @@ describe('Sets', () => {
         - Fake Move 3
         - Hidden Power [Fake]`;
 
-      expect(await Sets.exportSet((await Sets.importSet(imported(fake)))!))
+      expect(Sets.exportSet(Sets.importSet(imported(fake))!))
           .toEqual(exported(fake));
     });
 
-    test('nothing', async () => {
-      expect(await Sets.importSet('')).not.toBeDefined();
+    test('nothing', () => {
+      expect(Sets.importSet('')).not.toBeDefined();
     });
   });
 
   describe('pack + unpack', () => {
-    test('m-alakazam', async () => {
+    test('m-alakazam', () => {
       const malakazam = `
         Alakazam-Mega (F) @ Alakazite
         Ability: Magic Guard
@@ -130,12 +129,11 @@ describe('Sets', () => {
         - Shadow Ball
         - Recover`;
 
-      const u = (await Sets.unpack(
-          await Sets.pack((await Sets.importSet(imported(malakazam)))!)))!;
-      expect(await Sets.exportSet(u)).toEqual(exported(malakazam));
+      const u = Sets.unpack(Sets.pack(Sets.importSet(imported(malakazam))!))!;
+      expect(Sets.exportSet(u)).toEqual(exported(malakazam));
     });
 
-    test('tangrowth (packed in)', async () => {
+    test('tangrowth (packed in)', () => {
       const tangrowthIn = 'Tangrowth||assaultvest|H|gigadrain,knockoff' +
           ',powerwhip,earthquake|Sassy|248,,8,,252,||,30,30,,,|||,ice,';
       const tangrowthOut = exported(`
@@ -149,12 +147,12 @@ describe('Sets', () => {
         - Power Whip
         - Earthquake`);
 
-      const u = (await Sets.unpack(tangrowthIn))!;
-      expect((await Sets.unpack(await Sets.pack(u)))!).toEqual(u);
-      expect(await Sets.exportSet(u)).toEqual(tangrowthOut);
+      const u = Sets.unpack(tangrowthIn)!;
+      expect(Sets.unpack(Sets.pack(u))!).toEqual(u);
+      expect(Sets.exportSet(u)).toEqual(tangrowthOut);
     });
 
-    test('magnezone', async () => {
+    test('magnezone', () => {
       const magnezoneIn = imported(`
         Maggy (Magnezone) @ No Item
         Trait: Sturdy
@@ -183,13 +181,12 @@ describe('Sets', () => {
         - Hidden Power [Flying]
         - Volt Switch`);
 
-      const u = (await _unpack(
-          (await Sets.pack((await Sets.importSet(magnezoneIn, 7))!)) +
-          ']'))!.set!;
-      expect(await Sets.exportSet(u, false, 7)).toEqual(magnezoneOut);
+      const u =
+          _unpack((Sets.pack(Sets.importSet(magnezoneIn, 7)!)) + ']')!.set!;
+      expect(Sets.exportSet(u, false, 7)).toEqual(magnezoneOut);
     });
 
-    test('tauros', async () => {
+    test('tauros', () => {
       const taurosIn = imported(`
         Tauros
         - Blizzard
@@ -205,12 +202,11 @@ describe('Sets', () => {
         - Earthquake
         - Hyper Beam`);
 
-      const u = (await Sets.unpack(
-          await Sets.pack((await Sets.importSet(taurosIn, 1))!)))!;
-      expect(await Sets.exportSet(u)).toEqual(taurosOut);
+      const u = Sets.unpack(Sets.pack(Sets.importSet(taurosIn, 1)!))!;
+      expect(Sets.exportSet(u)).toEqual(taurosOut);
     });
 
-    test('blissey (after unpack)', async () => {
+    test('blissey (after unpack)', () => {
       const blisseyIn = imported(`
         Blissey @ Leftovers
         Ability: Natural Cure
@@ -230,12 +226,11 @@ describe('Sets', () => {
         - protect
         - seismictoss`);
 
-      const u = (await Sets.unpack(
-          await Sets.pack((await _import(blisseyIn.split('\n')))!.set!)))!;
-      expect(await Sets.exportSet(u, true)).toEqual(blisseyOut);
+      const u = Sets.unpack(Sets.pack(_import(blisseyIn.split('\n'))!.set!))!;
+      expect(Sets.exportSet(u, true)).toEqual(blisseyOut);
     });
 
-    test('fake', async () => {
+    test('fake', () => {
       const fakeIn = imported(`
         Fakey (Fake) @ Fake
         Ability: Fake
@@ -251,50 +246,47 @@ describe('Sets', () => {
         - fakemove3
         - fakemove4`);
 
-      // clang-format off
-      const u = (await Sets.unpack(
-          await Sets.pack((await Sets.importSet(fakeIn))!)))!;
-      // clang-format on
-      expect(await Sets.exportSet(u)).toEqual(fakeOut);
+      const u = Sets.unpack(Sets.pack(Sets.importSet(fakeIn)!))!;
+      expect(Sets.exportSet(u)).toEqual(fakeOut);
     });
 
-    test('partial', async () => {
+    test('partial', () => {
       let p = '';
-      expect(await Sets.unpack(p)).not.toBeDefined();
+      expect(Sets.unpack(p)).not.toBeDefined();
       p += 'Tangrowth';
-      expect(await Sets.unpack(p)).not.toBeDefined();
+      expect(Sets.unpack(p)).not.toBeDefined();
       p += '|';
-      expect(await Sets.unpack(p)).not.toBeDefined();
+      expect(Sets.unpack(p)).not.toBeDefined();
       p += '|assaultvest';
-      expect(await Sets.unpack(p)).not.toBeDefined();
+      expect(Sets.unpack(p)).not.toBeDefined();
       p += '|H';
-      expect(await Sets.unpack(p)).not.toBeDefined();
+      expect(Sets.unpack(p)).not.toBeDefined();
       p += '|gigadrain,knockoff,powerwhip,earthquake';
-      expect(await Sets.unpack(p)).not.toBeDefined();
+      expect(Sets.unpack(p)).not.toBeDefined();
       p += '|Sassy';
-      expect(await Sets.unpack(p)).not.toBeDefined();
+      expect(Sets.unpack(p)).not.toBeDefined();
       p += '|248';
-      expect(await Sets.unpack(p + '|')).not.toBeDefined();
+      expect(Sets.unpack(p + '|')).not.toBeDefined();
       p += ',,8,,252,';
-      expect(await Sets.unpack(p)).not.toBeDefined();
+      expect(Sets.unpack(p)).not.toBeDefined();
       p += '|';
-      expect(await Sets.unpack(p)).not.toBeDefined();
+      expect(Sets.unpack(p)).not.toBeDefined();
       p += '|,30,30,,,';
-      expect(await Sets.unpack(p)).not.toBeDefined();
+      expect(Sets.unpack(p)).not.toBeDefined();
       p += '|';
-      expect(await Sets.unpack(p)).not.toBeDefined();
+      expect(Sets.unpack(p)).not.toBeDefined();
       p += '|';
-      expect(await Sets.unpack(p)).not.toBeDefined();
+      expect(Sets.unpack(p)).not.toBeDefined();
       p += '|,ice,';
-      expect(await Sets.unpack(p)).toBeDefined();
+      expect(Sets.unpack(p)).toBeDefined();
     });
 
-    test('bad types', async () => {
+    test('bad types', () => {
       // @ts-ignore
       let suicune: PokemonSet = {name: 'Suicune', pokeball: 'Cherish Ball'};
-      const u = (await Sets.unpack(await Sets.pack(suicune)))!;
-      expect(await Sets.exportSet(u, true)).toEqual(exported('Suicune'));
-      expect(await Sets.exportSet(suicune)).toEqual(exported('Suicune'));
+      const u = Sets.unpack(Sets.pack(suicune))!;
+      expect(Sets.exportSet(u, true)).toEqual(exported('Suicune'));
+      expect(Sets.exportSet(suicune)).toEqual(exported('Suicune'));
 
       // @ts-ignore
       suicune = {
@@ -302,20 +294,20 @@ describe('Sets', () => {
         ivs: {hp: undefined},
         moves: ['Hidden Power Bug']
       };
-      expect(await Sets.exportSet(suicune))
+      expect(Sets.exportSet(suicune))
           .toEqual(exported('Suicune\n- Hidden Power [Bug]'));
 
       suicune = {
         name: 'Suicune',
         moves: ['Hidden Power [Bug]', 'hiddenpowerdark']
       };
-      expect(await Sets.exportSet(suicune, true)).toEqual(exported(`Suicune
+      expect(Sets.exportSet(suicune, true)).toEqual(exported(`Suicune
         - Hidden Power [Bug]
         - Hidden Power [Dark]`));
     });
   });
 
-  test('weird import', async () => {
+  test('weird import', () => {
     const weirdIn = imported(`
         @ Leftovers
         Ability: Illuminate
@@ -327,11 +319,10 @@ describe('Sets', () => {
         @ Leftovers
         Ability: Illuminate`);
 
-    expect(await Sets.exportSet((await Sets.importSet(weirdIn))!))
-        .toEqual(weirdOut);
+    expect(Sets.exportSet(Sets.importSet(weirdIn)!)).toEqual(weirdOut);
   });
 
-  test('toJSON + fromJSON', async () => {
+  test('toJSON + fromJSON', () => {
     const malakazam = `
       Alakazam-Mega (F) @ Alakazite
       Ability: Magic Guard
@@ -343,9 +334,9 @@ describe('Sets', () => {
       - Shadow Ball
       - Recover`;
 
-    const fj = Sets.fromJSON(
-        Sets.toJSON((await Sets.importSet(imported(malakazam)))!))!;
-    expect(await Sets.exportSet(fj)).toEqual(exported(malakazam));
+    const fj =
+        Sets.fromJSON(Sets.toJSON(Sets.importSet(imported(malakazam))!))!;
+    expect(Sets.exportSet(fj)).toEqual(exported(malakazam));
 
     expect(Sets.fromJSON('foo')).not.toBeDefined();
   });

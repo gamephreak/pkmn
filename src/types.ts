@@ -1,4 +1,7 @@
 import {patch} from './data';
+import * as gsc from './data/gsc/types.json';
+import * as rby from './data/rby/types.json';
+import * as xy from './data/xy/types.json';
 import {CURRENT, Generation} from './gen';
 import {Category} from './moves';
 import {Stat, Stats, StatsTable} from './stats';
@@ -10,14 +13,13 @@ export type Type = '???'|'Normal'|'Grass'|'Fire'|'Water'|'Electric'|'Ice'|
 export type TypeChart =
     Readonly<{[type in Type]?: Readonly<{[type in Type]?: number}>}>;
 
-const RBY: Promise<TypeChart> =
-    patch(Promise.resolve({}), import('./data/rby/types.json'));
-const GSC: Promise<TypeChart> = patch(RBY, import('./data/gsc/types.json'));
-const ADV: Promise<TypeChart> = GSC;
-const DPP: Promise<TypeChart> = GSC;
-const BW: Promise<TypeChart> = GSC;
-const XY: Promise<TypeChart> = patch(BW, import('./data/xy/types.json'));
-const SM: Promise<TypeChart> = XY;
+const RBY: TypeChart = rby;
+const GSC: TypeChart = patch(RBY, gsc);
+const ADV: TypeChart = GSC;
+const DPP: TypeChart = GSC;
+const BW: TypeChart = GSC;
+const XY: TypeChart = patch(BW, xy);
+const SM: TypeChart = XY;
 
 const SPECIAL: {[type in Type]?: 1} = {
   'Grass': 1,
@@ -108,18 +110,17 @@ const HIDDEN_POWERS: Readonly<{
   },
 };
 
-const TYPE_CHARTS: Readonly<Array<Promise<TypeChart>>> =
-    [RBY, GSC, ADV, DPP, BW, XY, SM];
+const TYPE_CHARTS: Readonly<TypeChart[]> = [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export class Types {
   // istanbul ignore next: constructor
   protected constructor() {}
 
-  static get(gen: Generation = CURRENT): Promise<TypeChart> {
+  static get(gen: Generation = CURRENT): TypeChart {
     return TYPE_CHARTS[gen - 1];
   }
 
-  static chart(gen: Generation = CURRENT): Promise<TypeChart> {
+  static chart(gen: Generation = CURRENT): TypeChart {
     return Types.get(gen);
   }
 
