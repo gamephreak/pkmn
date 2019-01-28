@@ -92,7 +92,6 @@ interface Flags {
 }
 
 interface SelfEffect {
-  readonly chance?: number;
   readonly sideCondition?: string;
   readonly volatileStatus?: string;
   readonly boosts?: Partial<BoostsTable>;
@@ -104,11 +103,8 @@ interface SecondaryEffect {
   readonly self?: SelfEffect;
   readonly status?: Status;
   readonly volatileStatus?: string;
-  readonly dustproof?: boolean;
-  readonly kingsrock?: boolean;
 }
 
-// TODO: verify through pkmnx testing!
 export interface Move extends Data {
   readonly basePower?: number;
   readonly type: Type;

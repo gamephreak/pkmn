@@ -44,11 +44,25 @@
   "cometpunch": {
     "zMovePower": 100
   },
+  "confuseray": {
+    "zMoveBoosts": {
+      "spa": 1
+    }
+  },
   "confusion": {
     "zMovePower": 100
   },
   "constrict": {
     "zMovePower": 100
+  },
+  "conversion": {
+    "zMoveBoosts": {
+      "atk": 1,
+      "def": 1,
+      "spa": 1,
+      "spd": 1,
+      "spe": 1
+    }
   },
   "counter": {
     "desc": "Deals damage to the last opposing Pokemon to hit the user with a physical attack this turn equal to twice the HP lost by the user from that attack. If the user did not lose HP from the attack, this move deals 1 HP of damage instead. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. Only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's physical attack this turn.",
@@ -59,6 +73,11 @@
   },
   "cut": {
     "zMovePower": 100
+  },
+  "defensecurl": {
+    "zMoveBoosts": {
+      "accuracy": 1
+    }
   },
   "dig": {
     "zMovePower": 160
@@ -111,8 +130,18 @@
   "flamethrower": {
     "zMovePower": 175
   },
+  "flash": {
+    "zMoveBoosts": {
+      "evasion": 1
+    }
+  },
   "fly": {
     "zMovePower": 175
+  },
+  "focusenergy": {
+    "zMoveBoosts": {
+      "accuracy": 1
+    }
   },
   "furyattack": {
     "zMovePower": 100
@@ -120,11 +149,31 @@
   "furyswipes": {
     "zMovePower": 100
   },
+  "glare": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
+  "growl": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
+  "growth": {
+    "zMoveBoosts": {
+      "spa": 1
+    }
+  },
   "guillotine": {
     "zMovePower": 180
   },
   "gust": {
     "zMovePower": 100
+  },
+  "harden": {
+    "zMoveBoosts": {
+      "def": 1
+    }
   },
   "headbutt": {
     "zMovePower": 140
@@ -147,6 +196,11 @@
   "hyperfang": {
     "zMovePower": 160
   },
+  "hypnosis": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
   "icebeam": {
     "zMovePower": 175
   },
@@ -159,19 +213,42 @@
   "karatechop": {
     "zMovePower": 100
   },
+  "kinesis": {
+    "zMoveBoosts": {
+      "evasion": 1
+    }
+  },
   "leechlife": {
     "pp": 10,
     "basePower": 80,
     "zMovePower": 160
   },
+  "leer": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
+  },
   "lick": {
     "zMovePower": 100
   },
   "lightscreen": {
-    "desc": "For 5 turns, the user and its party members take 0.5x damage from special attacks, or 0.66x damage if in a Double Battle. Damage is not reduced further with Aurora Veil. Critical hits ignore this effect. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Lasts for 8 turns if the user is holding Light Clay. Fails if the effect is already active on the user's side."
+    "desc": "For 5 turns, the user and its party members take 0.5x damage from special attacks, or 0.66x damage if in a Double Battle. Damage is not reduced further with Aurora Veil. Critical hits ignore this effect. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Lasts for 8 turns if the user is holding Light Clay. Fails if the effect is already active on the user's side.",
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
+  "lovelykiss": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
   },
   "lowkick": {
     "zMovePower": 160
+  },
+  "meditate": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
   },
   "megadrain": {
     "zMovePower": 120
@@ -186,10 +263,18 @@
     "desc": "A random move is selected for use, other than After You, Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Celebrate, Chatter, Copycat, Counter, Covet, Crafty Shield, Destiny Bond, Detect, Diamond Storm, Endure, Feint, Fleur Cannon, Focus Punch, Follow Me, Freeze Shock, Helping Hand, Hold Hands, Hyperspace Hole, Ice Burn, Instruct, King's Shield, Light of Ruin, Mat Block, Me First, Metronome, Mimic, Mind Blown, Mirror Coat, Mirror Move, Nature Power, Photon Geyser, Plasma Fists, Protect, Quash, Quick Guard, Rage Powder, Relic Song, Secret Sword, Shell Trap, Sketch, Sleep Talk, Snarl, Snatch, Snore, Spectral Thief, Spiky Shield, Spotlight, Steam Eruption, Struggle, Switcheroo, Techno Blast, Thief, Thousand Arrows, Thousand Waves, Transform, Trick, V-create, or Wide Guard."
   },
   "mimic": {
-    "desc": "While the user remains active, this move is replaced by the last move used by the target. The copied move has the maximum PP for that move. Fails if the target has not made a move, if the user has Transformed, if the user already knows the move, or if the move is Chatter, Mimic, Sketch, Struggle, Transform, or any Z-Move."
+    "desc": "While the user remains active, this move is replaced by the last move used by the target. The copied move has the maximum PP for that move. Fails if the target has not made a move, if the user has Transformed, if the user already knows the move, or if the move is Chatter, Mimic, Sketch, Struggle, Transform, or any Z-Move.",
+    "zMoveBoosts": {
+      "accuracy": 1
+    }
   },
   "minimize": {
     "desc": "Raises the user's evasiveness by 2 stages. Whether or not the user's evasiveness was changed, Body Slam, Dragon Rush, Flying Press, Heat Crash, Heavy Slam, Malicious Moonsault, Steamroller, and Stomp will not check accuracy and have their damage doubled if used against the user while it is active."
+  },
+  "mirrormove": {
+    "zMoveBoosts": {
+      "atk": 2
+    }
   },
   "nightshade": {
     "zMovePower": 100
@@ -206,6 +291,16 @@
   },
   "pinmissile": {
     "zMovePower": 140
+  },
+  "poisongas": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
+  "poisonpowder": {
+    "zMoveBoosts": {
+      "def": 1
+    }
   },
   "poisonsting": {
     "zMovePower": 100
@@ -235,7 +330,15 @@
     "zMovePower": 160
   },
   "reflect": {
-    "desc": "For 5 turns, the user and its party members take 0.5x damage from physical attacks, or 0.66x damage if in a Double Battle. Damage is not reduced further with Aurora Veil. Critical hits ignore this effect. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Lasts for 8 turns if the user is holding Light Clay. Fails if the effect is already active on the user's side."
+    "desc": "For 5 turns, the user and its party members take 0.5x damage from physical attacks, or 0.66x damage if in a Double Battle. Damage is not reduced further with Aurora Veil. Critical hits ignore this effect. It is removed from the user's side if the user or an ally is successfully hit by Brick Break, Psychic Fangs, or Defog. Lasts for 8 turns if the user is holding Light Clay. Fails if the effect is already active on the user's side.",
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
+  "roar": {
+    "zMoveBoosts": {
+      "def": 1
+    }
   },
   "rockslide": {
     "zMovePower": 140
@@ -246,14 +349,34 @@
   "rollingkick": {
     "zMovePower": 120
   },
+  "sandattack": {
+    "zMoveBoosts": {
+      "evasion": 1
+    }
+  },
   "scratch": {
     "zMovePower": 100
+  },
+  "screech": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
   },
   "seismictoss": {
     "zMovePower": 100
   },
   "selfdestruct": {
     "zMovePower": 200
+  },
+  "sharpen": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
+  },
+  "sing": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
   },
   "skullbash": {
     "zMovePower": 195
@@ -267,11 +390,21 @@
   "slash": {
     "zMovePower": 140
   },
+  "sleeppowder": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
   "sludge": {
     "zMovePower": 120
   },
   "smog": {
     "zMovePower": 100
+  },
+  "smokescreen": {
+    "zMoveBoosts": {
+      "evasion": 1
+    }
   },
   "solarbeam": {
     "zMovePower": 190
@@ -282,21 +415,41 @@
   "spikecannon": {
     "zMovePower": 100
   },
+  "splash": {
+    "zMoveBoosts": {
+      "atk": 3
+    }
+  },
   "stomp": {
     "zMovePower": 120
   },
   "strength": {
     "zMovePower": 160
   },
+  "stringshot": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
   "struggle": {
     "desc": "Deals typeless damage to a random opposing Pokemon. If this move was successful, the user loses 1/4 of its maximum HP, rounded half up, and the Rock Head Ability does not prevent this. This move is automatically used if none of the user's known moves can be selected.",
     "zMovePower": 1
+  },
+  "stunspore": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
   },
   "submission": {
     "zMovePower": 160
   },
   "superfang": {
     "zMovePower": 100
+  },
+  "supersonic": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
   },
   "surf": {
     "zMovePower": 175
@@ -307,6 +460,11 @@
   "tackle": {
     "basePower": 40,
     "zMovePower": 100
+  },
+  "tailwhip": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
   },
   "takedown": {
     "zMovePower": 175
@@ -325,10 +483,18 @@
     "zMovePower": 100
   },
   "thunderwave": {
-    "accuracy": 90
+    "accuracy": 90,
+    "zMoveBoosts": {
+      "spd": 1
+    }
   },
   "thunderbolt": {
     "zMovePower": 175
+  },
+  "toxic": {
+    "zMoveBoosts": {
+      "def": 1
+    }
   },
   "triattack": {
     "zMovePower": 160
@@ -348,8 +514,18 @@
   "waterfall": {
     "zMovePower": 160
   },
+  "whirlwind": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
   "wingattack": {
     "zMovePower": 120
+  },
+  "withdraw": {
+    "zMoveBoosts": {
+      "def": 1
+    }
   },
   "wrap": {
     "zMovePower": 100
@@ -366,6 +542,11 @@
   "bonerush": {
     "zMovePower": 140
   },
+  "charm": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
   "crosschop": {
     "zMovePower": 180
   },
@@ -376,7 +557,10 @@
     "desc": "Until the user's next move, if an opposing Pokemon's attack knocks the user out, that Pokemon faints as well, unless the attack was Doom Desire or Future Sight. Fails if the user used this move successfully as its last move, disregarding moves used through the Dancer Ability."
   },
   "detect": {
-    "desc": "The user is protected from most attacks made by other Pokemon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn."
+    "desc": "The user is protected from most attacks made by other Pokemon during this turn. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+    "zMoveBoosts": {
+      "evasion": 1
+    }
   },
   "dragonbreath": {
     "zMovePower": 120
@@ -385,7 +569,10 @@
     "zMovePower": 180
   },
   "encore": {
-    "desc": "For its next 3 turns, the target is forced to repeat its last move used. If the affected move runs out of PP, the effect ends. Fails if the target is already under this effect, if it has not made a move, if the move has 0 PP, or if the move is Assist, Copycat, Encore, Me First, Metronome, Mimic, Mirror Move, Nature Power, Sketch, Sleep Talk, Struggle, Transform, or any Z-Move."
+    "desc": "For its next 3 turns, the target is forced to repeat its last move used. If the affected move runs out of PP, the effect ends. Fails if the target is already under this effect, if it has not made a move, if the move has 0 PP, or if the move is Assist, Copycat, Encore, Me First, Metronome, Mimic, Mirror Move, Nature Power, Sketch, Sleep Talk, Struggle, Transform, or any Z-Move.",
+    "zMoveBoosts": {
+      "spe": 1
+    }
   },
   "endure": {
     "desc": "The user will survive attacks made by other Pokemon during this turn with at least 1 HP. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn."
@@ -426,17 +613,32 @@
   "irontail": {
     "zMovePower": 180
   },
+  "lockon": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
   "machpunch": {
     "zMovePower": 100
   },
   "magnitude": {
     "zMovePower": 140
   },
+  "meanlook": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
   "megahorn": {
     "zMovePower": 190
   },
   "metalclaw": {
     "zMovePower": 100
+  },
+  "mindreader": {
+    "zMoveBoosts": {
+      "spa": 1
+    }
   },
   "mirrorcoat": {
     "desc": "Deals damage to the last opposing Pokemon to hit the user with a special attack this turn equal to twice the HP lost by the user from that attack. If the user did not lose HP from the attack, this move deals 1 HP of damage instead. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. Only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's special attack this turn.",
@@ -445,12 +647,22 @@
   "mudslap": {
     "zMovePower": 100
   },
+  "nightmare": {
+    "zMoveBoosts": {
+      "spa": 1
+    }
+  },
   "octazooka": {
     "zMovePower": 120
   },
   "outrage": {
     "desc": "The user spends two or three turns locked into this move and becomes confused immediately after its move on the last turn of the effect if it is not already. This move targets an opposing Pokemon at random on each turn. If the user is prevented from moving, is asleep at the beginning of a turn, or the attack is not successful against the target on the first turn of the effect or the second turn of a three-turn effect, the effect ends without causing confusion. If this move is called by Sleep Talk and the user is asleep, the move is used for one turn and does not confuse the user.",
     "zMovePower": 190
+  },
+  "painsplit": {
+    "zMoveBoosts": {
+      "def": 1
+    }
   },
   "powdersnow": {
     "zMovePower": 100
@@ -464,6 +676,11 @@
   "pursuit": {
     "desc": "If an opposing Pokemon switches out this turn, this move hits that Pokemon before it leaves the field, even if it was not the original target. If the user moves after an opponent using Parting Shot, U-turn, or Volt Switch, but not Baton Pass, it will hit that opponent before it leaves the field. Power doubles and no accuracy check is done if the user hits an opponent switching out, and the user's turn is over; if an opponent faints from this, the replacement Pokemon does not become active until the end of the turn.",
     "zMovePower": 100
+  },
+  "raindance": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
   },
   "rapidspin": {
     "zMovePower": 100
@@ -484,8 +701,32 @@
   "sacredfire": {
     "zMovePower": 180
   },
+  "safeguard": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
+  "sandstorm": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
+  "scaryface": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
   "shadowball": {
     "zMovePower": 160
+  },
+  "sketch": {
+    "zMoveBoosts": {
+      "atk": 1,
+      "def": 1,
+      "spa": 1,
+      "spd": 1,
+      "spe": 1
+    }
   },
   "sleeptalk": {
     "desc": "One of the user's known moves, besides this move, is selected for use at random. Fails if the user is not asleep. The selected move does not have PP deducted from it, and can currently have 0 PP. This move cannot select Assist, Beak Blast, Belch, Bide, Celebrate, Chatter, Copycat, Focus Punch, Hold Hands, Me First, Metronome, Mimic, Mirror Move, Nature Power, Shell Trap, Sketch, Sleep Talk, Struggle, Uproar, any two-turn move, or any Z-Move."
@@ -499,11 +740,36 @@
   "spark": {
     "zMovePower": 120
   },
+  "spiderweb": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
+  "spikes": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
   "steelwing": {
     "zMovePower": 140
   },
+  "sunnyday": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
   "swagger": {
     "accuracy": 85
+  },
+  "sweetkiss": {
+    "zMoveBoosts": {
+      "spa": 1
+    }
+  },
+  "sweetscent": {
+    "zMoveBoosts": {
+      "accuracy": 1
+    }
   },
   "thief": {
     "desc": "If this attack was successful and the user has not fainted, it steals the target's held item if the user is not holding one. The target's item is not stolen if it is a Mail or Z-Crystal, or if the target is a Kyogre holding a Blue Orb, a Groudon holding a Red Orb, a Giratina holding a Griseous Orb, an Arceus holding a Plate, a Genesect holding a Drive, a Silvally holding a Memory, or a Pokemon that can Mega Evolve holding the Mega Stone for its species. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
@@ -545,6 +811,11 @@
   "blazekick": {
     "zMovePower": 160
   },
+  "block": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
   "bounce": {
     "zMovePower": 160
   },
@@ -552,11 +823,29 @@
     "desc": "If this attack does not miss, the effects of Reflect, Light Screen, and Aurora Veil end for the target's side of the field before damage is calculated.",
     "zMovePower": 140
   },
+  "bulkup": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
+  },
   "bulletseed": {
     "zMovePower": 140
   },
   "camouflage": {
-    "desc": "The user's type changes based on the battle terrain. Normal type on the regular Wi-Fi terrain, Electric type during Electric Terrain, Fairy type during Misty Terrain, Grass type during Grassy Terrain, and Psychic type during Psychic Terrain. Fails if the user's type cannot be changed or if the user is already purely that type."
+    "desc": "The user's type changes based on the battle terrain. Normal type on the regular Wi-Fi terrain, Electric type during Electric Terrain, Fairy type during Misty Terrain, Grass type during Grassy Terrain, and Psychic type during Psychic Terrain. Fails if the user's type cannot be changed or if the user is already purely that type.",
+    "zMoveBoosts": {
+      "evasion": 1
+    }
+  },
+  "charge": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
+  "cosmicpower": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
   },
   "covet": {
     "desc": "If this attack was successful and the user has not fainted, it steals the target's held item if the user is not holding one. The target's item is not stolen if it is a Mail or Z-Crystal, or if the target is a Kyogre holding a Blue Orb, a Groudon holding a Red Orb, a Giratina holding a Griseous Orb, an Arceus holding a Plate, a Genesect holding a Drive, a Silvally holding a Memory, or a Pokemon that can Mega Evolve holding the Mega Stone for its species. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
@@ -589,6 +878,21 @@
   "fakeout": {
     "zMovePower": 100
   },
+  "faketears": {
+    "zMoveBoosts": {
+      "spa": 1
+    }
+  },
+  "featherdance": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
+  "flatter": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
   "focuspunch": {
     "zMovePower": 200
   },
@@ -598,8 +902,23 @@
   "frenzyplant": {
     "zMovePower": 200
   },
+  "grasswhistle": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
+  "hail": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
   "heatwave": {
     "zMovePower": 175
+  },
+  "howl": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
   },
   "hydrocannon": {
     "zMovePower": 200
@@ -614,6 +933,16 @@
   "iciclespear": {
     "zMovePower": 140
   },
+  "imprison": {
+    "zMoveBoosts": {
+      "spd": 2
+    }
+  },
+  "ingrain": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
   "knockoff": {
     "desc": "If the target is holding an item that can be removed from it, ignoring the Sticky Hold Ability, this move's power is multiplied by 1.5. If the user has not fainted, the target loses its held item. This move cannot remove Z-Crystals, cause Pokemon with the Sticky Hold Ability to lose their held item, cause Pokemon that can Mega Evolve to lose the Mega Stone for their species, or cause a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, or a Silvally to lose their Blue Orb, Red Orb, Griseous Orb, Plate, Drive, or Memory respectively. Items lost to this move cannot be regained with Recycle or the Harvest Ability.",
     "zMovePower": 120
@@ -624,8 +953,18 @@
   "lusterpurge": {
     "zMovePower": 140
   },
+  "magiccoat": {
+    "zMoveBoosts": {
+      "spd": 2
+    }
+  },
   "magicalleaf": {
     "zMovePower": 120
+  },
+  "metalsound": {
+    "zMoveBoosts": {
+      "spa": 1
+    }
   },
   "meteormash": {
     "zMovePower": 175
@@ -636,6 +975,11 @@
   "mudshot": {
     "zMovePower": 100
   },
+  "mudsport": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
   "muddywater": {
     "zMovePower": 175
   },
@@ -644,6 +988,11 @@
   },
   "needlearm": {
     "zMovePower": 120
+  },
+  "odorsleuth": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
   },
   "overheat": {
     "zMovePower": 195
@@ -656,6 +1005,11 @@
   },
   "psychoboost": {
     "zMovePower": 200
+  },
+  "recycle": {
+    "zMoveBoosts": {
+      "spe": 2
+    }
   },
   "revenge": {
     "zMovePower": 120
@@ -670,7 +1024,10 @@
     "zMovePower": 120
   },
   "roleplay": {
-    "desc": "The user's Ability changes to match the target's Ability. Fails if the user's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or already matches the target, or if the target's Ability is Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Illusion, Imposter, Multitype, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, or Zen Mode."
+    "desc": "The user's Ability changes to match the target's Ability. Fails if the user's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or already matches the target, or if the target's Ability is Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Illusion, Imposter, Multitype, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, Wonder Guard, or Zen Mode.",
+    "zMoveBoosts": {
+      "spe": 1
+    }
   },
   "sandtomb": {
     "zMovePower": 100
@@ -697,7 +1054,10 @@
     "zMovePower": 120
   },
   "skillswap": {
-    "desc": "The user swaps its Ability with the target's Ability. Fails if either the user or the target's Ability is Battle Bond, Comatose, Disguise, Illusion, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Wonder Guard, or Zen Mode."
+    "desc": "The user swaps its Ability with the target's Ability. Fails if either the user or the target's Ability is Battle Bond, Comatose, Disguise, Illusion, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Wonder Guard, or Zen Mode.",
+    "zMoveBoosts": {
+      "spe": 1
+    }
   },
   "skyuppercut": {
     "zMovePower": 160
@@ -705,14 +1065,42 @@
   "smellingsalts": {
     "zMovePower": 140
   },
+  "snatch": {
+    "zMoveBoosts": {
+      "spe": 2
+    }
+  },
   "spitup": {
     "zMovePower": 100
   },
   "superpower": {
     "zMovePower": 190
   },
+  "taunt": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
+  },
+  "teeterdance": {
+    "zMoveBoosts": {
+      "spa": 1
+    }
+  },
+  "tickle": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
+  "torment": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
   "trick": {
-    "desc": "The user swaps its held item with the target's held item. Fails if either the user or the target is holding a Mail or Z-Crystal, if neither is holding an item, if the user is trying to give or take a Mega Stone to or from the species that can Mega Evolve with it, or if the user is trying to give or take a Blue Orb, a Red Orb, a Griseous Orb, a Plate, a Drive, or a Memory to or from a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, or a Silvally, respectively. The target is immune to this move if it has the Sticky Hold Ability."
+    "desc": "The user swaps its held item with the target's held item. Fails if either the user or the target is holding a Mail or Z-Crystal, if neither is holding an item, if the user is trying to give or take a Mega Stone to or from the species that can Mega Evolve with it, or if the user is trying to give or take a Blue Orb, a Red Orb, a Griseous Orb, a Plate, a Drive, or a Memory to or from a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, or a Silvally, respectively. The target is immune to this move if it has the Sticky Hold Ability.",
+    "zMoveBoosts": {
+      "spe": 2
+    }
   },
   "uproar": {
     "desc": "The user spends three turns locked into this move. This move targets an opponent at random on each turn. On the first of the three turns, all sleeping active Pokemon wake up. During the three turns, no active Pokemon can fall asleep by any means, and Pokemon switched in during the effect do not wake up. If the user is prevented from moving or the attack is not successful against the target during one of the turns, the effect ends.",
@@ -724,17 +1112,42 @@
   "waterpulse": {
     "zMovePower": 120
   },
+  "watersport": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
   "waterspout": {
     "zMovePower": 200
   },
   "weatherball": {
     "zMovePower": 160
   },
+  "willowisp": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
+  },
+  "wish": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
+  "yawn": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
   "airslash": {
     "zMovePower": 140
   },
   "aquajet": {
     "zMovePower": 100
+  },
+  "aquaring": {
+    "zMoveBoosts": {
+      "def": 1
+    }
   },
   "aquatail": {
     "zMovePower": 175
@@ -766,6 +1179,11 @@
   "bulletpunch": {
     "zMovePower": 100
   },
+  "captivate": {
+    "zMoveBoosts": {
+      "spd": 2
+    }
+  },
   "chargebeam": {
     "zMovePower": 100
   },
@@ -776,7 +1194,10 @@
     "zMovePower": 190
   },
   "copycat": {
-    "desc": "The user uses the last move used by any Pokemon, including itself. Fails if no move has been used, or if the last move used was Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Destiny Bond, Detect, Dragon Tail, Endure, Feint, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Protect, Rage Powder, Roar, Shell Trap, Sketch, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, Whirlwind, or any Z-Move."
+    "desc": "The user uses the last move used by any Pokemon, including itself. Fails if no move has been used, or if the last move used was Assist, Baneful Bunker, Beak Blast, Belch, Bestow, Celebrate, Chatter, Circle Throw, Copycat, Counter, Covet, Destiny Bond, Detect, Dragon Tail, Endure, Feint, Focus Punch, Follow Me, Helping Hand, Hold Hands, King's Shield, Mat Block, Me First, Metronome, Mimic, Mirror Coat, Mirror Move, Nature Power, Protect, Rage Powder, Roar, Shell Trap, Sketch, Sleep Talk, Snatch, Spiky Shield, Spotlight, Struggle, Switcheroo, Thief, Transform, Trick, Whirlwind, or any Z-Move.",
+    "zMoveBoosts": {
+      "accuracy": 1
+    }
   },
   "crosspoison": {
     "zMovePower": 140
@@ -792,8 +1213,16 @@
     "desc": "Causes the target to fall asleep. This move cannot be used successfully unless the user's current form, while considering Transform, is Darkrai.",
     "shortDesc": "Darkrai: Causes the foe(s) to fall asleep."
   },
+  "defendorder": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
   "defog": {
-    "desc": "Lowers the target's evasiveness by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness."
+    "desc": "Lowers the target's evasiveness by 1 stage. If this move is successful and whether or not the target's evasiveness was affected, the effects of Reflect, Light Screen, Aurora Veil, Safeguard, Mist, Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the target's side, and the effects of Spikes, Toxic Spikes, Stealth Rock, and Sticky Web end for the user's side. Ignores a target's substitute, although a substitute will still block the lowering of evasiveness.",
+    "zMoveBoosts": {
+      "accuracy": 1
+    }
   },
   "discharge": {
     "zMovePower": 160
@@ -815,6 +1244,11 @@
   },
   "earthpower": {
     "zMovePower": 175
+  },
+  "embargo": {
+    "zMoveBoosts": {
+      "spa": 1
+    }
   },
   "energyball": {
     "zMovePower": 175
@@ -842,13 +1276,26 @@
     "zMovePower": 120
   },
   "gastroacid": {
-    "desc": "Causes the target's Ability to be rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode, this move fails, and receiving the effect through Baton Pass ends the effect immediately."
+    "desc": "Causes the target's Ability to be rendered ineffective as long as it remains active. If the target uses Baton Pass, the replacement will remain under this effect. If the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, or Zen Mode, this move fails, and receiving the effect through Baton Pass ends the effect immediately.",
+    "zMoveBoosts": {
+      "spe": 1
+    }
   },
   "gigaimpact": {
     "zMovePower": 200
   },
   "grassknot": {
     "zMovePower": 160
+  },
+  "gravity": {
+    "zMoveBoosts": {
+      "spa": 1
+    }
+  },
+  "guardswap": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
   },
   "gunkshot": {
     "zMovePower": 190
@@ -861,6 +1308,11 @@
   },
   "headsmash": {
     "zMovePower": 200
+  },
+  "healblock": {
+    "zMoveBoosts": {
+      "spa": 2
+    }
   },
   "icefang": {
     "zMovePower": 120
@@ -883,18 +1335,36 @@
   "leafstorm": {
     "zMovePower": 195
   },
+  "luckychant": {
+    "zMoveBoosts": {
+      "evasion": 1
+    }
+  },
   "magmastorm": {
     "zMovePower": 180
   },
   "magnetbomb": {
     "zMovePower": 120
   },
+  "magnetrise": {
+    "zMoveBoosts": {
+      "evasion": 1
+    }
+  },
   "mefirst": {
-    "desc": "The user uses the move the target chose for use this turn against it, if possible, with its power multiplied by 1.5. The move must be a damaging move other than Beak Blast, Chatter, Counter, Covet, Focus Punch, Me First, Metal Burst, Mirror Coat, Shell Trap, Struggle, Thief, or any Z-Move. Fails if the target moves before the user. Ignores the target's substitute for the purpose of copying the move."
+    "desc": "The user uses the move the target chose for use this turn against it, if possible, with its power multiplied by 1.5. The move must be a damaging move other than Beak Blast, Chatter, Counter, Covet, Focus Punch, Me First, Metal Burst, Mirror Coat, Shell Trap, Struggle, Thief, or any Z-Move. Fails if the target moves before the user. Ignores the target's substitute for the purpose of copying the move.",
+    "zMoveBoosts": {
+      "spe": 2
+    }
   },
   "metalburst": {
     "desc": "Deals damage to the last opposing Pokemon to hit the user with an attack this turn equal to 1.5 times the HP lost by the user from that attack, rounded down. If the user did not lose HP from the attack, this move deals 1 HP of damage instead. If that opposing Pokemon's position is no longer in use and there is another opposing Pokemon on the field, the damage is done to it instead. Only the last hit of a multi-hit attack is counted. Fails if the user was not hit by an opposing Pokemon's attack this turn.",
     "zMovePower": 100
+  },
+  "miracleeye": {
+    "zMoveBoosts": {
+      "spa": 1
+    }
   },
   "mirrorshot": {
     "zMovePower": 120
@@ -924,11 +1394,26 @@
   "powergem": {
     "zMovePower": 160
   },
+  "powerswap": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
+  "powertrick": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
+  },
   "powerwhip": {
     "zMovePower": 190
   },
   "psychocut": {
     "zMovePower": 140
+  },
+  "psychoshift": {
+    "zMoveBoosts": {
+      "spa": 2
+    }
   },
   "punishment": {
     "zMovePower": 160
@@ -961,6 +1446,11 @@
   "spacialrend": {
     "zMovePower": 180
   },
+  "stealthrock": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
   "stoneedge": {
     "zMovePower": 180
   },
@@ -969,10 +1459,23 @@
     "zMovePower": 140
   },
   "switcheroo": {
-    "desc": "The user swaps its held item with the target's held item. Fails if either the user or the target is holding a Mail or Z-Crystal, if neither is holding an item, if the user is trying to give or take a Mega Stone to or from the species that can Mega Evolve with it, or if the user is trying to give or take a Blue Orb, a Red Orb, a Griseous Orb, a Plate, a Drive, or a Memory to or from a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, or a Silvally, respectively. The target is immune to this move if it has the Sticky Hold Ability."
+    "desc": "The user swaps its held item with the target's held item. Fails if either the user or the target is holding a Mail or Z-Crystal, if neither is holding an item, if the user is trying to give or take a Mega Stone to or from the species that can Mega Evolve with it, or if the user is trying to give or take a Blue Orb, a Red Orb, a Griseous Orb, a Plate, a Drive, or a Memory to or from a Kyogre, a Groudon, a Giratina, an Arceus, a Genesect, or a Silvally, respectively. The target is immune to this move if it has the Sticky Hold Ability.",
+    "zMoveBoosts": {
+      "spe": 2
+    }
   },
   "thunderfang": {
     "zMovePower": 120
+  },
+  "toxicspikes": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
+  "trickroom": {
+    "zMoveBoosts": {
+      "accuracy": 1
+    }
   },
   "trumpcard": {
     "zMovePower": 160
@@ -991,7 +1494,10 @@
     "zMovePower": 190
   },
   "worryseed": {
-    "desc": "Causes the target's Ability to become Insomnia. Fails if the target's Ability is Battle Bond, Comatose, Disguise, Insomnia, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, or Zen Mode."
+    "desc": "Causes the target's Ability to become Insomnia. Fails if the target's Ability is Battle Bond, Comatose, Disguise, Insomnia, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, or Zen Mode.",
+    "zMoveBoosts": {
+      "spe": 1
+    }
   },
   "wringout": {
     "zMovePower": 190
@@ -1008,13 +1514,24 @@
   "acrobatics": {
     "zMovePower": 100
   },
+  "afteryou": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
   "allyswitch": {
     "desc": "The user swaps positions with its ally. Fails if the user is the only Pokemon on its side.",
     "shortDesc": "The user swaps positions with its ally.",
-    "priority": 2
+    "priority": 2,
+    "zMoveBoosts": {
+      "spe": 2
+    }
   },
   "bestow": {
-    "desc": "The target receives the user's held item. Fails if the user has no item or is holding a Mail or Z-Crystal, if the target is already holding an item, if the user is a Kyogre holding a Blue Orb, a Groudon holding a Red Orb, a Giratina holding a Griseous Orb, an Arceus holding a Plate, a Genesect holding a Drive, a Silvally holding a Memory, a Pokemon that can Mega Evolve holding the Mega Stone for its species, or if the target is one of those Pokemon and the user is holding the respective item."
+    "desc": "The target receives the user's held item. Fails if the user has no item or is holding a Mail or Z-Crystal, if the target is already holding an item, if the user is a Kyogre holding a Blue Orb, a Groudon holding a Red Orb, a Giratina holding a Griseous Orb, an Arceus holding a Plate, a Genesect holding a Drive, a Silvally holding a Memory, a Pokemon that can Mega Evolve holding the Mega Stone for its species, or if the target is one of those Pokemon and the user is holding the respective item.",
+    "zMoveBoosts": {
+      "spe": 2
+    }
   },
   "blueflare": {
     "zMovePower": 195
@@ -1053,7 +1570,10 @@
     "zMovePower": 100
   },
   "entrainment": {
-    "desc": "Causes the target's Ability to become the same as the user's. Fails if the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, or the same Ability as the user, or if the user's Ability is Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Illusion, Imposter, Multitype, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, or Zen Mode."
+    "desc": "Causes the target's Ability to become the same as the user's. Fails if the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Stance Change, Truant, or the same Ability as the user, or if the user's Ability is Battle Bond, Comatose, Disguise, Flower Gift, Forecast, Illusion, Imposter, Multitype, Power Construct, Power of Alchemy, Receiver, RKS System, Schooling, Shields Down, Stance Change, Trace, or Zen Mode.",
+    "zMoveBoosts": {
+      "spd": 1
+    }
   },
   "fierydance": {
     "zMovePower": 160
@@ -1095,6 +1615,11 @@
   "grasspledge": {
     "zMovePower": 160
   },
+  "guardsplit": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
   "headcharge": {
     "zMovePower": 190
   },
@@ -1110,6 +1635,11 @@
   },
   "hex": {
     "zMovePower": 160
+  },
+  "honeclaws": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
   },
   "hornleech": {
     "zMovePower": 140
@@ -1135,8 +1665,18 @@
   "lowsweep": {
     "zMovePower": 120
   },
+  "magicroom": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
   "nightdaze": {
     "zMovePower": 160
+  },
+  "powersplit": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
   },
   "psyshock": {
     "zMovePower": 160
@@ -1144,8 +1684,16 @@
   "psystrike": {
     "zMovePower": 180
   },
+  "quash": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
   "quickguard": {
-    "desc": "The user and its party members are protected from attacks with original or altered priority greater than 0 made by other Pokemon, including allies, during this turn. This move modifies the same 1/X chance of being successful used by other protection moves, where X starts at 1 and triples each time this move is successfully used, but does not use the chance to check for failure. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn or if this move is already in effect for the user's side."
+    "desc": "The user and its party members are protected from attacks with original or altered priority greater than 0 made by other Pokemon, including allies, during this turn. This move modifies the same 1/X chance of being successful used by other protection moves, where X starts at 1 and triples each time this move is successfully used, but does not use the chance to check for failure. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn or if this move is already in effect for the user's side.",
+    "zMoveBoosts": {
+      "def": 1
+    }
   },
   "ragepowder": {
     "desc": "Until the end of the turn, all single-target attacks from the opposing side are redirected to the user. Such attacks are redirected to the user before they can be reflected by Magic Coat or the Magic Bounce Ability, or drawn in by the Lightning Rod or Storm Drain Abilities. Fails if it is not a Double Battle or Battle Royal. This effect is ignored while the user is under the effect of Sky Drop."
@@ -1154,7 +1702,10 @@
     "zMovePower": 140
   },
   "reflecttype": {
-    "desc": "Causes the user's types to become the same as the current types of the target. If the target's current types include typeless and a non-added type, typeless is ignored. If the target's current types include typeless and an added type from Forest's Curse or Trick-or-Treat, typeless is copied as the Normal type instead. Fails if the user is an Arceus or a Silvally, or if the target's current type is typeless alone."
+    "desc": "Causes the user's types to become the same as the current types of the target. If the target's current types include typeless and a non-added type, typeless is ignored. If the target's current types include typeless and an added type from Forest's Curse or Trick-or-Treat, typeless is copied as the Normal type instead. Fails if the user is an Arceus or a Silvally, or if the target's current type is typeless alone.",
+    "zMoveBoosts": {
+      "spa": 1
+    }
   },
   "relicsong": {
     "zMovePower": 140
@@ -1178,7 +1729,10 @@
     "zMovePower": 160
   },
   "simplebeam": {
-    "desc": "Causes the target's Ability to become Simple. Fails if the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Simple, Stance Change, Truant, or Zen Mode."
+    "desc": "Causes the target's Ability to become Simple. Fails if the target's Ability is Battle Bond, Comatose, Disguise, Multitype, Power Construct, RKS System, Schooling, Shields Down, Simple, Stance Change, Truant, or Zen Mode.",
+    "zMoveBoosts": {
+      "spa": 1
+    }
   },
   "skydrop": {
     "zMovePower": 120
@@ -1193,7 +1747,10 @@
     "zMovePower": 100
   },
   "soak": {
-    "desc": "Causes the target to become a Water type. Fails if the target is an Arceus or a Silvally."
+    "desc": "Causes the target to become a Water type. Fails if the target is an Arceus or a Silvally.",
+    "zMoveBoosts": {
+      "spa": 1
+    }
   },
   "steamroller": {
     "zMovePower": 120
@@ -1217,7 +1774,10 @@
     "zMovePower": 190
   },
   "telekinesis": {
-    "desc": "For 3 turns, the target cannot avoid any attacks made against it, other than OHKO moves, as long as it remains active. During the effect, the target is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability as long as it remains active. If the target uses Baton Pass, the replacement will gain the effect. Ingrain, Smack Down, Thousand Arrows, and Iron Ball override this move if the target is under any of their effects. Fails if the target is already under this effect or the effects of Ingrain, Smack Down, or Thousand Arrows. The target is immune to this move on use if its species is Diglett, Dugtrio, Alolan Diglett, Alolan Dugtrio, Sandygast, Palossand, or Gengar while Mega-Evolved. Mega Gengar cannot be under this effect by any means."
+    "desc": "For 3 turns, the target cannot avoid any attacks made against it, other than OHKO moves, as long as it remains active. During the effect, the target is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability as long as it remains active. If the target uses Baton Pass, the replacement will gain the effect. Ingrain, Smack Down, Thousand Arrows, and Iron Ball override this move if the target is under any of their effects. Fails if the target is already under this effect or the effects of Ingrain, Smack Down, or Thousand Arrows. The target is immune to this move on use if its species is Diglett, Dugtrio, Alolan Diglett, Alolan Dugtrio, Sandygast, Palossand, or Gengar while Mega-Evolved. Mega Gengar cannot be under this effect by any means.",
+    "zMoveBoosts": {
+      "spa": 1
+    }
   },
   "vcreate": {
     "zMovePower": 220
@@ -1234,16 +1794,58 @@
   },
   "wideguard": {
     "desc": "The user and its party members are protected from moves made by other Pokemon, including allies, during this turn that target all adjacent foes or all adjacent Pokemon. This move modifies the same 1/X chance of being successful used by other protection moves, where X starts at 1 and triples each time this move is successfully used, but does not use the chance to check for failure. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn or if this move is already in effect for the user's side.",
-    "shortDesc": "Protects allies from multi-target moves this turn."
+    "shortDesc": "Protects allies from multi-target moves this turn.",
+    "zMoveBoosts": {
+      "def": 1
+    }
   },
   "wildcharge": {
     "zMovePower": 175
+  },
+  "wonderroom": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
+  "workup": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
+  },
+  "aromaticmist": {
+    "zMoveBoosts": {
+      "spd": 2
+    }
+  },
+  "babydolleyes": {
+    "zMoveBoosts": {
+      "def": 1
+    }
   },
   "belch": {
     "zMovePower": 190
   },
   "boomburst": {
     "zMovePower": 200
+  },
+  "celebrate": {
+    "zMoveBoosts": {
+      "atk": 1,
+      "def": 1,
+      "spa": 1,
+      "spd": 1,
+      "spe": 1
+    }
+  },
+  "confide": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
+  "craftyshield": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
   },
   "dazzlinggleam": {
     "zMovePower": 160
@@ -1271,6 +1873,26 @@
   "drainingkiss": {
     "zMovePower": 100
   },
+  "eerieimpulse": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
+  "electricterrain": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
+  },
+  "electrify": {
+    "zMoveBoosts": {
+      "spa": 1
+    }
+  },
+  "fairylock": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
   "fairywind": {
     "zMovePower": 100
   },
@@ -1280,15 +1902,61 @@
     "basePower": 50,
     "zMovePower": 100
   },
+  "flowershield": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
   "flyingpress": {
     "basePower": 100,
     "zMovePower": 170
   },
+  "forestscurse": {
+    "zMoveBoosts": {
+      "atk": 1,
+      "def": 1,
+      "spa": 1,
+      "spd": 1,
+      "spe": 1
+    }
+  },
   "freezedry": {
     "zMovePower": 140
   },
+  "geomancy": {
+    "zMoveBoosts": {
+      "atk": 1,
+      "def": 1,
+      "spa": 1,
+      "spd": 1,
+      "spe": 1
+    }
+  },
+  "grassyterrain": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
+  "happyhour": {
+    "zMoveBoosts": {
+      "atk": 1,
+      "def": 1,
+      "spa": 1,
+      "spd": 1,
+      "spe": 1
+    }
+  },
   "holdback": {
     "zMovePower": 100
+  },
+  "holdhands": {
+    "zMoveBoosts": {
+      "atk": 1,
+      "def": 1,
+      "spa": 1,
+      "spd": 1,
+      "spe": 1
+    }
   },
   "hyperspacefury": {
     "desc": "Lowers the user's Defense by 1 stage. This move cannot be used successfully unless the user's current form, while considering Transform, is Hoopa Unbound. If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokemon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the target's side normally.",
@@ -1301,6 +1969,11 @@
   "infestation": {
     "zMovePower": 100
   },
+  "iondeluge": {
+    "zMoveBoosts": {
+      "spa": 1
+    }
+  },
   "kingsshield": {
     "desc": "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user have their Attack lowered by 2 stages. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn."
   },
@@ -1310,8 +1983,21 @@
   "lightofruin": {
     "zMovePower": 200
   },
+  "magneticflux": {
+    "zMoveBoosts": {
+      "spd": 1
+    }
+  },
+  "matblock": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
   "mistyterrain": {
-    "desc": "For 5 turns, the terrain becomes Misty Terrain. During the effect, the power of Dragon-type attacks used against grounded Pokemon is multiplied by 0.5 and grounded Pokemon cannot be inflicted with a major status condition nor confusion. Camouflage transforms the user into a Fairy type, Nature Power becomes Moonblast, and Secret Power has a 30% chance to lower Special Attack by 1 stage. Fails if the current terrain is Misty Terrain."
+    "desc": "For 5 turns, the terrain becomes Misty Terrain. During the effect, the power of Dragon-type attacks used against grounded Pokemon is multiplied by 0.5 and grounded Pokemon cannot be inflicted with a major status condition nor confusion. Camouflage transforms the user into a Fairy type, Nature Power becomes Moonblast, and Secret Power has a 30% chance to lower Special Attack by 1 stage. Fails if the current terrain is Misty Terrain.",
+    "zMoveBoosts": {
+      "spd": 1
+    }
   },
   "moonblast": {
     "zMovePower": 175
@@ -1319,6 +2005,11 @@
   "mysticalfire": {
     "basePower": 75,
     "zMovePower": 140
+  },
+  "nobleroar": {
+    "zMoveBoosts": {
+      "def": 1
+    }
   },
   "nuzzle": {
     "zMovePower": 100
@@ -1343,11 +2034,19 @@
     "desc": "If this move is successful, it breaks through the target's Baneful Bunker, Detect, King's Shield, Protect, or Spiky Shield for this turn, allowing other Pokemon to attack the target normally. If the target's side is protected by Crafty Shield, Mat Block, Quick Guard, or Wide Guard, that protection is also broken for this turn and other Pokemon may attack the target's side normally. This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks. If the user is holding a Power Herb, the move completes in one turn.",
     "zMovePower": 175
   },
+  "playnice": {
+    "zMoveBoosts": {
+      "def": 1
+    }
+  },
   "playrough": {
     "zMovePower": 175
   },
   "powder": {
-    "desc": "If the target uses a Fire-type move this turn, it is prevented from executing and the target loses 1/4 of its maximum HP, rounded half up. This effect does not happen if the Fire-type move is prevented by Primordial Sea."
+    "desc": "If the target uses a Fire-type move this turn, it is prevented from executing and the target loses 1/4 of its maximum HP, rounded half up. This effect does not happen if the Fire-type move is prevented by Primordial Sea.",
+    "zMoveBoosts": {
+      "spd": 2
+    }
   },
   "poweruppunch": {
     "zMovePower": 100
@@ -1355,17 +2054,49 @@
   "precipiceblades": {
     "zMovePower": 190
   },
+  "rototiller": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
+  },
   "spikyshield": {
-    "desc": "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon making contact with the user lose 1/8 of their maximum HP, rounded down. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn."
+    "desc": "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon making contact with the user lose 1/8 of their maximum HP, rounded down. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+    "zMoveBoosts": {
+      "def": 1
+    }
   },
   "steameruption": {
     "zMovePower": 185
+  },
+  "stickyweb": {
+    "zMoveBoosts": {
+      "spe": 1
+    }
   },
   "thousandarrows": {
     "zMovePower": 180
   },
   "thousandwaves": {
     "zMovePower": 175
+  },
+  "topsyturvy": {
+    "zMoveBoosts": {
+      "atk": 1
+    }
+  },
+  "trickortreat": {
+    "zMoveBoosts": {
+      "atk": 1,
+      "def": 1,
+      "spa": 1,
+      "spd": 1,
+      "spe": 1
+    }
+  },
+  "venomdrench": {
+    "zMoveBoosts": {
+      "def": 1
+    }
   },
   "watershuriken": {
     "desc": "Hits two to five times. Has a 1/3 chance to hit two or three times, and a 1/6 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is an Ash-Greninja with the Battle Bond Ability, this move has a power of 20 and always hits three times.",
@@ -1482,6 +2213,9 @@
     "target": "allySide",
     "type": "Ice",
     "critRatio": 1,
+    "zMoveBoosts": {
+      "spe": 1
+    },
     "gen": 7
   },
   "baddybad": {
@@ -1520,6 +2254,9 @@
     "target": "self",
     "type": "Poison",
     "critRatio": 1,
+    "zMoveBoosts": {
+      "def": 1
+    },
     "gen": 7
   },
   "beakblast": {
@@ -2070,6 +2807,9 @@
     "target": "allySide",
     "type": "Steel",
     "critRatio": 1,
+    "zMoveBoosts": {
+      "spa": 1
+    },
     "gen": 7
   },
   "genesissupernova": {
@@ -2240,6 +2980,9 @@
     "target": "normal",
     "type": "Psychic",
     "critRatio": 1,
+    "zMoveBoosts": {
+      "spa": 1
+    },
     "gen": 7
   },
   "laserfocus": {
@@ -2258,6 +3001,9 @@
     "target": "self",
     "type": "Normal",
     "critRatio": 1,
+    "zMoveBoosts": {
+      "atk": 1
+    },
     "gen": 7
   },
   "leafage": {
@@ -2680,6 +3426,9 @@
     "target": "all",
     "type": "Psychic",
     "critRatio": 1,
+    "zMoveBoosts": {
+      "spa": 1
+    },
     "gen": 7
   },
   "pulverizingpancake": {
@@ -2717,6 +3466,13 @@
     "target": "normal",
     "type": "Poison",
     "critRatio": 1,
+    "zMoveBoosts": {
+      "atk": 1,
+      "def": 1,
+      "spa": 1,
+      "spd": 1,
+      "spe": 1
+    },
     "gen": 7
   },
   "revelationdance": {
@@ -2999,7 +3755,6 @@
     "critRatio": 1,
     "secondaries": [
       {
-        "dustproof": true,
         "chance": 100
       }
     ],
@@ -3065,6 +3820,9 @@
     "target": "normal",
     "type": "Psychic",
     "critRatio": 1,
+    "zMoveBoosts": {
+      "spe": 1
+    },
     "gen": 7
   },
   "spiritshackle": {
@@ -3152,6 +3910,9 @@
     "target": "normal",
     "type": "Normal",
     "critRatio": 1,
+    "zMoveBoosts": {
+      "spd": 1
+    },
     "gen": 7
   },
   "stokedsparksurfer": {
@@ -3215,6 +3976,9 @@
     "target": "normal",
     "type": "Grass",
     "critRatio": 1,
+    "zMoveBoosts": {
+      "def": 1
+    },
     "gen": 7
   },
   "subzeroslammer": {
@@ -3288,6 +4052,9 @@
     "target": "normal",
     "type": "Normal",
     "critRatio": 1,
+    "zMoveBoosts": {
+      "def": 1
+    },
     "gen": 7
   },
   "tectonicrage": {
@@ -3352,6 +4119,9 @@
     "target": "normal",
     "type": "Poison",
     "critRatio": 1,
+    "zMoveBoosts": {
+      "spe": 1
+    },
     "gen": 7
   },
   "tropkick": {
