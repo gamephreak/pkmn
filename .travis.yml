@@ -5,6 +5,7 @@ node_js:
 branches:
   only:
     - master
+    - async
 cache:
   directories:
     - node_modules
