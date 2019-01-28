@@ -304,7 +304,31 @@ describe('Sets', () => {
       };
       expect(await Sets.exportSet(suicune))
           .toEqual(exported('Suicune\n- Hidden Power [Bug]'));
+
+      suicune = {
+        name: 'Suicune',
+        moves: ['Hidden Power [Bug]', 'hiddenpowerdark']
+      };
+      expect(await Sets.exportSet(suicune, true)).toEqual(exported(`Suicune
+        - Hidden Power [Bug]
+        - Hidden Power [Dark]`));
     });
+  });
+
+  test('weird import', async () => {
+    const weirdIn = imported(`
+        @ Leftovers
+        Ability: Illuminate
+        /
+        EVs: 0 Foo / N Atk / 9
+        undefined Nature
+        IVs: 0 Foo / N Atk / 9`);
+    const weirdOut = exported(`
+        @ Leftovers
+        Ability: Illuminate`);
+
+    expect(await Sets.exportSet((await Sets.importSet(weirdIn))!))
+        .toEqual(weirdOut);
   });
 
   test('toJSON + fromJSON', async () => {

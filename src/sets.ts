@@ -522,7 +522,7 @@ export async function _import(lines: string[], i = 0, gen?: Generation):
     } else if (line.match(/^[A-Za-z]+ (N|n)ature/)) {
       let natureIndex = line.indexOf(' Nature');
       if (natureIndex === -1) natureIndex = line.indexOf(' nature');
-      if (natureIndex === -1) continue;
+      // if (natureIndex === -1) continue; // Can't happen or we wouldn't match
       line = line.substr(0, natureIndex);
       if (line !== 'undefined') s.nature = line;
     } else if (line.substr(0, 1) === '-' || line.substr(0, 1) === '~') {
@@ -533,9 +533,10 @@ export async function _import(lines: string[], i = 0, gen?: Generation):
       const hpType = getHiddenPowerType(line);
       if (hpType) {
         line = 'Hidden Power ' + hpType.toString();
-        const hpIVs: Partial<StatsTable>|undefined = gen === 2 ?
-            Stats.dstois(Types.hiddenPowerDVs(hpType) || {}) :
-            Types.hiddenPowerIVs(hpType);
+        const t = gen === 2 ? Types.hiddenPowerDVs(hpType) :
+                              Types.hiddenPowerIVs(hpType);
+        const hpIVs: Partial<StatsTable>|undefined =
+            gen === 2 && t ? Stats.dstois(t) : t;
         if (!s.ivs && hpIVs) {
           s.ivs = {hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31};
           let stat: Stat;
