@@ -1,6 +1,6 @@
 import {readFileSync} from 'fs';
 
-import {Sets} from '../sets';
+import {_import, _unpack, Sets} from '../sets';
 
 function imported(s: string) {
   return s.split('\n').map(x => x.trim()).filter(x => x).join('\n');
@@ -183,8 +183,9 @@ describe('Sets', () => {
         - Hidden Power [Flying]
         - Volt Switch`);
 
-      const u = (await Sets.unpack(
-          await Sets.pack((await Sets.importSet(magnezoneIn, 7))!)))!;
+      const u = (await _unpack(
+          (await Sets.pack((await Sets.importSet(magnezoneIn, 7))!)) +
+          ']'))!.set!;
       expect(await Sets.exportSet(u, false, 7)).toEqual(magnezoneOut);
     });
 
@@ -230,7 +231,7 @@ describe('Sets', () => {
         - seismictoss`);
 
       const u = (await Sets.unpack(
-          await Sets.pack((await Sets.importSet(blisseyIn))!)))!;
+          await Sets.pack((await _import(blisseyIn.split('\n')))!.set!)))!;
       expect(await Sets.exportSet(u, true)).toEqual(blisseyOut);
     });
 
@@ -272,7 +273,9 @@ describe('Sets', () => {
       expect(await Sets.unpack(p)).not.toBeDefined();
       p += '|Sassy';
       expect(await Sets.unpack(p)).not.toBeDefined();
-      p += '|248,,8,,252,';
+      p += '|248';
+      expect(await Sets.unpack(p + '|')).not.toBeDefined();
+      p += ',,8,,252,';
       expect(await Sets.unpack(p)).not.toBeDefined();
       p += '|';
       expect(await Sets.unpack(p)).not.toBeDefined();
@@ -288,10 +291,19 @@ describe('Sets', () => {
 
     test('bad types', async () => {
       // @ts-ignore
-      const suicune: PokemonSet = {name: 'Suicune', pokeball: 'Cherish Ball'};
+      let suicune: PokemonSet = {name: 'Suicune', pokeball: 'Cherish Ball'};
       const u = (await Sets.unpack(await Sets.pack(suicune)))!;
       expect(await Sets.exportSet(u, true)).toEqual(exported('Suicune'));
       expect(await Sets.exportSet(suicune)).toEqual(exported('Suicune'));
+
+      // @ts-ignore
+      suicune = {
+        name: 'Suicune',
+        ivs: {hp: undefined},
+        moves: ['Hidden Power Bug']
+      };
+      expect(await Sets.exportSet(suicune))
+          .toEqual(exported('Suicune\n- Hidden Power [Bug]'));
     });
   });
 

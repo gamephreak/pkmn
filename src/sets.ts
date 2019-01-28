@@ -224,9 +224,10 @@ export class Sets {
       for (const move of s.moves) {
         hpType = getHiddenPowerType(move);
         if (hpType) {
-          const hpIVs: Partial<StatsTable>|undefined = gen === 2 ?
-              Stats.dstois(Types.hiddenPowerDVs(hpType) || {}) :
-              Types.hiddenPowerIVs(hpType);
+          const t = gen === 2 ? Types.hiddenPowerDVs(hpType) :
+                                Types.hiddenPowerIVs(hpType);
+          const hpIVs: Partial<StatsTable>|undefined =
+              gen === 2 && t ? Stats.dstois(t) : t;
 
           if (!hpIVs) {
             // not a valid Hidden Power type
