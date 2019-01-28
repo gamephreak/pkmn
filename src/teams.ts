@@ -178,9 +178,11 @@ export class Teams {
       gen?: Generation): Promise<string> {
     let buf = '';
 
+    let i = 0;
     for (const team of teams) {
       buf += '=== ' + (team.format ? '[' + team.format + '] ' : '') +
-          (team.folder ? '' + team.folder + '/' : '') + team.name + ' ===\n\n';
+          (team.folder ? '' + team.folder + '/' : '') +
+          (team.name || 'Untitled ' + ++i) + ' ===\n\n';
       buf += await team.export(fast, gen);
       buf += '\n';
     }

@@ -11,7 +11,11 @@ const TEAMS: string = readTeam('teams');
 
 describe('Team', () => {
   test('importTeam + exportTeam', async () => {
-    expect(await (await Team.fromString(TEAM))!.toString()).toEqual(TEAM);
+    const t = (await Team.fromString(TEAM))!;
+    expect(t.tier()).not.toBeDefined();
+    expect(await t.toString()).toEqual(TEAM);
+    expect(await Teams.exportTeams([t]))
+        .toEqual('=== Untitled 1 ===\n\n' + TEAM + '\n');
   });
 
   test('pack + unpack', async () => {
@@ -20,8 +24,14 @@ describe('Team', () => {
     expect(await u.export()).toEqual(TEAM);
   });
 
+  test('bad format', async () => {
+    const t = new Team([], 'uu');
+    expect(t.gen()).toBe(6);
+    expect(t.tier()).toBe('UU');
+  });
+
   test('toJSON + fromJSON', async () => {
-    const fj = (await Teams.unpackTeam((await Team.import(TEAM))!.toJSON()))!;
+    const fj = (await Team.unpack((await Team.import(TEAM))!.toJSON()))!;
     expect(await fj.export()).toEqual(TEAM);
 
     expect(Team.fromJSON('{"foo": "bar"}')).not.toBeDefined();
@@ -30,7 +40,10 @@ describe('Team', () => {
 
 describe('Teams', () => {
   test('importTeams + exportTeams', async () => {
-    const imported = await Teams.fromString(TEAMS)!;
+    let imported = await Teams.fromString(TEAMS.replace(/\[ou\]/, ''))!;
+    expect(imported[0].gen()).toBe(7);
+
+    imported = await Teams.fromString(TEAMS)!;
     expect(imported.length).toBe(2);
 
     expect(imported[0].gen()).toBe(6);
@@ -53,15 +66,21 @@ describe('Teams', () => {
   test('unpack', async () => {
     expect(await Teams.unpackTeam('')).not.toBeDefined();
     expect(await Teams.unpackTeam('foo')).not.toBeDefined();
+    expect(await Teams.importTeams('|\n\n\n')).toEqual([]);
   });
 
   test('including packed', async () => {
     const raw = readTeam('team');
     const teams = await Teams.importTeams(readTeam('teams'));
     const team = (await Team.import(raw))!;
-    const both = 'gen1ou]RBY/Cloyster|' + (await teams[1].pack()) + '\n' +
+    let both = 'ou]RBY/Cloyster|' + (await teams[1].pack()) + '\n' +
         (await Teams.exportTeams([teams[0]])) + '|' + (await team.pack());
-    const imported = await Teams.importTeams(both);
+    let imported = await Teams.importTeams(both);
+    expect(imported[0].gen()).toBe(6);
+
+    both = 'gen1ou]RBY/Cloyster|' + (await teams[1].pack()) + '\n' +
+        (await Teams.exportTeams([teams[0]])) + '|' + (await team.pack());
+    imported = await Teams.importTeams(both);
     expect(imported.length).toBe(3);
 
     expect(imported[0].team.length).toBe(6);
