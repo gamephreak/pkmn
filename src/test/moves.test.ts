@@ -15,7 +15,7 @@ describe('Moves', () => {
     expect(Object.keys(await Moves.forGen(6)).length)
         .toBe(165 + 86 + 16 + 103 + 113 + 92 + 62);
     expect(Object.keys(await Moves.forGen(7)).length)
-        .toBe(165 + 86 + 16 +  103 + 113 + 92 + 62 + 103);
+        .toBe(165 + 86 + 16 + 103 + 113 + 92 + 62 + 103);
   });
 
   test('get', async () => {
