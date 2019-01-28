@@ -214,6 +214,54 @@
     "shortDesc": "Varies in type based on the user's IVs.",
     "basePower": 60
   },
+  "hiddenpowerfighting": {
+    "basePower": 60
+  },
+  "hiddenpowerflying": {
+    "basePower": 60
+  },
+  "hiddenpowerpoison": {
+    "basePower": 60
+  },
+  "hiddenpowerground": {
+    "basePower": 60
+  },
+  "hiddenpowerrock": {
+    "basePower": 60
+  },
+  "hiddenpowerbug": {
+    "basePower": 60
+  },
+  "hiddenpowerghost": {
+    "basePower": 60
+  },
+  "hiddenpowersteel": {
+    "basePower": 60
+  },
+  "hiddenpowerfire": {
+    "basePower": 60
+  },
+  "hiddenpowerwater": {
+    "basePower": 60
+  },
+  "hiddenpowergrass": {
+    "basePower": 60
+  },
+  "hiddenpowerelectric": {
+    "basePower": 60
+  },
+  "hiddenpowerpsychic": {
+    "basePower": 60
+  },
+  "hiddenpowerice": {
+    "basePower": 60
+  },
+  "hiddenpowerdragon": {
+    "basePower": 60
+  },
+  "hiddenpowerdark": {
+    "basePower": 60
+  },
   "meanlook": {
     "desc": "Prevents the target from switching out. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. If the target leaves the field using Baton Pass, the replacement will remain trapped. The effect ends if the user leaves the field.",
     "flags": {
@@ -890,7 +938,7 @@
     "target": "normal",
     "type": "Fairy",
     "critRatio": 1,
-    "percentHealed": 0.75,
+    "percentHealed": 75,
     "gen": 6
   },
   "eerieimpulse": {
@@ -1499,7 +1547,7 @@
     "target": "any",
     "type": "Flying",
     "critRatio": 1,
-    "percentHealed": 0.75,
+    "percentHealed": 75,
     "gen": 6
   },
   "originpulse": {
@@ -1540,7 +1588,7 @@
     "target": "allAdjacent",
     "type": "Electric",
     "critRatio": 1,
-    "percentHealed": 0.5,
+    "percentHealed": 50,
     "gen": 6
   },
   "partingshot": {

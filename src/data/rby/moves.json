@@ -698,7 +698,7 @@
     "target": "normal",
     "type": "Psychic",
     "critRatio": 1,
-    "percentHealed": 0.5,
+    "percentHealed": 50,
     "gen": 1
   },
   "drillpeck": {
@@ -1380,7 +1380,7 @@
     "target": "normal",
     "type": "Bug",
     "critRatio": 1,
-    "percentHealed": 0.5,
+    "percentHealed": 50,
     "gen": 1
   },
   "leechseed": {
@@ -1531,7 +1531,7 @@
     "target": "normal",
     "type": "Grass",
     "critRatio": 1,
-    "percentHealed": 0.5,
+    "percentHealed": 50,
     "gen": 1
   },
   "megakick": {
@@ -2519,7 +2519,7 @@
     "recoil": 50,
     "accuracy": 100,
     "basePower": 50,
-    "pp": 1,
+    "pp": 10,
     "target": "randomNormal",
     "type": "Normal",
     "critRatio": 1,

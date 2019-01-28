@@ -292,7 +292,8 @@
     "critRatio": 3
   },
   "recover": {
-    "desc": "The user restores 1/2 of its maximum HP, rounded down."
+    "desc": "The user restores 1/2 of its maximum HP, rounded down.",
+    "percentHealed": 50
   },
   "reflect": {
     "target": "allySide",
@@ -346,7 +347,8 @@
     "shortDesc": "30% chance to poison the target."
   },
   "softboiled": {
-    "desc": "The user restores 1/2 of its maximum HP, rounded down."
+    "desc": "The user restores 1/2 of its maximum HP, rounded down.",
+    "percentHealed": 50
   },
   "solarbeam": {
     "desc": "This attack charges on the first turn and executes on the second. Damage is halved if the weather is Rain Dance. If the weather is Sunny Day, the move completes in one turn.",
@@ -364,7 +366,8 @@
   "struggle": {
     "desc": "Deals typeless damage. If this move was successful, the user takes damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. This move is automatically used if none of the user's known moves can be selected.",
     "shortDesc": "User loses 1/4 the HP lost by the target.",
-    "recoil": 25
+    "recoil": 25,
+    "pp": 1
   },
   "stunspore": {
     "desc": "Paralyzes the target. This move does not ignore type immunity."
@@ -985,7 +988,7 @@
     "target": "normal",
     "type": "Grass",
     "critRatio": 1,
-    "percentHealed": 0.5,
+    "percentHealed": 50,
     "gen": 2
   },
   "healbell": {
@@ -1016,6 +1019,262 @@
     "pp": 15,
     "target": "normal",
     "type": "Normal",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowerfighting": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Fighting",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Fighting",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowerflying": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Flying",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Flying",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowerpoison": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Poison",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Poison",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowerground": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Ground",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Ground",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowerrock": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Rock",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Rock",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowerbug": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Bug",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Bug",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowerghost": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Ghost",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Ghost",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowersteel": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Steel",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Steel",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowerfire": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Fire",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Fire",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowerwater": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Water",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Water",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowergrass": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Grass",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Grass",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowerelectric": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Electric",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Electric",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowerpsychic": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Psychic",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Psychic",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowerice": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Ice",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Ice",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowerdragon": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Dragon",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Dragon",
+    "critRatio": 1,
+    "gen": 2
+  },
+  "hiddenpowerdark": {
+    "id": "hiddenpower",
+    "name": "Hidden Power Dark",
+    "num": 237,
+    "flags": {
+      "protect": 1,
+      "mirror": 1
+    },
+    "basePower": 70,
+    "accuracy": 100,
+    "pp": 15,
+    "target": "normal",
+    "type": "Dark",
     "critRatio": 1,
     "gen": 2
   },
@@ -1203,6 +1462,7 @@
     "target": "self",
     "type": "Normal",
     "critRatio": 1,
+    "percentHealed": 50,
     "gen": 2
   },
   "mindreader": {

@@ -4,17 +4,18 @@ import {Moves} from '../moves';
 describe('Moves', () => {
   test('forGen', async () => {
     expect(Object.keys(await Moves.forGen(1)).length).toBe(165);
-    expect(Object.keys(await Moves.forGen(2)).length).toBe(165 + 86);
+    // NOTE: 16 'Hidden Power X' moves included.
+    expect(Object.keys(await Moves.forGen(2)).length).toBe(165 + 86 + 16);
     // NOTE: Honko seems to think 'Mega Drain' and 'Acid' were removed...
-    expect(Object.keys(await Moves.forGen(3)).length).toBe(165 + 86 + 103);
+    expect(Object.keys(await Moves.forGen(3)).length).toBe(165 + 86 + 16 + 103);
     expect(Object.keys(await Moves.forGen(4)).length)
-        .toBe(165 + 86 + 103 + 113);
+        .toBe(165 + 86 + 16 + 103 + 113);
     expect(Object.keys(await Moves.forGen(5)).length)
-        .toBe(165 + 86 + 103 + 113 + 92);
+        .toBe(165 + 86 + 16 + 103 + 113 + 92);
     expect(Object.keys(await Moves.forGen(6)).length)
-        .toBe(165 + 86 + 103 + 113 + 92 + 62);
+        .toBe(165 + 86 + 16 + 103 + 113 + 92 + 62);
     expect(Object.keys(await Moves.forGen(7)).length)
-        .toBe(165 + 86 + 103 + 113 + 92 + 62 + 103);
+        .toBe(165 + 86 + 16 +  103 + 113 + 92 + 62 + 103);
   });
 
   test('get', async () => {
@@ -25,8 +26,8 @@ describe('Moves', () => {
     expect(await Moves.get('eq', 6)).toEqual(await Moves.get('Earthquake', 5));
 
     // hidden power
-    // TODO expect((await Moves.get('Hidden Power [Bug]'))!.name).toBe('Hidden
-    // Power Bug');
+    expect((await Moves.get('Hidden Power [Bug]'))!.name)
+        .toBe('Hidden Power Bug');
   });
 
   test('fields', async () => {
@@ -34,7 +35,7 @@ describe('Moves', () => {
     expect((await Moves.get('Surf'))!.basePower).toBe(90);
     expect((await Moves.get('Curse', 4))!.type).toBe('???');
     expect((await Moves.get('Curse', 5))!.type).toBe('Ghost');
-    // TODO expect((await Moves.get('Struggle', 1))!.pp).toBe(10);
+    expect((await Moves.get('Struggle', 1))!.pp).toBe(10);
     expect((await Moves.get('Struggle', 2))!.pp).toBe(1);
     expect((await Moves.get('Bide', 3))!.accuracy).toBe(100);
     expect((await Moves.get('Bide', 4))!.accuracy).toBe(true);
@@ -64,7 +65,7 @@ describe('Moves', () => {
     expect((await Moves.get('Hypnosis'))!.zMoveBoosts).toEqual({spe: 1});
     expect((await Moves.get('Double Kick'))!.multihit).toBe(2);
     expect((await Moves.get('Rock Blast'))!.multihit).toEqual([2, 5]);
-    // TODO expect((await Moves.get('Softboiled'))!.percentHealed).toBe(50);
+    expect((await Moves.get('Softboiled'))!.percentHealed).toBe(50);
     expect((await Moves.get('Hi Jump Kick'))!.recoil).toBe('crash');
     expect((await Moves.get('Struggle'))!.recoil).toBe('Struggle');
     expect((await Moves.get('Double Edge', 1))!.recoil).toBe(25);

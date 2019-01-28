@@ -532,6 +532,54 @@
   "hiddenpower": {
     "category": "Special"
   },
+  "hiddenpowerfighting": {
+    "category": "Special"
+  },
+  "hiddenpowerflying": {
+    "category": "Special"
+  },
+  "hiddenpowerpoison": {
+    "category": "Special"
+  },
+  "hiddenpowerground": {
+    "category": "Special"
+  },
+  "hiddenpowerrock": {
+    "category": "Special"
+  },
+  "hiddenpowerbug": {
+    "category": "Special"
+  },
+  "hiddenpowerghost": {
+    "category": "Special"
+  },
+  "hiddenpowersteel": {
+    "category": "Special"
+  },
+  "hiddenpowerfire": {
+    "category": "Special"
+  },
+  "hiddenpowerwater": {
+    "category": "Special"
+  },
+  "hiddenpowergrass": {
+    "category": "Special"
+  },
+  "hiddenpowerelectric": {
+    "category": "Special"
+  },
+  "hiddenpowerpsychic": {
+    "category": "Special"
+  },
+  "hiddenpowerice": {
+    "category": "Special"
+  },
+  "hiddenpowerdragon": {
+    "category": "Special"
+  },
+  "hiddenpowerdark": {
+    "category": "Special"
+  },
   "icywind": {
     "category": "Special"
   },
@@ -1620,7 +1668,7 @@
     "target": "normal",
     "type": "Fighting",
     "critRatio": 1,
-    "percentHealed": 0.5,
+    "percentHealed": 50,
     "gen": 4
   },
   "earthpower": {
@@ -2094,6 +2142,7 @@
     "target": "self",
     "type": "Bug",
     "critRatio": 1,
+    "percentHealed": 50,
     "gen": 4
   },
   "healingwish": {
@@ -2894,6 +2943,7 @@
     "target": "self",
     "type": "Flying",
     "critRatio": 1,
+    "percentHealed": 50,
     "gen": 4
   },
   "seedbomb": {

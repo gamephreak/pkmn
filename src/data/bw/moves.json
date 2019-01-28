@@ -1533,6 +1533,7 @@
     "target": "any",
     "type": "Psychic",
     "critRatio": 1,
+    "percentHealed": 50,
     "gen": 5
   },
   "heartstamp": {
@@ -1657,7 +1658,7 @@
     "target": "normal",
     "type": "Grass",
     "critRatio": 1,
-    "percentHealed": 0.5,
+    "percentHealed": 50,
     "gen": 5
   },
   "hurricane": {
