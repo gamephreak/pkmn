@@ -5,6 +5,9 @@
 [![Coverage
 Status](https://coveralls.io/repos/github/gamephreak/pkmn/badge.svg?branch=async)](https://coveralls.io/github/gamephreak/pkmn?branch=async)
 
+**NOTE:** pkmn-async is an asynchronous branch of the
+[pkmn](https://github.com/gamephreak/pkmn) library.
+
 pkmn-async provides fundamental types and data structures for building products
 around Pokémon. pkmn-async exposes curated data and methods (munged using
 [pkmunge](https://github.com/gamephreak/pkmunge)) from
@@ -58,7 +61,8 @@ GUI.
 datatypes that are not necessarily required for all projects (for example,
 learnset and ruleset information). pkmnx can be used as a drop in replacement
 for pkmn provided your project requires the added functionality. **NOTE:**
-pkmnx is strictly synchronous.
+pkmnx is strictly synchronous and will only work with the synchronous
+[pkmn](https://github.com/gamephreak/pkmn) branch.
 
 ## License & Credits
 
