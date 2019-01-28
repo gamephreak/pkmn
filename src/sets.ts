@@ -92,7 +92,7 @@ export class Sets {
     }
     if (evs === '|,,,,,') {
       buf += '|';
-      if (s.evs['hp'] === 0) buf += 0;
+      // if (s.evs['hp'] === 0) buf += 0; // BUG: ???
     } else {
       buf += evs;
     }
@@ -155,7 +155,7 @@ export class Sets {
   static async exportSet(s: PokemonSet, fast?: boolean, gen?: Generation):
       Promise<string> {
     let buf = '';
-    let species = s.species;
+    let species = s.species || s.name;
     if (!fast) {
       const s = await Species.get(species);
       species = (s && s.name) || species;
@@ -559,10 +559,10 @@ function toPokemonSet(s?: WriteableSet, gen?: Generation): PokemonSet|
 
   return {
     name: s.name || '',
-    species: s.species || s.name || '',
+    species: s.species || /* istanbul ignore next */ (s.name || ''),
     item: s.item || '',
     ability: s.ability || '',
-    moves: s.moves || [],
+    moves: s.moves || /* istanbul ignore next */[],
     nature: s.nature || '',
     evs: Stats.fillEVs(s.evs || {}, gen),
     ivs: Stats.fillIVs(s.ivs || {}),

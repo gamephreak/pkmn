@@ -256,6 +256,43 @@ describe('Sets', () => {
       // clang-format on
       expect(await Sets.exportSet(u)).toEqual(fakeOut);
     });
+
+    test('partial', async () => {
+      let p = '';
+      expect(await Sets.unpack(p)).not.toBeDefined();
+      p += 'Tangrowth';
+      expect(await Sets.unpack(p)).not.toBeDefined();
+      p += '|';
+      expect(await Sets.unpack(p)).not.toBeDefined();
+      p += '|assaultvest';
+      expect(await Sets.unpack(p)).not.toBeDefined();
+      p += '|H';
+      expect(await Sets.unpack(p)).not.toBeDefined();
+      p += '|gigadrain,knockoff,powerwhip,earthquake';
+      expect(await Sets.unpack(p)).not.toBeDefined();
+      p += '|Sassy';
+      expect(await Sets.unpack(p)).not.toBeDefined();
+      p += '|248,,8,,252,';
+      expect(await Sets.unpack(p)).not.toBeDefined();
+      p += '|';
+      expect(await Sets.unpack(p)).not.toBeDefined();
+      p += '|,30,30,,,';
+      expect(await Sets.unpack(p)).not.toBeDefined();
+      p += '|';
+      expect(await Sets.unpack(p)).not.toBeDefined();
+      p += '|';
+      expect(await Sets.unpack(p)).not.toBeDefined();
+      p += '|,ice,';
+      expect(await Sets.unpack(p)).toBeDefined();
+    });
+
+    test('bad types', async () => {
+      // @ts-ignore
+      const suicune: PokemonSet = {name: 'Suicune', pokeball: 'Cherish Ball'};
+      const u = (await Sets.unpack(await Sets.pack(suicune)))!;
+      expect(await Sets.exportSet(u, true)).toEqual(exported('Suicune'));
+      expect(await Sets.exportSet(suicune)).toEqual(exported('Suicune'));
+    });
   });
 
   test('toJSON + fromJSON', async () => {
