@@ -70,7 +70,7 @@ export class Team {
 }
 
 export class Teams {
-  // istanbul ignore next
+  // istanbul ignore next: constructor
   protected constructor() {}
 
   static async packTeam(team: Team, gen?: Generation): Promise<string> {
@@ -202,7 +202,7 @@ export class Teams {
 async function unpackLine(
     line: string, gen?: Generation): Promise<Team|undefined> {
   const pipeIndex = line.indexOf('|');
-  // istanbul ignore if: can't happen
+  // istanbul ignore if: N/A
   if (pipeIndex < 0) return undefined;
 
   let bracketIndex = line.indexOf(']');

@@ -25,7 +25,7 @@ function isWindow(obj: any) {
 }
 
 function getType(obj: any) {
-  // istanbul ignore if: Can't actually happen in this code.
+  // istanbul ignore if: N/A
   if (obj == null) {
     return String(obj);
   }

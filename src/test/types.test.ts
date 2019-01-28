@@ -3,7 +3,7 @@ import {Types} from '../types';
 
 describe('Types', () => {
   test('chart', async () => {
-    expect((await Types.chart())['Fighting']!['Fighting']).toBe(1);
+    expect((await Types.get())['Fighting']!['Fighting']).toBe(1);
     expect((await Types.chart())['Fighting']!['Normal']).toBe(2);
     expect((await Types.chart())['Fighting']!['Flying']).toBe(0.5);
     expect((await Types.chart())['Fighting']!['Ghost']).toBe(0);

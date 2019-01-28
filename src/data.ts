@@ -34,7 +34,7 @@ export function cache<T>(
     descriptor:
         TypedPropertyDescriptor<(k: ID|string, gen?: Generation) => T>) {
   const fn = descriptor.value;
-  // istanbul ignore if
+  // istanbul ignore if: types
   if (!fn) return;
   const c: {[kg: string]: T} = {};
 

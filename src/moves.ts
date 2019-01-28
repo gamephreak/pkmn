@@ -149,7 +149,7 @@ const MOVES: Readonly<Array<Promise<DataTable<Move>>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export class Moves {
-  // istanbul ignore next
+  // istanbul ignore next: constructor
   protected constructor() {}
 
   static forGen(gen: Generation): Promise<DataTable<Move>> {
@@ -158,7 +158,8 @@ export class Moves {
 
   @cache
   static async get(
-      m: ID|string, /* istanbul ignore next */ gen: Generation = CURRENT):
+      m: ID|string,
+      /* istanbul ignore next: @cache */ gen: Generation = CURRENT):
       Promise<Move|undefined> {
     let id = toID(m);
     const moves = await Moves.forGen(gen);

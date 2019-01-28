@@ -29,7 +29,7 @@ type WriteableSet =
     Partial<{-readonly[k in keyof PokemonSet] -?: PokemonSet[k]}>;
 
 export class Sets {
-  // istanbul ignore next
+  // istanbul ignore next: constructor
   protected constructor() {}
 
   static async pack(s: PokemonSet, gen?: Generation): Promise<string> {
@@ -561,10 +561,10 @@ function toPokemonSet(s?: WriteableSet, gen?: Generation): PokemonSet|
 
   return {
     name: s.name || '',
-    species: s.species || /* istanbul ignore next */ (s.name || ''),
+    species: s.species || /* istanbul ignore next: N/A */ (s.name || ''),
     item: s.item || '',
     ability: s.ability || '',
-    moves: s.moves || /* istanbul ignore next */[],
+    moves: s.moves || /* istanbul ignore next: types */[],
     nature: s.nature || '',
     evs: Stats.fillEVs(s.evs || {}, gen),
     ivs: Stats.fillIVs(s.ivs || {}),

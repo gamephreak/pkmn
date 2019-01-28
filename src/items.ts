@@ -33,7 +33,7 @@ const ITEMS: Readonly<Array<Promise<DataTable<Item>>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
 
 export class Items {
-  // istanbul ignore next
+  // istanbul ignore next: constructor
   protected constructor() {}
 
   static forGen(gen: Generation): Promise<DataTable<Item>> {
@@ -42,7 +42,8 @@ export class Items {
 
   @cache
   static async get(
-      i: ID|string, /* istanbul ignore next */ gen: Generation = CURRENT):
+      i: ID|string,
+      /* istanbul ignore next: @cache */ gen: Generation = CURRENT):
       Promise<Item|undefined> {
     const id = toID(i);
     const items = await Items.forGen(gen);
