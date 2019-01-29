@@ -1,11 +1,17 @@
 {
   "absorb": {
-    "desc": "The user recovers 1/2 the HP lost by the target, rounded down. If the target has a substitute, this move misses."
+    "desc": "The user recovers 1/2 the HP lost by the target, rounded down. If the target has a substitute, this move misses.",
+    "flags": {
+      "protect": 1
+    }
   },
   "acid": {
     "target": "allAdjacentFoes",
     "desc": "Has a 10% chance to lower the target's Defense by 1 stage.",
     "shortDesc": "10% chance to lower the target's Defense by 1.",
+    "flags": {
+      "protect": 1
+    },
     "secondaries": [
       {
         "chance": 10
@@ -22,6 +28,9 @@
   "aurorabeam": {
     "desc": "Has a 10% chance to lower the target's Attack by 1 stage.",
     "shortDesc": "10% chance to lower the target's Attack by 1.",
+    "flags": {
+      "protect": 1
+    },
     "secondaries": [
       {
         "chance": 10
@@ -29,21 +38,33 @@
     ]
   },
   "barrage": {
-    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits."
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+    "flags": {
+      "protect": 1
+    }
   },
   "bide": {
     "accuracy": 100,
     "type": "Normal",
-    "desc": "The user spends two or three turns locked into this move and then, on the second or third turn after using this move, the user attacks the opponent, inflicting double the damage in HP it lost during those turns. If the user is prevented from moving during this move's use, the effect ends. This move does not ignore type immunity."
+    "desc": "The user spends two or three turns locked into this move and then, on the second or third turn after using this move, the user attacks the opponent, inflicting double the damage in HP it lost during those turns. If the user is prevented from moving during this move's use, the effect ends. This move does not ignore type immunity.",
+    "flags": {
+      "protect": 1
+    }
   },
   "bind": {
     "desc": "Prevents the target from switching for two to five turns. Causes damage to the target equal to 1/16 of its maximum HP, rounded down, at the end of each turn during effect. The target can still switch out if it uses Baton Pass. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
-    "shortDesc": "Traps and damages the target for 2-5 turns."
+    "shortDesc": "Traps and damages the target for 2-5 turns.",
+    "flags": {
+      "protect": 1
+    }
   },
   "bite": {
     "type": "Dark",
     "desc": "Has a 30% chance to flinch the target.",
     "shortDesc": "30% chance to flinch the target.",
+    "flags": {
+      "protect": 1
+    },
     "secondaries": [
       {
         "chance": 30
@@ -52,15 +73,34 @@
   },
   "blizzard": {
     "accuracy": 70,
-    "target": "allAdjacentFoes"
+    "target": "allAdjacentFoes",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "bodyslam": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "boneclub": {
+    "flags": {
+      "protect": 1
+    }
   },
   "bonemerang": {
-    "desc": "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit."
+    "desc": "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
+    "flags": {
+      "protect": 1
+    }
   },
   "bubble": {
     "target": "allAdjacentFoes",
     "desc": "Has a 10% chance to lower the target's Speed by 1 stage.",
     "shortDesc": "10% chance to lower the target's Speed by 1.",
+    "flags": {
+      "protect": 1
+    },
     "secondaries": [
       {
         "chance": 10
@@ -70,6 +110,9 @@
   "bubblebeam": {
     "desc": "Has a 10% chance to lower the target's Speed by 1 stage.",
     "shortDesc": "10% chance to lower the target's Speed by 1.",
+    "flags": {
+      "protect": 1
+    },
     "secondaries": [
       {
         "chance": 10
@@ -78,14 +121,33 @@
   },
   "clamp": {
     "desc": "Prevents the target from switching for two to five turns. Causes damage to the target equal to 1/16 of its maximum HP, rounded down, at the end of each turn during effect. The target can still switch out if it uses Baton Pass. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
-    "shortDesc": "Traps and damages the target for 2-5 turns."
+    "shortDesc": "Traps and damages the target for 2-5 turns.",
+    "flags": {
+      "protect": 1
+    }
   },
   "cometpunch": {
-    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits."
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "confuseray": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "confusion": {
+    "flags": {
+      "protect": 1
+    }
   },
   "constrict": {
     "desc": "Has a 10% chance to lower the target's Speed by 1 stage.",
     "shortDesc": "10% chance to lower the target's Speed by 1.",
+    "flags": {
+      "protect": 1
+    },
     "secondaries": [
       {
         "chance": 10
@@ -98,25 +160,45 @@
     "shortDesc": "Changes user's type to match a known move."
   },
   "counter": {
-    "desc": "Deals damage to the opposing Pokemon equal to twice the HP lost by the user from a physical attack this turn. This move considers Hidden Power as Normal type, and only the last hit of a multi-hit attack is counted. Fails if the user moves first, if the user was not hit by a physical attack this turn, or if the user did not lose HP from the attack. If the opposing Pokemon used Fissure or Horn Drill and missed, this move deals 65535 damage."
+    "desc": "Deals damage to the opposing Pokemon equal to twice the HP lost by the user from a physical attack this turn. This move considers Hidden Power as Normal type, and only the last hit of a multi-hit attack is counted. Fails if the user moves first, if the user was not hit by a physical attack this turn, or if the user did not lose HP from the attack. If the opposing Pokemon used Fissure or Horn Drill and missed, this move deals 65535 damage.",
+    "flags": {
+      "protect": 1
+    }
   },
   "crabhammer": {
+    "flags": {
+      "protect": 1
+    },
     "critRatio": 3
+  },
+  "cut": {
+    "flags": {
+      "protect": 1
+    }
   },
   "defensecurl": {
     "desc": "Raises the user's Defense by 1 stage. While the user remains active, the power of the user's Rollout will be doubled (this effect is not stackable). Baton Pass can be used to transfer this effect to an ally."
   },
   "dig": {
     "desc": "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Earthquake, Fissure, and Magnitude, the user is unaffected by weather, and Earthquake and Magnitude have doubled power when used against the user.",
+    "flags": {
+      "protect": 1
+    },
     "basePower": 60
   },
   "disable": {
     "desc": "For 1 to 7 turns, the target's last move used becomes disabled. Fails if one of the target's moves is already disabled, if the target has not made a move, if the target no longer knows the move, or if the move has 0 PP.",
-    "shortDesc": "For 1-7 turns, disables the target's last move."
+    "shortDesc": "For 1-7 turns, disables the target's last move.",
+    "flags": {
+      "protect": 1
+    }
   },
   "dizzypunch": {
     "desc": "Has a 20% chance to confuse the target.",
     "shortDesc": "20% chance to confuse the target.",
+    "flags": {
+      "protect": 1
+    },
     "secondaries": [
       {
         "chance": 20,
@@ -125,59 +207,138 @@
     ]
   },
   "doublekick": {
-    "desc": "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit."
+    "desc": "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit.",
+    "flags": {
+      "protect": 1
+    }
   },
   "doubleslap": {
-    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits."
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+    "flags": {
+      "protect": 1
+    }
   },
   "doubleedge": {
     "desc": "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. If this move hits a substitute, the recoil damage is always 1 HP.",
+    "flags": {
+      "protect": 1
+    },
     "basePower": 120
   },
+  "dragonrage": {
+    "flags": {
+      "protect": 1
+    }
+  },
   "dreameater": {
-    "desc": "The target is unaffected by this move unless it is asleep and does not have a substitute. The user recovers 1/2 the HP lost by the target, rounded down, but not less than 1 HP."
+    "desc": "The target is unaffected by this move unless it is asleep and does not have a substitute. The user recovers 1/2 the HP lost by the target, rounded down, but not less than 1 HP.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "drillpeck": {
+    "flags": {
+      "protect": 1
+    }
   },
   "earthquake": {
     "desc": "Power doubles if the target is using Dig.",
-    "shortDesc": "Power doubles on Dig."
+    "shortDesc": "Power doubles on Dig.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "eggbomb": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "ember": {
+    "flags": {
+      "protect": 1
+    }
   },
   "explosion": {
     "target": "allAdjacent",
     "desc": "The user faints after using this move. The target's Defense is halved during damage calculation.",
+    "flags": {
+      "protect": 1
+    },
     "basePower": 250
   },
   "fireblast": {
     "desc": "Has a 10% chance to burn the target.",
     "shortDesc": "10% chance to burn the target.",
+    "flags": {
+      "protect": 1
+    },
     "secondaries": [
       {
         "chance": 10
       }
     ]
   },
+  "firepunch": {
+    "flags": {
+      "protect": 1
+    }
+  },
   "firespin": {
     "desc": "Prevents the target from switching for two to five turns. Causes damage to the target equal to 1/16 of its maximum HP, rounded down, at the end of each turn during effect. The target can still switch out if it uses Baton Pass. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
-    "shortDesc": "Traps and damages the target for 2-5 turns."
+    "shortDesc": "Traps and damages the target for 2-5 turns.",
+    "flags": {
+      "protect": 1
+    }
   },
   "fissure": {
     "desc": "Deals 65535 damage to the target. This attack's accuracy out of 256 is equal to the lesser of (2 * (user's level - target's level) + 76) and 255, before applying accuracy and evasiveness modifiers. Fails if the target is at a higher level. Can hit a target using Dig.",
-    "shortDesc": "OHKOs the target. Fails if user is a lower level."
+    "shortDesc": "OHKOs the target. Fails if user is a lower level.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "flamethrower": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "flash": {
+    "flags": {
+      "protect": 1
+    }
   },
   "fly": {
-    "desc": "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Thunder, Twister, and Whirlwind, and Gust and Twister have doubled power when used against it."
+    "desc": "This attack charges on the first turn and executes on the second. On the first turn, the user avoids all attacks other than Gust, Thunder, Twister, and Whirlwind, and Gust and Twister have doubled power when used against it.",
+    "flags": {
+      "protect": 1
+    }
   },
   "focusenergy": {
     "desc": "Raises the user's chance for a critical hit by 1 stage. Fails if the user already has the effect. Baton Pass can be used to transfer this effect to an ally.",
     "shortDesc": "Raises the user's critical hit ratio by 1."
   },
   "furyattack": {
-    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits."
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+    "flags": {
+      "protect": 1
+    }
   },
   "furyswipes": {
-    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits."
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+    "flags": {
+      "protect": 1
+    }
   },
   "glare": {
-    "desc": "Paralyzes the target. This move does not ignore type immunity."
+    "desc": "Paralyzes the target. This move does not ignore type immunity.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "growl": {
+    "flags": {
+      "protect": 1
+    }
   },
   "growth": {
     "desc": "Raises the user's Special Attack by 1 stage.",
@@ -188,40 +349,119 @@
   },
   "guillotine": {
     "desc": "Deals 65535 damage to the target. This attack's accuracy out of 256 is equal to the lesser of (2 * (user's level - target's level) + 76) and 255, before applying accuracy and evasiveness modifiers. Fails if the target is at a higher level.",
-    "shortDesc": "OHKOs the target. Fails if user is a lower level."
+    "shortDesc": "OHKOs the target. Fails if user is a lower level.",
+    "flags": {
+      "protect": 1
+    }
   },
   "gust": {
     "type": "Flying",
     "desc": "Power doubles if the target is using Fly.",
-    "shortDesc": "Power doubles during Fly."
+    "shortDesc": "Power doubles during Fly.",
+    "flags": {
+      "protect": 1
+    }
   },
   "haze": {
     "target": "all",
     "desc": "Resets the stat stages of all active Pokemon to 0.",
     "shortDesc": "Eliminates all stat changes."
   },
+  "headbutt": {
+    "flags": {
+      "protect": 1
+    }
+  },
   "highjumpkick": {
     "desc": "If this attack is not successful and the target was not immune, the user loses HP equal to 1/8 the damage the target would have taken, rounded down, but not less than 1 HP, as crash damage.",
-    "shortDesc": "If miss, user takes 1/8 damage it would've dealt."
+    "shortDesc": "If miss, user takes 1/8 damage it would've dealt.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "hornattack": {
+    "flags": {
+      "protect": 1
+    }
   },
   "horndrill": {
     "desc": "Deals 65535 damage to the target. This attack's accuracy out of 256 is equal to the lesser of (2 * (user's level - target's level) + 76) and 255, before applying accuracy and evasiveness modifiers. Fails if the target is at a higher level.",
-    "shortDesc": "OHKOs the target. Fails if user is a lower level."
+    "shortDesc": "OHKOs the target. Fails if user is a lower level.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "hydropump": {
+    "flags": {
+      "protect": 1
+    }
   },
   "hyperbeam": {
     "desc": "If this move is successful, the user must recharge on the following turn and cannot select a move.",
-    "shortDesc": "User cannot move next turn."
+    "shortDesc": "User cannot move next turn.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "hyperfang": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "hypnosis": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "icebeam": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "icepunch": {
+    "flags": {
+      "protect": 1
+    }
   },
   "jumpkick": {
     "desc": "If this attack is not successful and the target was not immune, the user loses HP equal to 1/8 the damage the target would have taken, rounded down, but not less than 1 HP, as crash damage.",
-    "shortDesc": "If miss, user takes 1/8 damage it would've dealt."
+    "shortDesc": "If miss, user takes 1/8 damage it would've dealt.",
+    "flags": {
+      "protect": 1
+    }
   },
   "karatechop": {
     "type": "Fighting",
+    "flags": {
+      "protect": 1
+    },
     "critRatio": 3
   },
+  "kinesis": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "leechlife": {
+    "flags": {
+      "protect": 1
+    }
+  },
   "leechseed": {
-    "desc": "The Pokemon at the user's position steals 1/8 of the target's maximum HP, rounded down, at the end of each turn. If the target uses Baton Pass, the replacement will continue being leeched. If the target switches out or uses Rapid Spin, the effect ends. Grass-type Pokemon are immune to this move on use, but not its effect."
+    "desc": "The Pokemon at the user's position steals 1/8 of the target's maximum HP, rounded down, at the end of each turn. If the target uses Baton Pass, the replacement will continue being leeched. If the target switches out or uses Rapid Spin, the effect ends. Grass-type Pokemon are immune to this move on use, but not its effect.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "leer": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "lick": {
+    "flags": {
+      "protect": 1
+    }
   },
   "lightscreen": {
     "target": "allySide",
@@ -229,12 +469,40 @@
     "shortDesc": "For 5 turns, the user's party has doubled Sp. Def.",
     "sideCondition": "lightscreen"
   },
+  "lovelykiss": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "lowkick": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "megadrain": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "megakick": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "megapunch": {
+    "flags": {
+      "protect": 1
+    }
+  },
   "metronome": {
     "desc": "A random move is selected for use, other than Counter, Destiny Bond, Detect, Endure, Metronome, Mimic, Mirror Coat, Protect, Sketch, Sleep Talk, Struggle, or Thief."
   },
   "mimic": {
     "desc": "While the user remains active, this move is replaced by the last move used by the target. The copied move has 5 PP. Fails if the target has not made a move, if the user already knows the move, or if the move is Struggle.",
-    "shortDesc": "The last move the target used replaces this one."
+    "shortDesc": "The last move the target used replaces this one.",
+    "flags": {
+      "protect": 1
+    }
   },
   "minimize": {
     "desc": "Raises the user's evasiveness by 1 stage. Whether or not the user's evasiveness was changed, Stomp will have its power doubled if used against the user while it is active. Baton Pass can be used to transfer this effect to an ally."
@@ -247,27 +515,72 @@
   },
   "nightshade": {
     "desc": "Deals damage to the target equal to the user's level.",
-    "shortDesc": "Does damage equal to the user's level."
+    "shortDesc": "Does damage equal to the user's level.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "payday": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "peck": {
+    "flags": {
+      "protect": 1
+    }
   },
   "petaldance": {
     "desc": "Whether or not this move is successful, the user spends two or three turns locked into this move and becomes confused immediately after its move on the last turn of the effect, even if it is already confused. If the user is prevented from moving, the effect ends without causing confusion. If this move is called by Sleep Talk, the move is used for one turn and does not confuse the user.",
-    "shortDesc": "Lasts 2-3 turns. Confuses the user afterwards."
+    "shortDesc": "Lasts 2-3 turns. Confuses the user afterwards.",
+    "flags": {
+      "protect": 1
+    }
   },
   "pinmissile": {
-    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits."
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "poisongas": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "poisonpowder": {
+    "flags": {
+      "protect": 1
+    }
   },
   "poisonsting": {
     "desc": "Has a 30% chance to poison the target.",
     "shortDesc": "30% chance to poison the target.",
+    "flags": {
+      "protect": 1
+    },
     "secondaries": [
       {
         "chance": 30
       }
     ]
   },
+  "pound": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "psybeam": {
+    "flags": {
+      "protect": 1
+    }
+  },
   "psychic": {
     "desc": "Has a 10% chance to lower the target's Special Defense by 1 stage.",
     "shortDesc": "10% chance to lower the target's Sp. Def by 1.",
+    "flags": {
+      "protect": 1
+    },
     "secondaries": [
       {
         "chance": 10,
@@ -277,18 +590,37 @@
       }
     ]
   },
+  "psywave": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "quickattack": {
+    "flags": {
+      "protect": 1
+    }
+  },
   "rage": {
     "desc": "Once this move is successfully used, X starts at 1. This move's damage is multiplied by X, and whenever the user is hit by the opposing Pokemon, X increases by 1, with a maximum of 255. X resets to 1 when the user is no longer active or did not choose this move for use.",
-    "shortDesc": "Next Rage increases in damage if hit during use."
+    "shortDesc": "Next Rage increases in damage if hit during use.",
+    "flags": {
+      "protect": 1
+    }
   },
   "razorleaf": {
     "target": "allAdjacentFoes",
+    "flags": {
+      "protect": 1
+    },
     "critRatio": 3
   },
   "razorwind": {
     "target": "allAdjacentFoes",
     "desc": "Has a higher chance for a critical hit. This attack charges on the first turn and executes on the second.",
     "shortDesc": "Charges, then hits target turn 2. High crit ratio.",
+    "flags": {
+      "protect": 1
+    },
     "critRatio": 3
   },
   "recover": {
@@ -307,12 +639,18 @@
   "roar": {
     "desc": "The target is forced to switch out and be replaced with a random unfainted ally. Fails if the target is the last unfainted Pokemon in its party, or if the user moves before the target.",
     "shortDesc": "Forces the target to switch to a random ally.",
+    "flags": {
+      "protect": 1
+    },
     "priority": -1
   },
   "rockslide": {
     "target": "allAdjacentFoes",
     "desc": "Has a 30% chance to flinch the target.",
     "shortDesc": "30% chance to flinch the target.",
+    "flags": {
+      "protect": 1
+    },
     "secondaries": [
       {
         "chance": 30,
@@ -321,30 +659,96 @@
     ]
   },
   "rockthrow": {
-    "accuracy": 90
+    "accuracy": 90,
+    "flags": {
+      "protect": 1
+    }
+  },
+  "rollingkick": {
+    "flags": {
+      "protect": 1
+    }
   },
   "sandattack": {
-    "type": "Ground"
+    "type": "Ground",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "scratch": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "screech": {
+    "flags": {
+      "protect": 1
+    }
   },
   "seismictoss": {
     "desc": "Deals damage to the target equal to the user's level.",
-    "shortDesc": "Does damage equal to the user's level."
+    "shortDesc": "Does damage equal to the user's level.",
+    "flags": {
+      "protect": 1
+    }
   },
   "selfdestruct": {
     "target": "allAdjacent",
     "desc": "The user faints after using this move. The target's Defense is halved during damage calculation.",
+    "flags": {
+      "protect": 1
+    },
     "basePower": 200
+  },
+  "sing": {
+    "flags": {
+      "protect": 1
+    }
   },
   "skullbash": {
     "desc": "This attack charges on the first turn and executes on the second. Raises the user's Defense by 1 stage on the first turn.",
-    "shortDesc": "Raises user's Defense by 1 on turn 1. Hits turn 2."
+    "shortDesc": "Raises user's Defense by 1 on turn 1. Hits turn 2.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "skyattack": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "slam": {
+    "flags": {
+      "protect": 1
+    }
   },
   "slash": {
+    "flags": {
+      "protect": 1
+    },
     "critRatio": 3
+  },
+  "sleeppowder": {
+    "flags": {
+      "protect": 1
+    }
   },
   "sludge": {
     "desc": "Has a 30% chance to poison the target.",
-    "shortDesc": "30% chance to poison the target."
+    "shortDesc": "30% chance to poison the target.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "smog": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "smokescreen": {
+    "flags": {
+      "protect": 1
+    }
   },
   "softboiled": {
     "desc": "The user restores 1/2 of its maximum HP, rounded down.",
@@ -352,28 +756,64 @@
   },
   "solarbeam": {
     "desc": "This attack charges on the first turn and executes on the second. Damage is halved if the weather is Rain Dance. If the weather is Sunny Day, the move completes in one turn.",
-    "shortDesc": "Charges turn 1. Hits turn 2. No charge in sunlight."
+    "shortDesc": "Charges turn 1. Hits turn 2. No charge in sunlight.",
+    "flags": {
+      "protect": 1
+    }
   },
   "sonicboom": {
-    "desc": "Deals 20 HP of damage to the target."
+    "desc": "Deals 20 HP of damage to the target.",
+    "flags": {
+      "protect": 1
+    }
   },
   "spikecannon": {
-    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits."
+    "desc": "Hits two to five times. Has a 3/8 chance to hit two or three times, and a 1/8 chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "spore": {
+    "flags": {
+      "protect": 1
+    }
   },
   "stomp": {
-    "desc": "Has a 30% chance to flinch the target. Power doubles if the target is under the effect of Minimize."
+    "desc": "Has a 30% chance to flinch the target. Power doubles if the target is under the effect of Minimize.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "strength": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "stringshot": {
+    "flags": {
+      "protect": 1
+    }
   },
   "struggle": {
+    "pp": 1,
     "desc": "Deals typeless damage. If this move was successful, the user takes damage equal to 1/4 the HP lost by the target, rounded down, but not less than 1 HP. This move is automatically used if none of the user's known moves can be selected.",
     "shortDesc": "User loses 1/4 the HP lost by the target.",
-    "recoil": 25,
-    "pp": 1
+    "flags": {
+      "protect": 1
+    },
+    "recoil": 25
   },
   "stunspore": {
-    "desc": "Paralyzes the target. This move does not ignore type immunity."
+    "desc": "Paralyzes the target. This move does not ignore type immunity.",
+    "flags": {
+      "protect": 1
+    }
   },
   "submission": {
-    "desc": "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP. If this move hits a substitute, the recoil damage is always 1 HP."
+    "desc": "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP. If this move hits a substitute, the recoil damage is always 1 HP.",
+    "flags": {
+      "protect": 1
+    }
   },
   "substitute": {
     "desc": "The user takes 1/4 of its maximum HP, rounded down, and puts it into a substitute to take its place in battle. The substitute is removed once enough damage is inflicted on it, or if the user switches out or faints. Baton Pass can be used to transfer the substitute to an ally, and the substitute will keep its remaining HP. Until the substitute is broken, it receives damage from all attacks made by other Pokemon and shields the user from status effects and stat stage changes caused by other Pokemon. The user still takes normal damage from weather and status effects while behind its substitute. If the substitute breaks during a multi-hit attack, the user will take damage from any remaining hits. If a substitute is created while the user is trapped by a binding move, the binding effect ends immediately. Fails if the user does not have enough HP remaining to create a substitute without fainting, or if it already has a substitute.",
@@ -381,27 +821,87 @@
   },
   "superfang": {
     "desc": "Deals damage to the target equal to half of its current HP, rounded down, but not less than 1 HP.",
-    "shortDesc": "Does damage equal to 1/2 target's current HP."
+    "shortDesc": "Does damage equal to 1/2 target's current HP.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "supersonic": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "surf": {
+    "flags": {
+      "protect": 1
+    }
   },
   "swift": {
     "desc": "This move does not check accuracy.",
-    "shortDesc": "This move does not check accuracy."
+    "shortDesc": "This move does not check accuracy.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "tackle": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "tailwhip": {
+    "flags": {
+      "protect": 1
+    }
   },
   "takedown": {
-    "desc": "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP. If this move hits a substitute, the recoil damage is always 1 HP."
+    "desc": "If the target lost HP, the user takes recoil damage equal to 1/4 the HP lost by the target, rounded half up, but not less than 1 HP. If this move hits a substitute, the recoil damage is always 1 HP.",
+    "flags": {
+      "protect": 1
+    }
   },
   "thrash": {
     "desc": "Whether or not this move is successful, the user spends two or three turns locked into this move and becomes confused immediately after its move on the last turn of the effect, even if it is already confused. If the user is prevented from moving, the effect ends without causing confusion. If this move is called by Sleep Talk, the move is used for one turn and does not confuse the user.",
-    "shortDesc": "Lasts 2-3 turns. Confuses the user afterwards."
+    "shortDesc": "Lasts 2-3 turns. Confuses the user afterwards.",
+    "flags": {
+      "protect": 1
+    }
   },
   "thunder": {
     "desc": "Has a 30% chance to paralyze the target. This move can hit a target using Fly. If the weather is Rain Dance, this move does not check accuracy. If the weather is Sunny Day, this move's accuracy is 50%.",
     "shortDesc": "30% chance to paralyze. Can't miss in rain.",
+    "flags": {
+      "protect": 1
+    },
     "secondaries": [
       {
         "chance": 30
       }
     ]
+  },
+  "thunderpunch": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "thundershock": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "thunderwave": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "thunderbolt": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "toxic": {
+    "flags": {
+      "protect": 1
+    }
   },
   "transform": {
     "desc": "The user transforms into the target. The target's current stats, stat stages, types, moves, DVs, species, and sprite are copied. The user's level and HP remain the same and each copied move receives only 5 PP. This move fails if the target has transformed."
@@ -409,6 +909,9 @@
   "triattack": {
     "desc": "This move selects burn, freeze, or paralysis at random, and has a 20% chance to inflict the target with that status. If the target is frozen and burn was selected, it thaws out.",
     "shortDesc": "20% chance to paralyze or burn or freeze target.",
+    "flags": {
+      "protect": 1
+    },
     "secondaries": [
       {
         "chance": 20
@@ -416,20 +919,52 @@
     ]
   },
   "twineedle": {
-    "desc": "Hits twice, with the second hit having a 20% chance to poison the target. If the first hit breaks the target's substitute, it will take damage for the second hit but the target cannot be poisoned by it."
+    "desc": "Hits twice, with the second hit having a 20% chance to poison the target. If the first hit breaks the target's substitute, it will take damage for the second hit but the target cannot be poisoned by it.",
+    "flags": {
+      "protect": 1
+    }
+  },
+  "vicegrip": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "vinewhip": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "watergun": {
+    "flags": {
+      "protect": 1
+    }
+  },
+  "waterfall": {
+    "flags": {
+      "protect": 1
+    }
   },
   "whirlwind": {
     "accuracy": 100,
     "desc": "The target is forced to switch out and be replaced with a random unfainted ally. Fails if the target is the last unfainted Pokemon in its party, or if the user moves before the target.",
     "shortDesc": "Forces the target to switch to a random ally.",
+    "flags": {
+      "protect": 1
+    },
     "priority": -1
   },
   "wingattack": {
+    "flags": {
+      "protect": 1
+    },
     "basePower": 60
   },
   "wrap": {
     "desc": "Prevents the target from switching for two to five turns. Causes damage to the target equal to 1/16 of its maximum HP, rounded down, at the end of each turn during effect. The target can still switch out if it uses Baton Pass. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute successfully. This effect is not stackable or reset by using this or another binding move.",
-    "shortDesc": "Traps and damages the target for 2-5 turns."
+    "shortDesc": "Traps and damages the target for 2-5 turns.",
+    "flags": {
+      "protect": 1
+    }
   },
   "aeroblast": {
     "id": "aeroblast",

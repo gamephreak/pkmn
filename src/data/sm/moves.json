@@ -287,6 +287,9 @@
   },
   "petaldance": {
     "desc": "The user spends two or three turns locked into this move and becomes confused immediately after its move on the last turn of the effect if it is not already. This move targets an opposing Pokemon at random on each turn. If the user is prevented from moving, is asleep at the beginning of a turn, or the attack is not successful against the target on the first turn of the effect or the second turn of a three-turn effect, the effect ends without causing confusion. If this move is called by Sleep Talk and the user is asleep, the move is used for one turn and does not confuse the user.",
+    "flags": {
+      "dance": 1
+    },
     "zMovePower": 190
   },
   "pinmissile": {
@@ -456,6 +459,11 @@
   },
   "swift": {
     "zMovePower": 120
+  },
+  "swordsdance": {
+    "flags": {
+      "dance": 1
+    }
   },
   "tackle": {
     "basePower": 40,
@@ -863,6 +871,11 @@
   "dragonclaw": {
     "zMovePower": 160
   },
+  "dragondance": {
+    "flags": {
+      "dance": 1
+    }
+  },
   "endeavor": {
     "zMovePower": 160
   },
@@ -884,6 +897,9 @@
     }
   },
   "featherdance": {
+    "flags": {
+      "dance": 1
+    },
     "zMoveBoosts": {
       "def": 1
     }
@@ -1082,6 +1098,9 @@
     }
   },
   "teeterdance": {
+    "flags": {
+      "dance": 1
+    },
     "zMoveBoosts": {
       "spa": 1
     }
@@ -1340,6 +1359,11 @@
       "evasion": 1
     }
   },
+  "lunardance": {
+    "flags": {
+      "dance": 1
+    }
+  },
   "magmastorm": {
     "zMovePower": 180
   },
@@ -1576,6 +1600,9 @@
     }
   },
   "fierydance": {
+    "flags": {
+      "dance": 1
+    },
     "zMovePower": 160
   },
   "finalgambit": {
@@ -1693,6 +1720,11 @@
     "desc": "The user and its party members are protected from attacks with original or altered priority greater than 0 made by other Pokemon, including allies, during this turn. This move modifies the same 1/X chance of being successful used by other protection moves, where X starts at 1 and triples each time this move is successfully used, but does not use the chance to check for failure. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Detect, Endure, King's Shield, Protect, Quick Guard, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn or if this move is already in effect for the user's side.",
     "zMoveBoosts": {
       "def": 1
+    }
+  },
+  "quiverdance": {
+    "flags": {
+      "dance": 1
     }
   },
   "ragepowder": {
@@ -4235,5 +4267,13 @@
     "type": "Electric",
     "critRatio": 1,
     "gen": 7
+  },
+  "paleowave": {
+    "num": -1,
+    "zMovePower": 160
+  },
+  "shadowstrike": {
+    "num": -2,
+    "zMovePower": 160
   }
 }
