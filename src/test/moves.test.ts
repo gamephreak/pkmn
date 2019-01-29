@@ -8,14 +8,15 @@ describe('Moves', () => {
     expect(Object.keys(await Moves.forGen(2)).length).toBe(165 + 86 + 16);
     // NOTE: Honko seems to think 'Mega Drain' and 'Acid' were removed...
     expect(Object.keys(await Moves.forGen(3)).length).toBe(165 + 86 + 16 + 103);
+    // NOTE: 2 CAP moves
     expect(Object.keys(await Moves.forGen(4)).length)
-        .toBe(165 + 86 + 16 + 103 + 113);
+        .toBe(165 + 86 + 16 + 103 + 113 + 2);
     expect(Object.keys(await Moves.forGen(5)).length)
-        .toBe(165 + 86 + 16 + 103 + 113 + 92);
+        .toBe(165 + 86 + 16 + 103 + 113 + 2 + 92);
     expect(Object.keys(await Moves.forGen(6)).length)
-        .toBe(165 + 86 + 16 + 103 + 113 + 92 + 62);
+        .toBe(165 + 86 + 16 + 103 + 113 + 2 + 92 + 62);
     expect(Object.keys(await Moves.forGen(7)).length)
-        .toBe(165 + 86 + 16 + 103 + 113 + 92 + 62 + 103);
+        .toBe(165 + 86 + 16 + 103 + 113 + 2 + 92 + 62 + 103);
   });
 
   test('get', async () => {
@@ -23,7 +24,7 @@ describe('Moves', () => {
     expect(await Moves.get('Thunderbolt', 1)).toBeDefined();
 
     // alias
-    expect(await Moves.get('eq', 6)).toEqual(await Moves.get('Earthquake', 5));
+    expect(await Moves.get('eq', 6)).toEqual(await Moves.get('Earthquake', 6));
 
     // hidden power
     expect((await Moves.get('Hidden Power [Bug]'))!.name)
