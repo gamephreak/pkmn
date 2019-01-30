@@ -2230,11 +2230,5 @@
     "type": "Water",
     "critRatio": 1,
     "gen": 6
-  },
-  "paleowave": {
-    "num": -1
-  },
-  "shadowstrike": {
-    "num": -2
   }
 }

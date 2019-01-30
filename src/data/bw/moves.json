@@ -2845,11 +2845,5 @@
     "type": "Normal",
     "critRatio": 1,
     "gen": 5
-  },
-  "paleowave": {
-    "num": -1
-  },
-  "shadowstrike": {
-    "num": -2
   }
 }
