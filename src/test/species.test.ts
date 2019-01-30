@@ -7,22 +7,22 @@ describe('Species', () => {
     // Deoxys (3) + Castform (3)
     expect(Object.keys(await Species.forGen(3)).length).toBe(386 + 6);
     // Wormadam (2) + Cherrim (1) + Arceus (16) + Pichu (1) +
-    // Rotom (5) + Giratina (1) + Shaymin (1) + CAP (19)
-    expect(Object.keys(await Species.forGen(4)).length).toBe(493 + 6 + 46);
+    // Rotom (5) + Giratina (1) + Shaymin (1)
+    expect(Object.keys(await Species.forGen(4)).length).toBe(493 + 6 + 27);
     // Basculin (1) + Darmanitan (1) + *-Therian (3) + Keldeo (1) +
-    // Kyurem (2) + Meloetta (1) + Genesect (4) + CAP (10)
-    expect(Object.keys(await Species.forGen(5)).length).toBe(649 + 6 + 46 + 23);
+    // Kyurem (2) + Meloetta (1) + Genesect (4)
+    expect(Object.keys(await Species.forGen(5)).length).toBe(649 + 6 + 27 + 13);
     // Arceus (1) + Vivillon (2) + Meowstic (1) + Primal (2) +
     // Floette (1) + Aegislash (1) + Pumpkaboo (3) + Gourgeist (3) +
-    // Hoopa (1) + Pikachu (6) + Mega (48) + CAP (12)
+    // Hoopa (1) + Pikachu (6) + Mega (48)
     expect(Object.keys(await Species.forGen(6)).length)
-        .toBe(721 + 6 + 46 + 23 + 81);
+        .toBe(721 + 6 + 27 + 13 + 69);
     // Alola (18) + Totem (12) + Pikachu (8) + Eevee (1) +
     // Greninja (1) + Zygarde (2) + Oricorio (3) + Lycanroc (2) +
     // Wishiwashi (1) + Silvally (17) + Minior (1) + Mimikyu (1) +
-    // Necrozma (3) + Magearna (1) + CAP (6)
+    // Necrozma (3) + Magearna (1) - LGPE Starters/Melmetal (4)
     expect(Object.keys(await Species.forGen(7)).length)
-        .toBe(809 + 6 + 46 + 23 + 81 + 77);
+        .toBe(809 - 2 + 6 + 27 + 13 + 69 + 71 - 2);
   });
 
   test('get', async () => {

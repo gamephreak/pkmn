@@ -9,7 +9,6 @@ export interface Data {
   readonly gen: Generation;
   readonly desc?: string;
   readonly shortDesc?: string;
-  readonly isNonstandard?: string;
   readonly isUnreleased?: boolean;
 }
 
