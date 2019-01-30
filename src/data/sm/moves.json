@@ -2250,28 +2250,6 @@
     },
     "gen": 7
   },
-  "baddybad": {
-    "id": "baddybad",
-    "name": "Baddy Bad",
-    "num": 737,
-    "shortDesc": "Summons Reflect.",
-    "desc": "This move summons Reflect for 5 turns upon use.",
-    "isNonstandard": true,
-    "flags": {
-      "protect": 1
-    },
-    "accuracy": 100,
-    "basePower": 90,
-    "category": "Special",
-    "pp": 15,
-    "self": {
-      "sideCondition": "reflect"
-    },
-    "target": "normal",
-    "type": "Dark",
-    "critRatio": 1,
-    "gen": 7
-  },
   "banefulbunker": {
     "id": "banefulbunker",
     "name": "Baneful Bunker",
@@ -2342,26 +2320,6 @@
     "critRatio": 1,
     "gen": 7
   },
-  "bouncybubble": {
-    "id": "bouncybubble",
-    "name": "Bouncy Bubble",
-    "num": 733,
-    "shortDesc": "User recovers 50% of the damage dealt.",
-    "desc": "The user recovers 1/2 the HP lost by the target, rounded half up. If Big Root is held by the user, the HP recovered is 1.3x normal, rounded half down.",
-    "isNonstandard": true,
-    "flags": {
-      "protect": 1,
-      "heal": 1
-    },
-    "accuracy": 100,
-    "basePower": 90,
-    "category": "Special",
-    "pp": 15,
-    "target": "normal",
-    "type": "Water",
-    "critRatio": 1,
-    "gen": 7
-  },
   "breakneckblitz": {
     "id": "breakneckblitz",
     "name": "Breakneck Blitz",
@@ -2418,31 +2376,6 @@
     "type": "Fire",
     "zMovePower": 195,
     "critRatio": 1,
-    "gen": 7
-  },
-  "buzzybuzz": {
-    "id": "buzzybuzz",
-    "name": "Buzzy Buzz",
-    "num": 734,
-    "shortDesc": "100% chance to paralyze the foe.",
-    "desc": "Has a 100% chance to paralyze the foe.",
-    "isNonstandard": true,
-    "flags": {
-      "protect": 1
-    },
-    "accuracy": 100,
-    "basePower": 90,
-    "category": "Special",
-    "pp": 15,
-    "target": "normal",
-    "type": "Electric",
-    "critRatio": 1,
-    "secondaries": [
-      {
-        "chance": 100,
-        "status": "par"
-      }
-    ],
     "gen": 7
   },
   "catastropika": {
@@ -2609,36 +2542,6 @@
     "critRatio": 1,
     "gen": 7
   },
-  "doubleironbash": {
-    "id": "doubleironbash",
-    "name": "Double Iron Bash",
-    "num": 742,
-    "shortDesc": "Hits twice. 30% chance to flinch.",
-    "desc": "Hits twice. If the first hit breaks the target's substitute, it will take damage for the second hit. Has a 30% chance to flinch the target.",
-    "isNonstandard": true,
-    "flags": {
-      "contact": 1,
-      "protect": 1,
-      "mirror": 1,
-      "punch": 1
-    },
-    "accuracy": 100,
-    "basePower": 60,
-    "category": "Physical",
-    "pp": 5,
-    "multihit": 2,
-    "target": "normal",
-    "type": "Steel",
-    "zMovePower": 180,
-    "critRatio": 1,
-    "secondaries": [
-      {
-        "chance": 30,
-        "volatileStatus": "flinch"
-      }
-    ],
-    "gen": 7
-  },
   "dragonhammer": {
     "id": "dragonhammer",
     "name": "Dragon Hammer",
@@ -2757,33 +2660,6 @@
     "critRatio": 1,
     "gen": 7
   },
-  "floatyfall": {
-    "id": "floatyfall",
-    "name": "Floaty Fall",
-    "num": 731,
-    "shortDesc": "30% chance to flinch the target.",
-    "desc": "Has a 30% chance to flinch the target.",
-    "isNonstandard": true,
-    "flags": {
-      "contact": 1,
-      "protect": 1,
-      "gravity": 1
-    },
-    "accuracy": 95,
-    "basePower": 90,
-    "category": "Physical",
-    "pp": 15,
-    "target": "normal",
-    "type": "Flying",
-    "critRatio": 1,
-    "secondaries": [
-      {
-        "chance": 30,
-        "volatileStatus": "flinch"
-      }
-    ],
-    "gen": 7
-  },
   "floralhealing": {
     "id": "floralhealing",
     "name": "Floral Healing",
@@ -2801,25 +2677,6 @@
     "pp": 10,
     "target": "normal",
     "type": "Fairy",
-    "critRatio": 1,
-    "gen": 7
-  },
-  "freezyfrost": {
-    "id": "freezyfrost",
-    "name": "Freezy Frost",
-    "num": 739,
-    "shortDesc": "Eliminates all stat changes.",
-    "desc": "Resets the stat stages of all active Pokemon to 0.",
-    "isNonstandard": true,
-    "flags": {
-      "protect": 1
-    },
-    "accuracy": 100,
-    "basePower": 90,
-    "category": "Special",
-    "pp": 15,
-    "target": "normal",
-    "type": "Ice",
     "critRatio": 1,
     "gen": 7
   },
@@ -2878,28 +2735,6 @@
     "isZ": "electriumz",
     "target": "normal",
     "type": "Electric",
-    "critRatio": 1,
-    "gen": 7
-  },
-  "glitzyglow": {
-    "id": "glitzyglow",
-    "name": "Glitzy Glow",
-    "num": 736,
-    "shortDesc": "Summons Light Screen.",
-    "desc": "This move summons Light Screen for 5 turns upon use.",
-    "isNonstandard": true,
-    "flags": {
-      "protect": 1
-    },
-    "accuracy": 100,
-    "basePower": 90,
-    "category": "Special",
-    "pp": 15,
-    "self": {
-      "sideCondition": "lightscreen"
-    },
-    "target": "normal",
-    "type": "Psychic",
     "critRatio": 1,
     "gen": 7
   },
@@ -3315,24 +3150,6 @@
     "critRatio": 1,
     "gen": 7
   },
-  "pikapapow": {
-    "id": "pikapapow",
-    "name": "Pika Papow",
-    "num": 732,
-    "shortDesc": "Max happiness: 102 power. Can't miss.",
-    "desc": "Power is equal to the greater of (user's Happiness * 2/5), rounded down, or 1.",
-    "isNonstandard": true,
-    "flags": {
-      "protect": 1
-    },
-    "accuracy": true,
-    "category": "Special",
-    "pp": 20,
-    "target": "normal",
-    "type": "Electric",
-    "critRatio": 1,
-    "gen": 7
-  },
   "plasmafists": {
     "id": "plasmafists",
     "name": "Plasma Fists",
@@ -3528,26 +3345,6 @@
     "critRatio": 1,
     "gen": 7
   },
-  "sappyseed": {
-    "id": "sappyseed",
-    "name": "Sappy Seed",
-    "num": 738,
-    "shortDesc": "Summons Leech Seed.",
-    "desc": "This move summons Leech Seed on the foe.",
-    "isNonstandard": true,
-    "flags": {
-      "protect": 1,
-      "reflectable": 1
-    },
-    "accuracy": 100,
-    "basePower": 90,
-    "category": "Physical",
-    "pp": 15,
-    "target": "normal",
-    "type": "Grass",
-    "critRatio": 1,
-    "gen": 7
-  },
   "savagespinout": {
     "id": "savagespinout",
     "name": "Savage Spin-Out",
@@ -3678,33 +3475,6 @@
     "critRatio": 1,
     "gen": 7
   },
-  "sizzlyslide": {
-    "id": "sizzlyslide",
-    "name": "Sizzly Slide",
-    "num": 735,
-    "shortDesc": "100% chance to burn the foe.",
-    "desc": "Has a 100% chance to burn the foe.",
-    "isNonstandard": true,
-    "flags": {
-      "contact": 1,
-      "protect": 1,
-      "defrost": 1
-    },
-    "accuracy": 100,
-    "basePower": 90,
-    "category": "Physical",
-    "pp": 15,
-    "target": "normal",
-    "type": "Fire",
-    "critRatio": 1,
-    "secondaries": [
-      {
-        "chance": 100,
-        "status": "brn"
-      }
-    ],
-    "gen": 7
-  },
   "smartstrike": {
     "id": "smartstrike",
     "name": "Smart Strike",
@@ -3792,26 +3562,6 @@
     ],
     "gen": 7
   },
-  "sparklyswirl": {
-    "id": "sparklyswirl",
-    "name": "Sparkly Swirl",
-    "num": 740,
-    "shortDesc": "Cures the user's party of all status conditions.",
-    "desc": "Every Pokemon in the user's party is cured of its major status condition.",
-    "isNonstandard": true,
-    "flags": {
-      "protect": 1
-    },
-    "accuracy": 100,
-    "basePower": 90,
-    "category": "Special",
-    "pp": 15,
-    "self": {},
-    "target": "normal",
-    "type": "Fairy",
-    "critRatio": 1,
-    "gen": 7
-  },
   "spectralthief": {
     "id": "spectralthief",
     "name": "Spectral Thief",
@@ -3896,31 +3646,6 @@
     "target": "normal",
     "type": "Rock",
     "critRatio": 1,
-    "gen": 7
-  },
-  "splishysplash": {
-    "id": "splishysplash",
-    "name": "Splishy Splash",
-    "num": 730,
-    "shortDesc": "30% chance to paralyze the target.",
-    "desc": "Has a 30% chance to paralyze the target.",
-    "isNonstandard": true,
-    "flags": {
-      "protect": 1
-    },
-    "accuracy": 100,
-    "basePower": 90,
-    "category": "Special",
-    "pp": 15,
-    "target": "allAdjacentFoes",
-    "type": "Water",
-    "critRatio": 1,
-    "secondaries": [
-      {
-        "chance": 30,
-        "status": "par"
-      }
-    ],
     "gen": 7
   },
   "spotlight": {
@@ -4200,25 +3925,6 @@
     "critRatio": 1,
     "gen": 7
   },
-  "veeveevolley": {
-    "id": "veeveevolley",
-    "name": "Veevee Volley",
-    "num": 741,
-    "shortDesc": "Max happiness: 102 power. Can't miss.",
-    "desc": "Power is equal to the greater of (user's Happiness * 2/5), rounded down, or 1.",
-    "isNonstandard": true,
-    "flags": {
-      "contact": 1,
-      "protect": 1
-    },
-    "accuracy": true,
-    "category": "Physical",
-    "pp": 20,
-    "target": "normal",
-    "type": "Normal",
-    "critRatio": 1,
-    "gen": 7
-  },
   "zingzap": {
     "id": "zingzap",
     "name": "Zing Zap",
@@ -4245,35 +3951,5 @@
       }
     ],
     "gen": 7
-  },
-  "zippyzap": {
-    "id": "zippyzap",
-    "name": "Zippy Zap",
-    "num": 729,
-    "shortDesc": "Nearly always goes first. Always crits.",
-    "desc": "Will always result in a critical hit.",
-    "isNonstandard": true,
-    "flags": {
-      "contact": 1,
-      "protect": 1
-    },
-    "accuracy": 100,
-    "basePower": 50,
-    "category": "Physical",
-    "pp": 15,
-    "priority": 2,
-    "willCrit": true,
-    "target": "normal",
-    "type": "Electric",
-    "critRatio": 1,
-    "gen": 7
-  },
-  "paleowave": {
-    "num": -1,
-    "zMovePower": 160
-  },
-  "shadowstrike": {
-    "num": -2,
-    "zMovePower": 160
   }
 }

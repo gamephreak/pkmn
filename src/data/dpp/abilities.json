@@ -217,14 +217,6 @@
     "desc": "This Pokemon is immune to Electric-type moves and raises its Speed by 1 stage when hit by an Electric-type move.",
     "gen": 4
   },
-  "mountaineer": {
-    "id": "mountaineer",
-    "name": "Mountaineer",
-    "num": -2,
-    "shortDesc": "On switch-in, this Pokemon avoids all Rock-type attacks and Stealth Rock.",
-    "isNonstandard": true,
-    "gen": 4
-  },
   "multitype": {
     "id": "multitype",
     "name": "Multitype",
@@ -245,15 +237,6 @@
     "num": 96,
     "shortDesc": "This Pokemon's moves are changed to be Normal type.",
     "desc": "This Pokemon's moves are changed to be Normal type. This effect comes before other effects that change a move's type.",
-    "gen": 4
-  },
-  "persistent": {
-    "id": "persistent",
-    "name": "Persistent",
-    "num": -4,
-    "shortDesc": "When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns.",
-    "desc": "The duration of Gravity, Heal Block, Magic Room, Safeguard, Tailwind, Trick Room, and Wonder Room is increased by 2 turns if the effect is started by this Pokemon.",
-    "isNonstandard": true,
     "gen": 4
   },
   "poisonheal": {
