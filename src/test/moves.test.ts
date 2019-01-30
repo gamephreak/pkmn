@@ -8,15 +8,14 @@ describe('Moves', () => {
     expect(Object.keys(Moves.forGen(2)).length).toBe(165 + 86 + 16);
     // NOTE: Honko seems to think 'Mega Drain' and 'Acid' were removed...
     expect(Object.keys(Moves.forGen(3)).length).toBe(165 + 86 + 16 + 103);
-    // NOTE: 2 CAP moves.
-    expect(Object.keys(Moves.forGen(4)).length)
-        .toBe(165 + 86 + 16 + 103 + 113 + 2);
+    expect(Object.keys(Moves.forGen(4)).length).toBe(165 + 86 + 16 + 103 + 113);
     expect(Object.keys(Moves.forGen(5)).length)
-        .toBe(165 + 86 + 16 + 103 + 113 + 2 + 92);
+        .toBe(165 + 86 + 16 + 103 + 113 + 92);
     expect(Object.keys(Moves.forGen(6)).length)
-        .toBe(165 + 86 + 16 + 103 + 113 + 2 + 92 + 62);
+        .toBe(165 + 86 + 16 + 103 + 113 + 92 + 62);
+    // NOTE: 14 moves are from LGPE
     expect(Object.keys(Moves.forGen(7)).length)
-        .toBe(165 + 86 + 16 + 103 + 113 + 2 + 92 + 62 + 103);
+        .toBe(165 + 86 + 16 + 103 + 113 + 92 + 62 + 103 - 14);
   });
 
   test('get', () => {
@@ -73,7 +72,6 @@ describe('Moves', () => {
 
     // self
     expect(Moves.get('Petal Dance')!.self!.volatileStatus).toBe('lockedmove');
-    expect(Moves.get('Glitzy Glow')!.self!.sideCondition).toBe('lightscreen');
     expect(Moves.get('Overheat')!.self!.boosts).toEqual({spa: -2});
 
     // secondaries
