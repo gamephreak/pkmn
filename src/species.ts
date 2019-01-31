@@ -53,7 +53,7 @@ export class Species {
 
   @cache
   static getName(
-      s: ID|string,
+      s: ID|string|undefined,
       /* istanbul ignore next: @cache */ gen: Generation = CURRENT): string
       |undefined {
     const id = toID(s);
@@ -72,9 +72,11 @@ export class Species {
 
   @cache
   static get(
-      s: ID|string,
+      s: ID|string|undefined,
       /* istanbul ignore next: @cache */ gen: Generation = CURRENT): Species
       |undefined {
+    if (!s) return undefined;
+
     let id = toID(s);
     if (id === 'nidoran' && s.slice(-1) === '♀') {
       id = 'nidoranf' as ID;

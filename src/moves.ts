@@ -162,7 +162,7 @@ export class Moves {
 
   @cache
   static get(
-      m: ID|string,
+      m: ID|string|undefined,
       /* istanbul ignore next: @cache */ gen: Generation = CURRENT): Move
       |undefined {
     let id = toID(m);

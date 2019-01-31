@@ -34,7 +34,7 @@ export class Abilities {
 
   @cache
   static get(
-      a: ID|string,
+      a: ID|string|undefined,
       /* istanbul ignore next: @cache */ gen: Generation = CURRENT): Ability
       |undefined {
     const id = toID(a);

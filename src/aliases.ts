@@ -7,7 +7,7 @@ export class Aliases {
   // istanbul ignore next: constructor
   protected constructor() {}
 
-  static get(a: ID|string): string|undefined {
+  static get(a: ID|string|undefined): string|undefined {
     return ALIASES[toID(a)];
   }
 }

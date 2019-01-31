@@ -59,7 +59,7 @@ export class Sets {
     buf += '|' + toID(s.item);
 
     // ability
-    const species = Species.get(s.species || s.name || '', gen);
+    const species = Species.get(s.species || s.name, gen);
     id = toID(s.ability);
     if (species && species.abilities) {
       const abilities = species.abilities;
@@ -164,7 +164,7 @@ export class Sets {
 
   static exportSet(s: PokemonSet, fast?: boolean, gen?: Generation): string {
     let buf = '';
-    let species = s.species || s.name || '';
+    let species = s.species || s.name;
     if (!fast) {
       const s = Species.get(species);
       species = (s && s.name) || species;
@@ -566,12 +566,12 @@ function toPokemonSet(s?: WriteableSet, gen?: Generation): PokemonSet|
   if (!s) return undefined;
 
   return {
-    name: s.name || '',
+    name: s.name,
     species: s.species || /* istanbul ignore next: N/A */ (s.name || ''),
-    item: s.item || '',
-    ability: s.ability || '',
+    item: s.item,
+    ability: s.ability,
     moves: s.moves || /* istanbul ignore next: types */[],
-    nature: s.nature || '',
+    nature: s.nature,
     evs: Stats.fillEVs(s.evs || {}, gen),
     ivs: Stats.fillIVs(s.ivs || {}),
     gender: s.gender,

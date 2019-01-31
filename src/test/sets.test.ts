@@ -303,11 +303,6 @@ describe('Sets', () => {
       expect(Sets.exportSet(suicune, true)).toEqual(exported(`Suicune
         - Hidden Power [Bug]
         - Hidden Power [Dark]`));
-
-      suicune = {};
-      expect(Sets.exportSet(suicune)).toEqual('  \n\n');
-      u = Sets.unpack(Sets.pack(suicune))!;
-      expect(Sets.exportSet(u)).toEqual(exported('undefined'));
     });
   });
 

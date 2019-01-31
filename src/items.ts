@@ -46,7 +46,7 @@ export class Items {
 
   @cache
   static get(
-      i: ID|string,
+      i: ID|string|undefined,
       /* istanbul ignore next: @cache */ gen: Generation = CURRENT): Item
       |undefined {
     const id = toID(i);
