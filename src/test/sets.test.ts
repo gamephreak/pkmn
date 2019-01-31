@@ -284,7 +284,7 @@ describe('Sets', () => {
     test('bad types', () => {
       // @ts-ignore
       let suicune: PokemonSet = {name: 'Suicune', pokeball: 'Cherish Ball'};
-      let u = Sets.unpack(Sets.pack(suicune))!;
+      const u = Sets.unpack(Sets.pack(suicune))!;
       expect(Sets.exportSet(u, true)).toEqual(exported('Suicune'));
       expect(Sets.exportSet(suicune)).toEqual(exported('Suicune'));
 

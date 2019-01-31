@@ -1,10 +1,11 @@
+import {Format} from './format';
 import {CURRENT, Generation} from './gen';
 import {_import, _unpack, PokemonSet, Sets} from './sets';
 import {Tier, Tiers} from './tiers';
 
 export class Team {
   constructor(
-      readonly team: Readonly<PokemonSet[]>, readonly format?: string,
+      readonly team: Readonly<PokemonSet[]>, readonly format?: Format,
       readonly name?: string, readonly folder?: string) {
     this.team = team;
     this.format = format;
@@ -12,23 +13,16 @@ export class Team {
     this.folder = folder;
   }
 
-  gen(): Generation|undefined {
-    if (!this.format) return undefined;
-    // BUG: this will break in ~10 years when gen10 gets released...
-    return (this.format.slice(0, 3) !== 'gen' ? 6 : Number(this.format[3])) as
-        Generation;
+  get gen(): Generation|undefined {
+    return this.format ? this.format.gen : undefined;
   }
 
-  tier(): Tier|undefined {
-    if (!this.format) return undefined;
-    // BUG: this will break in ~10 years when gen10 gets released...
-    return this.format.slice(0, 3) === 'gen' ?
-        Tiers.fromString(this.format.slice(4)) :
-        Tiers.fromString(this.format);
+  get tier(): Tier|undefined {
+    return this.format ? this.format.tier : undefined;
   }
 
   pack(gen?: Generation): string {
-    return Teams.packTeam(this, gen || this.gen());
+    return Teams.packTeam(this, gen || this.gen);
   }
 
   static unpack(buf: string, gen?: Generation): Team|undefined {
@@ -38,7 +32,7 @@ export class Team {
   export(fast?: boolean, gen?: Generation): string {
     let buf = '';
     for (const s of this.team) {
-      buf += Sets.exportSet(s, fast, gen || this.gen());
+      buf += Sets.exportSet(s, fast, gen || this.gen);
     }
     return buf;
   }
@@ -134,7 +128,6 @@ export class Teams {
         const bracketIndex = line.indexOf(']');
         if (bracketIndex >= 0) {
           format = line.substr(1, bracketIndex - 1);
-          if (format && format.slice(0, 3) !== 'gen') format = 'gen6' + format;
           line = line.substr(bracketIndex + 1).trim();
         }
 
@@ -145,7 +138,7 @@ export class Teams {
           line = line.slice(slashIndex + 1);
         }
 
-        teams.push(new Team(team, format, line, folder));
+        teams.push(new Team(team, Format.fromString(format), line, folder));
       } else if (line.includes('|')) {
         // packed format
         const t: Team|undefined = unpackLine(line, gen);
@@ -177,7 +170,7 @@ export class Teams {
 
     let i = 0;
     for (const team of teams) {
-      buf += '=== ' + (team.format ? '[' + team.format + '] ' : '') +
+      buf += '=== ' + (team.format ? '[' + team.format.toString() + '] ' : '') +
           (team.folder ? '' + team.folder + '/' : '') +
           (team.name || 'Untitled ' + ++i) + ' ===\n\n';
       buf += team.export(fast, gen);
@@ -208,16 +201,14 @@ function unpackLine(line: string, gen?: Generation): Team|undefined {
   // line.slice(slashIndex + 1, pipeIndex) will be ''
   if (slashIndex < 0) slashIndex = bracketIndex;
 
-  let format =
+  const format =
       bracketIndex > 0 ? line.slice(0, bracketIndex) : 'gen' + (gen || CURRENT);
-  if (format && format.slice(0, 3) !== 'gen') format = 'gen6' + format;
-
   const team: Team|undefined = Teams.unpackTeam(line.slice(pipeIndex + 1), gen);
   return !team ?
       team :
       new Team(
           team.team,
-          format,
+          Format.fromString(format),
           line.slice(slashIndex + 1, pipeIndex),
           line.slice(
               bracketIndex + 1, slashIndex > 0 ? slashIndex : bracketIndex + 1),

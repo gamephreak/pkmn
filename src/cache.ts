@@ -5,8 +5,8 @@ const HOP = Object.prototype.hasOwnProperty;
 
 export function cache<T>(
     target: {}, key: string,
-    descriptor:
-        TypedPropertyDescriptor<(k: ID|string|undefined, gen?: Generation) => T>) {
+    descriptor: TypedPropertyDescriptor<
+        (k: ID|string|undefined, gen?: Generation) => T>) {
   const fn = descriptor.value;
   // istanbul ignore if: types
   if (!fn) return;
