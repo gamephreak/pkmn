@@ -1,6 +1,7 @@
 export {Abilities, Ability} from './abilities';
 export {Aliases} from './aliases';
 export {Data, DataTable} from './data';
+export {Format} from './format';
 export {Generation, Generations} from './gen';
 export {ID, toID} from './id';
 export {Item, Items} from './items';
