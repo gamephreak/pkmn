@@ -9,12 +9,12 @@ import {Type, Types} from './types';
 
 // BUG: moves, evs and ivs should be Readonly
 export type PokemonSet = {
-  readonly name: string;
+  readonly name?: string;
   readonly species: string;
-  readonly item: string;
-  readonly ability: string;
+  readonly item?: string;
+  readonly ability?: string;
   readonly moves: string[];
-  readonly nature: string;
+  readonly nature?: string;
   readonly evs: StatsTable;
   readonly ivs: StatsTable;
   readonly gender?: string;
@@ -27,6 +27,8 @@ export type PokemonSet = {
 
 type WriteableSet =
     Partial<{-readonly[k in keyof PokemonSet] -?: PokemonSet[k]}>;
+
+// TODO fillSet/cleanSet for Generation
 
 export class Sets {
   // istanbul ignore next: constructor

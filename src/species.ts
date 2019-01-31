@@ -26,7 +26,7 @@ export interface Species extends Data {
   readonly tier?: Tier;
   readonly prevo?: ID;
   readonly evos?: Readonly<ID[]>;
-  readonly baseSpecies?: string;
+  readonly baseSpecies: string;
   readonly baseForme?: string;
   readonly forme?: string;
   readonly formeLetter?: string;
