@@ -1,4 +1,4 @@
-import {patch} from './data';
+import {Data} from './data';
 import * as gsc from './data/gsc/types.json';
 import * as rby from './data/rby/types.json';
 import * as xy from './data/xy/types.json';
@@ -14,11 +14,11 @@ export type TypeChart =
     Readonly<{[type in Type]?: Readonly<{[type in Type]?: number}>}>;
 
 const RBY: TypeChart = rby;
-const GSC: TypeChart = patch(RBY, gsc);
+const GSC: TypeChart = Data.patch(RBY, gsc);
 const ADV: TypeChart = GSC;
 const DPP: TypeChart = GSC;
 const BW: TypeChart = GSC;
-const XY: TypeChart = patch(BW, xy);
+const XY: TypeChart = Data.patch(BW, xy);
 const SM: TypeChart = XY;
 
 const SPECIAL: {[type in Type]?: 1} = {

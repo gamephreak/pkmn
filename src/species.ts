@@ -1,5 +1,6 @@
 import {Aliases} from './aliases';
-import {cache, Data, DataTable, patch} from './data';
+import {cache} from './cache';
+import {Data, DataTable} from './data';
 import * as adv from './data/adv/species.json';
 import * as bw from './data/bw/species.json';
 import * as dpp from './data/dpp/species.json';
@@ -34,13 +35,13 @@ export interface Species extends Data {
   readonly cosmeticForms?: Readonly<ID[]>;
 }
 
-const RBY: DataTable<Species> = patch({}, rby);
-const GSC: DataTable<Species> = patch(RBY, gsc);
-const ADV: DataTable<Species> = patch(GSC, adv);
-const DPP: DataTable<Species> = patch(ADV, dpp);
-const BW: DataTable<Species> = patch(DPP, bw);
-const XY: DataTable<Species> = patch(BW, xy);
-const SM: DataTable<Species> = patch(XY, sm);
+const RBY: DataTable<Species> = Data.patch({}, rby);
+const GSC: DataTable<Species> = Data.patch(RBY, gsc);
+const ADV: DataTable<Species> = Data.patch(GSC, adv);
+const DPP: DataTable<Species> = Data.patch(ADV, dpp);
+const BW: DataTable<Species> = Data.patch(DPP, bw);
+const XY: DataTable<Species> = Data.patch(BW, xy);
+const SM: DataTable<Species> = Data.patch(XY, sm);
 
 const SPECIES: Readonly<Array<DataTable<Species>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];

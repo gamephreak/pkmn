@@ -28,11 +28,19 @@ export type PokemonSet = {
 type WriteableSet =
     Partial<{-readonly[k in keyof PokemonSet] -?: PokemonSet[k]}>;
 
-// TODO fillSet/cleanSet for Generation
 
 export class Sets {
   // istanbul ignore next: constructor
   protected constructor() {}
+
+  /*
+  static fillSet(s: PokemonSet, gen?: Generation): PokemonSet {
+    // TODO fillSet/cleanSet for Generation
+    // TODO marowak
+    // TODO formes/mega
+    return toPokemonSet({})!; // TODO
+  }
+  */
 
   static pack(s: PokemonSet, gen?: Generation): string {
     return Sets.packSet(s, gen);
@@ -51,7 +59,7 @@ export class Sets {
     buf += '|' + toID(s.item);
 
     // ability
-    const species = Species.get(s.species || s.name, gen);
+    const species = Species.get(s.species || s.name || '', gen);
     id = toID(s.ability);
     if (species && species.abilities) {
       const abilities = species.abilities;
@@ -156,7 +164,7 @@ export class Sets {
 
   static exportSet(s: PokemonSet, fast?: boolean, gen?: Generation): string {
     let buf = '';
-    let species = s.species || s.name;
+    let species = s.species || s.name || '';
     if (!fast) {
       const s = Species.get(species);
       species = (s && s.name) || species;

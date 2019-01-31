@@ -1,5 +1,6 @@
 import {Aliases} from './aliases';
-import {cache, Data, DataTable, patch} from './data';
+import {cache} from './cache';
+import {Data, DataTable} from './data';
 import * as adv from './data/adv/abilities.json';
 import * as bw from './data/bw/abilities.json';
 import * as dpp from './data/dpp/abilities.json';
@@ -12,11 +13,11 @@ export interface Ability extends Data {}
 
 const RBY: DataTable<Ability> = {};
 const GSC: DataTable<Ability> = {};
-const ADV: DataTable<Ability> = patch(GSC, adv);
-const DPP: DataTable<Ability> = patch(ADV, dpp);
-const BW: DataTable<Ability> = patch(DPP, bw);
-const XY: DataTable<Ability> = patch(BW, xy);
-const SM: DataTable<Ability> = patch(XY, sm);
+const ADV: DataTable<Ability> = Data.patch(GSC, adv);
+const DPP: DataTable<Ability> = Data.patch(ADV, dpp);
+const BW: DataTable<Ability> = Data.patch(DPP, bw);
+const XY: DataTable<Ability> = Data.patch(BW, xy);
+const SM: DataTable<Ability> = Data.patch(XY, sm);
 
 export interface Ability extends Data {}
 

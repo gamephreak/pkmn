@@ -284,11 +284,10 @@ describe('Sets', () => {
     test('bad types', () => {
       // @ts-ignore
       let suicune: PokemonSet = {name: 'Suicune', pokeball: 'Cherish Ball'};
-      const u = Sets.unpack(Sets.pack(suicune))!;
+      let u = Sets.unpack(Sets.pack(suicune))!;
       expect(Sets.exportSet(u, true)).toEqual(exported('Suicune'));
       expect(Sets.exportSet(suicune)).toEqual(exported('Suicune'));
 
-      // @ts-ignore
       suicune = {
         name: 'Suicune',
         ivs: {hp: undefined},
@@ -304,6 +303,11 @@ describe('Sets', () => {
       expect(Sets.exportSet(suicune, true)).toEqual(exported(`Suicune
         - Hidden Power [Bug]
         - Hidden Power [Dark]`));
+
+      suicune = {};
+      expect(Sets.exportSet(suicune)).toEqual('  \n\n');
+      u = Sets.unpack(Sets.pack(suicune))!;
+      expect(Sets.exportSet(u)).toEqual(exported('undefined'));
     });
   });
 

@@ -1,5 +1,6 @@
 import {Aliases} from './aliases';
-import {cache, Data, DataTable, patch} from './data';
+import {cache} from './cache';
+import {Data, DataTable} from './data';
 import * as adv from './data/adv/moves.json';
 import * as bw from './data/bw/moves.json';
 import * as dpp from './data/dpp/moves.json';
@@ -137,15 +138,16 @@ export interface Move extends Data {
   readonly recoil?: Recoil;
   readonly breaksProtect?: boolean;
   readonly ignoreDefensive?: boolean;
+  readonly ohko?: boolean;
 }
 
-const RBY: DataTable<Move> = patch({}, rby);
-const GSC: DataTable<Move> = patch(RBY, gsc);
-const ADV: DataTable<Move> = patch(GSC, adv);
-const DPP: DataTable<Move> = patch(ADV, dpp);
-const BW: DataTable<Move> = patch(DPP, bw);
-const XY: DataTable<Move> = patch(BW, xy);
-const SM: DataTable<Move> = patch(XY, sm);
+const RBY: DataTable<Move> = Data.patch({}, rby);
+const GSC: DataTable<Move> = Data.patch(RBY, gsc);
+const ADV: DataTable<Move> = Data.patch(GSC, adv);
+const DPP: DataTable<Move> = Data.patch(ADV, dpp);
+const BW: DataTable<Move> = Data.patch(DPP, bw);
+const XY: DataTable<Move> = Data.patch(BW, xy);
+const SM: DataTable<Move> = Data.patch(XY, sm);
 
 const MOVES: Readonly<Array<DataTable<Move>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
