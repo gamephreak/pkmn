@@ -2557,6 +2557,7 @@
       "protect": 1,
       "mirror": 1
     },
+    "ohko": true,
     "accuracy": 30,
     "pp": 5,
     "target": "normal",
