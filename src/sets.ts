@@ -33,15 +33,6 @@ export class Sets {
   // istanbul ignore next: constructor
   protected constructor() {}
 
-  /*
-  static fillSet(s: PokemonSet, gen?: Generation): PokemonSet {
-    // TODO fillSet/cleanSet for Generation
-    // TODO marowak
-    // TODO formes/mega
-    return toPokemonSet({})!; // TODO
-  }
-  */
-
   static pack(s: PokemonSet, gen?: Generation): string {
     return Sets.packSet(s, gen);
   }
