@@ -528,6 +528,7 @@
     "name": "Choice Scarf",
     "num": 287,
     "desc": "Holder's Speed is 1.5x, but it can only select the first move it executes.",
+    "isChoice": true,
     "gen": 4
   },
   "stickybarb": {
@@ -598,6 +599,7 @@
     "name": "Choice Specs",
     "num": 297,
     "desc": "Holder's Sp. Atk is 1.5x, but it can only select the first move it executes.",
+    "isChoice": true,
     "gen": 4
   },
   "flameplate": {
