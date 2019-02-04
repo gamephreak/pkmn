@@ -37,6 +37,7 @@ describe('Items', () => {
     expect(Items.get('Electric Memory')!.onMemory).toBe('Electric');
     expect(Items.get('Douse Drive')!.onDrive).toBe('Water');
     expect(Items.get('Electric Gem', 6)!.isGem).toBe(true);
+    expect(Items.get('Choice Specs')!.isChoice).toBe(true);
   });
 
   test('previous', () => {

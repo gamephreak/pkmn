@@ -13,7 +13,7 @@ import {Type} from './types';
 
 export interface Item extends Data {
   readonly isBerry?: boolean;
-  readonly isChoice?: boolean; // TODO
+  readonly isChoice?: boolean;
   readonly isGem?: boolean;
   readonly megaEvolves?: string;
   readonly megaStone?: string;
