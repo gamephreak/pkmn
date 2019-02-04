@@ -93,7 +93,6 @@ interface Flags {
 }
 
 interface SelfEffect {
-  readonly sideCondition?: string;
   readonly volatileStatus?: string;
   readonly boosts?: Partial<BoostsTable>;
 }

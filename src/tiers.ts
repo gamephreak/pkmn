@@ -3,7 +3,7 @@ import {ID, toID} from './id';
 import {Species} from './species';
 
 export type Tier = 'AG'|'Uber'|'OU'|'UUBL'|'UU'|'RUBL'|'RU'|'NUBL'|'NU'|'PUBL'|
-    'PU'|'NFE'|'LC Uber'|'LC'|'Unreleased'|'Illegal'|'CAP'|'CAP NFE'|'CAP LC';
+    'PU'|'NFE'|'LC Uber'|'LC'|'Unreleased'|'Illegal';
 
 export const UBER: Tier = 'Uber';
 export const OU: Tier = 'OU';
@@ -22,10 +22,6 @@ export const LC: Tier = 'LC';
 export const AG: Tier = 'AG';
 export const UNRELEASED: Tier = 'Unreleased';
 export const ILLEGAL: Tier = 'Illegal';
-
-export const CAP: Tier = 'CAP';
-export const CAP_NFE: Tier = 'CAP NFE';
-export const CAP_LC: Tier = 'CAP LC';
 
 export const STANDARD: Tier = OU;
 
@@ -54,14 +50,8 @@ const OTHER: Readonly<{[id: string]: Tier}> = {
   illegal: ILLEGAL,
 };
 
-const NON_STANDARD: Readonly<{[id: string]: Tier}> = {
-  cap: CAP,
-  capnfe: CAP_NFE,
-  caplc: CAP_LC
-};
-
 const TIERS: Readonly<{[id: string]: Tier}> =
-    extend(true, {}, OFFICIAL, BANLISTS, OTHER, NON_STANDARD);
+    extend(true, {}, OFFICIAL, BANLISTS, OTHER);
 
 const ALLOWED: Readonly<{[tier in Tier]: Readonly<{[tier in Tier]?: 1}>}> = {
   'AG': {
@@ -165,10 +155,6 @@ const ALLOWED: Readonly<{[tier in Tier]: Readonly<{[tier in Tier]?: 1}>}> = {
   'LC': {'LC': 1},
   'Unreleased': {},
   'Illegal': {},
-  // BUG: TBH, I have no clue how these work?
-  'CAP': {'CAP': 1, 'CAP NFE': 1, 'CAP LC': 1},
-  'CAP NFE': {'CAP NFE': 1, 'CAP LC': 1},
-  'CAP LC': {'CAP LC': 1}
 };
 
 export class Tiers {
@@ -181,10 +167,6 @@ export class Tiers {
 
   static isOfficial(t: Tier): boolean {
     return !!OFFICIAL[toID(t)];
-  }
-
-  static isNonstandard(t: Tier): boolean {
-    return !!NON_STANDARD[toID(t)];
   }
 
   static isAllowed(s: Species, t: Tier): boolean {

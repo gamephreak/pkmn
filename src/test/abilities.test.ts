@@ -4,20 +4,17 @@ describe('Abilities', () => {
   test('forGen', async () => {
     expect(Object.keys(await Abilities.forGen(1)).length).toBe(0);
     expect(Object.keys(await Abilities.forGen(2)).length).toBe(0);
-    expect(Object.keys(await Abilities.forGen(3)).length).toBe(76 + 1);
-    expect(Object.keys(await Abilities.forGen(4)).length).toBe(76 + 1 + 47 + 2);
-    expect(Object.keys(await Abilities.forGen(5)).length)
-        .toBe(76 + 1 + 47 + 2 + 41);
+    expect(Object.keys(await Abilities.forGen(3)).length).toBe(76);
+    expect(Object.keys(await Abilities.forGen(4)).length).toBe(76 + 47);
+    expect(Object.keys(await Abilities.forGen(5)).length).toBe(76 + 47 + 41);
     expect(Object.keys(await Abilities.forGen(6)).length)
-        .toBe(76 + 1 + 47 + 2 + 41 + 27);
+        .toBe(76 + 47 + 41 + 27);
     expect(Object.keys(await Abilities.forGen(7)).length)
-        .toBe(76 + 1 + 47 + 2 + 41 + 27 + 42);
+        .toBe(76 + 47 + 41 + 27 + 42);
   });
 
   test('get', async () => {
     expect(await Abilities.get('foo')).not.toBeDefined();
-    expect((await Abilities.get('Flash Fire (Activated)'))!.isNonstandard)
-        .toBe(true);
     expect(await Abilities.get('Beast Boost', 6)).not.toBeDefined();
     expect((await Abilities.get('Beast Boost', 7))!.name).toBe('Beast Boost');
     expect(await Abilities.get('Shield Dust', 3))

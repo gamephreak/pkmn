@@ -13,16 +13,9 @@ describe('Tiers', () => {
     expect(Tiers.isOfficial('UUBL')).toBe(false);
   });
 
-  test('isNonstandard', () => {
-    expect(Tiers.isNonstandard('OU')).toBe(false);
-    expect(Tiers.isNonstandard('CAP NFE')).toBe(true);
-  });
-
   test('isAllowed', async () => {
     expect(Tiers.isAllowed((await Species.get('Gengar'))!, 'OU')).toBe(true);
     expect(Tiers.isAllowed((await Species.get('Ekans'))!, 'UU')).toBe(true);
     expect(Tiers.isAllowed((await Species.get('Kyogre'))!, 'PU')).toBe(false);
-    expect(Tiers.isAllowed((await Species.get('Syclar'))!, 'CAP')).toBe(true);
-    expect(Tiers.isAllowed((await Species.get('Voodoom'))!, 'OU')).toBe(false);
   });
 });
