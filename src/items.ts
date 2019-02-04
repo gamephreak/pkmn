@@ -13,16 +13,17 @@ import {Type} from './types';
 
 export interface Item extends Data {
   readonly isBerry?: boolean;
-  readonly megaStone?: string;
+  readonly isChoice?: boolean; // TODO
+  readonly isGem?: boolean;
   readonly megaEvolves?: string;
+  readonly megaStone?: string;
+  readonly onDrive?: string;
+  readonly onMemory?: string;
+  readonly onPlate?: string;
   readonly zMove?: string|true;
   readonly zMoveFrom?: string;
   readonly zMoveType?: Type;
   readonly zMoveUser?: string[];
-  readonly onPlate?: string;
-  readonly onMemory?: string;
-  readonly onDrive?: string;
-  readonly isGem?: boolean;
 }
 
 const RBY: DataTable<Item> = {};
