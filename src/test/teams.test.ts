@@ -1,5 +1,6 @@
 import {readFileSync} from 'fs';
 
+import {Format} from '../format';
 import {Team, Teams} from '../teams';
 
 function readTeam(file: string) {
@@ -12,7 +13,7 @@ const TEAMS: string = readTeam('teams');
 describe('Team', () => {
   test('importTeam + exportTeam', async () => {
     const t = (await Team.fromString(TEAM))!;
-    expect(t.tier()).not.toBeDefined();
+    expect(t.tier).not.toBeDefined();
     expect(await t.toString()).toEqual(TEAM);
     expect(await Teams.exportTeams([t]))
         .toEqual('=== Untitled 1 ===\n\n' + TEAM + '\n');
@@ -25,9 +26,9 @@ describe('Team', () => {
   });
 
   test('bad format', async () => {
-    const t = new Team([], 'uu');
-    expect(t.gen()).toBe(6);
-    expect(t.tier()).toBe('UU');
+    const t = new Team([], Format.fromString('uu'));
+    expect(t.gen).toBe(6);
+    expect(t.tier).toBe('UU');
   });
 
   test('toJSON + fromJSON', async () => {
@@ -41,18 +42,18 @@ describe('Team', () => {
 describe('Teams', () => {
   test('importTeams + exportTeams', async () => {
     let imported = await Teams.fromString(TEAMS.replace(/\[ou\]/, ''))!;
-    expect(imported[0].gen()).toBe(7);
+    expect(imported[0].gen).toBe(7);
 
     imported = await Teams.fromString(TEAMS)!;
     expect(imported.length).toBe(2);
 
-    expect(imported[0].gen()).toBe(6);
-    expect(imported[0].tier()).toBe('OU');
+    expect(imported[0].gen).toBe(6);
+    expect(imported[0].tier).toBe('OU');
     expect(imported[0].name).toBe('Bulky Offense');
     expect(imported[0].folder).toBe('');
 
-    expect(imported[1].gen()).toBe(1);
-    expect(imported[1].tier()).toBe('OU');
+    expect(imported[1].gen).toBe(1);
+    expect(imported[1].tier).toBe('OU');
     expect(imported[1].name).toBe('Cloyster');
     expect(imported[1].folder).toBe('RBY');
 
@@ -76,7 +77,7 @@ describe('Teams', () => {
     let both = 'ou]RBY/Cloyster|' + (await teams[1].pack()) + '\n' +
         (await Teams.exportTeams([teams[0]])) + '|' + (await team.pack());
     let imported = await Teams.importTeams(both);
-    expect(imported[0].gen()).toBe(6);
+    expect(imported[0].gen).toBe(6);
 
     both = 'gen1ou]RBY/Cloyster|' + (await teams[1].pack()) + '\n' +
         (await Teams.exportTeams([teams[0]])) + '|' + (await team.pack());
@@ -87,8 +88,8 @@ describe('Teams', () => {
     expect(imported[1].team.length).toBe(6);
     expect(imported[2].team.length).toBe(6);
 
-    expect(imported[0].gen()).toBe(1);
-    expect(imported[0].tier()).toBe('OU');
+    expect(imported[0].gen).toBe(1);
+    expect(imported[0].tier).toBe('OU');
     expect(imported[0].name).toBe('Cloyster');
     expect(imported[0].folder).toBe('RBY');
 

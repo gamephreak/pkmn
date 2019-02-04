@@ -1,5 +1,6 @@
 import {Aliases} from './aliases';
-import {cache, Data, DataTable, patch} from './data';
+import {cache} from './cache';
+import {Data, DataTable} from './data';
 import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
 import {BoostsTable} from './stats';
@@ -131,19 +132,23 @@ export interface Move extends Data {
   readonly recoil?: Recoil;
   readonly breaksProtect?: boolean;
   readonly ignoreDefensive?: boolean;
+  readonly ohko?: boolean;
 }
 
 const RBY: Promise<DataTable<Move>> =
-    patch(Promise.resolve({}), import('./data/rby/moves.json'));
+    Data.patch(Promise.resolve({}), import('./data/rby/moves.json'));
 const GSC: Promise<DataTable<Move>> =
-    patch(RBY, import('./data/gsc/moves.json'));
+    Data.patch(RBY, import('./data/gsc/moves.json'));
 const ADV: Promise<DataTable<Move>> =
-    patch(GSC, import('./data/adv/moves.json'));
+    Data.patch(GSC, import('./data/adv/moves.json'));
 const DPP: Promise<DataTable<Move>> =
-    patch(ADV, import('./data/dpp/moves.json'));
-const BW: Promise<DataTable<Move>> = patch(DPP, import('./data/bw/moves.json'));
-const XY: Promise<DataTable<Move>> = patch(BW, import('./data/xy/moves.json'));
-const SM: Promise<DataTable<Move>> = patch(XY, import('./data/sm/moves.json'));
+    Data.patch(ADV, import('./data/dpp/moves.json'));
+const BW: Promise<DataTable<Move>> =
+    Data.patch(DPP, import('./data/bw/moves.json'));
+const XY: Promise<DataTable<Move>> =
+    Data.patch(BW, import('./data/xy/moves.json'));
+const SM: Promise<DataTable<Move>> =
+    Data.patch(XY, import('./data/sm/moves.json'));
 
 const MOVES: Readonly<Array<Promise<DataTable<Move>>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
@@ -158,7 +163,7 @@ export class Moves {
 
   @cache
   static async get(
-      m: ID|string,
+      m: ID|string|undefined,
       /* istanbul ignore next: @cache */ gen: Generation = CURRENT):
       Promise<Move|undefined> {
     let id = toID(m);

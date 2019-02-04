@@ -1,5 +1,6 @@
 import {Aliases} from './aliases';
-import {cache, Data, DataTable, patch} from './data';
+import {cache} from './cache';
+import {Data, DataTable} from './data';
 import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
 import {StatsTable} from './stats';
@@ -28,19 +29,19 @@ export interface Species extends Data {
 }
 
 const RBY: Promise<DataTable<Species>> =
-    patch(Promise.resolve({}), import('./data/rby/species.json'));
+    Data.patch(Promise.resolve({}), import('./data/rby/species.json'));
 const GSC: Promise<DataTable<Species>> =
-    patch(RBY, import('./data/gsc/species.json'));
+    Data.patch(RBY, import('./data/gsc/species.json'));
 const ADV: Promise<DataTable<Species>> =
-    patch(GSC, import('./data/adv/species.json'));
+    Data.patch(GSC, import('./data/adv/species.json'));
 const DPP: Promise<DataTable<Species>> =
-    patch(ADV, import('./data/dpp/species.json'));
+    Data.patch(ADV, import('./data/dpp/species.json'));
 const BW: Promise<DataTable<Species>> =
-    patch(DPP, import('./data/bw/species.json'));
+    Data.patch(DPP, import('./data/bw/species.json'));
 const XY: Promise<DataTable<Species>> =
-    patch(BW, import('./data/xy/species.json'));
+    Data.patch(BW, import('./data/xy/species.json'));
 const SM: Promise<DataTable<Species>> =
-    patch(XY, import('./data/sm/species.json'));
+    Data.patch(XY, import('./data/sm/species.json'));
 
 const SPECIES: Readonly<Array<Promise<DataTable<Species>>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
@@ -52,7 +53,7 @@ export class Species {
 
   @cache
   static async getName(
-      s: ID|string,
+      s: ID|string|undefined,
       /* istanbul ignore next: @cache */ gen: Generation = CURRENT):
       Promise<string|undefined> {
     const id = toID(s);
@@ -71,9 +72,11 @@ export class Species {
 
   @cache
   static async get(
-      s: ID|string,
+      s: ID|string|undefined,
       /* istanbul ignore next: @cache */ gen: Generation = CURRENT):
       Promise<Species|undefined> {
+    if (!s) return undefined;
+
     let id = toID(s);
     if (id === 'nidoran' && s.slice(-1) === '♀') {
       id = 'nidoranf' as ID;

@@ -296,7 +296,6 @@ describe('Sets', () => {
       expect(await Sets.exportSet(u, true)).toEqual(exported('Suicune'));
       expect(await Sets.exportSet(suicune)).toEqual(exported('Suicune'));
 
-      // @ts-ignore
       suicune = {
         name: 'Suicune',
         ivs: {hp: undefined},

@@ -1,33 +1,38 @@
 import {Aliases} from './aliases';
-import {cache, Data, DataTable, patch} from './data';
+import {cache} from './cache';
+import {Data, DataTable} from './data';
 import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
 import {Type} from './types';
 
 export interface Item extends Data {
   readonly isBerry?: boolean;
-  readonly megaStone?: string;
+  readonly isChoice?: boolean;
+  readonly isGem?: boolean;
   readonly megaEvolves?: string;
+  readonly megaStone?: string;
+  readonly onDrive?: string;
+  readonly onMemory?: string;
+  readonly onPlate?: string;
   readonly zMove?: string|true;
   readonly zMoveFrom?: string;
   readonly zMoveType?: Type;
   readonly zMoveUser?: string[];
-  readonly onPlate?: string;
-  readonly onMemory?: string;
-  readonly onDrive?: string;
-  readonly isGem?: boolean;
 }
 
 const RBY: Promise<DataTable<Item>> = Promise.resolve({});
 const GSC: Promise<DataTable<Item>> =
-    patch(RBY, import('./data/gsc/items.json'));
+    Data.patch(RBY, import('./data/gsc/items.json'));
 const ADV: Promise<DataTable<Item>> =
-    patch(GSC, import('./data/adv/items.json'));
+    Data.patch(GSC, import('./data/adv/items.json'));
 const DPP: Promise<DataTable<Item>> =
-    patch(ADV, import('./data/dpp/items.json'));
-const BW: Promise<DataTable<Item>> = patch(DPP, import('./data/bw/items.json'));
-const XY: Promise<DataTable<Item>> = patch(BW, import('./data/xy/items.json'));
-const SM: Promise<DataTable<Item>> = patch(XY, import('./data/sm/items.json'));
+    Data.patch(ADV, import('./data/dpp/items.json'));
+const BW: Promise<DataTable<Item>> =
+    Data.patch(DPP, import('./data/bw/items.json'));
+const XY: Promise<DataTable<Item>> =
+    Data.patch(BW, import('./data/xy/items.json'));
+const SM: Promise<DataTable<Item>> =
+    Data.patch(XY, import('./data/sm/items.json'));
 
 const ITEMS: Readonly<Array<Promise<DataTable<Item>>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
@@ -42,7 +47,7 @@ export class Items {
 
   @cache
   static async get(
-      i: ID|string,
+      i: ID|string|undefined,
       /* istanbul ignore next: @cache */ gen: Generation = CURRENT):
       Promise<Item|undefined> {
     const id = toID(i);

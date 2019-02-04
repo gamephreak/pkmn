@@ -1,4 +1,4 @@
-import {patch} from './data';
+import {Data} from './data';
 import {CURRENT, Generation} from './gen';
 import {Category} from './moves';
 import {Stat, Stats, StatsTable} from './stats';
@@ -11,12 +11,13 @@ export type TypeChart =
     Readonly<{[type in Type]?: Readonly<{[type in Type]?: number}>}>;
 
 const RBY: Promise<TypeChart> =
-    patch(Promise.resolve({}), import('./data/rby/types.json'));
-const GSC: Promise<TypeChart> = patch(RBY, import('./data/gsc/types.json'));
+    Data.patch(Promise.resolve({}), import('./data/rby/types.json'));
+const GSC: Promise<TypeChart> =
+    Data.patch(RBY, import('./data/gsc/types.json'));
 const ADV: Promise<TypeChart> = GSC;
 const DPP: Promise<TypeChart> = GSC;
 const BW: Promise<TypeChart> = GSC;
-const XY: Promise<TypeChart> = patch(BW, import('./data/xy/types.json'));
+const XY: Promise<TypeChart> = Data.patch(BW, import('./data/xy/types.json'));
 const SM: Promise<TypeChart> = XY;
 
 const SPECIAL: {[type in Type]?: 1} = {

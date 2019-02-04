@@ -9,12 +9,12 @@ import {Type, Types} from './types';
 
 // BUG: moves, evs and ivs should be Readonly
 export type PokemonSet = {
-  readonly name: string;
+  readonly name?: string;
   readonly species: string;
-  readonly item: string;
-  readonly ability: string;
+  readonly item?: string;
+  readonly ability?: string;
   readonly moves: string[];
-  readonly nature: string;
+  readonly nature?: string;
   readonly evs: StatsTable;
   readonly ivs: StatsTable;
   readonly gender?: string;
@@ -560,12 +560,12 @@ function toPokemonSet(s?: WriteableSet, gen?: Generation): PokemonSet|
   if (!s) return undefined;
 
   return {
-    name: s.name || '',
+    name: s.name,
     species: s.species || /* istanbul ignore next: N/A */ (s.name || ''),
-    item: s.item || '',
-    ability: s.ability || '',
+    item: s.item,
+    ability: s.ability,
     moves: s.moves || /* istanbul ignore next: types */[],
-    nature: s.nature || '',
+    nature: s.nature,
     evs: Stats.fillEVs(s.evs || {}, gen),
     ivs: Stats.fillIVs(s.ivs || {}),
     gender: s.gender,

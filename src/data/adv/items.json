@@ -448,6 +448,7 @@
     "name": "Choice Band",
     "num": 220,
     "desc": "Holder's Attack is 1.5x, but it can only select the first move it executes.",
+    "isChoice": true,
     "gen": 3
   },
   "souldew": {

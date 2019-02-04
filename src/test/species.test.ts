@@ -26,6 +26,7 @@ describe('Species', () => {
   });
 
   test('get', async () => {
+    expect((await Species.get(undefined))).not.toBeDefined();
     expect(await Species.get('foo')).not.toBeDefined();
 
     // normal

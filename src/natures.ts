@@ -49,7 +49,7 @@ export class Natures {
   // istanbul ignore next: constructor
   protected constructor() {}
 
-  static get(n: ID|string): Nature|undefined {
+  static get(n: ID|string|undefined): Nature|undefined {
     return NATURES[toID(n)];
   }
 

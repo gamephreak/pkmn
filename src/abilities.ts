@@ -1,5 +1,6 @@
 import {Aliases} from './aliases';
-import {cache, Data, DataTable, patch} from './data';
+import {cache} from './cache';
+import {Data, DataTable} from './data';
 import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
 
@@ -8,15 +9,15 @@ export interface Ability extends Data {}
 const RBY: Promise<DataTable<Ability>> = Promise.resolve({});
 const GSC: Promise<DataTable<Ability>> = Promise.resolve({});
 const ADV: Promise<DataTable<Ability>> =
-    patch(GSC, import('./data/adv/abilities.json'));
+    Data.patch(GSC, import('./data/adv/abilities.json'));
 const DPP: Promise<DataTable<Ability>> =
-    patch(ADV, import('./data/dpp/abilities.json'));
+    Data.patch(ADV, import('./data/dpp/abilities.json'));
 const BW: Promise<DataTable<Ability>> =
-    patch(DPP, import('./data/bw/abilities.json'));
+    Data.patch(DPP, import('./data/bw/abilities.json'));
 const XY: Promise<DataTable<Ability>> =
-    patch(BW, import('./data/xy/abilities.json'));
+    Data.patch(BW, import('./data/xy/abilities.json'));
 const SM: Promise<DataTable<Ability>> =
-    patch(XY, import('./data/sm/abilities.json'));
+    Data.patch(XY, import('./data/sm/abilities.json'));
 
 const ABILITIES: Readonly<Array<Promise<DataTable<Ability>>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];
@@ -31,7 +32,7 @@ export class Abilities {
 
   @cache
   static async get(
-      a: ID|string,
+      a: ID|string|undefined,
       /* istanbul ignore next: @cache */ gen: Generation = CURRENT):
       Promise<Ability|undefined> {
     const id = toID(a);

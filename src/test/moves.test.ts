@@ -74,6 +74,7 @@ describe('Moves', () => {
     expect((await Moves.get('Mind Blown'))!.recoil).toBe(true);
     expect((await Moves.get('Feint'))!.breaksProtect).toBe(true);
     expect((await Moves.get('Sacred Sword'))!.ignoreDefensive).toBe(true);
+    expect((await Moves.get('Fissure'))!.ohko).toBe(true);
 
     // self
     expect((await Moves.get('Petal Dance'))!.self!.volatileStatus)
