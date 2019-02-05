@@ -85,6 +85,9 @@ describe('Species', () => {
     expect(Species.get('Gastrodon-East')!.cosmeticForms).toEqual([
       'gastrodoneast'
     ]);
+    expect(Species.get('Garchomp-Mega')!.isMega).toBe(true);
+    expect(Species.get('Yanmega')!.isMega).not.toBeDefined();
+    expect(Species.get('Kyogre-Primal')!.isPrimal).toBe(true);
   });
 
   test('cached', () => {
