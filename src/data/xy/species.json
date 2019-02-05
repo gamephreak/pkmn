@@ -18,6 +18,7 @@
       "0": "Tough Claws"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 110.5,
     "type1": "Fire",
     "type2": "Dragon",
@@ -45,6 +46,7 @@
       "0": "Trace"
     },
     "tier": "UUBL",
+    "isMega": true,
     "weight": 48,
     "type1": "Psychic",
     "gen": 6
@@ -140,6 +142,7 @@
       "0": "Levitate"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 52,
     "type1": "Dragon",
     "type2": "Psychic",
@@ -165,6 +168,7 @@
       "0": "Levitate"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 70,
     "type1": "Dragon",
     "type2": "Psychic",
@@ -228,6 +232,7 @@
       "0": "Healer"
     },
     "tier": "NU",
+    "isMega": true,
     "weight": 32,
     "type1": "Normal",
     "type2": "Fairy",
@@ -503,6 +508,7 @@
       "0": "Thick Fat"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 155.5,
     "type1": "Grass",
     "type2": "Poison",
@@ -533,6 +539,7 @@
       "0": "Drought"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 100.5,
     "type1": "Fire",
     "type2": "Flying",
@@ -566,6 +573,7 @@
       "0": "Mega Launcher"
     },
     "tier": "UU",
+    "isMega": true,
     "weight": 101.1,
     "type1": "Water",
     "gen": 6
@@ -604,6 +612,7 @@
       "0": "Adaptability"
     },
     "tier": "UU",
+    "isMega": true,
     "weight": 40.5,
     "type1": "Bug",
     "type2": "Poison",
@@ -637,6 +646,7 @@
       "0": "No Guard"
     },
     "tier": "UUBL",
+    "isMega": true,
     "weight": 50.5,
     "type1": "Normal",
     "type2": "Flying",
@@ -944,6 +954,7 @@
       "0": "Shell Armor"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 120,
     "type1": "Water",
     "type2": "Psychic",
@@ -977,6 +988,7 @@
       "0": "Shadow Tag"
     },
     "tier": "Uber",
+    "isMega": true,
     "weight": 40.5,
     "type1": "Ghost",
     "type2": "Poison",
@@ -1028,6 +1040,7 @@
       "0": "Parental Bond"
     },
     "tier": "Uber",
+    "isMega": true,
     "weight": 100,
     "type1": "Normal",
     "gen": 6
@@ -1075,6 +1088,7 @@
       "0": "Aerilate"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 59,
     "type1": "Bug",
     "type2": "Flying",
@@ -1105,6 +1119,7 @@
       "0": "Mold Breaker"
     },
     "tier": "UUBL",
+    "isMega": true,
     "weight": 305,
     "type1": "Water",
     "type2": "Dark",
@@ -1167,6 +1182,7 @@
       "0": "Tough Claws"
     },
     "tier": "UU",
+    "isMega": true,
     "weight": 79,
     "type1": "Rock",
     "type2": "Flying",
@@ -1222,6 +1238,7 @@
       "0": "Steadfast"
     },
     "tier": "Uber",
+    "isMega": true,
     "weight": 127,
     "type1": "Psychic",
     "type2": "Fighting",
@@ -1247,6 +1264,7 @@
       "0": "Insomnia"
     },
     "tier": "Uber",
+    "isMega": true,
     "weight": 33,
     "type1": "Psychic",
     "gen": 6
@@ -1371,6 +1389,7 @@
       "0": "Mold Breaker"
     },
     "tier": "UU",
+    "isMega": true,
     "weight": 61.5,
     "type1": "Electric",
     "type2": "Dragon",
@@ -1459,6 +1478,7 @@
       "0": "Sand Force"
     },
     "tier": "RUBL",
+    "isMega": true,
     "weight": 740,
     "type1": "Steel",
     "type2": "Ground",
@@ -1495,6 +1515,7 @@
       "0": "Technician"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 125,
     "type1": "Bug",
     "type2": "Steel",
@@ -1527,6 +1548,7 @@
       "0": "Skill Link"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 62.5,
     "type1": "Bug",
     "type2": "Fighting",
@@ -1569,6 +1591,7 @@
       "0": "Solar Power"
     },
     "tier": "RUBL",
+    "isMega": true,
     "weight": 49.5,
     "type1": "Dark",
     "type2": "Fire",
@@ -1616,6 +1639,7 @@
       "0": "Sand Stream"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 255,
     "type1": "Rock",
     "type2": "Dark",
@@ -1649,6 +1673,7 @@
       "0": "Lightning Rod"
     },
     "tier": "UU",
+    "isMega": true,
     "weight": 55.2,
     "type1": "Grass",
     "type2": "Dragon",
@@ -1681,6 +1706,7 @@
       "0": "Speed Boost"
     },
     "tier": "Uber",
+    "isMega": true,
     "weight": 52,
     "type1": "Fire",
     "type2": "Fighting",
@@ -1710,6 +1736,7 @@
       "0": "Swift Swim"
     },
     "tier": "UU",
+    "isMega": true,
     "weight": 102,
     "type1": "Water",
     "type2": "Ground",
@@ -1762,6 +1789,7 @@
       "0": "Pixilate"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 48.4,
     "type1": "Psychic",
     "type2": "Fairy",
@@ -1816,6 +1844,7 @@
       "0": "Magic Bounce"
     },
     "tier": "Uber",
+    "isMega": true,
     "weight": 161,
     "type1": "Dark",
     "type2": "Ghost",
@@ -1847,6 +1876,7 @@
       "0": "Huge Power"
     },
     "tier": "Uber",
+    "isMega": true,
     "weight": 23.5,
     "type1": "Steel",
     "type2": "Fairy",
@@ -1880,6 +1910,7 @@
       "0": "Filter"
     },
     "tier": "UU",
+    "isMega": true,
     "weight": 395,
     "type1": "Steel",
     "gen": 6
@@ -1908,6 +1939,7 @@
       "0": "Pure Power"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 31.5,
     "type1": "Fighting",
     "type2": "Psychic",
@@ -1938,6 +1970,7 @@
       "0": "Intimidate"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 44,
     "type1": "Electric",
     "gen": 6
@@ -1987,6 +2020,7 @@
       "0": "Strong Jaw"
     },
     "tier": "UU",
+    "isMega": true,
     "weight": 130.3,
     "type1": "Water",
     "type2": "Dark",
@@ -2020,6 +2054,7 @@
       "0": "Sheer Force"
     },
     "tier": "RU",
+    "isMega": true,
     "weight": 320.5,
     "type1": "Fire",
     "type2": "Ground",
@@ -2062,6 +2097,7 @@
       "0": "Pixilate"
     },
     "tier": "UUBL",
+    "isMega": true,
     "weight": 20.6,
     "type1": "Dragon",
     "type2": "Fairy",
@@ -2123,6 +2159,7 @@
       "0": "Prankster"
     },
     "tier": "RU",
+    "isMega": true,
     "weight": 13,
     "type1": "Ghost",
     "gen": 6
@@ -2167,6 +2204,7 @@
       "0": "Magic Bounce"
     },
     "tier": "UU",
+    "isMega": true,
     "weight": 49,
     "type1": "Dark",
     "gen": 6
@@ -2196,6 +2234,7 @@
       "0": "Refrigerate"
     },
     "tier": "RU",
+    "isMega": true,
     "weight": 350.2,
     "type1": "Ice",
     "gen": 6
@@ -2243,6 +2282,7 @@
       "0": "Aerilate"
     },
     "tier": "Uber",
+    "isMega": true,
     "weight": 112.6,
     "type1": "Dragon",
     "type2": "Flying",
@@ -2277,6 +2317,7 @@
       "0": "Tough Claws"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 942.9,
     "type1": "Steel",
     "type2": "Psychic",
@@ -2337,6 +2378,7 @@
       "0": "Primordial Sea"
     },
     "tier": "Uber",
+    "isPrimal": true,
     "weight": 430,
     "type1": "Water",
     "gen": 6
@@ -2366,6 +2408,7 @@
       "0": "Desolate Land"
     },
     "tier": "Uber",
+    "isPrimal": true,
     "weight": 999.7,
     "type1": "Ground",
     "type2": "Fire",
@@ -2396,6 +2439,7 @@
       "0": "Delta Stream"
     },
     "tier": "AG",
+    "isMega": true,
     "weight": 392,
     "type1": "Dragon",
     "type2": "Flying",
@@ -2493,6 +2537,7 @@
       "0": "Scrappy"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 28.3,
     "type1": "Normal",
     "type2": "Fighting",
@@ -2543,6 +2588,7 @@
       "0": "Sand Force"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 95,
     "type1": "Dragon",
     "type2": "Ground",
@@ -2576,6 +2622,7 @@
       "0": "Adaptability"
     },
     "tier": "Uber",
+    "isMega": true,
     "weight": 57.5,
     "type1": "Fighting",
     "type2": "Steel",
@@ -2615,6 +2662,7 @@
       "0": "Snow Warning"
     },
     "tier": "RUBL",
+    "isMega": true,
     "weight": 185,
     "type1": "Grass",
     "type2": "Ice",
@@ -2679,6 +2727,7 @@
       "0": "Inner Focus"
     },
     "tier": "UUBL",
+    "isMega": true,
     "weight": 56.4,
     "type1": "Psychic",
     "type2": "Fighting",
@@ -5020,6 +5069,7 @@
       "0": "Magic Bounce"
     },
     "tier": "OU",
+    "isMega": true,
     "weight": 27.8,
     "type1": "Rock",
     "type2": "Fairy",
