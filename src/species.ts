@@ -26,6 +26,8 @@ export interface Species extends Data {
   readonly formeLetter?: string;
   readonly otherFormes?: ID[];
   readonly cosmeticForms?: Readonly<ID[]>;
+  readonly isMega?: boolean;
+  readonly isPrimal?: boolean;
 }
 
 const RBY: Promise<DataTable<Species>> =
