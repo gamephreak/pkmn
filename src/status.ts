@@ -1,4 +1,4 @@
-export type Status = 'frz'|'par'|'brn'|'slp'|'psn'|'tox';
+export type Status = 'frz'|'par'|'brn'|'slp'|'psn'|'tox'|'fnt';
 
 const STATUSES: Readonly<{[s in Status]: string}> = {
   frz: 'Frozen',
@@ -6,7 +6,8 @@ const STATUSES: Readonly<{[s in Status]: string}> = {
   brn: 'Burned',
   slp: 'Asleep',
   psn: 'Poisoned',
-  tox: 'Badly Poisoned'
+  tox: 'Badly Poisoned',
+  fnt: 'Fainted'
 };
 
 export class Statuses {
