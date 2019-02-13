@@ -52,7 +52,7 @@ base for an updated
 
 ## Extensions
 
-[@/pkmn.cc/datax](https://github.com/pkmn-cc/datax) contains extensions to the
+[@pkmn.cc/datax](https://github.com/pkmn-cc/datax) contains extensions to the
 basic datatypes that are not necessarily required for all projects (for example,
 learnset and ruleset information). @pkmn.cc/datax can be used as a drop in
 replacement for @pkmn.cc/data provided your project requires the added
