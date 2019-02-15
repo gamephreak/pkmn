@@ -2,13 +2,17 @@ import {CURRENT, Generation} from './gen';
 import {ID, toID} from './id';
 import {STANDARD, Tier, Tiers} from './tiers';
 
+export type GameType = 'Singles'|'Doubles'|'Triples'|'Rotation';
+
 export class Format {
   readonly id: ID;
+  readonly gameType: GameType;
 
   constructor(
       readonly gen: Generation = CURRENT, readonly tier: Tier = STANDARD) {
     this.gen = gen;
     this.tier = tier;
+    this.gameType = 'Singles';
     this.id = toID(`gen${gen}${tier}`);
   }
 
