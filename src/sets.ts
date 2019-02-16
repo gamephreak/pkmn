@@ -7,27 +7,24 @@ import {Species} from './species';
 import {Stat, STAT_NAMES, Stats, StatsTable} from './stats';
 import {Type, Types} from './types';
 
-// BUG: moves, evs and ivs should be Readonly
+// clang-format off
 export type PokemonSet = {
-  readonly name?: string;
-  readonly species: string;
-  readonly item?: string;
-  readonly ability?: string;
-  readonly moves: string[];
-  readonly nature?: string;
-  readonly evs: StatsTable;
-  readonly ivs: StatsTable;
-  readonly gender?: string;
-  readonly level?: number;
-  readonly shiny?: boolean;
-  readonly happiness?: number;
-  readonly pokeball?: string;
-  readonly hpType?: string;
+  name?: string;
+  species: string;
+  item?: string;
+  ability?: string;
+  moves: string[];
+  nature?: string;
+  evs: StatsTable;
+  ivs: StatsTable;
+  gender?: string;
+  level?: number;
+  shiny?: boolean;
+  happiness?: number;
+  pokeball?: string;
+  hpType?: string;
 };
-
-type WriteableSet =
-    Partial<{-readonly[k in keyof PokemonSet] -?: PokemonSet[k]}>;
-
+// clang-format on
 
 export class Sets {
   // istanbul ignore next: constructor
@@ -324,7 +321,7 @@ export class Sets {
 
 export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
     {set?: PokemonSet, i: number, j: number} {
-  const s: WriteableSet = {};
+  const s: Partial<PokemonSet> = {};
   // name
   j = buf.indexOf('|', i);
   if (j < 0) return {i, j};
@@ -434,17 +431,17 @@ export function _unpack(buf: string, i = 0, j = 0, gen?: Generation):
     s.pokeball = misc[2] ? misc[2].trim() : misc[2];
   }
 
-  return {set: toPokemonSet(s, gen), i, j};
+  return {set: fromPartial(s, gen), i, j};
 }
 
 export function _import(lines: string[], i = 0, gen?: Generation):
     {set?: PokemonSet, line: number} {
-  let s: WriteableSet|undefined = undefined;
+  let s: Partial<PokemonSet>|undefined = undefined;
   for (; i < lines.length; i++) {
     let line = lines[i].trim();
     if (line === '' || line === '---' || line.substr(0, 3) === '===' ||
         line.includes('|')) {
-      return {set: toPokemonSet(s, gen), line: i};
+      return {set: fromPartial(s, gen), line: i};
     } else if (!s) {
       s = {name: '', species: '', gender: ''};
       const atIndex = line.lastIndexOf(' @ ');
@@ -549,10 +546,10 @@ export function _import(lines: string[], i = 0, gen?: Generation):
     }
   }
 
-  return {set: toPokemonSet(s, gen), line: i + 1};
+  return {set: fromPartial(s, gen), line: i + 1};
 }
 
-function toPokemonSet(s?: WriteableSet, gen?: Generation): PokemonSet|
+function fromPartial(s?: Partial<PokemonSet>, gen?: Generation): PokemonSet|
     undefined {
   if (!s) return undefined;
 
