@@ -27,12 +27,12 @@ export interface Item extends Data {
 }
 
 const RBY: DataTable<Item> = {};
-const GSC: DataTable<Item> = Data.patch(RBY, gsc);
-const ADV: DataTable<Item> = Data.patch(GSC, adv);
-const DPP: DataTable<Item> = Data.patch(ADV, dpp);
-const BW: DataTable<Item> = Data.patch(DPP, bw);
-const XY: DataTable<Item> = Data.patch(BW, xy);
-const SM: DataTable<Item> = Data.patch(XY, sm);
+const GSC: DataTable<Item> = Data.patch('item', RBY, gsc);
+const ADV: DataTable<Item> = Data.patch('item', GSC, adv);
+const DPP: DataTable<Item> = Data.patch('item', ADV, dpp);
+const BW: DataTable<Item> = Data.patch('item', DPP, bw);
+const XY: DataTable<Item> = Data.patch('item', BW, xy);
+const SM: DataTable<Item> = Data.patch('item', XY, sm);
 
 const ITEMS: Readonly<Array<DataTable<Item>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];

@@ -58,6 +58,7 @@ describe('Species', () => {
   });
 
   test('fields', () => {
+    expect(Species.get('Abra')!.kind).toBe('species');
     expect(Species.get('Clefable')!.type1).toBe('Fairy');
     expect(Species.get('Clefable', 3)!.type1).toBe('Normal');
     expect(Species.get('Gengar')!.type2).toBe('Poison');

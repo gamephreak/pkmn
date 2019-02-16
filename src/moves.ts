@@ -141,13 +141,13 @@ export interface Move extends Data {
   readonly ohko?: boolean;
 }
 
-const RBY: DataTable<Move> = Data.patch({}, rby);
-const GSC: DataTable<Move> = Data.patch(RBY, gsc);
-const ADV: DataTable<Move> = Data.patch(GSC, adv);
-const DPP: DataTable<Move> = Data.patch(ADV, dpp);
-const BW: DataTable<Move> = Data.patch(DPP, bw);
-const XY: DataTable<Move> = Data.patch(BW, xy);
-const SM: DataTable<Move> = Data.patch(XY, sm);
+const RBY: DataTable<Move> = Data.patch('move', {}, rby);
+const GSC: DataTable<Move> = Data.patch('move', RBY, gsc);
+const ADV: DataTable<Move> = Data.patch('move', GSC, adv);
+const DPP: DataTable<Move> = Data.patch('move', ADV, dpp);
+const BW: DataTable<Move> = Data.patch('move', DPP, bw);
+const XY: DataTable<Move> = Data.patch('move', BW, xy);
+const SM: DataTable<Move> = Data.patch('move', XY, sm);
 
 const MOVES: Readonly<Array<DataTable<Move>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];

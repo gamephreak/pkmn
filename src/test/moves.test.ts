@@ -30,6 +30,7 @@ describe('Moves', () => {
   });
 
   test('fields', () => {
+    expect(Moves.get('Tackle')!.kind).toBe('move');
     expect(Moves.get('Surf', 1)!.basePower).toBe(95);
     expect(Moves.get('Surf')!.basePower).toBe(90);
     expect(Moves.get('Curse', 4)!.type).toBe('???');

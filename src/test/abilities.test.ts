@@ -14,6 +14,7 @@ describe('Abilities', () => {
 
   test('get', () => {
     expect(Abilities.get('foo')).not.toBeDefined();
+    expect(Abilities.get('Illuminate')!.kind).toBe('ability');
     expect(Abilities.get('Beast Boost', 6)).not.toBeDefined();
     expect(Abilities.get('Beast Boost', 7)!.name).toBe('Beast Boost');
     expect(Abilities.get('Shield Dust', 3))

@@ -24,6 +24,7 @@ describe('Items', () => {
   });
 
   test('fields', () => {
+    expect(Items.get('Sitrus Berry')!.kind).toBe('item');
     expect(Items.get('Sitrus Berry', 4)!.isBerry).toBe(true);
     expect(Items.get('Heracronite')!.megaStone).toBe('Heracross-Mega');
     expect(Items.get('Charizardite-X')!.megaEvolves).toBe('Charizard');

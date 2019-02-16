@@ -2,8 +2,10 @@ import {Data} from '../data';
 
 describe('Data', () => {
   test('patch', () => {
-    const obj = {'foo': 1, 'bar': 2};
-    const diff = {'foo': {'exists': false}, 'bar': 3};
-    expect(Data.patch(obj, diff)).toEqual({'bar': 3});
+    const obj = {'foo': {'baz': 5}, 'bar': {'qux': 6}};
+    const diff = {'foo': {'exists': false}, 'bar': {'quux': 7}};
+    expect(Data.patch('move', obj, diff)).toEqual({
+      'bar': {'kind': 'move', 'qux': 6, 'quux': 7}
+    });
   });
 });

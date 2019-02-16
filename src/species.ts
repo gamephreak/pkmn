@@ -37,13 +37,13 @@ export interface Species extends Data {
   readonly isPrimal?: boolean;
 }
 
-const RBY: DataTable<Species> = Data.patch({}, rby);
-const GSC: DataTable<Species> = Data.patch(RBY, gsc);
-const ADV: DataTable<Species> = Data.patch(GSC, adv);
-const DPP: DataTable<Species> = Data.patch(ADV, dpp);
-const BW: DataTable<Species> = Data.patch(DPP, bw);
-const XY: DataTable<Species> = Data.patch(BW, xy);
-const SM: DataTable<Species> = Data.patch(XY, sm);
+const RBY: DataTable<Species> = Data.patch('species', {}, rby);
+const GSC: DataTable<Species> = Data.patch('species', RBY, gsc);
+const ADV: DataTable<Species> = Data.patch('species', GSC, adv);
+const DPP: DataTable<Species> = Data.patch('species', ADV, dpp);
+const BW: DataTable<Species> = Data.patch('species', DPP, bw);
+const XY: DataTable<Species> = Data.patch('species', BW, xy);
+const SM: DataTable<Species> = Data.patch('species', XY, sm);
 
 const SPECIES: Readonly<Array<DataTable<Species>>> =
     [RBY, GSC, ADV, DPP, BW, XY, SM];

@@ -11,13 +11,14 @@ import {ID, toID} from './id';
 
 export interface Ability extends Data {}
 
+
 const RBY: DataTable<Ability> = {};
 const GSC: DataTable<Ability> = {};
-const ADV: DataTable<Ability> = Data.patch(GSC, adv);
-const DPP: DataTable<Ability> = Data.patch(ADV, dpp);
-const BW: DataTable<Ability> = Data.patch(DPP, bw);
-const XY: DataTable<Ability> = Data.patch(BW, xy);
-const SM: DataTable<Ability> = Data.patch(XY, sm);
+const ADV: DataTable<Ability> = Data.patch('ability', GSC, adv);
+const DPP: DataTable<Ability> = Data.patch('ability', ADV, dpp);
+const BW: DataTable<Ability> = Data.patch('ability', DPP, bw);
+const XY: DataTable<Ability> = Data.patch('ability', BW, xy);
+const SM: DataTable<Ability> = Data.patch('ability', XY, sm);
 
 export interface Ability extends Data {}
 
