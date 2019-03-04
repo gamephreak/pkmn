@@ -17,7 +17,6 @@ export class Format {
   }
 
   toString(): string {
-    // TODO  Uber -> Ubers, AG -> Anything Goes
     return this.id;
   }
 

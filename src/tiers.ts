@@ -3,7 +3,7 @@ import {ID, toID} from './id';
 import {Species} from './species';
 
 export type Tier = 'AG'|'Uber'|'OU'|'UUBL'|'UU'|'RUBL'|'RU'|'NUBL'|'NU'|'PUBL'|
-    'PU'|'Untiered'|'NFE'|'LC Uber'|'LC'|'Unreleased'|'Illegal';
+    'PU'|'NFE'|'LC Uber'|'LC'|'Unreleased'|'Illegal';
 
 export const UBER: Tier = 'Uber';
 export const OU: Tier = 'OU';
@@ -15,7 +15,6 @@ export const NUBL: Tier = 'NUBL';
 export const NU: Tier = 'NU';
 export const PUBL: Tier = 'PUBL';
 export const PU: Tier = 'PU';
-export const UNTIERED: Tier = 'Untiered';
 export const NFE: Tier = 'NFE';
 export const LC_UBER: Tier = 'LC Uber';
 export const LC: Tier = 'LC';
@@ -47,7 +46,6 @@ const BANLISTS: Readonly<{[id: string]: Tier}> = {
 const OTHER: Readonly<{[id: string]: Tier}> = {
   ag: AG,
   nfe: NFE,
-  untiered: UNTIERED,
   unreleased: UNRELEASED,
   illegal: ILLEGAL,
 };
@@ -68,7 +66,6 @@ const ALLOWED: Readonly<{[tier in Tier]: Readonly<{[tier in Tier]?: 1}>}> = {
     'NU': 1,
     'PUBL': 1,
     'PU': 1,
-    'Untiered': 1,
     'NFE': 1,
     'LC Uber': 1,
     'LC': 1
@@ -84,7 +81,6 @@ const ALLOWED: Readonly<{[tier in Tier]: Readonly<{[tier in Tier]?: 1}>}> = {
     'NU': 1,
     'PUBL': 1,
     'PU': 1,
-    'Untiered': 1,
     'NFE': 1,
     'LC Uber': 1,
     'LC': 1
@@ -99,7 +95,6 @@ const ALLOWED: Readonly<{[tier in Tier]: Readonly<{[tier in Tier]?: 1}>}> = {
     'NU': 1,
     'PUBL': 1,
     'PU': 1,
-    'Untiered': 1,
     'NFE': 1,
     'LC Uber': 1,
     'LC': 1
@@ -113,7 +108,6 @@ const ALLOWED: Readonly<{[tier in Tier]: Readonly<{[tier in Tier]?: 1}>}> = {
     'NU': 1,
     'PUBL': 1,
     'PU': 1,
-    'Untiered': 1,
     'NFE': 1,
     'LC Uber': 1,
     'LC': 1
@@ -137,7 +131,6 @@ const ALLOWED: Readonly<{[tier in Tier]: Readonly<{[tier in Tier]?: 1}>}> = {
     'NU': 1,
     'PUBL': 1,
     'PU': 1,
-    'Untiered': 1,
     'NFE': 1,
     'LC Uber': 1,
     'LC': 1
@@ -148,16 +141,15 @@ const ALLOWED: Readonly<{[tier in Tier]: Readonly<{[tier in Tier]?: 1}>}> = {
     'NU': 1,
     'PUBL': 1,
     'PU': 1,
-    'Untiered': 1,
     'NFE': 1,
     'LC Uber': 1,
     'LC': 1
   },
   'NUBL':
-      {'NUBL': 1, 'NU': 1, 'PUBL': 1, 'PU': 1, 'Untiered': 1,  'NFE': 1, 'LC Uber': 1, 'LC': 1},
-  'NU': {'NU': 1, 'PUBL': 1, 'PU': 1, 'Untiered': 1, 'NFE': 1, 'LC Uber': 1, 'LC': 1},
-  'PUBL': {'PUBL': 1, 'PU': 1, 'Untiered': 1, 'NFE': 1, 'LC Uber': 1, 'LC': 1},
-  'PU': {'PU': 1, 'Untiered': 1, 'NFE': 1, 'LC Uber': 1, 'LC': 1},
+      {'NUBL': 1, 'NU': 1, 'PUBL': 1, 'PU': 1, 'NFE': 1, 'LC Uber': 1, 'LC': 1},
+  'NU': {'NU': 1, 'PUBL': 1, 'PU': 1, 'NFE': 1, 'LC Uber': 1, 'LC': 1},
+  'PUBL': {'PUBL': 1, 'PU': 1, 'NFE': 1, 'LC Uber': 1, 'LC': 1},
+  'PU': {'PU': 1, 'NFE': 1, 'LC Uber': 1, 'LC': 1},
   'NFE': {'NFE': 1, 'LC Uber': 1, 'LC': 1},
   'LC Uber': {'LC Uber': 1, 'LC': 1},
   'LC': {'LC': 1},
