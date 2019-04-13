@@ -1,6 +1,7 @@
 export {Abilities, Ability} from './abilities';
 export {Aliases} from './aliases';
 export {Data, DataTable} from './data';
+export {Effect, Effects} from './effect';
 export {Format, GameType} from './format';
 export {Generation, Generations} from './gen';
 export {ID, toID} from './id';
